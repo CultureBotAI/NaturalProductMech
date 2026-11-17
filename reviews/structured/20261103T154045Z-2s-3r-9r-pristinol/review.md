@@ -1,0 +1,1604 @@
+# Local evidence review: (+)-(2S,3R,9R)-pristinol
+
+- Review: 20261103T154045Z-2s-3r-9r-pristinol
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-03T15:06:55.216437Z
+- Finished UTC: 2026-11-03T15:40:45.000951Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Pristinol's exact retained ChEBI grounding, stored bicyclic alcohol and accepted complete maintained-reader view are locally consistent. The implemented locus override explains its enzymatic-assay grade without upgrading the producer assertion. Streptomyces synthesis and the separate database-level TaTC6 side-product graph retain different evidence and construct limits. The review remains scientifically partial.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2245; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:138165 | data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml | generated | (+)-(2S,3R,9R)-pristinol |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Complete offline maintained reader for (+)-(2S,3R,9R)-pristinol | passed | True | CHEBI:138165 | One original offline maintained call preserved the complete owner, two graphs/seven nodes/five edges and one pathway step, with no components. Historical primary, protein and product assertions retain their stated limitations. |
+| strict_ten | passed | True | CHEBI:138165 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | CHEBI:138165 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | CHEBI:138165 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | CHEBI:138165 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | CHEBI:138165 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | CHEBI:138165 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | CHEBI:138165 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | CHEBI:138165 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Identity
+
+identity: supported. Targets: CHEBI:138165.
+
+CHEBI:138165 is the single exact retained match for PXKJCWZAMAFFIW-GLBIRDDMSA-N, carrying the specific (+)-(2S,3R,9R)-pristinol name and bicyclic sesquiterpenoid definition. MIBiG BGC0001746 compound index 1 uses the shorter pristinol synonym. The historical graph quotation names a 3S product while its notes describe database normalization to the 3R owner. That source-history distinction is retained, not silently resolved through key agreement or a fresh stereochemical reassignment.
+
+### Representation
+
+representation: supported. Targets: CHEBI:138165.
+
+Both saved forms give neutral C15H26O, 16 atoms and 17 bonds, with all ten comparisons true and complete stored correspondence. The carbon skeleton has five- and eight-membered rings, one alcohol, three specified tetrahedral centres and a specified Z ring double bond. SMILES C1/C7/C11 have R/R/S assignments and map to InChI C9/C11/C13; these are diagnostic indices, not the name's locant numbering. Potential-stereo Cis/Trans descriptors change with atom ordering while the mapped bond remains STEREOZ. Optical sign and natural absolute configuration are not established by this calculation.
+
+### Origin
+
+provenance: supported. Targets: CHEBI:138165.
+
+The producer remains Streptomyces pristinaespiralis ATCC 25486, taxon 457429, at SOURCE_ASSERTION grade. Raw MIBiG BGC0001746 version 3 is active, questionable and of unknown completeness, with CLUSTER_UNSTATED linkage. The implemented curation override at physical line 9 explicitly replaces the locus method with Enzymatic assays for source concept naturalproductmech:mibig-9e6ff12f48; the seeder therefore writes CLUSTER_DEMONSTRATED without changing the producer grade. The locus NZ_CM000950.1:7136895–7138013 and distinct species-level ChEBI occurrence 38300 versus strain-level LOTUS occurrence 457429 remain bounded.
+
+### Citations
+
+evidence: unknown. Targets: CHEBI:138165.
+
+PMID:27403888 is retained as the MIBiG ENTRY and ChEBI-origin citation; the LOTUS DOI and historical Streptomyces graph cite the corresponding named chemistry literature without a new independence claim. Two graphs and one pathway preserve twelve graph-reference placements and four pathway placements, not sixteen independent experiments. Their PRIMARY_EXPERIMENT labels and quoted naming history are historical annotations, while UniProt/MIBiG/Rhea and TaTC6 product assertions remain database-level. Neither primary papers, source sequences nor current external identifiers were refreshed.
+
+### Bioactivity
+
+evidence: supported. Targets: CHEBI:138165.
+
+Two occurrence assertions are written, one species-level ChEBI origin and one strain-ID LOTUS occurrence. There are no written assay observations, bioactivity summary or molecular targets, and exact selected PubChem, BindingDB and sibling-corpus queries are empty. The two accepted BIOSYNTHESIS graphs and one pathway step concern synthesis/product attribution; they do not establish pharmacological activity. The TaTC6 side-product annotation adds no native fungal producer claim, product percentage or exclusive specificity.
+
+### Classification
+
+consistency: unknown. Targets: CHEBI:138165.
+
+NPClassifier's named/versioned Terpenoids, Sesquiterpenoids and Tremulane sesquiterpenoids output and false glycoside prediction are retained separately from the source TERPENE locus class. The complete paired topology supports a bicyclic sesquiterpenol with one ring alkene and no sugar linkage. Neither model class nor successful maintained reading proves a complete biosynthetic pathway or validates the historical enzyme/product stereochemical assignment.
+
+### Completion
+
+completeness: unknown. Targets: CHEBI:138165.
+
+The complete owner/history, accepted source context, actual intake and both full saved molecular tables were reviewed. The maintained reader's accepted complete owner and mechanism result are separately assessed. No supported local curation defect is established in this bounded scope. Five local gates passed; full QC, complete OAK and fresh external primary-source/taxonomy/accession verification were unavailable. The record remains scientifically partial, and its native curation status/history were not changed.
+
+### Complete maintained biosynthetic scope
+
+graph: unknown. Targets: CHEBI:138165.
+
+The accepted maintained result preserves the entire captured owner, two inline BIOSYNTHESIS graphs (seven nodes and five edges), one pathway step and all six history events, with no component references or molecular targets. The Streptomyces graph/pathway connect BGC0001746, B5H7H3 and FPP to the exact owner through the historical RHEA:54372 attribution. The TaTC6 graph separately records a database-reported side product; its ungrounded conversion process remains ungrounded. Reader success verifies topology/preservation in its declared scope, not primary experimental support, complete pathway coverage or the historical product naming normalization.
+
+### Organism-specific protein references and limits
+
+grounding: unknown. Targets: CHEBI:138165.
+
+The Streptomyces annotation retains UniProtKB:B5H7H3 as a historical 372-aa native reference associated with WP_005320742.1/SSDG_RS31275 and the stated locus. The separate TaTC6 annotation retains A0A5S9I252/BBK61014.1 as a historical 386-aa Trichoderma atroviride FKI-3849 reference and records six-exon LC484924.1 translation correspondence as prior curator inference. It explicitly does not establish the full assayed construct or tag, transfer a koraiol phenotype, demonstrate homodimer stoichiometry or Mg binding, or add native producer/BGC membership. No original sequence, construct or paper was freshly inspected; these precise limitations remain part of the accepted owner.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| bgc-2245-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml; Whole owner plaintext and complete curation_history | supports | Complete (+)-(2S,3R,9R)-pristinol owner with 6 written history events, current full key PXKJCWZAMAFFIW-GLBIRDDMSA-N and native status SEEDED. |
+| bgc-2245-capture | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/4/owner_pin; /records/4/owner_document | supports | Complete saved owner and exact raw pin for order 2245. |
+| bgc-2245-intake | /private/tmp/npm-review-work/shared-next-batch225/intakes/2245-inspect-001.json; /source; /targets | supports | Actual inspection-only intake retains one target CHEBI:138165 and 39 source input placements with owner paths and ownership notes. |
+| bgc-2245-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-intake-ready-001.json; /status; /intake_summary; /input_plan | supports | ROOT accepts the original ten canonical intakes and their current exact source maps; this is intake authority, not a scientific verdict. |
+| bgc-2245-grounding-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/4/owner_document/identifier; /records/4/owner_document/label; /records/4/owner_document/chemical_structure; /records/4/owner_document/definition; /records/4/owner_document/definition_source; /records/4/owner_document/source_concepts; /records/4/owner_document/grounding_status | supports | Written identity, structure, grounding and any definition, cross-reference or source discussion are retained exactly. {"identifier":"CHEBI:138165","grounding_status":"EXACT","definition":"A bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol carrying four additional methyl substiuents at positions 1, 4, 8 and 8.","definition_source":"CHEBI:138165"} |
+| bgc-2245-origin-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/4/owner_document/producer_organisms; /records/4/owner_document/biosynthetic_gene_clusters | supports | Written producer and locus assertions, grades, methods, references and any curator attribution: {"producer_organisms":[{"taxon_id":"NCBITaxon:457429","taxon_label":"Streptomyces pristinaespiralis ATCC 25486","evidence_basis":"SOURCE_ASSERTION","biosynthetic_gene_cluster":"mibig:BGC0001746","source":"MIBIG","source_version":"3","notes":"Locus evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which is a different question.","evidence":[{"reference":"PMID:27403888","evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0001746 entry version 3; citation taken from the entry level"}]}],"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0001746","entry_version":"3","entry_status":"active","organism_taxon_id":"NCBITaxon:457429","organism_label":"Streptomyces pristinaespiralis ATCC 25486","evidence":[{"reference":"PMID:27403888","evidence_type":"DATABASE_ASSERTION","notes":"MIBiG BGC0001746 entry version 3; citation taken from the entry level"}],"genome_accession":"genbank:NZ_CM000950.1","locus_from":7136895,"locus_to":7138013,"bgc_class":["TERPENE"],"locus_evidence_methods":["Enzymatic assays"],"link_evidence_basis":"CLUSTER_DEMONSTRATED"}]} |
+| bgc-2245-occurrence-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/4/owner_document/occurrences; /records/4/owner_document/occurrence_taxon_groups | supports | Written occurrence scope: {"occurrences":[{"taxon_label":"Streptomyces pristinaespiralis","source":"CHEBI","evidence":[{"reference":"PMID:27403888","evidence_type":"DATABASE_ASSERTION","notes":"ChEBI compound origin for CHEBI:138165"}],"taxon_id":"NCBITaxon:38300","taxon_source":"NCBITaxon"},{"taxon_id":"NCBITaxon:457429","taxon_label":"Streptomyces pristinaespiralis","taxon_source":"NCBITaxon","source":"LOTUS","evidence":[{"reference":"DOI:10.1002/ANIE.201605425","evidence_type":"DATABASE_ASSERTION","notes":"LOTUS structure-organism-reference triple. LOTUS reports that the compound was found in the organism; it does not assert that the organism produces it."}],"notes":"Wikidata organism http://www.wikidata.org/entity/Q103812227 This taxon is also recorded as a producer. Production and occurrence are distinct claims; their citations may refer to the same publication. Publication independence has not been established."}],"occurrence_taxon_groups":["ACTINOBACTERIAL"]}. No occurrence fields are inferred when absent. |
+| bgc-2245-assay-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/4/owner_document | supports | Written activity and mechanism fields: {}. Mechanism roots present: ["causal_graphs","biosynthetic_pathway"]. |
+| bgc-2245-classification-owner | /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json; /records/4/owner_document/np_pathway; /records/4/owner_document/np_classification; /records/4/owner_document/bgc_class; /records/4/owner_document/biosynthesis_origin; /records/4/owner_document/producer_taxon_groups; /records/4/owner_document/occurrence_taxon_groups | supports | Retained owner classifications and taxon-group labels: {"np_pathway":"TERPENOIDS","np_classification":{"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":["Terpenoids"],"superclass_results":["Sesquiterpenoids"],"class_results":["Tremulane sesquiterpenoids"],"is_glycoside":false},"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","producer_taxon_groups":["ACTINOBACTERIAL"],"occurrence_taxon_groups":["ACTINOBACTERIAL"]} |
+| bgc-2245-source-plan | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4 | supports | Accepted selected-record source projection, complete raw history, exact joins and proposed input map; the actual intake is separately cited. |
+| bgc-2245-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-input-plan-acceptance-001.json; /status; /plan; /inventory; /source_notes; /source_placements; /unique_source_paths; /per_order_counts | supports | ROOT accepts actual plan 412 placements/77 paths and the complete selected/direct projections, with future maintained-reader results separate. |
+| bgc-2245-source-notes | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-source-scope-notes-001.json; /reading; /curation; /cautions | supports | Complete BGC/Support whole-source reading attribution, bounded curation scan and source qualifications. The sole applicable token hit is the Pristinol locus override; reserved decisions.tsv was not consumed. |
+| bgc-2245-chemistry | /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-DATA-001.json; /records/4/declared_structure; /records/4/smiles; /records/4/inchi; /records/4/comparisons; /records/4/atom_correspondence | supports | Saved original paired forms and all computed fields: {"order":2245,"declared":{"smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","standard_inchi":"InChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","stereo_complete":true,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001746"},"smiles_status":"parsed","inchi_status":"parsed","comparisons":{"formula_equal":true,"formal_charge_equal":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"smiles_formula_equals_literal_InChI_main_layer":true},"map":{"smiles_to_inchi_atom_indices":[0,9,4,5,12,10,6,11,7,14,8,13,2,3,15,1],"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One chirality-aware substructure match; no independent full graph or natural identity claim."}}. |
+| bgc-2245-topology | /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-DATA-001.json; /records/4/smiles/computed/atoms; /records/4/smiles/computed/bonds; /records/4/smiles/computed/rings; /records/4/smiles/computed/motifs; /records/4/smiles/computed/potential_stereo; /records/4/smiles/computed/stereo_counts; /records/4/inchi/computed/atoms; /records/4/inchi/computed/bonds; /records/4/inchi/computed/rings; /records/4/inchi/computed/motifs; /records/4/inchi/computed/potential_stereo; /records/4/inchi/computed/stereo_counts; /records/4/atom_correspondence; /records/4/declared_structure | supports | SMILES C7–O14 is the sole alcohol. Stored rings [1,2,3,4,11] and [5,6,7,8,9,10,11,4] have five and eight members; bond C4=C5 is STEREOZ with stereo atoms [11,6]. The saved map sends these atoms to InChI C12=C10 with corresponding [13,6] neighbors. Three specified tetrahedral centres and four methyl substituents are preserved in both forms. |
+| bgc-2245-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-execution-001.json; /exit_code; /DATA; /stdout; /stderr; /external_requests; /retries | supports | ROOT's original diagnostic execution exited zero, retains exact DATA and original stream pins, reports no external request and zero retries. |
+| bgc-2245-diagnostic-stderr | /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-001.stderr; Complete original stderr (both warnings) | supports | Two original 'Omitted undefined stereo' warnings occur in the batch-level stream; neither is assigned to an owner or representation. |
+| bgc-2245-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-local-diagnostics-acceptance-001.json; /status; /DATA; /execution; /limits | supports | ROOT accepts the original saved chemistry in its stated mechanical scope; source/natural identity and scientific completion remain separate. |
+| bgc-2245-native-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-native-five-gates-acceptance-001.json; /status; /ledger; /results; /full_QC_available; /complete_OAK_authority_available; /all_native_gates_passed | supports | Five local commands passed; full QC and complete OAK authority were unavailable, so all_native_gates_passed remains false. |
+| bgc-2245-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/mibig_compounds | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[{"physical_line":2063,"last_physical_line":2063,"row":{"mibig_accession":"BGC0001746","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"pristinol","compound_index":"1","smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","standard_inchi":"InChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","stereo_complete":"true","compound_classes":"","database_ids":"","taxon_id":"NCBITaxon:457429","taxon_label":"Streptomyces pristinaespiralis ATCC 25486","bgc_classes":"terpene","bgc_subclasses":"Unknown","genome_accession":"NZ_CM000950.1","locus_from":"7136895","locus_to":"7138013","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:27403888","reference_basis":"ENTRY"},"raw_tsv_record":"BGC0001746\t3\tactive\tquestionable\tunknown\tpristinol\t1\tC[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C\tInChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1\tPXKJCWZAMAFFIW-GLBIRDDMSA-N\ttrue\t\t\tNCBITaxon:457429\tStreptomyces pristinaespiralis ATCC 25486\tterpene\tUnknown\tNZ_CM000950.1\t7136895\t7138013\t\tSOURCE_ASSERTION\tCLUSTER_UNSTATED\tPMID:27403888\tENTRY\n","row_sha256":"0088f530aac389b17c19bee2239fb93a74c31130254d0ffaba82bcc2ef7c46e3"}]} |
+| bgc-2245-source-mibig_compounds | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Physical TSV lines 2063 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":2063,"last_physical_line":2063,"row":{"mibig_accession":"BGC0001746","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"pristinol","compound_index":"1","smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","standard_inchi":"InChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","stereo_complete":"true","compound_classes":"","database_ids":"","taxon_id":"NCBITaxon:457429","taxon_label":"Streptomyces pristinaespiralis ATCC 25486","bgc_classes":"terpene","bgc_subclasses":"Unknown","genome_accession":"NZ_CM000950.1","locus_from":"7136895","locus_to":"7138013","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:27403888","reference_basis":"ENTRY"},"row_sha256":"0088f530aac389b17c19bee2239fb93a74c31130254d0ffaba82bcc2ef7c46e3"}] |
+| bgc-2245-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/chebi_structures | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[{"physical_line":39083,"last_physical_line":39083,"row":{"chebi_id":"CHEBI:138165","name":"(+)-(2S,3R,9R)-pristinol","definition":"A bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol carrying four additional methyl substiuents at positions 1, 4, 8 and 8.","stars":"3","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","smiles":"[H][C@@]12CC(C)(C)C[C@@H](O)C/C(C)=C\\1CC[C@H]2C"},"raw_tsv_record":"CHEBI:138165\t(+)-(2S,3R,9R)-pristinol\tA bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol carrying four additional methyl substiuents at positions 1, 4, 8 and 8.\t3\tPXKJCWZAMAFFIW-GLBIRDDMSA-N\t[H][C@@]12CC(C)(C)C[C@@H](O)C/C(C)=C\\1CC[C@H]2C\n","row_sha256":"028d7805cf22c3d4fb0df8194e85daedc93aeedfae12702c69aac31ec721dc91"}]} |
+| bgc-2245-source-chebi_structures | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv; Physical TSV lines 39083 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":39083,"last_physical_line":39083,"row":{"chebi_id":"CHEBI:138165","name":"(+)-(2S,3R,9R)-pristinol","definition":"A bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol carrying four additional methyl substiuents at positions 1, 4, 8 and 8.","stars":"3","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","smiles":"[H][C@@]12CC(C)(C)C[C@@H](O)C/C(C)=C\\1CC[C@H]2C"},"row_sha256":"028d7805cf22c3d4fb0df8194e85daedc93aeedfae12702c69aac31ec721dc91"}] |
+| bgc-2245-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/lotus_occurrences | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[{"physical_line":7150,"last_physical_line":7150,"row":{"standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","organism_name":"Streptomyces pristinaespiralis","taxon_id":"NCBITaxon:457429","organism_wikidata":"http://www.wikidata.org/entity/Q103812227","reference_doi":"10.1002/ANIE.201605425","structure_wikidata":"http://www.wikidata.org/entity/Q74417351"},"raw_tsv_record":"PXKJCWZAMAFFIW-GLBIRDDMSA-N\tStreptomyces pristinaespiralis\tNCBITaxon:457429\thttp://www.wikidata.org/entity/Q103812227\t10.1002/ANIE.201605425\thttp://www.wikidata.org/entity/Q74417351\n","row_sha256":"1e05d441b8153297d639e551f4e484b51084f04e460f0de9451d5376d1d2efd9"}]} |
+| bgc-2245-source-lotus_occurrences | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Physical TSV lines 7150 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":7150,"last_physical_line":7150,"row":{"standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","organism_name":"Streptomyces pristinaespiralis","taxon_id":"NCBITaxon:457429","organism_wikidata":"http://www.wikidata.org/entity/Q103812227","reference_doi":"10.1002/ANIE.201605425","structure_wikidata":"http://www.wikidata.org/entity/Q74417351"},"row_sha256":"1e05d441b8153297d639e551f4e484b51084f04e460f0de9451d5376d1d2efd9"}] |
+| bgc-2245-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/cyanometdb_occurrences | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[]} |
+| bgc-2245-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/npclassifier | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[{"physical_line":1947,"last_physical_line":1947,"row":{"standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","pathway_results":"Terpenoids","superclass_results":"Sesquiterpenoids","class_results":"Tremulane sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"},"raw_tsv_record":"PXKJCWZAMAFFIW-GLBIRDDMSA-N\tC[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C\tTerpenoids\tSesquiterpenoids\tTremulane sesquiterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row_sha256":"ce44357ab55e745bfddf4de198135e075177760d230b930534285fa668a4fc97"}]} |
+| bgc-2245-source-npclassifier | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Physical TSV lines 1947 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":1947,"last_physical_line":1947,"row":{"standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","pathway_results":"Terpenoids","superclass_results":"Sesquiterpenoids","class_results":"Tremulane sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"},"row_sha256":"ce44357ab55e745bfddf4de198135e075177760d230b930534285fa668a4fc97"}] |
+| bgc-2245-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/pubchem_bioassay | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[]} |
+| bgc-2245-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/bindingdb_targets | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[]} |
+| bgc-2245-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Exact retained query frame: {"predicate":"exact complete standard_inchi_key equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[]} |
+| bgc-2245-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/joins/chebi_origins | supports | Exact retained query frame: {"predicate":"exact chebi_id from exact full-key structure rows","query":["CHEBI:138165"],"matches":[{"physical_line":15869,"last_physical_line":15869,"row":{"chebi_id":"CHEBI:138165","species_text":"Streptomyces pristinaespiralis","species_accession":"38300","component_text":"","strain_text":"","source_accession":"27403888","comments":""},"raw_tsv_record":"CHEBI:138165\tStreptomyces pristinaespiralis\t38300\t\t\t27403888\t\n","row_sha256":"c8943fb4cb0e9a226592c5fa00386e3738c7358e368a11aa029823a6869eca1c"}]} |
+| bgc-2245-source-chebi_origins | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv; Physical TSV lines 15869 | supports | Complete retained physical source payloads, with each original line and full CSV fields: [{"physical_line":15869,"last_physical_line":15869,"row":{"chebi_id":"CHEBI:138165","species_text":"Streptomyces pristinaespiralis","species_accession":"38300","component_text":"","strain_text":"","source_accession":"27403888","comments":""},"row_sha256":"c8943fb4cb0e9a226592c5fa00386e3738c7358e368a11aa029823a6869eca1c"}] |
+| bgc-2245-cached-taxonomy | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/6; /cached_taxonomy/whole_stanzas/19 | supports | Complete retained cached stanza scope: [{"id":"NCBITaxon:38300","physical_line":16648,"complete_stanza":"[Term]\nid: NCBITaxon:38300\nname: Streptomyces pristinaespiralis\n\n"},{"id":"NCBITaxon:457429","physical_line":95403,"complete_stanza":"[Term]\nid: NCBITaxon:457429\nname: Streptomyces pristinaespiralis ATCC 25486\nsynonym: \"Streptomyces pristinaespiralis str. ATCC 25486\" EXACT []\nsynonym: \"Streptomyces pristinaespiralis strain ATCC 25486\" EXACT []\n\n"}]. Cached names/synonyms do not constitute a fresh taxonomy request. |
+| bgc-2245-source-routes | /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json; /records/4/source_scope_inventory/source_taxa; /records/4/source_scope_inventory/forward_taxon_merge_matches; /records/4/source_scope_inventory/nonorganism_matches | supports | Exact selected-record source taxa and retained forward/nonorganism route sets: {"source_taxa":["NCBITaxon:38300","NCBITaxon:457429"],"forward_taxon_merge_matches":[],"nonorganism_matches":[]} |
+| bgc-2245-review-skill | /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md; Evidence Rules; Workflow; Output | supports | Maintained local review recipe requires claim-specific source support and qualified completion; external retrieval is overridden by the absolute no-request instruction. |
+| bgc-2245-review-profile | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Complete maintained review profile | supports | Maintained dimensions, producer/occurrence and source-versus-computed scope, one-record review and partial completion requirements. |
+| bgc-2245-structure-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 376–432 | supports | ChemicalStructure stereo flag description and ComputedClassification named/versioned output semantics; is_glycoside is a computed boolean, not a source assertion. |
+| bgc-2245-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; lines 145–175 | supports | Maintained MIBiG extractor derives standardized identifiers and the stereo_complete flag from FindMolChiralCenters including unassigned centres; no experiment or complete geometric-stereo authentication is performed by this method. |
+| bgc-2245-classification-seeder | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 980–1030 | supports | Seeder preserves the selected structure, exact ChEBI definition and named/versioned classifier results, including the literal glycoside prediction. |
+| bgc-2245-reader-DATA | /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-maintained-reader-DATA-001.json; /status; /raw_owner; /resolved_view; /expected_view; /returned_view_equals_expected_complete_owner; /counts; /view_mismatches; /denials; /unexpected_denials; /errors; /external_requests; /limitations | supports | Original maintained reader preserves the complete captured owner and exact expected/resolved view: two inline graphs, seven nodes, five edges, one pathway step and six history events; no components or targets. One known socket-construction capability probe was denied before action, with no unexpected denial or external request. Its declared preservation/topology scope is separate from biological or sequence verification. |
+| bgc-2245-reader-execution | /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-reader-execution-001.json; /exit_code; /DATA; /stdout; /stderr; /retries; /external_requests | supports | Original maintained-reader execution exited zero with empty stderr, zero retries and no external request; exact DATA/stdout pins are retained. |
+| bgc-2245-reader-acceptance | /private/tmp/npm-review-work/shared-next-batch225/root-pristinol-reader-acceptance-001.json; /status; /DATA; /execution; /verification; /review_check_contract; /scope; /limitations | supports | ROOT accepts the original complete-owner reader result and its exact check contract. Acceptance preserves the historical scientific assertions without upgrading their experimental or sequence authority. |
+| bgc-2245-graph-0 | /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/0 | supports | Complete retained graph, including every node, edge, evidence placement, source snippet and limitation: {"graph_id":"pristinol-synthase-biosynthesis","scope":"BIOSYNTHESIS","description":"Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate to form (+)-(2S,3R,9R)-pristinol.","nodes":[{"node_id":"bgc0001746","label":"BGC0001746 pristinol biosynthetic gene cluster","node_type":"GENE_CLUSTER","identifier":"mibig:BGC0001746","grounding_status":"GROUNDED"},{"node_id":"farnesyl_diphosphate","label":"(2E,6E)-farnesyl diphosphate","node_type":"PRECURSOR","identifier":"CHEBI:175763","grounding_status":"GROUNDED"},{"node_id":"pristinol_synthase","label":"Pristinol synthase","node_type":"ENZYME","identifier":"UniProtKB:B5H7H3","grounding_status":"GROUNDED"},{"node_id":"pristinol","label":"(+)-(2S,3R,9R)-pristinol","node_type":"COMPOUND","identifier":"CHEBI:138165","grounding_status":"GROUNDED"}],"edges":[{"subject":"bgc0001746","predicate":"encodes","object":"pristinol_synthase","notes":"BGC0001746 contains SSDG_RS31275, the WP_005320742.1-encoded pristinol synthase.","evidence":[{"reference":"https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"MIBiG BGC0001746.3 maps the Streptomyces pristinaespiralis ATCC 25486 pristinol core CDS SSDG_RS31275 to RefSeq protein WP_005320742.1."},{"reference":"https://www.uniprot.org/uniprotkb/B5H7H3","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from PMID:27403888."}]},{"subject":"farnesyl_diphosphate","predicate":"is cyclized by","object":"pristinol_synthase","notes":"Pristinol synthase abstracts diphosphate from FPP and catalyzes the rearranged sesquiterpenol-forming cyclization.","evidence":[{"reference":"DOI:10.1002/anie.201605425","evidence_type":"PRIMARY_EXPERIMENT","snippet":"synthase for (+)-(2S,3S,9R)-pristinol","notes":"Klapschinski et al. characterized the Streptomyces pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic product to (+)-(2S,3R,9R)-pristinol."},{"reference":"https://www.uniprot.org/uniprotkb/B5H7H3","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from PMID:27403888."},{"reference":"https://www.rhea-db.org/rhea/54372","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3 in Swiss-Prot."}]},{"subject":"pristinol_synthase","predicate":"produces","object":"pristinol","notes":"Pristinol synthase produces (+)-(2S,3R,9R)-pristinol via the RHEA:54372 reaction.","evidence":[{"reference":"DOI:10.1002/anie.201605425","evidence_type":"PRIMARY_EXPERIMENT","snippet":"synthase for (+)-(2S,3S,9R)-pristinol","notes":"Klapschinski et al. characterized the Streptomyces pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic product to (+)-(2S,3R,9R)-pristinol."},{"reference":"https://www.uniprot.org/uniprotkb/B5H7H3","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from PMID:27403888."},{"reference":"https://www.rhea-db.org/rhea/54372","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3 in Swiss-Prot."}]}]} |
+| bgc-2245-graph-1 | /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-maintained-reader-DATA-001.json; /resolved_view/causal_graphs/1 | supports | Complete retained graph, including every node, edge, evidence placement, source snippet and limitation: {"graph_id":"pristinol-tatc6-database-side-product","scope":"BIOSYNTHESIS","description":"Database-reported TaTC6 formation of (+)-(2S,3R,9R)-pristinol as a side product. A0A5S9I252 denotes the sequence-verified native Trichoderma atroviride FKI-3849 reference, not a verified full assayed construct. Functional and stereochemical product attribution remain database-level. No native producer, BGC membership, physical complex or measured Mg-binding claim is added.","nodes":[{"node_id":"tatc6_reference","label":"TaTC6 native FKI-3849 reference","node_type":"ENZYME","identifier":"UniProtKB:A0A5S9I252","grounding_status":"GROUNDED"},{"node_id":"fpp_conversion","label":"Database-reported TaTC6 FPP conversion","node_type":"PROCESS","grounding_status":"UNGROUNDED"},{"node_id":"product","label":"(+)-(2S,3R,9R)-pristinol","node_type":"COMPOUND","identifier":"CHEBI:138165","grounding_status":"GROUNDED"}],"edges":[{"subject":"tatc6_reference","predicate":"is_database_reported_catalyst_of","object":"fpp_conversion","notes":"The native reference mapping does not establish historical assay-stock or full construct/tag identity. UniProt separately reports a koraiol disruption phenotype; its applicability is unresolved and no phenotype edge is adopted. Its homodimer and Mg-binding assertions are homology-based and are not adopted here.","evidence":[{"reference":"https://www.uniprot.org/uniprotkb/A0A5S9I252","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-10-09","notes":"Reviewed entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly names CHEBI:138165 as product of FPP plus water; RHEA:54373 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected."},{"reference":"https://www.ncbi.nlm.nih.gov/protein/BBK61014.1","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-10-09","notes":"Complete 386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577, gene tatc6. GenPept annotates trichobrasilenol synthesis from FPP; it does not independently establish pristinol formation. Its in-vitro-assay code is a deposit annotation, not a newly inspected assay."},{"reference":"https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1","evidence_type":"CURATOR_INFERENCE","retrieved_on":"2026-10-09","notes":"Independent translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463), codon_start1/default table1: 1161 nt including stop equals 386-aa annotated translation, GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept coded_by accession, coordinates and orientation agree; both deposits name FKI-3849/taxon63577. This is native reference correspondence, not experimental construct equivalence."}]},{"subject":"fpp_conversion","predicate":"has_database_reported_product","object":"product","notes":"The explicit UniProt reaction product CURIE CHEBI:138165 matches this owner, whose unchanged full InChIKey is PXKJCWZAMAFFIW-GLBIRDDMSA-N. This is database product mapping, not an independent spectrum or primary-paper stereochemical analysis. No exclusive specificity, product percentage or native production is asserted. This fungal side-product graph is separate from the existing Streptomyces B5H7H3/BGC0001746 mechanism; its historical naming/stereochemistry notes are preserved without a new adjudication.","evidence":[{"reference":"https://www.uniprot.org/uniprotkb/A0A5S9I252","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-10-09","notes":"Reviewed entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly names CHEBI:138165 as product of FPP plus water; RHEA:54373 is annotated left-to-right. The function narrative calls trichobrasilenol the main product and pristinol a side product. These are adopted UniProt assertions, not independently inspected experiments. PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the primary paper and supplementary information were inaccessible and were not inspected.","snippet":"(2E,6E)-farnesyl diphosphate + H2O = (+)-(2S,3R,9R)-pristinol + diphosphate"}]}]} |
+| bgc-2245-pathway | /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-maintained-reader-DATA-001.json; /resolved_view/biosynthetic_pathway | supports | Complete retained pathway step and all four evidence placements: [{"step_number":1,"enzyme_id":"UniProtKB:B5H7H3","enzyme_label":"Pristinol synthase","reaction_id":"RHEA:54372","substrate":"CHEBI:175763","product":"CHEBI:138165","notes":"Streptomyces pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate with water to (+)-(2S,3R,9R)-pristinol and diphosphate.","evidence":[{"reference":"DOI:10.1002/anie.201605425","evidence_type":"PRIMARY_EXPERIMENT","snippet":"synthase for (+)-(2S,3S,9R)-pristinol","notes":"Klapschinski et al. characterized the Streptomyces pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize the enzymatic product to (+)-(2S,3R,9R)-pristinol."},{"reference":"https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"MIBiG BGC0001746.3 maps the Streptomyces pristinaespiralis ATCC 25486 pristinol core CDS SSDG_RS31275 to RefSeq protein WP_005320742.1."},{"reference":"https://www.uniprot.org/uniprotkb/B5H7H3","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"Reviewed UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates RHEA:54372 from PMID:27403888."},{"reference":"https://www.rhea-db.org/rhea/54372","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"RHEA:54372 is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3 in Swiss-Prot."}]}] |
+| bgc-2245-locus-override | /private/tmp/npm-record-reviews-20261021/curation/mibig_locus_evidence_overrides.tsv; Physical TSV line 9 | supports | Exact implemented Pristinol override row: naturalproductmech:mibig-9e6ff12f48	MIBIG	BGC0001746	pristinol	Enzymatic assays	codex	2026-09-30	PMID:27403888 characterizes Streptomyces pristinaespiralis ATCC 25486 pristinol synthase converting farnesyl diphosphate to pristinol; the evidence demonstrates the BGC0001746 locus without upgrading the native producer claim.									REPLACE. It selects the minted MIBiG compound concept and replaces the locus evidence method only. |
+| bgc-2245-locus-method | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 473–569; lines 821–836 | supports | Maintained method reads the exact minted-concept/BGC override, replaces locus methods and derives the cluster evidence basis; producer evidence remains a separate field. |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-225/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-225/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-225/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-225/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-225/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- External identifiers, taxonomy, accessions and primary publications were not refreshed under the absolute no-request instruction; historical and database assertions remain attributed.
+- Full QC and complete OAK authority coverage were unavailable. Local gates and parsing establish their declared mechanical scope only.
+- Negative source joins apply only to exact retained predicates and snapshots. Shared loci, citations and companions do not transfer compound-specific claims.
+- No additional molecular or YAML parse occurred during fragment authoring. Source records, raw snapshots, native curation status and histories were not edited.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Complete source payloads and personal/delegated direct-context whole-reading attribution are retained in the pinned source notes. Assigned actual intakes, complete selected owners/history and every paired saved molecular table were personally read.
+- Two original batch-level undefined-stereo warnings remain globally unassigned. True comparison flags and a complete correspondence do not override full_graph_identity_established:false.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T154045Z-2s-3r-9r-pristinol
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: (+)-(2S,3R,9R)-pristinol'
+started_at: '2026-11-03T15:06:55.216437Z'
+finished_at: '2026-11-03T15:40:45.000951Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Pristinol's exact retained ChEBI grounding, stored bicyclic alcohol and accepted
+  complete maintained-reader view are locally consistent. The implemented locus override
+  explains its enzymatic-assay grade without upgrading the producer assertion. Streptomyces
+  synthesis and the separate database-level TaTC6 side-product graph retain different
+  evidence and construct limits. The review remains scientifically partial.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml
+    sha256: 7398b14a991a0bcafc22e87ec84702b5d440271e6d02bdafad94f2163f555109
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2245; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:138165
+targets:
+- target_id: CHEBI:138165
+  path: data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml
+  label: (+)-(2S,3R,9R)-pristinol
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for (+)-(2S,3R,9R)-pristinol
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch225/read-selected-mechanism-guarded-001.py
+    2245 26a53df0a2a00c55a89dc4b8e97e39d97113dfa02561426cceb8f352d75e4b6a 8d1e6e96a4e7550a2cf298cfdf6bb25c6e514b4acb290de1f80018e2803b928e
+    ebf33b459aad238fb77599f8eddf3fc2f201e22d5b2abedb4cfaeba891f14a85 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+    7a4ccc6a5797fc439a91a9f1357a3584c2841f8a018323c67688a7cece42a73b
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-reader-DATA
+  - bgc-2245-reader-execution
+  - bgc-2245-reader-acceptance
+  summary: One original offline maintained call preserved the complete owner, two
+    graphs/seven nodes/five edges and one pathway step, with no components. Historical
+    primary, protein and product assertions retain their stated limitations.
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:138165
+  command: just validate-strict data/natural_products/terpenoids/17-deoxyaphidicolin.yaml
+    data/natural_products/terpenoids/2-cis-abscisic-acid.yaml data/natural_products/terpenoids/2-hydroxysorangiadenosine.yaml
+    data/natural_products/terpenoids/21-h-hopane-3beta-22-diol.yaml data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml
+    data/natural_products/terpenoids/3-decalonectrin.yaml data/natural_products/terpenoids/3-deoxyaphidicolin.yaml
+    data/natural_products/terpenoids/4-acetoxytetrahydrobotryslactone.yaml data/natural_products/terpenoids/4-acetylnivalenol.yaml
+    data/natural_products/terpenoids/5-9-10-labda-8-20-13-dien-15-yl-diphosphate.yaml
+    --workers 1 --out /private/tmp/npm-native-checks/batch-225/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:138165
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-225/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:138165
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:138165
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:138165
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-225/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:138165
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:138165
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:138165
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2245-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/2s-3r-9r-pristinol.yaml
+  locator: Whole owner plaintext and complete curation_history
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Complete (+)-(2S,3R,9R)-pristinol owner with 6 written history events,
+    current full key PXKJCWZAMAFFIW-GLBIRDDMSA-N and native status SEEDED.
+  snapshot_sha256: 7398b14a991a0bcafc22e87ec84702b5d440271e6d02bdafad94f2163f555109
+- evidence_id: bgc-2245-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/4/owner_pin; /records/4/owner_document
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Complete saved owner and exact raw pin for order 2245.
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2245-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/intakes/2245-inspect-001.json
+  locator: /source; /targets
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Actual inspection-only intake retains one target CHEBI:138165 and 39 source
+    input placements with owner paths and ownership notes.
+  snapshot_sha256: 8d1e6e96a4e7550a2cf298cfdf6bb25c6e514b4acb290de1f80018e2803b928e
+- evidence_id: bgc-2245-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-intake-ready-001.json
+  locator: /status; /intake_summary; /input_plan
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: ROOT accepts the original ten canonical intakes and their current exact
+    source maps; this is intake authority, not a scientific verdict.
+  snapshot_sha256: 6f3cca33d9d1304a058b16e62e10dd34951397c511d1e28efd688778eb0a591f
+- evidence_id: bgc-2245-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/4/owner_document/identifier; /records/4/owner_document/label;
+    /records/4/owner_document/chemical_structure; /records/4/owner_document/definition;
+    /records/4/owner_document/definition_source; /records/4/owner_document/source_concepts;
+    /records/4/owner_document/grounding_status
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Written identity, structure, grounding and any definition, cross-reference
+    or source discussion are retained exactly. {"identifier":"CHEBI:138165","grounding_status":"EXACT","definition":"A
+    bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol
+    carrying four additional methyl substiuents at positions 1, 4, 8 and 8.","definition_source":"CHEBI:138165"}
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2245-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/4/owner_document/producer_organisms; /records/4/owner_document/biosynthetic_gene_clusters
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Written producer and locus assertions, grades, methods, references and
+    any curator attribution: {"producer_organisms":[{"taxon_id":"NCBITaxon:457429","taxon_label":"Streptomyces
+    pristinaespiralis ATCC 25486","evidence_basis":"SOURCE_ASSERTION","biosynthetic_gene_cluster":"mibig:BGC0001746","source":"MIBIG","source_version":"3","notes":"Locus
+    evidence: Enzymatic assays. That evidence grades the LOCUS as CLUSTER_DEMONSTRATED;
+    this field grades the taxon claim, which is a different question.","evidence":[{"reference":"PMID:27403888","evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0001746 entry version 3; citation taken from the entry level"}]}],"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0001746","entry_version":"3","entry_status":"active","organism_taxon_id":"NCBITaxon:457429","organism_label":"Streptomyces
+    pristinaespiralis ATCC 25486","evidence":[{"reference":"PMID:27403888","evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0001746 entry version 3; citation taken from the entry level"}],"genome_accession":"genbank:NZ_CM000950.1","locus_from":7136895,"locus_to":7138013,"bgc_class":["TERPENE"],"locus_evidence_methods":["Enzymatic
+    assays"],"link_evidence_basis":"CLUSTER_DEMONSTRATED"}]}'
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2245-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/4/owner_document/occurrences; /records/4/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Written occurrence scope: {"occurrences":[{"taxon_label":"Streptomyces
+    pristinaespiralis","source":"CHEBI","evidence":[{"reference":"PMID:27403888","evidence_type":"DATABASE_ASSERTION","notes":"ChEBI
+    compound origin for CHEBI:138165"}],"taxon_id":"NCBITaxon:38300","taxon_source":"NCBITaxon"},{"taxon_id":"NCBITaxon:457429","taxon_label":"Streptomyces
+    pristinaespiralis","taxon_source":"NCBITaxon","source":"LOTUS","evidence":[{"reference":"DOI:10.1002/ANIE.201605425","evidence_type":"DATABASE_ASSERTION","notes":"LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it."}],"notes":"Wikidata
+    organism http://www.wikidata.org/entity/Q103812227 This taxon is also recorded
+    as a producer. Production and occurrence are distinct claims; their citations
+    may refer to the same publication. Publication independence has not been established."}],"occurrence_taxon_groups":["ACTINOBACTERIAL"]}.
+    No occurrence fields are inferred when absent.'
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2245-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/4/owner_document
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Written activity and mechanism fields: {}. Mechanism roots present: ["causal_graphs","biosynthetic_pathway"].'
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2245-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/owner-capture-DATA-001.json
+  locator: /records/4/owner_document/np_pathway; /records/4/owner_document/np_classification;
+    /records/4/owner_document/bgc_class; /records/4/owner_document/biosynthesis_origin;
+    /records/4/owner_document/producer_taxon_groups; /records/4/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Retained owner classifications and taxon-group labels: {"np_pathway":"TERPENOIDS","np_classification":{"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":["Terpenoids"],"superclass_results":["Sesquiterpenoids"],"class_results":["Tremulane
+    sesquiterpenoids"],"is_glycoside":false},"bgc_class":["TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","producer_taxon_groups":["ACTINOBACTERIAL"],"occurrence_taxon_groups":["ACTINOBACTERIAL"]}'
+  snapshot_sha256: 0e9d3e869f9ce737ea339dd4952cbb014b2b826c4f2822ee7db6b4f5a1a28533
+- evidence_id: bgc-2245-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Accepted selected-record source projection, complete raw history, exact
+    joins and proposed input map; the actual intake is separately cited.
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-input-plan-acceptance-001.json
+  locator: /status; /plan; /inventory; /source_notes; /source_placements; /unique_source_paths;
+    /per_order_counts
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: ROOT accepts actual plan 412 placements/77 paths and the complete selected/direct
+    projections, with future maintained-reader results separate.
+  snapshot_sha256: 8b553f64807b674d1731148a3995b48ceca2b42aa4cd763c5f306ef84992a96d
+- evidence_id: bgc-2245-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-source-scope-notes-001.json
+  locator: /reading; /curation; /cautions
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Complete BGC/Support whole-source reading attribution, bounded curation
+    scan and source qualifications. The sole applicable token hit is the Pristinol
+    locus override; reserved decisions.tsv was not consumed.
+  snapshot_sha256: 08f2dd0c94feafa1b7201db4b7fff3d4218aade05b41a8b71c566de4f60ed0ed
+- evidence_id: bgc-2245-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/4/declared_structure; /records/4/smiles; /records/4/inchi; /records/4/comparisons;
+    /records/4/atom_correspondence
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Saved original paired forms and all computed fields: {"order":2245,"declared":{"smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","standard_inchi":"InChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","stereo_complete":true,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001746"},"smiles_status":"parsed","inchi_status":"parsed","comparisons":{"formula_equal":true,"formal_charge_equal":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"smiles_formula_equals_literal_InChI_main_layer":true},"map":{"smiles_to_inchi_atom_indices":[0,9,4,5,12,10,6,11,7,14,8,13,2,3,15,1],"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One
+    chirality-aware substructure match; no independent full graph or natural identity
+    claim."}}.'
+  snapshot_sha256: 2c67ccbf2df2c8fee5fd0761d179566903ed7db15c60650d2cff295cbac068a7
+- evidence_id: bgc-2245-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/4/smiles/computed/atoms; /records/4/smiles/computed/bonds; /records/4/smiles/computed/rings;
+    /records/4/smiles/computed/motifs; /records/4/smiles/computed/potential_stereo;
+    /records/4/smiles/computed/stereo_counts; /records/4/inchi/computed/atoms; /records/4/inchi/computed/bonds;
+    /records/4/inchi/computed/rings; /records/4/inchi/computed/motifs; /records/4/inchi/computed/potential_stereo;
+    /records/4/inchi/computed/stereo_counts; /records/4/atom_correspondence; /records/4/declared_structure
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: SMILES C7–O14 is the sole alcohol. Stored rings [1,2,3,4,11] and [5,6,7,8,9,10,11,4]
+    have five and eight members; bond C4=C5 is STEREOZ with stereo atoms [11,6]. The
+    saved map sends these atoms to InChI C12=C10 with corresponding [13,6] neighbors.
+    Three specified tetrahedral centres and four methyl substituents are preserved
+    in both forms.
+  snapshot_sha256: 2c67ccbf2df2c8fee5fd0761d179566903ed7db15c60650d2cff295cbac068a7
+- evidence_id: bgc-2245-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-execution-001.json
+  locator: /exit_code; /DATA; /stdout; /stderr; /external_requests; /retries
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: ROOT's original diagnostic execution exited zero, retains exact DATA and
+    original stream pins, reports no external request and zero retries.
+  snapshot_sha256: 78ad622a43d40672797351398f42ca4e4d960b9d268915937dd62a54571c00fa
+- evidence_id: bgc-2245-diagnostic-stderr
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/chemistry-local/diagnostic-001.stderr
+  locator: Complete original stderr (both warnings)
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Two original 'Omitted undefined stereo' warnings occur in the batch-level
+    stream; neither is assigned to an owner or representation.
+  snapshot_sha256: 7447721aa4c9980e1edf852cb15b182da2b510529ddd5ecabec31c40b6ecf085
+- evidence_id: bgc-2245-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-local-diagnostics-acceptance-001.json
+  locator: /status; /DATA; /execution; /limits
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: ROOT accepts the original saved chemistry in its stated mechanical scope;
+    source/natural identity and scientific completion remain separate.
+  snapshot_sha256: 9bc1a44f264ea5a8261064ea20b2d3ced43e1608a6bebdeb0b235c4476564e9f
+- evidence_id: bgc-2245-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-native-five-gates-acceptance-001.json
+  locator: /status; /ledger; /results; /full_QC_available; /complete_OAK_authority_available;
+    /all_native_gates_passed
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Five local commands passed; full QC and complete OAK authority were unavailable,
+    so all_native_gates_passed remains false.
+  snapshot_sha256: e5b971aac7d6c7f0502248a9f3b9a6554500b2b131c408cdca84f95fd4229b0f
+- evidence_id: bgc-2245-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[{"physical_line":2063,"last_physical_line":2063,"row":{"mibig_accession":"BGC0001746","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"pristinol","compound_index":"1","smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","standard_inchi":"InChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","stereo_complete":"true","compound_classes":"","database_ids":"","taxon_id":"NCBITaxon:457429","taxon_label":"Streptomyces
+    pristinaespiralis ATCC 25486","bgc_classes":"terpene","bgc_subclasses":"Unknown","genome_accession":"NZ_CM000950.1","locus_from":"7136895","locus_to":"7138013","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:27403888","reference_basis":"ENTRY"},"raw_tsv_record":"BGC0001746\t3\tactive\tquestionable\tunknown\tpristinol\t1\tC[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C\tInChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1\tPXKJCWZAMAFFIW-GLBIRDDMSA-N\ttrue\t\t\tNCBITaxon:457429\tStreptomyces
+    pristinaespiralis ATCC 25486\tterpene\tUnknown\tNZ_CM000950.1\t7136895\t7138013\t\tSOURCE_ASSERTION\tCLUSTER_UNSTATED\tPMID:27403888\tENTRY\n","row_sha256":"0088f530aac389b17c19bee2239fb93a74c31130254d0ffaba82bcc2ef7c46e3"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-source-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Physical TSV lines 2063
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":2063,"last_physical_line":2063,"row":{"mibig_accession":"BGC0001746","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"pristinol","compound_index":"1","smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","standard_inchi":"InChI=1S/C15H26O/c1-10-5-6-13-11(2)7-12(16)8-15(3,4)9-14(10)13/h10,12,14,16H,5-9H2,1-4H3/b13-11-/t10-,12+,14+/m1/s1","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","stereo_complete":"true","compound_classes":"","database_ids":"","taxon_id":"NCBITaxon:457429","taxon_label":"Streptomyces
+    pristinaespiralis ATCC 25486","bgc_classes":"terpene","bgc_subclasses":"Unknown","genome_accession":"NZ_CM000950.1","locus_from":"7136895","locus_to":"7138013","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"PMID:27403888","reference_basis":"ENTRY"},"row_sha256":"0088f530aac389b17c19bee2239fb93a74c31130254d0ffaba82bcc2ef7c46e3"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2245-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[{"physical_line":39083,"last_physical_line":39083,"row":{"chebi_id":"CHEBI:138165","name":"(+)-(2S,3R,9R)-pristinol","definition":"A
+    bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol
+    carrying four additional methyl substiuents at positions 1, 4, 8 and 8.","stars":"3","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","smiles":"[H][C@@]12CC(C)(C)C[C@@H](O)C/C(C)=C\\1CC[C@H]2C"},"raw_tsv_record":"CHEBI:138165\t(+)-(2S,3R,9R)-pristinol\tA
+    bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol
+    carrying four additional methyl substiuents at positions 1, 4, 8 and 8.\t3\tPXKJCWZAMAFFIW-GLBIRDDMSA-N\t[H][C@@]12CC(C)(C)C[C@@H](O)C/C(C)=C\\1CC[C@H]2C\n","row_sha256":"028d7805cf22c3d4fb0df8194e85daedc93aeedfae12702c69aac31ec721dc91"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-source-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: Physical TSV lines 39083
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":39083,"last_physical_line":39083,"row":{"chebi_id":"CHEBI:138165","name":"(+)-(2S,3R,9R)-pristinol","definition":"A
+    bicyclic sesquiterpenoid that is 2,3,5,6,7,8,9,9a-octahydro-1H-cyclopenta[8]annulen-6-ol
+    carrying four additional methyl substiuents at positions 1, 4, 8 and 8.","stars":"3","standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","smiles":"[H][C@@]12CC(C)(C)C[C@@H](O)C/C(C)=C\\1CC[C@H]2C"},"row_sha256":"028d7805cf22c3d4fb0df8194e85daedc93aeedfae12702c69aac31ec721dc91"}]'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: bgc-2245-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[{"physical_line":7150,"last_physical_line":7150,"row":{"standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","organism_name":"Streptomyces
+    pristinaespiralis","taxon_id":"NCBITaxon:457429","organism_wikidata":"http://www.wikidata.org/entity/Q103812227","reference_doi":"10.1002/ANIE.201605425","structure_wikidata":"http://www.wikidata.org/entity/Q74417351"},"raw_tsv_record":"PXKJCWZAMAFFIW-GLBIRDDMSA-N\tStreptomyces
+    pristinaespiralis\tNCBITaxon:457429\thttp://www.wikidata.org/entity/Q103812227\t10.1002/ANIE.201605425\thttp://www.wikidata.org/entity/Q74417351\n","row_sha256":"1e05d441b8153297d639e551f4e484b51084f04e460f0de9451d5376d1d2efd9"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-source-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Physical TSV lines 7150
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":7150,"last_physical_line":7150,"row":{"standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","organism_name":"Streptomyces
+    pristinaespiralis","taxon_id":"NCBITaxon:457429","organism_wikidata":"http://www.wikidata.org/entity/Q103812227","reference_doi":"10.1002/ANIE.201605425","structure_wikidata":"http://www.wikidata.org/entity/Q74417351"},"row_sha256":"1e05d441b8153297d639e551f4e484b51084f04e460f0de9451d5376d1d2efd9"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2245-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[{"physical_line":1947,"last_physical_line":1947,"row":{"standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","pathway_results":"Terpenoids","superclass_results":"Sesquiterpenoids","class_results":"Tremulane
+    sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"},"raw_tsv_record":"PXKJCWZAMAFFIW-GLBIRDDMSA-N\tC[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C\tTerpenoids\tSesquiterpenoids\tTremulane
+    sesquiterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row_sha256":"ce44357ab55e745bfddf4de198135e075177760d230b930534285fa668a4fc97"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-source-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Physical TSV lines 1947
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":1947,"last_physical_line":1947,"row":{"standard_inchi_key":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","smiles":"C[C@@H]1CC/C/2=C(/C[C@@H](CC(C[C@@H]12)(C)C)O)\\C","pathway_results":"Terpenoids","superclass_results":"Sesquiterpenoids","class_results":"Tremulane
+    sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"},"row_sha256":"ce44357ab55e745bfddf4de198135e075177760d230b930534285fa668a4fc97"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2245-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact complete standard_inchi_key
+    equality","query":"PXKJCWZAMAFFIW-GLBIRDDMSA-N","matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact retained query frame: {"predicate":"exact chebi_id from exact full-key
+    structure rows","query":["CHEBI:138165"],"matches":[{"physical_line":15869,"last_physical_line":15869,"row":{"chebi_id":"CHEBI:138165","species_text":"Streptomyces
+    pristinaespiralis","species_accession":"38300","component_text":"","strain_text":"","source_accession":"27403888","comments":""},"raw_tsv_record":"CHEBI:138165\tStreptomyces
+    pristinaespiralis\t38300\t\t\t27403888\t\n","row_sha256":"c8943fb4cb0e9a226592c5fa00386e3738c7358e368a11aa029823a6869eca1c"}]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-source-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: Physical TSV lines 15869
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained physical source payloads, with each original line and
+    full CSV fields: [{"physical_line":15869,"last_physical_line":15869,"row":{"chebi_id":"CHEBI:138165","species_text":"Streptomyces
+    pristinaespiralis","species_accession":"38300","component_text":"","strain_text":"","source_accession":"27403888","comments":""},"row_sha256":"c8943fb4cb0e9a226592c5fa00386e3738c7358e368a11aa029823a6869eca1c"}]'
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: bgc-2245-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/6; /cached_taxonomy/whole_stanzas/19
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained cached stanza scope: [{"id":"NCBITaxon:38300","physical_line":16648,"complete_stanza":"[Term]\nid:
+    NCBITaxon:38300\nname: Streptomyces pristinaespiralis\n\n"},{"id":"NCBITaxon:457429","physical_line":95403,"complete_stanza":"[Term]\nid:
+    NCBITaxon:457429\nname: Streptomyces pristinaespiralis ATCC 25486\nsynonym: \"Streptomyces
+    pristinaespiralis str. ATCC 25486\" EXACT []\nsynonym: \"Streptomyces pristinaespiralis
+    strain ATCC 25486\" EXACT []\n\n"}]. Cached names/synonyms do not constitute a
+    fresh taxonomy request.'
+  snapshot_sha256: b814a5b49ac654cfd225277d7051ab2f340aeb58b4813f4d490ee23cb81ba5d7
+- evidence_id: bgc-2245-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225-tentative/bgc-prep/bgc-conditional225-target-input-plan-001.json
+  locator: /records/4/source_scope_inventory/source_taxa; /records/4/source_scope_inventory/forward_taxon_merge_matches;
+    /records/4/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Exact selected-record source taxa and retained forward/nonorganism route
+    sets: {"source_taxa":["NCBITaxon:38300","NCBITaxon:457429"],"forward_taxon_merge_matches":[],"nonorganism_matches":[]}'
+  snapshot_sha256: ea79b0d33c11111a64d6c66fb00ee86bd6a5db54bc5c2277f8e767926e012e9f
+- evidence_id: bgc-2245-review-skill
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Evidence Rules; Workflow; Output
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Maintained local review recipe requires claim-specific source support and
+    qualified completion; external retrieval is overridden by the absolute no-request
+    instruction.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: bgc-2245-review-profile
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Complete maintained review profile
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Maintained dimensions, producer/occurrence and source-versus-computed scope,
+    one-record review and partial completion requirements.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2245-structure-schema
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 376–432
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: ChemicalStructure stereo flag description and ComputedClassification named/versioned
+    output semantics; is_glycoside is a computed boolean, not a source assertion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2245-stereo-method
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 145–175
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Maintained MIBiG extractor derives standardized identifiers and the stereo_complete
+    flag from FindMolChiralCenters including unassigned centres; no experiment or
+    complete geometric-stereo authentication is performed by this method.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2245-classification-seeder
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 980–1030
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Seeder preserves the selected structure, exact ChEBI definition and named/versioned
+    classifier results, including the literal glycoside prediction.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2245-reader-DATA
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-maintained-reader-DATA-001.json
+  locator: /status; /raw_owner; /resolved_view; /expected_view; /returned_view_equals_expected_complete_owner;
+    /counts; /view_mismatches; /denials; /unexpected_denials; /errors; /external_requests;
+    /limitations
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Original maintained reader preserves the complete captured owner and exact
+    expected/resolved view: two inline graphs, seven nodes, five edges, one pathway
+    step and six history events; no components or targets. One known socket-construction
+    capability probe was denied before action, with no unexpected denial or external
+    request. Its declared preservation/topology scope is separate from biological
+    or sequence verification.'
+  snapshot_sha256: b9c838280b64390212afa99ec399f691ef5a541cb4efdcda206db091ffbd73b5
+- evidence_id: bgc-2245-reader-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-reader-execution-001.json
+  locator: /exit_code; /DATA; /stdout; /stderr; /retries; /external_requests
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Original maintained-reader execution exited zero with empty stderr, zero
+    retries and no external request; exact DATA/stdout pins are retained.
+  snapshot_sha256: 8311fedc418f3de831c9ada5f731208f69debc1f0af00d8ef65cb1e3a1074c39
+- evidence_id: bgc-2245-reader-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/root-pristinol-reader-acceptance-001.json
+  locator: /status; /DATA; /execution; /verification; /review_check_contract; /scope;
+    /limitations
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: ROOT accepts the original complete-owner reader result and its exact check
+    contract. Acceptance preserves the historical scientific assertions without upgrading
+    their experimental or sequence authority.
+  snapshot_sha256: 80ab499c597165d6135e460925a4f5d6c24f43e67e287ca970e2a5a4eea50d91
+- evidence_id: bgc-2245-graph-0
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/0
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained graph, including every node, edge, evidence placement,
+    source snippet and limitation: {"graph_id":"pristinol-synthase-biosynthesis","scope":"BIOSYNTHESIS","description":"Streptomyces
+    pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate
+    to form (+)-(2S,3R,9R)-pristinol.","nodes":[{"node_id":"bgc0001746","label":"BGC0001746
+    pristinol biosynthetic gene cluster","node_type":"GENE_CLUSTER","identifier":"mibig:BGC0001746","grounding_status":"GROUNDED"},{"node_id":"farnesyl_diphosphate","label":"(2E,6E)-farnesyl
+    diphosphate","node_type":"PRECURSOR","identifier":"CHEBI:175763","grounding_status":"GROUNDED"},{"node_id":"pristinol_synthase","label":"Pristinol
+    synthase","node_type":"ENZYME","identifier":"UniProtKB:B5H7H3","grounding_status":"GROUNDED"},{"node_id":"pristinol","label":"(+)-(2S,3R,9R)-pristinol","node_type":"COMPOUND","identifier":"CHEBI:138165","grounding_status":"GROUNDED"}],"edges":[{"subject":"bgc0001746","predicate":"encodes","object":"pristinol_synthase","notes":"BGC0001746
+    contains SSDG_RS31275, the WP_005320742.1-encoded pristinol synthase.","evidence":[{"reference":"https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"MIBiG
+    BGC0001746.3 maps the Streptomyces pristinaespiralis ATCC 25486 pristinol core
+    CDS SSDG_RS31275 to RefSeq protein WP_005320742.1."},{"reference":"https://www.uniprot.org/uniprotkb/B5H7H3","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"Reviewed
+    UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol
+    synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates
+    RHEA:54372 from PMID:27403888."}]},{"subject":"farnesyl_diphosphate","predicate":"is
+    cyclized by","object":"pristinol_synthase","notes":"Pristinol synthase abstracts
+    diphosphate from FPP and catalyzes the rearranged sesquiterpenol-forming cyclization.","evidence":[{"reference":"DOI:10.1002/anie.201605425","evidence_type":"PRIMARY_EXPERIMENT","snippet":"synthase
+    for (+)-(2S,3S,9R)-pristinol","notes":"Klapschinski et al. characterized the Streptomyces
+    pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize
+    the enzymatic product to (+)-(2S,3R,9R)-pristinol."},{"reference":"https://www.uniprot.org/uniprotkb/B5H7H3","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"Reviewed
+    UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol
+    synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates
+    RHEA:54372 from PMID:27403888."},{"reference":"https://www.rhea-db.org/rhea/54372","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"RHEA:54372
+    is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus
+    diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3
+    in Swiss-Prot."}]},{"subject":"pristinol_synthase","predicate":"produces","object":"pristinol","notes":"Pristinol
+    synthase produces (+)-(2S,3R,9R)-pristinol via the RHEA:54372 reaction.","evidence":[{"reference":"DOI:10.1002/anie.201605425","evidence_type":"PRIMARY_EXPERIMENT","snippet":"synthase
+    for (+)-(2S,3S,9R)-pristinol","notes":"Klapschinski et al. characterized the Streptomyces
+    pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize
+    the enzymatic product to (+)-(2S,3R,9R)-pristinol."},{"reference":"https://www.uniprot.org/uniprotkb/B5H7H3","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"Reviewed
+    UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol
+    synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates
+    RHEA:54372 from PMID:27403888."},{"reference":"https://www.rhea-db.org/rhea/54372","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"RHEA:54372
+    is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus
+    diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3
+    in Swiss-Prot."}]}]}'
+  snapshot_sha256: b9c838280b64390212afa99ec399f691ef5a541cb4efdcda206db091ffbd73b5
+- evidence_id: bgc-2245-graph-1
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/1
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained graph, including every node, edge, evidence placement,
+    source snippet and limitation: {"graph_id":"pristinol-tatc6-database-side-product","scope":"BIOSYNTHESIS","description":"Database-reported
+    TaTC6 formation of (+)-(2S,3R,9R)-pristinol as a side product. A0A5S9I252 denotes
+    the sequence-verified native Trichoderma atroviride FKI-3849 reference, not a
+    verified full assayed construct. Functional and stereochemical product attribution
+    remain database-level. No native producer, BGC membership, physical complex or
+    measured Mg-binding claim is added.","nodes":[{"node_id":"tatc6_reference","label":"TaTC6
+    native FKI-3849 reference","node_type":"ENZYME","identifier":"UniProtKB:A0A5S9I252","grounding_status":"GROUNDED"},{"node_id":"fpp_conversion","label":"Database-reported
+    TaTC6 FPP conversion","node_type":"PROCESS","grounding_status":"UNGROUNDED"},{"node_id":"product","label":"(+)-(2S,3R,9R)-pristinol","node_type":"COMPOUND","identifier":"CHEBI:138165","grounding_status":"GROUNDED"}],"edges":[{"subject":"tatc6_reference","predicate":"is_database_reported_catalyst_of","object":"fpp_conversion","notes":"The
+    native reference mapping does not establish historical assay-stock or full construct/tag
+    identity. UniProt separately reports a koraiol disruption phenotype; its applicability
+    is unresolved and no phenotype edge is adopted. Its homodimer and Mg-binding assertions
+    are homology-based and are not adopted here.","evidence":[{"reference":"https://www.uniprot.org/uniprotkb/A0A5S9I252","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-10-09","notes":"Reviewed
+    entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly names CHEBI:138165
+    as product of FPP plus water; RHEA:54373 is annotated left-to-right. The function
+    narrative calls trichobrasilenol the main product and pristinol a side product.
+    These are adopted UniProt assertions, not independently inspected experiments.
+    PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the
+    primary paper and supplementary information were inaccessible and were not inspected."},{"reference":"https://www.ncbi.nlm.nih.gov/protein/BBK61014.1","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-10-09","notes":"Complete
+    386-aa native Trichoderma atroviride FKI-3849 reference, taxon63577, gene tatc6.
+    GenPept annotates trichobrasilenol synthesis from FPP; it does not independently
+    establish pristinol formation. Its in-vitro-assay code is a deposit annotation,
+    not a newly inspected assay."},{"reference":"https://www.ncbi.nlm.nih.gov/nuccore/LC484924.1","evidence_type":"CURATOR_INFERENCE","retrieved_on":"2026-10-09","notes":"Independent
+    translation of the complete six-exon CDS join(1..242,308..434,497..515,569..1035,1100..1326,1385..1463),
+    codon_start1/default table1: 1161 nt including stop equals 386-aa annotated translation,
+    GenPept BBK61014.1 and UniProt A0A5S9I252. Independent GenPept coded_by accession,
+    coordinates and orientation agree; both deposits name FKI-3849/taxon63577. This
+    is native reference correspondence, not experimental construct equivalence."}]},{"subject":"fpp_conversion","predicate":"has_database_reported_product","object":"product","notes":"The
+    explicit UniProt reaction product CURIE CHEBI:138165 matches this owner, whose
+    unchanged full InChIKey is PXKJCWZAMAFFIW-GLBIRDDMSA-N. This is database product
+    mapping, not an independent spectrum or primary-paper stereochemical analysis.
+    No exclusive specificity, product percentage or native production is asserted.
+    This fungal side-product graph is separate from the existing Streptomyces B5H7H3/BGC0001746
+    mechanism; its historical naming/stereochemistry notes are preserved without a
+    new adjudication.","evidence":[{"reference":"https://www.uniprot.org/uniprotkb/A0A5S9I252","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-10-09","notes":"Reviewed
+    entry 21/sequence 1 assigns RHEA:54372 to tatc6 and explicitly names CHEBI:138165
+    as product of FPP plus water; RHEA:54373 is annotated left-to-right. The function
+    narrative calls trichobrasilenol the main product and pristinol a side product.
+    These are adopted UniProt assertions, not independently inspected experiments.
+    PMID31418991 / DOI10.1002/anie.201907964 is the database-cited bibliography; the
+    primary paper and supplementary information were inaccessible and were not inspected.","snippet":"(2E,6E)-farnesyl
+    diphosphate + H2O = (+)-(2S,3R,9R)-pristinol + diphosphate"}]}]}'
+  snapshot_sha256: b9c838280b64390212afa99ec399f691ef5a541cb4efdcda206db091ffbd73b5
+- evidence_id: bgc-2245-pathway
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch225/native-current225-2s-3r-9r-pristinol-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: 'Complete retained pathway step and all four evidence placements: [{"step_number":1,"enzyme_id":"UniProtKB:B5H7H3","enzyme_label":"Pristinol
+    synthase","reaction_id":"RHEA:54372","substrate":"CHEBI:175763","product":"CHEBI:138165","notes":"Streptomyces
+    pristinaespiralis ATCC 25486 pristinol synthase cyclizes (2E,6E)-farnesyl diphosphate
+    with water to (+)-(2S,3R,9R)-pristinol and diphosphate.","evidence":[{"reference":"DOI:10.1002/anie.201605425","evidence_type":"PRIMARY_EXPERIMENT","snippet":"synthase
+    for (+)-(2S,3S,9R)-pristinol","notes":"Klapschinski et al. characterized the Streptomyces
+    pristinaespiralis ATCC 25486 terpene cyclase for pristinol; Rhea and IUBMB normalize
+    the enzymatic product to (+)-(2S,3R,9R)-pristinol."},{"reference":"https://mibig.secondarymetabolites.org/repository/BGC0001746.3/BGC0001746.gbk","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"MIBiG
+    BGC0001746.3 maps the Streptomyces pristinaespiralis ATCC 25486 pristinol core
+    CDS SSDG_RS31275 to RefSeq protein WP_005320742.1."},{"reference":"https://www.uniprot.org/uniprotkb/B5H7H3","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"Reviewed
+    UniProtKB:B5H7H3 is the 372 aa Streptomyces pristinaespiralis ATCC 25486 pristinol
+    synthase, cross-references RefSeq WP_005320742.1 on NZ_CM000950.1, and annotates
+    RHEA:54372 from PMID:27403888."},{"reference":"https://www.rhea-db.org/rhea/54372","evidence_type":"DATABASE_ASSERTION","retrieved_on":"2026-09-30","notes":"RHEA:54372
+    is the (2E,6E)-farnesyl diphosphate plus H2O to (+)-(2S,3R,9R)-pristinol plus
+    diphosphate reaction; RHEA:54373 is the left-to-right direction mapped to UniProtKB:B5H7H3
+    in Swiss-Prot."}]}]'
+  snapshot_sha256: b9c838280b64390212afa99ec399f691ef5a541cb4efdcda206db091ffbd73b5
+- evidence_id: bgc-2245-locus-override
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/curation/mibig_locus_evidence_overrides.tsv
+  locator: Physical TSV line 9
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: "Exact implemented Pristinol override row: naturalproductmech:mibig-9e6ff12f48\t\
+    MIBIG\tBGC0001746\tpristinol\tEnzymatic assays\tcodex\t2026-09-30\tPMID:27403888\
+    \ characterizes Streptomyces pristinaespiralis ATCC 25486 pristinol synthase converting\
+    \ farnesyl diphosphate to pristinol; the evidence demonstrates the BGC0001746\
+    \ locus without upgrading the native producer claim.\t\t\t\t\t\t\t\t\tREPLACE.\
+    \ It selects the minted MIBiG compound concept and replaces the locus evidence\
+    \ method only."
+  snapshot_sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+- evidence_id: bgc-2245-locus-method
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 473–569; lines 821–836
+  accessed_at: '2026-11-03T15:32:35.735953Z'
+  support: supports
+  summary: Maintained method reads the exact minted-concept/BGC override, replaces
+    locus methods and derives the cluster evidence basis; producer evidence remains
+    a separate field.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:08:40.038173Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: b1de93f00ae41f97306f80a1bc1ad1e662083a600933708905899bcf66fab1b9
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:09:06.064639Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: c73c0e1fb5f397d9d622cc2237a0d705daa1732bee63b4df6b1b16ea59e9970d
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:09:26.342067Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:10:01.232424Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-225/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-225/native-current225-five-gates-execution-001.json
+  accessed_at: '2026-11-03T15:10:12.957939Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 77d40d08e42713a235950bd02ad7525c549543775e160f34f23626b8ef01a308
+assessments:
+- assessment_id: bgc-2245-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: CHEBI:138165 is the single exact retained match for PXKJCWZAMAFFIW-GLBIRDDMSA-N,
+    carrying the specific (+)-(2S,3R,9R)-pristinol name and bicyclic sesquiterpenoid
+    definition. MIBiG BGC0001746 compound index 1 uses the shorter pristinol synonym.
+    The historical graph quotation names a 3S product while its notes describe database
+    normalization to the 3R owner. That source-history distinction is retained, not
+    silently resolved through key agreement or a fresh stereochemical reassignment.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-grounding-owner
+  - bgc-2245-chemistry
+  - bgc-2245-query-chebi_structures
+  - bgc-2245-source-chebi_structures
+  - bgc-2245-source-mibig_compounds
+  - bgc-2245-graph-0
+  - bgc-2245-pathway
+  dimensions:
+  - name: standard_inchi_key
+    value: PXKJCWZAMAFFIW-GLBIRDDMSA-N; exact CHEBI:138165 retained match.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2245-grounding-owner
+    - bgc-2245-chemistry
+    - bgc-2245-query-chebi_structures
+    - bgc-2245-source-chebi_structures
+    - bgc-2245-source-mibig_compounds
+    - bgc-2245-graph-0
+    - bgc-2245-pathway
+  - name: grounding_scope
+    value: Specific ChEBI owner and shorter MIBiG synonym; historical 3S/3R naming
+      notes remain attributed.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2245-grounding-owner
+    - bgc-2245-chemistry
+    - bgc-2245-query-chebi_structures
+    - bgc-2245-source-chebi_structures
+    - bgc-2245-source-mibig_compounds
+    - bgc-2245-graph-0
+    - bgc-2245-pathway
+- assessment_id: bgc-2245-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both saved forms give neutral C15H26O, 16 atoms and 17 bonds, with all
+    ten comparisons true and complete stored correspondence. The carbon skeleton has
+    five- and eight-membered rings, one alcohol, three specified tetrahedral centres
+    and a specified Z ring double bond. SMILES C1/C7/C11 have R/R/S assignments and
+    map to InChI C9/C11/C13; these are diagnostic indices, not the name's locant numbering.
+    Potential-stereo Cis/Trans descriptors change with atom ordering while the mapped
+    bond remains STEREOZ. Optical sign and natural absolute configuration are not
+    established by this calculation.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-grounding-owner
+  - bgc-2245-chemistry
+  - bgc-2245-topology
+  - bgc-2245-diagnostic-acceptance
+  - bgc-2245-structure-schema
+  - bgc-2245-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Three specified tetrahedral centres and one mapped Z ring alkene; optical
+      sign is not computationally verified.
+    definition: Saved full stereo/atom/bond interpretation, not an experimental assignment
+      or new parse.
+    evidence_ids:
+    - bgc-2245-grounding-owner
+    - bgc-2245-chemistry
+    - bgc-2245-topology
+    - bgc-2245-diagnostic-acceptance
+    - bgc-2245-structure-schema
+    - bgc-2245-stereo-method
+  - name: representation_correspondence
+    value: All ten flags true and complete stored map; ordering-dependent descriptors
+      do not override mapped Z geometry.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2245-grounding-owner
+    - bgc-2245-chemistry
+    - bgc-2245-topology
+    - bgc-2245-diagnostic-acceptance
+    - bgc-2245-structure-schema
+    - bgc-2245-stereo-method
+- assessment_id: bgc-2245-origin
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: The producer remains Streptomyces pristinaespiralis ATCC 25486, taxon 457429,
+    at SOURCE_ASSERTION grade. Raw MIBiG BGC0001746 version 3 is active, questionable
+    and of unknown completeness, with CLUSTER_UNSTATED linkage. The implemented curation
+    override at physical line 9 explicitly replaces the locus method with Enzymatic
+    assays for source concept naturalproductmech:mibig-9e6ff12f48; the seeder therefore
+    writes CLUSTER_DEMONSTRATED without changing the producer grade. The locus NZ_CM000950.1:7136895–7138013
+    and distinct species-level ChEBI occurrence 38300 versus strain-level LOTUS occurrence
+    457429 remain bounded.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-origin-owner
+  - bgc-2245-occurrence-owner
+  - bgc-2245-source-mibig_compounds
+  - bgc-2245-source-lotus_occurrences
+  - bgc-2245-source-chebi_origins
+  - bgc-2245-cached-taxonomy
+  - bgc-2245-source-routes
+  - bgc-2245-review-profile
+  - bgc-2245-locus-override
+  - bgc-2245-locus-method
+  - bgc-2245-graph-0
+  dimensions:
+  - name: taxon_scope
+    value: Producer strain 457429 is separate from species occurrence 38300; LOTUS
+      uses the producer strain ID.
+    definition: Source taxa and cache labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2245-origin-owner
+    - bgc-2245-occurrence-owner
+    - bgc-2245-source-mibig_compounds
+    - bgc-2245-source-lotus_occurrences
+    - bgc-2245-source-chebi_origins
+    - bgc-2245-cached-taxonomy
+    - bgc-2245-source-routes
+    - bgc-2245-review-profile
+    - bgc-2245-locus-override
+    - bgc-2245-locus-method
+    - bgc-2245-graph-0
+  - name: producer_evidence
+    value: SOURCE_ASSERTION remains unchanged despite a stronger locus method.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2245-origin-owner
+    - bgc-2245-occurrence-owner
+    - bgc-2245-source-mibig_compounds
+    - bgc-2245-source-lotus_occurrences
+    - bgc-2245-source-chebi_origins
+    - bgc-2245-cached-taxonomy
+    - bgc-2245-source-routes
+    - bgc-2245-review-profile
+    - bgc-2245-locus-override
+    - bgc-2245-locus-method
+    - bgc-2245-graph-0
+  - name: locus_evidence
+    value: BGC0001746 version 3; implemented Enzymatic assays override yields CLUSTER_DEMONSTRATED
+      only for the locus.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2245-origin-owner
+    - bgc-2245-occurrence-owner
+    - bgc-2245-source-mibig_compounds
+    - bgc-2245-source-lotus_occurrences
+    - bgc-2245-source-chebi_origins
+    - bgc-2245-cached-taxonomy
+    - bgc-2245-source-routes
+    - bgc-2245-review-profile
+    - bgc-2245-locus-override
+    - bgc-2245-locus-method
+    - bgc-2245-graph-0
+- assessment_id: bgc-2245-citations
+  area: evidence
+  topic: Citations
+  outcome: unknown
+  summary: PMID:27403888 is retained as the MIBiG ENTRY and ChEBI-origin citation;
+    the LOTUS DOI and historical Streptomyces graph cite the corresponding named chemistry
+    literature without a new independence claim. Two graphs and one pathway preserve
+    twelve graph-reference placements and four pathway placements, not sixteen independent
+    experiments. Their PRIMARY_EXPERIMENT labels and quoted naming history are historical
+    annotations, while UniProt/MIBiG/Rhea and TaTC6 product assertions remain database-level.
+    Neither primary papers, source sequences nor current external identifiers were
+    refreshed.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-grounding-owner
+  - bgc-2245-origin-owner
+  - bgc-2245-occurrence-owner
+  - bgc-2245-assay-owner
+  - bgc-2245-source-mibig_compounds
+  - bgc-2245-source-lotus_occurrences
+  - bgc-2245-source-chebi_origins
+  - bgc-2245-source-notes
+  - bgc-2245-graph-0
+  - bgc-2245-graph-1
+  - bgc-2245-pathway
+  - bgc-2245-reader-DATA
+  dimensions:
+  - name: citation_scope
+    value: ENTRY/occurrence citations and historical primary/database graph references
+      retain distinct roles; no fresh verification.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2245-grounding-owner
+    - bgc-2245-origin-owner
+    - bgc-2245-occurrence-owner
+    - bgc-2245-assay-owner
+    - bgc-2245-source-mibig_compounds
+    - bgc-2245-source-lotus_occurrences
+    - bgc-2245-source-chebi_origins
+    - bgc-2245-source-notes
+    - bgc-2245-graph-0
+    - bgc-2245-graph-1
+    - bgc-2245-pathway
+    - bgc-2245-reader-DATA
+- assessment_id: bgc-2245-bioactivity
+  area: evidence
+  topic: Bioactivity
+  outcome: supported
+  summary: Two occurrence assertions are written, one species-level ChEBI origin and
+    one strain-ID LOTUS occurrence. There are no written assay observations, bioactivity
+    summary or molecular targets, and exact selected PubChem, BindingDB and sibling-corpus
+    queries are empty. The two accepted BIOSYNTHESIS graphs and one pathway step concern
+    synthesis/product attribution; they do not establish pharmacological activity.
+    The TaTC6 side-product annotation adds no native fungal producer claim, product
+    percentage or exclusive specificity.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-assay-owner
+  - bgc-2245-occurrence-owner
+  - bgc-2245-query-lotus_occurrences
+  - bgc-2245-source-lotus_occurrences
+  - bgc-2245-query-chebi_origins
+  - bgc-2245-source-chebi_origins
+  - bgc-2245-query-cyanometdb_occurrences
+  - bgc-2245-query-pubchem_bioassay
+  - bgc-2245-query-bindingdb_targets
+  - bgc-2245-query-antibioticmech_inchikeys
+  - bgc-2245-source-plan
+  - bgc-2245-source-routes
+  - bgc-2245-cached-taxonomy
+  - bgc-2245-graph-0
+  - bgc-2245-graph-1
+  - bgc-2245-pathway
+  - bgc-2245-reader-DATA
+  dimensions:
+  - name: occurrence_scope
+    value: Two written species/strain occurrence assertions; no independent-study
+      or fungal-producer inference.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2245-assay-owner
+    - bgc-2245-occurrence-owner
+    - bgc-2245-query-lotus_occurrences
+    - bgc-2245-source-lotus_occurrences
+    - bgc-2245-query-chebi_origins
+    - bgc-2245-source-chebi_origins
+    - bgc-2245-query-cyanometdb_occurrences
+    - bgc-2245-query-pubchem_bioassay
+    - bgc-2245-query-bindingdb_targets
+    - bgc-2245-query-antibioticmech_inchikeys
+    - bgc-2245-source-plan
+    - bgc-2245-source-routes
+    - bgc-2245-cached-taxonomy
+    - bgc-2245-graph-0
+    - bgc-2245-graph-1
+    - bgc-2245-pathway
+    - bgc-2245-reader-DATA
+  - name: assay_target_scope
+    value: No activity observations or targets; two biosynthetic graphs/one step do
+      not imply pharmacology.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2245-assay-owner
+    - bgc-2245-occurrence-owner
+    - bgc-2245-query-lotus_occurrences
+    - bgc-2245-source-lotus_occurrences
+    - bgc-2245-query-chebi_origins
+    - bgc-2245-source-chebi_origins
+    - bgc-2245-query-cyanometdb_occurrences
+    - bgc-2245-query-pubchem_bioassay
+    - bgc-2245-query-bindingdb_targets
+    - bgc-2245-query-antibioticmech_inchikeys
+    - bgc-2245-source-plan
+    - bgc-2245-source-routes
+    - bgc-2245-cached-taxonomy
+    - bgc-2245-graph-0
+    - bgc-2245-graph-1
+    - bgc-2245-pathway
+    - bgc-2245-reader-DATA
+- assessment_id: bgc-2245-classification
+  area: consistency
+  topic: Classification
+  outcome: unknown
+  summary: NPClassifier's named/versioned Terpenoids, Sesquiterpenoids and Tremulane
+    sesquiterpenoids output and false glycoside prediction are retained separately
+    from the source TERPENE locus class. The complete paired topology supports a bicyclic
+    sesquiterpenol with one ring alkene and no sugar linkage. Neither model class
+    nor successful maintained reading proves a complete biosynthetic pathway or validates
+    the historical enzyme/product stereochemical assignment.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-classification-owner
+  - bgc-2245-source-npclassifier
+  - bgc-2245-source-mibig_compounds
+  - bgc-2245-chemistry
+  - bgc-2245-topology
+  - bgc-2245-structure-schema
+  - bgc-2245-classification-seeder
+  - bgc-2245-review-profile
+  - bgc-2245-graph-0
+  - bgc-2245-graph-1
+  - bgc-2245-pathway
+  dimensions:
+  - name: classification_applicability
+    value: Versioned sesquiterpenoid labels remain computed; full saved topology is
+      a bicyclic unsaturated alcohol.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2245-classification-owner
+    - bgc-2245-source-npclassifier
+    - bgc-2245-source-mibig_compounds
+    - bgc-2245-chemistry
+    - bgc-2245-topology
+    - bgc-2245-structure-schema
+    - bgc-2245-classification-seeder
+    - bgc-2245-review-profile
+    - bgc-2245-graph-0
+    - bgc-2245-graph-1
+    - bgc-2245-pathway
+- assessment_id: bgc-2245-completion
+  area: completeness
+  topic: Completion
+  outcome: unknown
+  summary: The complete owner/history, accepted source context, actual intake and
+    both full saved molecular tables were reviewed. The maintained reader's accepted
+    complete owner and mechanism result are separately assessed. No supported local
+    curation defect is established in this bounded scope. Five local gates passed;
+    full QC, complete OAK and fresh external primary-source/taxonomy/accession verification
+    were unavailable. The record remains scientifically partial, and its native curation
+    status/history were not changed.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-owner
+  - bgc-2245-capture
+  - bgc-2245-intake
+  - bgc-2245-intake-acceptance
+  - bgc-2245-source-notes
+  - bgc-2245-native-acceptance
+  - bgc-2245-diagnostic-execution
+  - bgc-2245-diagnostic-stderr
+  - bgc-2245-diagnostic-acceptance
+  - bgc-2245-source-plan
+  - bgc-2245-plan-acceptance
+  - bgc-2245-review-skill
+  - bgc-2245-review-profile
+  - bgc-2245-reader-acceptance
+  dimensions:
+  - name: review_completion
+    value: Partial; qualified local result with external verification, full QC and
+      complete OAK unavailable.
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2245-owner
+    - bgc-2245-capture
+    - bgc-2245-intake
+    - bgc-2245-intake-acceptance
+    - bgc-2245-source-notes
+    - bgc-2245-native-acceptance
+    - bgc-2245-diagnostic-execution
+    - bgc-2245-diagnostic-stderr
+    - bgc-2245-diagnostic-acceptance
+    - bgc-2245-source-plan
+    - bgc-2245-plan-acceptance
+    - bgc-2245-review-skill
+    - bgc-2245-review-profile
+    - bgc-2245-reader-acceptance
+- assessment_id: bgc-2245-mechanism
+  area: graph
+  topic: Complete maintained biosynthetic scope
+  outcome: unknown
+  summary: The accepted maintained result preserves the entire captured owner, two
+    inline BIOSYNTHESIS graphs (seven nodes and five edges), one pathway step and
+    all six history events, with no component references or molecular targets. The
+    Streptomyces graph/pathway connect BGC0001746, B5H7H3 and FPP to the exact owner
+    through the historical RHEA:54372 attribution. The TaTC6 graph separately records
+    a database-reported side product; its ungrounded conversion process remains ungrounded.
+    Reader success verifies topology/preservation in its declared scope, not primary
+    experimental support, complete pathway coverage or the historical product naming
+    normalization.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-owner
+  - bgc-2245-origin-owner
+  - bgc-2245-graph-0
+  - bgc-2245-graph-1
+  - bgc-2245-pathway
+  - bgc-2245-reader-DATA
+  - bgc-2245-reader-execution
+  - bgc-2245-reader-acceptance
+  - bgc-2245-source-mibig_compounds
+  - bgc-2245-locus-override
+  - bgc-2245-locus-method
+  - bgc-2245-review-profile
+  dimensions: []
+- assessment_id: bgc-2245-protein-scope
+  area: grounding
+  topic: Organism-specific protein references and limits
+  outcome: unknown
+  summary: The Streptomyces annotation retains UniProtKB:B5H7H3 as a historical 372-aa
+    native reference associated with WP_005320742.1/SSDG_RS31275 and the stated locus.
+    The separate TaTC6 annotation retains A0A5S9I252/BBK61014.1 as a historical 386-aa
+    Trichoderma atroviride FKI-3849 reference and records six-exon LC484924.1 translation
+    correspondence as prior curator inference. It explicitly does not establish the
+    full assayed construct or tag, transfer a koraiol phenotype, demonstrate homodimer
+    stoichiometry or Mg binding, or add native producer/BGC membership. No original
+    sequence, construct or paper was freshly inspected; these precise limitations
+    remain part of the accepted owner.
+  target_ids:
+  - CHEBI:138165
+  evidence_ids:
+  - bgc-2245-owner
+  - bgc-2245-origin-owner
+  - bgc-2245-graph-0
+  - bgc-2245-graph-1
+  - bgc-2245-pathway
+  - bgc-2245-reader-DATA
+  - bgc-2245-reader-execution
+  - bgc-2245-reader-acceptance
+  - bgc-2245-source-mibig_compounds
+  - bgc-2245-locus-override
+  - bgc-2245-locus-method
+  - bgc-2245-review-profile
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- External identifiers, taxonomy, accessions and primary publications were not refreshed
+  under the absolute no-request instruction; historical and database assertions remain
+  attributed.
+- Full QC and complete OAK authority coverage were unavailable. Local gates and parsing
+  establish their declared mechanical scope only.
+- Negative source joins apply only to exact retained predicates and snapshots. Shared
+  loci, citations and companions do not transfer compound-specific claims.
+- No additional molecular or YAML parse occurred during fragment authoring. Source
+  records, raw snapshots, native curation status and histories were not edited.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete source payloads and personal/delegated direct-context whole-reading attribution
+  are retained in the pinned source notes. Assigned actual intakes, complete selected
+  owners/history and every paired saved molecular table were personally read.
+- Two original batch-level undefined-stereo warnings remain globally unassigned. True
+  comparison flags and a complete correspondence do not override full_graph_identity_established:false.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-225
+```
