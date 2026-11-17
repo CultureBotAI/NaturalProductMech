@@ -1,0 +1,1323 @@
+# 8-hydroxy-8,9-dihydrolactimidomycin: natural stereoisomer and source precision
+
+- Review: 20261021T102604Z-8-hydroxy-8-9-dihydrolactidomycin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T10:14:29.661936Z
+- Finished UTC: 2026-10-21T10:26:04.949603Z
+- Reviewer: Codex (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact natural C8S congener matches the primary drawings and all current structure cross-references. Native knockout and rescue results support the producer and demonstrated locus grades, and the occurrence is supported. Two minor corrections remain: retain the tested ATCC 53964 strain and correct the source-derived lactidomycin spelling through an effective maintained name transform. No scientific data was changed.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 34, batch 004, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 84 of 3116 current records had campaign coverage and 3032 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-ac7717914d | data/natural_products/alkaloids/8-hydroxy-8-9-dihydrolactidomycin.yaml | generated | 8-hydroxy-8,9-dihydrolactidomycin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-ac7717914d | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-ac7717914d | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-ac7717914d | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-ac7717914d | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-ac7717914d | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-ac7717914d | The full documented just qc recipe passed against the new main revision. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Full molecular equivalence and authority eligibility | passed | True | naturalproductmech:mibig-ac7717914d | Five independent input representations match in full Standard and fixed-H identity with five assigned centres and three E alkenes; current two-star ChEBI remains ineligible for grounding. |
+| Current exact identifier and source mappings | passed | True | naturalproductmech:mibig-ac7717914d | The stored legacy NPAtlas accession resolves, exact MIBiG compound3 and species metadata match, and the exact LOTUS Wikidata structure/taxon mappings agree. |
+| Applicable producer expression dataset | not_applicable | False | naturalproductmech:mibig-ac7717914d | No matching S. amphibiosporus dataset appears in the complete retained catalogue. |
+| Exact five-centre natural 8S congener | passed | True | naturalproductmech:mibig-ac7717914d | Original 2007/2014 SI drawings, the 2014 explicit stereochemical comparison and independent drawing interpretation agree with the owner full key. |
+| Exact natural occurrence and native locus support | passed | True | naturalproductmech:mibig-ac7717914d | Natural compound 4/15 is isolated from wild-type ATCC 53964 and specifically lost/restored by native genetic intervention, with source strain scope retained. |
+| Optional original 2007 full-body reinspection | unavailable | False | naturalproductmech:mibig-ac7717914d | The main body is unavailable. Current claims remain assessable through original complete SI and full 2014 primary text/SI. |
+
+## Scientific And Domain Assessments
+
+### Exact chemical equivalence and stereochemical completeness
+
+identity: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+The complete MIBiG, NPAtlas and two ChEBI structure formats agree with the owner at full Standard and fixed-H identity. All five centres and three E alkenes are encoded. NPA07411 resolves to the correct canonical NPA007411; it is not a malformed identifier. Primary natural-versus-engineered stereochemical scope is assessed in the science section.
+
+### Eligible current authority and minted identifier
+
+grounding: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+The only exact current ChEBI hit is released two-star CHEBI204331. The committed eligible projection has no exact-key row, so retaining this minted owner respects the three-star boundary.
+
+### Exact compound, active locus and source mappings
+
+provenance: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+Active MIBiG version5 compound3, NPAtlas, exact Wikidata compound and taxon mapping, and complete raw rows are coherent. The questionable source-quality flag is retained as context, not mistaken for inactive status. Experimental native grades, missing strain qualifier and imported name typo are assessed in the science section without duplicating those findings.
+
+### Computed filing, asserted source class and history
+
+evidence: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+Pinned NPClassifier output is distinguished from the asserted PKS source class. The source concept, MINTED state and three SEEDED_FROM_SOURCES events remain coherent; this identifier audit does not promote native status.
+
+### Unasserted optional fields
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-ac7717914d.
+
+The entire owner has no optional protein, graph, assay, target or clinical assertion requiring identifier verification. Their absence is not itself a defect. Potential exact-compound additions are considered separately from current-claim support.
+
+### Exact 8S hydroxylated congener
+
+identity: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+The owner matches 2007 compound 4 and 2014 compound 15, with C8S/C10S/C11R/C14S/C17R and three E alkenes. It is distinct from natural C9-hydroxy compound 13 and engineered C8R compound 16. The S4 2007 naming typo is resolved by original S5/S11 evidence and the 2014 explicit comparison.
+
+### Natural origin and species occurrence
+
+evidence: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+The exact purified C8S compound was isolated from wild-type S. amphibiosporus ATCC 53964. The subsequent aqueous rearrangements start from that isolated molecule and produce distinct derivatives. NATURAL_PRODUCT and the sole DOI:10.1021/OL702249G occurrence are supported.
+
+### Exact-congener native producer and cluster grade
+
+evidence: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+The native ltmE/ltmH knockouts remove target 15; ltmK deletion removes 15 while accumulating 14, and complementation restores 15. BGC_CHARACTERIZED, CLUSTER_DEMONSTRATED, Knock-out studies, PKS classification and GQ274954.1 are defensible at the published locus level. Foreign MgsK production of 16 is not used to support natural 15.
+
+### Experimental producer strain qualifier
+
+scope: concern. Targets: naturalproductmech:mibig-ac7717914d.
+
+The imported species claim is correct but omits ATCC 53964, explicitly shared by the original isolation, native experiments and deposited locus. Retain this bounded qualifier without changing the taxon or supported grades.
+
+### Source-derived preferred-name typo
+
+nomenclature: concern. Targets: naturalproductmech:mibig-ac7717914d.
+
+The owner reproduces the MIBiG spelling lactidomycin, while the primary sources identify a lactimidomycin congener. Correct the preferred label to 8-hydroxy-8,9-dihydrolactimidomycin through an effective maintained transform; preserve the original source label as provenance and retain the stable identity and path.
+
+### Optional pathway and compound-specific activity
+
+completeness: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+The empty optional sections are not a review failure. A future activity addition can use exact 15 MTT EC50 values 47.6/11.1/51.8 nM for MDA-MB-231/HeLa/Jurkat, with exposure and controls retained. Parent translation inhibition, direct target binding and engineered 16 assay values are not established for this target by those measurements. Proposed LtmK radical/PKS chemistry must remain qualified if a graph is added.
+
+### Primary-source access and internal discrepancies
+
+provenance: supported. Targets: naturalproductmech:mibig-ac7717914d.
+
+Original SI and full 2014 primary text cover the present claims, despite the unavailable 2007 main body and unavailable 2014 main-figure pixels. Methods/SI resolve transposed strain digits and abstract mutant numbers. Printed versus deposited LtmK lengths remain separate; no protein claim is silently added.
+
+## Findings
+
+### S034-F-STRAIN: Retain the tested ATCC 53964 producer strain
+
+minor / open / confirmed; issue key: mibig-bgc0000083-compound3-strain-context.
+
+The species-level producer omits the strain explicitly identified by the isolation study, native knockout/rescue study and deposited locus. Qualify this exact compound producer as ATCC 53964 without remapping taxonomy or changing its supported evidence grades.
+
+### S034-F-NAME: Correct the preferred-name lactidomycin typo
+
+minor / open / confirmed; issue key: mibig-bgc0000083-compound3-lactidomycin-name.
+
+The preferred label faithfully imports lactidomycin from MIBiG, but the exact primary compound is an 8-hydroxy-8,9-dihydrolactimidomycin. The chemistry is correct; the typo should be corrected through a maintained, tested name transform while preserving the original source label, identifier and pinned path.
+
+## Recommended Actions And Acceptance Checks
+
+### S034-ACTION-STRAIN
+
+Add an attributed curation/mibig_producer_strains.tsv row for BGC0000083:3, pinned to complete raw-row SHA256 7b70481c0f52cc4755ac089a418cd361dc34afec601951accbd38f44ae8510cc, with strain ATCC 53964 and reference PMID:25405956. Cite the native Methods/SI and GQ274954.1 bridge in the rationale and retain the separate 2007 natural isolation as support. Regenerate through the existing loader; no method or reference override is required.
+
+- The consumed qualifier matches the complete untouched BGC0000083:3 source row; stale, duplicate and missing rows fail.
+- Only the producer strain and attributed CURATOR_INFERENCE evidence change; taxon 221586, structure, BGC_CHARACTERIZED, CLUSTER_DEMONSTRATED, Knock-out studies and PMID25405956 remain.
+- Use wild-type ATCC 53964 rather than a knockout or foreign-mgsK derivative; preserve source-internal numbering cautions in rationale.
+- Exercise composition with the separately proposed name correction, inspect a canary diff, and run focused checks, strict validation, reproduction and required repository QC.
+
+### S034-ACTION-NAME
+
+Implement and test a narrow preferred-name correction consumer in scripts/seed_from_sources.py before adding any correction data. For example, introduce a curation/mibig_name_corrections.tsv input keyed by BGC0000083:3 and full raw-row SHA256 7b70481c0f52cc4755ac089a418cd361dc34afec601951accbd38f44ae8510cc, with expected original label 8-hydroxy-8,9-dihydrolactidomycin, corrected label 8-hydroxy-8,9-dihydrolactimidomycin, DOI:10.1021/bi501396v, curator/date and rationale. Preserve the untouched raw row and source_concepts source_label, and expose correction provenance separately. A reserved decisions.tsv row, direct generated-YAML edit or untracked raw-label edit is not an effective repair.
+
+- The implemented input is actually loaded in normal and canary seeding; missing, duplicate, stale-row, unexpected-old-label and conflicting-authority decisions fail before output.
+- Only this exact owner preferred label changes; retain original source label as provenance, naturalproductmech:mibig-ac7717914d, full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N, pinned PATHS.tsv location, history and all biological claims.
+- Test the name correction together with the raw-row-pinned strain qualifier. Both pins must validate against the untouched raw row, not a label-mutated intermediate.
+- Keep natural C8S configuration and the engineered C8R congener separate. Do not introduce an incorrect C9-hydroxy label from the 2007 S4 typo.
+- Inspect generated diffs and run focused naming/composition tests, strict validation, reproduction and full required QC; no hand-edited scientific YAML or reserved decision is the final maintained solution.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| I034-OWNER | data/natural_products/alkaloids/8-hydroxy-8-9-dihydrolactidomycin.yaml; Entire owner, resolved intake and complete audit history | supports | The exact owner is minted, SEEDED and stereo_complete, with one MIBiG source concept, one NPAtlas xref, one LOTUS occurrence, one producer and one locus. There are no referenced components, biosynthetic pathway, causal graph, protein examples, molecular targets, assays or clinical claims. All three history events are seeding events, not scientific review promotions. |
+| I034-CHEMISTRY | /private/tmp/npm-review-work/034/identity/chemical-comparison.json; Independent parsing of owner, current MIBiG compound3, NPAtlas, full ChEBI JSON and ChEBI MOL | supports | All five representations yield exact full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N, identical Standard InChI and fixed-H InChI, neutral C26H37NO7, five assigned tetrahedral centres and three E alkenes. No unspecified centre is present. This establishes cross-reference and representation identity; the primary drawing/absolute-configuration evidence is assessed separately. |
+| I034-NPATLAS | https://www.npatlas.org/api/v1/compound/NPA07411; Complete exact-entry structure and provenance fields inspected | supports | The literal stored request NPA07411 succeeds and resolves canonically to NPA007411, with the exact owner full structure, one current structure and no reassignment. Origin metadata names S. amphibiosporus ATCC 53964 and DOI10.1021/ol702249g/PMID17997563. The legacy accession is not broken, and this database row is not a second independent isolation experiment. |
+| I034-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/204331/; Complete exact-entry structure and provenance fields inspected | supports | CHEBI:204331 is released but two-star. Its complete default structure matches the owner exactly, including fixed-H identity; formula and charge agree. Its origin is genus-level Streptomyces, NCBI1883, citing PMID17997563, so it must not be widened into a separate strain-specific assertion. It is a macrolide in the ontology and does not meet the repository three-star admission rule. |
+| I034-CHEBI-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/204331/; Complete exact-entry structure and provenance fields inspected | supports | The official ChEBI MOL file independently retains all five centres and three E alkenes and matches the owner full key/fixed-H identity. Full compound JSON and MOL were used for chemistry; the search-index SMILES is not a substitute for the complete structure. |
+| I034-CHEBI-QUERY | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=JFGZTRUDLAEIRJ-CQBLZTSBSA-N&amp;size=100; Complete exact-entry structure and provenance fields inspected | supports | The complete exact-key query returns one hit, CHEBI:204331, with two stars. There is no eligible exact-key row in the complete committed ChEBI projection, independently scanned in the comparison receipt. This supports retaining the minted identifier within these bounded current-authority and repository routes. |
+| I034-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0000083.5/annotations.json; Only exact compound3 and relevant entry/locus/taxon provenance; original response reused at its actual access time | supports | The current BGC0000083 version5 response is active, complete and quality questionable. Exact compound3 has this owner graph, NPA07411 and C26H37NO7; it is distinct from compound2 (the reduced congener) and compound4 (the C9-hydroxylated positional isomer). Source taxonomy221586, GQ274954.1 and Knock-out studies agree with the raw row. Zero/zero locus bounds are not emitted as genomic coordinates. Entry references include PMID25405956 and PMID17997563; uncited activity labels and proposed module annotations are not adopted as congener-specific experiments. |
+| I034-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=221586&amp;retmode=xml; Complete taxonomy221586 response, reused with original access time | supports | NCBI221586 resolves to Streptomyces amphibiosporus at species rank, parent Streptomyces1883, with an actinobacterial lineage. The owner labels and taxon groups agree. This does not itself establish production by every strain. |
+| I034-WIKIDATA-TAXON | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q104096108%7CQ77422863&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; entities.Q104096108 only; original response time retained | supports | Only entity Q104096108 from this combined response is used: its label and P685 map to S. amphibiosporus/NCBI221586. The sibling compound entity in this response is not evidence for record034. |
+| I034-WIKIDATA-COMPOUND | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q77385190&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; Only exact Q77385190 claims P235, P7746, P683 and P233; references treated as database provenance | supports | The exact LOTUS structure entity Q77385190 has full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N and links NPA007411 and CHEBI204331. Its canonical nonstereochemical SMILES is not sufficient by itself to verify the five configurations. The exact-key cross-links are coherent with the independently parsed chemical authorities. |
+| I034-RAW | data/raw/mibig_compounds.tsv; Complete exact BGC0000083:3 row and corresponding complete LOTUS/NPClassifier projections | supports | The untouched exact MIBiG row has SHA256 7b70481c0f52cc4755ac089a418cd361dc34afec601951accbd38f44ae8510cc. Structure, source version/status, NPAtlas accession, source taxonomy, locus, methods and entry-level reference faithfully reproduce the owner. LOTUS separately stores the exact full key, Q77385190/Q104096108 and DOI10.1021/OL702249G; the owner explicitly says that publication independence is not established. |
+| I034-CLASSIFICATION | data/raw/npclassifier.tsv; Exact full-key prediction row and owner filing | supports | ALKALOIDS, Lysine alkaloids and Piperidine alkaloids are explicitly pinned to npclassifier.gnps2.org@2026-09-07. They are computed chemical classification, separate from the source PKS/Type I biosynthetic class. Three seed events retain SEEDED and do not claim experimental validation. |
+| I034-GROUNDING-RULE | docs/HARMONIZATION.md; Identity resolution rules1–3; full eligible data/raw/chebi_structures.tsv projection | supports | Exactly one eligible three-star default structure is required for ChEBI grounding. A two-star exact structure is insufficient; no exact row was found after scanning every committed ChEBI structure row. Thus the current minted decision remains supported. |
+| I034-SEARCH | /private/tmp/npm-review-work/034/identity/local-search.txt; Current owner/raw/PATHS matches and complete matched-file list | supports | The ignored-inclusive ID/key/slug/label/accession search returned the one current owner, its expected three raw rows and PATHS entry, two generated embedding maps and fourteen historical evidence/inventory files. Historical campaign inventories are not new scientific reviews. No additional current owner with these exact identity terms was found in the searched corpus; no broader chemical-isomer absence is claimed. |
+| I034-IMODULON | https://imodulondb.org/; Complete retained 28-dataset catalogue | context_only | The complete catalogue has no S. amphibiosporus dataset. S. albidoflavus and S. coelicolor datasets are not substitutes for ATCC53964, so expression-module evidence is not applicable to this owner. |
+| S034-OWNER | data/natural_products/alkaloids/8-hydroxy-8-9-dihydrolactidomycin.yaml; Complete owner and resolved view, including one source concept, occurrence and producer/locus; no referenced components | supports | The owner is the five-centre natural 8-hydroxy congener with full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N. Its imported preferred label is 8-hydroxy-8,9-dihydrolactidomycin. The native producer is graded BGC_CHARACTERIZED, the cluster CLUSTER_DEMONSTRATED with Knock-out studies, and no strain qualifier or optional activity/pathway is present. |
+| S034-RAW | data/raw/mibig_compounds.tsv; Complete exact BGC0000083:3 row | supports | The source row reproduces the owner structure, misspelled label, taxon 221586, GQ274954.1, active version 5 and PMID:25405956. Complete unchanged MIBiG row SHA256: 7b70481c0f52cc4755ac089a418cd361dc34afec601951accbd38f44ae8510cc. |
+| S034-LOTUS | data/raw/lotus_occurrences.tsv; Exact JFGZTRUDLAEIRJ-CQBLZTSBSA-N occurrence row | supports | The exact source tuple records S. amphibiosporus, taxon 221586, Wikidata Q104096108 and DOI:10.1021/OL702249G. Its species-level occurrence is separate from the native biosynthesis claim. |
+| S034-2007-ISOLATION | https://api.figshare.com/v2/file/download/4669732; DOI:10.1021/ol702249g official SI S3–S4 isolation and properties of compound 4; S5 Table S1; S11 original drawing/spectrum | supports | Wild-type S. amphibiosporus ATCC 53964, cultured with 3% XAD-16 resin, furnished 110 mg of compound 4 from approximately 20 L. The exact C8-hydroxy structure is drawn on S11 and supported by S5 C8 at 73.4 ppm and C9 at 39.4 ppm, with MS, rotation and NMR reporting. S4 mistakenly calls both compounds 3 and 4 9-hydroxy; the numbered structure, carbon assignments and the later 2014 study distinguish 4 as the C8-hydroxy congener. |
+| S034-2007-ORIGIN | https://api.figshare.com/v2/file/download/4669732; Official SI S4–S8 aqueous rearrangement protocols and compound numbering | supports | Purified compound 4 was subsequently treated with DMSO/water at 37 °C for 24 h to generate separately numbered rearrangement products 4a–4d. This is distinct from the prior wild-type culture isolation of 4; instability in aqueous media does not make the isolated starting congener a demonstrated artifact. |
+| S034-2014-STEREO | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4270375&amp;retmode=xml; DOI:10.1021/bi501396v, Results: structural elucidation of 16; discussion of 15 versus 16; Figure 4 caption | supports | The paper explicitly identifies natural 15 as 8,9-dihydro-8S-hydroxy-LTM and distinguishes it from engineered 8R-hydroxy product 16. The C8S congener has H7/H8 coupling 8.0 Hz and C8/C9 shifts 73.4/39.4 ppm, versus the C8R congener 3.8 Hz and 68.9/42.2 ppm. The latter was made by introducing mgsK into the native ltmK mutant; that experiment must not be assigned to natural 15. |
+| S034-2014-SI | https://ndownloader.figshare.com/files/3616866; Official SI S2 strain table; original S8–S9 Figure S3 genotypes; original S11 Figure S5 compounds 15 and 16 and assay curves | supports | The original SI depicts natural 15 with a dashed C8 hydroxyl and explicitly labels it 8S, while engineered 16 carries the opposite C8 configuration. Table S1 identifies parental ATCC 53964 and intervention derivatives. The original Southern figures identify SB15001 as ltmE mutant, SB15005 as ltmH mutant and SB15002 as ltmK mutant, with SB15003 the complemented derivative. |
+| S034-DRAWING | /private/tmp/npm-review-work/034/primary-structure-comparison.json; Independent transcription of original 2014 SI S11 compound 15 after erasing all owner stereochemistry; cross-check with 2007 S11 compound 4 | supports | The five assigned centres are C8S, C10S, C11R, C14S and C17R. Three E alkenes, neutral formula C26H37NO7 and full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N are reproduced. The comparison interprets the published drawings and does not infer C8 configuration from optical rotation alone or reuse the engineered C8R product. |
+| S034-2014-GENETICS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4270375&amp;retmode=xml; Full native gene-inactivation/complementation Methods; Results ltmE/ltmH and ltmK experiments; Figure 2 caption | supports | Wild-type ATCC 53964 produces minor congener 15. Native ltmE and ltmH mutants SB15001 and SB15005 lose 1 and all minor congeners 13–15 by HPLC against authentic standards. Native ltmK mutant SB15002 loses 15 while accumulating precursor 14, and ltmK complementation in SB15003 restores 15 and the wild-type profile. The target-specific knockout and rescue evidence supports native producer and demonstrated cluster grades; no purified LtmK assay is reported. |
+| S034-2014-ACTIVITY | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4270375&amp;retmode=xml; Cytotoxicity Methods; Table 2 explicitly extracted column 15; corresponding original SI Figure S5 | supports | Exact natural 15 was evaluated by MTT: EC50 values are 47.6 nM in MDA-MB-231, 11.1 nM in HeLa and 51.8 nM in Jurkat cells. Cells were exposed to serial dilutions for four days, then MTT for five hours, using vehicle control; experiments were performed in triplicate and repeated twice. The endpoint is cell-based cytotoxicity, not direct binding to a molecular target. The distinct 16 column has separate values. |
+| S034-LOCUS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=GQ274954,MK539848&amp;rettype=gbwithparts&amp;retmode=text; Only GQ274954.1 source/CDS metadata, bridged by the 2014 paper accession and Table 1 | supports | The 50,543-bp deposited locus identifies S. amphibiosporus ATCC 53964, ATCC:53964 and taxon 221586. The nine protein accessions match the publication locus table. This strain/locus bridge does not imply that the paper’s approximate 55-kb cluster span equals the deposited record length or that every proposed domain reaction was directly assayed. |
+| S034-SEQUENCE-SCOPE | /private/tmp/npm-review-work/shared-next-batch004/ltm-icc-sequences/translation-report.json; Reused GQ274954.1 translation rows and source-notes Table 1 comparison only | supports | All nine complete CDS translations equal their deposited protein sequences. LtmK/ACY01404.1 is 418 aa in the deposited CDS, while the article Table 1 prints 413; LtmB, LtmC and LtmE also have retained table/deposit length discrepancies. These do not affect this owner, which asserts no exact protein example, and do not establish purified-enzyme catalysis. |
+| S034-STRAIN-LOADER | src/naturalproductmech/curate/producer_strains.py; Complete qualifier loader and emitter; docs/CURATION.md producer strain section; seeder application | supports | The existing strain input consumes exact BGC accession:compound index and complete raw-row SHA, rejects stale or duplicate rows, and adds strain with separate attributed CURATOR_INFERENCE evidence while retaining taxon, grade and raw source claim. It can qualify BGC0000083:3 without a method or citation override. |
+| S034-NAME-OWNER | scripts/seed_from_sources.py; choose_label lines 605–644; source-name candidates and label emission around lines 950–1009; inventory consumers; pinned-path and minted-identity rules | supports | The label is generated from source names and an eligible ChEBI authority; minted IDs are independent of the label and existing paths are pinned. No consumed source-name correction table was found in the bounded ignored-inclusive search. docs/CURATION.md explicitly says decisions.tsv is reserved and not consumed. A corrected label therefore requires an implemented/tested transform or source-name overlay before a decision row can be effective. |
+| S034-2007-ACCESS | /private/tmp/npm-review-work/shared-next-batch004/lactimidomycin/access-2.json; Prepared-source official 2007 full-body access receipt | context_only | The official original 2007 main body returned HTTP 403; no renewed retry was made. Its official SI was fully available, and the full 2014 body and SI explicitly identify the exact 8S congener and its experimental context. Failed access is not evidence that the 2007 body lacks information. |
+
+## Limits And Additional Notes
+
+- The eligible-authority conclusion is bounded to the complete current ChEBI exact-key query, full candidate JSON/MOL and complete committed eligible table; it is not a claim about every chemical registry.
+- Database structure equivalence does not independently repeat the original absolute-configuration experiment. The primary stereo, biological origin, native genetics and strain/name findings are assessed in the separate science section.
+- The extra exact-compound Wikidata request succeeded with the established scientific-review user agent after a sandbox DNS failure and a default-user-agent HTTP403. Those access failures do not indicate an identifier defect.
+- The 2007 main body is unavailable after the official public route returned 403. Its complete SI, original structure/NMR-table pixels and the full 2014 body/SI identify exact natural C8S compound 4/15; raw NMR data and the historical absolute-configuration derivation were not independently reconstructed.
+- The 2014 main HPLC/structural figure pixels were unavailable; their full captions and Results were read. Original SI genotype, structure and assay-curve pixels were inspected. Published Table 2 values were read directly from the structured primary table, not recomputed from plots.
+- The 2014 study infers LtmK chemistry from native genetics; it does not report purified LtmK conversion or directly observe its proposed radical intermediates. The 413-aa printed/418-aa deposited LtmK discrepancy remains explicit and does not create a protein claim in this owner.
+- No broad search proves the absence of other biological activities. The optional MTT addition described here is restricted to exact natural 15 and the reported three cell lines; target binding, clinical effects and the engineered 16 data are not transferred.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command receipts for this base. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T102604Z-8-hydroxy-8-9-dihydrolactidomycin
+title: '8-hydroxy-8,9-dihydrolactimidomycin: natural stereoisomer and source precision'
+started_at: '2026-10-21T10:14:29.661936Z'
+finished_at: '2026-10-21T10:26:04.949603Z'
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'The exact natural C8S congener matches the primary drawings and all current
+  structure cross-references. Native knockout and rescue results support the producer
+  and demonstrated locus grades, and the occurrence is supported. Two minor corrections
+  remain: retain the tested ATCC 53964 strain and correct the source-derived lactidomycin
+  spelling through an effective maintained name transform. No scientific data was
+  changed.'
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/8-hydroxy-8-9-dihydrolactidomycin.yaml
+    sha256: 7bcaa8bc8e149856a052307721a086a41665e9c5889b166ed2318820f9e95f2d
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 34, batch 004, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 84 of 3116 current records had campaign coverage and 3032 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-ac7717914d
+targets:
+- target_id: naturalproductmech:mibig-ac7717914d
+  path: data/natural_products/alkaloids/8-hydroxy-8-9-dihydrolactidomycin.yaml
+  label: 8-hydroxy-8,9-dihydrolactidomycin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  command: just validate-strict data/natural_products/alkaloids/8-hydroxy-8-9-dihydrolactidomycin.yaml
+    --out /private/tmp/npm-review-work/034/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T10:14:31.908386Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. No earlier
+    baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    No earlier baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. No earlier
+    baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. No
+    earlier baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed against the new main revision.
+    Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured
+    lint, governance, documentation, provenance, source-queue, schema, rendering,
+    reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. No earlier baseline
+    result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+- check_id: I034-C-CHEMISTRY
+  name: Full molecular equivalence and authority eligibility
+  status: passed
+  required: true
+  summary: Five independent input representations match in full Standard and fixed-H
+    identity with five assigned centres and three E alkenes; current two-star ChEBI
+    remains ineligible for grounding.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - I034-CHEMISTRY
+  - I034-CHEBI
+  - I034-CHEBI-QUERY
+  - I034-GROUNDING-RULE
+  command: .venv/bin/python /private/tmp/npm-review-work/034/check-identifiers.py
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Actual comparison completed 2026-10-21T10:23:59.355585Z
+- check_id: I034-C-SOURCE
+  name: Current exact identifier and source mappings
+  status: passed
+  required: true
+  summary: The stored legacy NPAtlas accession resolves, exact MIBiG compound3 and
+    species metadata match, and the exact LOTUS Wikidata structure/taxon mappings
+    agree.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - I034-NPATLAS
+  - I034-MIBIG
+  - I034-TAXON
+  - I034-WIKIDATA-TAXON
+  - I034-WIKIDATA-COMPOUND
+  - I034-RAW
+- check_id: I034-C-IMODULON
+  name: Applicable producer expression dataset
+  status: not_applicable
+  required: false
+  summary: No matching S. amphibiosporus dataset appears in the complete retained
+    catalogue.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - I034-IMODULON
+- check_id: S034-C-STRUCTURE
+  name: Exact five-centre natural 8S congener
+  status: passed
+  required: true
+  summary: Original 2007/2014 SI drawings, the 2014 explicit stereochemical comparison
+    and independent drawing interpretation agree with the owner full key.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-2007-ISOLATION
+  - S034-2014-STEREO
+  - S034-2014-SI
+  - S034-DRAWING
+- check_id: S034-C-BIOLOGY
+  name: Exact natural occurrence and native locus support
+  status: passed
+  required: true
+  summary: Natural compound 4/15 is isolated from wild-type ATCC 53964 and specifically
+    lost/restored by native genetic intervention, with source strain scope retained.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-2007-ISOLATION
+  - S034-2007-ORIGIN
+  - S034-2014-GENETICS
+  - S034-LOCUS
+- check_id: S034-C-2007-MAIN
+  name: Optional original 2007 full-body reinspection
+  status: unavailable
+  required: false
+  summary: The main body is unavailable. Current claims remain assessable through
+    original complete SI and full 2014 primary text/SI.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-2007-ACCESS
+  - S034-2014-STEREO
+  - S034-2014-GENETICS
+evidence:
+- evidence_id: I034-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/8-hydroxy-8-9-dihydrolactidomycin.yaml
+  locator: Entire owner, resolved intake and complete audit history
+  accessed_at: '2026-10-21T10:25:22.479694Z'
+  support: supports
+  summary: The exact owner is minted, SEEDED and stereo_complete, with one MIBiG source
+    concept, one NPAtlas xref, one LOTUS occurrence, one producer and one locus. There
+    are no referenced components, biosynthetic pathway, causal graph, protein examples,
+    molecular targets, assays or clinical claims. All three history events are seeding
+    events, not scientific review promotions.
+  snapshot_sha256: 7bcaa8bc8e149856a052307721a086a41665e9c5889b166ed2318820f9e95f2d
+- evidence_id: I034-CHEMISTRY
+  kind: validation
+  reference: /private/tmp/npm-review-work/034/identity/chemical-comparison.json
+  locator: Independent parsing of owner, current MIBiG compound3, NPAtlas, full ChEBI
+    JSON and ChEBI MOL
+  accessed_at: '2026-10-21T10:23:59.355585Z'
+  support: supports
+  summary: All five representations yield exact full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N,
+    identical Standard InChI and fixed-H InChI, neutral C26H37NO7, five assigned tetrahedral
+    centres and three E alkenes. No unspecified centre is present. This establishes
+    cross-reference and representation identity; the primary drawing/absolute-configuration
+    evidence is assessed separately.
+  snapshot_sha256: 80e0e35ff829cf81550f1e188c427210944303213b8050d78a0503459b534208
+- evidence_id: I034-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA07411
+  locator: Complete exact-entry structure and provenance fields inspected
+  accessed_at: '2026-10-21T10:15:41.237299Z'
+  support: supports
+  summary: The literal stored request NPA07411 succeeds and resolves canonically to
+    NPA007411, with the exact owner full structure, one current structure and no reassignment.
+    Origin metadata names S. amphibiosporus ATCC 53964 and DOI10.1021/ol702249g/PMID17997563.
+    The legacy accession is not broken, and this database row is not a second independent
+    isolation experiment.
+  snapshot_sha256: 6f5478d575a8a211e30ec4613c96820d635abe2cdde0c3342325a17b481b6627
+- evidence_id: I034-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/204331/
+  locator: Complete exact-entry structure and provenance fields inspected
+  accessed_at: '2026-10-21T10:17:58.542919Z'
+  support: supports
+  summary: CHEBI:204331 is released but two-star. Its complete default structure matches
+    the owner exactly, including fixed-H identity; formula and charge agree. Its origin
+    is genus-level Streptomyces, NCBI1883, citing PMID17997563, so it must not be
+    widened into a separate strain-specific assertion. It is a macrolide in the ontology
+    and does not meet the repository three-star admission rule.
+  snapshot_sha256: d75a78d3149e684f06ab6631e9a434c2d271e59bf4de9fea76dd4ff7c61310ce
+- evidence_id: I034-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/204331/
+  locator: Complete exact-entry structure and provenance fields inspected
+  accessed_at: '2026-10-21T10:17:58.534169Z'
+  support: supports
+  summary: The official ChEBI MOL file independently retains all five centres and
+    three E alkenes and matches the owner full key/fixed-H identity. Full compound
+    JSON and MOL were used for chemistry; the search-index SMILES is not a substitute
+    for the complete structure.
+  snapshot_sha256: 051f6e09a8f0ebabce8577a4a5fd422c57a7ab9fc9a0ed2c6af21c500685ce46
+- evidence_id: I034-CHEBI-QUERY
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=JFGZTRUDLAEIRJ-CQBLZTSBSA-N&size=100
+  locator: Complete exact-entry structure and provenance fields inspected
+  accessed_at: '2026-10-21T10:15:41.238016Z'
+  support: supports
+  summary: The complete exact-key query returns one hit, CHEBI:204331, with two stars.
+    There is no eligible exact-key row in the complete committed ChEBI projection,
+    independently scanned in the comparison receipt. This supports retaining the minted
+    identifier within these bounded current-authority and repository routes.
+  snapshot_sha256: f22dd94d36c74ce4384e3f1849fc68be7e8c3aa6aa0a34c54d980a0b95d5148d
+- evidence_id: I034-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000083.5/annotations.json
+  locator: Only exact compound3 and relevant entry/locus/taxon provenance; original
+    response reused at its actual access time
+  accessed_at: '2026-10-21T10:09:09.776490Z'
+  support: supports
+  summary: The current BGC0000083 version5 response is active, complete and quality
+    questionable. Exact compound3 has this owner graph, NPA07411 and C26H37NO7; it
+    is distinct from compound2 (the reduced congener) and compound4 (the C9-hydroxylated
+    positional isomer). Source taxonomy221586, GQ274954.1 and Knock-out studies agree
+    with the raw row. Zero/zero locus bounds are not emitted as genomic coordinates.
+    Entry references include PMID25405956 and PMID17997563; uncited activity labels
+    and proposed module annotations are not adopted as congener-specific experiments.
+  snapshot_sha256: ac74cea5f0c190fa1d6ac58155fd67acf53ad0214ac33c26be6ffd21f7c3cb63
+- evidence_id: I034-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=221586&retmode=xml
+  locator: Complete taxonomy221586 response, reused with original access time
+  accessed_at: '2026-10-21T10:09:09.775554Z'
+  support: supports
+  summary: NCBI221586 resolves to Streptomyces amphibiosporus at species rank, parent
+    Streptomyces1883, with an actinobacterial lineage. The owner labels and taxon
+    groups agree. This does not itself establish production by every strain.
+  snapshot_sha256: 42023bd80260e00c6e4cf997349be9767167aefbba62262e80b5bbac500b8bdd
+- evidence_id: I034-WIKIDATA-TAXON
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q104096108%7CQ77422863&props=labels%7Cclaims&languages=en&format=json
+  locator: entities.Q104096108 only; original response time retained
+  accessed_at: '2026-10-21T10:09:09.997916Z'
+  support: supports
+  summary: 'Only entity Q104096108 from this combined response is used: its label
+    and P685 map to S. amphibiosporus/NCBI221586. The sibling compound entity in this
+    response is not evidence for record034.'
+  snapshot_sha256: a636ab1c2ac546b0863bc22e347da09b6c043161894575b80ae13e593b1a838e
+- evidence_id: I034-WIKIDATA-COMPOUND
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q77385190&props=labels%7Cclaims&languages=en&format=json
+  locator: Only exact Q77385190 claims P235, P7746, P683 and P233; references treated
+    as database provenance
+  accessed_at: '2026-10-21T10:23:31.111948Z'
+  support: supports
+  summary: The exact LOTUS structure entity Q77385190 has full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N
+    and links NPA007411 and CHEBI204331. Its canonical nonstereochemical SMILES is
+    not sufficient by itself to verify the five configurations. The exact-key cross-links
+    are coherent with the independently parsed chemical authorities.
+  snapshot_sha256: c2e7b26f27c0a7949ae498eb0c22f29439d84a12b8731171503eac2684235b22
+- evidence_id: I034-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete exact BGC0000083:3 row and corresponding complete LOTUS/NPClassifier
+    projections
+  accessed_at: '2026-10-21T10:25:22.479694Z'
+  support: supports
+  summary: The untouched exact MIBiG row has SHA256 7b70481c0f52cc4755ac089a418cd361dc34afec601951accbd38f44ae8510cc.
+    Structure, source version/status, NPAtlas accession, source taxonomy, locus, methods
+    and entry-level reference faithfully reproduce the owner. LOTUS separately stores
+    the exact full key, Q77385190/Q104096108 and DOI10.1021/OL702249G; the owner explicitly
+    says that publication independence is not established.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: I034-CLASSIFICATION
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact full-key prediction row and owner filing
+  accessed_at: '2026-10-21T10:25:22.479694Z'
+  support: supports
+  summary: ALKALOIDS, Lysine alkaloids and Piperidine alkaloids are explicitly pinned
+    to npclassifier.gnps2.org@2026-09-07. They are computed chemical classification,
+    separate from the source PKS/Type I biosynthetic class. Three seed events retain
+    SEEDED and do not claim experimental validation.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: I034-GROUNDING-RULE
+  kind: record_content
+  reference: docs/HARMONIZATION.md
+  locator: Identity resolution rules1–3; full eligible data/raw/chebi_structures.tsv
+    projection
+  accessed_at: '2026-10-21T10:25:22.479694Z'
+  support: supports
+  summary: Exactly one eligible three-star default structure is required for ChEBI
+    grounding. A two-star exact structure is insufficient; no exact row was found
+    after scanning every committed ChEBI structure row. Thus the current minted decision
+    remains supported.
+  snapshot_sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+- evidence_id: I034-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/034/identity/local-search.txt
+  locator: Current owner/raw/PATHS matches and complete matched-file list
+  accessed_at: '2026-10-21T10:22:49.039119Z'
+  support: supports
+  summary: The ignored-inclusive ID/key/slug/label/accession search returned the one
+    current owner, its expected three raw rows and PATHS entry, two generated embedding
+    maps and fourteen historical evidence/inventory files. Historical campaign inventories
+    are not new scientific reviews. No additional current owner with these exact identity
+    terms was found in the searched corpus; no broader chemical-isomer absence is
+    claimed.
+  snapshot_sha256: 5c66e178653aa921f9c608e8aa78d0bd0110568a55724077acf1f642bd6cbde5
+  search_scope: rg --no-ignore --hidden -n -e naturalproductmech:mibig-ac7717914d
+    -e JFGZTRUDLAEIRJ-CQBLZTSBSA-N -e 8-hydroxy-8-9-dihydrolactidomycin -e 8-hydroxy-8,9-dihydrolactidomycin
+    -e NPA07411 -e NPA007411 data curation reviews src scripts tests docs conf
+- evidence_id: I034-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete retained 28-dataset catalogue
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The complete catalogue has no S. amphibiosporus dataset. S. albidoflavus
+    and S. coelicolor datasets are not substitutes for ATCC53964, so expression-module
+    evidence is not applicable to this owner.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: S034-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/8-hydroxy-8-9-dihydrolactidomycin.yaml
+  locator: Complete owner and resolved view, including one source concept, occurrence
+    and producer/locus; no referenced components
+  accessed_at: '2026-10-21T10:18:04.547886Z'
+  support: supports
+  summary: The owner is the five-centre natural 8-hydroxy congener with full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N.
+    Its imported preferred label is 8-hydroxy-8,9-dihydrolactidomycin. The native
+    producer is graded BGC_CHARACTERIZED, the cluster CLUSTER_DEMONSTRATED with Knock-out
+    studies, and no strain qualifier or optional activity/pathway is present.
+  snapshot_sha256: 7bcaa8bc8e149856a052307721a086a41665e9c5889b166ed2318820f9e95f2d
+- evidence_id: S034-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete exact BGC0000083:3 row
+  accessed_at: '2026-10-21T10:18:04.547886Z'
+  support: supports
+  summary: 'The source row reproduces the owner structure, misspelled label, taxon
+    221586, GQ274954.1, active version 5 and PMID:25405956. Complete unchanged MIBiG
+    row SHA256: 7b70481c0f52cc4755ac089a418cd361dc34afec601951accbd38f44ae8510cc.'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S034-LOTUS
+  kind: record_content
+  reference: data/raw/lotus_occurrences.tsv
+  locator: Exact JFGZTRUDLAEIRJ-CQBLZTSBSA-N occurrence row
+  accessed_at: '2026-10-21T10:18:04.547886Z'
+  support: supports
+  summary: The exact source tuple records S. amphibiosporus, taxon 221586, Wikidata
+    Q104096108 and DOI:10.1021/OL702249G. Its species-level occurrence is separate
+    from the native biosynthesis claim.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: S034-2007-ISOLATION
+  kind: primary_source
+  reference: https://api.figshare.com/v2/file/download/4669732
+  locator: DOI:10.1021/ol702249g official SI S3–S4 isolation and properties of compound
+    4; S5 Table S1; S11 original drawing/spectrum
+  accessed_at: '2026-10-21T07:08:48.840277Z'
+  support: supports
+  summary: Wild-type S. amphibiosporus ATCC 53964, cultured with 3% XAD-16 resin,
+    furnished 110 mg of compound 4 from approximately 20 L. The exact C8-hydroxy structure
+    is drawn on S11 and supported by S5 C8 at 73.4 ppm and C9 at 39.4 ppm, with MS,
+    rotation and NMR reporting. S4 mistakenly calls both compounds 3 and 4 9-hydroxy;
+    the numbered structure, carbon assignments and the later 2014 study distinguish
+    4 as the C8-hydroxy congener.
+  snapshot_sha256: 85759ea4f1c8fdbe81b4b9d8777236164e34aa0a2302abcfa4596773fb2d4d46
+- evidence_id: S034-2007-ORIGIN
+  kind: primary_source
+  reference: https://api.figshare.com/v2/file/download/4669732
+  locator: Official SI S4–S8 aqueous rearrangement protocols and compound numbering
+  accessed_at: '2026-10-21T07:08:48.840277Z'
+  support: supports
+  summary: Purified compound 4 was subsequently treated with DMSO/water at 37 °C for
+    24 h to generate separately numbered rearrangement products 4a–4d. This is distinct
+    from the prior wild-type culture isolation of 4; instability in aqueous media
+    does not make the isolated starting congener a demonstrated artifact.
+  snapshot_sha256: 85759ea4f1c8fdbe81b4b9d8777236164e34aa0a2302abcfa4596773fb2d4d46
+- evidence_id: S034-2014-STEREO
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4270375&retmode=xml
+  locator: 'DOI:10.1021/bi501396v, Results: structural elucidation of 16; discussion
+    of 15 versus 16; Figure 4 caption'
+  accessed_at: '2026-10-21T09:27:24.488360Z'
+  support: supports
+  summary: The paper explicitly identifies natural 15 as 8,9-dihydro-8S-hydroxy-LTM
+    and distinguishes it from engineered 8R-hydroxy product 16. The C8S congener has
+    H7/H8 coupling 8.0 Hz and C8/C9 shifts 73.4/39.4 ppm, versus the C8R congener
+    3.8 Hz and 68.9/42.2 ppm. The latter was made by introducing mgsK into the native
+    ltmK mutant; that experiment must not be assigned to natural 15.
+  snapshot_sha256: ff8b2f79203d019a88b368c3e6b695b699f10971772eaa26ffaf2f683d492ca1
+- evidence_id: S034-2014-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/3616866
+  locator: Official SI S2 strain table; original S8–S9 Figure S3 genotypes; original
+    S11 Figure S5 compounds 15 and 16 and assay curves
+  accessed_at: '2026-10-21T09:28:09.625291Z'
+  support: supports
+  summary: The original SI depicts natural 15 with a dashed C8 hydroxyl and explicitly
+    labels it 8S, while engineered 16 carries the opposite C8 configuration. Table
+    S1 identifies parental ATCC 53964 and intervention derivatives. The original Southern
+    figures identify SB15001 as ltmE mutant, SB15005 as ltmH mutant and SB15002 as
+    ltmK mutant, with SB15003 the complemented derivative.
+  snapshot_sha256: ab73d23f6ef3e9e7077bad85e4d3a4221a62a042040f856cdf16b9c27497465a
+- evidence_id: S034-DRAWING
+  kind: validation
+  reference: /private/tmp/npm-review-work/034/primary-structure-comparison.json
+  locator: Independent transcription of original 2014 SI S11 compound 15 after erasing
+    all owner stereochemistry; cross-check with 2007 S11 compound 4
+  accessed_at: '2026-10-21T10:15:47.177702Z'
+  support: supports
+  summary: The five assigned centres are C8S, C10S, C11R, C14S and C17R. Three E alkenes,
+    neutral formula C26H37NO7 and full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N are reproduced.
+    The comparison interprets the published drawings and does not infer C8 configuration
+    from optical rotation alone or reuse the engineered C8R product.
+  snapshot_sha256: e49dece800519c0adbc5fcd1c1d7f6582f458af2dd7239ac30feb6e42a3d3456
+- evidence_id: S034-2014-GENETICS
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4270375&retmode=xml
+  locator: Full native gene-inactivation/complementation Methods; Results ltmE/ltmH
+    and ltmK experiments; Figure 2 caption
+  accessed_at: '2026-10-21T09:27:24.488360Z'
+  support: supports
+  summary: Wild-type ATCC 53964 produces minor congener 15. Native ltmE and ltmH mutants
+    SB15001 and SB15005 lose 1 and all minor congeners 13–15 by HPLC against authentic
+    standards. Native ltmK mutant SB15002 loses 15 while accumulating precursor 14,
+    and ltmK complementation in SB15003 restores 15 and the wild-type profile. The
+    target-specific knockout and rescue evidence supports native producer and demonstrated
+    cluster grades; no purified LtmK assay is reported.
+  snapshot_sha256: ff8b2f79203d019a88b368c3e6b695b699f10971772eaa26ffaf2f683d492ca1
+- evidence_id: S034-2014-ACTIVITY
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4270375&retmode=xml
+  locator: Cytotoxicity Methods; Table 2 explicitly extracted column 15; corresponding
+    original SI Figure S5
+  accessed_at: '2026-10-21T09:27:24.488360Z'
+  support: supports
+  summary: 'Exact natural 15 was evaluated by MTT: EC50 values are 47.6 nM in MDA-MB-231,
+    11.1 nM in HeLa and 51.8 nM in Jurkat cells. Cells were exposed to serial dilutions
+    for four days, then MTT for five hours, using vehicle control; experiments were
+    performed in triplicate and repeated twice. The endpoint is cell-based cytotoxicity,
+    not direct binding to a molecular target. The distinct 16 column has separate
+    values.'
+  snapshot_sha256: ff8b2f79203d019a88b368c3e6b695b699f10971772eaa26ffaf2f683d492ca1
+- evidence_id: S034-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=GQ274954,MK539848&rettype=gbwithparts&retmode=text
+  locator: Only GQ274954.1 source/CDS metadata, bridged by the 2014 paper accession
+    and Table 1
+  accessed_at: '2026-10-21T09:49:35.658217Z'
+  support: supports
+  summary: The 50,543-bp deposited locus identifies S. amphibiosporus ATCC 53964,
+    ATCC:53964 and taxon 221586. The nine protein accessions match the publication
+    locus table. This strain/locus bridge does not imply that the paper’s approximate
+    55-kb cluster span equals the deposited record length or that every proposed domain
+    reaction was directly assayed.
+  snapshot_sha256: 973a634e7188b8f84020b809699bfb33a4c1d4146a989c97f34b7d3863ac16b0
+- evidence_id: S034-SEQUENCE-SCOPE
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch004/ltm-icc-sequences/translation-report.json
+  locator: Reused GQ274954.1 translation rows and source-notes Table 1 comparison
+    only
+  accessed_at: '2026-10-21T09:50:53.047495Z'
+  support: supports
+  summary: All nine complete CDS translations equal their deposited protein sequences.
+    LtmK/ACY01404.1 is 418 aa in the deposited CDS, while the article Table 1 prints
+    413; LtmB, LtmC and LtmE also have retained table/deposit length discrepancies.
+    These do not affect this owner, which asserts no exact protein example, and do
+    not establish purified-enzyme catalysis.
+  snapshot_sha256: 25d21cff61df3b703afb919e110a1dd6efc20fde734b2dd946397aa263d6e11a
+- evidence_id: S034-STRAIN-LOADER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete qualifier loader and emitter; docs/CURATION.md producer strain
+    section; seeder application
+  accessed_at: '2026-10-21T10:18:04.547886Z'
+  support: supports
+  summary: The existing strain input consumes exact BGC accession:compound index and
+    complete raw-row SHA, rejects stale or duplicate rows, and adds strain with separate
+    attributed CURATOR_INFERENCE evidence while retaining taxon, grade and raw source
+    claim. It can qualify BGC0000083:3 without a method or citation override.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S034-NAME-OWNER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: choose_label lines 605–644; source-name candidates and label emission around
+    lines 950–1009; inventory consumers; pinned-path and minted-identity rules
+  accessed_at: '2026-10-21T10:18:04.547886Z'
+  support: supports
+  summary: The label is generated from source names and an eligible ChEBI authority;
+    minted IDs are independent of the label and existing paths are pinned. No consumed
+    source-name correction table was found in the bounded ignored-inclusive search.
+    docs/CURATION.md explicitly says decisions.tsv is reserved and not consumed. A
+    corrected label therefore requires an implemented/tested transform or source-name
+    overlay before a decision row can be effective.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+  search_scope: Read current choose_label, inventory consumers, minted ID and pinned-path
+    rules; searched curation, src, scripts, tests and docs with rg --no-ignore --hidden
+    for name_corrections, label_corrections, preferred_label, name override and label
+    override. No future owner contents read.
+- evidence_id: S034-2007-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch004/lactimidomycin/access-2.json
+  locator: Prepared-source official 2007 full-body access receipt
+  accessed_at: '2026-10-21T09:27:23.949570Z'
+  support: context_only
+  summary: The official original 2007 main body returned HTTP 403; no renewed retry
+    was made. Its official SI was fully available, and the full 2014 body and SI explicitly
+    identify the exact 8S congener and its experimental context. Failed access is
+    not evidence that the 2007 body lacks information.
+  snapshot_sha256: 3822890e2a737de157fa376780250a876c829e9a52e02e20c763c1888ea93cb0
+  search_scope: Bounded public official ACS main-body route https://pubs.acs.org/doi/full/10.1021/ol702249g
+    on 2026-10-21; complete official SI and full NCBI 2014 body available.
+assessments:
+- assessment_id: I034-A-IDENTITY
+  area: identity
+  topic: Exact chemical equivalence and stereochemical completeness
+  outcome: supported
+  summary: The complete MIBiG, NPAtlas and two ChEBI structure formats agree with
+    the owner at full Standard and fixed-H identity. All five centres and three E
+    alkenes are encoded. NPA07411 resolves to the correct canonical NPA007411; it
+    is not a malformed identifier. Primary natural-versus-engineered stereochemical
+    scope is assessed in the science section.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - I034-CHEMISTRY
+  - I034-NPATLAS
+  - I034-CHEBI
+  - I034-CHEBI-MOL
+  - I034-MIBIG
+  dimensions:
+  - name: stereochemical_resolution
+    value: Five assigned tetrahedral centres; three E alkenes
+    definition: Complete encoded graph, without treating database agreement as a new
+      absolute-configuration experiment
+    evidence_ids:
+    - I034-CHEMISTRY
+- assessment_id: I034-A-GROUNDING
+  area: grounding
+  topic: Eligible current authority and minted identifier
+  outcome: supported
+  summary: The only exact current ChEBI hit is released two-star CHEBI204331. The
+    committed eligible projection has no exact-key row, so retaining this minted owner
+    respects the three-star boundary.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - I034-CHEBI
+  - I034-CHEBI-QUERY
+  - I034-GROUNDING-RULE
+  - I034-CHEMISTRY
+- assessment_id: I034-A-PROVENANCE
+  area: provenance
+  topic: Exact compound, active locus and source mappings
+  outcome: supported
+  summary: Active MIBiG version5 compound3, NPAtlas, exact Wikidata compound and taxon
+    mapping, and complete raw rows are coherent. The questionable source-quality flag
+    is retained as context, not mistaken for inactive status. Experimental native
+    grades, missing strain qualifier and imported name typo are assessed in the science
+    section without duplicating those findings.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - I034-MIBIG
+  - I034-NPATLAS
+  - I034-TAXON
+  - I034-WIKIDATA-TAXON
+  - I034-WIKIDATA-COMPOUND
+  - I034-RAW
+  dimensions:
+  - name: source_version
+    value: MIBiG BGC0000083 version5, active, compound3
+    definition: Exact current source concept rather than another congener or entry-level
+      activity label
+    evidence_ids:
+    - I034-MIBIG
+    - I034-RAW
+  - name: taxon_scope
+    value: Species NCBITaxon221586; NPAtlas reports ATCC53964
+    definition: Taxon authority validates naming; strain-specific experimental support
+      is a separate scope question
+    evidence_ids:
+    - I034-TAXON
+    - I034-NPATLAS
+  - name: evidence_tier
+    value: DATABASE_ASSERTION in the owner
+    definition: The source-to-owner mapping is faithful; primary source sufficiency
+      is separately assessed
+    evidence_ids:
+    - I034-OWNER
+    - I034-RAW
+- assessment_id: I034-A-CLASS
+  area: evidence
+  topic: Computed filing, asserted source class and history
+  outcome: supported
+  summary: Pinned NPClassifier output is distinguished from the asserted PKS source
+    class. The source concept, MINTED state and three SEEDED_FROM_SOURCES events remain
+    coherent; this identifier audit does not promote native status.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - I034-CLASSIFICATION
+  - I034-OWNER
+  - I034-RAW
+- assessment_id: I034-A-OPTIONAL
+  area: completeness
+  topic: Unasserted optional fields
+  outcome: not_applicable
+  summary: The entire owner has no optional protein, graph, assay, target or clinical
+    assertion requiring identifier verification. Their absence is not itself a defect.
+    Potential exact-compound additions are considered separately from current-claim
+    support.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - I034-OWNER
+- assessment_id: S034-A-STRUCTURE
+  area: identity
+  topic: Exact 8S hydroxylated congener
+  outcome: supported
+  summary: The owner matches 2007 compound 4 and 2014 compound 15, with C8S/C10S/C11R/C14S/C17R
+    and three E alkenes. It is distinct from natural C9-hydroxy compound 13 and engineered
+    C8R compound 16. The S4 2007 naming typo is resolved by original S5/S11 evidence
+    and the 2014 explicit comparison.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-2007-ISOLATION
+  - S034-2014-STEREO
+  - S034-2014-SI
+  - S034-DRAWING
+- assessment_id: S034-A-ORIGIN
+  area: evidence
+  topic: Natural origin and species occurrence
+  outcome: supported
+  summary: The exact purified C8S compound was isolated from wild-type S. amphibiosporus
+    ATCC 53964. The subsequent aqueous rearrangements start from that isolated molecule
+    and produce distinct derivatives. NATURAL_PRODUCT and the sole DOI:10.1021/OL702249G
+    occurrence are supported.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-2007-ISOLATION
+  - S034-2007-ORIGIN
+  - S034-2014-GENETICS
+- assessment_id: S034-A-LOCUS
+  area: evidence
+  topic: Exact-congener native producer and cluster grade
+  outcome: supported
+  summary: The native ltmE/ltmH knockouts remove target 15; ltmK deletion removes
+    15 while accumulating 14, and complementation restores 15. BGC_CHARACTERIZED,
+    CLUSTER_DEMONSTRATED, Knock-out studies, PKS classification and GQ274954.1 are
+    defensible at the published locus level. Foreign MgsK production of 16 is not
+    used to support natural 15.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-RAW
+  - S034-2014-GENETICS
+  - S034-2014-SI
+  - S034-LOCUS
+- assessment_id: S034-A-STRAIN
+  area: scope
+  topic: Experimental producer strain qualifier
+  outcome: concern
+  summary: The imported species claim is correct but omits ATCC 53964, explicitly
+    shared by the original isolation, native experiments and deposited locus. Retain
+    this bounded qualifier without changing the taxon or supported grades.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-OWNER
+  - S034-2007-ISOLATION
+  - S034-2014-SI
+  - S034-LOCUS
+  - S034-STRAIN-LOADER
+- assessment_id: S034-A-NAME
+  area: nomenclature
+  topic: Source-derived preferred-name typo
+  outcome: concern
+  summary: The owner reproduces the MIBiG spelling lactidomycin, while the primary
+    sources identify a lactimidomycin congener. Correct the preferred label to 8-hydroxy-8,9-dihydrolactimidomycin
+    through an effective maintained transform; preserve the original source label
+    as provenance and retain the stable identity and path.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-OWNER
+  - S034-RAW
+  - S034-2007-ISOLATION
+  - S034-2014-STEREO
+  - S034-NAME-OWNER
+- assessment_id: S034-A-OPTIONAL
+  area: completeness
+  topic: Optional pathway and compound-specific activity
+  outcome: supported
+  summary: The empty optional sections are not a review failure. A future activity
+    addition can use exact 15 MTT EC50 values 47.6/11.1/51.8 nM for MDA-MB-231/HeLa/Jurkat,
+    with exposure and controls retained. Parent translation inhibition, direct target
+    binding and engineered 16 assay values are not established for this target by
+    those measurements. Proposed LtmK radical/PKS chemistry must remain qualified
+    if a graph is added.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-OWNER
+  - S034-2014-ACTIVITY
+  - S034-2014-GENETICS
+  - S034-SEQUENCE-SCOPE
+- assessment_id: S034-A-LIMITS
+  area: provenance
+  topic: Primary-source access and internal discrepancies
+  outcome: supported
+  summary: Original SI and full 2014 primary text cover the present claims, despite
+    the unavailable 2007 main body and unavailable 2014 main-figure pixels. Methods/SI
+    resolve transposed strain digits and abstract mutant numbers. Printed versus deposited
+    LtmK lengths remain separate; no protein claim is silently added.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  evidence_ids:
+  - S034-2014-SI
+  - S034-2014-GENETICS
+  - S034-LOCUS
+  - S034-SEQUENCE-SCOPE
+  - S034-2007-ACCESS
+findings:
+- finding_id: S034-F-STRAIN
+  issue_key: mibig-bgc0000083-compound3-strain-context
+  category: scope
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Retain the tested ATCC 53964 producer strain
+  description: The species-level producer omits the strain explicitly identified by
+    the isolation study, native knockout/rescue study and deposited locus. Qualify
+    this exact compound producer as ATCC 53964 without remapping taxonomy or changing
+    its supported evidence grades.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].evidence
+  evidence_ids:
+  - S034-OWNER
+  - S034-RAW
+  - S034-2007-ISOLATION
+  - S034-2014-SI
+  - S034-2014-GENETICS
+  - S034-LOCUS
+  - S034-STRAIN-LOADER
+  rule_id: 'review-checklist: strain-specific producer evidence'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Consumed source-pinned experimental strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Regenerate producer through the existing qualifier loader
+- finding_id: S034-F-NAME
+  issue_key: mibig-bgc0000083-compound3-lactidomycin-name
+  category: nomenclature
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Correct the preferred-name lactidomycin typo
+  description: The preferred label faithfully imports lactidomycin from MIBiG, but
+    the exact primary compound is an 8-hydroxy-8,9-dihydrolactimidomycin. The chemistry
+    is correct; the typo should be corrected through a maintained, tested name transform
+    while preserving the original source label, identifier and pinned path.
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  field_paths:
+  - label
+  evidence_ids:
+  - S034-OWNER
+  - S034-RAW
+  - S034-2007-ISOLATION
+  - S034-2014-STEREO
+  - S034-2014-SI
+  - S034-NAME-OWNER
+  rule_id: 'review-checklist: label and exact chemical form agree; effective generated-field
+    ownership'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Implement and consume an explicit source-pinned preferred-name correction
+      while preserving source-concept provenance
+actions:
+- action_id: S034-ACTION-STRAIN
+  description: Add an attributed curation/mibig_producer_strains.tsv row for BGC0000083:3,
+    pinned to complete raw-row SHA256 7b70481c0f52cc4755ac089a418cd361dc34afec601951accbd38f44ae8510cc,
+    with strain ATCC 53964 and reference PMID:25405956. Cite the native Methods/SI
+    and GQ274954.1 bridge in the rationale and retain the separate 2007 natural isolation
+    as support. Regenerate through the existing loader; no method or reference override
+    is required.
+  finding_ids:
+  - S034-F-STRAIN
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Consumed source-pinned experimental strain qualifier
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Regenerate producer through the existing qualifier loader
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The consumed qualifier matches the complete untouched BGC0000083:3 source row;
+    stale, duplicate and missing rows fail.
+  - Only the producer strain and attributed CURATOR_INFERENCE evidence change; taxon
+    221586, structure, BGC_CHARACTERIZED, CLUSTER_DEMONSTRATED, Knock-out studies
+    and PMID25405956 remain.
+  - Use wild-type ATCC 53964 rather than a knockout or foreign-mgsK derivative; preserve
+    source-internal numbering cautions in rationale.
+  - Exercise composition with the separately proposed name correction, inspect a canary
+    diff, and run focused checks, strict validation, reproduction and required repository
+    QC.
+- action_id: S034-ACTION-NAME
+  description: Implement and test a narrow preferred-name correction consumer in scripts/seed_from_sources.py
+    before adding any correction data. For example, introduce a curation/mibig_name_corrections.tsv
+    input keyed by BGC0000083:3 and full raw-row SHA256 7b70481c0f52cc4755ac089a418cd361dc34afec601951accbd38f44ae8510cc,
+    with expected original label 8-hydroxy-8,9-dihydrolactidomycin, corrected label
+    8-hydroxy-8,9-dihydrolactimidomycin, DOI:10.1021/bi501396v, curator/date and rationale.
+    Preserve the untouched raw row and source_concepts source_label, and expose correction
+    provenance separately. A reserved decisions.tsv row, direct generated-YAML edit
+    or untracked raw-label edit is not an effective repair.
+  finding_ids:
+  - S034-F-NAME
+  target_ids:
+  - naturalproductmech:mibig-ac7717914d
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Implement and consume an explicit source-pinned preferred-name correction
+      while preserving source-concept provenance
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The implemented input is actually loaded in normal and canary seeding; missing,
+    duplicate, stale-row, unexpected-old-label and conflicting-authority decisions
+    fail before output.
+  - Only this exact owner preferred label changes; retain original source label as
+    provenance, naturalproductmech:mibig-ac7717914d, full key JFGZTRUDLAEIRJ-CQBLZTSBSA-N,
+    pinned PATHS.tsv location, history and all biological claims.
+  - Test the name correction together with the raw-row-pinned strain qualifier. Both
+    pins must validate against the untouched raw row, not a label-mutated intermediate.
+  - Keep natural C8S configuration and the engineered C8R congener separate. Do not
+    introduce an incorrect C9-hydroxy label from the 2007 S4 typo.
+  - Inspect generated diffs and run focused naming/composition tests, strict validation,
+    reproduction and full required QC; no hand-edited scientific YAML or reserved
+    decision is the final maintained solution.
+limitations:
+- The eligible-authority conclusion is bounded to the complete current ChEBI exact-key
+  query, full candidate JSON/MOL and complete committed eligible table; it is not
+  a claim about every chemical registry.
+- Database structure equivalence does not independently repeat the original absolute-configuration
+  experiment. The primary stereo, biological origin, native genetics and strain/name
+  findings are assessed in the separate science section.
+- The extra exact-compound Wikidata request succeeded with the established scientific-review
+  user agent after a sandbox DNS failure and a default-user-agent HTTP403. Those access
+  failures do not indicate an identifier defect.
+- The 2007 main body is unavailable after the official public route returned 403.
+  Its complete SI, original structure/NMR-table pixels and the full 2014 body/SI identify
+  exact natural C8S compound 4/15; raw NMR data and the historical absolute-configuration
+  derivation were not independently reconstructed.
+- The 2014 main HPLC/structural figure pixels were unavailable; their full captions
+  and Results were read. Original SI genotype, structure and assay-curve pixels were
+  inspected. Published Table 2 values were read directly from the structured primary
+  table, not recomputed from plots.
+- The 2014 study infers LtmK chemistry from native genetics; it does not report purified
+  LtmK conversion or directly observe its proposed radical intermediates. The 413-aa
+  printed/418-aa deposited LtmK discrepancy remains explicit and does not create a
+  protein claim in this owner.
+- No broad search proves the absence of other biological activities. The optional
+  MTT addition described here is restricted to exact natural 15 and the reported three
+  cell lines; target binding, clinical effects and the engineered 16 data are not
+  transferred.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command
+  receipts for this base. Scientific failed or unavailable checks are distinct from
+  bundle validation.
+tags:
+- path-order-campaign
+- batch-004
+```

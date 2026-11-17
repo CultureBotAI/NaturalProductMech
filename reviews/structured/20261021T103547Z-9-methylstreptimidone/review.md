@@ -1,0 +1,1153 @@
+# 9-methylstreptimidone: exact identity and occurrences supported; main phenotype evidence unavailable
+
+- Review: 20261021T103547Z-9-methylstreptimidone
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T10:24:22.833358Z
+- Finished UTC: 2026-10-21T10:35:47.313319Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The published stereochemical structure, resolving identifiers, native ATCC53653 provenance and all three original occurrence citations are coherent. The required full 2013 main-body mutant phenotype audit remains unavailable; the original abstract and complete SI provide positive but incomplete genetic evidence. No confirmed owner defect is established.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 38, batch 004, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 84 of 3116 current records had campaign coverage and 3032 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-a975571d47 | data/natural_products/alkaloids/9-methylstreptimidone.yaml | generated | 9-methylstreptimidone |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-a975571d47 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-a975571d47 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-a975571d47 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-a975571d47 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-a975571d47 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-a975571d47 | The full documented just qc recipe passed against the new main revision. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Current authority identity and full stereochemical equivalence | passed | True | naturalproductmech:mibig-a975571d47 | All five independently recomputed graphs agree in Standard and fixed-H identity; the exact NPAtlas xref resolves. |
+| Producer and occurrence taxon resolution | passed | True | naturalproductmech:mibig-a975571d47 | The producer is an explicit current strain and the three occurrence mappings retain their genus/species ranks. No synonym is used to equate different experimental isolates. |
+| Applicable producer expression dataset | not_applicable | False | naturalproductmech:mibig-a975571d47 | No relevant producer dataset occurs in the retained complete catalogue. An unrelated Streptomyces species dataset is not a substitute. |
+| Published exact chemical identity and stereochemistry | passed | True | naturalproductmech:mibig-a975571d47 | Original SI and historical drawings plus the1976 original abstract agree with the owner’s two stereocentres and6E/8Z diene. Independent graph reconstruction matches the full key. |
+| All three original occurrence citations | passed | True | naturalproductmech:mibig-a975571d47 | Complete original1974,1989 and1995 papers support the exact parent and the recorded genus/species scopes; the hydroxy and epoxide congeners remain distinct. |
+| Native strain, product isolation and accession | passed | True | naturalproductmech:mibig-a975571d47 | ATCC53653 native isolation, the native replacement-mutant methods and current deposited locus metadata share the exact strain. Cloning/conjugation hosts are kept separate. |
+| Required full2013 primary and critical mutant metabolic figures | unavailable | True | naturalproductmech:mibig-a975571d47 | The main2013 article and smdE–K phenotype figures could not be inspected. The original abstract and SI supply positive genetics/product evidence but do not close this full audit requirement. This is an access limitation, not evidence that the source method is wrong. |
+| Detailed original1976 absolute-configuration procedure | unavailable | False | naturalproductmech:mibig-a975571d47 | The original publisher abstract and subsequent original structure drawings support the published configuration, but the full chemical/spectroscopic derivation was inaccessible. |
+
+## Scientific And Domain Assessments
+
+### Current authority identity and chemical form
+
+identity: supported. Targets: naturalproductmech:mibig-a975571d47.
+
+All inspected authorities resolve to the exact neutral owner graph, including two tetrahedral centres and two alkene configurations. Standard and fixed-H comparison both agree. The less-specific Wikidata P233 string is not used as a stereochemical authority.
+
+### Eligible authority and stable cross-reference
+
+grounding: supported. Targets: naturalproductmech:mibig-a975571d47.
+
+Exact two-star CHEBI:215258 corroborates identity but is ineligible under the repository’s three-star rule. Minted grounding and the resolving NPA019467 xref remain appropriate within the inspected authority and complete eligible-inventory scope.
+
+### Strain producer and separately scoped occurrences
+
+scope: supported. Targets: naturalproductmech:mibig-a975571d47.
+
+Current NCBI ranks and literal Wikidata mappings agree with the owner. The ATCC 53653 producer is a strain under S. himastatinicus; the two Streptomyces occurrences remain genus-level and the S. hygroscopicus occurrence remains species-level. Neither taxonomic membership nor the producer’s old synonym transfers a locus to the occurrence isolates.
+
+### Source fidelity, predicted filing and seeded history
+
+provenance: supported. Targets: naturalproductmech:mibig-a975571d47.
+
+The raw source concept and current MIBiG metadata agree; 0/0 upstream placeholder coordinates are not emitted as a genomic interval. Pinned NPClassifier output is explicitly computational and kept separate from PKS class. The seeded history and stable path are retained.
+
+### Exact parent versus hydroxylated, epoxidized and carboxylated congeners
+
+identity: supported. Targets: naturalproductmech:mibig-a975571d47.
+
+The owner is natural9-methylstreptimidone:2013compound1,1989S-632-A2/compound4 and1995compound2. C2R/C5S,6E/8Z matches the original drawings and full key. Neither the1995hydroxy1 nor1989epoxides1/2 nor2013carboxylated2 is conflated with it.
+
+### Natural origin and all cited occurrences
+
+evidence: supported. Targets: naturalproductmech:mibig-a975571d47.
+
+Original isolation of the exact named parent supports NATURAL_PRODUCT and all three recorded occurrences.1974S-885 remains genus-level because species taxonomy was tentative;1995HIL Y-9065403 is likewise genus-level;1989explicitly identifies S. hygroscopicus S-632. Historical strains are not substituted for the separately characterized ATCC53653 locus strain.
+
+### Native producer and locus provenance
+
+evidence: supported. Targets: naturalproductmech:mibig-a975571d47.
+
+The complete2013 SI directly isolates parent1 from native S. himastatinicus ATCC53653 and documents native mutant construction and carboxylated analogue isolation. Current FR878059.1 metadata independently resolves the native accession/strain. PKS class is consistent with SmdI; E. coli cloning/conjugation is not heterologous product synthesis.
+
+### Experimental grade and full-phenotype verification boundary
+
+evidence: unknown. Targets: naturalproductmech:mibig-a975571d47.
+
+The owner faithfully carries Knock-out studies with both strong grades, and the primary abstract plus SI genotype/isolation work is positive genetic support. The critical main-body smdE–K product traces and all controls remain uninspected, so the full grade audit remains incomplete. FigureS19 specifically cannot prove loss of1 in those mutants. No confirmed counterevidence warrants a method withdrawal or grade correction.
+
+### Optional mechanism and activity enrichment
+
+completeness: supported. Targets: naturalproductmech:mibig-a975571d47.
+
+No missing optional pathway/activity finding is justified. Any future pathway must retain the genetic versus purified-enzyme distinction, module5 and trans-acting AT/TE context, and native versus comparator proteins. Any activity addition needs exact purified-parent endpoints and methods; culture-filtrate antibacterial activity, analogue effects and direct target mechanisms are not inherited.
+
+### Source-access coverage and preserved internal source limits
+
+provenance: unknown. Targets: naturalproductmech:mibig-a975571d47.
+
+Original1974/1989/1995 main bodies and complete2013 SI are available; the2013 main and1976 detailed stereochemical study are unavailable. Current identity is coherent, but this is a partial scientific review. Source assay conflicts and incomplete historical absolute-configuration procedures are retained without inventing an owner defect.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| I038-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0000171.5/annotations.json; Complete response; exact relevant fields inspected | supports | Active BGC0000171 version 5 retains exact compound 1, 9-methylstreptimidone, the owner full chemical graph, NPAtlas NPA019467, native strain taxon 457427, FR878059.1 and Knock-out studies. Source quality is questionable and completeness is complete. The source location is a 0/0 placeholder; the committed row and owner appropriately omit numeric coordinates. PMID 23438151 is the legacy reference. This metadata check is separate from primary experimental support. |
+| I038-NPATLAS | https://www.npatlas.org/api/v1/compound/NPA019467; Complete response; exact relevant fields inspected | supports | NPA019467 resolves to the exact full key ATUBIBZJAGAIBW-WGEALTPQSA-N, neutral C17H25NO4, and one current non-reassigned structure. Its origin is Streptomyces sp. at genus rank, citing DOI 10.7164/antibiotics.27.206 and PMID 4366263. Its MIBiG cross-reference is BGC0000171. The origin organism is not the separately characterized native locus strain. |
+| I038-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/215258/; Complete response; exact relevant fields inspected | supports | CHEBI:215258 is released but two-star and has the exact full key, neutral formula and explicitly 2R,5S,6E,8Z IUPAC name. Its two-star status does not meet the repository three-star grounding rule. Extra ChEBI origin metadata is not used to remap this owner’s occurrence or producer taxa. |
+| I038-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/215258/; Complete response; exact relevant fields inspected | supports | The full official MOL connection table independently reproduces the owner Standard key and fixed-H chemical representation, including both tetrahedral centres and both alkene configurations. |
+| I038-CHEBI-SEARCH | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=ATUBIBZJAGAIBW-WGEALTPQSA-N&amp;size=100; Complete response; exact relevant fields inspected | supports | The complete current exact-key search returns one result, two-star CHEBI:215258. The complete committed eligible ChEBI projection has no exact-key match. These bounded checks support retained minted grounding rather than promotion to an ineligible authority ID. |
+| I038-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=457427,1883,1912&amp;retmode=xml; All three top-level Taxon records; rank, parent, names and relevant lineage entries | supports | NCBI 457427 is the strain Streptomyces himastatinicus ATCC 53653, parent species 998084; its older S. hygroscopicus ATCC 53653 name is a strain synonym. NCBI 1883 is the genus Streptomyces, and NCBI 1912 is the separate species S. hygroscopicus. The strain synonym does not equate the historical S-632 occurrence isolate with ATCC 53653 or collapse all occurrence ranks. |
+| I038-WIKIDATA | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q1144013%7CQ3975996%7CQ104394842&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; Exact Q1144013/Q3975996 P685 values and Q104394842 P234/P235/P233 properties | supports | Q1144013 maps literally to NCBI 1883 and Q3975996 to NCBI 1912. Q104394842, displayed as Antibiotic TS 885, carries the exact full stereochemical InChI and InChIKey. Its separate P233 SMILES is stereochemically unspecified; that less-specific property is not used to replace the owner structure. These mappings corroborate identifier routing, not occurrence experiments. |
+| I038-CHEM | /private/tmp/npm-review-work/038/identity/independent-authority-chemistry.json; Independent recomputation from owner, current MIBiG, NPAtlas, ChEBI JSON and official MOL | supports | All five complete graphs produce full key ATUBIBZJAGAIBW-WGEALTPQSA-N, identical fixed-H InChI, neutral C17H25NO4, one R and one S tetrahedral centre, and one E and one Z alkene. This independently agrees with root’s retained chemical-comparison.json; primary drawing interpretation is assessed separately. |
+| I038-RAW | data/raw/mibig_compounds.tsv; Complete BGC0000171:1 row plus exact-key LOTUS/NPClassifier/eligible ChEBI projections | supports | The source row reproduces version 5, native strain taxon 457427, FR878059.1, the sole Knock-out studies method, both strong grades and PMID 23438151. Separate LOTUS tuples carry two genus occurrences and one S. hygroscopicus species occurrence; they do not claim those occurrence strains share the characterized locus. |
+| I038-CLASS | data/raw/npclassifier.tsv; Complete exact-key row and version attribution | context_only | Alkaloids / Lysine alkaloids / Piperidine alkaloids and nonglycoside are explicitly the pinned npclassifier.gnps2.org@2026-09-07 output. This predicted filing is distinct from the asserted MIBiG PKS classification and does not assert a measured lysine precursor route. |
+| I038-HISTORY | data/natural_products/alkaloids/9-methylstreptimidone.yaml; Complete source concept, grounding note, SEEDED status and both history events | supports | The MIBiG source concept, minted identifier and original source label are retained. The 2026-09-10 and 2026-09-25 events record seeding and the current status is SEEDED. This external review does not promote scientific status or change the audit history. |
+| I038-LOCAL-SEARCH | /private/tmp/npm-review-work/038/identity/local-search.txt; All 43 matching lines inspected; long historical receipt lines restricted to exact-target contexts | supports | The ignored-inclusive search finds the owner, raw inventories, pinned PATHS entry and historical queue/checkpoint references. No exact-target maintained correction or validated structured review appears in the searched results. Historical queue mentions are not scientific review coverage. |
+| I038-IMODULON | https://imodulondb.org/; Complete retained 28-dataset structured-runner catalogue | context_only | The retained full catalogue has no S. himastatinicus ATCC 53653 or S. hygroscopicus dataset. Its S. albidoflavus and S. coelicolor datasets cannot be substituted based on a genus-level occurrence or a historical strain synonym. The catalogue is context only and its noncoverage is not negative biological evidence. |
+| S038-OWNER | data/natural_products/alkaloids/9-methylstreptimidone.yaml; Entire owner and complete resolved source projection | supports | The owner denotes exact 9-methylstreptimidone with two specified tetrahedral centres and two specified alkenes, three LOTUS occurrence references, native ATCC53653 and BGC0000171 version5. The source records Knock-out studies, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED. It asserts no optional pathway, protein, graph, target or activity. |
+| S038-RAW | data/raw/mibig_compounds.tsv; Exact full BGC0000171:1 source row; local-sources.json includes matching LOTUS rows | supports | The raw row carries PMID23438151, FR878059.1, native strain taxon457427, PKS class and the sole method Knock-out studies. No coordinates are supplied; the owner does not invent them. The three occurrence citations are separately assessed as original isolation reports. |
+| S038-SI-IDENTITY | https://ndownloader.figshare.com/files/4076611; DOI10.1021/ol400224n official SI: sections1/5/6 pp2–4; TableS6 p9; original FigureS23–S24 pp26–27 | supports | Wild-type S. himastatinicus ATCC53653 yielded compound1 after six litres of culture were extracted and purified: 12mg recovered material, not a validated production titre. ESIMS m/z308.1 and the 1H/13C NMR comparison to Otani1989 identify 1 as 9-methylstreptimidone. The original drawing specifies the hydroxyl and methyl stereocentres and E/Z diene; the source does not report a new absolute-configuration determination. |
+| S038-SI-GENETICS | https://ndownloader.figshare.com/files/4076611; Sections3–6 pp3–4; TablesS2/S4/S5; FigureS12 caption p16 and original FigureS13/S14 pixels p17 | supports | Lambda-Red recombination on cosmids, conjugation into native ATCC53653 and double-crossover PCR selection generated native mutants. Ju2109 targets smdI, Ju2110 smdJ and Ju2111 smdK. Original FigureS14 shows the smdK replacement design and PCR bands labelled1542bp wild type and1634bp mutant. Section6 explicitly isolates 9mg carboxylated analogue2 from the smdK mutant. E. coli strains serve cloning/conjugation roles and are not shown producing the natural compound. |
+| S038-SI-PHENOTYPE-LIMIT | https://ndownloader.figshare.com/files/4076611; Original FigureS19 p20, read against its complete caption and analytical-HPLC Methods p3 | supports | FigureS19 shows compound1 retained in wild type, flanking-gene deletions, smdA–D deletions and the combined orf(-3)-D deletion. It does not show smdE–K metabolic traces. These pixels cannot be used as a stand-in for loss of1 in the PKS mutant or the complete smdK product profile. Analytical conditions are five-day cultures at28°C and200rpm, UV237nm; PCR gels establish genotype rather than metabolite loss. |
+| S038-ABSTRACT | https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23438151%20AND%20SRC:MED&amp;format=json&amp;resultType=core; Original abstract and DOI/PMID metadata; no main body | supports | The original abstract states that genome analysis and gene inactivation establish the 9-methylstreptimidone cluster in S. himastatinicus and that smdK inactivation yields a carboxylated analogue. This supports the authors’ genetic interpretation, but does not expose main-body mutant chromatograms, exact controls or all mechanistic reasoning. It is not treated as full-text verification. |
+| S038-MECHANISM-SCOPE | https://ndownloader.figshare.com/files/4076611; TableS1 p5, TableS7 p10 and sequence-alignment captions pp22–25; complete procedural sections | supports | The supplement distinguishes SmdI type-I PKS, separate SmdF acyltransferase, separate SmdE thioesterase and proposed SmdJ/SmdK functions. Module5 iteration and terminal decarboxylation are interpreted from genetics/chemical products and sequence analysis. The inspected SI contains no purified SmdK conversion or described complementation experiment; with the main body unavailable, this is a scope limit rather than a whole-study absence claim. Comparator accessions in TableS1/alignment captions are not experimentally studied native proteins. |
+| S038-1974 | https://www.jstage.jst.go.jp/article/antibiotics1968/27/3/27_3_206/_pdf; DOI10.7164/antibiotics.27.206, entire pp206–214; isolation pp207–208 and taxonomy discussion p213; original Table1–5 pixels p212 | supports | Original Streptomyces sp. S-885 from Miyagi soil yields30.8mg purified 9-methylstreptimidone from2L culture filtrate. Formula C17H25NO4, mass307, NMR/MS and positive rotation support the exact named parent. The authors explicitly leave species taxonomy incomplete and describe similarity to S. pluricolorescens, so the owner’s genus-level occurrence is appropriate. The paper does not independently determine all absolute configurations. |
+| S038-1989 | https://www.jstage.jst.go.jp/article/antibiotics1968/42/5/42_5_654/_pdf; DOI10.7164/antibiotics.42.654, entire pp654–661; original Scheme1 p654 and Table2 p656; isolation p657 | supports | S. hygroscopicus S-632 culture provides parent S-632-A2, compound4, separately from streptimidone3 and new epoxides1/2. A200mg portion of FractionA yielded25mg of4. Table2 explicitly reports newly measured parent NMR data; Scheme1 depicts the known stereochemistry and the discussion recognizes parent C5S. Epoxide unresolved configurations and activity observations are not assigned to the parent. The species occurrence citing this paper is supported. |
+| S038-1995 | https://www.jstage.jst.go.jp/article/antibiotics1968/48/3/48_3_271/_pdf; DOI10.7164/antibiotics.48.271, complete pp271–273 and original pp271–272 pixels, Table1/2 and structure drawings | supports | Streptomyces sp. HIL Y-9065403 from Nainital soil yields known 9-methylstreptimidone2 alongside new5-hydroxy analogue1. From17L culture filtrate the authors recover1.44g of purified2; Table1 gives C17H25NO4 and [M+H]+308, and Table2 gives new1H/13C data. The authors explicitly identify2 by comparison with the known parent and its prior literature. The genus occurrence is supported; the stated unresolved absolute configuration pertains to analogue1 and is not a retraction of parent2 identity. |
+| S038-1976-ABSTRACT | https://onlinelibrary.wiley.com/doi/abs/10.1002/hlca.19760590713; Original publisher abstract at retained web-response lines80–82; full article unavailable | supports | The original abstract assigns structure15, 9-methylstreptimidone, as2R,5S,6E on chemical/spectroscopic evidence. It corroborates the two centre assignments and internal alkene, but does not expose the detailed experimental derivation or separately state the terminal8-alkene descriptor. The full historical body and its original structure15 image remain unread. |
+| S038-DRAWING | /private/tmp/npm-review-work/038/primary-drawing-comparison.json; Independent manual interpretation of original2013 TableS6/FigureS23–24 and1989 Scheme1, then RDKit reconstruction | supports | The published graph was reconstructed from the terminal methyl toward the glutarimide with C2R/C5S,6E/8Z. It reproduces C17H25NO4 and full key ATUBIBZJAGAIBW-WGEALTPQSA-N exactly. The two wedges are not borrowed from a different congener; this establishes agreement with published identity, not a new experimental absolute-configuration proof. |
+| S038-LOCUS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=FR878059.1&amp;rettype=gbwithparts&amp;retmode=text; Complete source metadata and selected smd gene/CDS qualifiers; deposited sequences not independently translated | supports | FR878059.1 is52580bp and identifies the9-methylstreptimidone cluster from S. himastatinicus ATCC53653, culture_collectionATCC:53653, taxon457427. It includes smdI13158..32300/CCC21123.1, smdJ32300..32941/CCC21124.1 and smdK32938..34419/CCC21125.1 with gene-disruption qualifiers. The sequence metadata bridge is consistent with the native primary study but is not independent experimental phenotype proof or a claim that the entire deposited span is the minimal functional locus. |
+| S038-ACTIVITY-SCOPE | https://www.jstage.jst.go.jp/article/antibiotics1968/48/3/48_3_271/_pdf; 1995 p272 Biological Properties; read together with1974 methods/tables and1989 congener labels | supports | The1995 purified parent2 has reported100% inhibition at2ppm in Lemna gibba and Avena sativa screening models, but this short paper gives limited assay protocol detail and no exact molecular target. The culture filtrate’s Staphylococcus activity must not be assigned to purified2: the paper reports no antibacterial activity for either isolated compound. The1974 minimum inhibitory/toxic and plaque-suppression endpoints are not IC50 or direct binding; its Candida tropicalis100 versus&gt;500µg/mL conflict remains source-local and is not imported into this owner. |
+| S038-MAIN-ACCESS | https://pubs.acs.org/doi/10.1021/ol400224n; Retained metadata-access.json and repository-access.json; no new retry of known blocked routes | context_only | The official2013 article route returned403 and the discovered institutional handle failed DNS. The official complete SI and original abstract are available, but the main body and its metabolic figures remain uninspected. The historical1976 original body is also unavailable; only its public publisher abstract was successfully inspected. |
+| S038-GRADING | conf/producer_evidence.tsv; Complete current evidence map and grading.py functions | supports | The sole imported Knock-out studies method maps to BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED and addresses native production and locus linkage. The owner is mechanically faithful to this mapping. A source-access gap alone is not grounds to withdraw the method or replace it with a weaker claim. |
+
+## Limits And Additional Notes
+
+- Authority agreement establishes copied identity, rank and identifier resolution; it does not substitute for original chemical isolation or experimental locus evidence. The separate science packet retains those claim-specific results and required source-access gaps.
+- The exact-key ChEBI check is bounded to the complete returned current search and committed eligible projection. The two-star entry’s extra taxon metadata is not adopted without separate verification.
+- The iModulonDB catalogue retains its actual original access time. No unrelated Streptomyces dataset is treated as strain-specific expression or biochemical evidence.
+- The required2013 main text and its principal smdE–K mutant metabolic figures are unavailable. Complete SI and the original abstract do not substitute for those figures; no absence of native complementation or purified catalysis is asserted for unread main content.
+- The original1976 absolute-configuration method and structure15 drawing remain unavailable. Published2R/5S/6E is explicitly stated in its original abstract and coherent with later original drawings;8Z is supported by the later drawings/couplings. No raw-spectral or historical chemical-degradation rederivation was performed.
+- The1995 pure-parent occurrence is direct, but its drawing is not an independent absolute stereochemical determination. The authors identify the known parent through physicochemical and NMR comparison; the unresolved configuration statement refers to the new5-hydroxy analogue.
+- GenBank source/smd metadata was inspected; no independent full-CDS translation, enzyme construct reconstruction or minimal-cluster boundary experiment was performed, and no owner protein claim requires one.
+- The original1974 Candida tropicalis MIC differs between Table1 and Table5; it remains an unresolved source-local assay discrepancy. No optional quantitative activity is silently inserted and no clinical or direct-target inference is made.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command receipts for this base. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T103547Z-9-methylstreptimidone
+title: '9-methylstreptimidone: exact identity and occurrences supported; main phenotype
+  evidence unavailable'
+started_at: '2026-10-21T10:24:22.833358Z'
+finished_at: '2026-10-21T10:35:47.313319Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The published stereochemical structure, resolving identifiers, native ATCC53653
+  provenance and all three original occurrence citations are coherent. The required
+  full 2013 main-body mutant phenotype audit remains unavailable; the original abstract
+  and complete SI provide positive but incomplete genetic evidence. No confirmed owner
+  defect is established.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/9-methylstreptimidone.yaml
+    sha256: d6dd6a083bf9d06a7cae5c064271fb444abeea9ad42df8ba6b7e8c0adbf5026c
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 38, batch 004, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 84 of 3116 current records had campaign coverage and 3032 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a975571d47
+targets:
+- target_id: naturalproductmech:mibig-a975571d47
+  path: data/natural_products/alkaloids/9-methylstreptimidone.yaml
+  label: 9-methylstreptimidone
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  command: just validate-strict data/natural_products/alkaloids/9-methylstreptimidone.yaml
+    --out /private/tmp/npm-review-work/038/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T10:24:25.234089Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. No earlier
+    baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    No earlier baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. No earlier
+    baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. No
+    earlier baseline result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed against the new main revision.
+    Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured
+    lint, governance, documentation, provenance, source-queue, schema, rendering,
+    reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh read-only execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. No earlier baseline
+    result is reused.'
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+- check_id: I038-C-CHEM
+  name: Current authority identity and full stereochemical equivalence
+  status: passed
+  required: true
+  summary: All five independently recomputed graphs agree in Standard and fixed-H
+    identity; the exact NPAtlas xref resolves.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - I038-CHEM
+  - I038-NPATLAS
+  - I038-MOL
+- check_id: I038-C-TAXON
+  name: Producer and occurrence taxon resolution
+  status: passed
+  required: true
+  summary: The producer is an explicit current strain and the three occurrence mappings
+    retain their genus/species ranks. No synonym is used to equate different experimental
+    isolates.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - I038-TAXON
+  - I038-WIKIDATA
+  - I038-RAW
+- check_id: I038-C-IMODULON
+  name: Applicable producer expression dataset
+  status: not_applicable
+  required: false
+  summary: No relevant producer dataset occurs in the retained complete catalogue.
+    An unrelated Streptomyces species dataset is not a substitute.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - I038-IMODULON
+- check_id: S038-C-IDENTITY
+  name: Published exact chemical identity and stereochemistry
+  status: passed
+  required: true
+  summary: Original SI and historical drawings plus the1976 original abstract agree
+    with the owner’s two stereocentres and6E/8Z diene. Independent graph reconstruction
+    matches the full key.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-SI-IDENTITY
+  - S038-1989
+  - S038-1976-ABSTRACT
+  - S038-DRAWING
+- check_id: S038-C-OCCURRENCES
+  name: All three original occurrence citations
+  status: passed
+  required: true
+  summary: Complete original1974,1989 and1995 papers support the exact parent and
+    the recorded genus/species scopes; the hydroxy and epoxide congeners remain distinct.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-1974
+  - S038-1989
+  - S038-1995
+- check_id: S038-C-NATIVE-BRIDGE
+  name: Native strain, product isolation and accession
+  status: passed
+  required: true
+  summary: ATCC53653 native isolation, the native replacement-mutant methods and current
+    deposited locus metadata share the exact strain. Cloning/conjugation hosts are
+    kept separate.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-SI-IDENTITY
+  - S038-SI-GENETICS
+  - S038-LOCUS
+- check_id: S038-C-MAIN
+  name: Required full2013 primary and critical mutant metabolic figures
+  status: unavailable
+  required: true
+  summary: The main2013 article and smdE–K phenotype figures could not be inspected.
+    The original abstract and SI supply positive genetics/product evidence but do
+    not close this full audit requirement. This is an access limitation, not evidence
+    that the source method is wrong.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-ABSTRACT
+  - S038-SI-GENETICS
+  - S038-SI-PHENOTYPE-LIMIT
+  - S038-MAIN-ACCESS
+- check_id: S038-C-HISTORICAL-STEREO
+  name: Detailed original1976 absolute-configuration procedure
+  status: unavailable
+  required: false
+  summary: The original publisher abstract and subsequent original structure drawings
+    support the published configuration, but the full chemical/spectroscopic derivation
+    was inaccessible.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-1976-ABSTRACT
+  - S038-MAIN-ACCESS
+evidence:
+- evidence_id: I038-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000171.5/annotations.json
+  locator: Complete response; exact relevant fields inspected
+  accessed_at: '2026-10-21T10:26:52.505982Z'
+  support: supports
+  summary: Active BGC0000171 version 5 retains exact compound 1, 9-methylstreptimidone,
+    the owner full chemical graph, NPAtlas NPA019467, native strain taxon 457427,
+    FR878059.1 and Knock-out studies. Source quality is questionable and completeness
+    is complete. The source location is a 0/0 placeholder; the committed row and owner
+    appropriately omit numeric coordinates. PMID 23438151 is the legacy reference.
+    This metadata check is separate from primary experimental support.
+  snapshot_sha256: 995aad4d842f2b5cd901e46874dcf53056de2bf2fd3c1b187b07b3e9988c6c55
+- evidence_id: I038-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA019467
+  locator: Complete response; exact relevant fields inspected
+  accessed_at: '2026-10-21T10:26:52.505926Z'
+  support: supports
+  summary: NPA019467 resolves to the exact full key ATUBIBZJAGAIBW-WGEALTPQSA-N, neutral
+    C17H25NO4, and one current non-reassigned structure. Its origin is Streptomyces
+    sp. at genus rank, citing DOI 10.7164/antibiotics.27.206 and PMID 4366263. Its
+    MIBiG cross-reference is BGC0000171. The origin organism is not the separately
+    characterized native locus strain.
+  snapshot_sha256: 20bf62fac83cb06bd319e4e9c183128d79ba47c5336e2cafb69a3c97464d70e5
+- evidence_id: I038-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/215258/
+  locator: Complete response; exact relevant fields inspected
+  accessed_at: '2026-10-21T10:27:44.206684Z'
+  support: supports
+  summary: CHEBI:215258 is released but two-star and has the exact full key, neutral
+    formula and explicitly 2R,5S,6E,8Z IUPAC name. Its two-star status does not meet
+    the repository three-star grounding rule. Extra ChEBI origin metadata is not used
+    to remap this owner’s occurrence or producer taxa.
+  snapshot_sha256: 4563e3e69ac25e78f8f3b4d3929660d123365e3e3e6ffeaa1bfd9adfaeb30e1c
+- evidence_id: I038-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/215258/
+  locator: Complete response; exact relevant fields inspected
+  accessed_at: '2026-10-21T10:27:44.207177Z'
+  support: supports
+  summary: The full official MOL connection table independently reproduces the owner
+    Standard key and fixed-H chemical representation, including both tetrahedral centres
+    and both alkene configurations.
+  snapshot_sha256: d21fb93497f64e8b1824074c9e4eaaa7f9e8994e15f2ff1674ef5f7b971c050b
+- evidence_id: I038-CHEBI-SEARCH
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=ATUBIBZJAGAIBW-WGEALTPQSA-N&size=100
+  locator: Complete response; exact relevant fields inspected
+  accessed_at: '2026-10-21T10:26:52.679728Z'
+  support: supports
+  summary: The complete current exact-key search returns one result, two-star CHEBI:215258.
+    The complete committed eligible ChEBI projection has no exact-key match. These
+    bounded checks support retained minted grounding rather than promotion to an ineligible
+    authority ID.
+  snapshot_sha256: 788b652add9b9db69395e2296bf28f7454850d6562480319886c460c71ea8a49
+- evidence_id: I038-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=457427,1883,1912&retmode=xml
+  locator: All three top-level Taxon records; rank, parent, names and relevant lineage
+    entries
+  accessed_at: '2026-10-21T10:26:53.017932Z'
+  support: supports
+  summary: NCBI 457427 is the strain Streptomyces himastatinicus ATCC 53653, parent
+    species 998084; its older S. hygroscopicus ATCC 53653 name is a strain synonym.
+    NCBI 1883 is the genus Streptomyces, and NCBI 1912 is the separate species S.
+    hygroscopicus. The strain synonym does not equate the historical S-632 occurrence
+    isolate with ATCC 53653 or collapse all occurrence ranks.
+  snapshot_sha256: 31b0f5f91b99c5f1e1e5e7cbbcfb524079843bf1f74fcb39c3656c84fe547f13
+- evidence_id: I038-WIKIDATA
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q1144013%7CQ3975996%7CQ104394842&props=labels%7Cclaims&languages=en&format=json
+  locator: Exact Q1144013/Q3975996 P685 values and Q104394842 P234/P235/P233 properties
+  accessed_at: '2026-10-21T10:26:53.301052Z'
+  support: supports
+  summary: Q1144013 maps literally to NCBI 1883 and Q3975996 to NCBI 1912. Q104394842,
+    displayed as Antibiotic TS 885, carries the exact full stereochemical InChI and
+    InChIKey. Its separate P233 SMILES is stereochemically unspecified; that less-specific
+    property is not used to replace the owner structure. These mappings corroborate
+    identifier routing, not occurrence experiments.
+  snapshot_sha256: fb80e5faff476c46e418aebd5500972b510e67d13b801e86d3605687aacd65cb
+- evidence_id: I038-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/038/identity/independent-authority-chemistry.json
+  locator: Independent recomputation from owner, current MIBiG, NPAtlas, ChEBI JSON
+    and official MOL
+  accessed_at: '2026-10-21T10:34:45.486407Z'
+  support: supports
+  summary: All five complete graphs produce full key ATUBIBZJAGAIBW-WGEALTPQSA-N,
+    identical fixed-H InChI, neutral C17H25NO4, one R and one S tetrahedral centre,
+    and one E and one Z alkene. This independently agrees with root’s retained chemical-comparison.json;
+    primary drawing interpretation is assessed separately.
+  snapshot_sha256: dd4283e1de88cbd46940d806a51fd771c7be8fb6ecbcdc03545ca0068c2385e3
+- evidence_id: I038-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete BGC0000171:1 row plus exact-key LOTUS/NPClassifier/eligible ChEBI
+    projections
+  accessed_at: '2026-10-21T10:34:43.805304Z'
+  support: supports
+  summary: The source row reproduces version 5, native strain taxon 457427, FR878059.1,
+    the sole Knock-out studies method, both strong grades and PMID 23438151. Separate
+    LOTUS tuples carry two genus occurrences and one S. hygroscopicus species occurrence;
+    they do not claim those occurrence strains share the characterized locus.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: I038-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Complete exact-key row and version attribution
+  accessed_at: '2026-10-21T10:34:43.805304Z'
+  support: context_only
+  summary: Alkaloids / Lysine alkaloids / Piperidine alkaloids and nonglycoside are
+    explicitly the pinned npclassifier.gnps2.org@2026-09-07 output. This predicted
+    filing is distinct from the asserted MIBiG PKS classification and does not assert
+    a measured lysine precursor route.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: I038-HISTORY
+  kind: record_content
+  reference: data/natural_products/alkaloids/9-methylstreptimidone.yaml
+  locator: Complete source concept, grounding note, SEEDED status and both history
+    events
+  accessed_at: '2026-10-21T10:34:43.805304Z'
+  support: supports
+  summary: The MIBiG source concept, minted identifier and original source label are
+    retained. The 2026-09-10 and 2026-09-25 events record seeding and the current
+    status is SEEDED. This external review does not promote scientific status or change
+    the audit history.
+  snapshot_sha256: d6dd6a083bf9d06a7cae5c064271fb444abeea9ad42df8ba6b7e8c0adbf5026c
+- evidence_id: I038-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/038/identity/local-search.txt
+  locator: All 43 matching lines inspected; long historical receipt lines restricted
+    to exact-target contexts
+  accessed_at: '2026-10-21T10:30:12.364751Z'
+  support: supports
+  summary: The ignored-inclusive search finds the owner, raw inventories, pinned PATHS
+    entry and historical queue/checkpoint references. No exact-target maintained correction
+    or validated structured review appears in the searched results. Historical queue
+    mentions are not scientific review coverage.
+  snapshot_sha256: f4641086c4a6a4f703aaf25a4a390ad0e7e31e1ba595f492e733987d1e3d74c2
+  search_scope: rg --no-ignore --hidden -n -i naturalproductmech:mibig-a975571d47|ATUBIBZJAGAIBW-WGEALTPQSA-N|9-methylstreptimidone
+    curation data/raw data/natural_products reviews src scripts
+- evidence_id: I038-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete retained 28-dataset structured-runner catalogue
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The retained full catalogue has no S. himastatinicus ATCC 53653 or S. hygroscopicus
+    dataset. Its S. albidoflavus and S. coelicolor datasets cannot be substituted
+    based on a genus-level occurrence or a historical strain synonym. The catalogue
+    is context only and its noncoverage is not negative biological evidence.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: S038-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/9-methylstreptimidone.yaml
+  locator: Entire owner and complete resolved source projection
+  accessed_at: '2026-10-21T10:32:35.425951Z'
+  support: supports
+  summary: The owner denotes exact 9-methylstreptimidone with two specified tetrahedral
+    centres and two specified alkenes, three LOTUS occurrence references, native ATCC53653
+    and BGC0000171 version5. The source records Knock-out studies, BGC_CHARACTERIZED
+    and CLUSTER_DEMONSTRATED. It asserts no optional pathway, protein, graph, target
+    or activity.
+  snapshot_sha256: d6dd6a083bf9d06a7cae5c064271fb444abeea9ad42df8ba6b7e8c0adbf5026c
+- evidence_id: S038-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact full BGC0000171:1 source row; local-sources.json includes matching
+    LOTUS rows
+  accessed_at: '2026-10-21T10:32:35.425951Z'
+  support: supports
+  summary: The raw row carries PMID23438151, FR878059.1, native strain taxon457427,
+    PKS class and the sole method Knock-out studies. No coordinates are supplied;
+    the owner does not invent them. The three occurrence citations are separately
+    assessed as original isolation reports.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S038-SI-IDENTITY
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4076611
+  locator: 'DOI10.1021/ol400224n official SI: sections1/5/6 pp2–4; TableS6 p9; original
+    FigureS23–S24 pp26–27'
+  accessed_at: '2026-10-21T09:32:23.111294Z'
+  support: supports
+  summary: 'Wild-type S. himastatinicus ATCC53653 yielded compound1 after six litres
+    of culture were extracted and purified: 12mg recovered material, not a validated
+    production titre. ESIMS m/z308.1 and the 1H/13C NMR comparison to Otani1989 identify
+    1 as 9-methylstreptimidone. The original drawing specifies the hydroxyl and methyl
+    stereocentres and E/Z diene; the source does not report a new absolute-configuration
+    determination.'
+  snapshot_sha256: 12cf2e4bb102099e5f072fe2404a3c40d22344e59cbfe97208a580e2b8cd3890
+- evidence_id: S038-SI-GENETICS
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4076611
+  locator: Sections3–6 pp3–4; TablesS2/S4/S5; FigureS12 caption p16 and original FigureS13/S14
+    pixels p17
+  accessed_at: '2026-10-21T09:32:23.111294Z'
+  support: supports
+  summary: Lambda-Red recombination on cosmids, conjugation into native ATCC53653
+    and double-crossover PCR selection generated native mutants. Ju2109 targets smdI,
+    Ju2110 smdJ and Ju2111 smdK. Original FigureS14 shows the smdK replacement design
+    and PCR bands labelled1542bp wild type and1634bp mutant. Section6 explicitly isolates
+    9mg carboxylated analogue2 from the smdK mutant. E. coli strains serve cloning/conjugation
+    roles and are not shown producing the natural compound.
+  snapshot_sha256: 12cf2e4bb102099e5f072fe2404a3c40d22344e59cbfe97208a580e2b8cd3890
+- evidence_id: S038-SI-PHENOTYPE-LIMIT
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4076611
+  locator: Original FigureS19 p20, read against its complete caption and analytical-HPLC
+    Methods p3
+  accessed_at: '2026-10-21T09:32:23.111294Z'
+  support: supports
+  summary: FigureS19 shows compound1 retained in wild type, flanking-gene deletions,
+    smdA–D deletions and the combined orf(-3)-D deletion. It does not show smdE–K
+    metabolic traces. These pixels cannot be used as a stand-in for loss of1 in the
+    PKS mutant or the complete smdK product profile. Analytical conditions are five-day
+    cultures at28°C and200rpm, UV237nm; PCR gels establish genotype rather than metabolite
+    loss.
+  snapshot_sha256: 12cf2e4bb102099e5f072fe2404a3c40d22344e59cbfe97208a580e2b8cd3890
+- evidence_id: S038-ABSTRACT
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23438151%20AND%20SRC:MED&format=json&resultType=core
+  locator: Original abstract and DOI/PMID metadata; no main body
+  accessed_at: '2026-10-21T09:35:30.672040Z'
+  support: supports
+  summary: The original abstract states that genome analysis and gene inactivation
+    establish the 9-methylstreptimidone cluster in S. himastatinicus and that smdK
+    inactivation yields a carboxylated analogue. This supports the authors’ genetic
+    interpretation, but does not expose main-body mutant chromatograms, exact controls
+    or all mechanistic reasoning. It is not treated as full-text verification.
+  snapshot_sha256: 97085acce5258590f5546c8ee4a5b84f606929a1b1ca75aa915780af0c1e61d7
+- evidence_id: S038-MECHANISM-SCOPE
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/4076611
+  locator: TableS1 p5, TableS7 p10 and sequence-alignment captions pp22–25; complete
+    procedural sections
+  accessed_at: '2026-10-21T09:32:23.111294Z'
+  support: supports
+  summary: The supplement distinguishes SmdI type-I PKS, separate SmdF acyltransferase,
+    separate SmdE thioesterase and proposed SmdJ/SmdK functions. Module5 iteration
+    and terminal decarboxylation are interpreted from genetics/chemical products and
+    sequence analysis. The inspected SI contains no purified SmdK conversion or described
+    complementation experiment; with the main body unavailable, this is a scope limit
+    rather than a whole-study absence claim. Comparator accessions in TableS1/alignment
+    captions are not experimentally studied native proteins.
+  snapshot_sha256: 12cf2e4bb102099e5f072fe2404a3c40d22344e59cbfe97208a580e2b8cd3890
+- evidence_id: S038-1974
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/27/3/27_3_206/_pdf
+  locator: DOI10.7164/antibiotics.27.206, entire pp206–214; isolation pp207–208 and
+    taxonomy discussion p213; original Table1–5 pixels p212
+  accessed_at: '2026-10-21T09:57:06.616300Z'
+  support: supports
+  summary: Original Streptomyces sp. S-885 from Miyagi soil yields30.8mg purified
+    9-methylstreptimidone from2L culture filtrate. Formula C17H25NO4, mass307, NMR/MS
+    and positive rotation support the exact named parent. The authors explicitly leave
+    species taxonomy incomplete and describe similarity to S. pluricolorescens, so
+    the owner’s genus-level occurrence is appropriate. The paper does not independently
+    determine all absolute configurations.
+  snapshot_sha256: 51c4e1788c8c18a9b239a28171a4e3d59992baac1a1a0546e8ca6d8dc6b14a95
+- evidence_id: S038-1989
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/42/5/42_5_654/_pdf
+  locator: DOI10.7164/antibiotics.42.654, entire pp654–661; original Scheme1 p654
+    and Table2 p656; isolation p657
+  accessed_at: '2026-10-21T09:57:06.607363Z'
+  support: supports
+  summary: S. hygroscopicus S-632 culture provides parent S-632-A2, compound4, separately
+    from streptimidone3 and new epoxides1/2. A200mg portion of FractionA yielded25mg
+    of4. Table2 explicitly reports newly measured parent NMR data; Scheme1 depicts
+    the known stereochemistry and the discussion recognizes parent C5S. Epoxide unresolved
+    configurations and activity observations are not assigned to the parent. The species
+    occurrence citing this paper is supported.
+  snapshot_sha256: 397bf81b22ee9f699b96c394ba61d53df5322ce27804c2895c5fc966d77eada4
+- evidence_id: S038-1995
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/48/3/48_3_271/_pdf
+  locator: DOI10.7164/antibiotics.48.271, complete pp271–273 and original pp271–272
+    pixels, Table1/2 and structure drawings
+  accessed_at: '2026-10-21T10:26:53.437870Z'
+  support: supports
+  summary: Streptomyces sp. HIL Y-9065403 from Nainital soil yields known 9-methylstreptimidone2
+    alongside new5-hydroxy analogue1. From17L culture filtrate the authors recover1.44g
+    of purified2; Table1 gives C17H25NO4 and [M+H]+308, and Table2 gives new1H/13C
+    data. The authors explicitly identify2 by comparison with the known parent and
+    its prior literature. The genus occurrence is supported; the stated unresolved
+    absolute configuration pertains to analogue1 and is not a retraction of parent2
+    identity.
+  snapshot_sha256: 574d3a873acfb564467cb65f2a917e996a09828e62ceaa69ea95fbec7a80655f
+- evidence_id: S038-1976-ABSTRACT
+  kind: primary_source
+  reference: https://onlinelibrary.wiley.com/doi/abs/10.1002/hlca.19760590713
+  locator: Original publisher abstract at retained web-response lines80–82; full article
+    unavailable
+  accessed_at: '2026-10-21T10:01:02Z'
+  support: supports
+  summary: The original abstract assigns structure15, 9-methylstreptimidone, as2R,5S,6E
+    on chemical/spectroscopic evidence. It corroborates the two centre assignments
+    and internal alkene, but does not expose the detailed experimental derivation
+    or separately state the terminal8-alkene descriptor. The full historical body
+    and its original structure15 image remain unread.
+  snapshot_sha256: 43a884cf4e82a22417e4f59a6e40619aaaea57ff180a5a39b6dabef70e79028c
+- evidence_id: S038-DRAWING
+  kind: validation
+  reference: /private/tmp/npm-review-work/038/primary-drawing-comparison.json
+  locator: Independent manual interpretation of original2013 TableS6/FigureS23–24
+    and1989 Scheme1, then RDKit reconstruction
+  accessed_at: '2026-10-21T10:30:45.218234Z'
+  support: supports
+  summary: The published graph was reconstructed from the terminal methyl toward the
+    glutarimide with C2R/C5S,6E/8Z. It reproduces C17H25NO4 and full key ATUBIBZJAGAIBW-WGEALTPQSA-N
+    exactly. The two wedges are not borrowed from a different congener; this establishes
+    agreement with published identity, not a new experimental absolute-configuration
+    proof.
+  snapshot_sha256: 25d3617fb74b66da562890c647ec2030e315443be4a8a9426e52de8d6ba23aea
+- evidence_id: S038-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=FR878059.1&rettype=gbwithparts&retmode=text
+  locator: Complete source metadata and selected smd gene/CDS qualifiers; deposited
+    sequences not independently translated
+  accessed_at: '2026-10-21T10:29:41.117353Z'
+  support: supports
+  summary: FR878059.1 is52580bp and identifies the9-methylstreptimidone cluster from
+    S. himastatinicus ATCC53653, culture_collectionATCC:53653, taxon457427. It includes
+    smdI13158..32300/CCC21123.1, smdJ32300..32941/CCC21124.1 and smdK32938..34419/CCC21125.1
+    with gene-disruption qualifiers. The sequence metadata bridge is consistent with
+    the native primary study but is not independent experimental phenotype proof or
+    a claim that the entire deposited span is the minimal functional locus.
+  snapshot_sha256: 7e3c2f57cd42b8cbce7c38420aa7a4248994c34904cbecf71ae2f2dec39f4bf3
+- evidence_id: S038-ACTIVITY-SCOPE
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/antibiotics1968/48/3/48_3_271/_pdf
+  locator: 1995 p272 Biological Properties; read together with1974 methods/tables
+    and1989 congener labels
+  accessed_at: '2026-10-21T10:26:53.437870Z'
+  support: supports
+  summary: 'The1995 purified parent2 has reported100% inhibition at2ppm in Lemna gibba
+    and Avena sativa screening models, but this short paper gives limited assay protocol
+    detail and no exact molecular target. The culture filtrate’s Staphylococcus activity
+    must not be assigned to purified2: the paper reports no antibacterial activity
+    for either isolated compound. The1974 minimum inhibitory/toxic and plaque-suppression
+    endpoints are not IC50 or direct binding; its Candida tropicalis100 versus>500µg/mL
+    conflict remains source-local and is not imported into this owner.'
+  snapshot_sha256: 574d3a873acfb564467cb65f2a917e996a09828e62ceaa69ea95fbec7a80655f
+- evidence_id: S038-MAIN-ACCESS
+  kind: search
+  reference: https://pubs.acs.org/doi/10.1021/ol400224n
+  locator: Retained metadata-access.json and repository-access.json; no new retry
+    of known blocked routes
+  accessed_at: '2026-10-21T09:35:30.670823Z'
+  support: context_only
+  summary: The official2013 article route returned403 and the discovered institutional
+    handle failed DNS. The official complete SI and original abstract are available,
+    but the main body and its metabolic figures remain uninspected. The historical1976
+    original body is also unavailable; only its public publisher abstract was successfully
+    inspected.
+  snapshot_sha256: b915fbc91ff0a02ea3827590162a33af35ce81647358a1452d0739d4a2ebbddc
+  search_scope: Prepared bounded exact DOI/title searches, official ACS article route,
+    EuropePMC and publisher supplement metadata, and institutional handlehttps://ir.scsio.ac.cn/handle/344004/11051.
+    No paid route or contact. These failures are reused at original times; no claim
+    of unavailable content absence is made.
+- evidence_id: S038-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete current evidence map and grading.py functions
+  accessed_at: '2026-10-21T10:32:35.425951Z'
+  support: supports
+  summary: The sole imported Knock-out studies method maps to BGC_CHARACTERIZED and
+    CLUSTER_DEMONSTRATED and addresses native production and locus linkage. The owner
+    is mechanically faithful to this mapping. A source-access gap alone is not grounds
+    to withdraw the method or replace it with a weaker claim.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+assessments:
+- assessment_id: I038-A-IDENTITY
+  area: identity
+  topic: Current authority identity and chemical form
+  outcome: supported
+  summary: All inspected authorities resolve to the exact neutral owner graph, including
+    two tetrahedral centres and two alkene configurations. Standard and fixed-H comparison
+    both agree. The less-specific Wikidata P233 string is not used as a stereochemical
+    authority.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - I038-CHEM
+  - I038-NPATLAS
+  - I038-CHEBI
+  - I038-MOL
+  - I038-WIKIDATA
+- assessment_id: I038-A-GROUNDING
+  area: grounding
+  topic: Eligible authority and stable cross-reference
+  outcome: supported
+  summary: Exact two-star CHEBI:215258 corroborates identity but is ineligible under
+    the repository’s three-star rule. Minted grounding and the resolving NPA019467
+    xref remain appropriate within the inspected authority and complete eligible-inventory
+    scope.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - I038-CHEBI
+  - I038-CHEBI-SEARCH
+  - I038-NPATLAS
+  - I038-RAW
+- assessment_id: I038-A-TAXA
+  area: scope
+  topic: Strain producer and separately scoped occurrences
+  outcome: supported
+  summary: Current NCBI ranks and literal Wikidata mappings agree with the owner.
+    The ATCC 53653 producer is a strain under S. himastatinicus; the two Streptomyces
+    occurrences remain genus-level and the S. hygroscopicus occurrence remains species-level.
+    Neither taxonomic membership nor the producer’s old synonym transfers a locus
+    to the occurrence isolates.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - I038-TAXON
+  - I038-WIKIDATA
+  - I038-MIBIG
+  - I038-RAW
+  dimensions:
+  - name: producer_taxon_rank
+    value: 'strain: NCBI 457427, ATCC 53653'
+    definition: Parent species NCBI 998084; native strain identity remains separate
+      from historical occurrence isolates.
+    evidence_ids:
+    - I038-TAXON
+  - name: source_version_quality
+    value: BGC0000171 version 5, active; questionable / complete
+    definition: Database status, quality and completeness, not an independently verified
+      experimental grade.
+    evidence_ids:
+    - I038-MIBIG
+- assessment_id: I038-A-PROVENANCE
+  area: provenance
+  topic: Source fidelity, predicted filing and seeded history
+  outcome: supported
+  summary: The raw source concept and current MIBiG metadata agree; 0/0 upstream placeholder
+    coordinates are not emitted as a genomic interval. Pinned NPClassifier output
+    is explicitly computational and kept separate from PKS class. The seeded history
+    and stable path are retained.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - I038-MIBIG
+  - I038-RAW
+  - I038-CLASS
+  - I038-HISTORY
+  - I038-LOCAL-SEARCH
+- assessment_id: S038-A-IDENTITY
+  area: identity
+  topic: Exact parent versus hydroxylated, epoxidized and carboxylated congeners
+  outcome: supported
+  summary: The owner is natural9-methylstreptimidone:2013compound1,1989S-632-A2/compound4
+    and1995compound2. C2R/C5S,6E/8Z matches the original drawings and full key. Neither
+    the1995hydroxy1 nor1989epoxides1/2 nor2013carboxylated2 is conflated with it.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-SI-IDENTITY
+  - S038-1989
+  - S038-1995
+  - S038-1976-ABSTRACT
+  - S038-DRAWING
+- assessment_id: S038-A-ORIGIN
+  area: evidence
+  topic: Natural origin and all cited occurrences
+  outcome: supported
+  summary: Original isolation of the exact named parent supports NATURAL_PRODUCT and
+    all three recorded occurrences.1974S-885 remains genus-level because species taxonomy
+    was tentative;1995HIL Y-9065403 is likewise genus-level;1989explicitly identifies
+    S. hygroscopicus S-632. Historical strains are not substituted for the separately
+    characterized ATCC53653 locus strain.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-1974
+  - S038-1989
+  - S038-1995
+  - S038-SI-IDENTITY
+- assessment_id: S038-A-NATIVE
+  area: evidence
+  topic: Native producer and locus provenance
+  outcome: supported
+  summary: The complete2013 SI directly isolates parent1 from native S. himastatinicus
+    ATCC53653 and documents native mutant construction and carboxylated analogue isolation.
+    Current FR878059.1 metadata independently resolves the native accession/strain.
+    PKS class is consistent with SmdI; E. coli cloning/conjugation is not heterologous
+    product synthesis.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-SI-IDENTITY
+  - S038-SI-GENETICS
+  - S038-MECHANISM-SCOPE
+  - S038-LOCUS
+  dimensions:
+  - name: experimental_producer
+    value: S. himastatinicus ATCC53653
+    definition: Native wild type and native deletion-mutant background; distinct from
+      historical occurrence strains and E. coli vector hosts.
+    evidence_ids:
+    - S038-SI-IDENTITY
+    - S038-SI-GENETICS
+    - S038-LOCUS
+- assessment_id: S038-A-GRADE-AUDIT
+  area: evidence
+  topic: Experimental grade and full-phenotype verification boundary
+  outcome: unknown
+  summary: The owner faithfully carries Knock-out studies with both strong grades,
+    and the primary abstract plus SI genotype/isolation work is positive genetic support.
+    The critical main-body smdE–K product traces and all controls remain uninspected,
+    so the full grade audit remains incomplete. FigureS19 specifically cannot prove
+    loss of1 in those mutants. No confirmed counterevidence warrants a method withdrawal
+    or grade correction.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-RAW
+  - S038-GRADING
+  - S038-ABSTRACT
+  - S038-SI-GENETICS
+  - S038-SI-PHENOTYPE-LIMIT
+  - S038-MAIN-ACCESS
+- assessment_id: S038-A-OPTIONAL
+  area: completeness
+  topic: Optional mechanism and activity enrichment
+  outcome: supported
+  summary: No missing optional pathway/activity finding is justified. Any future pathway
+    must retain the genetic versus purified-enzyme distinction, module5 and trans-acting
+    AT/TE context, and native versus comparator proteins. Any activity addition needs
+    exact purified-parent endpoints and methods; culture-filtrate antibacterial activity,
+    analogue effects and direct target mechanisms are not inherited.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-OWNER
+  - S038-MECHANISM-SCOPE
+  - S038-ACTIVITY-SCOPE
+  - S038-1974
+  - S038-1995
+- assessment_id: S038-A-LIMITS
+  area: provenance
+  topic: Source-access coverage and preserved internal source limits
+  outcome: unknown
+  summary: Original1974/1989/1995 main bodies and complete2013 SI are available; the2013
+    main and1976 detailed stereochemical study are unavailable. Current identity is
+    coherent, but this is a partial scientific review. Source assay conflicts and
+    incomplete historical absolute-configuration procedures are retained without inventing
+    an owner defect.
+  target_ids:
+  - naturalproductmech:mibig-a975571d47
+  evidence_ids:
+  - S038-1974
+  - S038-1989
+  - S038-1995
+  - S038-SI-IDENTITY
+  - S038-1976-ABSTRACT
+  - S038-MAIN-ACCESS
+findings: []
+actions: []
+limitations:
+- Authority agreement establishes copied identity, rank and identifier resolution;
+  it does not substitute for original chemical isolation or experimental locus evidence.
+  The separate science packet retains those claim-specific results and required source-access
+  gaps.
+- The exact-key ChEBI check is bounded to the complete returned current search and
+  committed eligible projection. The two-star entry’s extra taxon metadata is not
+  adopted without separate verification.
+- The iModulonDB catalogue retains its actual original access time. No unrelated Streptomyces
+  dataset is treated as strain-specific expression or biochemical evidence.
+- The required2013 main text and its principal smdE–K mutant metabolic figures are
+  unavailable. Complete SI and the original abstract do not substitute for those figures;
+  no absence of native complementation or purified catalysis is asserted for unread
+  main content.
+- The original1976 absolute-configuration method and structure15 drawing remain unavailable.
+  Published2R/5S/6E is explicitly stated in its original abstract and coherent with
+  later original drawings;8Z is supported by the later drawings/couplings. No raw-spectral
+  or historical chemical-degradation rederivation was performed.
+- The1995 pure-parent occurrence is direct, but its drawing is not an independent
+  absolute stereochemical determination. The authors identify the known parent through
+  physicochemical and NMR comparison; the unresolved configuration statement refers
+  to the new5-hydroxy analogue.
+- GenBank source/smd metadata was inspected; no independent full-CDS translation,
+  enzyme construct reconstruction or minimal-cluster boundary experiment was performed,
+  and no owner protein claim requires one.
+- The original1974 Candida tropicalis MIC differs between Table1 and Table5; it remains
+  an unresolved source-local assay discrepancy. No optional quantitative activity
+  is silently inserted and no clinical or direct-target inference is made.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command
+  receipts for this base. Scientific failed or unavailable checks are distinct from
+  bundle validation.
+tags:
+- path-order-campaign
+- batch-004
+```
