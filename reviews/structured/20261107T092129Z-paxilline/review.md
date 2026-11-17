@@ -1,0 +1,2496 @@
+# Local evidence review: paxilline
+
+- Review: 20261107T092129Z-paxilline
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-07T08:46:40.681891Z
+- Finished UTC: 2026-11-07T09:21:29.877298Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Paxilline retains a consistent saved neutral indole-containing structure, six specified atom centres and its characterized producer/demonstrated locus grades. A major open pathway-owner placement concern remains: the sole PaxD step consumes Paxilline to make a distinct grounded product, contrary to the narrower owner-biosynthesis meaning. The downstream graph and historical evidence remain qualified context. The record needs curation and completion remains partial.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2862; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:34907 | data/natural_products/unclassified/paxilline.yaml | generated | paxilline |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Original local two-form molecular diagnostic | passed | True | CHEBI:34907 | Both exact stored forms parsed in the sole original twenty-attempt diagnostic and agree in formula, charge, Standard InChI and declared complete key. |
+| Complete offline maintained reader for paxilline | passed | True | CHEBI:34907 | One original maintained reader preserves the entire Paxilline owner, one graph/four nodes/three edges, one step and four histories. |
+| strict_ten | passed | True | CHEBI:34907 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | CHEBI:34907 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | CHEBI:34907 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | CHEBI:34907 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | CHEBI:34907 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | CHEBI:34907 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | CHEBI:34907 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | CHEBI:34907 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Exact full-key identity and source-concept boundaries
+
+identity: supported. Targets: CHEBI:34907.
+
+paxilline retains exact identifier CHEBI:34907, complete key ACNHBCIZLNNLRS-UBGQALKQSA-N, and BGC0001082 v4 compound index 1. Retained cross-references npatlas:NPA028977 remain source-attributed, not fresh authority checks. Both saved canonical SMILES comparisons agree, with equal formula, charge, Standard InChI, complete key and counts. The limited 32-atom correspondence is complete while full_graph_identity_established remains false. The additional ChEBI source string was not separately parsed; no exact natural identity or primary structure verification is claimed.
+
+### Stored molecular forms and stereochemical scope
+
+representation: supported. Targets: CHEBI:34907.
+
+Both saved neutral C27H33NO4 forms have 32 heavy atoms, 37 bonds and six ring rows: four six-membered and two five-membered rings. The indole contains an aromatic N-H five-ring fused to benzene; the remaining polycycle includes a cyclic ether, one ketone/enone and two hydroxyls. No amide, ester or metal is encoded. This topology does not establish BK-channel activity or validate the PaxD reaction. Both forms have six specified tetrahedral centres and no saved unspecified potential-stereo entries. The true source flag concerns the maintained atom-centre test, not natural stereochemical verification or functional/sequence validation of the curated pathway. Both saved canonical SMILES comparisons agree, with equal formula, charge, Standard InChI, complete key and counts. The limited 32-atom correspondence is complete while full_graph_identity_established remains false. The additional ChEBI source string was not separately parsed; no exact natural identity or primary structure verification is claimed.
+
+### Producer assertion versus locus evidence
+
+provenance: supported. Targets: CHEBI:34907.
+
+MIBiG BGC0001082 version 4 compound 1 retains Penicillium paxilli NCBITaxon:70109 at BGC_CHARACTERIZED. Its active/questionable entry is complete according to that source. This stronger producer grade is preserved distinctly from occurrence assertions and is not downgraded to SOURCE_ASSERTION or newly verified here. The HM171111.1:28174..46982 locus is CLUSTER_DEMONSTRATED and retains Knock-out studies, with COMPOUND_EVIDENCE DOI:10.1021/ja3116636. These source-level cluster assertions remain intact. They neither make the sole downstream PaxD step synthesis of the Paxilline owner nor independently verify the retained protein and reaction evidence.
+
+### Citation grain and attributed history
+
+evidence: supported. Targets: CHEBI:34907.
+
+BGC0001082: DOI:10.1021/ja3116636 at COMPOUND_EVIDENCE grain. All 4 complete histories were read, including 3 source-seeding events. Source citations and repeated placements are not newly read primary bodies or independent experiments. The 2026-10-23 curator history explicitly records downstream diprenylation. Historical primary-experiment and database references in the graph/pathway remain attributed, not newly validated.
+
+### Occurrence and bounded assay/target evidence
+
+evidence: supported. Targets: CHEBI:34907.
+
+Twenty-one LOTUS occurrence rows and three ChEBI origin rows are retained separately from the P. paxilli producer. They include P. thiersii, Aspergillus foveolatus, P. miczynskii, Claviceps paspali, Lolium perenne, A. striatus, P. camemberti and repeated P. paxilli citations. Historical Emericella desertorum/41728 follows exact saved merge row 58 to 1810909, whose cache names Aspergillus desertorum and includes Emericella desertorum as an EXACT synonym; it is not terminally unresolved. ChEBI origins cite A. oryzae/5062 (PMID:23311903), P. paxilli/70109 (PMID:17428785) and P. shearii/904690 (PMID:24894186, Eupenicillium shearii comment). These are attributed occurrence claims, not newly established strain/species or biosynthetic equivalence. No actual AID or blank assay marker matches this selected owner. Exact retained BindingDB, AntibioticMech and CyanoMetDB frames also have no matches. These bounded results do not establish inactivity or universal database absence. The retained ChEBI definition calls Paxilline a BK-channel blocker, but that is database definition text, not a current assay row or a newly verified target mechanism. Penitrem activity and the product owner activity gap do not transfer.
+
+### Computed filing and asserted class applicability
+
+consistency: supported. Targets: CHEBI:34907.
+
+NPClassifier retains Alkaloids&#124;Terpenoids, Tryptophan alkaloids and Indole diterpenoid alkaloids (Penitrems), with is_glycoside:false. MIBiG separately records Terpenoid/alkaloid and Diterpenoid/Hemiterpene source classes. Multiple model pathways retain UNCLASSIFIED; the class label does not prove activity or settle the owner-specific pathway placement.
+
+### Local completion and maintained ownership
+
+completeness: unknown. Targets: CHEBI:34907.
+
+Complete raw owner/history reading carries by exact current pins. All 4 histories, nine source frames (27 row placements/185 fields; 4 negatives) and both saved molecular forms were personally read. All 54 current input hashes and maintained ownership roles join the accepted plan. Five original local gates passed; queue rows remain leads. The selected owner has one inline BIOSYNTHESIS graph and one pathway step, with no component, molecular-target, bioactivity or related-corpus root. The original maintained reader preserves the whole owner, while the pathway placement concern remains open. Full QC/OAK, fresh source-authority checks and independent primary verification are unavailable, so completion is partial.
+
+### Directed downstream PaxD evidence and owner-specific pathway placement
+
+graph: concern. Targets: CHEBI:34907.
+
+The complete Paxilline view retains one BIOSYNTHESIS graph with four nodes, three edges and six literal edge-reference placements, plus one pathway step with five reference placements. PaxD UniProtKB:Q9C451 acts on the exact Paxilline owner CHEBI:34907 to produce distinct naturalproductmech:mibig-8e09316737; the process node is ungrounded and the other three nodes are grounded. The historical PRIMARY_EXPERIMENT notes attribute purified E. coli-expressed PaxD, successive prenylation and the major 21,22-diprenylated product to DOI:10.1007/s00253-013-4834-9. Reviewed UniProt, HM171111.1 and AAK11526.2 annotations remain historical database assertions, not newly read primary bodies, sequence comparisons, kinetics or assay constructs. proposed is absent, not false or a fresh demonstration. The original reader preserves the complete owner; it made no molecular parse. The separate twenty stored-form diagnostic has its own scope. The explicitly directed downstream graph can remain qualified context; the narrower pathway-owner placement is assessed separately below. The sole biosynthetic_pathway step consumes this owner, CHEBI:34907, and terminates at the distinct 21,22-diprenylated Paxilline owner. PathwayStep explicitly denotes a step in biosynthesis of this compound. Intermediate steps need not each directly produce the owner, but this is a sole terminal conversion away from it, and its notes and dated history explicitly call it downstream. The identical pathway section already exists on the grounded product owner. The parent precursor-to-product wording and broader BIOSYNTHESIS graph scope are material competing context, but do not explicitly authorize this narrower owner-field placement. The maintained queue skips a populated pathway and the renderer labels it curated Biosynthesis, creating material completeness and presentation consequences. This supports a major open owner-placement concern; it does not refute the asserted PaxD chemistry or justify discarding the correctly directed graph. The interpretation remains provisional pending curator resolution of field policy.
+
+## Findings
+
+### bgc-2862-downstream-pathway-owner-scope: Downstream diprenylated-product synthesis occupies the Paxilline biosynthesis field
+
+major / open / provisional; issue key: paxilline-downstream-pathway-owner-scope.
+
+The sole biosynthetic_pathway step consumes this owner, CHEBI:34907, and terminates at the distinct 21,22-diprenylated Paxilline owner. PathwayStep explicitly denotes a step in biosynthesis of this compound. Intermediate steps need not each directly produce the owner, but this is a sole terminal conversion away from it, and its notes and dated history explicitly call it downstream. The identical pathway section already exists on the grounded product owner. The parent precursor-to-product wording and broader BIOSYNTHESIS graph scope are material competing context, but do not explicitly authorize this narrower owner-field placement. The maintained queue skips a populated pathway and the renderer labels it curated Biosynthesis, creating material completeness and presentation consequences. This supports a major open owner-placement concern; it does not refute the asserted PaxD chemistry or justify discarding the correctly directed graph. The interpretation remains provisional pending curator resolution of field policy.
+
+## Recommended Actions And Acceptance Checks
+
+### bgc-2862-resolve-pathway-owner-placement
+
+Use the validated curator-owned workflow to remove or relocate the sole downstream-only pathway step from Paxilline while preserving its explicitly directed graph, historical evidence and append-only history. The identical terminal step already exists on 21,22-diprenylated Paxilline. Alternatively resolve the field ambiguity through an explicit maintained schema/documentation/consumer policy change. Do not reverse endpoints, merge identities, invent upstream steps or change the absent proposed flag merely to conceal placement.
+
+- The selected owner no longer represents a different product terminal step as its own biosynthesis unless explicit maintained policy authorizes that scope.
+- Preserve both complete structures and keys, producer/locus grades, exact reaction direction, historical evidence and all existing history; append a curation event for any future edit.
+- Retain the existing product-owner step without duplication and preserve the broader downstream graph as qualified context.
+- In a separately authorized correction workflow, use the validated writer and verify focused queue/render/reproduction behavior; no current execution or publication is implied.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| bgc-2862-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/unclassified/paxilline.yaml; Complete retained plaintext, all roots and history | supports | Complete owner reading carries by exact preview/raw/capture equality. |
+| bgc-2862-whole-owner-attribution | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-ten-owner-root-history-preview-001.json; /selected_records/1 | context_only | BGC Science personally read all owner fields and complete history; exact current pins carry that credit. |
+| bgc-2862-identity | /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json; /records/1/owner_document/identifier; /records/1/owner_document/chemical_structure; /records/1/owner_document/source_concepts; /records/1/owner_document/grounding_status | supports | paxilline retains exact identifier CHEBI:34907, complete key ACNHBCIZLNNLRS-UBGQALKQSA-N, and BGC0001082 v4 compound index 1. Retained cross-references npatlas:NPA028977 remain source-attributed, not fresh authority checks. Both saved canonical SMILES comparisons agree, with equal formula, charge, Standard InChI, complete key and counts. The limited 32-atom correspondence is complete while full_graph_identity_established remains false. The additional ChEBI source string was not separately parsed; no exact natural identity or primary structure verification is claimed. |
+| bgc-2862-history | /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json; /records/1/owner_document/curation_history | supports | BGC0001082: DOI:10.1021/ja3116636 at COMPOUND_EVIDENCE grain. All 4 complete histories were read, including 3 source-seeding events. Source citations and repeated placements are not newly read primary bodies or independent experiments. The 2026-10-23 curator history explicitly records downstream diprenylation. Historical primary-experiment and database references in the graph/pathway remain attributed, not newly validated. |
+| bgc-2862-provenance | /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json; /records/1/owner_document/producer_organisms; /records/1/owner_document/biosynthetic_gene_clusters | supports | MIBiG BGC0001082 version 4 compound 1 retains Penicillium paxilli NCBITaxon:70109 at BGC_CHARACTERIZED. Its active/questionable entry is complete according to that source. This stronger producer grade is preserved distinctly from occurrence assertions and is not downgraded to SOURCE_ASSERTION or newly verified here. The HM171111.1:28174..46982 locus is CLUSTER_DEMONSTRATED and retains Knock-out studies, with COMPOUND_EVIDENCE DOI:10.1021/ja3116636. These source-level cluster assertions remain intact. They neither make the sole downstream PaxD step synthesis of the Paxilline owner nor independently verify the retained protein and reaction evidence. |
+| bgc-2862-classification | /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json; /records/1/owner_document/np_classification; /records/1/owner_document/np_pathway; /records/1/owner_document/bgc_class | supports | NPClassifier retains Alkaloids&#124;Terpenoids, Tryptophan alkaloids and Indole diterpenoid alkaloids (Penitrems), with is_glycoside:false. MIBiG separately records Terpenoid/alkaloid and Diterpenoid/Hemiterpene source classes. Multiple model pathways retain UNCLASSIFIED; the class label does not prove activity or settle the owner-specific pathway placement. |
+| bgc-2862-roots | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/complete_root_keys; /contexts/6/declared_mechanism_roots_literal; /contexts/6/literal_bioactivities_root | context_only | The selected owner has one inline BIOSYNTHESIS graph and one pathway step, with no component, molecular-target, bioactivity or related-corpus root. The original maintained reader preserves the whole owner, while the pathway placement concern remains open. |
+| bgc-2862-chemistry | /private/tmp/npm-review-work/shared-next-batch287/chemistry-local/diagnostic-DATA-001.json; /records/1/smiles/computed; /records/1/inchi/computed; /records/1/comparisons; /records/1/atom_correspondence | supports | Both saved neutral C27H33NO4 forms have 32 heavy atoms, 37 bonds and six ring rows: four six-membered and two five-membered rings. The indole contains an aromatic N-H five-ring fused to benzene; the remaining polycycle includes a cyclic ether, one ketone/enone and two hydroxyls. No amide, ester or metal is encoded. This topology does not establish BK-channel activity or validate the PaxD reaction. Both forms have six specified tetrahedral centres and no saved unspecified potential-stereo entries. The true source flag concerns the maintained atom-centre test, not natural stereochemical verification or functional/sequence validation of the curated pathway. Both saved canonical SMILES comparisons agree, with equal formula, charge, Standard InChI, complete key and counts. The limited 32-atom correspondence is complete while full_graph_identity_established remains false. The additional ChEBI source string was not separately parsed; no exact natural identity or primary structure verification is claimed. |
+| bgc-2862-molecular-reading | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-current287-first-five-molecular-intake-reading-001.json; /records/1; /personal_reading_scope; /global_cautions | supports | All complete saved tables and current intake meanings personally read, with no new parse. |
+| bgc-2862-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch287/root-current287-diagnostic-acceptance-001.json; /accepted; /DATA; /execution; /molecular_parse_attempts; /stderr_bytes; /scope | supports | ROOT accepted the sole twenty stored-form attempts with actual canonical/mapping differences preserved. |
+| bgc-2862-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch287/chemistry-local/diagnostic-execution-001.json; /command; /exit_code; /stderr | supports | Exact original command, zero exit and complete original stderr; no replay. |
+| bgc-2862-diagnostic-stderr | /private/tmp/npm-review-work/shared-next-batch287/chemistry-local/diagnostic-original-001.stderr; Complete 368-byte stderr stream | context_only | The original diagnostic stderr contains eight omitted-undefined-stereo warnings in 368 bytes. They are globally unattributed and are not assigned to any particular owner or form. |
+| bgc-2862-intake | /private/tmp/npm-review-work/shared-next-batch287/intakes-001/2862-inspect-001.json; /targets; /source/inputs | supports | One exact target and 54 current inputs with maintained ownership. |
+| bgc-2862-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch287/root-current287-intake-acceptance-001.json; /accepted; /intake_summary; /records; /source_placements; /unique_source_paths | supports | Ten actual inspections accepted with 488 placements and 73 unique paths. |
+| bgc-2862-plan | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-target-input-plan-001.json; /records/1 | supports | Exact current map and 1 direct companion placements. |
+| bgc-2862-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch287/root-current287-source-plan-acceptance-001.json; /accepted; /plan; /source_placements; /unique_source_paths | supports | ROOT accepted the original current plan. |
+| bgc-2862-gates | /private/tmp/npm-review-work/shared-next-batch287/root-current287-five-gates-acceptance-001.json; /five_local_commands_passed; /ledger; /counts; /all_native_gates_passed; /unavailable_required_gates | context_only | Five original local commands passed; full QC/OAK remain unavailable and queues remain leads. |
+| bgc-2862-source-reading | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-current287-assigned-source-reading-001.json; /contexts/2; /counts; /reading_attribution | supports | All 27 row placements/185 fields and 4 negative frames personally read. |
+| bgc-2862-source-notes | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-scope-notes-001.json; /totals; /reading_reconciliation; /reading_boundaries | context_only | Disjoint primary attribution is BGC 44 rows/387 fields plus Support 124/1164, totaling 168/1551. Native taxonomy/curation adds no named-source row credit. |
+| bgc-2862-taxonomy | /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-cached-taxonomy-reading-001.json; /scope; /context_interpretations/6; /interpretation | context_only | MIBiG BGC0001082 version 4 compound 1 retains Penicillium paxilli NCBITaxon:70109 at BGC_CHARACTERIZED. Its active/questionable entry is complete according to that source. This stronger producer grade is preserved distinctly from occurrence assertions and is not downgraded to SOURCE_ASSERTION or newly verified here. Twenty-one LOTUS occurrence rows and three ChEBI origin rows are retained separately from the P. paxilli producer. They include P. thiersii, Aspergillus foveolatus, P. miczynskii, Claviceps paspali, Lolium perenne, A. striatus, P. camemberti and repeated P. paxilli citations. Historical Emericella desertorum/41728 follows exact saved merge row 58 to 1810909, whose cache names Aspergillus desertorum and includes Emericella desertorum as an EXACT synonym; it is not terminally unresolved. ChEBI origins cite A. oryzae/5062 (PMID:23311903), P. paxilli/70109 (PMID:17428785) and P. shearii/904690 (PMID:24894186, Eupenicillium shearii comment). These are attributed occurrence claims, not newly established strain/species or biosynthetic equivalence. |
+| bgc-2862-curation | /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-implemented-curation-scan-001.json; /scope; /counts; /applied_rows; /interpretation | context_only | Native read nine substantive tables/3,422 rows and 109 lexical candidates, with no exact applicable decision. Ninety-three complete unchanged decision rows carry exact prior attribution; fifteen assay exclusions were freshly read; two reserved tables remain census-only. |
+| bgc-2862-assay-curation | /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-implemented-curation-scan-001.json; /assay_scope | context_only | No actual AID or blank assay marker matches this selected owner. Exact retained BindingDB, AntibioticMech and CyanoMetDB frames also have no matches. These bounded results do not establish inactivity or universal database absence. The retained ChEBI definition calls Paxilline a BK-channel blocker, but that is database definition text, not a current assay row or a newly verified target mechanism. Penitrem activity and the product owner activity gap do not transfer. |
+| bgc-2862-stereo-policy | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; lines 165-172: FindMolChiralCenters and question-mark atom tag | context_only | The source flag tests unassigned atom-centred chirality, not all bond geometry or natural identity. |
+| bgc-2862-stereo-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 392-397: chemical_structure.stereo_complete | context_only | Undefined stereocentres remain recorded; no natural configuration is supplied. |
+| bgc-2862-filing-policy | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines 295-306: choose_pathway | context_only | One supported mapped pathway files the record; multiple, absent or unsupported results retain UNCLASSIFIED. |
+| bgc-2862-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/mibig_compounds | supports | Complete saved mibig_compounds frame with 1 row placements; all fields and bounded meanings read. |
+| bgc-2862-row-mibig_compounds-0 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; physical lines 1259-1259; raw record sha256 58f1211e8e95444ebb10ec35319d5258dfe191d026fb06d76caaba13b07d4925 | supports | All 25 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/chebi_structures | supports | Complete saved chebi_structures frame with 1 row placements; all fields and bounded meanings read. |
+| bgc-2862-row-chebi_structures-0 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv; physical lines 9295-9295; raw record sha256 1081ec67fc2b94d746f904b24966dabae08222f286b947183740feb46d1a31c3 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/lotus_occurrences | supports | Complete saved lotus_occurrences frame with 21 row placements; all fields and bounded meanings read. |
+| bgc-2862-row-lotus_occurrences-0 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 39-39; raw record sha256 1c0dd6d7aa0469d4529b2cb785963c7922aeee89d33275f5241df0ea4709f522 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-1 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 40-40; raw record sha256 deec3f9414e54129b890bc70238fbdeecc538b631330935877a68f61a3faa6c8 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-2 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 41-41; raw record sha256 3b2b9e6a427d846feb9abdc9c5d8fee4bd49c39f04f506c2b97e816a1fc4b3ec | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-3 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 42-42; raw record sha256 a571d49daf616c909043fd66721c9920cc90d639f8c2e74125aab818191a066d | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-4 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 43-43; raw record sha256 3285db652804c1ad704fe2e72609ce02016126757aa611047667810dce8adfc9 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-5 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 44-44; raw record sha256 e3594ffcda3692b5f04a71d3943f57433ddcee201ced99f4b39c3bdc4639cbfc | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-6 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 45-45; raw record sha256 868985128e9dba6c597280d8aadce2a9815afe6aa72e12eec16f4908e135f3d5 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-7 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 46-46; raw record sha256 17247cfd27a2980ac35813cca906f40dda9fc7fac8d27f74dab068f7059b3c92 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-8 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 47-47; raw record sha256 696ae5707760d92736a55ebf1b6efb4c29129d5e0efe1306a99cc7a107982ddb | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-9 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 48-48; raw record sha256 c002da23dcee99a8974867ead08b33c2092b0f568cf45907d76fac5bef06e8ed | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-10 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 49-49; raw record sha256 402a2f45c8d1738714826f622d68d248d0e6b164c406683bd3ed34b20cc33b4e | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-11 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 50-50; raw record sha256 43d346fb20f0d62aa2eb0e649ac56e9ecbed0f8c1f8f11fac2bfa9164b88316e | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-12 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 51-51; raw record sha256 e0114bde8c111e44b92bbbdc209ddf62da35c526ff8fa345ba76261926a72e89 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-13 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 52-52; raw record sha256 3b833a64c91e70255b6e02b6ca545cfd85100ffe11d7954a374900b6bf408c42 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-14 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 53-53; raw record sha256 62b6cba9a5972ed9c3d8916c9f1bb06ccb5648c4c44d36883c5926b8e26aa008 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-15 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 54-54; raw record sha256 84fcc764e40ffceeb1d90816a3288a609ee73294000dccf3513108ab8ca9b122 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-16 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 55-55; raw record sha256 0d619f894231b87fbdc8ba040955350687daa9626731e1e6cb08339be2126d50 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-17 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 56-56; raw record sha256 46d3d293c9ccf6eb577e878dce8a18ee94e00104550a33b5dc373ea8c60115d1 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-18 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 57-57; raw record sha256 e2d008f8c337d6c6e5c39ae3258a24b55990d9495ca4ae770b55eb0c754cfcac | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-19 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 58-58; raw record sha256 6cde2282681b53ab4e7476c8bf58bbd755e10fd8710cd85edbcdc915b584b3e1 | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-lotus_occurrences-20 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; physical lines 59-59; raw record sha256 201d2ca57872afa7e9db651fed0acb25dc3818cb34cc0e38a85f0af55b18c2bb | supports | All 6 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/cyanometdb_occurrences | context_only | Complete saved cyanometdb_occurrences frame with 0 row placements; all fields and bounded meanings read. |
+| bgc-2862-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/npclassifier | supports | Complete saved npclassifier frame with 1 row placements; all fields and bounded meanings read. |
+| bgc-2862-row-npclassifier-0 | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; physical lines 17-17; raw record sha256 7ff585d15621f358b6d35be1f993d7be3dc70e0c45e82fee9fd519b3856abc3f | supports | All 7 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/pubchem_bioassay | context_only | Complete saved pubchem_bioassay frame with 0 row placements; all fields and bounded meanings read. |
+| bgc-2862-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/bindingdb_targets | context_only | Complete saved bindingdb_targets frame with 0 row placements; all fields and bounded meanings read. |
+| bgc-2862-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/antibioticmech_inchikeys | context_only | Complete saved antibioticmech_inchikeys frame with 0 row placements; all fields and bounded meanings read. |
+| bgc-2862-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/6/source_scope_inventory/joins/chebi_origins | supports | Complete saved chebi_origins frame with 3 row placements; all fields and bounded meanings read. |
+| bgc-2862-row-chebi_origins-0 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv; physical lines 4834-4834; raw record sha256 a694960643ef46eea3bbd5ec9391b9f54dc53d748b1cc18f24cd200be33dfbe3 | supports | All 7 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-chebi_origins-1 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv; physical lines 4835-4835; raw record sha256 e06a9c67bb3f4ce20d40a7e1e82cfc35cdfceee9d091e6cc8aa2a07aad92bc5a | supports | All 7 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-row-chebi_origins-2 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv; physical lines 4836-4836; raw record sha256 28f04680aa0f884d47e55d1df298c5d6a9279bacb01142fe60eeb8cbb530dd73 | supports | All 7 fields personally read, including blanks, grades, exact source identity and citation grain. |
+| bgc-2862-companion-0 | /private/tmp/npm-record-reviews-20261021/data/natural_products/unclassified/21-22-diprenylated-paxilline.yaml; Complete retained identity, source concepts and history; exact prior whole-owner reading | context_only | Direct shared-BGC context remains a distinct owner; no identity, stereochemistry, activity or grade transfer. |
+| bgc-2862-graph | /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json; /records/1/owner_document/causal_graphs; /records/1/owner_document/biosynthetic_pathway; /records/1/owner_document/curation_history | supports | The complete Paxilline view retains one BIOSYNTHESIS graph with four nodes, three edges and six literal edge-reference placements, plus one pathway step with five reference placements. PaxD UniProtKB:Q9C451 acts on the exact Paxilline owner CHEBI:34907 to produce distinct naturalproductmech:mibig-8e09316737; the process node is ungrounded and the other three nodes are grounded. The historical PRIMARY_EXPERIMENT notes attribute purified E. coli-expressed PaxD, successive prenylation and the major 21,22-diprenylated product to DOI:10.1007/s00253-013-4834-9. Reviewed UniProt, HM171111.1 and AAK11526.2 annotations remain historical database assertions, not newly read primary bodies, sequence comparisons, kinetics or assay constructs. proposed is absent, not false or a fresh demonstration. The original reader preserves the complete owner; it made no molecular parse. The separate twenty stored-form diagnostic has its own scope. The explicitly directed downstream graph can remain qualified context; the narrower pathway-owner placement is assessed separately below. |
+| bgc-2862-reader-DATA | /private/tmp/npm-review-work/shared-next-batch287/native-current287-paxilline-maintained-reader-DATA-001.json; /resolved_view | supports | Complete original returned owner equals the personally read capture, preserving every graph/pathway/reference/history field. |
+| bgc-2862-reader-execution | /private/tmp/npm-review-work/shared-next-batch287/native-current287-paxilline-reader-execution-001.json; /command; /exit_code | supports | Original reader command and zero exit; no invocation by this author. |
+| bgc-2862-reader-acceptance | /private/tmp/npm-review-work/shared-next-batch287/root-current287-paxilline-reader-acceptance-001.json; /accepted; /DATA; /execution; /review_check_contract; /verification | supports | ROOT accepted the exact complete-owner read and command contract; one expected pre-action IPv6 probe denial and no external request. |
+| bgc-2862-reader-reading | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-current287-paxilline-complete-reader-reading-001.json; /scope; /graph_interpretation; /pathway_owner_interpretation | supports | Complete current returned view reading carries by exact whole-owner equality; preservation is separate from biological and placement validity. |
+| bgc-2862-placement-native | /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-paxilline-pathway-owner-independent-semantic-reading-001.json; /conclusion; /normative_reasoning; /competing_context_and_limits; /literal_evidence | context_only | The sole biosynthetic_pathway step consumes this owner, CHEBI:34907, and terminates at the distinct 21,22-diprenylated Paxilline owner. PathwayStep explicitly denotes a step in biosynthesis of this compound. Intermediate steps need not each directly produce the owner, but this is a sole terminal conversion away from it, and its notes and dated history explicitly call it downstream. The identical pathway section already exists on the grounded product owner. The parent precursor-to-product wording and broader BIOSYNTHESIS graph scope are material competing context, but do not explicitly authorize this narrower owner-field placement. The maintained queue skips a populated pathway and the renderer labels it curated Biosynthesis, creating material completeness and presentation consequences. This supports a major open owner-placement concern; it does not refute the asserted PaxD chemistry or justify discarding the correctly directed graph. The interpretation remains provisional pending curator resolution of field policy. |
+| bgc-2862-placement-search | /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-paxilline-pathway-owner-independent-semantic-reading-001.json; /bounded_absence_search | context_only | Native retained a bounded ignored-inclusive policy search; no explicit downstream-owner exception was found within that stated search, not a universal absence claim. |
+| bgc-2862-product-context | /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json; /contexts/0 | context_only | The directly grounded product owner has the identical pathway section and its own complete source/history context, captured once as a direct companion. |
+| bgc-2862-policy-schema_parent | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 259-270 | context_only |       biosynthetic_gene_clusters:<br>        description: The characterized gene clusters that make this compound.<br>        range: BiosyntheticGeneCluster<br>        multivalued: true<br>        inlined_as_list: true<br>      biosynthetic_pathway:<br>        description: &gt;-<br>          Ordered enzymatic steps from precursor to product. Curated; each step<br>          carries its own evidence.<br>        range: PathwayStep<br>        multivalued: true<br>        inlined_as_list: true |
+| bgc-2862-policy-schema_step | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 593-625 | context_only |   PathwayStep:<br>    description: One enzymatic step in the biosynthesis of this compound.<br>    attributes:<br>      step_number:<br>        range: integer<br>      enzyme_id:<br>        description: UniProt, EC or InterPro CURIE.<br>        range: curie<br>      enzyme_label:<br>      reaction_id:<br>        description: Rhea CURIE where one exists.<br>        range: curie<br>      substrate:<br>        range: curie<br>      substrates:<br>        description: Principal substrate CURIEs for reactions with multiple inputs.<br>        range: curie<br>        multivalued: true<br>      product:<br>        range: curie<br>      products:<br>        description: Principal product CURIEs for reactions with multiple outputs.<br>        range: curie<br>        multivalued: true<br>      proposed:<br>        description: True when the step is inferred rather than demonstrated.<br>        range: boolean<br>      notes:<br>      evidence:<br>        range: EvidenceItem<br>        multivalued: true<br>        inlined_as_list: true<br>        required: true |
+| bgc-2862-policy-schema_graph_scope | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; lines 1137-1142 | context_only |   CausalGraphScopeEnum:<br>    permissible_values:<br>      BIOSYNTHESIS:<br>        description: Precursor to product, through gene cluster and enzyme steps.<br>      BIOACTIVITY:<br>        description: Compound to target engagement to cellular effect. |
+| bgc-2862-policy-compound_scope | /private/tmp/npm-record-reviews-20261021/.claude/skills/add-proteins-to-graphs/SKILL.md; lines 25-37 | context_only | ## Boundaries<br><br>- Resolve one record and one mechanism at a time. If the evidence names several<br>  congeners, several clusters, a host and a symbiont, or multiple target<br>  families, disambiguate before adding nodes.<br>- NaturalProductMech has no top-level &#96;assembly_graphs&#96; field. Biosynthetic<br>  assembly is represented by &#96;biosynthetic_pathway&#96; plus a<br>  &#96;causal_graphs&#96; item with &#96;scope: BIOSYNTHESIS&#96;.<br>- Add a protein only when the inspected paper or adopted database identifies<br>  a protein, gene, domain, enzyme function or complex involved with this exact<br>  compound. A genome neighborhood, antiSMASH prediction, docking model, or<br>  label similarity is a lead unless the graph edge is explicitly marked as<br>  computational or inferred. |
+| bgc-2862-policy-pathway_authoring | /private/tmp/npm-record-reviews-20261021/.claude/skills/add-proteins-to-graphs/SKILL.md; lines 158-181 | context_only | ## Author pathways and graphs<br><br>For &#96;biosynthetic_pathway&#96;:<br><br>- Order &#96;PathwayStep.step_number&#96; by the source pathway. Do not invent an order<br>  from gene order in a cluster unless the paper explicitly supports it.<br>- Put substrates and products on the step only when the exact intermediate is<br>  known. A hypothesized shunt product belongs in &#96;notes&#96; or a &#96;Discussion&#96;.<br>- Set &#96;proposed: true&#96; when the enzyme assignment is inferred.<br>- Give each step its own &#96;evidence&#96;, even when several adjacent steps cite the<br>  same paper.<br><br>For &#96;causal_graphs&#96;:<br><br>- Reuse existing nodes for the same entity inside a graph; do not duplicate a<br>  protein under one node id per edge.<br>- Keep &#96;node_id&#96; local and stable, such as &#96;eryf&#96;, &#96;hsp90&#96;, or<br>  &#96;polyketide_chain_elongation&#96;, rather than embedding a mutable label.<br>- Declare every node referenced by an edge.<br>- Use &#96;scope: BIOSYNTHESIS&#96; for precursor-to-product assembly and<br>  &#96;scope: BIOACTIVITY&#96; for compound-to-target-to-effect mechanisms.<br>- Put the citation on the &#96;CausalEdge&#96;, not only on the graph or node.<br>- State only the direction the evidence supports. A binding edge does not prove<br>  downstream cell death unless the paper connected those events. |
+| bgc-2862-policy-review_owner_boundary | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; lines 35-56 | context_only | ## Native questions and ownership<br><br>Review &#96;data/natural_products/&#96; for exact structure/stereochemistry, asserted<br>origin, producers versus occurrences, BGC activity/version and evidence basis,<br>computed filing pathway versus asserted classification, pure-compound activity,<br>and biosynthetic/causal support. Use &#96;docs/CURATION.md&#96;,<br>&#96;docs/HARMONIZATION.md&#96;, and the local checklist. Retain taxon/strain,<br>stereochemical resolution, source version and evidence tier as dimensions.<br><br>Read the owner AND every &#96;causal_graph_refs&#96; component under<br>&#96;data/causal_graphs/&lt;StandardInChIKey&gt;/&#96;; &#96;read_natural_product&#96; provides the<br>complete read-only mechanism. Hash the inspected components as context inputs.<br>Seeded facts belong to committed inventories, extractors/seeder and implemented<br>curation tables documented in &#96;docs/CURATION.md&#96;. &#96;curation/decisions.tsv&#96; is<br>reserved and is not consumed by the current seeder: do not recommend it as an<br>effective fix. Curator claims/components use the validated record/bundle writer<br>and their own curation events. Generated pages are not an owner.<br><br>REVIEWED still requires exact identity, internally consistent structure at the<br>supported stereochemical resolution, correct filing/classification, and checked<br>origin, occurrences and active compound-specific clusters. BGC_CORRELATED must<br>not become BGC_CHARACTERIZED without the requisite evidence. A saved review |
+| bgc-2862-policy-queue_consumer | /private/tmp/npm-record-reviews-20261021/scripts/curation_worklist.py; lines 175-192 | context_only | def queue_biosynthesis(records, _discussions) -&gt; list[dict[str, str]]:<br>    """M6's work, ranked by how much evidence is already waiting: a<br>    characterized cluster with a causal producer and no pathway written."""<br>    rows = []<br>    for path, doc in records:<br>        if doc.get("biosynthetic_pathway"):<br>            continue<br>        clusters = doc.get("biosynthetic_gene_clusters") or []<br>        demonstrated = sum(1 for c in clusters<br>                           if c.get("link_evidence_basis") == "CLUSTER_DEMONSTRATED")<br>        causal = sum(1 for p in doc.get("producer_organisms") or []<br>                     if p.get("evidence_basis") in CAUSAL_BASES)<br>        if not demonstrated and not causal:<br>            continue<br>        rows.append(_row("biosynthesis", demonstrated * 2 + causal, path, doc,<br>                         f"{demonstrated} demonstrated cluster link(s), {causal} causal "<br>                         f"producer claim(s), no biosynthetic_pathway"))<br>    return rows |
+| bgc-2862-policy-queue_test | /private/tmp/npm-record-reviews-20261021/tests/test_curation_worklist.py; lines 57-75 | context_only | def test_biosynthesis_ranks_by_the_evidence_already_waiting():<br>    strong = rec(label="strong",<br>                 biosynthetic_gene_clusters=[{"link_evidence_basis": "CLUSTER_DEMONSTRATED"}],<br>                 producer_organisms=[{"evidence_basis": "BGC_CHARACTERIZED"}])<br>    weak = rec(label="weak",<br>               biosynthetic_gene_clusters=[{"link_evidence_basis": "CLUSTER_UNSTATED"}],<br>               producer_organisms=[{"evidence_basis": "BGC_CHARACTERIZED"}])<br>    rows = worklist.queue_biosynthesis([weak, strong], None)<br>    assert {r["label"] for r in rows} == {"strong", "weak"}<br>    assert int(dict(zip([r["label"] for r in rows], [r["rank"] for r in rows],<br>                        strict=True))["strong"]) &gt; int(<br>        dict(zip([r["label"] for r in rows], [r["rank"] for r in rows], strict=True))["weak"])<br><br><br>def test_a_record_that_already_has_a_pathway_is_not_queued_for_biosynthesis():<br>    rows = worklist.queue_biosynthesis(<br>        [rec(biosynthetic_pathway=[{"step": 1}],<br>             biosynthetic_gene_clusters=[{"link_evidence_basis": "CLUSTER_DEMONSTRATED"}])], None)<br>    assert rows == [] |
+| bgc-2862-policy-render_endpoint | /private/tmp/npm-record-reviews-20261021/scripts/render_pages.py; lines 130-136 | context_only | def pathway_endpoint(item: dict[str, Any], singular: str, plural: str) -&gt; str:<br>    values = item.get(plural) or []<br>    if isinstance(values, str):<br>        values = [values]<br>    if values:<br>        return " + ".join(values)<br>    return item.get(singular) or "ungrounded" |
+| bgc-2862-policy-render_steps | /private/tmp/npm-record-reviews-20261021/scripts/render_pages.py; lines 208-215 | context_only |     steps = []<br>    for s in doc.get("biosynthetic_pathway") or []:<br>        steps.append({<br>            **s,<br>            "reference": first_reference(s),<br>            "substrate_display": pathway_endpoint(s, "substrate", "substrates"),<br>            "product_display": pathway_endpoint(s, "product", "products"),<br>        }) |
+| bgc-2862-policy-render_template | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/templates/record.html; lines 109-128 | context_only | {% if r.pathway_steps %}<br>{% set numbered_pathway_steps = r.pathway_steps&#124;selectattr("step_number")&#124;list %}<br>{% set has_step_numbers = numbered_pathway_steps&#124;length == r.pathway_steps&#124;length %}<br>&lt;h2&gt;Biosynthesis &lt;span class="tag causal"&gt;curated&lt;/span&gt;&lt;/h2&gt;<br>&lt;p class="sub"&gt;Written by a curator with claim-level evidence on each step; not<br>derived from a source. This is what the rest of the record exists to support.&lt;/p&gt;<br>&lt;div class="scroll"&gt;&lt;table&gt;<br>&lt;tr&gt;&lt;th&gt;{{ 'Step' if has_step_numbers else '#' }}&lt;/th&gt;&lt;th&gt;Enzyme&lt;/th&gt;&lt;th&gt;Reaction&lt;/th&gt;&lt;th&gt;Substrate &amp;rarr; product&lt;/th&gt;&lt;th&gt;Evidence&lt;/th&gt;&lt;/tr&gt;<br>{% for s in r.pathway_steps %}<br>&lt;tr&gt;<br>  &lt;td&gt;{{ s.step_number if has_step_numbers else loop.index }}&lt;/td&gt;<br>  &lt;td&gt;{{ s.enzyme_label }}{% if s.enzyme_id %}&lt;br&gt;&lt;span class="mono"&gt;{{ s.enzyme_id }}&lt;/span&gt;{% endif %}&lt;/td&gt;<br>  &lt;td class="mono"&gt;{{ s.reaction_id or '' }}&lt;/td&gt;<br>  &lt;td class="mono"&gt;{{ s.substrate_display }} &amp;rarr; {{ s.product_display }}&lt;/td&gt;<br>  &lt;td class="mono"&gt;{{ s.reference }}&lt;/td&gt;<br>&lt;/tr&gt;<br>{% endfor %}<br>&lt;/table&gt;&lt;/div&gt;<br>{% for s in r.pathway_steps %}{% if s.notes %}&lt;p class="sub"&gt;{{ 'Step ' ~ s.step_number if has_step_numbers else 'Entry ' ~ loop.index }}: {{ s.notes }}&lt;/p&gt;{% endif %}{% endfor %}<br>{% endif %} |
+| bgc-2862-policy-severity_contract | /private/tmp/npm-record-reviews-20261021/docs/record-reviews.md; lines 118-140 | context_only | ## Verdict And Severity<br><br>Use &#96;pass&#96;, &#96;pass_with_limitations&#96;, &#96;needs_curation&#96;, &#96;seed_only&#96;, &#96;blocked&#96;,<br>or &#96;not_assessed&#96;. Preserve a Mech-specific verdict in &#96;native_verdict&#96; if needed.<br>&#96;completion&#96; is separate from the scientific verdict. Deterministic validation<br>and seed metadata use &#96;scientific_review: false&#96;. Provenance-only inspection<br>must explicitly say literature support was not reassessed.<br><br>- Blocker: wrong identity, invalid representation, broken critical references,<br>  or a defect that makes the record denote the wrong thing.<br>- Major: materially unsupported claims, wrong grounding, scope inflation,<br>  missing required representation, or systemic source/generator errors.<br>- Minor: bounded, non-blocking wording, redundancy or provenance problems.<br>- Informational: a scoped observation that does not require a corrective edit.<br><br>Passing verdicts cannot conceal unresolved major/blocker findings or failed<br>required checks. Unavailable required checks preclude completed status. Report<br>limitations instead of silently dropping checks or broadening sample results.<br>Every passing target needs a positive, evidence-linked assessment. An unknown<br>or concerning assessment precludes plain &#96;pass&#96;; a qualified pass must state<br>its limitations and still positively assess each actually reviewed target.<br>Do not promote native record status or append curation/history events merely<br>because the review document validates. |
+| bgc-2862-policy-schema_evidence_test | /private/tmp/npm-record-reviews-20261021/tests/test_schema.py; lines 54-71 | context_only | <br>@pytest.mark.parametrize(<br>    "class_name",<br>    [<br>        "ProducerOrganism",<br>        "Occurrence",<br>        "BiosyntheticGeneCluster",<br>        "PathwayStep",<br>        "BioactivityObservation",<br>        "MolecularTarget",<br>        "ClinicalStatusAssertion",<br>        "CausalEdge",<br>    ],<br>)<br>def test_every_claim_class_requires_its_own_evidence(schema, class_name):<br>    """Record-level evidence never satisfies a claim-level obligation."""<br>    attributes = schema["classes"][class_name]["attributes"]<br>    assert attributes["evidence"]["required"] is True, f"{class_name} may carry an uncited claim" |
+| bgc-2862-policy-renderer_endpoint_tests | /private/tmp/npm-record-reviews-20261021/tests/test_render_pages.py; lines 248-304 | context_only | def test_pathway_step_without_grounded_compounds_renders_as_ungrounded():<br>    record = render_pages.build_record(<br>        REPO_ROOT / "data" / "natural_products" / "carbohydrates" / "coformycin.yaml",<br>        {<br>            "identifier": "CHEBI:16213",<br>            "np_pathway": "CARBOHYDRATES",<br>            "biosynthetic_pathway": [<br>                {<br>                    "step_number": 1,<br>                    "enzyme_label": "CofB",<br>                    "evidence": [{"reference": "DOI:10.1073/pnas.2000111117"}],<br>                },<br>            ],<br>        },<br>    )<br><br>    env = Environment(<br>        loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),<br>        autoescape=select_autoescape(["html"]),<br>        trim_blocks=True,<br>        lstrip_blocks=True,<br>        keep_trailing_newline=True,<br>    )<br>    rendered = env.get_template("record.html").render(r=record)<br><br>    assert "ungrounded &amp;rarr; ungrounded" in rendered<br><br><br>def test_pathway_step_without_step_number_renders_as_entry():<br>    record = render_pages.build_record(<br>        REPO_ROOT / "data" / "natural_products" / "carbohydrates" / "coformycin.yaml",<br>        {<br>            "identifier": "CHEBI:16213",<br>            "np_pathway": "CARBOHYDRATES",<br>            "biosynthetic_pathway": [<br>                {<br>                    "enzyme_label": "CofB",<br>                    "notes": "Exact chemistry is unresolved.",<br>                    "evidence": [{"reference": "DOI:10.1073/pnas.2000111117"}],<br>                },<br>            ],<br>        },<br>    )<br><br>    env = Environment(<br>        loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),<br>        autoescape=select_autoescape(["html"]),<br>        trim_blocks=True,<br>        lstrip_blocks=True,<br>        keep_trailing_newline=True,<br>    )<br>    rendered = env.get_template("record.html").render(r=record)<br><br>    assert "&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;" in rendered<br>    assert "&lt;td&gt;1&lt;/td&gt;" in rendered<br>    assert "Entry 1: Exact chemistry is unresolved." in rendered<br>    assert "Step : Exact chemistry is unresolved." not in rendered |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-287/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-287/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-287/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-287/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-287/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- Full QC/OAK and fresh primary, source-authority, strain and sequence verification remain unavailable; source grades are not upgraded.
+- Both saved canonical SMILES comparisons agree, with equal formula, charge, Standard InChI, complete key and counts. The limited 32-atom correspondence is complete while full_graph_identity_established remains false. The additional ChEBI source string was not separately parsed; no exact natural identity or primary structure verification is claimed.
+- Both forms have six specified tetrahedral centres and no saved unspecified potential-stereo entries. The true source flag concerns the maintained atom-centre test, not natural stereochemical verification or functional/sequence validation of the curated pathway.
+- The original diagnostic stderr contains eight omitted-undefined-stereo warnings in 368 bytes. They are globally unattributed and are not assigned to any particular owner or form.
+- Motifs and model classes do not independently establish natural identity, a complete biosynthetic route or pharmacological activity.
+- The complete Paxilline view retains one BIOSYNTHESIS graph with four nodes, three edges and six literal edge-reference placements, plus one pathway step with five reference placements. PaxD UniProtKB:Q9C451 acts on the exact Paxilline owner CHEBI:34907 to produce distinct naturalproductmech:mibig-8e09316737; the process node is ungrounded and the other three nodes are grounded. The historical PRIMARY_EXPERIMENT notes attribute purified E. coli-expressed PaxD, successive prenylation and the major 21,22-diprenylated product to DOI:10.1007/s00253-013-4834-9. Reviewed UniProt, HM171111.1 and AAK11526.2 annotations remain historical database assertions, not newly read primary bodies, sequence comparisons, kinetics or assay constructs. proposed is absent, not false or a fresh demonstration. The original reader preserves the complete owner; it made no molecular parse. The separate twenty stored-form diagnostic has its own scope. The explicitly directed downstream graph can remain qualified context; the narrower pathway-owner placement is assessed separately below.
+- The sole biosynthetic_pathway step consumes this owner, CHEBI:34907, and terminates at the distinct 21,22-diprenylated Paxilline owner. PathwayStep explicitly denotes a step in biosynthesis of this compound. Intermediate steps need not each directly produce the owner, but this is a sole terminal conversion away from it, and its notes and dated history explicitly call it downstream. The identical pathway section already exists on the grounded product owner. The parent precursor-to-product wording and broader BIOSYNTHESIS graph scope are material competing context, but do not explicitly authorize this narrower owner-field placement. The maintained queue skips a populated pathway and the renderer labels it curated Biosynthesis, creating material completeness and presentation consequences. This supports a major open owner-placement concern; it does not refute the asserted PaxD chemistry or justify discarding the correctly directed graph. The interpretation remains provisional pending curator resolution of field policy.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- No record, source inventory or implementation is edited. Future changes must follow the captured maintained ownership and validated curation workflow.
+- This author read retained outputs only: no new molecular parse, sequence comparison, source query, maintained-reader invocation or external request.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261107T092129Z-paxilline
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: paxilline'
+started_at: '2026-11-07T08:46:40.681891Z'
+finished_at: '2026-11-07T09:21:29.877298Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'Paxilline retains a consistent saved neutral indole-containing structure,
+  six specified atom centres and its characterized producer/demonstrated locus grades.
+  A major open pathway-owner placement concern remains: the sole PaxD step consumes
+  Paxilline to make a distinct grounded product, contrary to the narrower owner-biosynthesis
+  meaning. The downstream graph and historical evidence remain qualified context.
+  The record needs curation and completion remains partial.'
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/add-proteins-to-graphs/SKILL.md
+    sha256: 139a65a4e3404ceae275a01a724c43f85062de86a19d1772eea52fb54e52735a
+    role: context
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: curation/unresolved_taxa.tsv
+    sha256: 86efbda9c09388723a4f24da35e18404032f1549a9088192fbd2020cb846fa43
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/unclassified/21-22-diprenylated-paxilline.yaml
+    sha256: f3cff50032a3dda2197b6849e589055c87dbe6d4af3bea2e68a57a701d407bb5
+    role: context
+  - path: data/natural_products/unclassified/paxilline.yaml
+    sha256: e0eb6c2a207b05e163edf036a0bf246647224e4076743b19157d5cd56ed2ad8e
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: data/raw/taxon_non_organism.tsv
+    sha256: f2c1ee257bbbcb0854528196ab1f809d658c27f1c7b2036f7f71f088b52935bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/curation_worklist.py
+    sha256: 913508ca8df2eb5c037cd9e4769b14b027869ab78c7306f33b59e1c7e383a1c3
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/render_pages.py
+    sha256: e3dc205d44111813cc02439caff895e30e8c06756d74a7675acbe15d84cf14ab
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 11808e60990b3520dbe8f9c50f6574f54cd32165185577a699f988c77f3d27ec
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/templates/record.html
+    sha256: 4c5143ae98b51531c3b708cf73590decd50f3e222e375d91288a54ef767e7893
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+  - path: tests/test_curation_worklist.py
+    sha256: fd6171c4533ef20b8cffc1f73d57fd081e32060ca672ab647c7034e4394984f6
+    role: context
+  - path: tests/test_render_pages.py
+    sha256: c294d3f879b917963c22347a52fffb9b7c2bee110164c2fbcd48e35ad1e3e951
+    role: context
+  - path: tests/test_schema.py
+    sha256: 9bb9579bc83285d270d8e0d6944329fd975234cc728e65458e5edbd868ba4859
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2862; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:34907
+targets:
+- target_id: CHEBI:34907
+  path: data/natural_products/unclassified/paxilline.yaml
+  label: paxilline
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_origins.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: .claude/skills/add-proteins-to-graphs/SKILL.md
+    role: 'Order 2862 only: retained curation guidance for pathway ordering, exact
+      endpoints, evidence and proposed flags; policy context for the open owner-scope
+      question, not a downstream exception or primary scientific verification.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Retained exclusion-table diagnostic context captured for every review; applicable
+      exact assay exclusions and biological rows must be derived from actual retained
+      inventory, not file presence.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/unresolved_taxa.tsv
+    role: Retained unresolved-taxon diagnostic context used by the bounded curation
+      scan; no fresh taxonomy, forward-merge decision or producer confirmation.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/taxon_merged.tsv
+    role: Exact retained selected/direct/comparison taxon decision; no fresh authority.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/taxon_non_organism.tsv
+    role: Retained non-organism table used by positive and negative taxon queries
+      for each owner; diagnostic scope only, not a taxon verdict from file presence.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/curation_worklist.py
+    role: 'Order 2862 only: maintained queue consumer skips records with a nonempty
+      biosynthetic_pathway; supports assessment of field-presence impact, not correctness
+      of the stored biological direction.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/render_pages.py
+    role: 'Order 2862 only: retained renderer projects singular or plural pathway
+      endpoints and labels; supports interpretation of displayed downstream context
+      without validating owner-product direction.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained exclusion identity, source-row digest and attributed-rationale
+      implementation context; no execution or new assay evidence.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: 'Maintained producer-strain qualification implementation: source-row and
+      digest predicate, strain-only CURATOR_INFERENCE scope; plaintext dependency,
+      no execution or grade/taxon upgrade.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/structure_corrections.py
+    role: 'Maintained row_digest implementation used by qualification guards: sorted
+      ensure_ascii JSON digest only; input presence does not claim an audit or application
+      of other structure-correction behavior.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/templates/record.html
+    role: 'Order 2862 only: retained template labels a populated pathway as curated
+      biosynthesis and displays substrate-to-product steps; presentation impact only,
+      not primary mechanism proof.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_curation_worklist.py
+    role: 'Order 2862 only: retained test documents the queue exclusion for an existing
+      pathway; plaintext consumer-contract evidence only, no test execution or biological
+      validation.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_render_pages.py
+    role: 'Order 2862 only: retained rendering tests cover ungrounded endpoints and
+      an absent step number; they do not establish an exception to the current pathway-owner
+      scope question or execute here.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_schema.py
+    role: 'Order 2862 only: retained PathwayStep evidence-requirement test supplies
+      bounded schema-contract context; it is not biochemical validation or an owner-direction
+      exception.'
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/unclassified/paxilline.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: local-molecular-diagnostic
+  name: Original local two-form molecular diagnostic
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -S -B /private/tmp/npm-review-work/shared-next-batch287/chemistry-local/diagnose287-001.py
+    36dad27dc204f7fd83bf2a8e18c654b35e2fce3809b5cbff1a8003ac002ccd60 a985a5a088430c5f67d4e6f344e489fc4ce05f537524273d80e4fd736ca1be2c
+    14915667af9b084b32754d03f2fdcd66d372cc4f471504637f6ad97383766816
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Both exact stored forms parsed in the sole original twenty-attempt diagnostic
+    and agree in formula, charge, Standard InChI and declared complete key.
+  scope_note: Both saved canonical SMILES comparisons agree, with equal formula, charge,
+    Standard InChI, complete key and counts. The limited 32-atom correspondence is
+    complete while full_graph_identity_established remains false. The additional ChEBI
+    source string was not separately parsed; no exact natural identity or primary
+    structure verification is claimed. The original diagnostic stderr contains eight
+    omitted-undefined-stereo warnings in 368 bytes. They are globally unattributed
+    and are not assigned to any particular owner or form.
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-chemistry
+  - bgc-2862-diagnostic-acceptance
+  - bgc-2862-diagnostic-execution
+  - bgc-2862-diagnostic-stderr
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for paxilline
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch287/read-selected-mechanism-guarded-001.py
+    2862 14915667af9b084b32754d03f2fdcd66d372cc4f471504637f6ad97383766816 09dc856386ad9c9bd275657e7c9175a1a95b55eceaee423980282bfa9bf83f51
+    a333a98c5ee2ce79ea3de7ea79c56b41754ac535915a866146427edd24fd4ed6 a985a5a088430c5f67d4e6f344e489fc4ce05f537524273d80e4fd736ca1be2c
+    36dad27dc204f7fd83bf2a8e18c654b35e2fce3809b5cbff1a8003ac002ccd60
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: One original maintained reader preserves the entire Paxilline owner, one
+    graph/four nodes/three edges, one step and four histories.
+  scope_note: Technical complete-owner preservation only; historical function/sequence
+    claims and the open pathway-owner placement remain scientifically qualified.
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-reader-DATA
+  - bgc-2862-reader-execution
+  - bgc-2862-reader-acceptance
+  - bgc-2862-graph
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:34907
+  command: just validate-strict data/natural_products/unclassified/paraherquonin.yaml
+    data/natural_products/unclassified/paxilline.yaml data/natural_products/unclassified/pelgipeptin-a.yaml
+    data/natural_products/unclassified/pelgipeptin-b.yaml data/natural_products/unclassified/pelgipeptin-c.yaml
+    data/natural_products/unclassified/pelgipeptin-d.yaml data/natural_products/unclassified/penigainamide-a.yaml
+    data/natural_products/unclassified/penigainamide-b.yaml data/natural_products/unclassified/penigainamide-c.yaml
+    data/natural_products/unclassified/penitrem-a.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-287/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:34907
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-287/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:34907
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:34907
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:34907
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-287/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:34907
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:34907
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:34907
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2862-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/unclassified/paxilline.yaml
+  locator: Complete retained plaintext, all roots and history
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Complete owner reading carries by exact preview/raw/capture equality.
+  snapshot_sha256: e0eb6c2a207b05e163edf036a0bf246647224e4076743b19157d5cd56ed2ad8e
+- evidence_id: bgc-2862-whole-owner-attribution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-ten-owner-root-history-preview-001.json
+  locator: /selected_records/1
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: BGC Science personally read all owner fields and complete history; exact
+    current pins carry that credit.
+  snapshot_sha256: d67905db9806bebb6b742ae93d52ec9cbe1e617d697819237fe1be90bd40bc4e
+- evidence_id: bgc-2862-identity
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/identifier; /records/1/owner_document/chemical_structure;
+    /records/1/owner_document/source_concepts; /records/1/owner_document/grounding_status
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: paxilline retains exact identifier CHEBI:34907, complete key ACNHBCIZLNNLRS-UBGQALKQSA-N,
+    and BGC0001082 v4 compound index 1. Retained cross-references npatlas:NPA028977
+    remain source-attributed, not fresh authority checks. Both saved canonical SMILES
+    comparisons agree, with equal formula, charge, Standard InChI, complete key and
+    counts. The limited 32-atom correspondence is complete while full_graph_identity_established
+    remains false. The additional ChEBI source string was not separately parsed; no
+    exact natural identity or primary structure verification is claimed.
+  snapshot_sha256: a985a5a088430c5f67d4e6f344e489fc4ce05f537524273d80e4fd736ca1be2c
+- evidence_id: bgc-2862-history
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/curation_history
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: 'BGC0001082: DOI:10.1021/ja3116636 at COMPOUND_EVIDENCE grain. All 4 complete
+    histories were read, including 3 source-seeding events. Source citations and repeated
+    placements are not newly read primary bodies or independent experiments. The 2026-10-23
+    curator history explicitly records downstream diprenylation. Historical primary-experiment
+    and database references in the graph/pathway remain attributed, not newly validated.'
+  snapshot_sha256: a985a5a088430c5f67d4e6f344e489fc4ce05f537524273d80e4fd736ca1be2c
+- evidence_id: bgc-2862-provenance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/producer_organisms; /records/1/owner_document/biosynthetic_gene_clusters
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: MIBiG BGC0001082 version 4 compound 1 retains Penicillium paxilli NCBITaxon:70109
+    at BGC_CHARACTERIZED. Its active/questionable entry is complete according to that
+    source. This stronger producer grade is preserved distinctly from occurrence assertions
+    and is not downgraded to SOURCE_ASSERTION or newly verified here. The HM171111.1:28174..46982
+    locus is CLUSTER_DEMONSTRATED and retains Knock-out studies, with COMPOUND_EVIDENCE
+    DOI:10.1021/ja3116636. These source-level cluster assertions remain intact. They
+    neither make the sole downstream PaxD step synthesis of the Paxilline owner nor
+    independently verify the retained protein and reaction evidence.
+  snapshot_sha256: a985a5a088430c5f67d4e6f344e489fc4ce05f537524273d80e4fd736ca1be2c
+- evidence_id: bgc-2862-classification
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/np_classification; /records/1/owner_document/np_pathway;
+    /records/1/owner_document/bgc_class
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: NPClassifier retains Alkaloids|Terpenoids, Tryptophan alkaloids and Indole
+    diterpenoid alkaloids (Penitrems), with is_glycoside:false. MIBiG separately records
+    Terpenoid/alkaloid and Diterpenoid/Hemiterpene source classes. Multiple model
+    pathways retain UNCLASSIFIED; the class label does not prove activity or settle
+    the owner-specific pathway placement.
+  snapshot_sha256: a985a5a088430c5f67d4e6f344e489fc4ce05f537524273d80e4fd736ca1be2c
+- evidence_id: bgc-2862-roots
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/complete_root_keys; /contexts/6/declared_mechanism_roots_literal;
+    /contexts/6/literal_bioactivities_root
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: The selected owner has one inline BIOSYNTHESIS graph and one pathway step,
+    with no component, molecular-target, bioactivity or related-corpus root. The original
+    maintained reader preserves the whole owner, while the pathway placement concern
+    remains open.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+  search_scope: Complete exact selected-owner root set; not a biological absence claim.
+- evidence_id: bgc-2862-chemistry
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/1/smiles/computed; /records/1/inchi/computed; /records/1/comparisons;
+    /records/1/atom_correspondence
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: 'Both saved neutral C27H33NO4 forms have 32 heavy atoms, 37 bonds and six
+    ring rows: four six-membered and two five-membered rings. The indole contains
+    an aromatic N-H five-ring fused to benzene; the remaining polycycle includes a
+    cyclic ether, one ketone/enone and two hydroxyls. No amide, ester or metal is
+    encoded. This topology does not establish BK-channel activity or validate the
+    PaxD reaction. Both forms have six specified tetrahedral centres and no saved
+    unspecified potential-stereo entries. The true source flag concerns the maintained
+    atom-centre test, not natural stereochemical verification or functional/sequence
+    validation of the curated pathway. Both saved canonical SMILES comparisons agree,
+    with equal formula, charge, Standard InChI, complete key and counts. The limited
+    32-atom correspondence is complete while full_graph_identity_established remains
+    false. The additional ChEBI source string was not separately parsed; no exact
+    natural identity or primary structure verification is claimed.'
+  snapshot_sha256: 48dcf8ad84d3fc15e89ffcf92069a740c448d8106aeb28a4029e3a744d7b5334
+- evidence_id: bgc-2862-molecular-reading
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-current287-first-five-molecular-intake-reading-001.json
+  locator: /records/1; /personal_reading_scope; /global_cautions
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All complete saved tables and current intake meanings personally read,
+    with no new parse.
+  snapshot_sha256: dadbca3df5cef8a75467c31f2083e50f8818a3740f38715419fee76f46e4bde0
+- evidence_id: bgc-2862-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/root-current287-diagnostic-acceptance-001.json
+  locator: /accepted; /DATA; /execution; /molecular_parse_attempts; /stderr_bytes;
+    /scope
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: ROOT accepted the sole twenty stored-form attempts with actual canonical/mapping
+    differences preserved.
+  snapshot_sha256: 9345f03e05866a000a91d5a3f97c9f9beefd713fa777d02937a01400ab449511
+- evidence_id: bgc-2862-diagnostic-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/chemistry-local/diagnostic-execution-001.json
+  locator: /command; /exit_code; /stderr
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Exact original command, zero exit and complete original stderr; no replay.
+  snapshot_sha256: 377411b920205ffc5a37e84f943fb114f92fe9341314fd2f2f56cb98ae7b684c
+- evidence_id: bgc-2862-diagnostic-stderr
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/chemistry-local/diagnostic-original-001.stderr
+  locator: Complete 368-byte stderr stream
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: The original diagnostic stderr contains eight omitted-undefined-stereo
+    warnings in 368 bytes. They are globally unattributed and are not assigned to
+    any particular owner or form.
+  snapshot_sha256: 57dc500932332b50528feb40ed8a93e8ee8555facf35d24a6bcdb921545fe583
+- evidence_id: bgc-2862-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/intakes-001/2862-inspect-001.json
+  locator: /targets; /source/inputs
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: One exact target and 54 current inputs with maintained ownership.
+  snapshot_sha256: 09dc856386ad9c9bd275657e7c9175a1a95b55eceaee423980282bfa9bf83f51
+- evidence_id: bgc-2862-intake-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/root-current287-intake-acceptance-001.json
+  locator: /accepted; /intake_summary; /records; /source_placements; /unique_source_paths
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Ten actual inspections accepted with 488 placements and 73 unique paths.
+  snapshot_sha256: a383fac0a7c326954b67870b2a7e09fe5a60f70242856a2d64235a5c5cce07ae
+- evidence_id: bgc-2862-plan
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-target-input-plan-001.json
+  locator: /records/1
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Exact current map and 1 direct companion placements.
+  snapshot_sha256: 1165d631c0773cfdfbe684528295d0699636d97d00732801dd825b5bb72c334b
+- evidence_id: bgc-2862-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/root-current287-source-plan-acceptance-001.json
+  locator: /accepted; /plan; /source_placements; /unique_source_paths
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: ROOT accepted the original current plan.
+  snapshot_sha256: 431fc70c7d259fbf19ce95367ab9f5f0d49f92232e903f5b3682c09809180acd
+- evidence_id: bgc-2862-gates
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/root-current287-five-gates-acceptance-001.json
+  locator: /five_local_commands_passed; /ledger; /counts; /all_native_gates_passed;
+    /unavailable_required_gates
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Five original local commands passed; full QC/OAK remain unavailable and
+    queues remain leads.
+  snapshot_sha256: 24cd4f6efbc5a2b13255c0a1388ce930ff9734c4dcd984462a942bf5a9931e82
+- evidence_id: bgc-2862-source-reading
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-current287-assigned-source-reading-001.json
+  locator: /contexts/2; /counts; /reading_attribution
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 27 row placements/185 fields and 4 negative frames personally read.
+  snapshot_sha256: 8249d977da5ad8bf46871e1eba21c4a10281b1cb8ca261a202ae21f5dd1e3685
+- evidence_id: bgc-2862-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-scope-notes-001.json
+  locator: /totals; /reading_reconciliation; /reading_boundaries
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Disjoint primary attribution is BGC 44 rows/387 fields plus Support 124/1164,
+    totaling 168/1551. Native taxonomy/curation adds no named-source row credit.
+  snapshot_sha256: 82e556ef3c4e0b85dfb36e2dc1df36faddb17a09eec16369c1a0ae78c88988d5
+- evidence_id: bgc-2862-taxonomy
+  kind: authority
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-cached-taxonomy-reading-001.json
+  locator: /scope; /context_interpretations/6; /interpretation
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: MIBiG BGC0001082 version 4 compound 1 retains Penicillium paxilli NCBITaxon:70109
+    at BGC_CHARACTERIZED. Its active/questionable entry is complete according to that
+    source. This stronger producer grade is preserved distinctly from occurrence assertions
+    and is not downgraded to SOURCE_ASSERTION or newly verified here. Twenty-one LOTUS
+    occurrence rows and three ChEBI origin rows are retained separately from the P.
+    paxilli producer. They include P. thiersii, Aspergillus foveolatus, P. miczynskii,
+    Claviceps paspali, Lolium perenne, A. striatus, P. camemberti and repeated P.
+    paxilli citations. Historical Emericella desertorum/41728 follows exact saved
+    merge row 58 to 1810909, whose cache names Aspergillus desertorum and includes
+    Emericella desertorum as an EXACT synonym; it is not terminally unresolved. ChEBI
+    origins cite A. oryzae/5062 (PMID:23311903), P. paxilli/70109 (PMID:17428785)
+    and P. shearii/904690 (PMID:24894186, Eupenicillium shearii comment). These are
+    attributed occurrence claims, not newly established strain/species or biosynthetic
+    equivalence.
+  snapshot_sha256: 90f49809ae1b579750a53f4bf77575320e4d42c10a7d2fef0268578e7f2671fb
+- evidence_id: bgc-2862-curation
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-implemented-curation-scan-001.json
+  locator: /scope; /counts; /applied_rows; /interpretation
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Native read nine substantive tables/3,422 rows and 109 lexical candidates,
+    with no exact applicable decision. Ninety-three complete unchanged decision rows
+    carry exact prior attribution; fifteen assay exclusions were freshly read; two
+    reserved tables remain census-only.
+  snapshot_sha256: 58d2a7e2a96f650dd9de2f036dbaab3d2ec99635269bea770963577f29750601
+  search_scope: Exact source-compound/BGC/full-key/occurrence/assay selectors; lexical
+    similarity and isolated AID overlap do not establish applicability.
+- evidence_id: bgc-2862-assay-curation
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-implemented-curation-scan-001.json
+  locator: /assay_scope
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: No actual AID or blank assay marker matches this selected owner. Exact
+    retained BindingDB, AntibioticMech and CyanoMetDB frames also have no matches.
+    These bounded results do not establish inactivity or universal database absence.
+    The retained ChEBI definition calls Paxilline a BK-channel blocker, but that is
+    database definition text, not a current assay row or a newly verified target mechanism.
+    Penitrem activity and the product owner activity gap do not transfer.
+  snapshot_sha256: 58d2a7e2a96f650dd9de2f036dbaab3d2ec99635269bea770963577f29750601
+  search_scope: Exact current owner full-key/CID scope; selected Penitrem assays and
+    unselected sentinels are not transferred.
+- evidence_id: bgc-2862-stereo-policy
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: 'lines 165-172: FindMolChiralCenters and question-mark atom tag'
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: The source flag tests unassigned atom-centred chirality, not all bond geometry
+    or natural identity.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2862-stereo-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: 'lines 392-397: chemical_structure.stereo_complete'
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Undefined stereocentres remain recorded; no natural configuration is supplied.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2862-filing-policy
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: 'lines 295-306: choose_pathway'
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: One supported mapped pathway files the record; multiple, absent or unsupported
+    results retain UNCLASSIFIED.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2862-query-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Complete saved mibig_compounds frame with 1 row placements; all fields
+    and bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+- evidence_id: bgc-2862-row-mibig_compounds-0
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: physical lines 1259-1259; raw record sha256 58f1211e8e95444ebb10ec35319d5258dfe191d026fb06d76caaba13b07d4925
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 25 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2862-query-chebi_structures
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Complete saved chebi_structures frame with 1 row placements; all fields
+    and bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+- evidence_id: bgc-2862-row-chebi_structures-0
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: physical lines 9295-9295; raw record sha256 1081ec67fc2b94d746f904b24966dabae08222f286b947183740feb46d1a31c3
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: bgc-2862-query-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Complete saved lotus_occurrences frame with 21 row placements; all fields
+    and bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+- evidence_id: bgc-2862-row-lotus_occurrences-0
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 39-39; raw record sha256 1c0dd6d7aa0469d4529b2cb785963c7922aeee89d33275f5241df0ea4709f522
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-1
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 40-40; raw record sha256 deec3f9414e54129b890bc70238fbdeecc538b631330935877a68f61a3faa6c8
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-2
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 41-41; raw record sha256 3b2b9e6a427d846feb9abdc9c5d8fee4bd49c39f04f506c2b97e816a1fc4b3ec
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-3
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 42-42; raw record sha256 a571d49daf616c909043fd66721c9920cc90d639f8c2e74125aab818191a066d
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-4
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 43-43; raw record sha256 3285db652804c1ad704fe2e72609ce02016126757aa611047667810dce8adfc9
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-5
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 44-44; raw record sha256 e3594ffcda3692b5f04a71d3943f57433ddcee201ced99f4b39c3bdc4639cbfc
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-6
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 45-45; raw record sha256 868985128e9dba6c597280d8aadce2a9815afe6aa72e12eec16f4908e135f3d5
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-7
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 46-46; raw record sha256 17247cfd27a2980ac35813cca906f40dda9fc7fac8d27f74dab068f7059b3c92
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-8
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 47-47; raw record sha256 696ae5707760d92736a55ebf1b6efb4c29129d5e0efe1306a99cc7a107982ddb
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-9
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 48-48; raw record sha256 c002da23dcee99a8974867ead08b33c2092b0f568cf45907d76fac5bef06e8ed
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-10
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 49-49; raw record sha256 402a2f45c8d1738714826f622d68d248d0e6b164c406683bd3ed34b20cc33b4e
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-11
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 50-50; raw record sha256 43d346fb20f0d62aa2eb0e649ac56e9ecbed0f8c1f8f11fac2bfa9164b88316e
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-12
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 51-51; raw record sha256 e0114bde8c111e44b92bbbdc209ddf62da35c526ff8fa345ba76261926a72e89
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-13
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 52-52; raw record sha256 3b833a64c91e70255b6e02b6ca545cfd85100ffe11d7954a374900b6bf408c42
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-14
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 53-53; raw record sha256 62b6cba9a5972ed9c3d8916c9f1bb06ccb5648c4c44d36883c5926b8e26aa008
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-15
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 54-54; raw record sha256 84fcc764e40ffceeb1d90816a3288a609ee73294000dccf3513108ab8ca9b122
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-16
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 55-55; raw record sha256 0d619f894231b87fbdc8ba040955350687daa9626731e1e6cb08339be2126d50
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-17
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 56-56; raw record sha256 46d3d293c9ccf6eb577e878dce8a18ee94e00104550a33b5dc373ea8c60115d1
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-18
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 57-57; raw record sha256 e2d008f8c337d6c6e5c39ae3258a24b55990d9495ca4ae770b55eb0c754cfcac
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-19
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 58-58; raw record sha256 6cde2282681b53ab4e7476c8bf58bbd755e10fd8710cd85edbcdc915b584b3e1
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-row-lotus_occurrences-20
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 59-59; raw record sha256 201d2ca57872afa7e9db651fed0acb25dc3818cb34cc0e38a85f0af55b18c2bb
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 6 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2862-query-cyanometdb_occurrences
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Complete saved cyanometdb_occurrences frame with 0 row placements; all
+    fields and bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+  search_scope: '{"matches": 0, "owner": "data/natural_products/unclassified/paxilline.yaml",
+    "predicate": "exact complete standard_inchi_key equality", "query": "ACNHBCIZLNNLRS-UBGQALKQSA-N",
+    "table": "cyanometdb_occurrences"}'
+- evidence_id: bgc-2862-query-npclassifier
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Complete saved npclassifier frame with 1 row placements; all fields and
+    bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+- evidence_id: bgc-2862-row-npclassifier-0
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: physical lines 17-17; raw record sha256 7ff585d15621f358b6d35be1f993d7be3dc70e0c45e82fee9fd519b3856abc3f
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 7 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2862-query-pubchem_bioassay
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Complete saved pubchem_bioassay frame with 0 row placements; all fields
+    and bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+  search_scope: '{"matches": 0, "owner": "data/natural_products/unclassified/paxilline.yaml",
+    "predicate": "exact complete standard_inchi_key equality", "query": "ACNHBCIZLNNLRS-UBGQALKQSA-N",
+    "table": "pubchem_bioassay"}'
+- evidence_id: bgc-2862-query-bindingdb_targets
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Complete saved bindingdb_targets frame with 0 row placements; all fields
+    and bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+  search_scope: '{"matches": 0, "owner": "data/natural_products/unclassified/paxilline.yaml",
+    "predicate": "exact complete standard_inchi_key equality", "query": "ACNHBCIZLNNLRS-UBGQALKQSA-N",
+    "table": "bindingdb_targets"}'
+- evidence_id: bgc-2862-query-antibioticmech_inchikeys
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Complete saved antibioticmech_inchikeys frame with 0 row placements; all
+    fields and bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+  search_scope: '{"matches": 0, "owner": "data/natural_products/unclassified/paxilline.yaml",
+    "predicate": "exact complete standard_inchi_key equality", "query": "ACNHBCIZLNNLRS-UBGQALKQSA-N",
+    "table": "antibioticmech_inchikeys"}'
+- evidence_id: bgc-2862-query-chebi_origins
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/6/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Complete saved chebi_origins frame with 3 row placements; all fields and
+    bounded meanings read.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+- evidence_id: bgc-2862-row-chebi_origins-0
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: physical lines 4834-4834; raw record sha256 a694960643ef46eea3bbd5ec9391b9f54dc53d748b1cc18f24cd200be33dfbe3
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 7 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: bgc-2862-row-chebi_origins-1
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: physical lines 4835-4835; raw record sha256 e06a9c67bb3f4ce20d40a7e1e82cfc35cdfceee9d091e6cc8aa2a07aad92bc5a
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 7 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: bgc-2862-row-chebi_origins-2
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_origins.tsv
+  locator: physical lines 4836-4836; raw record sha256 28f04680aa0f884d47e55d1df298c5d6a9279bacb01142fe60eeb8cbb530dd73
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: All 7 fields personally read, including blanks, grades, exact source identity
+    and citation grain.
+  snapshot_sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+- evidence_id: bgc-2862-companion-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/unclassified/21-22-diprenylated-paxilline.yaml
+  locator: Complete retained identity, source concepts and history; exact prior whole-owner
+    reading
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Direct shared-BGC context remains a distinct owner; no identity, stereochemistry,
+    activity or grade transfer.
+  snapshot_sha256: f3cff50032a3dda2197b6849e589055c87dbe6d4af3bea2e68a57a701d407bb5
+- evidence_id: bgc-2862-graph
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/causal_graphs; /records/1/owner_document/biosynthetic_pathway;
+    /records/1/owner_document/curation_history
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: The complete Paxilline view retains one BIOSYNTHESIS graph with four nodes,
+    three edges and six literal edge-reference placements, plus one pathway step with
+    five reference placements. PaxD UniProtKB:Q9C451 acts on the exact Paxilline owner
+    CHEBI:34907 to produce distinct naturalproductmech:mibig-8e09316737; the process
+    node is ungrounded and the other three nodes are grounded. The historical PRIMARY_EXPERIMENT
+    notes attribute purified E. coli-expressed PaxD, successive prenylation and the
+    major 21,22-diprenylated product to DOI:10.1007/s00253-013-4834-9. Reviewed UniProt,
+    HM171111.1 and AAK11526.2 annotations remain historical database assertions, not
+    newly read primary bodies, sequence comparisons, kinetics or assay constructs.
+    proposed is absent, not false or a fresh demonstration. The original reader preserves
+    the complete owner; it made no molecular parse. The separate twenty stored-form
+    diagnostic has its own scope. The explicitly directed downstream graph can remain
+    qualified context; the narrower pathway-owner placement is assessed separately
+    below.
+  snapshot_sha256: a985a5a088430c5f67d4e6f344e489fc4ce05f537524273d80e4fd736ca1be2c
+- evidence_id: bgc-2862-reader-DATA
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/native-current287-paxilline-maintained-reader-DATA-001.json
+  locator: /resolved_view
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Complete original returned owner equals the personally read capture, preserving
+    every graph/pathway/reference/history field.
+  snapshot_sha256: bec6208501ab9d3a74c908f0411ea9bf619e6b612f3a53e127ef4e8ba58f9871
+- evidence_id: bgc-2862-reader-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/native-current287-paxilline-reader-execution-001.json
+  locator: /command; /exit_code
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Original reader command and zero exit; no invocation by this author.
+  snapshot_sha256: c0043a98fdfab8ffac06abbd5e39c19d948f1b77d7faca2bb828fcf2d08eeb72
+- evidence_id: bgc-2862-reader-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287/root-current287-paxilline-reader-acceptance-001.json
+  locator: /accepted; /DATA; /execution; /review_check_contract; /verification
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: ROOT accepted the exact complete-owner read and command contract; one expected
+    pre-action IPv6 probe denial and no external request.
+  snapshot_sha256: d2d38c41ea059184cc88fb93f913b028e096fd0a00759f583073641b37f42e9a
+- evidence_id: bgc-2862-reader-reading
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-current287-paxilline-complete-reader-reading-001.json
+  locator: /scope; /graph_interpretation; /pathway_owner_interpretation
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: supports
+  summary: Complete current returned view reading carries by exact whole-owner equality;
+    preservation is separate from biological and placement validity.
+  snapshot_sha256: a0694070c463da222093f943dd2a97fbabec4d5e9aacef437c64f56522bcd4c9
+- evidence_id: bgc-2862-placement-native
+  kind: prior_review
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-paxilline-pathway-owner-independent-semantic-reading-001.json
+  locator: /conclusion; /normative_reasoning; /competing_context_and_limits; /literal_evidence
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: The sole biosynthetic_pathway step consumes this owner, CHEBI:34907, and
+    terminates at the distinct 21,22-diprenylated Paxilline owner. PathwayStep explicitly
+    denotes a step in biosynthesis of this compound. Intermediate steps need not each
+    directly produce the owner, but this is a sole terminal conversion away from it,
+    and its notes and dated history explicitly call it downstream. The identical pathway
+    section already exists on the grounded product owner. The parent precursor-to-product
+    wording and broader BIOSYNTHESIS graph scope are material competing context, but
+    do not explicitly authorize this narrower owner-field placement. The maintained
+    queue skips a populated pathway and the renderer labels it curated Biosynthesis,
+    creating material completeness and presentation consequences. This supports a
+    major open owner-placement concern; it does not refute the asserted PaxD chemistry
+    or justify discarding the correctly directed graph. The interpretation remains
+    provisional pending curator resolution of field policy.
+  snapshot_sha256: 375d74b2bd365e4fa6660beb94cc84d762413f731ae2a754016091d967878ba0
+- evidence_id: bgc-2862-placement-search
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/native-prep/native-current287-paxilline-pathway-owner-independent-semantic-reading-001.json
+  locator: /bounded_absence_search
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: Native retained a bounded ignored-inclusive policy search; no explicit
+    downstream-owner exception was found within that stated search, not a universal
+    absence claim.
+  snapshot_sha256: 375d74b2bd365e4fa6660beb94cc84d762413f731ae2a754016091d967878ba0
+  search_scope: '{"ignored_inclusive": true, "hidden_inclusive": true, "roots": ["docs",
+    "tests", "src", "scripts", "schema", ".claude/skills", "README.md", "CLAUDE.md",
+    "NEXT_TASKS.md"], "pattern": "biosynth.{0,80}(owner|this compound|downstream|consum)|pathway.{0,80}(owner|this
+    compound|downstream|consum)|downstream.{0,80}(biosynth|pathway)|paxilline|paxd",
+    "flags": ["-n", "-i"], "actual_exit_code": 0, "matches": ["src/naturalproductmech/schema/naturalproductmech.yaml:244",
+    "src/naturalproductmech/schema/naturalproductmech.yaml:481", "src/naturalproductmech/schema/naturalproductmech.yaml:594"],
+    "conclusion": "This bounded ignored-inclusive maintained-surface search found
+    no explicit Paxilline/downstream owner exception; this is not a repository-wide
+    claim about arbitrary differently worded guidance."}'
+- evidence_id: bgc-2862-product-context
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch287-tentative/bgc-prep/bgc-conditional287-source-inventory-DATA-001.json
+  locator: /contexts/0
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: The directly grounded product owner has the identical pathway section and
+    its own complete source/history context, captured once as a direct companion.
+  snapshot_sha256: b46d10e4ad545844fc39ce82785db690ee89c23c537b3708cab7a8bb3a453b2e
+- evidence_id: bgc-2862-policy-schema_parent
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 259-270
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "      biosynthetic_gene_clusters:\n        description: The characterized\
+    \ gene clusters that make this compound.\n        range: BiosyntheticGeneCluster\n\
+    \        multivalued: true\n        inlined_as_list: true\n      biosynthetic_pathway:\n\
+    \        description: >-\n          Ordered enzymatic steps from precursor to\
+    \ product. Curated; each step\n          carries its own evidence.\n        range:\
+    \ PathwayStep\n        multivalued: true\n        inlined_as_list: true"
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2862-policy-schema_step
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 593-625
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "  PathwayStep:\n    description: One enzymatic step in the biosynthesis\
+    \ of this compound.\n    attributes:\n      step_number:\n        range: integer\n\
+    \      enzyme_id:\n        description: UniProt, EC or InterPro CURIE.\n     \
+    \   range: curie\n      enzyme_label:\n      reaction_id:\n        description:\
+    \ Rhea CURIE where one exists.\n        range: curie\n      substrate:\n     \
+    \   range: curie\n      substrates:\n        description: Principal substrate\
+    \ CURIEs for reactions with multiple inputs.\n        range: curie\n        multivalued:\
+    \ true\n      product:\n        range: curie\n      products:\n        description:\
+    \ Principal product CURIEs for reactions with multiple outputs.\n        range:\
+    \ curie\n        multivalued: true\n      proposed:\n        description: True\
+    \ when the step is inferred rather than demonstrated.\n        range: boolean\n\
+    \      notes:\n      evidence:\n        range: EvidenceItem\n        multivalued:\
+    \ true\n        inlined_as_list: true\n        required: true"
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2862-policy-schema_graph_scope
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 1137-1142
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "  CausalGraphScopeEnum:\n    permissible_values:\n      BIOSYNTHESIS:\n\
+    \        description: Precursor to product, through gene cluster and enzyme steps.\n\
+    \      BIOACTIVITY:\n        description: Compound to target engagement to cellular\
+    \ effect."
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2862-policy-compound_scope
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/add-proteins-to-graphs/SKILL.md
+  locator: lines 25-37
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "## Boundaries\n\n- Resolve one record and one mechanism at a time. If\
+    \ the evidence names several\n  congeners, several clusters, a host and a symbiont,\
+    \ or multiple target\n  families, disambiguate before adding nodes.\n- NaturalProductMech\
+    \ has no top-level `assembly_graphs` field. Biosynthetic\n  assembly is represented\
+    \ by `biosynthetic_pathway` plus a\n  `causal_graphs` item with `scope: BIOSYNTHESIS`.\n\
+    - Add a protein only when the inspected paper or adopted database identifies\n\
+    \  a protein, gene, domain, enzyme function or complex involved with this exact\n\
+    \  compound. A genome neighborhood, antiSMASH prediction, docking model, or\n\
+    \  label similarity is a lead unless the graph edge is explicitly marked as\n\
+    \  computational or inferred."
+  snapshot_sha256: 139a65a4e3404ceae275a01a724c43f85062de86a19d1772eea52fb54e52735a
+- evidence_id: bgc-2862-policy-pathway_authoring
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/add-proteins-to-graphs/SKILL.md
+  locator: lines 158-181
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "## Author pathways and graphs\n\nFor `biosynthetic_pathway`:\n\n- Order\
+    \ `PathwayStep.step_number` by the source pathway. Do not invent an order\n  from\
+    \ gene order in a cluster unless the paper explicitly supports it.\n- Put substrates\
+    \ and products on the step only when the exact intermediate is\n  known. A hypothesized\
+    \ shunt product belongs in `notes` or a `Discussion`.\n- Set `proposed: true`\
+    \ when the enzyme assignment is inferred.\n- Give each step its own `evidence`,\
+    \ even when several adjacent steps cite the\n  same paper.\n\nFor `causal_graphs`:\n\
+    \n- Reuse existing nodes for the same entity inside a graph; do not duplicate\
+    \ a\n  protein under one node id per edge.\n- Keep `node_id` local and stable,\
+    \ such as `eryf`, `hsp90`, or\n  `polyketide_chain_elongation`, rather than embedding\
+    \ a mutable label.\n- Declare every node referenced by an edge.\n- Use `scope:\
+    \ BIOSYNTHESIS` for precursor-to-product assembly and\n  `scope: BIOACTIVITY`\
+    \ for compound-to-target-to-effect mechanisms.\n- Put the citation on the `CausalEdge`,\
+    \ not only on the graph or node.\n- State only the direction the evidence supports.\
+    \ A binding edge does not prove\n  downstream cell death unless the paper connected\
+    \ those events."
+  snapshot_sha256: 139a65a4e3404ceae275a01a724c43f85062de86a19d1772eea52fb54e52735a
+- evidence_id: bgc-2862-policy-review_owner_boundary
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: lines 35-56
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: '## Native questions and ownership
+
+
+    Review `data/natural_products/` for exact structure/stereochemistry, asserted
+
+    origin, producers versus occurrences, BGC activity/version and evidence basis,
+
+    computed filing pathway versus asserted classification, pure-compound activity,
+
+    and biosynthetic/causal support. Use `docs/CURATION.md`,
+
+    `docs/HARMONIZATION.md`, and the local checklist. Retain taxon/strain,
+
+    stereochemical resolution, source version and evidence tier as dimensions.
+
+
+    Read the owner AND every `causal_graph_refs` component under
+
+    `data/causal_graphs/<StandardInChIKey>/`; `read_natural_product` provides the
+
+    complete read-only mechanism. Hash the inspected components as context inputs.
+
+    Seeded facts belong to committed inventories, extractors/seeder and implemented
+
+    curation tables documented in `docs/CURATION.md`. `curation/decisions.tsv` is
+
+    reserved and is not consumed by the current seeder: do not recommend it as an
+
+    effective fix. Curator claims/components use the validated record/bundle writer
+
+    and their own curation events. Generated pages are not an owner.
+
+
+    REVIEWED still requires exact identity, internally consistent structure at the
+
+    supported stereochemical resolution, correct filing/classification, and checked
+
+    origin, occurrences and active compound-specific clusters. BGC_CORRELATED must
+
+    not become BGC_CHARACTERIZED without the requisite evidence. A saved review'
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2862-policy-queue_consumer
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/curation_worklist.py
+  locator: lines 175-192
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "def queue_biosynthesis(records, _discussions) -> list[dict[str, str]]:\n\
+    \    \"\"\"M6's work, ranked by how much evidence is already waiting: a\n    characterized\
+    \ cluster with a causal producer and no pathway written.\"\"\"\n    rows = []\n\
+    \    for path, doc in records:\n        if doc.get(\"biosynthetic_pathway\"):\n\
+    \            continue\n        clusters = doc.get(\"biosynthetic_gene_clusters\"\
+    ) or []\n        demonstrated = sum(1 for c in clusters\n                    \
+    \       if c.get(\"link_evidence_basis\") == \"CLUSTER_DEMONSTRATED\")\n     \
+    \   causal = sum(1 for p in doc.get(\"producer_organisms\") or []\n          \
+    \           if p.get(\"evidence_basis\") in CAUSAL_BASES)\n        if not demonstrated\
+    \ and not causal:\n            continue\n        rows.append(_row(\"biosynthesis\"\
+    , demonstrated * 2 + causal, path, doc,\n                         f\"{demonstrated}\
+    \ demonstrated cluster link(s), {causal} causal \"\n                         f\"\
+    producer claim(s), no biosynthetic_pathway\"))\n    return rows"
+  snapshot_sha256: 913508ca8df2eb5c037cd9e4769b14b027869ab78c7306f33b59e1c7e383a1c3
+- evidence_id: bgc-2862-policy-queue_test
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/tests/test_curation_worklist.py
+  locator: lines 57-75
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "def test_biosynthesis_ranks_by_the_evidence_already_waiting():\n    strong\
+    \ = rec(label=\"strong\",\n                 biosynthetic_gene_clusters=[{\"link_evidence_basis\"\
+    : \"CLUSTER_DEMONSTRATED\"}],\n                 producer_organisms=[{\"evidence_basis\"\
+    : \"BGC_CHARACTERIZED\"}])\n    weak = rec(label=\"weak\",\n               biosynthetic_gene_clusters=[{\"\
+    link_evidence_basis\": \"CLUSTER_UNSTATED\"}],\n               producer_organisms=[{\"\
+    evidence_basis\": \"BGC_CHARACTERIZED\"}])\n    rows = worklist.queue_biosynthesis([weak,\
+    \ strong], None)\n    assert {r[\"label\"] for r in rows} == {\"strong\", \"weak\"\
+    }\n    assert int(dict(zip([r[\"label\"] for r in rows], [r[\"rank\"] for r in\
+    \ rows],\n                        strict=True))[\"strong\"]) > int(\n        dict(zip([r[\"\
+    label\"] for r in rows], [r[\"rank\"] for r in rows], strict=True))[\"weak\"])\n\
+    \n\ndef test_a_record_that_already_has_a_pathway_is_not_queued_for_biosynthesis():\n\
+    \    rows = worklist.queue_biosynthesis(\n        [rec(biosynthetic_pathway=[{\"\
+    step\": 1}],\n             biosynthetic_gene_clusters=[{\"link_evidence_basis\"\
+    : \"CLUSTER_DEMONSTRATED\"}])], None)\n    assert rows == []"
+  snapshot_sha256: fd6171c4533ef20b8cffc1f73d57fd081e32060ca672ab647c7034e4394984f6
+- evidence_id: bgc-2862-policy-render_endpoint
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/render_pages.py
+  locator: lines 130-136
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "def pathway_endpoint(item: dict[str, Any], singular: str, plural: str)\
+    \ -> str:\n    values = item.get(plural) or []\n    if isinstance(values, str):\n\
+    \        values = [values]\n    if values:\n        return \" + \".join(values)\n\
+    \    return item.get(singular) or \"ungrounded\""
+  snapshot_sha256: e3dc205d44111813cc02439caff895e30e8c06756d74a7675acbe15d84cf14ab
+- evidence_id: bgc-2862-policy-render_steps
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/render_pages.py
+  locator: lines 208-215
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "    steps = []\n    for s in doc.get(\"biosynthetic_pathway\") or []:\n\
+    \        steps.append({\n            **s,\n            \"reference\": first_reference(s),\n\
+    \            \"substrate_display\": pathway_endpoint(s, \"substrate\", \"substrates\"\
+    ),\n            \"product_display\": pathway_endpoint(s, \"product\", \"products\"\
+    ),\n        })"
+  snapshot_sha256: e3dc205d44111813cc02439caff895e30e8c06756d74a7675acbe15d84cf14ab
+- evidence_id: bgc-2862-policy-render_template
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/templates/record.html
+  locator: lines 109-128
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "{% if r.pathway_steps %}\n{% set numbered_pathway_steps = r.pathway_steps|selectattr(\"\
+    step_number\")|list %}\n{% set has_step_numbers = numbered_pathway_steps|length\
+    \ == r.pathway_steps|length %}\n<h2>Biosynthesis <span class=\"tag causal\">curated</span></h2>\n\
+    <p class=\"sub\">Written by a curator with claim-level evidence on each step;\
+    \ not\nderived from a source. This is what the rest of the record exists to support.</p>\n\
+    <div class=\"scroll\"><table>\n<tr><th>{{ 'Step' if has_step_numbers else '#'\
+    \ }}</th><th>Enzyme</th><th>Reaction</th><th>Substrate &rarr; product</th><th>Evidence</th></tr>\n\
+    {% for s in r.pathway_steps %}\n<tr>\n  <td>{{ s.step_number if has_step_numbers\
+    \ else loop.index }}</td>\n  <td>{{ s.enzyme_label }}{% if s.enzyme_id %}<br><span\
+    \ class=\"mono\">{{ s.enzyme_id }}</span>{% endif %}</td>\n  <td class=\"mono\"\
+    >{{ s.reaction_id or '' }}</td>\n  <td class=\"mono\">{{ s.substrate_display }}\
+    \ &rarr; {{ s.product_display }}</td>\n  <td class=\"mono\">{{ s.reference }}</td>\n\
+    </tr>\n{% endfor %}\n</table></div>\n{% for s in r.pathway_steps %}{% if s.notes\
+    \ %}<p class=\"sub\">{{ 'Step ' ~ s.step_number if has_step_numbers else 'Entry\
+    \ ' ~ loop.index }}: {{ s.notes }}</p>{% endif %}{% endfor %}\n{% endif %}"
+  snapshot_sha256: 4c5143ae98b51531c3b708cf73590decd50f3e222e375d91288a54ef767e7893
+- evidence_id: bgc-2862-policy-severity_contract
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-reviews.md
+  locator: lines 118-140
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "## Verdict And Severity\n\nUse `pass`, `pass_with_limitations`, `needs_curation`,\
+    \ `seed_only`, `blocked`,\nor `not_assessed`. Preserve a Mech-specific verdict\
+    \ in `native_verdict` if needed.\n`completion` is separate from the scientific\
+    \ verdict. Deterministic validation\nand seed metadata use `scientific_review:\
+    \ false`. Provenance-only inspection\nmust explicitly say literature support was\
+    \ not reassessed.\n\n- Blocker: wrong identity, invalid representation, broken\
+    \ critical references,\n  or a defect that makes the record denote the wrong thing.\n\
+    - Major: materially unsupported claims, wrong grounding, scope inflation,\n  missing\
+    \ required representation, or systemic source/generator errors.\n- Minor: bounded,\
+    \ non-blocking wording, redundancy or provenance problems.\n- Informational: a\
+    \ scoped observation that does not require a corrective edit.\n\nPassing verdicts\
+    \ cannot conceal unresolved major/blocker findings or failed\nrequired checks.\
+    \ Unavailable required checks preclude completed status. Report\nlimitations instead\
+    \ of silently dropping checks or broadening sample results.\nEvery passing target\
+    \ needs a positive, evidence-linked assessment. An unknown\nor concerning assessment\
+    \ precludes plain `pass`; a qualified pass must state\nits limitations and still\
+    \ positively assess each actually reviewed target.\nDo not promote native record\
+    \ status or append curation/history events merely\nbecause the review document\
+    \ validates."
+  snapshot_sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+- evidence_id: bgc-2862-policy-schema_evidence_test
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/tests/test_schema.py
+  locator: lines 54-71
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "\n@pytest.mark.parametrize(\n    \"class_name\",\n    [\n        \"ProducerOrganism\"\
+    ,\n        \"Occurrence\",\n        \"BiosyntheticGeneCluster\",\n        \"PathwayStep\"\
+    ,\n        \"BioactivityObservation\",\n        \"MolecularTarget\",\n       \
+    \ \"ClinicalStatusAssertion\",\n        \"CausalEdge\",\n    ],\n)\ndef test_every_claim_class_requires_its_own_evidence(schema,\
+    \ class_name):\n    \"\"\"Record-level evidence never satisfies a claim-level\
+    \ obligation.\"\"\"\n    attributes = schema[\"classes\"][class_name][\"attributes\"\
+    ]\n    assert attributes[\"evidence\"][\"required\"] is True, f\"{class_name}\
+    \ may carry an uncited claim\""
+  snapshot_sha256: 9bb9579bc83285d270d8e0d6944329fd975234cc728e65458e5edbd868ba4859
+- evidence_id: bgc-2862-policy-renderer_endpoint_tests
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/tests/test_render_pages.py
+  locator: lines 248-304
+  accessed_at: '2026-11-07T09:12:59.084276Z'
+  support: context_only
+  summary: "def test_pathway_step_without_grounded_compounds_renders_as_ungrounded():\n\
+    \    record = render_pages.build_record(\n        REPO_ROOT / \"data\" / \"natural_products\"\
+    \ / \"carbohydrates\" / \"coformycin.yaml\",\n        {\n            \"identifier\"\
+    : \"CHEBI:16213\",\n            \"np_pathway\": \"CARBOHYDRATES\",\n         \
+    \   \"biosynthetic_pathway\": [\n                {\n                    \"step_number\"\
+    : 1,\n                    \"enzyme_label\": \"CofB\",\n                    \"\
+    evidence\": [{\"reference\": \"DOI:10.1073/pnas.2000111117\"}],\n            \
+    \    },\n            ],\n        },\n    )\n\n    env = Environment(\n       \
+    \ loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),\n        autoescape=select_autoescape([\"\
+    html\"]),\n        trim_blocks=True,\n        lstrip_blocks=True,\n        keep_trailing_newline=True,\n\
+    \    )\n    rendered = env.get_template(\"record.html\").render(r=record)\n\n\
+    \    assert \"ungrounded &rarr; ungrounded\" in rendered\n\n\ndef test_pathway_step_without_step_number_renders_as_entry():\n\
+    \    record = render_pages.build_record(\n        REPO_ROOT / \"data\" / \"natural_products\"\
+    \ / \"carbohydrates\" / \"coformycin.yaml\",\n        {\n            \"identifier\"\
+    : \"CHEBI:16213\",\n            \"np_pathway\": \"CARBOHYDRATES\",\n         \
+    \   \"biosynthetic_pathway\": [\n                {\n                    \"enzyme_label\"\
+    : \"CofB\",\n                    \"notes\": \"Exact chemistry is unresolved.\"\
+    ,\n                    \"evidence\": [{\"reference\": \"DOI:10.1073/pnas.2000111117\"\
+    }],\n                },\n            ],\n        },\n    )\n\n    env = Environment(\n\
+    \        loader=FileSystemLoader(str(render_pages.TEMPLATES_DIR)),\n        autoescape=select_autoescape([\"\
+    html\"]),\n        trim_blocks=True,\n        lstrip_blocks=True,\n        keep_trailing_newline=True,\n\
+    \    )\n    rendered = env.get_template(\"record.html\").render(r=record)\n\n\
+    \    assert \"<tr><th>#</th>\" in rendered\n    assert \"<td>1</td>\" in rendered\n\
+    \    assert \"Entry 1: Exact chemistry is unresolved.\" in rendered\n    assert\
+    \ \"Step : Exact chemistry is unresolved.\" not in rendered"
+  snapshot_sha256: c294d3f879b917963c22347a52fffb9b7c2bee110164c2fbcd48e35ad1e3e951
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-287/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json
+  accessed_at: '2026-11-07T08:47:39.161933Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 306fe10ce3730b943a10632b593bdea3366989c1ebf9f49d2c03b1d04bcb9ab2
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-287/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json
+  accessed_at: '2026-11-07T08:48:05.047091Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 71144670a006c4f55f97c48c026fb5c12f680b74e4e5c9de67113b582f58b53b
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-287/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json
+  accessed_at: '2026-11-07T08:48:25.689447Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-287/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json
+  accessed_at: '2026-11-07T08:49:01.011283Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-287/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-287/native-current287-five-gates-execution-001.json
+  accessed_at: '2026-11-07T08:49:13.170979Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 2eeda82207b939968ae9df33f999891b585e01f9169b01796fad13018a82c0fa
+assessments:
+- assessment_id: bgc-2862-identity
+  area: identity
+  topic: Exact full-key identity and source-concept boundaries
+  outcome: supported
+  summary: paxilline retains exact identifier CHEBI:34907, complete key ACNHBCIZLNNLRS-UBGQALKQSA-N,
+    and BGC0001082 v4 compound index 1. Retained cross-references npatlas:NPA028977
+    remain source-attributed, not fresh authority checks. Both saved canonical SMILES
+    comparisons agree, with equal formula, charge, Standard InChI, complete key and
+    counts. The limited 32-atom correspondence is complete while full_graph_identity_established
+    remains false. The additional ChEBI source string was not separately parsed; no
+    exact natural identity or primary structure verification is claimed.
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-identity
+  - bgc-2862-whole-owner-attribution
+  - bgc-2862-chemistry
+  - bgc-2862-query-mibig_compounds
+  - bgc-2862-query-chebi_structures
+  - bgc-2862-plan
+  - bgc-2862-row-mibig_compounds-0
+  - bgc-2862-companion-0
+  dimensions:
+  - name: standard_inchi_key
+    definition: Exact complete retained key; connectivity blocks alone do not identify
+      a congener.
+    value: ACNHBCIZLNNLRS-UBGQALKQSA-N
+    evidence_ids:
+    - bgc-2862-identity
+    - bgc-2862-whole-owner-attribution
+    - bgc-2862-chemistry
+    - bgc-2862-query-mibig_compounds
+    - bgc-2862-query-chebi_structures
+    - bgc-2862-plan
+    - bgc-2862-row-mibig_compounds-0
+    - bgc-2862-companion-0
+  - name: grounding_scope
+    definition: Selected identifier and source concepts, with unresolved naming and
+      comparison boundaries.
+    value: paxilline retains exact identifier CHEBI:34907, complete key ACNHBCIZLNNLRS-UBGQALKQSA-N,
+      and BGC0001082 v4 compound index 1. Retained cross-references npatlas:NPA028977
+      remain source-attributed, not fresh authority checks. Both saved canonical SMILES
+      comparisons agree, with equal formula, charge, Standard InChI, complete key
+      and counts. The limited 32-atom correspondence is complete while full_graph_identity_established
+      remains false. The additional ChEBI source string was not separately parsed;
+      no exact natural identity or primary structure verification is claimed.
+    evidence_ids:
+    - bgc-2862-identity
+    - bgc-2862-whole-owner-attribution
+    - bgc-2862-chemistry
+    - bgc-2862-query-mibig_compounds
+    - bgc-2862-query-chebi_structures
+    - bgc-2862-plan
+    - bgc-2862-row-mibig_compounds-0
+    - bgc-2862-companion-0
+- assessment_id: bgc-2862-representation
+  area: representation
+  topic: Stored molecular forms and stereochemical scope
+  outcome: supported
+  summary: 'Both saved neutral C27H33NO4 forms have 32 heavy atoms, 37 bonds and six
+    ring rows: four six-membered and two five-membered rings. The indole contains
+    an aromatic N-H five-ring fused to benzene; the remaining polycycle includes a
+    cyclic ether, one ketone/enone and two hydroxyls. No amide, ester or metal is
+    encoded. This topology does not establish BK-channel activity or validate the
+    PaxD reaction. Both forms have six specified tetrahedral centres and no saved
+    unspecified potential-stereo entries. The true source flag concerns the maintained
+    atom-centre test, not natural stereochemical verification or functional/sequence
+    validation of the curated pathway. Both saved canonical SMILES comparisons agree,
+    with equal formula, charge, Standard InChI, complete key and counts. The limited
+    32-atom correspondence is complete while full_graph_identity_established remains
+    false. The additional ChEBI source string was not separately parsed; no exact
+    natural identity or primary structure verification is claimed.'
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-identity
+  - bgc-2862-chemistry
+  - bgc-2862-molecular-reading
+  - bgc-2862-diagnostic-acceptance
+  - bgc-2862-diagnostic-stderr
+  - bgc-2862-stereo-policy
+  - bgc-2862-stereo-schema
+  dimensions:
+  - name: stereochemistry_scope
+    definition: Specified and unspecified saved stereochemical features, including
+      implementation limits of stereo_complete.
+    value: Both forms have six specified tetrahedral centres and no saved unspecified
+      potential-stereo entries. The true source flag concerns the maintained atom-centre
+      test, not natural stereochemical verification or functional/sequence validation
+      of the curated pathway.
+    evidence_ids:
+    - bgc-2862-identity
+    - bgc-2862-chemistry
+    - bgc-2862-molecular-reading
+    - bgc-2862-diagnostic-acceptance
+    - bgc-2862-diagnostic-stderr
+    - bgc-2862-stereo-policy
+    - bgc-2862-stereo-schema
+  - name: representation_correspondence
+    definition: Actual two-form comparisons and limited atom mapping, without full
+      graph or natural-identity certification.
+    value: Both saved canonical SMILES comparisons agree, with equal formula, charge,
+      Standard InChI, complete key and counts. The limited 32-atom correspondence
+      is complete while full_graph_identity_established remains false. The additional
+      ChEBI source string was not separately parsed; no exact natural identity or
+      primary structure verification is claimed.
+    evidence_ids:
+    - bgc-2862-identity
+    - bgc-2862-chemistry
+    - bgc-2862-molecular-reading
+    - bgc-2862-diagnostic-acceptance
+    - bgc-2862-diagnostic-stderr
+    - bgc-2862-stereo-policy
+    - bgc-2862-stereo-schema
+- assessment_id: bgc-2862-provenance
+  area: provenance
+  topic: Producer assertion versus locus evidence
+  outcome: supported
+  summary: MIBiG BGC0001082 version 4 compound 1 retains Penicillium paxilli NCBITaxon:70109
+    at BGC_CHARACTERIZED. Its active/questionable entry is complete according to that
+    source. This stronger producer grade is preserved distinctly from occurrence assertions
+    and is not downgraded to SOURCE_ASSERTION or newly verified here. The HM171111.1:28174..46982
+    locus is CLUSTER_DEMONSTRATED and retains Knock-out studies, with COMPOUND_EVIDENCE
+    DOI:10.1021/ja3116636. These source-level cluster assertions remain intact. They
+    neither make the sole downstream PaxD step synthesis of the Paxilline owner nor
+    independently verify the retained protein and reaction evidence.
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-provenance
+  - bgc-2862-query-mibig_compounds
+  - bgc-2862-taxonomy
+  - bgc-2862-curation
+  - bgc-2862-row-mibig_compounds-0
+  dimensions:
+  - name: taxon_scope
+    definition: Exact retained taxon labels, IDs and rank/strain limits.
+    value: MIBiG BGC0001082 version 4 compound 1 retains Penicillium paxilli NCBITaxon:70109
+      at BGC_CHARACTERIZED. Its active/questionable entry is complete according to
+      that source. This stronger producer grade is preserved distinctly from occurrence
+      assertions and is not downgraded to SOURCE_ASSERTION or newly verified here.
+      Twenty-one LOTUS occurrence rows and three ChEBI origin rows are retained separately
+      from the P. paxilli producer. They include P. thiersii, Aspergillus foveolatus,
+      P. miczynskii, Claviceps paspali, Lolium perenne, A. striatus, P. camemberti
+      and repeated P. paxilli citations. Historical Emericella desertorum/41728 follows
+      exact saved merge row 58 to 1810909, whose cache names Aspergillus desertorum
+      and includes Emericella desertorum as an EXACT synonym; it is not terminally
+      unresolved. ChEBI origins cite A. oryzae/5062 (PMID:23311903), P. paxilli/70109
+      (PMID:17428785) and P. shearii/904690 (PMID:24894186, Eupenicillium shearii
+      comment). These are attributed occurrence claims, not newly established strain/species
+      or biosynthetic equivalence.
+    evidence_ids:
+    - bgc-2862-provenance
+    - bgc-2862-query-mibig_compounds
+    - bgc-2862-taxonomy
+    - bgc-2862-curation
+    - bgc-2862-row-mibig_compounds-0
+  - name: producer_evidence
+    definition: Producer evidence grade and its demonstrated or asserted scope.
+    value: MIBiG BGC0001082 version 4 compound 1 retains Penicillium paxilli NCBITaxon:70109
+      at BGC_CHARACTERIZED. Its active/questionable entry is complete according to
+      that source. This stronger producer grade is preserved distinctly from occurrence
+      assertions and is not downgraded to SOURCE_ASSERTION or newly verified here.
+    evidence_ids:
+    - bgc-2862-provenance
+    - bgc-2862-query-mibig_compounds
+    - bgc-2862-taxonomy
+    - bgc-2862-curation
+    - bgc-2862-row-mibig_compounds-0
+  - name: locus_evidence
+    definition: Compound-linked BGC and locus fields with literal evidence grade and
+      methods.
+    value: The HM171111.1:28174..46982 locus is CLUSTER_DEMONSTRATED and retains Knock-out
+      studies, with COMPOUND_EVIDENCE DOI:10.1021/ja3116636. These source-level cluster
+      assertions remain intact. They neither make the sole downstream PaxD step synthesis
+      of the Paxilline owner nor independently verify the retained protein and reaction
+      evidence.
+    evidence_ids:
+    - bgc-2862-provenance
+    - bgc-2862-query-mibig_compounds
+    - bgc-2862-taxonomy
+    - bgc-2862-curation
+    - bgc-2862-row-mibig_compounds-0
+- assessment_id: bgc-2862-citations
+  area: evidence
+  topic: Citation grain and attributed history
+  outcome: supported
+  summary: 'BGC0001082: DOI:10.1021/ja3116636 at COMPOUND_EVIDENCE grain. All 4 complete
+    histories were read, including 3 source-seeding events. Source citations and repeated
+    placements are not newly read primary bodies or independent experiments. The 2026-10-23
+    curator history explicitly records downstream diprenylation. Historical primary-experiment
+    and database references in the graph/pathway remain attributed, not newly validated.'
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-history
+  - bgc-2862-source-reading
+  - bgc-2862-query-mibig_compounds
+  - bgc-2862-row-mibig_compounds-0
+  - bgc-2862-row-lotus_occurrences-0
+  - bgc-2862-row-lotus_occurrences-1
+  - bgc-2862-row-lotus_occurrences-2
+  - bgc-2862-row-lotus_occurrences-3
+  - bgc-2862-row-lotus_occurrences-4
+  - bgc-2862-row-lotus_occurrences-5
+  - bgc-2862-row-lotus_occurrences-6
+  - bgc-2862-row-lotus_occurrences-7
+  - bgc-2862-row-lotus_occurrences-8
+  - bgc-2862-row-lotus_occurrences-9
+  - bgc-2862-row-lotus_occurrences-10
+  - bgc-2862-row-lotus_occurrences-11
+  - bgc-2862-row-lotus_occurrences-12
+  - bgc-2862-row-lotus_occurrences-13
+  - bgc-2862-row-lotus_occurrences-14
+  - bgc-2862-row-lotus_occurrences-15
+  - bgc-2862-row-lotus_occurrences-16
+  - bgc-2862-row-lotus_occurrences-17
+  - bgc-2862-row-lotus_occurrences-18
+  - bgc-2862-row-lotus_occurrences-19
+  - bgc-2862-row-lotus_occurrences-20
+  dimensions:
+  - name: citation_scope
+    definition: Citation grain and attributed history, separate from newly read primary
+      evidence.
+    value: 'BGC0001082: DOI:10.1021/ja3116636 at COMPOUND_EVIDENCE grain. All 4 complete
+      histories were read, including 3 source-seeding events. Source citations and
+      repeated placements are not newly read primary bodies or independent experiments.
+      The 2026-10-23 curator history explicitly records downstream diprenylation.
+      Historical primary-experiment and database references in the graph/pathway remain
+      attributed, not newly validated.'
+    evidence_ids:
+    - bgc-2862-history
+    - bgc-2862-source-reading
+    - bgc-2862-query-mibig_compounds
+    - bgc-2862-row-mibig_compounds-0
+    - bgc-2862-row-lotus_occurrences-0
+    - bgc-2862-row-lotus_occurrences-1
+    - bgc-2862-row-lotus_occurrences-2
+    - bgc-2862-row-lotus_occurrences-3
+    - bgc-2862-row-lotus_occurrences-4
+    - bgc-2862-row-lotus_occurrences-5
+    - bgc-2862-row-lotus_occurrences-6
+    - bgc-2862-row-lotus_occurrences-7
+    - bgc-2862-row-lotus_occurrences-8
+    - bgc-2862-row-lotus_occurrences-9
+    - bgc-2862-row-lotus_occurrences-10
+    - bgc-2862-row-lotus_occurrences-11
+    - bgc-2862-row-lotus_occurrences-12
+    - bgc-2862-row-lotus_occurrences-13
+    - bgc-2862-row-lotus_occurrences-14
+    - bgc-2862-row-lotus_occurrences-15
+    - bgc-2862-row-lotus_occurrences-16
+    - bgc-2862-row-lotus_occurrences-17
+    - bgc-2862-row-lotus_occurrences-18
+    - bgc-2862-row-lotus_occurrences-19
+    - bgc-2862-row-lotus_occurrences-20
+- assessment_id: bgc-2862-occurrence_activity
+  area: evidence
+  topic: Occurrence and bounded assay/target evidence
+  outcome: supported
+  summary: Twenty-one LOTUS occurrence rows and three ChEBI origin rows are retained
+    separately from the P. paxilli producer. They include P. thiersii, Aspergillus
+    foveolatus, P. miczynskii, Claviceps paspali, Lolium perenne, A. striatus, P.
+    camemberti and repeated P. paxilli citations. Historical Emericella desertorum/41728
+    follows exact saved merge row 58 to 1810909, whose cache names Aspergillus desertorum
+    and includes Emericella desertorum as an EXACT synonym; it is not terminally unresolved.
+    ChEBI origins cite A. oryzae/5062 (PMID:23311903), P. paxilli/70109 (PMID:17428785)
+    and P. shearii/904690 (PMID:24894186, Eupenicillium shearii comment). These are
+    attributed occurrence claims, not newly established strain/species or biosynthetic
+    equivalence. No actual AID or blank assay marker matches this selected owner.
+    Exact retained BindingDB, AntibioticMech and CyanoMetDB frames also have no matches.
+    These bounded results do not establish inactivity or universal database absence.
+    The retained ChEBI definition calls Paxilline a BK-channel blocker, but that is
+    database definition text, not a current assay row or a newly verified target mechanism.
+    Penitrem activity and the product owner activity gap do not transfer.
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-roots
+  - bgc-2862-taxonomy
+  - bgc-2862-query-lotus_occurrences
+  - bgc-2862-query-chebi_origins
+  - bgc-2862-query-cyanometdb_occurrences
+  - bgc-2862-query-pubchem_bioassay
+  - bgc-2862-query-bindingdb_targets
+  - bgc-2862-query-antibioticmech_inchikeys
+  - bgc-2862-assay-curation
+  - bgc-2862-row-lotus_occurrences-0
+  - bgc-2862-row-lotus_occurrences-1
+  - bgc-2862-row-lotus_occurrences-2
+  - bgc-2862-row-lotus_occurrences-3
+  - bgc-2862-row-lotus_occurrences-4
+  - bgc-2862-row-lotus_occurrences-5
+  - bgc-2862-row-lotus_occurrences-6
+  - bgc-2862-row-lotus_occurrences-7
+  - bgc-2862-row-lotus_occurrences-8
+  - bgc-2862-row-lotus_occurrences-9
+  - bgc-2862-row-lotus_occurrences-10
+  - bgc-2862-row-lotus_occurrences-11
+  - bgc-2862-row-lotus_occurrences-12
+  - bgc-2862-row-lotus_occurrences-13
+  - bgc-2862-row-lotus_occurrences-14
+  - bgc-2862-row-lotus_occurrences-15
+  - bgc-2862-row-lotus_occurrences-16
+  - bgc-2862-row-lotus_occurrences-17
+  - bgc-2862-row-lotus_occurrences-18
+  - bgc-2862-row-lotus_occurrences-19
+  - bgc-2862-row-lotus_occurrences-20
+  - bgc-2862-row-chebi_origins-0
+  - bgc-2862-row-chebi_origins-1
+  - bgc-2862-row-chebi_origins-2
+  - bgc-2862-row-chebi_structures-0
+  dimensions:
+  - name: occurrence_scope
+    definition: Exact retained occurrence tuples and limits on production/independence.
+    value: Twenty-one LOTUS occurrence rows and three ChEBI origin rows are retained
+      separately from the P. paxilli producer. They include P. thiersii, Aspergillus
+      foveolatus, P. miczynskii, Claviceps paspali, Lolium perenne, A. striatus, P.
+      camemberti and repeated P. paxilli citations. Historical Emericella desertorum/41728
+      follows exact saved merge row 58 to 1810909, whose cache names Aspergillus desertorum
+      and includes Emericella desertorum as an EXACT synonym; it is not terminally
+      unresolved. ChEBI origins cite A. oryzae/5062 (PMID:23311903), P. paxilli/70109
+      (PMID:17428785) and P. shearii/904690 (PMID:24894186, Eupenicillium shearii
+      comment). These are attributed occurrence claims, not newly established strain/species
+      or biosynthetic equivalence.
+    evidence_ids:
+    - bgc-2862-roots
+    - bgc-2862-taxonomy
+    - bgc-2862-query-lotus_occurrences
+    - bgc-2862-query-chebi_origins
+    - bgc-2862-query-cyanometdb_occurrences
+    - bgc-2862-query-pubchem_bioassay
+    - bgc-2862-query-bindingdb_targets
+    - bgc-2862-query-antibioticmech_inchikeys
+    - bgc-2862-assay-curation
+    - bgc-2862-row-lotus_occurrences-0
+    - bgc-2862-row-lotus_occurrences-1
+    - bgc-2862-row-lotus_occurrences-2
+    - bgc-2862-row-lotus_occurrences-3
+    - bgc-2862-row-lotus_occurrences-4
+    - bgc-2862-row-lotus_occurrences-5
+    - bgc-2862-row-lotus_occurrences-6
+    - bgc-2862-row-lotus_occurrences-7
+    - bgc-2862-row-lotus_occurrences-8
+    - bgc-2862-row-lotus_occurrences-9
+    - bgc-2862-row-lotus_occurrences-10
+    - bgc-2862-row-lotus_occurrences-11
+    - bgc-2862-row-lotus_occurrences-12
+    - bgc-2862-row-lotus_occurrences-13
+    - bgc-2862-row-lotus_occurrences-14
+    - bgc-2862-row-lotus_occurrences-15
+    - bgc-2862-row-lotus_occurrences-16
+    - bgc-2862-row-lotus_occurrences-17
+    - bgc-2862-row-lotus_occurrences-18
+    - bgc-2862-row-lotus_occurrences-19
+    - bgc-2862-row-lotus_occurrences-20
+    - bgc-2862-row-chebi_origins-0
+    - bgc-2862-row-chebi_origins-1
+    - bgc-2862-row-chebi_origins-2
+    - bgc-2862-row-chebi_structures-0
+  - name: assay_target_scope
+    definition: Retained activity/assay/target positives and bounded negative queries.
+    value: No actual AID or blank assay marker matches this selected owner. Exact
+      retained BindingDB, AntibioticMech and CyanoMetDB frames also have no matches.
+      These bounded results do not establish inactivity or universal database absence.
+      The retained ChEBI definition calls Paxilline a BK-channel blocker, but that
+      is database definition text, not a current assay row or a newly verified target
+      mechanism. Penitrem activity and the product owner activity gap do not transfer.
+    evidence_ids:
+    - bgc-2862-roots
+    - bgc-2862-taxonomy
+    - bgc-2862-query-lotus_occurrences
+    - bgc-2862-query-chebi_origins
+    - bgc-2862-query-cyanometdb_occurrences
+    - bgc-2862-query-pubchem_bioassay
+    - bgc-2862-query-bindingdb_targets
+    - bgc-2862-query-antibioticmech_inchikeys
+    - bgc-2862-assay-curation
+    - bgc-2862-row-lotus_occurrences-0
+    - bgc-2862-row-lotus_occurrences-1
+    - bgc-2862-row-lotus_occurrences-2
+    - bgc-2862-row-lotus_occurrences-3
+    - bgc-2862-row-lotus_occurrences-4
+    - bgc-2862-row-lotus_occurrences-5
+    - bgc-2862-row-lotus_occurrences-6
+    - bgc-2862-row-lotus_occurrences-7
+    - bgc-2862-row-lotus_occurrences-8
+    - bgc-2862-row-lotus_occurrences-9
+    - bgc-2862-row-lotus_occurrences-10
+    - bgc-2862-row-lotus_occurrences-11
+    - bgc-2862-row-lotus_occurrences-12
+    - bgc-2862-row-lotus_occurrences-13
+    - bgc-2862-row-lotus_occurrences-14
+    - bgc-2862-row-lotus_occurrences-15
+    - bgc-2862-row-lotus_occurrences-16
+    - bgc-2862-row-lotus_occurrences-17
+    - bgc-2862-row-lotus_occurrences-18
+    - bgc-2862-row-lotus_occurrences-19
+    - bgc-2862-row-lotus_occurrences-20
+    - bgc-2862-row-chebi_origins-0
+    - bgc-2862-row-chebi_origins-1
+    - bgc-2862-row-chebi_origins-2
+    - bgc-2862-row-chebi_structures-0
+- assessment_id: bgc-2862-classification
+  area: consistency
+  topic: Computed filing and asserted class applicability
+  outcome: supported
+  summary: NPClassifier retains Alkaloids|Terpenoids, Tryptophan alkaloids and Indole
+    diterpenoid alkaloids (Penitrems), with is_glycoside:false. MIBiG separately records
+    Terpenoid/alkaloid and Diterpenoid/Hemiterpene source classes. Multiple model
+    pathways retain UNCLASSIFIED; the class label does not prove activity or settle
+    the owner-specific pathway placement.
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-classification
+  - bgc-2862-chemistry
+  - bgc-2862-query-npclassifier
+  - bgc-2862-query-mibig_compounds
+  - bgc-2862-filing-policy
+  - bgc-2862-row-npclassifier-0
+  - bgc-2862-row-mibig_compounds-0
+  dimensions:
+  - name: classification_applicability
+    definition: Model and source class claims compared with saved topology and maintained
+      filing.
+    value: NPClassifier retains Alkaloids|Terpenoids, Tryptophan alkaloids and Indole
+      diterpenoid alkaloids (Penitrems), with is_glycoside:false. MIBiG separately
+      records Terpenoid/alkaloid and Diterpenoid/Hemiterpene source classes. Multiple
+      model pathways retain UNCLASSIFIED; the class label does not prove activity
+      or settle the owner-specific pathway placement.
+    evidence_ids:
+    - bgc-2862-classification
+    - bgc-2862-chemistry
+    - bgc-2862-query-npclassifier
+    - bgc-2862-query-mibig_compounds
+    - bgc-2862-filing-policy
+    - bgc-2862-row-npclassifier-0
+    - bgc-2862-row-mibig_compounds-0
+- assessment_id: bgc-2862-completion
+  area: completeness
+  topic: Local completion and maintained ownership
+  outcome: unknown
+  summary: Complete raw owner/history reading carries by exact current pins. All 4
+    histories, nine source frames (27 row placements/185 fields; 4 negatives) and
+    both saved molecular forms were personally read. All 54 current input hashes and
+    maintained ownership roles join the accepted plan. Five original local gates passed;
+    queue rows remain leads. The selected owner has one inline BIOSYNTHESIS graph
+    and one pathway step, with no component, molecular-target, bioactivity or related-corpus
+    root. The original maintained reader preserves the whole owner, while the pathway
+    placement concern remains open. Full QC/OAK, fresh source-authority checks and
+    independent primary verification are unavailable, so completion is partial.
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-owner
+  - bgc-2862-whole-owner-attribution
+  - bgc-2862-history
+  - bgc-2862-intake
+  - bgc-2862-intake-acceptance
+  - bgc-2862-plan
+  - bgc-2862-plan-acceptance
+  - bgc-2862-gates
+  - bgc-2862-source-reading
+  - bgc-2862-source-notes
+  - bgc-2862-molecular-reading
+  - bgc-2862-roots
+  - bgc-2862-graph
+  - bgc-2862-reader-DATA
+  - bgc-2862-reader-execution
+  - bgc-2862-reader-acceptance
+  - bgc-2862-reader-reading
+  - bgc-2862-placement-native
+  - bgc-2862-placement-search
+  - bgc-2862-product-context
+  - bgc-2862-policy-schema_parent
+  - bgc-2862-policy-schema_step
+  - bgc-2862-policy-schema_graph_scope
+  - bgc-2862-policy-compound_scope
+  - bgc-2862-policy-pathway_authoring
+  - bgc-2862-policy-review_owner_boundary
+  - bgc-2862-policy-queue_consumer
+  - bgc-2862-policy-queue_test
+  - bgc-2862-policy-render_endpoint
+  - bgc-2862-policy-render_steps
+  - bgc-2862-policy-render_template
+  - bgc-2862-policy-severity_contract
+  - bgc-2862-policy-schema_evidence_test
+  - bgc-2862-policy-renderer_endpoint_tests
+  dimensions:
+  - name: review_completion
+    definition: Actual semantic reading and input verification, with unavailable checks
+      and maintained ownership.
+    value: Complete raw owner/history reading carries by exact current pins. All 4
+      histories, nine source frames (27 row placements/185 fields; 4 negatives) and
+      both saved molecular forms were personally read. All 54 current input hashes
+      and maintained ownership roles join the accepted plan. Five original local gates
+      passed; queue rows remain leads. The selected owner has one inline BIOSYNTHESIS
+      graph and one pathway step, with no component, molecular-target, bioactivity
+      or related-corpus root. The original maintained reader preserves the whole owner,
+      while the pathway placement concern remains open. Full QC/OAK, fresh source-authority
+      checks and independent primary verification are unavailable, so completion is
+      partial.
+    evidence_ids:
+    - bgc-2862-owner
+    - bgc-2862-whole-owner-attribution
+    - bgc-2862-history
+    - bgc-2862-intake
+    - bgc-2862-intake-acceptance
+    - bgc-2862-plan
+    - bgc-2862-plan-acceptance
+    - bgc-2862-gates
+    - bgc-2862-source-reading
+    - bgc-2862-source-notes
+    - bgc-2862-molecular-reading
+    - bgc-2862-roots
+    - bgc-2862-graph
+    - bgc-2862-reader-DATA
+    - bgc-2862-reader-execution
+    - bgc-2862-reader-acceptance
+    - bgc-2862-reader-reading
+    - bgc-2862-placement-native
+    - bgc-2862-placement-search
+    - bgc-2862-product-context
+    - bgc-2862-policy-schema_parent
+    - bgc-2862-policy-schema_step
+    - bgc-2862-policy-schema_graph_scope
+    - bgc-2862-policy-compound_scope
+    - bgc-2862-policy-pathway_authoring
+    - bgc-2862-policy-review_owner_boundary
+    - bgc-2862-policy-queue_consumer
+    - bgc-2862-policy-queue_test
+    - bgc-2862-policy-render_endpoint
+    - bgc-2862-policy-render_steps
+    - bgc-2862-policy-render_template
+    - bgc-2862-policy-severity_contract
+    - bgc-2862-policy-schema_evidence_test
+    - bgc-2862-policy-renderer_endpoint_tests
+- assessment_id: bgc-2862-graph
+  area: graph
+  topic: Directed downstream PaxD evidence and owner-specific pathway placement
+  outcome: concern
+  summary: The complete Paxilline view retains one BIOSYNTHESIS graph with four nodes,
+    three edges and six literal edge-reference placements, plus one pathway step with
+    five reference placements. PaxD UniProtKB:Q9C451 acts on the exact Paxilline owner
+    CHEBI:34907 to produce distinct naturalproductmech:mibig-8e09316737; the process
+    node is ungrounded and the other three nodes are grounded. The historical PRIMARY_EXPERIMENT
+    notes attribute purified E. coli-expressed PaxD, successive prenylation and the
+    major 21,22-diprenylated product to DOI:10.1007/s00253-013-4834-9. Reviewed UniProt,
+    HM171111.1 and AAK11526.2 annotations remain historical database assertions, not
+    newly read primary bodies, sequence comparisons, kinetics or assay constructs.
+    proposed is absent, not false or a fresh demonstration. The original reader preserves
+    the complete owner; it made no molecular parse. The separate twenty stored-form
+    diagnostic has its own scope. The explicitly directed downstream graph can remain
+    qualified context; the narrower pathway-owner placement is assessed separately
+    below. The sole biosynthetic_pathway step consumes this owner, CHEBI:34907, and
+    terminates at the distinct 21,22-diprenylated Paxilline owner. PathwayStep explicitly
+    denotes a step in biosynthesis of this compound. Intermediate steps need not each
+    directly produce the owner, but this is a sole terminal conversion away from it,
+    and its notes and dated history explicitly call it downstream. The identical pathway
+    section already exists on the grounded product owner. The parent precursor-to-product
+    wording and broader BIOSYNTHESIS graph scope are material competing context, but
+    do not explicitly authorize this narrower owner-field placement. The maintained
+    queue skips a populated pathway and the renderer labels it curated Biosynthesis,
+    creating material completeness and presentation consequences. This supports a
+    major open owner-placement concern; it does not refute the asserted PaxD chemistry
+    or justify discarding the correctly directed graph. The interpretation remains
+    provisional pending curator resolution of field policy.
+  target_ids:
+  - CHEBI:34907
+  evidence_ids:
+  - bgc-2862-graph
+  - bgc-2862-reader-DATA
+  - bgc-2862-reader-execution
+  - bgc-2862-reader-acceptance
+  - bgc-2862-reader-reading
+  - bgc-2862-placement-native
+  - bgc-2862-placement-search
+  - bgc-2862-product-context
+  - bgc-2862-gates
+  - bgc-2862-history
+  - bgc-2862-intake
+  - bgc-2862-policy-schema_parent
+  - bgc-2862-policy-schema_step
+  - bgc-2862-policy-schema_graph_scope
+  - bgc-2862-policy-compound_scope
+  - bgc-2862-policy-pathway_authoring
+  - bgc-2862-policy-review_owner_boundary
+  - bgc-2862-policy-queue_consumer
+  - bgc-2862-policy-queue_test
+  - bgc-2862-policy-render_endpoint
+  - bgc-2862-policy-render_steps
+  - bgc-2862-policy-render_template
+  - bgc-2862-policy-severity_contract
+  - bgc-2862-policy-schema_evidence_test
+  - bgc-2862-policy-renderer_endpoint_tests
+  dimensions: []
+findings:
+- finding_id: bgc-2862-downstream-pathway-owner-scope
+  issue_key: paxilline-downstream-pathway-owner-scope
+  category: scope
+  severity: major
+  status: open
+  certainty: provisional
+  title: Downstream diprenylated-product synthesis occupies the Paxilline biosynthesis
+    field
+  description: The sole biosynthetic_pathway step consumes this owner, CHEBI:34907,
+    and terminates at the distinct 21,22-diprenylated Paxilline owner. PathwayStep
+    explicitly denotes a step in biosynthesis of this compound. Intermediate steps
+    need not each directly produce the owner, but this is a sole terminal conversion
+    away from it, and its notes and dated history explicitly call it downstream. The
+    identical pathway section already exists on the grounded product owner. The parent
+    precursor-to-product wording and broader BIOSYNTHESIS graph scope are material
+    competing context, but do not explicitly authorize this narrower owner-field placement.
+    The maintained queue skips a populated pathway and the renderer labels it curated
+    Biosynthesis, creating material completeness and presentation consequences. This
+    supports a major open owner-placement concern; it does not refute the asserted
+    PaxD chemistry or justify discarding the correctly directed graph. The interpretation
+    remains provisional pending curator resolution of field policy.
+  target_ids:
+  - CHEBI:34907
+  field_paths:
+  - /biosynthetic_pathway/0
+  evidence_ids:
+  - bgc-2862-graph
+  - bgc-2862-reader-DATA
+  - bgc-2862-reader-execution
+  - bgc-2862-reader-acceptance
+  - bgc-2862-reader-reading
+  - bgc-2862-placement-native
+  - bgc-2862-placement-search
+  - bgc-2862-product-context
+  - bgc-2862-gates
+  - bgc-2862-history
+  - bgc-2862-intake
+  - bgc-2862-policy-schema_parent
+  - bgc-2862-policy-schema_step
+  - bgc-2862-policy-schema_graph_scope
+  - bgc-2862-policy-compound_scope
+  - bgc-2862-policy-pathway_authoring
+  - bgc-2862-policy-review_owner_boundary
+  - bgc-2862-policy-queue_consumer
+  - bgc-2862-policy-queue_test
+  - bgc-2862-policy-render_endpoint
+  - bgc-2862-policy-render_steps
+  - bgc-2862-policy-render_template
+  - bgc-2862-policy-severity_contract
+  - bgc-2862-policy-schema_evidence_test
+  - bgc-2862-policy-renderer_endpoint_tests
+  ownership_note: Curator-owned pathway annotation in the selected YAML. The directed
+    graph, evidence and history remain qualified context; generated pages and imported
+    structure/source rows are not the repair owner.
+actions:
+- action_id: bgc-2862-resolve-pathway-owner-placement
+  description: Use the validated curator-owned workflow to remove or relocate the
+    sole downstream-only pathway step from Paxilline while preserving its explicitly
+    directed graph, historical evidence and append-only history. The identical terminal
+    step already exists on 21,22-diprenylated Paxilline. Alternatively resolve the
+    field ambiguity through an explicit maintained schema/documentation/consumer policy
+    change. Do not reverse endpoints, merge identities, invent upstream steps or change
+    the absent proposed flag merely to conceal placement.
+  finding_ids:
+  - bgc-2862-downstream-pathway-owner-scope
+  target_ids:
+  - CHEBI:34907
+  ownership_note: Proposed work only, owned by the curated Paxilline pathway and validated
+    writer; no record, schema, source or campaign edits are made.
+  acceptance_checks:
+  - The selected owner no longer represents a different product terminal step as its
+    own biosynthesis unless explicit maintained policy authorizes that scope.
+  - Preserve both complete structures and keys, producer/locus grades, exact reaction
+    direction, historical evidence and all existing history; append a curation event
+    for any future edit.
+  - Retain the existing product-owner step without duplication and preserve the broader
+    downstream graph as qualified context.
+  - In a separately authorized correction workflow, use the validated writer and verify
+    focused queue/render/reproduction behavior; no current execution or publication
+    is implied.
+limitations:
+- Full QC/OAK and fresh primary, source-authority, strain and sequence verification
+  remain unavailable; source grades are not upgraded.
+- Both saved canonical SMILES comparisons agree, with equal formula, charge, Standard
+  InChI, complete key and counts. The limited 32-atom correspondence is complete while
+  full_graph_identity_established remains false. The additional ChEBI source string
+  was not separately parsed; no exact natural identity or primary structure verification
+  is claimed.
+- Both forms have six specified tetrahedral centres and no saved unspecified potential-stereo
+  entries. The true source flag concerns the maintained atom-centre test, not natural
+  stereochemical verification or functional/sequence validation of the curated pathway.
+- The original diagnostic stderr contains eight omitted-undefined-stereo warnings
+  in 368 bytes. They are globally unattributed and are not assigned to any particular
+  owner or form.
+- Motifs and model classes do not independently establish natural identity, a complete
+  biosynthetic route or pharmacological activity.
+- The complete Paxilline view retains one BIOSYNTHESIS graph with four nodes, three
+  edges and six literal edge-reference placements, plus one pathway step with five
+  reference placements. PaxD UniProtKB:Q9C451 acts on the exact Paxilline owner CHEBI:34907
+  to produce distinct naturalproductmech:mibig-8e09316737; the process node is ungrounded
+  and the other three nodes are grounded. The historical PRIMARY_EXPERIMENT notes
+  attribute purified E. coli-expressed PaxD, successive prenylation and the major
+  21,22-diprenylated product to DOI:10.1007/s00253-013-4834-9. Reviewed UniProt, HM171111.1
+  and AAK11526.2 annotations remain historical database assertions, not newly read
+  primary bodies, sequence comparisons, kinetics or assay constructs. proposed is
+  absent, not false or a fresh demonstration. The original reader preserves the complete
+  owner; it made no molecular parse. The separate twenty stored-form diagnostic has
+  its own scope. The explicitly directed downstream graph can remain qualified context;
+  the narrower pathway-owner placement is assessed separately below.
+- The sole biosynthetic_pathway step consumes this owner, CHEBI:34907, and terminates
+  at the distinct 21,22-diprenylated Paxilline owner. PathwayStep explicitly denotes
+  a step in biosynthesis of this compound. Intermediate steps need not each directly
+  produce the owner, but this is a sole terminal conversion away from it, and its
+  notes and dated history explicitly call it downstream. The identical pathway section
+  already exists on the grounded product owner. The parent precursor-to-product wording
+  and broader BIOSYNTHESIS graph scope are material competing context, but do not
+  explicitly authorize this narrower owner-field placement. The maintained queue skips
+  a populated pathway and the renderer labels it curated Biosynthesis, creating material
+  completeness and presentation consequences. This supports a major open owner-placement
+  concern; it does not refute the asserted PaxD chemistry or justify discarding the
+  correctly directed graph. The interpretation remains provisional pending curator
+  resolution of field policy.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- No record, source inventory or implementation is edited. Future changes must follow
+  the captured maintained ownership and validated curation workflow.
+- 'This author read retained outputs only: no new molecular parse, sequence comparison,
+  source query, maintained-reader invocation or external request.'
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-287
+```
