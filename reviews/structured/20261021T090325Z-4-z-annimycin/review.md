@@ -1,0 +1,1339 @@
+# 4-Z-annimycin: exact isomer, native genetic evidence and nonexact ChEBI xref
+
+- Review: 20261021T090325Z-4-z-annimycin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T08:52:06.956520Z
+- Finished UTC: 2026-10-21T09:03:25.321720Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The owner, PubChem and NPAtlas agree on the C3-unspecified 4-Z structure. Two major findings concern a stereospecific nonexact ChEBI xref and omitted exact-compound native genetic evidence with strain/genotype context. The 2013 occurrence is supported; the 2017 citation does not yet establish the exact Z isomer.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 22, batch 003, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 74 of 3116 current records had campaign coverage and 3042 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-6af5182744 | data/natural_products/alkaloids/4-z-annimycin.yaml | generated | 4-Z-annimycin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-6af5182744 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-6af5182744 | All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-6af5182744 | All 3,116 records are byte-identical to the seeder output from committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-6af5182744 | The documented exhaustive queue command produced 8,928 diagnostic rows in 12 queues; deterministic queue output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-6af5182744 | Full configured gate passed using existing CHEBI and GO caches plus the committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate after environment repair | passed | True | naturalproductmech:mibig-6af5182744 | The full documented just qc recipe passed after installing the pinned linter, allowing the read-only governance fetch, and restoring the required provenance tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116 records and zero errors. Documentation, provenance, source queue, governed artifacts, generated pages, reproduction, filing integrity and corpus reporting all passed. |
+| Owner chemical consistency | passed | True | naturalproductmech:mibig-6af5182744 | Owner, PubChem and NPAtlas full structures agree; undefined C3 is explicitly flagged. |
+| Exact chemical cross-reference equivalence | failed | True | naturalproductmech:mibig-6af5182744 | The CHEBI:205485 xref adds a C3-S assignment absent from the owner and differs in full Standard InChIKey. |
+| Exact original 2013 identity and native intervention | passed | True | naturalproductmech:mibig-6af5182744 | Original SI and figures support compound 1 identity and loss after ann5 insertion in complemented ATCC 13382. |
+| Native genetic method completeness | failed | True | naturalproductmech:mibig-6af5182744 | The exact native genetic method and strain/genotype qualification are missing from the source-derived grades. |
+| Complete original 2013 main body | unavailable | True | naturalproductmech:mibig-6af5182744 | Official SI and original figures are available, but the complete main body was not obtained through the bounded routes. |
+| Exact 4-Z assignment in the 2017 occurrence citation | unavailable | True | naturalproductmech:mibig-6af5182744 | The inspected full body and Figure 5 do not resolve parent Z/E identity; the linked SI remains inaccessible. The parent schematic is insufficient to settle the exact-isomer occurrence. |
+| Native expression dataset applicability | not_applicable | False | naturalproductmech:mibig-6af5182744 | No dataset in the inspected catalogue matches the native species; the bldA donor is not a substitute. |
+
+## Scientific And Domain Assessments
+
+### Exact 4-Z structure and unspecified alcohol configuration
+
+identity: supported. Targets: naturalproductmech:mibig-6af5182744.
+
+The owner, PubChem and NPAtlas are chemically consistent with each other. Its stereo_complete:false correctly retains the unassigned C3 centre rather than importing the more specific ChEBI assignment. Primary structure evidence is assessed in the scientific-source sections.
+
+### Cross-reference stereochemical resolution
+
+identity: concern. Targets: naturalproductmech:mibig-6af5182744.
+
+CHEBI:205485 is a C3-S stereospecific form and has a different full Standard InChIKey. Retaining it as exact equivalence contradicts the owner resolution. The matched PubChem and NPAtlas xrefs should remain; withholding ChEBI equivalence does not decide the natural absolute configuration.
+
+### Minted identifier and current ChEBI eligibility
+
+provenance: supported. Targets: naturalproductmech:mibig-6af5182744.
+
+The exact full-key inventory has no eligible three-star grounding; the sole live connectivity match is two-star and stereochemically narrower. Retaining the minted owner identity is appropriate.
+
+### Classification, source concept and audit status
+
+provenance: supported. Targets: naturalproductmech:mibig-6af5182744.
+
+The model-versioned filing prediction, source classes, BGC0001298 source concept and three seed events are internally coherent. The record remains SEEDED. No optional absent bioactivity or mechanism field is treated as a required finding.
+
+### Exact Z recovery from2013 native cultures
+
+evidence: supported. Targets: naturalproductmech:mibig-6af5182744.
+
+The 2013 citation directly supports exact 4Z compound 1 culture recovery and NMR assignment. It is shared with the MIBiG producer/locus claim, not an independent publication for each assertion. The experiment uses complemented and spontaneous sporulating variants; no extraction-artifact classification follows from an observed isomer mixture.
+
+### Primary C3 evidence boundary
+
+identity: supported. Targets: naturalproductmech:mibig-6af5182744.
+
+The inspected 2013 methods establish a stereogenic C3 without an absolute assignment. The owner appropriately records incomplete stereochemistry at this level. No C3-S upgrade follows from the later schematic, congener relationship or a database cross-reference alone; authority mismatches are assessed separately in this review.
+
+### Exact Z scope of the 2017 LOTUS citation
+
+evidence: unknown. Targets: naturalproductmech:mibig-6af5182744.
+
+The independent 2017 paper reports DSM 41452 parent annimycin but does not resolve exact 4Z in inspected body or Figure 5. Its parent schematic uses 4E geometry, while analytical panels focus on shortened B7. With SI inaccessible, retain this as unresolved citation support, not a confirmed wrong citation or proof that 4Z is absent.
+
+### Versioned source, native strain and accession bridge
+
+consistency: supported. Targets: naturalproductmech:mibig-6af5182744.
+
+BGC0001298 v4 compound 1 and KF683117.1 agree with the 2013 ATCC 13382 experimental background. Empty source bounds do not establish minimal cluster boundaries. The 2017 homologous DSM 41452 locus is separate strain evidence and cannot silently replace the deposited strain.
+
+### Missing native genetic evidence for exact 4Z
+
+evidence: concern. Targets: naturalproductmech:mibig-6af5182744.
+
+CLUSTER_UNSTATED faithfully reflects empty imported methods, but exact Z peak 1 loss after ann5 insertion is directly demonstrated. A compound-specific native knockout method and experimental-background qualification are needed together. The result supports locus necessity in a complemented native background, not rescue or a complete heterologous reconstruction.
+
+### Species synonymy versus experimental strain identity
+
+grounding: supported. Targets: naturalproductmech:mibig-6af5182744.
+
+The species-level occurrence and producer labels correspond to current NCBI 67282 synonymy. This permits species normalization but does not equate ATCC 13382 with DSM 41452 or transfer either experimental genotype.
+
+### No transfer of derivative activity
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-6af5182744.
+
+The owner asserts no activity or target. The 2017 antimalarial observation is for Annimycin B 7, a different shorter structure, and must not populate this parent 4Z record. Its absence is not a completeness defect.
+
+### Claim-specific inspection completeness
+
+evidence: unknown. Targets: naturalproductmech:mibig-6af5182744.
+
+Direct 2013 figures and SI support exact identity and the genetic finding, while full 2013 main text remains unavailable. Full 2017 body and Figure 5 were read, but its SI gap leaves exact Z occurrence unresolved. This supports partial completion of this review.
+
+## Findings
+
+### R022-NONEXACT-CHEBI: The ChEBI xref silently adds an absolute configuration
+
+major / open / confirmed; issue key: bgc0001298-compound1-chebi205485-stereo-nonexact-xref.
+
+The C3-unspecified 4-Z owner carries CHEBI:205485 as exact equivalence, but the official default ChEBI structure assigns C3 S and has a different full InChIKey. Both PubChem and NPAtlas match the current owner. This is a bounded incorrect chemical xref, not evidence that the owner should be reconfigured or merged.
+
+### F022-NATIVE-EVIDENCE: Exact 4-Z-annimycin native knockout evidence is omitted
+
+major / open / confirmed; issue key: mibig-bgc0001298-compound1-native-knockout-evidence.
+
+The record inherits empty locus methods and CLUSTER_UNSTATED although its cited 2013 primary Figure 5 directly shows loss of exact 4Z compound 1 following ann5 single-crossover disruption. SI Figure S4 validates the insertion by PCR in a bldA-complemented S. calvus ATCC 13382 background. Add the native genetic method and strain/genotype context together; an unqualified producer upgrade would hide the enabling complementation. The species occurrence itself is supported, including spontaneous sporulating variants.
+
+## Recommended Actions And Acceptance Checks
+
+### R022-WITHHOLD-CHEBI
+
+Extend the existing guarded xref exclusion path to support the exact raw literal chebi:205485, including canonicalized reintroduction checks, then add a BGC0001298:1 exclusion pinned to complete raw-row SHA256 7b89eab1d9c8372b5fc5f47c5047dd6bcc80c4871fe8a461686b2a42517a1d8e. Preserve the rejected upstream assertion and rationale in the table-owned discussion. The current PubChem/NPAtlas-only loader cannot consume this decision until extended; do not hand-edit the generated owner or invent C3 stereochemistry.
+
+- Test exact source-row matching, literal source membership, duplicate decisions, malformed prefixes, stale digest, decision consumption and rejection with concurrent structure replacement.
+- Normalize the final reintroduction check so chebi:205485 and CHEBI:205485 from another contributing source cannot bypass it; test both spellings.
+- After a canary reseed, only the nonexact ChEBI xref is withheld and its provenance discussion retained; owner full key, unspecified C3, PubChem139585542 and NPAtlasNPA008749 remain unchanged.
+- Run focused exclusion tests, target strict validation, reproduction and required repository QC; no unsupported replacement ChEBI grounding is added.
+
+### ACT022-NATIVE-EVIDENCE
+
+For BGC0001298:1 / naturalproductmech:mibig-6af5182744, add reviewed REPLACE method Knock-out studies based on PMID:24120331 / DOI:10.1016/j.chembiol.2013.09.006 Figure 5 and SI Figure S4. Pair it with a curation/mibig_claim_references.tsv decision pinned to complete original source-row SHA256 7b89eab1d9c8372b5fc5f47c5047dd6bcc80c4871fe8a461686b2a42517a1d8e, retaining the primary DOI in producer, locus and source reference fields. REPLACE expected_* fields alone currently do not enforce drift checks. Add an independently SHA-pinned producer strain qualifier ATCC 13382, with rationale naming the native S. calvus att::[bldA,aac(3)IV] background and ann5::aadA perturbation, and include that scope in locus citation rationale. The existing grading map should emit BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED for this qualified experiment. Keep the current unresolved-C3 Z graph unless a separate identity adjudication establishes a correction. If a structure correction is combined, implement/test compatible composition or stage separately: the current claim-reference applier rejects structure_correction_note. Retain species 67282, KF683117.1 and absent bounds. Do not substitute DSM 41452, claim rescue or pathway sufficiency, or transfer Annimycin B activity.
+
+- The exact Z compound 1, mutant ann5 insertion, complemented ATCC 13382 control, PCR validation and loss of peak 1 are traceable to primary figures and SI.
+- The regenerated locus emits Knock-out studies and CLUSTER_DEMONSTRATED; BGC_CHARACTERIZED producer evidence explicitly retains the tested native strain and genotype context.
+- Any change to the original BGC0001298:1 raw row fails the paired full-row SHA guard. A test demonstrates that REPLACE expected_* fields are not being relied upon alone.
+- If chemical structure changes are also adopted, an explicit composition/staging test covers claim and strain qualification rather than silently bypassing their structure-correction rejection.
+- No unqualified stock production, invented locus bounds, pure-parent activity or DSM 41452-specific chemistry is introduced. Exact 2017 Z occurrence remains uncertain until direct analytical support is inspected.
+- Run target seed canary, inspect the full regenerated record, then strict validation, reproduction and required corpus QC.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R022-OWNER | data/natural_products/alkaloids/4-z-annimycin.yaml; Complete owner, resolved mechanisms and all three seed-history events | supports | The exact 4-Z compound has one unspecified alcohol stereocentre, two LOTUS occurrence citations, one source producer/locus, three chemical xrefs and no assay, pathway, graph, target, discussion, clinical claim or sibling link. |
+| R022-CHEM | /private/tmp/npm-review-work/022/identity/comparison.json; Independent RDKit reconstruction of owner, PubChem and NPAtlas SMILES and default ChEBI MOL; Standard and fixed-H InChIs | supports | Owner, PubChem and NPAtlas share NWXCMIPYEHNXHW-VQOMMXTDSA-N with C3 unspecified. CHEBI:205485 has the same alkene geometry but C3 S and key NWXCMIPYEHNXHW-BYCVNMCWSA-N. Formula C19H25NO4 and charge zero agree; the full stereochemical identities do not. |
+| R022-PUBCHEM | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/139585542/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON; Complete CID 139585542 property response | supports | The owner PubChem xref matches its complete Standard InChI/key and C3-unspecified 4-Z graph. |
+| R022-NPATLAS | https://www.npatlas.org/api/v1/compound/NPA008749?include=classifications; Complete NPA008749 entry, current structure and origin metadata | supports | NPAtlas retains the exact owner graph and full key, the (4Z)-annimycin name, original DOI:10.1016/j.chembiol.2013.09.006 and S. calvus ATCC 13382. Its metadata does not resolve the unspecified alcohol configuration. |
+| R022-CHEBI-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/205485/; Complete official default MOL independently parsed | supports | The default MOL explicitly assigns C3 S. It agrees with the current ChEBI full InChI/key but differs from the owner stereochemical resolution. |
+| R022-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/205485/; Complete two-star released CHEBI:205485 entry; previously retrieved bytes reused with original timestamp | supports | The entry has a 4-Z name and a C3-S default graph with full key NWXCMIPYEHNXHW-BYCVNMCWSA-N. It is ineligible for three-star grounding and is not exact equivalence to the owner. |
+| R022-CHEBI-SEARCH | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=NWXCMIPYEHNXHW&amp;size=100; Complete connectivity-key query result, one hit; checked against exact-key route and committed eligible inventory | supports | The connectivity-key query returns only the two-star C3-S entry. The exact-key query returned HTTP404/no results and the committed eligible ChEBI inventory has no owner full-key row. No eligible exact three-star grounding was found within these explicit routes; this is not an unbounded claim. |
+| R022-LOCAL-SEARCH | curation/; reviews/structured/; src/; scripts/; docs/; data/raw/; Seven matching lines retained in the local search receipt | supports | The ignored-inclusive search found the current raw source/classification/LOTUS/empty-assay rows, and no existing review or correction for this exact owner/xref in the searched surfaces. |
+| R022-XREF-LOADER | src/naturalproductmech/curate/xref_exclusions.py; Complete loader and exclusion-discussion builder | context_only | The implemented loader accepts only literal PubChem and NPAtlas xrefs. It cannot yet exclude raw chebi:205485. It enforces a complete raw-row digest, exact source membership, unique decisions and attribution for supported prefixes. |
+| R022-XREF-SEED | scripts/seed_from_sources.py; Source xref exclusion before canonical_xref and final reintroduction check; ChEBI structure-disagreement generation | context_only | Raw literal exclusions happen before ChEBI prefix normalization; the final reintroduction check currently compares literal decision xref to canonical emitted xrefs. A ChEBI extension therefore needs a canonicalized guard as well as prefix acceptance. The existing disagreement prompt only compares ChEBI entries present in the eligible committed inventory, so this two-star mismatch gets no generated prompt. |
+| R022-CLASS | data/raw/npclassifier.tsv; Complete owner exact-key prediction row and emitted classification | context_only | The ALKALOIDS filing and Peptide alkaloids/Simple amide alkaloids predictions reproduce the pinned model. PKS and Linear polyketide remain separate source assertions. The native ann cluster evidence is assessed independently. |
+| E022-B-OWNER | data/natural_products/alkaloids/4-z-annimycin.yaml; Complete owner including all evidence, source concept and history | supports | The owner has exact Z compound source BGC0001298:1, two LOTUS occurrence citations, species-level source-asserted producer, ungraded locus, and no pathway, graph, protein or activity assertions. |
+| E022-B-RAW | data/raw/mibig_compounds.tsv; Exact BGC0001298:1 row and all exact-key rows captured in /022/local-sources.json | supports | Version 4 compound 1 is 4-Z-annimycin, key NWXCMIPYEHNXHW-VQOMMXTDSA-N, empty locus methods/bounds, SOURCE_ASSERTION and CLUSTER_UNSTATED, taxon 67282 and KF683117.1. Canonical complete-row SHA256 is 7b89eab1d9c8372b5fc5f47c5047dd6bcc80c4871fe8a461686b2a42517a1d8e. The four LOTUS source rows collapse to two DOI occurrences after taxon normalization; both original taxon labels and Wikidata organisms remain source provenance. |
+| E022-B-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0001298.4/annotations.json; Version 4 compounds[0], loci, taxonomy, biosynthesis and gene annotations; re-read for exact Z target | supports | The versioned source stores the exact Z SMILES, NMR/MS compound evidence citing the 2013 DOI, PKS Type I, active/questionable/unknown status-quality-completeness, and empty structured locus evidence. The locus has zero/zero source bounds, which the imported row leaves blank; these are not demonstrated biological boundaries. |
+| E022-B-2013-ABSTRACT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&amp;id=24120331&amp;retmode=xml; PMID 24120331 full official abstract, re-read for explicit Z product | supports | The abstract explicitly reports 4-Z-annimycin and minor 4-E after functional bldA complementation of S. calvus, with cluster identification and disruption. This is the correct cited publication. It supplies native-background context, not transfer of a complete ann pathway to a heterologous host. |
+| E022-B-2013-FIG3 | https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-gr3.jpg; Original Figure 3 compound 1 versus compound 2, visually re-inspected | supports | Compound 1 is the exact 4Z tetraene with J4,5=10.5 Hz; compound 2 is 4E with 15.2 Hz. Compound 1 has no wedge assignment at its stereogenic C3. The direct primary figure distinguishes the two geometric isomers. |
+| E022-B-2013-SI-IDENTITY | https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-mmc1.pdf; SI printed 3 Figure S2 and printed 10–11 Assignment of the structure of 4-Z-annimycin(1); Figure S2 visually re-inspected | supports | The SI explicitly assigns1 as 4Z,6E,8aE,10E using coupling constants and ROESY, with formula C19H25NO4 and observed negative-ion mass 330.1701. It identifies C3 as stereogenic but does not assign R/S in these structure methods; the stored unresolved C3 does not mean a racemate. Figure S2 separately distinguishes cis 1 and trans 2 in mixture spectra. |
+| E022-B-2013-SI-NATIVE | https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-mmc1.pdf; SI Figure S1 printed 2 and methods printed 8–10; rendered Figure S1 visually re-inspected | supports | ATCC 13382 is the genomic strain. S. coelicolor A3(2) bldA was introduced into S. calvus with integrative or replicative vectors. Figure S1 shows exact1 and2 in complemented cultures and spontaneous sporulating variants spore 1/spore 4; the tested parental stock lacks the corresponding peaks. This supports conditional native-species recovery, without constitutive-stock production or a mechanism for spontaneous restoration. |
+| E022-B-2013-SI-KNOCKOUT | https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-mmc1.pdf; SI Figure S4 printed 5 and Disruption of the annimycin cluster printed 11–12; Figure S4 visually re-inspected | supports | The ann5::aadA single-crossover insertion was made in S. calvus att::[bldA,aac(3)IV]. Figure S4 checks common, flanking and insertion-specific PCR products for two mutants versus complemented control. Seven-day patent-medium cultures were extracted and analyzed by LC-MS. The experiment is an insertion disruption; no clean deletion or rescued ann5 mutant is claimed. |
+| E022-B-2013-FIG5 | https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-gr5.jpg; Original Figure 5A/B, visually re-inspected for exact Z peak 1 | supports | The lower complemented-control trace contains peaks 1 and 2; both disappear in the upper ann5 mutant trace while unrelated peak 3 remains. Figure 5A maps the insertion. This is direct loss of exact Z compound 1 in the native complemented background, not congener inference from E compound 2. |
+| E022-B-GENBANK | https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=KF683117.1&amp;db=nuccore&amp;report=genbank&amp;retmode=text; KF683117.1 source, reference and ann1–ann5 CDSs, re-inspected | supports | The 41,001 bp deposit names S. calvus ATCC 13382, taxon 67282 and PMID 24120331. Ann5 is AGY30677.1 at 25064..36568; the region also contains Ann1–4. It bridges the tested 2013 strain and deposited native locus; it is not a minimal-boundary or whole-region-sufficiency experiment. The 2017 DSM 41452 experiment does not alter this deposit strain. |
+| E022-B-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=67282&amp;retmode=xml; Taxon 67282 current cached official XML, rank, lineage, synonyms and strain names re-read | supports | NCBI 67282 is species Streptomyces calvus within Actinomycetota and lists S. asterosporus as a synonym. ATCC 13382 and DSM 41452 occur among type-material names, but are separate experimental strain designations. Species synonymy does not transfer the exact 2013 bldA/ann5 genotype or genome accession to DSM 41452. |
+| E022-B-2017-BODY | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=6324189&amp;retmode=xml; All six scientific body sections and figure captions; sections S1,S4–S6 are claim-relevant | supports | DSM 41452 ann5 disruption yielded shortened Annimycin B 7. The body reports that ann3 disruption abolished 7 and parent annimycin, but does not explicitly resolve parent 4Z versus 4E. The reported antimalarial measurement concerns 7, not parent annimycin. Module skipping is proposed. This is a different native strain from ATCC 13382; bldA complementation is not described for the DSM 41452 experiments in this body. |
+| E022-B-2017-FIG5A | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dfb0/6324189/28cfb42b3535/nihms-1516353-f0008.jpg; Original Figure 5A pixels, visually inspected | supports | Figure 5A characterizes shortened Annimycin B 7, a C15 three-alkene product; it is not the C19 four-alkene parent. |
+| E022-B-2017-FIG5B | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dfb0/6324189/06f341ec5268/nihms-1516353-f0009.jpg; Original Figure 5B pixels, visually inspected | supports | The proposed-biosynthesis schematic depicts parent annimycin with extended 4E geometry and unassigned C3. It cites the 2013 study. This schematic does not establish absence of 4Z in DSM 41452 or independent parent-isomer analytical identification. |
+| E022-B-2017-FIG5C | https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dfb0/6324189/89c08c8d1309/nihms-1516353-f0010.jpg; Original Figure 5C pixels, visually inspected | supports | The mutant chromatograms explicitly mark Annimycin B. They do not label an independently resolved parent 4Z peak; therefore this panel alone cannot settle the exact 4Z occurrence citation. |
+| E022-B-TRANSFORM | scripts/seed_from_sources.py; load/apply_mibig_locus_evidence_overrides, conf/producer_evidence.tsv and reviewed claim-reference/strain loaders | supports | Knock-out studies maps to BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED. REPLACE currently does not enforce expected_* context fields; those are checked only for WITHDRAW. The complete-source-row SHA guard exists in the claim-reference and producer-strain loaders. A paired guarded decision can retain explicit ATCC 13382 and experimental-genotype context. Claim routing rejects rows already carrying structure_correction_note, so any combined identity correction needs tested composition or separately adjudicated compatible staging. |
+| E022-B-LOCAL-SEARCH | /private/tmp/npm-record-reviews-20261021/curation; Exact sourceID, identifier and complete key search with rg --no-ignore --hidden | context_only | No exact record-022 corrective row was returned in the inspected curation directory. Ignored and hidden files were included. This does not assert absence of related cluster decisions or uninspected repository material. |
+| E022-B-ACCESS | /private/tmp/npm-review-work/022/primary-si-wiley-access.json; This review media receipts plus reused019 and shared-next/root access receipts | unknown | 2013 original SI and Figures3/5 are directly available, but full original main HTML/PDF was not obtained in the prior bounded routes. 2017 full author-manuscript XML and all Figure 5 panels were read. Its SI failed via PMC browser/download-preparation responses, EuropePMC 403/520 and official Wiley 403; no challenge was solved and no further retry was made. |
+| R022-IMODULON | https://imodulondb.org/; Complete 28-dataset CLI catalogue /private/tmp/npm-review-work/010/imodulon-datasets.txt, reused with original timestamp | context_only | The inspected catalogue contains no S. calvus or S. asterosporus dataset. Its S. coelicolor dataset cannot be substituted for native calvus expression context merely because bldA was a donor gene. This is a bounded applicability result, not negative biological evidence. |
+
+## Limits And Additional Notes
+
+- The current ChEBI exact-key API route returned HTTP404; the complete connectivity query, official entry and default MOL were inspected. No eligible exact grounding was found within that bounded authority search.
+- The cross-reference mismatch establishes unequal stereochemical resolution. It does not determine whether the natural compound is S, R or a mixture, or authorize a structure replacement.
+- Full original 2013 main HTML/PDF was not obtained in the earlier bounded free routes. Direct original figures and full relevant SI methods were inspected; no uninspected whole-article absence claim is used.
+- The 2017 full author manuscript and all Figure 5 panels were inspected, but the SI remains unavailable in the checked PMC, EuropePMC and Wiley routes. Exact 4Z occurrence in DSM 41452 is unresolved; the all-E parent schematic is not proof of biological absence of 4Z.
+- The 2013 ann5 experiment is a single-crossover insertion in a bldA-complemented native background, with PCR validation. It is not a clean deletion, rescued ann5 experiment, exact enzyme assay or whole-pathway reconstruction.
+- C3 absolute configuration was not assigned by the inspected 2013 structure methods. Current identity-authority comparisons are assessed separately in this review.
+- Taxon synonymy does not equate individual culture strains; KF683117.1 is the ATCC 13382 deposit, not a DSM 41452 sequence claim.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus; its exit 0 is not independent verification of every identifier or of this record's scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison because the isolated clone has no sibling checkout, and skips three command-frontmatter cases because their parameter sets are empty. Pinned-hash and network governance checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy or literature-level claim support.
+- Baseline reuse concerns the identical committed inputs and original executed checks; it does not claim a fresh network/governance or ontology-cache refresh.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Independent identity QA reproduced the official ChEBI MOL mismatch and verified that the current xref-exclusion loader rejects ChEBI literals; the proposed extension also requires a canonicalized reintroduction guard.
+- Original 2013 source artifacts were reused with actual retrieval timestamps. The 2017 full author manuscript and original Figure 5 were inspected separately.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T090325Z-4-z-annimycin
+title: '4-Z-annimycin: exact isomer, native genetic evidence and nonexact ChEBI xref'
+started_at: '2026-10-21T08:52:06.956520Z'
+finished_at: '2026-10-21T09:03:25.321720Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The owner, PubChem and NPAtlas agree on the C3-unspecified 4-Z structure.
+  Two major findings concern a stereospecific nonexact ChEBI xref and omitted exact-compound
+  native genetic evidence with strain/genotype context. The 2013 occurrence is supported;
+  the 2017 citation does not yet establish the exact Z isomer.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/4-z-annimycin.yaml
+    sha256: 7611ff1921308040cd23e007245f19995752c369b2da4fd670dcb8d8476e4d6d
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 22, batch 003, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 74 of 3116 current records had campaign coverage and 3042 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-6af5182744
+targets:
+- target_id: naturalproductmech:mibig-6af5182744
+  path: data/natural_products/alkaloids/4-z-annimycin.yaml
+  label: 4-Z-annimycin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  command: just validate-strict data/natural_products/alkaloids/4-z-annimycin.yaml
+    --out /private/tmp/npm-review-work/022/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T08:52:10.005595Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+- check_id: R022-C-STRUCTURE
+  name: Owner chemical consistency
+  status: passed
+  required: true
+  summary: Owner, PubChem and NPAtlas full structures agree; undefined C3 is explicitly
+    flagged.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - R022-CHEM
+  - R022-PUBCHEM
+  - R022-NPATLAS
+- check_id: R022-C-XREFS
+  name: Exact chemical cross-reference equivalence
+  status: failed
+  required: true
+  summary: The CHEBI:205485 xref adds a C3-S assignment absent from the owner and
+    differs in full Standard InChIKey.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - R022-CHEM
+  - R022-CHEBI
+  - R022-CHEBI-MOL
+- check_id: R022-C-PRIMARY2013
+  name: Exact original 2013 identity and native intervention
+  status: passed
+  required: true
+  summary: Original SI and figures support compound 1 identity and loss after ann5
+    insertion in complemented ATCC 13382.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-2013-SI-IDENTITY
+  - E022-B-2013-FIG3
+  - E022-B-2013-SI-KNOCKOUT
+  - E022-B-2013-FIG5
+- check_id: R022-C-NATIVE-GRADE
+  name: Native genetic method completeness
+  status: failed
+  required: true
+  summary: The exact native genetic method and strain/genotype qualification are missing
+    from the source-derived grades.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-RAW
+  - E022-B-2013-FIG5
+  - E022-B-TRANSFORM
+- check_id: R022-C-2013-BODY
+  name: Complete original 2013 main body
+  status: unavailable
+  required: true
+  summary: Official SI and original figures are available, but the complete main body
+    was not obtained through the bounded routes.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-ACCESS
+- check_id: R022-C-2017-Z
+  name: Exact 4-Z assignment in the 2017 occurrence citation
+  status: unavailable
+  required: true
+  summary: The inspected full body and Figure 5 do not resolve parent Z/E identity;
+    the linked SI remains inaccessible. The parent schematic is insufficient to settle
+    the exact-isomer occurrence.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-2017-BODY
+  - E022-B-2017-FIG5B
+  - E022-B-2017-FIG5C
+  - E022-B-ACCESS
+- check_id: R022-C-IMODULON
+  name: Native expression dataset applicability
+  status: not_applicable
+  required: false
+  summary: No dataset in the inspected catalogue matches the native species; the bldA
+    donor is not a substitute.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - R022-IMODULON
+evidence:
+- evidence_id: R022-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/4-z-annimycin.yaml
+  locator: Complete owner, resolved mechanisms and all three seed-history events
+  accessed_at: '2026-10-21T08:58:07.422545Z'
+  support: supports
+  summary: The exact 4-Z compound has one unspecified alcohol stereocentre, two LOTUS
+    occurrence citations, one source producer/locus, three chemical xrefs and no assay,
+    pathway, graph, target, discussion, clinical claim or sibling link.
+  snapshot_sha256: 7611ff1921308040cd23e007245f19995752c369b2da4fd670dcb8d8476e4d6d
+- evidence_id: R022-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/022/identity/comparison.json
+  locator: Independent RDKit reconstruction of owner, PubChem and NPAtlas SMILES and
+    default ChEBI MOL; Standard and fixed-H InChIs
+  accessed_at: '2026-10-21T08:56:30.730775Z'
+  support: supports
+  summary: Owner, PubChem and NPAtlas share NWXCMIPYEHNXHW-VQOMMXTDSA-N with C3 unspecified.
+    CHEBI:205485 has the same alkene geometry but C3 S and key NWXCMIPYEHNXHW-BYCVNMCWSA-N.
+    Formula C19H25NO4 and charge zero agree; the full stereochemical identities do
+    not.
+  snapshot_sha256: 34134f1fb0f5121904bfb65ea59bb70891c47a90b6a949939b2dbb9d484caed6
+- evidence_id: R022-PUBCHEM
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/139585542/property/InChI,InChIKey,MolecularFormula,IsomericSMILES/JSON
+  locator: Complete CID 139585542 property response
+  accessed_at: '2026-10-21T08:55:53.526766Z'
+  support: supports
+  summary: The owner PubChem xref matches its complete Standard InChI/key and C3-unspecified
+    4-Z graph.
+  snapshot_sha256: b18d70a0428e1236519977839a4f28ca996b53ca7dd09dcb8b192e146825bc9d
+- evidence_id: R022-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA008749?include=classifications
+  locator: Complete NPA008749 entry, current structure and origin metadata
+  accessed_at: '2026-10-21T08:55:53.527183Z'
+  support: supports
+  summary: NPAtlas retains the exact owner graph and full key, the (4Z)-annimycin
+    name, original DOI:10.1016/j.chembiol.2013.09.006 and S. calvus ATCC 13382. Its
+    metadata does not resolve the unspecified alcohol configuration.
+  snapshot_sha256: 3affc5c74f5b0e55e59bc3f79d63988cb2fbd8100d513e507bb62033b33925f1
+- evidence_id: R022-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/205485/
+  locator: Complete official default MOL independently parsed
+  accessed_at: '2026-10-21T08:55:53.527316Z'
+  support: supports
+  summary: The default MOL explicitly assigns C3 S. It agrees with the current ChEBI
+    full InChI/key but differs from the owner stereochemical resolution.
+  snapshot_sha256: de3e26f14c5c856d0f99fdec0e872096739801230c551746ccc4071e11abffe1
+- evidence_id: R022-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/205485/
+  locator: Complete two-star released CHEBI:205485 entry; previously retrieved bytes
+    reused with original timestamp
+  accessed_at: '2026-10-21T08:12:15.400482Z'
+  support: supports
+  summary: The entry has a 4-Z name and a C3-S default graph with full key NWXCMIPYEHNXHW-BYCVNMCWSA-N.
+    It is ineligible for three-star grounding and is not exact equivalence to the
+    owner.
+  snapshot_sha256: e6557322be2d2a791570a363557f657868cf273f1c88680403b30c6cf454479b
+- evidence_id: R022-CHEBI-SEARCH
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=NWXCMIPYEHNXHW&size=100
+  locator: Complete connectivity-key query result, one hit; checked against exact-key
+    route and committed eligible inventory
+  accessed_at: '2026-10-21T08:10:02.655325Z'
+  support: supports
+  summary: The connectivity-key query returns only the two-star C3-S entry. The exact-key
+    query returned HTTP404/no results and the committed eligible ChEBI inventory has
+    no owner full-key row. No eligible exact three-star grounding was found within
+    these explicit routes; this is not an unbounded claim.
+  snapshot_sha256: 6e8bebaf6ddbf5ba314c190595887ae8e6a3f63f5cf679e51d06688b5afc5a7d
+- evidence_id: R022-LOCAL-SEARCH
+  kind: search
+  reference: curation/; reviews/structured/; src/; scripts/; docs/; data/raw/
+  locator: Seven matching lines retained in the local search receipt
+  accessed_at: '2026-10-21T08:58:07.422545Z'
+  support: supports
+  summary: The ignored-inclusive search found the current raw source/classification/LOTUS/empty-assay
+    rows, and no existing review or correction for this exact owner/xref in the searched
+    surfaces.
+  snapshot_sha256: f57ecacf81ae3b7e486de42814f3a2dd7c0e711da4f524787d39fa8f7c902417
+  search_scope: rg -n --no-ignore --hidden for 6af5182744, BGC0001298:1, NWXCMIPYEHNXHW-VQOMMXTDSA-N
+    and 205485 across curation, reviews/structured, src, scripts, docs and data/raw;
+    ignored and hidden files included.
+- evidence_id: R022-XREF-LOADER
+  kind: record_content
+  reference: src/naturalproductmech/curate/xref_exclusions.py
+  locator: Complete loader and exclusion-discussion builder
+  accessed_at: '2026-10-21T08:58:07.422545Z'
+  support: context_only
+  summary: The implemented loader accepts only literal PubChem and NPAtlas xrefs.
+    It cannot yet exclude raw chebi:205485. It enforces a complete raw-row digest,
+    exact source membership, unique decisions and attribution for supported prefixes.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+- evidence_id: R022-XREF-SEED
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Source xref exclusion before canonical_xref and final reintroduction check;
+    ChEBI structure-disagreement generation
+  accessed_at: '2026-10-21T08:58:07.422545Z'
+  support: context_only
+  summary: Raw literal exclusions happen before ChEBI prefix normalization; the final
+    reintroduction check currently compares literal decision xref to canonical emitted
+    xrefs. A ChEBI extension therefore needs a canonicalized guard as well as prefix
+    acceptance. The existing disagreement prompt only compares ChEBI entries present
+    in the eligible committed inventory, so this two-star mismatch gets no generated
+    prompt.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: R022-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Complete owner exact-key prediction row and emitted classification
+  accessed_at: '2026-10-21T08:58:07.422545Z'
+  support: context_only
+  summary: The ALKALOIDS filing and Peptide alkaloids/Simple amide alkaloids predictions
+    reproduce the pinned model. PKS and Linear polyketide remain separate source assertions.
+    The native ann cluster evidence is assessed independently.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: E022-B-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/4-z-annimycin.yaml
+  locator: Complete owner including all evidence, source concept and history
+  accessed_at: '2026-10-21T08:57:34.201796Z'
+  support: supports
+  summary: The owner has exact Z compound source BGC0001298:1, two LOTUS occurrence
+    citations, species-level source-asserted producer, ungraded locus, and no pathway,
+    graph, protein or activity assertions.
+  snapshot_sha256: 7611ff1921308040cd23e007245f19995752c369b2da4fd670dcb8d8476e4d6d
+- evidence_id: E022-B-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Exact BGC0001298:1 row and all exact-key rows captured in /022/local-sources.json
+  accessed_at: '2026-10-21T08:57:34.201796Z'
+  support: supports
+  summary: Version 4 compound 1 is 4-Z-annimycin, key NWXCMIPYEHNXHW-VQOMMXTDSA-N,
+    empty locus methods/bounds, SOURCE_ASSERTION and CLUSTER_UNSTATED, taxon 67282
+    and KF683117.1. Canonical complete-row SHA256 is 7b89eab1d9c8372b5fc5f47c5047dd6bcc80c4871fe8a461686b2a42517a1d8e.
+    The four LOTUS source rows collapse to two DOI occurrences after taxon normalization;
+    both original taxon labels and Wikidata organisms remain source provenance.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: E022-B-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001298.4/annotations.json
+  locator: Version 4 compounds[0], loci, taxonomy, biosynthesis and gene annotations;
+    re-read for exact Z target
+  accessed_at: '2026-10-21T08:09:26.936940Z'
+  support: supports
+  summary: The versioned source stores the exact Z SMILES, NMR/MS compound evidence
+    citing the 2013 DOI, PKS Type I, active/questionable/unknown status-quality-completeness,
+    and empty structured locus evidence. The locus has zero/zero source bounds, which
+    the imported row leaves blank; these are not demonstrated biological boundaries.
+  snapshot_sha256: 448ec362cf5b554c7612ca219d660da4933dd4d5cd5a26203882e7aefe0aab95
+- evidence_id: E022-B-2013-ABSTRACT
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=24120331&retmode=xml
+  locator: PMID 24120331 full official abstract, re-read for explicit Z product
+  accessed_at: '2026-10-21T08:09:26.937608Z'
+  support: supports
+  summary: The abstract explicitly reports 4-Z-annimycin and minor 4-E after functional
+    bldA complementation of S. calvus, with cluster identification and disruption.
+    This is the correct cited publication. It supplies native-background context,
+    not transfer of a complete ann pathway to a heterologous host.
+  snapshot_sha256: 0ac8d6b58bd6e9554d0d1b72f9e3b8886f7c8f6875608416cc3c6464734f88ed
+- evidence_id: E022-B-2013-FIG3
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-gr3.jpg
+  locator: Original Figure 3 compound 1 versus compound 2, visually re-inspected
+  accessed_at: '2026-10-21T08:12:15.261212Z'
+  support: supports
+  summary: Compound 1 is the exact 4Z tetraene with J4,5=10.5 Hz; compound 2 is 4E
+    with 15.2 Hz. Compound 1 has no wedge assignment at its stereogenic C3. The direct
+    primary figure distinguishes the two geometric isomers.
+  snapshot_sha256: 92df94b2bc9c502abd427f654dee8b40f3654b8e85a5e063f81ee3e9edd67335
+- evidence_id: E022-B-2013-SI-IDENTITY
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-mmc1.pdf
+  locator: SI printed 3 Figure S2 and printed 10–11 Assignment of the structure of
+    4-Z-annimycin(1); Figure S2 visually re-inspected
+  accessed_at: '2026-10-21T08:10:02.655434Z'
+  support: supports
+  summary: The SI explicitly assigns1 as 4Z,6E,8aE,10E using coupling constants and
+    ROESY, with formula C19H25NO4 and observed negative-ion mass 330.1701. It identifies
+    C3 as stereogenic but does not assign R/S in these structure methods; the stored
+    unresolved C3 does not mean a racemate. Figure S2 separately distinguishes cis
+    1 and trans 2 in mixture spectra.
+  snapshot_sha256: e31c56392e72ee489a88a201cbb5ec9855f1d3a09b66126ca0b99bc3be1a5254
+- evidence_id: E022-B-2013-SI-NATIVE
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-mmc1.pdf
+  locator: SI Figure S1 printed 2 and methods printed 8–10; rendered Figure S1 visually
+    re-inspected
+  accessed_at: '2026-10-21T08:10:02.655434Z'
+  support: supports
+  summary: ATCC 13382 is the genomic strain. S. coelicolor A3(2) bldA was introduced
+    into S. calvus with integrative or replicative vectors. Figure S1 shows exact1
+    and2 in complemented cultures and spontaneous sporulating variants spore 1/spore
+    4; the tested parental stock lacks the corresponding peaks. This supports conditional
+    native-species recovery, without constitutive-stock production or a mechanism
+    for spontaneous restoration.
+  snapshot_sha256: e31c56392e72ee489a88a201cbb5ec9855f1d3a09b66126ca0b99bc3be1a5254
+- evidence_id: E022-B-2013-SI-KNOCKOUT
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-mmc1.pdf
+  locator: SI Figure S4 printed 5 and Disruption of the annimycin cluster printed
+    11–12; Figure S4 visually re-inspected
+  accessed_at: '2026-10-21T08:10:02.655434Z'
+  support: supports
+  summary: The ann5::aadA single-crossover insertion was made in S. calvus att::[bldA,aac(3)IV].
+    Figure S4 checks common, flanking and insertion-specific PCR products for two
+    mutants versus complemented control. Seven-day patent-medium cultures were extracted
+    and analyzed by LC-MS. The experiment is an insertion disruption; no clean deletion
+    or rescued ann5 mutant is claimed.
+  snapshot_sha256: e31c56392e72ee489a88a201cbb5ec9855f1d3a09b66126ca0b99bc3be1a5254
+- evidence_id: E022-B-2013-FIG5
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S1074552113003414-gr5.jpg
+  locator: Original Figure 5A/B, visually re-inspected for exact Z peak 1
+  accessed_at: '2026-10-21T08:12:15.262823Z'
+  support: supports
+  summary: The lower complemented-control trace contains peaks 1 and 2; both disappear
+    in the upper ann5 mutant trace while unrelated peak 3 remains. Figure 5A maps
+    the insertion. This is direct loss of exact Z compound 1 in the native complemented
+    background, not congener inference from E compound 2.
+  snapshot_sha256: 641c77baaf48198927e0a4f02c5f7d3c16c3cb290a215bf3272fb7523cfae541
+- evidence_id: E022-B-GENBANK
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=KF683117.1&db=nuccore&report=genbank&retmode=text
+  locator: KF683117.1 source, reference and ann1–ann5 CDSs, re-inspected
+  accessed_at: '2026-10-21T08:09:26.937432Z'
+  support: supports
+  summary: The 41,001 bp deposit names S. calvus ATCC 13382, taxon 67282 and PMID
+    24120331. Ann5 is AGY30677.1 at 25064..36568; the region also contains Ann1–4.
+    It bridges the tested 2013 strain and deposited native locus; it is not a minimal-boundary
+    or whole-region-sufficiency experiment. The 2017 DSM 41452 experiment does not
+    alter this deposit strain.
+  snapshot_sha256: 110d43423fae0a9fb60e34b304e985f615965c51fd770dc29f4460ed57041527
+- evidence_id: E022-B-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=67282&retmode=xml
+  locator: Taxon 67282 current cached official XML, rank, lineage, synonyms and strain
+    names re-read
+  accessed_at: '2026-10-21T08:09:27.356218Z'
+  support: supports
+  summary: NCBI 67282 is species Streptomyces calvus within Actinomycetota and lists
+    S. asterosporus as a synonym. ATCC 13382 and DSM 41452 occur among type-material
+    names, but are separate experimental strain designations. Species synonymy does
+    not transfer the exact 2013 bldA/ann5 genotype or genome accession to DSM 41452.
+  snapshot_sha256: 0a11b4eaa6a6ecef730e69b842e41d5b83578879efdeafff9a6c1123d8a9c347
+- evidence_id: E022-B-2017-BODY
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=6324189&retmode=xml
+  locator: All six scientific body sections and figure captions; sections S1,S4–S6
+    are claim-relevant
+  accessed_at: '2026-10-21T08:39:01.485312Z'
+  support: supports
+  summary: DSM 41452 ann5 disruption yielded shortened Annimycin B 7. The body reports
+    that ann3 disruption abolished 7 and parent annimycin, but does not explicitly
+    resolve parent 4Z versus 4E. The reported antimalarial measurement concerns 7,
+    not parent annimycin. Module skipping is proposed. This is a different native
+    strain from ATCC 13382; bldA complementation is not described for the DSM 41452
+    experiments in this body.
+  snapshot_sha256: 7d6a93753d761c70ad613e2245ca6c116326077a60f62ddc0d5f7e2e1627d268
+- evidence_id: E022-B-2017-FIG5A
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dfb0/6324189/28cfb42b3535/nihms-1516353-f0008.jpg
+  locator: Original Figure 5A pixels, visually inspected
+  accessed_at: '2026-10-21T08:53:51.067864Z'
+  support: supports
+  summary: Figure 5A characterizes shortened Annimycin B 7, a C15 three-alkene product;
+    it is not the C19 four-alkene parent.
+  snapshot_sha256: 6e4e122d220c0013802d00e2b03399bdbb423ea0e0271a47ecdfcd8fdee6482c
+- evidence_id: E022-B-2017-FIG5B
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dfb0/6324189/06f341ec5268/nihms-1516353-f0009.jpg
+  locator: Original Figure 5B pixels, visually inspected
+  accessed_at: '2026-10-21T08:53:51.068480Z'
+  support: supports
+  summary: The proposed-biosynthesis schematic depicts parent annimycin with extended
+    4E geometry and unassigned C3. It cites the 2013 study. This schematic does not
+    establish absence of 4Z in DSM 41452 or independent parent-isomer analytical identification.
+  snapshot_sha256: 627767bdad2bd026e8cfc807a2ebed42ec87707d1f1c378fb5adf78d87d833fa
+- evidence_id: E022-B-2017-FIG5C
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/dfb0/6324189/89c08c8d1309/nihms-1516353-f0010.jpg
+  locator: Original Figure 5C pixels, visually inspected
+  accessed_at: '2026-10-21T08:53:51.068661Z'
+  support: supports
+  summary: The mutant chromatograms explicitly mark Annimycin B. They do not label
+    an independently resolved parent 4Z peak; therefore this panel alone cannot settle
+    the exact 4Z occurrence citation.
+  snapshot_sha256: fc48c0066265421a2370a01d9d7e1cc3afd705c046f284979a6faa22e06035c7
+- evidence_id: E022-B-TRANSFORM
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load/apply_mibig_locus_evidence_overrides, conf/producer_evidence.tsv and
+    reviewed claim-reference/strain loaders
+  accessed_at: '2026-10-21T08:57:34.201796Z'
+  support: supports
+  summary: Knock-out studies maps to BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED. REPLACE
+    currently does not enforce expected_* context fields; those are checked only for
+    WITHDRAW. The complete-source-row SHA guard exists in the claim-reference and
+    producer-strain loaders. A paired guarded decision can retain explicit ATCC 13382
+    and experimental-genotype context. Claim routing rejects rows already carrying
+    structure_correction_note, so any combined identity correction needs tested composition
+    or separately adjudicated compatible staging.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: E022-B-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-record-reviews-20261021/curation
+  locator: Exact sourceID, identifier and complete key search with rg --no-ignore
+    --hidden
+  accessed_at: '2026-10-21T08:57:34.201796Z'
+  support: context_only
+  summary: No exact record-022 corrective row was returned in the inspected curation
+    directory. Ignored and hidden files were included. This does not assert absence
+    of related cluster decisions or uninspected repository material.
+  search_scope: Complete curation directory, exact BGC0001298:1 / naturalproductmech:mibig-6af5182744
+    / NWXCMIPYEHNXHW-VQOMMXTDSA-N; ignored and hidden files included.
+- evidence_id: E022-B-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/022/primary-si-wiley-access.json
+  locator: This review media receipts plus reused019 and shared-next/root access receipts
+  accessed_at: '2026-10-21T08:57:34.201796Z'
+  support: unknown
+  summary: 2013 original SI and Figures3/5 are directly available, but full original
+    main HTML/PDF was not obtained in the prior bounded routes. 2017 full author-manuscript
+    XML and all Figure 5 panels were read. Its SI failed via PMC browser/download-preparation
+    responses, EuropePMC 403/520 and official Wiley 403; no challenge was solved and
+    no further retry was made.
+  snapshot_sha256: d9ccf2a304e4700f85fa3927875582885dec7d9c975e25af735735f090295877
+  search_scope: Reused 2013 official HTML/PDF/API failure receipts; 2017 PMC full
+    XML/HTML and direct official figure links, PMC linked SI with query variant, EuropePMC
+    media routes, exact publisher-listed SI filename. Free public sources only.
+- evidence_id: R022-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete 28-dataset CLI catalogue /private/tmp/npm-review-work/010/imodulon-datasets.txt,
+    reused with original timestamp
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+  summary: The inspected catalogue contains no S. calvus or S. asterosporus dataset.
+    Its S. coelicolor dataset cannot be substituted for native calvus expression context
+    merely because bldA was a donor gene. This is a bounded applicability result,
+    not negative biological evidence.
+assessments:
+- assessment_id: R022-IDENTITY
+  area: identity
+  topic: Exact 4-Z structure and unspecified alcohol configuration
+  outcome: supported
+  summary: The owner, PubChem and NPAtlas are chemically consistent with each other.
+    Its stereo_complete:false correctly retains the unassigned C3 centre rather than
+    importing the more specific ChEBI assignment. Primary structure evidence is assessed
+    in the scientific-source sections.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - R022-OWNER
+  - R022-CHEM
+  - R022-PUBCHEM
+  - R022-NPATLAS
+- assessment_id: R022-EQUIVALENCE
+  area: identity
+  topic: Cross-reference stereochemical resolution
+  outcome: concern
+  summary: CHEBI:205485 is a C3-S stereospecific form and has a different full Standard
+    InChIKey. Retaining it as exact equivalence contradicts the owner resolution.
+    The matched PubChem and NPAtlas xrefs should remain; withholding ChEBI equivalence
+    does not decide the natural absolute configuration.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - R022-CHEM
+  - R022-CHEBI
+  - R022-CHEBI-MOL
+- assessment_id: R022-GROUNDING
+  area: provenance
+  topic: Minted identifier and current ChEBI eligibility
+  outcome: supported
+  summary: The exact full-key inventory has no eligible three-star grounding; the
+    sole live connectivity match is two-star and stereochemically narrower. Retaining
+    the minted owner identity is appropriate.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - R022-CHEBI-SEARCH
+  - R022-CHEBI
+  - R022-CHEM
+- assessment_id: R022-HISTORY
+  area: provenance
+  topic: Classification, source concept and audit status
+  outcome: supported
+  summary: The model-versioned filing prediction, source classes, BGC0001298 source
+    concept and three seed events are internally coherent. The record remains SEEDED.
+    No optional absent bioactivity or mechanism field is treated as a required finding.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - R022-OWNER
+  - R022-CLASS
+- assessment_id: A022-B-2013-OCCURRENCE
+  area: evidence
+  topic: Exact Z recovery from2013 native cultures
+  outcome: supported
+  summary: The 2013 citation directly supports exact 4Z compound 1 culture recovery
+    and NMR assignment. It is shared with the MIBiG producer/locus claim, not an independent
+    publication for each assertion. The experiment uses complemented and spontaneous
+    sporulating variants; no extraction-artifact classification follows from an observed
+    isomer mixture.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-2013-ABSTRACT
+  - E022-B-2013-FIG3
+  - E022-B-2013-SI-IDENTITY
+  - E022-B-2013-SI-NATIVE
+- assessment_id: A022-B-C3
+  area: identity
+  topic: Primary C3 evidence boundary
+  outcome: supported
+  summary: The inspected 2013 methods establish a stereogenic C3 without an absolute
+    assignment. The owner appropriately records incomplete stereochemistry at this
+    level. No C3-S upgrade follows from the later schematic, congener relationship
+    or a database cross-reference alone; authority mismatches are assessed separately
+    in this review.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-OWNER
+  - E022-B-2013-SI-IDENTITY
+  - E022-B-2013-FIG3
+  - E022-B-2017-FIG5B
+- assessment_id: A022-B-2017-OCCURRENCE
+  area: evidence
+  topic: Exact Z scope of the 2017 LOTUS citation
+  outcome: unknown
+  summary: The independent 2017 paper reports DSM 41452 parent annimycin but does
+    not resolve exact 4Z in inspected body or Figure 5. Its parent schematic uses
+    4E geometry, while analytical panels focus on shortened B7. With SI inaccessible,
+    retain this as unresolved citation support, not a confirmed wrong citation or
+    proof that 4Z is absent.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-RAW
+  - E022-B-2017-BODY
+  - E022-B-2017-FIG5A
+  - E022-B-2017-FIG5B
+  - E022-B-2017-FIG5C
+  - E022-B-ACCESS
+- assessment_id: A022-B-LOCUS
+  area: consistency
+  topic: Versioned source, native strain and accession bridge
+  outcome: supported
+  summary: BGC0001298 v4 compound 1 and KF683117.1 agree with the 2013 ATCC 13382
+    experimental background. Empty source bounds do not establish minimal cluster
+    boundaries. The 2017 homologous DSM 41452 locus is separate strain evidence and
+    cannot silently replace the deposited strain.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-RAW
+  - E022-B-MIBIG
+  - E022-B-GENBANK
+  - E022-B-2013-SI-NATIVE
+  - E022-B-2017-BODY
+- assessment_id: A022-B-GRADING
+  area: evidence
+  topic: Missing native genetic evidence for exact 4Z
+  outcome: concern
+  summary: CLUSTER_UNSTATED faithfully reflects empty imported methods, but exact
+    Z peak 1 loss after ann5 insertion is directly demonstrated. A compound-specific
+    native knockout method and experimental-background qualification are needed together.
+    The result supports locus necessity in a complemented native background, not rescue
+    or a complete heterologous reconstruction.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-RAW
+  - E022-B-2013-FIG5
+  - E022-B-2013-SI-KNOCKOUT
+  - E022-B-GENBANK
+  - E022-B-TRANSFORM
+- assessment_id: A022-B-TAXON
+  area: grounding
+  topic: Species synonymy versus experimental strain identity
+  outcome: supported
+  summary: The species-level occurrence and producer labels correspond to current
+    NCBI 67282 synonymy. This permits species normalization but does not equate ATCC
+    13382 with DSM 41452 or transfer either experimental genotype.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-OWNER
+  - E022-B-TAXON
+  - E022-B-GENBANK
+  - E022-B-2017-BODY
+- assessment_id: A022-B-ACTIVITY
+  area: completeness
+  topic: No transfer of derivative activity
+  outcome: not_applicable
+  summary: The owner asserts no activity or target. The 2017 antimalarial observation
+    is for Annimycin B 7, a different shorter structure, and must not populate this
+    parent 4Z record. Its absence is not a completeness defect.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-OWNER
+  - E022-B-2017-BODY
+  - E022-B-2017-FIG5A
+- assessment_id: A022-B-ACCESS
+  area: evidence
+  topic: Claim-specific inspection completeness
+  outcome: unknown
+  summary: Direct 2013 figures and SI support exact identity and the genetic finding,
+    while full 2013 main text remains unavailable. Full 2017 body and Figure 5 were
+    read, but its SI gap leaves exact Z occurrence unresolved. This supports partial
+    completion of this review.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  evidence_ids:
+  - E022-B-ACCESS
+  - E022-B-2013-FIG3
+  - E022-B-2013-FIG5
+  - E022-B-2013-SI-KNOCKOUT
+  - E022-B-2017-BODY
+findings:
+- finding_id: R022-NONEXACT-CHEBI
+  issue_key: bgc0001298-compound1-chebi205485-stereo-nonexact-xref
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The ChEBI xref silently adds an absolute configuration
+  description: The C3-unspecified 4-Z owner carries CHEBI:205485 as exact equivalence,
+    but the official default ChEBI structure assigns C3 S and has a different full
+    InChIKey. Both PubChem and NPAtlas match the current owner. This is a bounded
+    incorrect chemical xref, not evidence that the owner should be reconfigured or
+    merged.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  field_paths:
+  - xrefs[2]
+  evidence_ids:
+  - R022-OWNER
+  - R022-CHEM
+  - R022-CHEBI
+  - R022-CHEBI-MOL
+  - R022-XREF-LOADER
+  - R022-XREF-SEED
+  rule_id: 'review-yaml-record: equivalence must preserve exact stereochemical resolution'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Exact source-pinned exclusion after supported-prefix extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Extend guarded literal ChEBI exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Canonicalization-aware reintroduction guard and generation
+- finding_id: F022-NATIVE-EVIDENCE
+  issue_key: mibig-bgc0001298-compound1-native-knockout-evidence
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Exact 4-Z-annimycin native knockout evidence is omitted
+  description: The record inherits empty locus methods and CLUSTER_UNSTATED although
+    its cited 2013 primary Figure 5 directly shows loss of exact 4Z compound 1 following
+    ann5 single-crossover disruption. SI Figure S4 validates the insertion by PCR
+    in a bldA-complemented S. calvus ATCC 13382 background. Add the native genetic
+    method and strain/genotype context together; an unqualified producer upgrade would
+    hide the enabling complementation. The species occurrence itself is supported,
+    including spontaneous sporulating variants.
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  field_paths:
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].evidence
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].strain
+  - producer_organisms[0].evidence
+  evidence_ids:
+  - E022-B-RAW
+  - E022-B-2013-FIG5
+  - E022-B-2013-SI-KNOCKOUT
+  - E022-B-2013-SI-NATIVE
+  - E022-B-GENBANK
+  - E022-B-TRANSFORM
+  rule_id: 'review-yaml-record Evidence Rules: exact-product genetic evidence and
+    experimental strain context'
+  native_severity: 'major: demonstrated native locus necessity is represented as unstated'
+  normalization_reason: Method recovery, grading and native-background qualification
+    are one claim-context correction. The separate E-isomer record is not a previous
+    occurrence of this target.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: exact-congener method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: complete raw-row SHA guard and primary claim context
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: guarded native strain and experimental-background qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: preserved source provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generation and override enforcement
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: implemented source-row guard and identity-composition boundary
+actions:
+- action_id: R022-WITHHOLD-CHEBI
+  description: Extend the existing guarded xref exclusion path to support the exact
+    raw literal chebi:205485, including canonicalized reintroduction checks, then
+    add a BGC0001298:1 exclusion pinned to complete raw-row SHA256 7b89eab1d9c8372b5fc5f47c5047dd6bcc80c4871fe8a461686b2a42517a1d8e.
+    Preserve the rejected upstream assertion and rationale in the table-owned discussion.
+    The current PubChem/NPAtlas-only loader cannot consume this decision until extended;
+    do not hand-edit the generated owner or invent C3 stereochemistry.
+  finding_ids:
+  - R022-NONEXACT-CHEBI
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Exact source-pinned exclusion after supported-prefix extension
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Extend guarded literal ChEBI exclusions
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Canonicalization-aware reintroduction guard and generation
+  generator: scripts/seed_from_sources.py after guarded ChEBI xref extension
+  acceptance_checks:
+  - Test exact source-row matching, literal source membership, duplicate decisions,
+    malformed prefixes, stale digest, decision consumption and rejection with concurrent
+    structure replacement.
+  - Normalize the final reintroduction check so chebi:205485 and CHEBI:205485 from
+    another contributing source cannot bypass it; test both spellings.
+  - After a canary reseed, only the nonexact ChEBI xref is withheld and its provenance
+    discussion retained; owner full key, unspecified C3, PubChem139585542 and NPAtlasNPA008749
+    remain unchanged.
+  - Run focused exclusion tests, target strict validation, reproduction and required
+    repository QC; no unsupported replacement ChEBI grounding is added.
+- action_id: ACT022-NATIVE-EVIDENCE
+  description: 'For BGC0001298:1 / naturalproductmech:mibig-6af5182744, add reviewed
+    REPLACE method Knock-out studies based on PMID:24120331 / DOI:10.1016/j.chembiol.2013.09.006
+    Figure 5 and SI Figure S4. Pair it with a curation/mibig_claim_references.tsv
+    decision pinned to complete original source-row SHA256 7b89eab1d9c8372b5fc5f47c5047dd6bcc80c4871fe8a461686b2a42517a1d8e,
+    retaining the primary DOI in producer, locus and source reference fields. REPLACE
+    expected_* fields alone currently do not enforce drift checks. Add an independently
+    SHA-pinned producer strain qualifier ATCC 13382, with rationale naming the native
+    S. calvus att::[bldA,aac(3)IV] background and ann5::aadA perturbation, and include
+    that scope in locus citation rationale. The existing grading map should emit BGC_CHARACTERIZED
+    and CLUSTER_DEMONSTRATED for this qualified experiment. Keep the current unresolved-C3
+    Z graph unless a separate identity adjudication establishes a correction. If a
+    structure correction is combined, implement/test compatible composition or stage
+    separately: the current claim-reference applier rejects structure_correction_note.
+    Retain species 67282, KF683117.1 and absent bounds. Do not substitute DSM 41452,
+    claim rescue or pathway sufficiency, or transfer Annimycin B activity.'
+  finding_ids:
+  - F022-NATIVE-EVIDENCE
+  target_ids:
+  - naturalproductmech:mibig-6af5182744
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: exact-congener method correction
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: complete raw-row SHA guard and primary claim context
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: guarded native strain and experimental-background qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: preserved source provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: generation and override enforcement
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: implemented source-row guard and identity-composition boundary
+  generator: scripts/seed_from_sources.py through reviewed evidence, claim-reference
+    and producer-strain tables; guarded target canary then regeneration
+  acceptance_checks:
+  - The exact Z compound 1, mutant ann5 insertion, complemented ATCC 13382 control,
+    PCR validation and loss of peak 1 are traceable to primary figures and SI.
+  - The regenerated locus emits Knock-out studies and CLUSTER_DEMONSTRATED; BGC_CHARACTERIZED
+    producer evidence explicitly retains the tested native strain and genotype context.
+  - Any change to the original BGC0001298:1 raw row fails the paired full-row SHA
+    guard. A test demonstrates that REPLACE expected_* fields are not being relied
+    upon alone.
+  - If chemical structure changes are also adopted, an explicit composition/staging
+    test covers claim and strain qualification rather than silently bypassing their
+    structure-correction rejection.
+  - No unqualified stock production, invented locus bounds, pure-parent activity or
+    DSM 41452-specific chemistry is introduced. Exact 2017 Z occurrence remains uncertain
+    until direct analytical support is inspected.
+  - Run target seed canary, inspect the full regenerated record, then strict validation,
+    reproduction and required corpus QC.
+limitations:
+- The current ChEBI exact-key API route returned HTTP404; the complete connectivity
+  query, official entry and default MOL were inspected. No eligible exact grounding
+  was found within that bounded authority search.
+- The cross-reference mismatch establishes unequal stereochemical resolution. It does
+  not determine whether the natural compound is S, R or a mixture, or authorize a
+  structure replacement.
+- Full original 2013 main HTML/PDF was not obtained in the earlier bounded free routes.
+  Direct original figures and full relevant SI methods were inspected; no uninspected
+  whole-article absence claim is used.
+- The 2017 full author manuscript and all Figure 5 panels were inspected, but the
+  SI remains unavailable in the checked PMC, EuropePMC and Wiley routes. Exact 4Z
+  occurrence in DSM 41452 is unresolved; the all-E parent schematic is not proof of
+  biological absence of 4Z.
+- The 2013 ann5 experiment is a single-crossover insertion in a bldA-complemented
+  native background, with PCR validation. It is not a clean deletion, rescued ann5
+  experiment, exact enzyme assay or whole-pathway reconstruction.
+- C3 absolute configuration was not assigned by the inspected 2013 structure methods.
+  Current identity-authority comparisons are assessed separately in this review.
+- Taxon synonymy does not equate individual culture strains; KF683117.1 is the ATCC
+  13382 deposit, not a DSM 41452 sequence claim.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+- Baseline reuse concerns the identical committed inputs and original executed checks;
+  it does not claim a fresh network/governance or ontology-cache refresh.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Independent identity QA reproduced the official ChEBI MOL mismatch and verified
+  that the current xref-exclusion loader rejects ChEBI literals; the proposed extension
+  also requires a canonicalized reintroduction guard.
+- Original 2013 source artifacts were reused with actual retrieval timestamps. The
+  2017 full author manuscript and original Figure 5 were inspected separately.
+tags:
+- path-order-campaign
+- batch-003
+- annimycin
+- stereochemical-equivalence
+- native-genetic-evidence
+```

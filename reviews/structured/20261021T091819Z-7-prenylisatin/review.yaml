@@ -1,0 +1,1109 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T091819Z-7-prenylisatin
+title: Review of 7-prenylisatin
+started_at: '2026-10-21T09:02:33.408078Z'
+finished_at: '2026-10-21T09:18:19.629643Z'
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: The exact natural compound, genus occurrence and current identifiers are
+  supported. Native protein–metabolite correlation is omitted from the imported method/grade,
+  and its MBT28-91 experimental context needs qualification. The original contig supports
+  locus association while the historical IsaA start/sequence remains unresolved.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/7-prenylisatin.yaml
+    sha256: b74d8f718f73995732ca1499ff9f64d3571f8a9c5de5560ce1b486ccaebdd14e
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 30, batch 003, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 74 of 3116 current records had campaign coverage and 3042 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+targets:
+- target_id: naturalproductmech:mibig-8c8a57f2e1
+  path: data/natural_products/alkaloids/7-prenylisatin.yaml
+  label: 7-prenylisatin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  command: just validate-strict data/natural_products/alkaloids/7-prenylisatin.yaml
+    --out /private/tmp/npm-review-work/030/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T09:02:36.353996Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+- check_id: S030-C-IDENTITY
+  name: Primary exact-structure verification
+  status: passed
+  required: true
+  summary: The original compound 1 drawing, NMR assignment and formula agree with
+    the full owner graph.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-PRIMARY-IDENTITY
+  - S030-PRIMARY-MAPPING
+  - S030-SI
+- check_id: S030-C-OCCURRENCE
+  name: Cited exact-compound occurrence verification
+  status: passed
+  required: true
+  summary: The cited source identifies and isolates the exact compound in the MBT28
+    lineage.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-LOTUS
+  - S030-PRIMARY-IDENTITY
+  - S030-PRIMARY-MUTANT
+- check_id: S030-C-MUTANT
+  name: Preparative producer derivative qualification
+  status: failed
+  required: true
+  summary: The owner omits the material MBT28-91 derivative context and unknown-genotype
+    qualification.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-OWNER
+  - S030-PRIMARY-MUTANT
+  - S030-SI
+- check_id: S030-C-METHOD
+  name: Primary native correlation versus direct reaction audit
+  status: failed
+  required: true
+  summary: The full primary native proteomic/metabolite correlation and current locus
+    correspondence are supported, but the owner still represents the method as unstated.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-PRIMARY-CORRELATION
+  - S030-SI
+  - S030-GRADING
+  - S030-LOCUS-COMPARISON
+  - S030-CURRENT-CONTIG
+- check_id: S030-C-ACTIVITY
+  name: Pure-compound activity and numerical scope
+  status: passed
+  required: true
+  summary: Approximate pure-compound MIC and assay controls were verified without
+    transferring crude-extract spectra or a direct target.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-PRIMARY-ACTIVITY
+- check_id: S030-C-COMPOSITION
+  name: Pinned method/citation/derivative composition canary
+  status: passed
+  required: false
+  summary: One-record in-memory generation retained the expected correlation grades
+    and derivative provenance; stale source context was rejected.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  command: PYTHONDONTWRITEBYTECODE=1 .venv/bin/python /private/tmp/npm-review-work/030/qa-grade-canary.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - S030-CANARY
+  scope_note: Read-only in-memory canary; no write_records or bundle saver. This does
+    not substitute for native full-repository gates.
+- check_id: R030-C-CHEMISTRY
+  name: Independent exact chemical cross-reference comparison
+  status: passed
+  required: true
+  summary: Owner, NPAtlas and official ChEBI MOL/SMILES match in Standard and fixed-H
+    identities.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-COMPARISON
+  - R030-NPATLAS
+  - R030-MOL
+- check_id: R030-C-LOCUS
+  name: Original DNA, current CDS and locus-boundary verification
+  status: passed
+  required: true
+  summary: Original DNA, MIBiG slice and independently translated current CDSs agree;
+    exact paper IsaA protein equivalence remains outside this passed check.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-COMPARISON
+  - R030-ORIGINAL
+  - R030-REFSEQ
+  - R030-MIBIG-GBK
+- check_id: R030-C-IMODULON
+  name: Direct producer iModulonDB applicability
+  status: not_applicable
+  required: false
+  summary: No exact producer dataset is present in the inspected complete catalogue.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-IMODULON
+evidence:
+- evidence_id: S030-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/7-prenylisatin.yaml
+  locator: Complete owner, resolved local source view, source concept and two SEEDED
+    history events
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: supports
+  summary: The record is exact achiral 7-prenylisatin, with one genus-level LOTUS
+    occurrence, one MIBiG version-5 producer/locus, NPA014784 and no graph, pathway,
+    molecular target, assay, summary, clinical claim or related-record link.
+  snapshot_sha256: b74d8f718f73995732ca1499ff9f64d3571f8a9c5de5560ce1b486ccaebdd14e
+- evidence_id: S030-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete exact BGC0001294:1 source row
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: supports
+  summary: The row carries MBT28 taxon 1488357, NZ_LARV01000172.1:26868..35886, PMID:26438963
+    from entry level and no locus method, yielding SOURCE_ASSERTION/CLUSTER_UNSTATED.
+    Complete raw-row SHA256 cca92690cc0f9756a0059f8be3a8acc202e7f376e93f5997cf7609a512aa29d3.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S030-LOTUS
+  kind: record_content
+  reference: data/raw/lotus_occurrences.tsv
+  locator: Complete exact PNLFSENKVNKKSE-UHFFFAOYSA-N occurrence row
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: supports
+  summary: The occurrence is a source-faithful Streptomyces genus 1883 triple citing
+    DOI:10.1021/ACS.JNATPROD.5B00276. It is not a species-wide production or independent
+    corroboration claim.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: S030-PRIMARY-IDENTITY
+  kind: primary_source
+  reference: https://scholarlypublications.universiteitleiden.nl/download/1887/3192170/1?col=81522199430002711&col=81522199440002711
+  locator: Publisher article preserved by author institution; J. Nat. Prod. 2015,
+    78, 2355–2363, pp2358–2359 Figure 4/Table 1 and p2361 compound data
+  accessed_at: '2026-10-21T08:35:34.941872Z'
+  support: supports
+  summary: DOI:10.1021/acs.jnatprod.5b00276 identifies natural compound 1 as 7-prenylisatin.
+    NMR-guided fractionation of MBT28-91 yields 0.35 mg; C7 prenyl placement is supported
+    by HMBC. Formula C13H13NO2 and [M+H]+ 216.1018, calculated 216.1019, agree with
+    the N–H dicarbonyl graph.
+  snapshot_sha256: 7eadcb47c77db1e951ad6f25dbb321089225e47e692cac7ad6efdd0370df09fb
+- evidence_id: S030-PRIMARY-MUTANT
+  kind: primary_source
+  reference: https://scholarlypublications.universiteitleiden.nl/download/1887/3192170/1?col=81522199430002711&col=81522199440002711
+  locator: Main pp2356–2358 and p2361 strains, selection, metabolomics and isolation
+    methods
+  accessed_at: '2026-10-21T08:35:34.941872Z'
+  support: supports
+  summary: Preparative material is the spontaneous streptomycin-resistant derivative
+    MBT28-91, selected using 10 µg/mL streptomycin. MBT28-91 retains wild-type rpsL
+    and rsmG; its causal mutation is unidentified. MBT28-30 has the distinct rsmG
+    G92A/Gly31Asp mutation. A separate S. lividans 1326 phenotype control is not heterologous
+    expression of the product pathway.
+  snapshot_sha256: 7eadcb47c77db1e951ad6f25dbb321089225e47e692cac7ad6efdd0370df09fb
+- evidence_id: S030-PRIMARY-ACTIVITY
+  kind: primary_source
+  reference: https://scholarlypublications.universiteitleiden.nl/download/1887/3192170/1?col=81522199430002711&col=81522199440002711
+  locator: Main p2359 purified-compound test and p2361 antibiotic-assay methods
+  accessed_at: '2026-10-21T08:35:34.941872Z'
+  support: supports
+  summary: Purified compound 1 has a reported MIC around 25 µg/mL against B. subtilis,
+    with strain 168 identified in methods. The microtiter assay used triplicate determinations,
+    ampicillin and chloroform controls. No activity was observed against the tested
+    S. aureus or E. coli K12. Crude colony/extract inhibition zones and broad MBT28
+    antimicrobial effects are separate experiments.
+  snapshot_sha256: 7eadcb47c77db1e951ad6f25dbb321089225e47e692cac7ad6efdd0370df09fb
+- evidence_id: S030-PRIMARY-CORRELATION
+  kind: primary_source
+  reference: https://scholarlypublications.universiteitleiden.nl/download/1887/3192170/1?col=81522199430002711&col=81522199440002711
+  locator: Main pp2359–2360 Figure 5/Table 3 and p2362 quantitative proteomics methods
+  accessed_at: '2026-10-21T08:35:34.941872Z'
+  support: supports
+  summary: The same native cultures supplied metabolomics and quantitative proteomics.
+    MBT28-91/WT log2 abundance ratios are IsaA 3.0 (significance-B 0.023) and IsaB
+    2.8 (0.031). Authors correlate these type A cluster proteins with exact 7-prenylisatin
+    production. Figure 5 labels their reactions as likely and the oxidation as uncharacterized;
+    no direct necessity, sufficiency or purified reaction is demonstrated in the inspected
+    study.
+  snapshot_sha256: 7eadcb47c77db1e951ad6f25dbb321089225e47e692cac7ad6efdd0370df09fb
+- evidence_id: S030-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/3752287
+  locator: 'Official supplement: Figures S1–S3, Tables S2/S3 and exact Table S4 rows,
+    compound 1 NMR/HMBC/HRESIMS figures'
+  accessed_at: '2026-10-21T08:37:15.528286Z'
+  support: supports
+  summary: SI assigns IsaA 341 aa and IsaB 502 aa, with quantitative rows NODE_180_gene_024
+    and NODE_180_gene_025. The Table S2 accession column gives nearest homologues
+    AHD24368.1 and WP_030978677.1, not native MBT28 proteins. Compound 1 drawings
+    in the HMBC/HRESIMS panels match the C7-prenyl N–H isatin structure.
+  snapshot_sha256: 6392ba88d6b4c66870d20916d85eb94d8445d0a6439b01ce047d88559b5cf7be
+- evidence_id: S030-PRIMARY-MAPPING
+  kind: validation
+  reference: /private/tmp/npm-review-work/030/primary-structure-comparison.json
+  locator: Independent whole-graph comparison of owner and manually transcribed primary
+    compound 1 drawing
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: supports
+  summary: The primary drawing reproduces PNLFSENKVNKKSE-UHFFFAOYSA-N and the same
+    fixed-H InChI as the owner. It is neutral C13H13NO2 with no stereocentre; the
+    prenyl alkene has equivalent methyl substituents and no E/Z distinction. stereo_complete:true
+    is justified.
+  snapshot_sha256: 769a709f0561cb30e0684b838a5f3da2f763755b576d443da6449fc7036f7066
+- evidence_id: S030-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Native two-claim map, corroborated by docs/HARMONIZATION.md and schema
+    descriptions
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: context_only
+  summary: The exact supported method Gene expression correlated with compound production
+    maps native correlation to BGC_CORRELATED and CLUSTER_CORRELATED. It does not
+    imply BGC_CHARACTERIZED, CLUSTER_DEMONSTRATED, a purified enzyme reaction or a
+    specific causal resistance mutation.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S030-STRAIN-LOADER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete source-pinned strain qualification loader and emitted provenance
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: context_only
+  summary: The existing qualifier can preserve the experimentally used derivative
+    and the distinction from deposited parental MBT28 without changing taxon identity
+    or inventing a mutant genotype.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S030-CLAIM-LOADER
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete raw-row SHA guard and citation-rationale emitter
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: context_only
+  summary: Claim-reference decisions pin the complete raw source row and preserve
+    the curator rationale. A paired decision can guard a future method override, while
+    the REPLACE override itself currently lacks those full-row checks. This is a method/provenance
+    correction, not a claim that the existing PMID is wrong.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S030-OVERRIDE-LOADER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: load_mibig_locus_evidence_overrides, apply_mibig_locus_evidence_override
+    and provenance emission
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: context_only
+  summary: REPLACE validates the method vocabulary but does not enforce the expected
+    source context used by WITHDRAW. A method correction therefore needs a paired
+    full-row-pinned claim-reference decision or a guard/provenance loader extension.
+    Generated records must not be edited directly.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S030-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/030/science-search-receipts.json
+  locator: Three target-specific ignored-inclusive repository searches
+  accessed_at: '2026-10-21T09:13:53.649620Z'
+  support: supports
+  summary: No existing exact-target correction or structured review was found in the
+    searched curation and review surfaces. The only compound owner found is 7-prenylisatin;
+    expected raw source/classification/LOTUS and PATHS matches were retained.
+  snapshot_sha256: bcbef9e586d2037df29060ba9a60800f85b165deb600c06f1ac60c682d86f923
+  search_scope: rg -l --no-ignore --hidden for 7-prenylisatin, 8c8a57f2e1, PNLFSENKVNKKSE
+    and BGC0001294 across curation, reviews/structured, data/natural_products, data/causal_graphs
+    and data/raw; ignored and hidden files included.
+- evidence_id: S030-ORIGINAL-CONTIG
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/LARV01000172.1
+  locator: Original 2015 contig_180 submission, source feature and complete sequence
+  accessed_at: '2026-10-21T09:13:10.983658Z'
+  support: supports
+  summary: Original contig_180 is 55,832 bp, names MBT28, taxon 1488357, BioProject
+    PRJNA279348 and BioSample SAMN03444561, and carries the original study authors.
+    The submission lacks CDS annotations, so it does not directly reveal the paper’s
+    IsaA start model.
+  snapshot_sha256: ec0c029811f08e582b902eebbe50d89bc1eb9a4368b34cdb454eb0a933b21fa3
+- evidence_id: S030-CURRENT-CONTIG
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/NZ_LARV01000172.1
+  locator: Current feature table and CONTIG reference to original LARV01000172.1:1..55832
+  accessed_at: '2026-10-21T09:12:31.717755Z'
+  support: supports
+  summary: The owner interval contains the unique annotated adjacent prenyltransferase/tryptophanase
+    pair. Upstream regulator WH38_RS18240 is 986 aa and WP_031020590.1, matching the
+    SI type A regulator context. Current prenyltransferase WH38_RS18245 is 392 aa
+    while the paper gives IsaA 341 aa; that unresolved annotation difference prevents
+    exact experimental protein grounding.
+  snapshot_sha256: 8c6aa144425f6a031d501b2bc841a5c14882422c71fe15dfe3368da91ba0ca87
+- evidence_id: S030-LOCUS-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/030/identity/comparison.json
+  locator: Root sequence comparison independently inspected against the original/current
+    source features and source SI
+  accessed_at: '2026-10-21T09:14:28.831290Z'
+  support: supports
+  summary: The 21,179 bp MIBiG region equals the original contig slice at offset 19,997;
+    current adjacent proteins lie within owner bounds. Combined with primary NODE_180_gene_024/025
+    and the type A neighborhood, this supports the locus-level correlation assignment
+    as a documented inference. It does not establish equality of the historical 341-aa
+    IsaA protein with the current 392-aa sequence.
+  snapshot_sha256: 60609bed26a289f33c8b5b482639d9aa16c091a2dec93ca1ddaa0fd7e852bc16
+- evidence_id: S030-PROTEOMICS-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/030/proteomics-bridge-search.json
+  locator: Official Figshare file listing, complete supplementary table scope, embedded-file
+    check and two focused web queries
+  accessed_at: '2026-10-21T09:14:28.442106Z'
+  support: unknown
+  summary: The inspected official supplement supplies historical NODE_180 protein
+    IDs and quantitative ratios but no exact amino-acid sequence or peptide mapping.
+    The official Figshare listing exposes only the PDF, which has no embedded files.
+    Focused exact-ID/dataset searches found no further mapping source.
+  snapshot_sha256: b9a93ebc1a76e88dfafc94b43ed705d415da69eb31e10db35713247be389f29b
+  search_scope: Existing official Figshare resource_doi metadata and file list; pdfdetach
+    -list on the official PDF; web searches for quoted np5b00276 with dataset and
+    quoted NODE_180_gene_024. Bounded source search, not a global absence claim.
+- evidence_id: S030-CANARY
+  kind: validation
+  reference: /private/tmp/npm-review-work/030/correlation-grade-canary.json
+  locator: One-record build_records in memory with pinned method, citation and derivative
+    overlays; stale-source negative check
+  accessed_at: '2026-10-21T09:16:03.675849Z'
+  support: supports
+  summary: The exact supported method emits BGC_CORRELATED and CLUSTER_CORRELATED,
+    retains MBT28-91 and both provenance notes, and leaves owner chemistry unchanged.
+    Changing the source interval causes the paired claim-reference SHA guard to reject
+    source drift. No generated record or review bundle was saved.
+  snapshot_sha256: 167ca9b859365568ef49ab4da3dce755612432efba3da5d452329c8dadcedec0
+- evidence_id: R030-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/7-prenylisatin.yaml
+  locator: Complete owner and resolved source rows
+  accessed_at: '2026-10-21T09:16:35.637815Z'
+  support: supports
+  summary: The neutral achiral 7-prenylisatin owner has one NPAtlas equivalence, a
+    genus-level LOTUS occurrence, one source producer and locus, and two seed events.
+    No mechanism, molecular target or clinical assertion is present.
+  snapshot_sha256: b74d8f718f73995732ca1499ff9f64d3571f8a9c5de5560ce1b486ccaebdd14e
+- evidence_id: R030-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA014784?include=classifications
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:12:31.716758Z'
+  support: supports
+  summary: NPA014784 retains the exact owner full key, N–H diketone graph, original
+    2015 DOI and MBT28 origin. Current structure version 1 has no recorded reassignment.
+    Its origin metadata is derived from the same primary paper, not an independent
+    isolation.
+  snapshot_sha256: 64e239ea408f30e85aab9244cb232b43105b9b5f24dd415e645caa1d9831f4ed
+- evidence_id: R030-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/213691/
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:13:10.982625Z'
+  support: supports
+  summary: CHEBI:213691 is a released two-star exact match to the owner. Its MBT28
+    origin cites PMID:26438963. Two stars are ineligible for the repository grounding
+    rule; the minted owner remains appropriate.
+  snapshot_sha256: 82563242856f20eb6cbdecc0ae627b673bfafcecd87a586f6c98fe9472143f1a
+- evidence_id: R030-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/213691/
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:13:10.983281Z'
+  support: supports
+  summary: The official default MOL independently preserves C7 regular prenyl substitution,
+    the N–H diketone representation and no assigned or unspecified stereocentre.
+  snapshot_sha256: f16aee89f7514a2758c0b34bc637b04615ca28dde7e8e89c642138db5ef8d42a
+- evidence_id: R030-CHEBI-SEARCH
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=PNLFSENKVNKKSE-UHFFFAOYSA-N&size=100
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:12:31.717277Z'
+  support: supports
+  summary: The complete exact full-key query returns one two-star hit. The complete
+    local eligible structure inventory has no exact full-key row. No eligible three-star
+    grounding was found within these explicit routes.
+  snapshot_sha256: 008d03f5a67977a786b5402dea54a975fb43f0271e2ac5d15d12047a866fb5e6
+  search_scope: Official ChEBI es_search exact term PNLFSENKVNKKSE-UHFFFAOYSA-N, size100,
+    complete one-hit single-page response, plus full parsed committed eligible structure
+    inventory.
+- evidence_id: R030-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001294.5/annotations.json
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:12:31.717458Z'
+  support: supports
+  summary: The complete version-5 entry retains exact 7-prenylisatin, NPA014784, taxon
+    1488357 and NZ_LARV01000172.1:26868..35886. Locus evidence is empty; antibacterial
+    metadata has no attached references. The source-faithful import is distinct from
+    the independently reviewed primary correlation evidence.
+  snapshot_sha256: ddfe0edd129ede798055177322b54dbcad570b7aed4b78926aa81df66ec0ef6e
+- evidence_id: R030-ORIGINAL
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=LARV01000172.1&db=nuccore&report=genbank&retmode=text
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:13:10.983658Z'
+  support: supports
+  summary: The original LARV01000172.1 submission is contig_180, 55,832 bp, strain
+    MBT28, taxon 1488357, BioProject PRJNA279348 and BioSample SAMN03444561. It contains
+    the original DNA and a source feature but no paper NODE_180 gene annotations.
+    It is not a mutant MBT28-91 genome.
+  snapshot_sha256: ec0c029811f08e582b902eebbe50d89bc1eb9a4368b34cdb454eb0a933b21fa3
+- evidence_id: R030-REFSEQ
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=NZ_LARV01000172.1&db=nuccore&report=genbank&retmode=text
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:12:31.717755Z'
+  support: supports
+  summary: 'The current RefSeq contig identifies the same BioSample, original accession
+    and strain. Its sole annotated prenyltransferase/tryptophanase pair lies within
+    the stored interval: WH38_RS18245/WP_046250034.1 at 29998..31176 and WH38_RS18250/WP_019329075.1
+    at 31263..32771. The predicted proteins have 392 and 502 residues. The 392-aa
+    annotation does not by itself equal the paper 341-aa IsaA.'
+  snapshot_sha256: 8c6aa144425f6a031d501b2bc841a5c14882422c71fe15dfe3368da91ba0ca87
+- evidence_id: R030-MIBIG-GBK
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001294.5/BGC0001294.gbk
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:12:31.932111Z'
+  support: supports
+  summary: The downloadable GenBank artifact is a wider 21,179-bp antiSMASH region
+    with original zero-based offset 19997 and end 41176. Its embedded MIBiG subregion
+    maps to the exact stored 26868..35886 interval. The wider artifact does not prove
+    a larger minimal biosynthetic cluster.
+  snapshot_sha256: 9f47d349a20b6147adc5255d8e22d032248c6877670ce1d4acc06bff3b95b3a0
+- evidence_id: R030-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1488357,1883&retmode=xml
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:12:32.059662Z'
+  support: supports
+  summary: Current NCBI taxonomy retains Streptomyces sp. MBT28 at 1488357 and genus
+    Streptomyces at 1883. Their ranks and lineage are compatible with the producer
+    and deliberately coarser occurrence. Neither species label alone identifies the
+    isolated MBT28-91 mutant.
+  snapshot_sha256: 3bfcec49470b4f06a8299f7168c051bec94b9641c57efb0ee43d4a72d36ff193
+- evidence_id: R030-WIKIDATA
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q1144013&props=labels%7Cclaims&languages=en&format=json
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:12:32.251545Z'
+  support: supports
+  summary: Q1144013 is Streptomyces and explicitly maps to NCBI taxon 1883, agreeing
+    with the exact LOTUS organism mapping.
+  snapshot_sha256: 241e869073af86387070f87b8cffdcc9a8b769771021ecbc7c0429af08cc4559
+- evidence_id: R030-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/030/identity/comparison.json
+  locator: Independent fixed-H chemical comparison, original DNA slice equality and
+    bacterial-code CDS translation
+  accessed_at: '2026-10-21T09:14:28.831290Z'
+  support: supports
+  summary: All four chemical representations share the owner full Standard key and
+    fixed-H InChI. The complete MIBiG region exactly equals the original DNA slice.
+    Both current CDSs independently translate to their RefSeq/MIBiG annotations and
+    lie inside the owner bounds. The entire current contig has one annotated prenyltransferase
+    and one tryptophanase, as this adjacent pair. This supports locus mapping without
+    asserting exact paper IsaA protein identity.
+  snapshot_sha256: 60609bed26a289f33c8b5b482639d9aa16c091a2dec93ca1ddaa0fd7e852bc16
+- evidence_id: R030-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Complete exact-key pinned prediction row
+  accessed_at: '2026-10-21T09:16:35.637815Z'
+  support: context_only
+  summary: The owner faithfully preserves the pinned 2026-09-07 NPClassifier Alkaloids/Tryptophan
+    alkaloids/Simple indole alkaloids prediction and non-glycoside flag. This tool
+    output is separate from MIBiG OTHER and from the paper proposed route. The current
+    NPAtlas embedded classifier returns a different class label without replacing
+    this pinned model output.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: R030-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/030/identity/search.txt
+  locator: Complete ignored-inclusive exact-ID, full-key, accession and NPAtlas search
+  accessed_at: '2026-10-21T09:15:17.086529Z'
+  support: supports
+  summary: The search returns the expected owner, PATHS and raw rows. No existing
+    exact-target review or curation decision was found in the searched surfaces, including
+    ignored and hidden files.
+  snapshot_sha256: 72599b68ce2011165349823035f96b4f925b9547d6629d8b8b8470b42c6d0a58
+  search_scope: rg -n --no-ignore --hidden -F -e mibig-8c8a57f2e1 -e BGC0001294 -e
+    PNLFSENKVNKKSE-UHFFFAOYSA-N -e NPA014784 curation reviews/structured data/raw
+    data/natural_products src scripts conf
+- evidence_id: R030-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete 28-dataset structured catalogue retained at actual retrieval time
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: No MBT28 dataset is present. Coelicolor and albidoflavus datasets are not
+    proxies for this strain or its mutant. No expression-module result is inferred.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+assessments:
+- assessment_id: S030-IDENTITY
+  area: identity
+  topic: Exact primary compound and stereochemical completeness
+  outcome: supported
+  summary: The owner is the exact naturally isolated compound 1, with regular C7 prenyl
+    substitution, N–H and two isatin carbonyls. It is not the 5- or 6-prenyl regioisomer,
+    an N-prenyl derivative or a salt. Independent source transcription and formula/HRMS
+    support the complete owner graph.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-OWNER
+  - S030-PRIMARY-IDENTITY
+  - S030-SI
+  - S030-PRIMARY-MAPPING
+- assessment_id: S030-OCCURRENCE
+  area: evidence
+  topic: Cited genus occurrence and natural origin
+  outcome: supported
+  summary: The actual cited DOI reports exact natural 7-prenylisatin from the MBT28
+    lineage, specifically preparative mutant MBT28-91. A genus-level LOTUS database
+    assertion is coarse but source-faithful and compatible with this observation;
+    it is not evidence that all Streptomyces strains make the compound. The producer’s
+    derivative context needs separate qualification.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-LOTUS
+  - S030-PRIMARY-IDENTITY
+  - S030-PRIMARY-MUTANT
+- assessment_id: S030-MUTANT
+  area: provenance
+  topic: Experimental derivative versus parental source strain
+  outcome: concern
+  summary: The producer label identifies parental MBT28, while the exact purified
+    material and strongly induced phenotype are from MBT28-91. The record should retain
+    the derivative context, selection condition and unknown causal mutation. Neither
+    rsmG G92A nor an rpsL mutation can be assigned to MBT28-91.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-OWNER
+  - S030-PRIMARY-MUTANT
+  - S030-SI
+- assessment_id: S030-CORRELATION
+  area: evidence
+  topic: Native candidate-locus evidence and experimental grade
+  outcome: concern
+  summary: The native type A IsaA/IsaB abundance–product association maps to the current
+    locus through original contig_180, the exact MIBiG sequence slice and the unique
+    adjacent type A pair inside the owner interval. These support BGC_CORRELATED and
+    CLUSTER_CORRELATED under the native map. The existing no-method representation
+    omits this measured evidence. Protein-level IsaA sequence/start identity remains
+    unresolved (paper 341 aa versus current 392 aa); no direct enzyme reaction or
+    native knockout is established.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-RAW
+  - S030-PRIMARY-CORRELATION
+  - S030-SI
+  - S030-GRADING
+  - S030-ORIGINAL-CONTIG
+  - S030-CURRENT-CONTIG
+  - S030-LOCUS-COMPARISON
+- assessment_id: S030-ACTIVITY
+  area: evidence
+  topic: Exact purified-compound endpoint versus extract activity
+  outcome: supported
+  summary: The pure compound has approximate MIC 25 µg/mL against B. subtilis 168,
+    supported by the article’s own microtiter result and method context. The broad
+    ESKAPE and colony-zone effects concern strain extracts, not the isolated compound.
+    The negative S. aureus/E. coli tests are bounded to the reported conditions. No
+    direct mode of action, full activity spectrum or clinical claim is established.
+    The owner makes no optional assay claim to correct.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-OWNER
+  - S030-PRIMARY-ACTIVITY
+- assessment_id: S030-PATHWAY
+  area: evidence
+  topic: Candidate IsaA/IsaB reactions and protein accessions
+  outcome: supported
+  summary: Figure 5 presents a proposed pathway; Table 3 supplies protein correlation,
+    not enzyme activity. SI homologous accession columns cannot ground native IsaA/IsaB
+    proteins. No type B proteins detected under the assay conditions does not prove
+    the genes are absent. The owner makes no pathway or causal-edge claim, so absent
+    optional graph/enzyme nodes are not findings.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-OWNER
+  - S030-PRIMARY-CORRELATION
+  - S030-SI
+- assessment_id: S030-HISTORY
+  area: provenance
+  topic: Computed classification and scientific status
+  outcome: supported
+  summary: The tool-qualified Alkaloids/Tryptophan alkaloids/Simple indole alkaloids
+    row remains separate from the source OTHER BGC class and primary candidate biosynthetic
+    route. The two SEEDED events are consistent with the generated record. No REVIEWED
+    promotion is made by this audit.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - S030-OWNER
+  - S030-RAW
+- assessment_id: R030-IDENTITY
+  area: identity
+  topic: Exact C7 prenylisatin and current equivalence
+  outcome: supported
+  summary: The owner, NPA014784 and official ChEBI graph share both Standard and fixed-H
+    identities. Formula C13H13NO2, neutral charge and achirality agree. The prenyl
+    alkene has equivalent methyl substituents at one end, so no E/Z assignment is
+    omitted.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-OWNER
+  - R030-NPATLAS
+  - R030-MOL
+  - R030-COMPARISON
+- assessment_id: R030-GROUNDING
+  area: provenance
+  topic: Minted identifier and eligible ChEBI search
+  outcome: supported
+  summary: The sole live exact-key ChEBI result is two-star, and the committed eligible
+    inventory has no exact-key row. Retaining the minted identifier is appropriate.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-CHEBI
+  - R030-CHEBI-SEARCH
+- assessment_id: R030-LOCUS
+  area: provenance
+  topic: Deposited original contig and current locus coordinates
+  outcome: supported
+  summary: The original contig, MIBiG region and current annotations align exactly
+    at the DNA and current-CDS levels. The unique adjacent pair inside the stored
+    interval supports bridging the paper contig_180 type A locus. Its experimental
+    NODE_180_gene_024/025 identifiers and quantitative primary evidence remain necessary
+    for the correlation claim. Exact identity of current 392-aa prenyltransferase
+    to the paper 341-aa IsaA is unresolved and is not asserted.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-ORIGINAL
+  - R030-REFSEQ
+  - R030-MIBIG-GBK
+  - R030-COMPARISON
+- assessment_id: R030-TAXON
+  area: identity
+  topic: Producer and occurrence taxon resolution
+  outcome: supported
+  summary: The specific MBT28 source taxon and genus-level LOTUS mapping are consistent
+    with current authorities. Primary strain and mutant conditions are assessed separately;
+    genus occurrence is not upgraded to strain-level biosynthesis.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-TAXON
+  - R030-WIKIDATA
+  - R030-OWNER
+- assessment_id: R030-CLASSIFICATION
+  area: evidence
+  topic: Tool-qualified classification and audit history
+  outcome: supported
+  summary: The pinned model output, separate source OTHER class, source concept and
+    two seed events are preserved. Current external classifier differences are not
+    evidence that the recorded model output was miscopied. The review itself does
+    not promote native status.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-CLASS
+  - R030-OWNER
+  - R030-MIBIG
+- assessment_id: R030-IMODULON
+  area: evidence
+  topic: Direct expression dataset applicability
+  outcome: not_applicable
+  summary: The inspected complete structured catalogue has no MBT28 dataset. Other
+    Streptomyces species cannot establish its expression or native metabolite production.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  evidence_ids:
+  - R030-IMODULON
+findings:
+- finding_id: S030-CORRELATION-SCOPE
+  issue_key: bgc0001294-native-proteomic-correlation-scope
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Represent the native proteomic correlation with its MBT28-91 experimental
+    context
+  description: The record says the locus method is unstated and leaves the producer
+    as a generic MBT28 assertion. The cited full study instead measures native IsaA/IsaB
+    protein abundance alongside exact 7-prenylisatin production, with preparative
+    compound 1 from spontaneous resistant derivative MBT28-91. Original contig_180
+    and the unique current type A neighborhood support the locus association. This
+    warrants the correlation tiers, with the derivative and unknown causal mutation
+    retained; it does not warrant direct-reaction or native-knockout grades. The historical/current
+    IsaA length difference remains explicit.
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  field_paths:
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].notes
+  - producer_organisms[0].strain
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - S030-OWNER
+  - S030-RAW
+  - S030-PRIMARY-CORRELATION
+  - S030-PRIMARY-MUTANT
+  - S030-SI
+  - S030-GRADING
+  - S030-ORIGINAL-CONTIG
+  - S030-CURRENT-CONTIG
+  - S030-LOCUS-COMPARISON
+  - S030-CLAIM-LOADER
+  - S030-OVERRIDE-LOADER
+  - S030-CANARY
+  rule_id: 'review-checklist: retain actual claim-specific native methods and strain
+    scope; conf/producer_evidence.tsv correlation tiers'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Reviewed native correlation method for the exact compound/locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Consumed complete raw-row SHA guard and experimental qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: MBT28-91 derivative context
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Regenerate coordinated method, citation and strain claims
+actions:
+- action_id: S030-QUALIFY-CORRELATION
+  description: For exact BGC0001294:1, set the supported method literal Gene expression
+    correlated with compound production through a REPLACE method override and pair
+    it with a consumed claim-reference decision pinned to complete raw-row SHA256
+    cca92690cc0f9756a0059f8be3a8acc202e7f376e93f5997cf7609a512aa29d3. Keep PMID:26438963
+    for both producer and locus and cite DOI:10.1021/acs.jnatprod.5b00276 for the
+    curator rationale. Add the same-pinned producer qualifier for MBT28-91, a streptomycin-resistant
+    derivative of MBT28. Retain original contig/type A correspondence, unknown resistance
+    mutation, wild-type rpsL/rsmG and the unresolved 341-versus-392 aa IsaA annotation.
+    The current REPLACE loader does not enforce expected_* pins alone; a full-row
+    guard/provenance loader extension is an alternative to the paired decision.
+  finding_ids:
+  - S030-CORRELATION-SCOPE
+  target_ids:
+  - naturalproductmech:mibig-8c8a57f2e1
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: Reviewed native correlation method for the exact compound/locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Consumed complete raw-row SHA guard and experimental qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: MBT28-91 derivative context
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Regenerate coordinated method, citation and strain claims
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The consumed claim-reference decision pins exactly BGC0001294:1; source changes
+    to the row, including taxon, locus bounds, structure or citation, fail before
+    grade correction. REPLACE expected_* fields alone do not satisfy this check.
+  - Canary generation emits BGC_CORRELATED and CLUSTER_CORRELATED with the native
+    protein/metabolite correlation rationale and MBT28-91 qualifier; preserve parental
+    MBT28 taxon and deposited locus provenance.
+  - No BGC_CHARACTERIZED, CLUSTER_DEMONSTRATED, enzymatic assay, knockout, heterologous
+    expression, causal resistance mutation or exact current-IsaA protein example is
+    introduced. Preserve the 341/392-aa discrepancy explicitly.
+  - Exercise the method override, pinned claim-reference and strain qualification
+    together, including stale-row and duplicate-decision negatives. Preserve owner
+    full structure, raw source row and current xref.
+  - Run focused composition tests, target strict validation, reproduction and required
+    repository QC; do not edit generated records directly.
+limitations:
+- Full scientific main text through the experimental proteomics section and the relevant
+  official SI were inspected. The bibliography, all unrelated Table S4 rows and a
+  separate raw quantitative Supplementary Dataset 1 were not independently audited;
+  published table values were not recomputed from raw spectra.
+- The paper’s MIC protocol references an earlier method; this review confirms the
+  reported approximate value, microtiter method, triplicates and controls but does
+  not invent unreported dilution/exposure details.
+- The primary study supplies correlation, not a demonstrated reaction series. Original
+  contig and current neighborhood support locus-level mapping, while exact historical
+  IsaA start/protein identity remains unresolved (341 aa in the paper, 392 aa in current
+  annotation). The official SI file listing/embedded-file check and focused searches
+  did not supply a peptide-level bridge; no exact native protein example is asserted.
+- The current prenyltransferase annotation has 392 residues while primary IsaA is
+  reported as 341. The original submission contains no NODE_180 CDS features or proteomics
+  peptides, so exact experimental protein/start-site equivalence is not established.
+  Locus association is a separate, explicitly bounded inference from the original
+  contig and unique adjacent pair. Matching the 502-residue IsaB length likewise does
+  not establish experimental peptide identity.
+- No raw proteomics reanalysis, NMR reprocessing or biochemical reconstitution was
+  performed. Database origin metadata does not add a second primary isolation.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+- Baseline reuse concerns the identical committed inputs and original executed checks;
+  it does not claim a fresh network/governance or ontology-cache refresh.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-003
+- native-correlation
+- mutant-provenance
+- protein-annotation-boundary

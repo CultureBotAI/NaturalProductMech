@@ -1,0 +1,1160 @@
+# Review of 5aTHQ-10a
+
+- Review: 20261021T091055Z-5athq-10a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T09:00:09.917232Z
+- Finished UTC: 2026-10-21T09:10:55.172150Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The exact primary congener and natural isolation are supported. The current NPAtlas xref leaves the owner S centre unspecified and is nonexact. The producer assertion omits HEK616 and its material combined-culture condition. The 2019 main body and SI remain unavailable for exact genetic-method grading.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 26, batch 003, selected in path order from the fresh-main authoritative validated catalogue and the separately validated pending-PR targets. At selection, 74 of 3116 current records had campaign coverage and 3042 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-d9c1c1658a | data/natural_products/alkaloids/5athq-10a.yaml | generated | 5aTHQ-10a |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-d9c1c1658a | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-d9c1c1658a | All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-d9c1c1658a | All 3,116 records are byte-identical to the seeder output from committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-d9c1c1658a | The documented exhaustive queue command produced 8,928 diagnostic rows in 12 queues; deterministic queue output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-d9c1c1658a | Full configured gate passed using existing CHEBI and GO caches plus the committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate after environment repair | passed | True | naturalproductmech:mibig-d9c1c1658a | The full documented just qc recipe passed after installing the pinned linter, allowing the read-only governance fetch, and restoring the required provenance tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116 records and zero errors. Documentation, provenance, source queue, governed artifacts, generated pages, reproduction, filing integrity and corpus reporting all passed. |
+| Primary exact-structure and stereochemistry comparison | passed | True | naturalproductmech:mibig-d9c1c1658a | Exact primary compound 6 mapping agrees with the complete owner structure. |
+| Primary origin and cultivation-context audit | failed | True | naturalproductmech:mibig-d9c1c1658a | Natural isolation is supported, but the producer assertion omits its material HEK616/combined-culture qualification. |
+| Full exact-congener biosynthetic experiment verification | unavailable | True | naturalproductmech:mibig-d9c1c1658a | 2019 main body and official SI remain unavailable after recorded bounded access; abstract alone is insufficient for method/grade assignment. |
+| Pure-compound versus extract and congener scope | passed | True | naturalproductmech:mibig-d9c1c1658a | Exact 10a curve was inspected; no MIC, direct molecular target or antibacterial spectrum was transferred from another compound. |
+| Independent chemical equivalence audit | failed | True | naturalproductmech:mibig-d9c1c1658a | The owner and official ChEBI graph share the complete S-configured key YLCWZFUMYQIMQJ-INIZCTEOSA-N. NPAtlas has the same connectivity but YLCWZFUMYQIMQJ-UHFFFAOYSA-N and an unspecified stereocentre. |
+| Current authority mapping | passed | True | naturalproductmech:mibig-d9c1c1658a | Current NCBI and Wikidata identifiers agree with the source organism. |
+| Direct iModulonDB dataset applicability | not_applicable | False | naturalproductmech:mibig-d9c1c1658a | The complete structured catalogue has no exact producer dataset; no proxy expression assay was used. |
+
+## Scientific And Domain Assessments
+
+### Exact natural 10a and published absolute stereochemistry
+
+identity: supported. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+Compound 6 is the exact N–H 5-[(7S)-7-methylnonyl] tetrahydroquinoline encoded by the owner. The natural material was isolated separately from synthetic reference material. Natural/synthetic rotations and the −20°C derivative comparison support 7′S; Figure S4 is the separate room-temperature experiment. The current NPAtlas equivalence is assessed in the identifier packet.
+
+### Natural isolation and producer attribution
+
+provenance: supported. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+Exact 10a was purified from HEK616/TP-B0596 co-culture. Authors attribute production to S. nigrescens after comparison with another co-culture partner. The cited Figure S3 traces exact 9i, so it is not independent 10a-specific confirmation of the C. glutamicum substitution. No pure-culture or native knockout proof for 10a is inferred from the 2015 source.
+
+### Experimentally relevant producer condition
+
+provenance: concern. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+The existing species-level producer omits HEK616 and the combined-culture isolation condition. This loses the experimentally material boundary that the 2015 source found no 1–8 in either tested pure culture. It does not make TP-B0596 a demonstrated co-producer.
+
+### Exact 2019 genetic attribution and conservative imported grade
+
+evidence: unknown. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+Current source metadata supports the active accession and its imported empty locus-method state. The 2019 abstract indicates substantial family-level genetic work, but the unavailable main body/SI prevents assigning those assays to exact 10a or selecting a native versus heterologous grade. Retain SOURCE_ASSERTION and CLUSTER_UNSTATED pending those experiments.
+
+### Exact pure-compound activity without sibling MIC transfer
+
+evidence: supported. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+Pure 10a has weak partial inhibition of wild-type fission yeast in the reported 24 h, three-experiment curves, with erg mutants largely tolerant. The 6.3 µM MIC belongs to 7n, and 0.25 µM to amphotericin B; neither belongs to 10a. Differential mutant response supports a membrane hypothesis, not direct lipid or protein binding. The owner makes no activity claim and absence of an optional assay is not a finding.
+
+### Optional mechanism fields and audit status
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+The complete owner contains no named gene, enzyme, graph, target or claimed clinical use to validate or enrich. Its source-versioned classification and two SEEDED events are present. This review does not manufacture a mechanism or promote native curation status. Current identifiers, taxon and classification are reconciled in the companion identifier packet.
+
+### Exact owner graph and stereochemical resolution
+
+identity: supported. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+The owner representations are mutually consistent and agree with the official ChEBI graph. Its one S centre is independently supported by the primary paper in the scientific packet.
+
+### Current exact NPAtlas equivalence
+
+identity: concern. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+The owner and official ChEBI graph share the complete S-configured key YLCWZFUMYQIMQJ-INIZCTEOSA-N. NPAtlas has the same connectivity but YLCWZFUMYQIMQJ-UHFFFAOYSA-N and an unspecified stereocentre.
+
+### Content-hashed identity and ChEBI eligibility
+
+provenance: supported. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+The exact live ChEBI match is two-star and the complete committed eligible inventory has no exact full-key row. The minted identifier remains appropriate; current two-star availability is not a grounding defect.
+
+### Producer and occurrence taxon mapping
+
+provenance: supported. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+Taxon 1920 and Wikidata Q26291447 identify S. nigrescens. Strain and combined-culture qualifications are assessed separately against the primary evidence. No database metadata is promoted to a second independent publication.
+
+### Predicted scaffold class versus experimental biosynthetic origin
+
+evidence: supported. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+The model-versioned ALKALOIDS filing is reproducible and compatible with the nitrogen heterocycle. Its precursor-named superclass predictions remain tool outputs. PKS is the separate source class, and the unavailable full 2019 experiments limit detailed reaction assignments.
+
+### Applicability of expression context
+
+evidence: not_applicable. Targets: naturalproductmech:mibig-d9c1c1658a.
+
+No exact producer dataset is available in the inspected structured catalogue. Other Streptomyces species or a co-culture partner are not substitutes for a direct S. nigrescens dataset.
+
+## Findings
+
+### S026-CULTURE-CONTEXT: Preserve the combined-culture origin of the HEK616 producer claim
+
+minor / open / confirmed; issue key: bgc0001917-hek616-combined-culture-provenance.
+
+The producer assertion names S. nigrescens without the strain or cultivation boundary. The exact natural compound was isolated from HEK616 combined with T. pulmonis TP-B0596, and the original paper reports non-detection in the tested pure cultures. This is a non-blocking loss of relevant experimental provenance, not evidence that the species identity or source evidence grades are wrong.
+
+### R026-NONEXACT-NPATLAS: The NPAtlas xref does not preserve the assigned S stereocentre
+
+major / open / confirmed; issue key: bgc0001917-compound3-npa017164-stereo-nonexact-xref.
+
+The owner has one defined S centre and full key YLCWZFUMYQIMQJ-INIZCTEOSA-N. NPA017164 has the same connectivity with that centre unspecified and key YLCWZFUMYQIMQJ-UHFFFAOYSA-N. It is therefore not exact chemical equivalence. The primary 2015 evidence and official ChEBI MOL support the current owner, so this finding does not call for removal of its stereochemistry or for a claim that NPAtlas represents a racemate.
+
+## Recommended Actions And Acceptance Checks
+
+### S026-QUALIFY-PRODUCER
+
+Add an exact BGC0001917:3 row to the implemented producer strain table, pinned to raw-row SHA256 6535681d761f99944a1ff075816597433516c713594d57e6b79f563235a8ffb7, with strain HEK616 and DOI:10.1021/acs.orglett.5b00607. Its rationale should identify exact compound 6 isolation from HEK616/TP-B0596 combined culture, limit pure-culture non-detection to the tested conditions, and attribute the producer assignment to the authors. Do not assert TP-B0596 as a second biosynthetic producer or change the taxon/grades.
+
+- The qualification loader accepts exactly the source-pinned row and rejects a changed digest, duplicate or missing source row.
+- Canary generation emits HEK616 and the complete combined-culture rationale with the 2015 citation; taxon 1920, LC349994.1, source version 4, SOURCE_ASSERTION and CLUSTER_UNSTATED remain unchanged.
+- Keep the owner 7′S graph and coordinate with the independently proposed nonexact NPAtlas exclusion; exercise both overlays together so one does not remove the other’s provenance.
+- Run focused producer-qualification tests, target strict validation, reproduction and required repository QC; do not patch generated YAML.
+
+### R026-WITHHOLD-NPATLAS
+
+Use the existing xref-exclusion table for BGC0001917:3, exact literal npatlas:NPA017164, pinned to complete raw-row SHA256 6535681d761f99944a1ff075816597433516c713594d57e6b79f563235a8ffb7. Cite the current NPAtlas entry and explain the unspecified-versus-S difference; retain the source assertion in the generated discussion. Preserve the owner S graph and minted identifier, and compose this decision with the separate HEK616 combined-culture qualification.
+
+- The loader consumes exactly one raw source row and rejects stale hashes, duplicate decisions and a literal xref not present in that row.
+- Canary generation with both the xref exclusion and producer-strain qualification withholds only npatlas:NPA017164 while retaining the source discussion, S-configured owner, HEK616 provenance and current conservative grades.
+- No two-star ChEBI grounding or racemate inference is introduced; the raw inventory remains unchanged.
+- Run focused exclusion/composition checks, target strict validation, reproduction and required repository QC; do not hand-edit generated YAML.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| S026-OWNER | data/natural_products/alkaloids/5athq-10a.yaml; Entire owner and resolved local source view | supports | The exact S-configured 5aTHQ-10a owner carries one MIBiG producer/locus assertion, an NPAtlas xref and two SEEDED history events. It has no separate occurrence, assay, molecular target, pathway, causal graph, related-record link or clinical assertion. |
+| S026-RAW | data/raw/mibig_compounds.tsv; Complete BGC0001917:3 row and local extraction | supports | The imported exact structure, species taxon 1920, source version 4, LC349994.1, DOI:10.1039/c8ob02846j and empty locus-method list are faithful to this row. Complete raw-row SHA256 6535681d761f99944a1ff075816597433516c713594d57e6b79f563235a8ffb7. |
+| S026-PRIMARY2015 | https://www.lookchem.com/FreePDFArticle_128740-70-5_65987467.htm; Verified original article transcription, Org. Lett. 2015, 17, 1918–1921; pp1918–1920, Figures 1/3/4 and Schemes 1/2 | supports | DOI:10.1021/acs.orglett.5b00607 names exact 10a as compound 6 and assigns side-chain 7′S using synthetic references and chiral derivative comparison. The authors attribute production to HEK616 under co-culture conditions; pure-culture non-detection is bounded to their experiment. |
+| S026-SI2015 | https://ndownloader.figshare.com/files/3809767; Official DOI:10.1021/acs.orglett.5b00607.s001; S2–S3 isolation, S5 compound 6, S6–S10 synthesis/derivatives, S12 NMR table, S16–S17 figures | supports | The 800 mL HEK616/TP-B0596 combined culture yielded 9.0 mg of 10a. Compound 6 is C19H31N with reported [M+H]+ 274.2539 (calculated 274.2529). Its N–H THQ ring and ten-carbon anteiso chain are distinct from 10i and 10n. Figure S5 shows weak partial yeast growth inhibition, with no MIC for 10a. |
+| S026-PRIMARY-MAPPING | /private/tmp/npm-review-work/026/primary-structure-comparison.json; Independent RDKit comparison of full owner and manually transcribed exact SI compound 6 drawing | supports | The primary drawing and published 7′S assignment reproduce the owner full key YLCWZFUMYQIMQJ-INIZCTEOSA-N and identical fixed-H InChI. There is one S centre. This source transcription is a reviewer computation, not an identifier printed in the paper. |
+| S026-ABSTRACT2019 | https://pubmed.ncbi.nlm.nih.gov/30629078/; Complete primary abstract and DOI metadata only; no main body or SI | partial | DOI:10.1039/c8ob02846j again names HEK616/TP-B0596 combined culture and describes acetate feeding, nine cluster genes, heterologous expression and gene inactivation at family level. Exact congener chromatograms, hosts, constructs, individual deletion outcomes and analytical criteria remain uninspected. |
+| S026-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0001917.4/annotations.json; Complete current version 4 entry; exact compound 3 and locus evidence arrays | supports | The active entry names 10a with the owner stereostructure and compound NMR/MS evidence from 2019. Its locus has empty evidence and sentinel 0..0 bounds. The source-faithful CLUSTER_UNSTATED grade is not disproved by this metadata, and the sentinel is correctly not emitted as a meaningful interval. |
+| S026-GENBANK | https://www.ncbi.nlm.nih.gov/nuccore/LC349994.1; Definition, source feature, taxon 1920 and deposited cluster annotation | supports | The 17,000 bp deposit explicitly identifies Streptomyces nigrescens HEK616, soil, Japan, with taxon 1920. It anchors strain identity and source accession. Deposited stm gene annotations do not establish an individual 10a reaction or replace experimental evidence. |
+| S026-STRAIN-LOADER | src/naturalproductmech/curate/producer_strains.py; Complete source-pinned qualification loader and emitted evidence rationale | context_only | The implemented producer strain table accepts an exact source-row digest and appends the full rationale to producer evidence while preserving taxon and grades. A HEK616 qualifier can therefore preserve the combined-culture condition and authors’ bounded attribution without a new schema or direct generated edit. |
+| S026-SEARCH | /private/tmp/npm-review-work/026/science-search-receipts.json; Three ignored-inclusive scoped repository searches | supports | No existing BGC0001917 qualification or structured review was found in the searched curation and review surfaces. The corpus/source searches identify the owner and same-locus congeners, which were not used as separate targets in this packet. |
+| S026-ACCESS2019 | /private/tmp/npm-review-work/shared-next/5athq2019/access.json; Bounded original primary-body/SI access attempts retained from preparation | unknown | The original publisher body/PDF/author-version routes returned 403; the official SI route returned 404 and alternate publisher SI 403. Crossref/OpenAlex/PubMed supplied metadata or abstract. These are access failures, not evidence against the reported experiments. |
+| R026-OWNER | data/natural_products/alkaloids/5athq-10a.yaml; Complete generated owner, resolved source views and audit history | supports | The exact 5aTHQ-10a owner has one species-level MIBiG producer and locus, one NPAtlas xref, and no occurrence assertion. There are no inline or referenced mechanisms, molecular targets or clinical claims. |
+| R026-COMPARISON | /private/tmp/npm-review-work/026/identity-comparison.json; Independent RDKit parsing of owner and NPAtlas SMILES plus official ChEBI SMILES and default MOL | supports | The owner and official ChEBI graph share the complete S-configured key YLCWZFUMYQIMQJ-INIZCTEOSA-N. NPAtlas has the same connectivity but YLCWZFUMYQIMQJ-UHFFFAOYSA-N and an unspecified stereocentre. |
+| R026-NPATLAS | https://www.npatlas.org/api/v1/compound/NPA017164?include=classifications; Complete current response independently inspected | supports | NPA017164 retains the 2015 original DOI:10.1021/acs.orglett.5b00607, S. nigrescens HEK616 origin and structure version 1. Its structure is stereo-unspecified despite the stereospecific owner. This is database metadata, not a new independent isolation experiment. |
+| R026-CHEBI | https://www.ebi.ac.uk/chebi/backend/api/public/compound/225868/; Complete current response independently inspected | supports | CHEBI:225868 is a two-star entry whose complete graph matches the owner. Its genus-level Streptomyces origin cites PMID:25826296. It is not eligible for the repository three-star grounding rule. |
+| R026-MOL | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/225868/; Complete current response independently inspected | supports | The complete official default MOL independently reconstructs the owner graph and exact stereochemical resolution. |
+| R026-CHEBI-QUERY | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=YLCWZFUMYQIMQJ-INIZCTEOSA-N&amp;size=100; Complete current response independently inspected | supports | The complete exact full-key query returns one hit, CHEBI:225868, with two stars. The committed eligible structure inventory also has no full-key row. No eligible three-star grounding was found within these explicit routes. |
+| R026-TAXON | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=1920&amp;retmode=xml; Complete current response independently inspected | supports | The current NCBI response confirms taxon 1920 as species Streptomyces nigrescens. The deposited accession and source producer use that taxon; the co-culture partner is a separate organism. |
+| R026-WIKIDATA | https://www.wikidata.org/w/api.php?action=wbgetentities&amp;ids=Q26291447&amp;props=labels%7Cclaims&amp;languages=en&amp;format=json; Complete current response independently inspected | supports | Q26291447 has label Streptomyces nigrescens and NCBI taxon claim 1920. This contextual check does not add an absent LOTUS occurrence. |
+| R026-CLASS | data/raw/npclassifier.tsv; Complete exact full-key prediction row and emitted classification | context_only | The pinned model predicts Alkaloids, Tryptophan alkaloids, Anthranilic acid alkaloids and Quinoline alkaloids; the generated owner faithfully preserves these tool-qualified predictions. The separate MIBiG PKS class and primary polyketide proposal are not evidence for tryptophan or anthranilate incorporation. |
+| R026-SEARCH | /private/tmp/npm-review-work/026/identity-search.txt; Complete matching output from exact owner ID, full key, xref and label search | supports | The matches identify the owner and expected raw/classification/PATHS surfaces. No exact correction or earlier structured review was found within the searched surfaces, including ignored and hidden files. |
+| R026-IMODULON | https://imodulondb.org/; Complete 28-dataset structured catalogue previously retrieved at the stated time | context_only | The catalogue has no S. nigrescens dataset. Its C. glutamicum dataset is not a direct dataset for the producer merely because that species was an alternative co-culture partner. No expression result or absent-gene conclusion is inferred. |
+| R026-XREF-LOADER | src/naturalproductmech/curate/xref_exclusions.py; Complete guarded loader and provenance discussion builder | context_only | The implemented loader supports the literal npatlas:NPA017164, pins the entire raw source row, requires unique attributed decisions and preserves the rejected source assertion in a generated discussion. |
+
+## Limits And Additional Notes
+
+- The original 2019 main body and official SI remain unavailable; exact native versus heterologous gene experiments and congener-specific isotope/analytical assignments remain unresolved.
+- The 2015 article is an inspected original-article transcription and reproduced figures on a mirror, verified against DOI/title/pages; its official ACS SI is fully available. No primary article PDF was obtained.
+- No raw NMR reprocessing, optical-rotation remeasurement or assay-curve fitting was performed. Figure S3 directly traces 9i, not 10a.
+- Current NPAtlas equivalence, live ChEBI eligibility and broader identifier audits are in the companion root packet; no positive exact-equivalence conclusion is implied here for NPA017164.
+- The current authority comparison is bounded to the exact-key query, returned ChEBI entry/default MOL and current NPAtlas entry. Database origin metadata is not an additional primary isolation experiment.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus; its exit 0 is not independent verification of every identifier or of this record's scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison because the isolated clone has no sibling checkout, and skips three command-frontmatter cases because their parameter sets are empty. Pinned-hash and network governance checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy or literature-level claim support.
+- Baseline reuse concerns the identical committed inputs and original executed checks; it does not claim a fresh network/governance or ontology-cache refresh.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T091055Z-5athq-10a
+title: Review of 5aTHQ-10a
+started_at: '2026-10-21T09:00:09.917232Z'
+finished_at: '2026-10-21T09:10:55.172150Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The exact primary congener and natural isolation are supported. The current
+  NPAtlas xref leaves the owner S centre unspecified and is nonexact. The producer
+  assertion omits HEK616 and its material combined-culture condition. The 2019 main
+  body and SI remain unavailable for exact genetic-method grading.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/5athq-10a.yaml
+    sha256: fc334c5135eab01d87223f65f40a765672e6dca54d245a11420f021e4efd8b4c
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 26, batch 003, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 74 of 3116 current records had campaign coverage and 3042 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+targets:
+- target_id: naturalproductmech:mibig-d9c1c1658a
+  path: data/natural_products/alkaloids/5athq-10a.yaml
+  label: 5aTHQ-10a
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  command: just validate-strict data/natural_products/alkaloids/5athq-10a.yaml --out
+    /private/tmp/npm-review-work/026/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T09:00:14.362278Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808+00:00; finished 2026-10-21T06:37:52.997020+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-corpus.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703+00:00; finished 2026-10-21T06:38:35.570687+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598+00:00; finished 2026-10-21T06:37:11.018366+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/review-queue.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212+00:00; finished 2026-10-21T06:38:54.776253+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/validate-products.log.
+    Reused for batch 003 after verifying exact HEAD/base/tree equality and all tracked
+    worktree bytes against the original baseline. This command was not rerun for batch
+    003; original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886+00:00; finished 2026-10-21T06:54:53.950582+00:00.
+    Exact session transcript: /private/tmp/npm-native-checks/qc-attempt4.log. Reused
+    for batch 003 after verifying exact HEAD/base/tree equality and all tracked worktree
+    bytes against the original baseline. This command was not rerun for batch 003;
+    original times and receipts are retained.'
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+- check_id: S026-C-IDENTITY
+  name: Primary exact-structure and stereochemistry comparison
+  status: passed
+  required: true
+  summary: Exact primary compound 6 mapping agrees with the complete owner structure.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-PRIMARY-MAPPING
+  - S026-PRIMARY2015
+  - S026-SI2015
+- check_id: S026-C-CULTURE
+  name: Primary origin and cultivation-context audit
+  status: failed
+  required: true
+  summary: Natural isolation is supported, but the producer assertion omits its material
+    HEK616/combined-culture qualification.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-PRIMARY2015
+  - S026-SI2015
+  - S026-OWNER
+- check_id: S026-C-2019
+  name: Full exact-congener biosynthetic experiment verification
+  status: unavailable
+  required: true
+  summary: 2019 main body and official SI remain unavailable after recorded bounded
+    access; abstract alone is insufficient for method/grade assignment.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-ABSTRACT2019
+  - S026-ACCESS2019
+- check_id: S026-C-ACTIVITY
+  name: Pure-compound versus extract and congener scope
+  status: passed
+  required: true
+  summary: Exact 10a curve was inspected; no MIC, direct molecular target or antibacterial
+    spectrum was transferred from another compound.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-SI2015
+  - S026-PRIMARY2015
+- check_id: R026-C-XREF
+  name: Independent chemical equivalence audit
+  status: failed
+  required: true
+  summary: The owner and official ChEBI graph share the complete S-configured key
+    YLCWZFUMYQIMQJ-INIZCTEOSA-N. NPAtlas has the same connectivity but YLCWZFUMYQIMQJ-UHFFFAOYSA-N
+    and an unspecified stereocentre.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-COMPARISON
+  - R026-NPATLAS
+  - R026-MOL
+- check_id: R026-C-TAXON
+  name: Current authority mapping
+  status: passed
+  required: true
+  summary: Current NCBI and Wikidata identifiers agree with the source organism.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-TAXON
+  - R026-WIKIDATA
+- check_id: R026-C-IMODULON
+  name: Direct iModulonDB dataset applicability
+  status: not_applicable
+  required: false
+  summary: The complete structured catalogue has no exact producer dataset; no proxy
+    expression assay was used.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-IMODULON
+evidence:
+- evidence_id: S026-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/5athq-10a.yaml
+  locator: Entire owner and resolved local source view
+  accessed_at: '2026-10-21T09:05:39.511050Z'
+  support: supports
+  summary: The exact S-configured 5aTHQ-10a owner carries one MIBiG producer/locus
+    assertion, an NPAtlas xref and two SEEDED history events. It has no separate occurrence,
+    assay, molecular target, pathway, causal graph, related-record link or clinical
+    assertion.
+  snapshot_sha256: fc334c5135eab01d87223f65f40a765672e6dca54d245a11420f021e4efd8b4c
+- evidence_id: S026-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete BGC0001917:3 row and local extraction
+  accessed_at: '2026-10-21T09:05:39.511050Z'
+  support: supports
+  summary: The imported exact structure, species taxon 1920, source version 4, LC349994.1,
+    DOI:10.1039/c8ob02846j and empty locus-method list are faithful to this row. Complete
+    raw-row SHA256 6535681d761f99944a1ff075816597433516c713594d57e6b79f563235a8ffb7.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S026-PRIMARY2015
+  kind: primary_source
+  reference: https://www.lookchem.com/FreePDFArticle_128740-70-5_65987467.htm
+  locator: Verified original article transcription, Org. Lett. 2015, 17, 1918–1921;
+    pp1918–1920, Figures 1/3/4 and Schemes 1/2
+  accessed_at: '2026-10-21T08:42:29Z'
+  support: supports
+  summary: DOI:10.1021/acs.orglett.5b00607 names exact 10a as compound 6 and assigns
+    side-chain 7′S using synthetic references and chiral derivative comparison. The
+    authors attribute production to HEK616 under co-culture conditions; pure-culture
+    non-detection is bounded to their experiment.
+  snapshot_sha256: cfe3fb8c82d2ffd09c405193ebabe7ce4e4d9649ad4dffa9bb1e6d53e011ae07
+- evidence_id: S026-SI2015
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/3809767
+  locator: Official DOI:10.1021/acs.orglett.5b00607.s001; S2–S3 isolation, S5 compound
+    6, S6–S10 synthesis/derivatives, S12 NMR table, S16–S17 figures
+  accessed_at: '2026-10-21T08:41:12.945270Z'
+  support: supports
+  summary: The 800 mL HEK616/TP-B0596 combined culture yielded 9.0 mg of 10a. Compound
+    6 is C19H31N with reported [M+H]+ 274.2539 (calculated 274.2529). Its N–H THQ
+    ring and ten-carbon anteiso chain are distinct from 10i and 10n. Figure S5 shows
+    weak partial yeast growth inhibition, with no MIC for 10a.
+  snapshot_sha256: 8dc377e262f34a86c4bbaaa695dd451793ea827327c883f86a2d0ae61402cf8f
+- evidence_id: S026-PRIMARY-MAPPING
+  kind: validation
+  reference: /private/tmp/npm-review-work/026/primary-structure-comparison.json
+  locator: Independent RDKit comparison of full owner and manually transcribed exact
+    SI compound 6 drawing
+  accessed_at: '2026-10-21T09:05:39.511050Z'
+  support: supports
+  summary: The primary drawing and published 7′S assignment reproduce the owner full
+    key YLCWZFUMYQIMQJ-INIZCTEOSA-N and identical fixed-H InChI. There is one S centre.
+    This source transcription is a reviewer computation, not an identifier printed
+    in the paper.
+  snapshot_sha256: 47c25ee73d0249907cbd201176760b03b6882db03f69277abbf350372d22ed7b
+- evidence_id: S026-ABSTRACT2019
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/30629078/
+  locator: Complete primary abstract and DOI metadata only; no main body or SI
+  accessed_at: '2026-10-21T08:30:29.079775Z'
+  support: partial
+  summary: DOI:10.1039/c8ob02846j again names HEK616/TP-B0596 combined culture and
+    describes acetate feeding, nine cluster genes, heterologous expression and gene
+    inactivation at family level. Exact congener chromatograms, hosts, constructs,
+    individual deletion outcomes and analytical criteria remain uninspected.
+  snapshot_sha256: 66d22d6956c8012814aaf79b9687d63700efec06b32d1d5d27485c09adbe721d
+- evidence_id: S026-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001917.4/annotations.json
+  locator: Complete current version 4 entry; exact compound 3 and locus evidence arrays
+  accessed_at: '2026-10-21T09:01:10.183957Z'
+  support: supports
+  summary: The active entry names 10a with the owner stereostructure and compound
+    NMR/MS evidence from 2019. Its locus has empty evidence and sentinel 0..0 bounds.
+    The source-faithful CLUSTER_UNSTATED grade is not disproved by this metadata,
+    and the sentinel is correctly not emitted as a meaningful interval.
+  snapshot_sha256: bef63588d404c3c8a800cc0c4c2a2c956d28e3d12e4a748b6724fce7e7c05aff
+- evidence_id: S026-GENBANK
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/LC349994.1
+  locator: Definition, source feature, taxon 1920 and deposited cluster annotation
+  accessed_at: '2026-10-21T09:01:10.650896Z'
+  support: supports
+  summary: The 17,000 bp deposit explicitly identifies Streptomyces nigrescens HEK616,
+    soil, Japan, with taxon 1920. It anchors strain identity and source accession.
+    Deposited stm gene annotations do not establish an individual 10a reaction or
+    replace experimental evidence.
+  snapshot_sha256: 303964fbee92f641d2299022f235ecc5f211051a03d601a921d59e1bf48cda7e
+- evidence_id: S026-STRAIN-LOADER
+  kind: record_content
+  reference: src/naturalproductmech/curate/producer_strains.py
+  locator: Complete source-pinned qualification loader and emitted evidence rationale
+  accessed_at: '2026-10-21T09:05:39.511050Z'
+  support: context_only
+  summary: The implemented producer strain table accepts an exact source-row digest
+    and appends the full rationale to producer evidence while preserving taxon and
+    grades. A HEK616 qualifier can therefore preserve the combined-culture condition
+    and authors’ bounded attribution without a new schema or direct generated edit.
+  snapshot_sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+- evidence_id: S026-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/026/science-search-receipts.json
+  locator: Three ignored-inclusive scoped repository searches
+  accessed_at: '2026-10-21T09:05:39.511050Z'
+  support: supports
+  summary: No existing BGC0001917 qualification or structured review was found in
+    the searched curation and review surfaces. The corpus/source searches identify
+    the owner and same-locus congeners, which were not used as separate targets in
+    this packet.
+  snapshot_sha256: 8b6b4ecbbd35770561750e9a1969f15f7886e4de2f5a3f3900d1af3f080e78a9
+  search_scope: rg -l --no-ignore --hidden for 5aTHQ-10a, 5athq-10a, d9c1c1658a, YLCWZFUMYQIMQJ
+    and BGC0001917 across curation, reviews/structured, data/natural_products, data/causal_graphs
+    and data/raw; ignored and hidden files included.
+- evidence_id: S026-ACCESS2019
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next/5athq2019/access.json
+  locator: Bounded original primary-body/SI access attempts retained from preparation
+  accessed_at: '2026-10-21T08:32:04.929079Z'
+  support: unknown
+  summary: The original publisher body/PDF/author-version routes returned 403; the
+    official SI route returned 404 and alternate publisher SI 403. Crossref/OpenAlex/PubMed
+    supplied metadata or abstract. These are access failures, not evidence against
+    the reported experiments.
+  snapshot_sha256: 02a10dbbbdbc4cf1f55a2c49d733f7afb23f144276fc18bedb2c905f3f1b822f
+  search_scope: Previously attempted official RSC article HTML/PDF/current platform/author-version
+    and both official SI hosts, plus Crossref/OpenAlex/PubMed discovery; no renewed
+    failed route or paid access.
+- evidence_id: R026-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/5athq-10a.yaml
+  locator: Complete generated owner, resolved source views and audit history
+  accessed_at: '2026-10-21T09:10:08.543182Z'
+  support: supports
+  summary: The exact 5aTHQ-10a owner has one species-level MIBiG producer and locus,
+    one NPAtlas xref, and no occurrence assertion. There are no inline or referenced
+    mechanisms, molecular targets or clinical claims.
+  snapshot_sha256: fc334c5135eab01d87223f65f40a765672e6dca54d245a11420f021e4efd8b4c
+- evidence_id: R026-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/026/identity-comparison.json
+  locator: Independent RDKit parsing of owner and NPAtlas SMILES plus official ChEBI
+    SMILES and default MOL
+  accessed_at: '2026-10-21T09:05:14.510554Z'
+  support: supports
+  summary: The owner and official ChEBI graph share the complete S-configured key
+    YLCWZFUMYQIMQJ-INIZCTEOSA-N. NPAtlas has the same connectivity but YLCWZFUMYQIMQJ-UHFFFAOYSA-N
+    and an unspecified stereocentre.
+  snapshot_sha256: 56ae0b8367dd397349703bf4dd191786c46c6a495dd6726b7fb4936a46c9d764
+- evidence_id: R026-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA017164?include=classifications
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:01:09.976825Z'
+  support: supports
+  summary: NPA017164 retains the 2015 original DOI:10.1021/acs.orglett.5b00607, S.
+    nigrescens HEK616 origin and structure version 1. Its structure is stereo-unspecified
+    despite the stereospecific owner. This is database metadata, not a new independent
+    isolation experiment.
+  snapshot_sha256: 1b81a9ca3df70b466333f8950c4dc281ebb9e1a7b74ba3ff36dce22ac2e9699d
+- evidence_id: R026-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/225868/
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:04:25.079424Z'
+  support: supports
+  summary: CHEBI:225868 is a two-star entry whose complete graph matches the owner.
+    Its genus-level Streptomyces origin cites PMID:25826296. It is not eligible for
+    the repository three-star grounding rule.
+  snapshot_sha256: 4145431f402185dbb0444987eb85be7ddfbca18a627bd745d78f4ddaa4be6b1a
+- evidence_id: R026-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/225868/
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:04:25.079994Z'
+  support: supports
+  summary: The complete official default MOL independently reconstructs the owner
+    graph and exact stereochemical resolution.
+  snapshot_sha256: 99b30d789f8e60018420f327207dae95d384c6b7f77fad6309f2444fb352c889
+- evidence_id: R026-CHEBI-QUERY
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=YLCWZFUMYQIMQJ-INIZCTEOSA-N&size=100
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:01:09.978613Z'
+  support: supports
+  summary: The complete exact full-key query returns one hit, CHEBI:225868, with two
+    stars. The committed eligible structure inventory also has no full-key row. No
+    eligible three-star grounding was found within these explicit routes.
+  snapshot_sha256: 01d83e33af948a078d9601cb0babed27a1196e09b185612f01beddf4608cface
+- evidence_id: R026-TAXON
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1920&retmode=xml
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:01:10.747814Z'
+  support: supports
+  summary: The current NCBI response confirms taxon 1920 as species Streptomyces nigrescens.
+    The deposited accession and source producer use that taxon; the co-culture partner
+    is a separate organism.
+  snapshot_sha256: ff4827e0deaf9d60551fabfb3052e7fc2f645e2597cfdaf47ce23ba5ad5650a6
+- evidence_id: R026-WIKIDATA
+  kind: database
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q26291447&props=labels%7Cclaims&languages=en&format=json
+  locator: Complete current response independently inspected
+  accessed_at: '2026-10-21T09:01:10.848517Z'
+  support: supports
+  summary: Q26291447 has label Streptomyces nigrescens and NCBI taxon claim 1920.
+    This contextual check does not add an absent LOTUS occurrence.
+  snapshot_sha256: 2464655f0f8a26a215b586943f506e3fd242f99310e7cc0985f093e2de470aee
+- evidence_id: R026-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Complete exact full-key prediction row and emitted classification
+  accessed_at: '2026-10-21T09:10:08.543182Z'
+  support: context_only
+  summary: The pinned model predicts Alkaloids, Tryptophan alkaloids, Anthranilic
+    acid alkaloids and Quinoline alkaloids; the generated owner faithfully preserves
+    these tool-qualified predictions. The separate MIBiG PKS class and primary polyketide
+    proposal are not evidence for tryptophan or anthranilate incorporation.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: R026-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/026/identity-search.txt
+  locator: Complete matching output from exact owner ID, full key, xref and label
+    search
+  accessed_at: '2026-10-21T09:05:15.526236Z'
+  support: supports
+  summary: The matches identify the owner and expected raw/classification/PATHS surfaces.
+    No exact correction or earlier structured review was found within the searched
+    surfaces, including ignored and hidden files.
+  snapshot_sha256: d830f633f69d2555cb03e1e4942c4555c05a61e55f238b11a330521d697649af
+  search_scope: rg -n --no-ignore --hidden -F -e naturalproductmech:mibig-d9c1c1658a
+    -e YLCWZFUMYQIMQJ-INIZCTEOSA-N -e NPA017164 -e 5aTHQ-10a curation reviews/structured
+    data/natural_products data/raw src scripts conf
+- evidence_id: R026-IMODULON
+  kind: database
+  reference: https://imodulondb.org/
+  locator: Complete 28-dataset structured catalogue previously retrieved at the stated
+    time
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The catalogue has no S. nigrescens dataset. Its C. glutamicum dataset is
+    not a direct dataset for the producer merely because that species was an alternative
+    co-culture partner. No expression result or absent-gene conclusion is inferred.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R026-XREF-LOADER
+  kind: record_content
+  reference: src/naturalproductmech/curate/xref_exclusions.py
+  locator: Complete guarded loader and provenance discussion builder
+  accessed_at: '2026-10-21T09:10:08.543182Z'
+  support: context_only
+  summary: The implemented loader supports the literal npatlas:NPA017164, pins the
+    entire raw source row, requires unique attributed decisions and preserves the
+    rejected source assertion in a generated discussion.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+assessments:
+- assessment_id: S026-IDENTITY
+  area: identity
+  topic: Exact natural 10a and published absolute stereochemistry
+  outcome: supported
+  summary: Compound 6 is the exact N–H 5-[(7S)-7-methylnonyl] tetrahydroquinoline
+    encoded by the owner. The natural material was isolated separately from synthetic
+    reference material. Natural/synthetic rotations and the −20°C derivative comparison
+    support 7′S; Figure S4 is the separate room-temperature experiment. The current
+    NPAtlas equivalence is assessed in the identifier packet.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-OWNER
+  - S026-PRIMARY2015
+  - S026-SI2015
+  - S026-PRIMARY-MAPPING
+- assessment_id: S026-ORIGIN
+  area: provenance
+  topic: Natural isolation and producer attribution
+  outcome: supported
+  summary: Exact 10a was purified from HEK616/TP-B0596 co-culture. Authors attribute
+    production to S. nigrescens after comparison with another co-culture partner.
+    The cited Figure S3 traces exact 9i, so it is not independent 10a-specific confirmation
+    of the C. glutamicum substitution. No pure-culture or native knockout proof for
+    10a is inferred from the 2015 source.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-PRIMARY2015
+  - S026-SI2015
+  - S026-ABSTRACT2019
+- assessment_id: S026-CONTEXT
+  area: provenance
+  topic: Experimentally relevant producer condition
+  outcome: concern
+  summary: The existing species-level producer omits HEK616 and the combined-culture
+    isolation condition. This loses the experimentally material boundary that the
+    2015 source found no 1–8 in either tested pure culture. It does not make TP-B0596
+    a demonstrated co-producer.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-OWNER
+  - S026-PRIMARY2015
+  - S026-SI2015
+  - S026-GENBANK
+- assessment_id: S026-BGC
+  area: evidence
+  topic: Exact 2019 genetic attribution and conservative imported grade
+  outcome: unknown
+  summary: Current source metadata supports the active accession and its imported
+    empty locus-method state. The 2019 abstract indicates substantial family-level
+    genetic work, but the unavailable main body/SI prevents assigning those assays
+    to exact 10a or selecting a native versus heterologous grade. Retain SOURCE_ASSERTION
+    and CLUSTER_UNSTATED pending those experiments.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-RAW
+  - S026-MIBIG
+  - S026-ABSTRACT2019
+  - S026-ACCESS2019
+- assessment_id: S026-ACTIVITY
+  area: evidence
+  topic: Exact pure-compound activity without sibling MIC transfer
+  outcome: supported
+  summary: Pure 10a has weak partial inhibition of wild-type fission yeast in the
+    reported 24 h, three-experiment curves, with erg mutants largely tolerant. The
+    6.3 µM MIC belongs to 7n, and 0.25 µM to amphotericin B; neither belongs to 10a.
+    Differential mutant response supports a membrane hypothesis, not direct lipid
+    or protein binding. The owner makes no activity claim and absence of an optional
+    assay is not a finding.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-OWNER
+  - S026-PRIMARY2015
+  - S026-SI2015
+- assessment_id: S026-OPTIONAL
+  area: completeness
+  topic: Optional mechanism fields and audit status
+  outcome: not_applicable
+  summary: The complete owner contains no named gene, enzyme, graph, target or claimed
+    clinical use to validate or enrich. Its source-versioned classification and two
+    SEEDED events are present. This review does not manufacture a mechanism or promote
+    native curation status. Current identifiers, taxon and classification are reconciled
+    in the companion identifier packet.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - S026-OWNER
+  - S026-RAW
+- assessment_id: R026-IDENTITY
+  area: identity
+  topic: Exact owner graph and stereochemical resolution
+  outcome: supported
+  summary: The owner representations are mutually consistent and agree with the official
+    ChEBI graph. Its one S centre is independently supported by the primary paper
+    in the scientific packet.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-OWNER
+  - R026-COMPARISON
+  - R026-MOL
+- assessment_id: R026-XREF
+  area: identity
+  topic: Current exact NPAtlas equivalence
+  outcome: concern
+  summary: The owner and official ChEBI graph share the complete S-configured key
+    YLCWZFUMYQIMQJ-INIZCTEOSA-N. NPAtlas has the same connectivity but YLCWZFUMYQIMQJ-UHFFFAOYSA-N
+    and an unspecified stereocentre.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-COMPARISON
+  - R026-NPATLAS
+  - R026-MOL
+- assessment_id: R026-GROUNDING
+  area: provenance
+  topic: Content-hashed identity and ChEBI eligibility
+  outcome: supported
+  summary: The exact live ChEBI match is two-star and the complete committed eligible
+    inventory has no exact full-key row. The minted identifier remains appropriate;
+    current two-star availability is not a grounding defect.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-CHEBI
+  - R026-CHEBI-QUERY
+  - R026-COMPARISON
+- assessment_id: R026-TAXON
+  area: provenance
+  topic: Producer and occurrence taxon mapping
+  outcome: supported
+  summary: Taxon 1920 and Wikidata Q26291447 identify S. nigrescens. Strain and combined-culture
+    qualifications are assessed separately against the primary evidence. No database
+    metadata is promoted to a second independent publication.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-TAXON
+  - R026-WIKIDATA
+  - R026-NPATLAS
+  - R026-OWNER
+- assessment_id: R026-CLASSIFICATION
+  area: evidence
+  topic: Predicted scaffold class versus experimental biosynthetic origin
+  outcome: supported
+  summary: The model-versioned ALKALOIDS filing is reproducible and compatible with
+    the nitrogen heterocycle. Its precursor-named superclass predictions remain tool
+    outputs. PKS is the separate source class, and the unavailable full 2019 experiments
+    limit detailed reaction assignments.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-CLASS
+  - R026-OWNER
+- assessment_id: R026-IMODULON
+  area: evidence
+  topic: Applicability of expression context
+  outcome: not_applicable
+  summary: No exact producer dataset is available in the inspected structured catalogue.
+    Other Streptomyces species or a co-culture partner are not substitutes for a direct
+    S. nigrescens dataset.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  evidence_ids:
+  - R026-IMODULON
+findings:
+- finding_id: S026-CULTURE-CONTEXT
+  issue_key: bgc0001917-hek616-combined-culture-provenance
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Preserve the combined-culture origin of the HEK616 producer claim
+  description: The producer assertion names S. nigrescens without the strain or cultivation
+    boundary. The exact natural compound was isolated from HEK616 combined with T.
+    pulmonis TP-B0596, and the original paper reports non-detection in the tested
+    pure cultures. This is a non-blocking loss of relevant experimental provenance,
+    not evidence that the species identity or source evidence grades are wrong.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].evidence
+  evidence_ids:
+  - S026-OWNER
+  - S026-PRIMARY2015
+  - S026-SI2015
+  - S026-GENBANK
+  - S026-STRAIN-LOADER
+  - S026-SEARCH
+  rule_id: 'review-checklist: producer organisms retain source strain and experimental
+    context'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Source-pinned HEK616 qualification with combined-culture rationale
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Existing qualified producer and provenance emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated producer regeneration
+- finding_id: R026-NONEXACT-NPATLAS
+  issue_key: bgc0001917-compound3-npa017164-stereo-nonexact-xref
+  category: identity
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The NPAtlas xref does not preserve the assigned S stereocentre
+  description: The owner has one defined S centre and full key YLCWZFUMYQIMQJ-INIZCTEOSA-N.
+    NPA017164 has the same connectivity with that centre unspecified and key YLCWZFUMYQIMQJ-UHFFFAOYSA-N.
+    It is therefore not exact chemical equivalence. The primary 2015 evidence and
+    official ChEBI MOL support the current owner, so this finding does not call for
+    removal of its stereochemistry or for a claim that NPAtlas represents a racemate.
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  field_paths:
+  - xrefs[0]
+  evidence_ids:
+  - R026-OWNER
+  - R026-COMPARISON
+  - R026-NPATLAS
+  - R026-MOL
+  - R026-XREF-LOADER
+  - R026-SEARCH
+  rule_id: 'review-yaml-record: exact equivalence preserves stereochemical resolution'
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Guarded exact-row NPAtlas exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Existing source-pinned exclusion and retained provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Regenerate exact equivalences and discussion
+actions:
+- action_id: S026-QUALIFY-PRODUCER
+  description: Add an exact BGC0001917:3 row to the implemented producer strain table,
+    pinned to raw-row SHA256 6535681d761f99944a1ff075816597433516c713594d57e6b79f563235a8ffb7,
+    with strain HEK616 and DOI:10.1021/acs.orglett.5b00607. Its rationale should identify
+    exact compound 6 isolation from HEK616/TP-B0596 combined culture, limit pure-culture
+    non-detection to the tested conditions, and attribute the producer assignment
+    to the authors. Do not assert TP-B0596 as a second biosynthetic producer or change
+    the taxon/grades.
+  finding_ids:
+  - S026-CULTURE-CONTEXT
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Source-pinned HEK616 qualification with combined-culture rationale
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Existing qualified producer and provenance emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated producer regeneration
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The qualification loader accepts exactly the source-pinned row and rejects a changed
+    digest, duplicate or missing source row.
+  - Canary generation emits HEK616 and the complete combined-culture rationale with
+    the 2015 citation; taxon 1920, LC349994.1, source version 4, SOURCE_ASSERTION
+    and CLUSTER_UNSTATED remain unchanged.
+  - Keep the owner 7′S graph and coordinate with the independently proposed nonexact
+    NPAtlas exclusion; exercise both overlays together so one does not remove the
+    other’s provenance.
+  - Run focused producer-qualification tests, target strict validation, reproduction
+    and required repository QC; do not patch generated YAML.
+- action_id: R026-WITHHOLD-NPATLAS
+  description: Use the existing xref-exclusion table for BGC0001917:3, exact literal
+    npatlas:NPA017164, pinned to complete raw-row SHA256 6535681d761f99944a1ff075816597433516c713594d57e6b79f563235a8ffb7.
+    Cite the current NPAtlas entry and explain the unspecified-versus-S difference;
+    retain the source assertion in the generated discussion. Preserve the owner S
+    graph and minted identifier, and compose this decision with the separate HEK616
+    combined-culture qualification.
+  finding_ids:
+  - R026-NONEXACT-NPATLAS
+  target_ids:
+  - naturalproductmech:mibig-d9c1c1658a
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Guarded exact-row NPAtlas exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Existing source-pinned exclusion and retained provenance
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Regenerate exact equivalences and discussion
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The loader consumes exactly one raw source row and rejects stale hashes, duplicate
+    decisions and a literal xref not present in that row.
+  - Canary generation with both the xref exclusion and producer-strain qualification
+    withholds only npatlas:NPA017164 while retaining the source discussion, S-configured
+    owner, HEK616 provenance and current conservative grades.
+  - No two-star ChEBI grounding or racemate inference is introduced; the raw inventory
+    remains unchanged.
+  - Run focused exclusion/composition checks, target strict validation, reproduction
+    and required repository QC; do not hand-edit generated YAML.
+limitations:
+- The original 2019 main body and official SI remain unavailable; exact native versus
+  heterologous gene experiments and congener-specific isotope/analytical assignments
+  remain unresolved.
+- The 2015 article is an inspected original-article transcription and reproduced figures
+  on a mirror, verified against DOI/title/pages; its official ACS SI is fully available.
+  No primary article PDF was obtained.
+- No raw NMR reprocessing, optical-rotation remeasurement or assay-curve fitting was
+  performed. Figure S3 directly traces 9i, not 10a.
+- Current NPAtlas equivalence, live ChEBI eligibility and broader identifier audits
+  are in the companion root packet; no positive exact-equivalence conclusion is implied
+  here for NPA017164.
+- The current authority comparison is bounded to the exact-key query, returned ChEBI
+  entry/default MOL and current NPAtlas entry. Database origin metadata is not an
+  additional primary isolation experiment.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+- Baseline reuse concerns the identical committed inputs and original executed checks;
+  it does not claim a fresh network/governance or ontology-cache refresh.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-003
+- combined-culture-provenance
+- primary-access-limited
+```
