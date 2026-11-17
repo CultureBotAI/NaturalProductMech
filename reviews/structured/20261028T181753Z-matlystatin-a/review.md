@@ -1,0 +1,839 @@
+# Scientific review of matlystatin A
+
+- Review: 20261028T181753Z-matlystatin-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-28T18:03:27.594774Z
+- Finished UTC: 2026-10-28T18:17:53.253517Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Matlystatin A retains traceable source rows and standardized formula/key agreement. Its own 1994 abstract supports a matlystatin structure-elucidation and Actinomadura atramentaria isolation context, while the exact natural A configuration, DSM 43919 producer assignment and the separately graded genetic locus evidence remain unresolved in this scope.
+
+## Scope And Provenance
+
+Exact current owner, all retained source rows and reconciled six official intake arrays; saved dual-encoding diagnostics and own PubMed isolation metadata and abstract. Scientific coverage is partial; complete literal owner/source reading is distinct from full scientific verification.
+
+Selection: One current unreviewed owner selected in canonical path order by batch 85; exact owner, source rows and actual intake were reconciled before interpretation.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-29c24263f2 | data/natural_products/amino_acids_and_peptides/matlystatin-a.yaml | generated | matlystatin A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-29c24263f2 | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-29c24263f2 | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-29c24263f2 | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-29c24263f2 | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-29c24263f2 | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-29c24263f2 | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Local Joins | passed | True | naturalproductmech:mibig-29c24263f2 | The whole matlystatin A owner and exact retained source sets contain one MIBiG compound row, one LOTUS occurrence row, one NPClassifier row and a PubChem blank-AID no-assay sentinel. Two seed-history entries are retained. The prospective official arrays exclude the sentinel; they are not an executed batch85 intake. |
+| Standardization | passed | True | naturalproductmech:mibig-29c24263f2 | Both saved default parses give neutral C22H40N4O5 and the declared key IWWYEUSBHSDVOX-CLWJZODNSA-N, one six-membered C4N2 ring and four specified tetrahedral centres. The InChI-derived representation has two unspecified C(-O)=N double bonds; bond-order-sensitive canonical SMILES and direct whole-molecule graph comparison do not match. Standardization agreement does not establish identical explicit graphs or experimental natural stereochemistry. |
+| Identity | unavailable | True | naturalproductmech:mibig-29c24263f2 | The named A owner has a fully specified retained four-centre encoding. The title explicitly includes matlystatin A within the A-to-F structure study, but the inspected abstract does not establish complete connectivity or each absolute configuration of this stored form. Saved standardization agreement and common structural motifs do not close that comparison; no alternative identity or replacement is inferred. |
+| Origin | unavailable | True | naturalproductmech:mibig-29c24263f2 | The retained NATURAL_PRODUCT assertion has positive species-isolation context in the own abstract. Exact correspondence between the experimentally isolated matlystatin A and this complete stored configuration remains unresolved without the primary structural data. This scope does not establish natural absence or an incorrect origin assignment. |
+| Producer | unavailable | True | naturalproductmech:mibig-29c24263f2 | The owner asserts Actinomadura atramentaria DSM 43919, NCBITaxon:1120936, with BGC_CHARACTERIZED producer evidence. The own abstract names A. atramentaria at species level but does not identify DSM 43919 or establish the strain-specific producer grade. Species-level isolation is not silently upgraded to this strain claim. |
+| Occurrence | passed | True | naturalproductmech:mibig-29c24263f2 | The LOTUS occurrence is Actinomadura atramentaria, NCBITaxon:1990, linked to DOI 10.7164/ANTIBIOTICS.47.1473. Own PubMed identifiers establish that this is the same work as PMID 7844042, whose abstract explicitly reports isolation from the species. This supports the occurrence context; complete compound-configuration correspondence and the separate DSM 43919 claim remain unresolved. |
+| Locus | unavailable | True | naturalproductmech:mibig-29c24263f2 | BGC0001443 version 5 retains NZ_KB907224.1:32199..56356, NRPS/PKS, Knock-out studies and Heterologous expression, with CLUSTER_DEMONSTRATED distinct from the producer grade. Its nearest retained PMID is an entry-level 1994 structure/isolation citation. The inspected abstract does not verify this accession, interval or the genetic experiments. An identified claim-specific locus source is needed; abstract omission alone is not a finding that the BGC or experiments are false. |
+| Activity | not_applicable | False | naturalproductmech:mibig-29c24263f2 | The owner contains no bioactivities or molecular_targets field. The PubChem CID10054339 row has a blank AID and the no-assay sentinel; it is neither a positive nor a negative assay. The abstract describes matlystatins as type IV collagenase inhibitors but supplies no A-specific potency, assay conditions or exact target relation suitable for transfer to this stored structure. |
+| Graph | not_applicable | False | naturalproductmech:mibig-29c24263f2 | The complete owner has no biosynthetic_pathway, causal_graphs, causal_graph_refs or molecular_targets field and no referenced components in the frozen inventory. No missing optional mechanism is treated as a demonstrated scientific defect, and no protein grounding is invented. |
+
+## Scientific And Domain Assessments
+
+### Standardized agreement and representation limits
+
+consistency: supported. Targets: naturalproductmech:mibig-29c24263f2.
+
+Both saved default parses give neutral C22H40N4O5 and the declared key IWWYEUSBHSDVOX-CLWJZODNSA-N, one six-membered C4N2 ring and four specified tetrahedral centres. The InChI-derived representation has two unspecified C(-O)=N double bonds; bond-order-sensitive canonical SMILES and direct whole-molecule graph comparison do not match. Standardization agreement does not establish identical explicit graphs or experimental natural stereochemistry.
+
+### Exact structure and configuration
+
+identity: unknown. Targets: naturalproductmech:mibig-29c24263f2.
+
+The named A owner has a fully specified retained four-centre encoding. The title explicitly includes matlystatin A within the A-to-F structure study, but the inspected abstract does not establish complete connectivity or each absolute configuration of this stored form. Saved standardization agreement and common structural motifs do not close that comparison; no alternative identity or replacement is inferred.
+
+### Natural origin and exact owner applicability
+
+evidence: unknown. Targets: naturalproductmech:mibig-29c24263f2.
+
+The retained NATURAL_PRODUCT assertion has positive species-isolation context in the own abstract. Exact correspondence between the experimentally isolated matlystatin A and this complete stored configuration remains unresolved without the primary structural data. This scope does not establish natural absence or an incorrect origin assignment.
+
+### Native source taxon versus experimental host
+
+evidence: unknown. Targets: naturalproductmech:mibig-29c24263f2.
+
+The owner asserts Actinomadura atramentaria DSM 43919, NCBITaxon:1120936, with BGC_CHARACTERIZED producer evidence. The own abstract names A. atramentaria at species level but does not identify DSM 43919 or establish the strain-specific producer grade. Species-level isolation is not silently upgraded to this strain claim.
+
+### Source-specific occurrence context
+
+evidence: supported. Targets: naturalproductmech:mibig-29c24263f2.
+
+The LOTUS occurrence is Actinomadura atramentaria, NCBITaxon:1990, linked to DOI 10.7164/ANTIBIOTICS.47.1473. Own PubMed identifiers establish that this is the same work as PMID 7844042, whose abstract explicitly reports isolation from the species. This supports the occurrence context; complete compound-configuration correspondence and the separate DSM 43919 claim remain unresolved.
+
+### Retained locus grade and claim-specific evidence
+
+evidence: unknown. Targets: naturalproductmech:mibig-29c24263f2.
+
+BGC0001443 version 5 retains NZ_KB907224.1:32199..56356, NRPS/PKS, Knock-out studies and Heterologous expression, with CLUSTER_DEMONSTRATED distinct from the producer grade. Its nearest retained PMID is an entry-level 1994 structure/isolation citation. The inspected abstract does not verify this accession, interval or the genetic experiments. An identified claim-specific locus source is needed; abstract omission alone is not a finding that the BGC or experiments are false.
+
+### Encoded classification and biosynthetic context
+
+scope: supported. Targets: naturalproductmech:mibig-29c24263f2.
+
+AMINO_ACIDS_AND_PEPTIDES filing and the retained NPClassifier Small peptides annotation are consistent with the local peptide-like encoded structure. The retained NRPS/PKS categories remain database classifications; neither the model result nor the 1994 abstract independently proves the complete biosynthetic route.
+
+### Assay and analogue boundaries
+
+quantity: not_applicable. Targets: naturalproductmech:mibig-29c24263f2.
+
+The owner contains no bioactivities or molecular_targets field. The PubChem CID10054339 row has a blank AID and the no-assay sentinel; it is neither a positive nor a negative assay. The abstract describes matlystatins as type IV collagenase inhibitors but supplies no A-specific potency, assay conditions or exact target relation suitable for transfer to this stored structure.
+
+### Original source versions and evidence tiers
+
+provenance: supported. Targets: naturalproductmech:mibig-29c24263f2.
+
+MIBiG BGC0001443 entry version 5 is retained with quality questionable and completeness complete; NPClassifier uses npclassifier.gnps2.org@2026-09-07. Own PMID 7844042/DOI 10.7164/antibiotics.47.1473 is a verified citation identity, not independent verification of every entry-level claim. The database rows, model output, local diagnostics, metadata and two seed-history events remain distinct evidence tiers.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI841-LOCAL | /private/tmp/npm-review-work/shared-next-batch085-tentative/tentative-owner-source-inventory-001.json; /entries/0/owner_document; /entries/0/rows; /entries/0/supplemental_retained_rows | context_only | The whole matlystatin A owner and exact retained source sets contain one MIBiG compound row, one LOTUS occurrence row, one NPClassifier row and a PubChem blank-AID no-assay sentinel. Two seed-history entries are retained. The prospective official arrays exclude the sentinel; they are not an executed batch85 intake. |
+| SCI841-ENCODINGS | /private/tmp/npm-review-work/shared-next-batch085-tentative/source-science-preparation/bgc-tentative85-three-owner-dual-encoding-results-001.json; /records/0/smiles; /records/0/inchi; /records/0/comparisons; /records/0/atom_correspondence | supports | Both saved default parses give neutral C22H40N4O5 and the declared key IWWYEUSBHSDVOX-CLWJZODNSA-N, one six-membered C4N2 ring and four specified tetrahedral centres. The InChI-derived representation has two unspecified C(-O)=N double bonds; bond-order-sensitive canonical SMILES and direct whole-molecule graph comparison do not match. Standardization agreement does not establish identical explicit graphs or experimental natural stereochemistry. |
+| SCI841-PUBMED | /private/tmp/npm-review-work/shared-next-batch085-tentative/literature-preparation/public-metadata-pubmed-001/pmid-7844042.xml; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | partial | Own PMID 7844042 and DOI 10.7164/antibiotics.47.1473 identify the 1994 structure-elucidation work on matlystatins A to F. The abstract reports isolation from Actinomadura atramentaria and NMR/mass-spectrometric structural characterization, and describes type IV collagenase inhibition. It does not give the retained A atom map, DSM 43919 strain, locus interval or genetic tests. No own PMC alias is returned. |
+
+## Limits And Additional Notes
+
+- The 1994 own abstract is a structure/isolation source. It does not supply strain-specific knockout or heterologous-expression evidence for the retained BGC interval; this is a bounded unresolved citation-support question, not a demonstrated false claim.
+- Full primary text, figures, supporting structural data and current accession/interval authority were not inspected in this proposal. No exact natural atom map or configuration is certified.
+- Default-parsed SMILES and InChI agree after standardization but differ in explicit bond-order-sensitive comparisons. The preserved representation difference is not assigned a natural identity error or replacement.
+- Scientific scope is partial. Deterministic baseline and strict checks, when performed separately, do not establish scientific accuracy. Missing optional content and abstract omissions alone do not create findings.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T181753Z-matlystatin-a
+title: Scientific review of matlystatin A
+started_at: '2026-10-28T18:03:27.594774Z'
+finished_at: '2026-10-28T18:17:53.253517Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Matlystatin A retains traceable source rows and standardized formula/key
+  agreement. Its own 1994 abstract supports a matlystatin structure-elucidation and
+  Actinomadura atramentaria isolation context, while the exact natural A configuration,
+  DSM 43919 producer assignment and the separately graded genetic locus evidence remain
+  unresolved in this scope.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/matlystatin-a.yaml
+    sha256: 5fadc1a0e4bae50af359dcb393e21e944c252a38652fa66eefd9bf7a8878674e
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-29c24263f2
+  path: data/natural_products/amino_acids_and_peptides/matlystatin-a.yaml
+  label: matlystatin A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Exact current owner, all retained source rows and reconciled six official
+    intake arrays; saved dual-encoding diagnostics and own PubMed isolation metadata
+    and abstract. Scientific coverage is partial; complete literal owner/source reading
+    is distinct from full scientific verification.
+  selection: One current unreviewed owner selected in canonical path order by batch
+    85; exact owner, source rows and actual intake were reconciled before interpretation.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-29c24263f2
+  exclusions:
+  - target: Uninspected structure figures, spectra, supporting information and complete
+      natural configurations
+    reason: The inspected evidence does not independently establish every stored atom
+      connection or natural stereocentre.
+  - target: Unverified strain identity, taxon-ID authority, accession interval and
+      exact cluster causality
+    reason: Isolation, occurrence, database assertions and genetic evidence retain
+      their separate scopes; unresolved links remain explicit.
+  - target: Activity or mechanism transfer between congeners, engineered analogues
+      or incompatible stored structures
+    reason: Only the named material and the reported experimental context support
+      each activity assessment.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch085 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch085. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/matlystatin-a.yaml
+    --out /private/tmp/npm-review-work/841/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T18:03:28.961651Z. Original
+    receipt: /private/tmp/npm-review-work/841/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-LOCAL-JOINS
+  name: Local Joins
+  status: passed
+  required: true
+  summary: The whole matlystatin A owner and exact retained source sets contain one
+    MIBiG compound row, one LOTUS occurrence row, one NPClassifier row and a PubChem
+    blank-AID no-assay sentinel. Two seed-history entries are retained. The prospective
+    official arrays exclude the sentinel; they are not an executed batch85 intake.
+  evidence_ids:
+  - SCI841-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-STANDARDIZATION
+  name: Standardization
+  status: passed
+  required: true
+  summary: Both saved default parses give neutral C22H40N4O5 and the declared key
+    IWWYEUSBHSDVOX-CLWJZODNSA-N, one six-membered C4N2 ring and four specified tetrahedral
+    centres. The InChI-derived representation has two unspecified C(-O)=N double bonds;
+    bond-order-sensitive canonical SMILES and direct whole-molecule graph comparison
+    do not match. Standardization agreement does not establish identical explicit
+    graphs or experimental natural stereochemistry.
+  evidence_ids:
+  - SCI841-ENCODINGS
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-IDENTITY
+  name: Identity
+  status: unavailable
+  required: true
+  summary: The named A owner has a fully specified retained four-centre encoding.
+    The title explicitly includes matlystatin A within the A-to-F structure study,
+    but the inspected abstract does not establish complete connectivity or each absolute
+    configuration of this stored form. Saved standardization agreement and common
+    structural motifs do not close that comparison; no alternative identity or replacement
+    is inferred.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-ENCODINGS
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-ORIGIN
+  name: Origin
+  status: unavailable
+  required: true
+  summary: The retained NATURAL_PRODUCT assertion has positive species-isolation context
+    in the own abstract. Exact correspondence between the experimentally isolated
+    matlystatin A and this complete stored configuration remains unresolved without
+    the primary structural data. This scope does not establish natural absence or
+    an incorrect origin assignment.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-ENCODINGS
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-PRODUCER
+  name: Producer
+  status: unavailable
+  required: true
+  summary: The owner asserts Actinomadura atramentaria DSM 43919, NCBITaxon:1120936,
+    with BGC_CHARACTERIZED producer evidence. The own abstract names A. atramentaria
+    at species level but does not identify DSM 43919 or establish the strain-specific
+    producer grade. Species-level isolation is not silently upgraded to this strain
+    claim.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-OCCURRENCE
+  name: Occurrence
+  status: passed
+  required: true
+  summary: The LOTUS occurrence is Actinomadura atramentaria, NCBITaxon:1990, linked
+    to DOI 10.7164/ANTIBIOTICS.47.1473. Own PubMed identifiers establish that this
+    is the same work as PMID 7844042, whose abstract explicitly reports isolation
+    from the species. This supports the occurrence context; complete compound-configuration
+    correspondence and the separate DSM 43919 claim remain unresolved.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-LOCUS
+  name: Locus
+  status: unavailable
+  required: true
+  summary: BGC0001443 version 5 retains NZ_KB907224.1:32199..56356, NRPS/PKS, Knock-out
+    studies and Heterologous expression, with CLUSTER_DEMONSTRATED distinct from the
+    producer grade. Its nearest retained PMID is an entry-level 1994 structure/isolation
+    citation. The inspected abstract does not verify this accession, interval or the
+    genetic experiments. An identified claim-specific locus source is needed; abstract
+    omission alone is not a finding that the BGC or experiments are false.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-ACTIVITY
+  name: Activity
+  status: not_applicable
+  required: false
+  summary: The owner contains no bioactivities or molecular_targets field. The PubChem
+    CID10054339 row has a blank AID and the no-assay sentinel; it is neither a positive
+    nor a negative assay. The abstract describes matlystatins as type IV collagenase
+    inhibitors but supplies no A-specific potency, assay conditions or exact target
+    relation suitable for transfer to this stored structure.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- check_id: SCI841-GRAPH
+  name: Graph
+  status: not_applicable
+  required: false
+  summary: The complete owner has no biosynthetic_pathway, causal_graphs, causal_graph_refs
+    or molecular_targets field and no referenced components in the frozen inventory.
+    No missing optional mechanism is treated as a demonstrated scientific defect,
+    and no protein grounding is invented.
+  evidence_ids:
+  - SCI841-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+evidence:
+- evidence_id: SCI841-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch085-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/0/owner_document; /entries/0/rows; /entries/0/supplemental_retained_rows
+  accessed_at: '2026-10-28T16:20:04.260151Z'
+  snapshot_sha256: 5a7e378411605abc279ba5d4ef5a80dbb7509ad07f27299596a54279de31be83
+  support: context_only
+  summary: The whole matlystatin A owner and exact retained source sets contain one
+    MIBiG compound row, one LOTUS occurrence row, one NPClassifier row and a PubChem
+    blank-AID no-assay sentinel. Two seed-history entries are retained. The prospective
+    official arrays exclude the sentinel; they are not an executed batch85 intake.
+- evidence_id: SCI841-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch085-tentative/source-science-preparation/bgc-tentative85-three-owner-dual-encoding-results-001.json
+  locator: /records/0/smiles; /records/0/inchi; /records/0/comparisons; /records/0/atom_correspondence
+  accessed_at: '2026-10-28T16:35:25.514156Z'
+  snapshot_sha256: a822e9aad3ad4b8c22881140444e7ebf61e3c4f1056dec4700dd73e9d4acff74
+  support: supports
+  summary: Both saved default parses give neutral C22H40N4O5 and the declared key
+    IWWYEUSBHSDVOX-CLWJZODNSA-N, one six-membered C4N2 ring and four specified tetrahedral
+    centres. The InChI-derived representation has two unspecified C(-O)=N double bonds;
+    bond-order-sensitive canonical SMILES and direct whole-molecule graph comparison
+    do not match. Standardization agreement does not establish identical explicit
+    graphs or experimental natural stereochemistry.
+- evidence_id: SCI841-PUBMED
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch085-tentative/literature-preparation/public-metadata-pubmed-001/pmid-7844042.xml
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  accessed_at: '2026-10-28T16:51:44.263341Z'
+  snapshot_sha256: 756bbf4790b794d7fc920fe53c7cfa0cb4a012175eecbbe954cb3b3ecb5c8543
+  support: partial
+  summary: Own PMID 7844042 and DOI 10.7164/antibiotics.47.1473 identify the 1994
+    structure-elucidation work on matlystatins A to F. The abstract reports isolation
+    from Actinomadura atramentaria and NMR/mass-spectrometric structural characterization,
+    and describes type IV collagenase inhibition. It does not give the retained A
+    atom map, DSM 43919 strain, locus interval or genetic tests. No own PMC alias
+    is returned.
+assessments:
+- assessment_id: SCI841-ENCODINGS
+  area: consistency
+  topic: Standardized agreement and representation limits
+  outcome: supported
+  summary: Both saved default parses give neutral C22H40N4O5 and the declared key
+    IWWYEUSBHSDVOX-CLWJZODNSA-N, one six-membered C4N2 ring and four specified tetrahedral
+    centres. The InChI-derived representation has two unspecified C(-O)=N double bonds;
+    bond-order-sensitive canonical SMILES and direct whole-molecule graph comparison
+    do not match. Standardization agreement does not establish identical explicit
+    graphs or experimental natural stereochemistry.
+  evidence_ids:
+  - SCI841-ENCODINGS
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- assessment_id: SCI841-IDENTITY
+  area: identity
+  topic: Exact structure and configuration
+  outcome: unknown
+  summary: The named A owner has a fully specified retained four-centre encoding.
+    The title explicitly includes matlystatin A within the A-to-F structure study,
+    but the inspected abstract does not establish complete connectivity or each absolute
+    configuration of this stored form. Saved standardization agreement and common
+    structural motifs do not close that comparison; no alternative identity or replacement
+    is inferred.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-ENCODINGS
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+  dimensions:
+  - name: stereochemical_resolution
+    value: Four specified tetrahedral centres in each parsed encoding; two InChI-local
+      unspecified C(-O)=N bonds and negative explicit bond-order comparisons; natural
+      A configuration unresolved.
+    definition: Encoded stereochemical specificity and explicit representation differences
+      remain separate from experimentally verified natural configuration.
+    evidence_ids:
+    - SCI841-LOCAL
+    - SCI841-ENCODINGS
+- assessment_id: SCI841-ORIGIN
+  area: evidence
+  topic: Natural origin and exact owner applicability
+  outcome: unknown
+  summary: The retained NATURAL_PRODUCT assertion has positive species-isolation context
+    in the own abstract. Exact correspondence between the experimentally isolated
+    matlystatin A and this complete stored configuration remains unresolved without
+    the primary structural data. This scope does not establish natural absence or
+    an incorrect origin assignment.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-ENCODINGS
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- assessment_id: SCI841-PRODUCER
+  area: evidence
+  topic: Native source taxon versus experimental host
+  outcome: unknown
+  summary: The owner asserts Actinomadura atramentaria DSM 43919, NCBITaxon:1120936,
+    with BGC_CHARACTERIZED producer evidence. The own abstract names A. atramentaria
+    at species level but does not identify DSM 43919 or establish the strain-specific
+    producer grade. Species-level isolation is not silently upgraded to this strain
+    claim.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+  dimensions:
+  - name: taxon_strain
+    value: Species-level A. atramentaria isolation in the abstract; retained producer
+      DSM 43919 NCBITaxon:1120936 versus LOTUS species NCBITaxon:1990.
+    definition: A database taxon assertion, species isolation and an expression host
+      are distinct claims.
+    evidence_ids:
+    - SCI841-LOCAL
+    - SCI841-PUBMED
+- assessment_id: SCI841-OCCURRENCE
+  area: evidence
+  topic: Source-specific occurrence context
+  outcome: supported
+  summary: The LOTUS occurrence is Actinomadura atramentaria, NCBITaxon:1990, linked
+    to DOI 10.7164/ANTIBIOTICS.47.1473. Own PubMed identifiers establish that this
+    is the same work as PMID 7844042, whose abstract explicitly reports isolation
+    from the species. This supports the occurrence context; complete compound-configuration
+    correspondence and the separate DSM 43919 claim remain unresolved.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- assessment_id: SCI841-LOCUS
+  area: evidence
+  topic: Retained locus grade and claim-specific evidence
+  outcome: unknown
+  summary: BGC0001443 version 5 retains NZ_KB907224.1:32199..56356, NRPS/PKS, Knock-out
+    studies and Heterologous expression, with CLUSTER_DEMONSTRATED distinct from the
+    producer grade. Its nearest retained PMID is an entry-level 1994 structure/isolation
+    citation. The inspected abstract does not verify this accession, interval or the
+    genetic experiments. An identified claim-specific locus source is needed; abstract
+    omission alone is not a finding that the BGC or experiments are false.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- assessment_id: SCI841-CLASSIFICATION
+  area: scope
+  topic: Encoded classification and biosynthetic context
+  outcome: supported
+  summary: AMINO_ACIDS_AND_PEPTIDES filing and the retained NPClassifier Small peptides
+    annotation are consistent with the local peptide-like encoded structure. The retained
+    NRPS/PKS categories remain database classifications; neither the model result
+    nor the 1994 abstract independently proves the complete biosynthetic route.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-ENCODINGS
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- assessment_id: SCI841-ACTIVITY
+  area: quantity
+  topic: Assay and analogue boundaries
+  outcome: not_applicable
+  summary: The owner contains no bioactivities or molecular_targets field. The PubChem
+    CID10054339 row has a blank AID and the no-assay sentinel; it is neither a positive
+    nor a negative assay. The abstract describes matlystatins as type IV collagenase
+    inhibitors but supplies no A-specific potency, assay conditions or exact target
+    relation suitable for transfer to this stored structure.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+- assessment_id: SCI841-PROVENANCE
+  area: provenance
+  topic: Original source versions and evidence tiers
+  outcome: supported
+  summary: MIBiG BGC0001443 entry version 5 is retained with quality questionable
+    and completeness complete; NPClassifier uses npclassifier.gnps2.org@2026-09-07.
+    Own PMID 7844042/DOI 10.7164/antibiotics.47.1473 is a verified citation identity,
+    not independent verification of every entry-level claim. The database rows, model
+    output, local diagnostics, metadata and two seed-history events remain distinct
+    evidence tiers.
+  evidence_ids:
+  - SCI841-LOCAL
+  - SCI841-PUBMED
+  target_ids:
+  - naturalproductmech:mibig-29c24263f2
+  dimensions:
+  - name: source_version
+    value: MIBiG BGC0001443 entry 5; NPClassifier npclassifier.gnps2.org@2026-09-07.
+    definition: Literal retained release/version values, distinct from access clocks
+      or independent claim verification.
+    evidence_ids:
+    - SCI841-LOCAL
+  - name: evidence_tier
+    value: Whole retained owner/rows, saved default-parser diagnostics and own PubMed
+      title/abstract/ArticleIdList; no full primary structure figures or accession
+      authority.
+    definition: Evidence is credited only at its inspected scope.
+    evidence_ids:
+    - SCI841-LOCAL
+    - SCI841-ENCODINGS
+    - SCI841-PUBMED
+findings: []
+actions: []
+limitations:
+- The 1994 own abstract is a structure/isolation source. It does not supply strain-specific
+  knockout or heterologous-expression evidence for the retained BGC interval; this
+  is a bounded unresolved citation-support question, not a demonstrated false claim.
+- Full primary text, figures, supporting structural data and current accession/interval
+  authority were not inspected in this proposal. No exact natural atom map or configuration
+  is certified.
+- Default-parsed SMILES and InChI agree after standardization but differ in explicit
+  bond-order-sensitive comparisons. The preserved representation difference is not
+  assigned a natural identity error or replacement.
+- Scientific scope is partial. Deterministic baseline and strict checks, when performed
+  separately, do not establish scientific accuracy. Missing optional content and abstract
+  omissions alone do not create findings.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
