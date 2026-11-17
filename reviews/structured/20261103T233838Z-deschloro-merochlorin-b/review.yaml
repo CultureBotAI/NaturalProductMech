@@ -1,0 +1,1112 @@
+schema_version: 1.0.0
+review_id: 20261103T233838Z-deschloro-merochlorin-b
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: deschloro-merochlorin B'
+started_at: '2026-11-03T23:01:25.985978Z'
+finished_at: '2026-11-03T23:38:38.990741Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Deschloro-merochlorin B preserves its full source key, partially specified
+  structure and separately graded producer/locus claims. Retained evidence supports
+  a qualified local review; natural stereochemical identity and fresh primary verification
+  remain unresolved.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/polyketides/merochlorin-c.yaml
+    sha256: 3e3d91c69b7ff7dc12102d2c28aa5267a49f938615bf1f8445638a6fbfb67502
+    role: context
+  - path: data/natural_products/terpenoids/deschloro-merochlorin-a.yaml
+    sha256: e8782e84d691092b21c0606b59853e892c707bcd68363b8d8e0e9843cc04bfa0
+    role: context
+  - path: data/natural_products/terpenoids/deschloro-merochlorin-b.yaml
+    sha256: 2dfae52c5da621f4c133e1f53bbd0dc7cb01000e981f0f896f35cafec19238bd
+    role: target
+  - path: data/natural_products/terpenoids/dichloro-merochlorin-b.yaml
+    sha256: 0d3ea9b9a219c5975803da7af0a2777cf5939b0ae43efd4ceca427e25b6f54d7
+    role: context
+  - path: data/natural_products/terpenoids/isochloro-merochlorin-b.yaml
+    sha256: d5109a5f1fbf5cb13df2952d7e9aab18fc28b9c5179e5996304ccdf15df34783
+    role: context
+  - path: data/natural_products/terpenoids/merochlorin-a.yaml
+    sha256: 50a1a834c9ff778705522eb0c45c7bbf30236472166c7a24fd3239c9c4c03d4b
+    role: context
+  - path: data/natural_products/terpenoids/merochlorin-b.yaml
+    sha256: 5278f665d49c9fdba55b81ae7e8da6df4f0dc44878f5894dc45f58bee4c873bd
+    role: context
+  - path: data/natural_products/unclassified/merochlorin-d.yaml
+    sha256: 98edb35394bea516eb74973c015e837c00e58072946a0b7f2a73d4ec3604e5e3
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2316; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+targets:
+- target_id: naturalproductmech:mibig-21a81cb2e3
+  path: data/natural_products/terpenoids/deschloro-merochlorin-b.yaml
+  label: deschloro-merochlorin B
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  command: just validate-strict data/natural_products/terpenoids/cyslabdan-c.yaml
+    data/natural_products/terpenoids/dehydrobotrydienol.yaml data/natural_products/terpenoids/demethoxyviridin.yaml
+    data/natural_products/terpenoids/desacetylfusarochromene.yaml data/natural_products/terpenoids/deschloro-merochlorin-a.yaml
+    data/natural_products/terpenoids/deschloro-merochlorin-b.yaml data/natural_products/terpenoids/dichloro-merochlorin-b.yaml
+    data/natural_products/terpenoids/dihydrobotrydial.yaml data/natural_products/terpenoids/ent-kauren-16alpha-ol-2.yaml
+    data/natural_products/terpenoids/ent-kauren-16alpha-ol.yaml --workers 1 --out
+    /private/tmp/npm-native-checks/batch-232/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-232/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-232/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2316-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/deschloro-merochlorin-b.yaml
+  locator: Whole current owner plaintext and complete curation_history
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Complete current owner and all 2 history entries; native curation_status
+    remains SEEDED.
+  snapshot_sha256: 2dfae52c5da621f4c133e1f53bbd0dc7cb01000e981f0f896f35cafec19238bd
+- evidence_id: bgc-2316-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/owner-capture-DATA-001.json
+  locator: /records/5
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Complete captured owner preserves every written field and history; no mechanism
+    root or component is present.
+  snapshot_sha256: 883150ac3453edd0ce7de64f9eebf1c40e147d525fe26395b2e28c38a1e64c0d
+- evidence_id: bgc-2316-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/intakes/2316-inspect-001.json
+  locator: /status; /repository; /source; /targets
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Actual canonical intake for naturalproductmech:mibig-21a81cb2e3; 44 pinned
+    input placements and explicit maintained source ownership.
+  snapshot_sha256: 45f98972f8e93a8aef59a7baa4fd6ac276fa3a70148dcf77a5780605bc0fe825
+- evidence_id: bgc-2316-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/owner-capture-DATA-001.json
+  locator: /records/5/owner_document
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"chemical_structure":{"smiles":"OC1=C2C(C(C3C(C)(CC/C=C(C)/C)O4)(C/C(C3)=C(C)/C)C4=C([H])C2=O)=CC(O)=C1","standard_inchi":"InChI=1S/C25H30O4/c1-14(2)7-6-8-24(5)21-9-16(15(3)4)13-25(21)18-10-17(26)11-19(27)23(18)20(28)12-22(25)29-24/h7,10-12,21,26-27H,6,8-9,13H2,1-5H3","standard_inchi_key":"AKXGRVOOWGJLFD-UHFFFAOYSA-N","stereo_complete":false,"structure_source":"MIBIG","structure_source_id":"mibig:BGC0001083"},"grounding_notes":"No
+    3-star ChEBI entry shares this structure, so the record keeps a content-hashed
+    identifier.","grounding_status":"MINTED","identifier":"naturalproductmech:mibig-21a81cb2e3","label":"deschloro-merochlorin
+    B","source_concepts":[{"minted_identifier":"naturalproductmech:mibig-21a81cb2e3","source":"MIBIG","source_id":"BGC0001083","source_label":"deschloro-merochlorin
+    B","source_version":"5"}]}'
+  snapshot_sha256: 883150ac3453edd0ce7de64f9eebf1c40e147d525fe26395b2e28c38a1e64c0d
+- evidence_id: bgc-2316-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/owner-capture-DATA-001.json
+  locator: /records/5/owner_document
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"biosynthetic_gene_clusters":[{"accession":"mibig:BGC0001083","bgc_class":["PKS","TERPENE"],"entry_status":"active","entry_version":"5","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0001083 entry version 5; citation taken from the entry level","reference":"PMID:22784372"}],"genome_accession":"genbank:JX186999.1","link_evidence_basis":"CLUSTER_DEMONSTRATED","locus_evidence_methods":["Knock-out
+    studies","Enzymatic assays","Heterologous expression"],"organism_label":"Streptomyces
+    sp. CNH189","organism_taxon_id":"NCBITaxon:1136432"}],"producer_organisms":[{"biosynthetic_gene_cluster":"mibig:BGC0001083","evidence":[{"evidence_type":"DATABASE_ASSERTION","notes":"MIBiG
+    BGC0001083 entry version 5; citation taken from the entry level","reference":"PMID:22784372"}],"evidence_basis":"BGC_CHARACTERIZED","notes":"Locus
+    evidence: Knock-out studies|Enzymatic assays|Heterologous expression. That evidence
+    grades the LOCUS as CLUSTER_DEMONSTRATED; this field grades the taxon claim, which
+    is a different question.","source":"MIBIG","source_version":"5","taxon_id":"NCBITaxon:1136432","taxon_label":"Streptomyces
+    sp. CNH189"}],"producer_taxon_groups":["ACTINOBACTERIAL"]}'
+  snapshot_sha256: 883150ac3453edd0ce7de64f9eebf1c40e147d525fe26395b2e28c38a1e64c0d
+- evidence_id: bgc-2316-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/owner-capture-DATA-001.json
+  locator: /records/5/owner_document
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {}'
+  snapshot_sha256: 883150ac3453edd0ce7de64f9eebf1c40e147d525fe26395b2e28c38a1e64c0d
+- evidence_id: bgc-2316-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/owner-capture-DATA-001.json
+  locator: /records/5/owner_document
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {}'
+  snapshot_sha256: 883150ac3453edd0ce7de64f9eebf1c40e147d525fe26395b2e28c38a1e64c0d
+- evidence_id: bgc-2316-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/owner-capture-DATA-001.json
+  locator: /records/5/owner_document
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete written field projection; absence is bounded by the complete
+    captured owner: {"bgc_class":["PKS","TERPENE"],"biosynthesis_origin":"NATURAL_PRODUCT","np_classification":{"class_results":["Miscellaneous
+    meroterpenoids"],"is_glycoside":false,"pathway_results":["Terpenoids"],"superclass_results":["Meroterpenoids"],"tool":"NPClassifier","tool_version":"npclassifier.gnps2.org@2026-09-07"},"np_pathway":"TERPENOIDS"}'
+  snapshot_sha256: 883150ac3453edd0ce7de64f9eebf1c40e147d525fe26395b2e28c38a1e64c0d
+- evidence_id: bgc-2316-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/5/declared_structure; /records/5/smiles/status; /records/5/inchi/status;
+    /records/5/smiles/computed; /records/5/inchi/computed; /records/5/comparisons;
+    /records/5/atom_correspondence
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Both stored forms parsed. Exact original comparison/correspondence and
+    stereo values: {"atom_correspondence":{"complete_atom_count_match":true,"full_graph_identity_established":false,"scope":"One
+    chirality-aware substructure match; no independent full graph or natural identity
+    claim.","smiles_to_inchi_atom_indices":[26,18,22,17,24,20,23,4,7,5,6,13,0,1,28,12,15,8,14,2,3,21,11,19,27,9,16,25,10]},"comparisons":{"atom_count_equal":true,"bond_count_equal":true,"both_keys_equal_declared":true,"canonical_isomeric_smiles_equal":true,"canonical_nonisomeric_smiles_equal":true,"formal_charge_equal":true,"formula_equal":true,"smiles_formula_equals_literal_InChI_main_layer":true,"standard_inchi_equal":true,"standard_inchi_key_equal":true},"inchi_stereo":{"Atom_Tetrahedral:Unspecified":3},"smiles_stereo":{"Atom_Tetrahedral:Unspecified":3}}'
+  snapshot_sha256: 24e1f67161d916573d35a6640775a2330ce09969f6fc115611f39275865549b9
+- evidence_id: bgc-2316-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/5/smiles/computed; /records/5/inchi/computed; /records/5/declared_structure;
+    /records/5/literal_InChI_layers; /records/5/comparisons; /records/5/atom_correspondence
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete saved topology/stereo interpretation: Both saved forms are neutral
+    C25H30O4, one connected component with 29 heavy atoms and 32 bonds. The four-ring
+    polycyclic framework includes an aromatic six-carbon ring, two phenolic hydroxyls,
+    one ketone and a cyclic ether, plus nonaromatic alkenes. Three tetrahedral centres
+    are unspecified: SMILES atoms 4, 5 and 6 correspond to InChI atoms 24, 20 and
+    23. No potential double-bond stereoelement is reported in the complete saved tables.
+    The false stereo_complete flag is consistent with the unresolved centres. All
+    ten comparisons are true and the saved chirality-aware correspondence is complete;
+    full_graph_identity_established remains false. These are representation observations,
+    not an experimental stereochemical assignment.'
+  snapshot_sha256: 24e1f67161d916573d35a6640775a2330ce09969f6fc115611f39275865549b9
+- evidence_id: bgc-2316-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/chemistry-local/diagnostic-execution-001.json
+  locator: Whole original execution receipt
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Native operated one original stored-form diagnostic, exit 0, one attempt,
+    preserved stdout/stderr and closed environment. The inherited DATA observer literal
+    is not the operator attribution.
+  snapshot_sha256: 15c8254e0158f96b799ce154e0da4573fcbab5d68a0220d3ae7d9e58b1363a58
+- evidence_id: bgc-2316-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/root-diagnostic-acceptance-001.json
+  locator: Whole ROOT diagnostic acceptance
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: ROOT accepts the original 20 stored parses, 98 true/two false comparison
+    flags (the latter confined to Cyslabdan C) and six global unassigned stereo warnings.
+    This establishes no fresh natural identity or full-graph equivalence.
+  snapshot_sha256: 7b2881f00f40f445f7f8a07b77560f80516976679c6c7ab7bdc5a0d6bbbf42c1
+- evidence_id: bgc-2316-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/root-native-gates-acceptance-001.json
+  locator: Whole ROOT gate acceptance
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Five original local gates passed; all_native_gates_passed remains false
+    because full QC and complete OAK coverage are unavailable. Gate success is not
+    a scientific verdict.
+  snapshot_sha256: a95313b79d0a1105500acbfbd4cd8633d3878a9fd0176bdb2130446ee881a049
+- evidence_id: bgc-2316-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/root-intake-acceptance-001.json
+  locator: Whole ROOT intake acceptance
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: ROOT accepts ten actual one-record intakes, 436 input placements / 75 paths
+    and exact source ownership; scientific review remains separate.
+  snapshot_sha256: 8fcc103949fe722e55e277ca6ebd8c7e6a91535ced87dcc906209bd397b5a926
+- evidence_id: bgc-2316-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/root-source-inventory-acceptance-001.json
+  locator: Whole ROOT inventory acceptance
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: ROOT accepts the single original local inventory and its current source/capture
+    joins; complete meaning reading is separately attributed in the notes.
+  snapshot_sha256: 1be82b2a714236a0bf38785ec588e0dbc35d6d0c52e614aa4dc66faf9e19742f
+- evidence_id: bgc-2316-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232/root-input-plan-acceptance-001.json
+  locator: Whole ROOT input-plan acceptance
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: ROOT accepts the exact actual plan and preserved source contexts; no scientific
+    verdict follows.
+  snapshot_sha256: ac91e6edf46b06471c00f82f4e414d90618c1520b4a4634518c4b2ac43f43630
+- evidence_id: bgc-2316-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-target-input-plan-001.json
+  locator: /records/5
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Current one-record input plan with exact direct companions, retained predicates
+    and input roles.
+  snapshot_sha256: 94f01db8f3a55101c987af4aa40300302ac195827d11910711925264210ed158
+- evidence_id: bgc-2316-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-scope-notes-002.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Complete disjoint source/raw-history reading attribution and compound-specific
+    cautions; the notes do not assert pre-intake scientific verdicts.
+  snapshot_sha256: 725071a2a2a8f19fa72422d9eefda4482682b9ae2ccc4471cbc38618a7f38a25
+- evidence_id: bgc-2316-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-scope-notes-002.json
+  locator: /curation
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Eight pinned implemented curation tables were directly opened including
+    ignored files: 101 exact cohort literals across 93 data rows gave zero textual
+    hits in that bounded scope. Reserved decisions.tsv was not consumed.'
+  snapshot_sha256: 725071a2a2a8f19fa72422d9eefda4482682b9ae2ccc4471cbc38618a7f38a25
+- evidence_id: bgc-2316-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":1264,"physical_line":1264,"raw_tsv_record":"BGC0001083\t5\tactive\tquestionable\tcomplete\tdeschloro-merochlorin
+    B\t4\tOC1=C2C(C(C3C(C)(CC/C=C(C)/C)O4)(C/C(C3)=C(C)/C)C4=C([H])C2=O)=CC(O)=C1\tInChI=1S/C25H30O4/c1-14(2)7-6-8-24(5)21-9-16(15(3)4)13-25(21)18-10-17(26)11-19(27)23(18)20(28)12-22(25)29-24/h7,10-12,21,26-27H,6,8-9,13H2,1-5H3\tAKXGRVOOWGJLFD-UHFFFAOYSA-N\tfalse\t\t\tNCBITaxon:1136432\tStreptomyces
+    sp. CNH189\tPKS|terpene\tType III|Sesquiterpene\tJX186999.1\t\t\tKnock-out studies|Enzymatic
+    assays|Heterologous expression\tBGC_CHARACTERIZED\tCLUSTER_DEMONSTRATED\tPMID:22784372\tENTRY\n","row":{"bgc_classes":"PKS|terpene","bgc_subclasses":"Type
+    III|Sesquiterpene","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"4","compound_name":"deschloro-merochlorin
+    B","database_ids":"","entry_completeness":"complete","entry_quality":"questionable","entry_status":"active","entry_version":"5","genome_accession":"JX186999.1","locus_evidence_methods":"Knock-out
+    studies|Enzymatic assays|Heterologous expression","locus_from":"","locus_to":"","mibig_accession":"BGC0001083","primary_reference":"PMID:22784372","producer_evidence_basis":"BGC_CHARACTERIZED","reference_basis":"ENTRY","smiles":"OC1=C2C(C(C3C(C)(CC/C=C(C)/C)O4)(C/C(C3)=C(C)/C)C4=C([H])C2=O)=CC(O)=C1","standard_inchi":"InChI=1S/C25H30O4/c1-14(2)7-6-8-24(5)21-9-16(15(3)4)13-25(21)18-10-17(26)11-19(27)23(18)20(28)12-22(25)29-24/h7,10-12,21,26-27H,6,8-9,13H2,1-5H3","standard_inchi_key":"AKXGRVOOWGJLFD-UHFFFAOYSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:1136432","taxon_label":"Streptomyces
+    sp. CNH189"},"row_sha256":"9340f8c9b53f4b8a4e4057ccad5adb683a512e8e64d582222ddb15f120af7c54"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"AKXGRVOOWGJLFD-UHFFFAOYSA-N"}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 1264–1264, row_sha256 9340f8c9b53f4b8a4e4057ccad5adb683a512e8e64d582222ddb15f120af7c54
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"bgc_classes":"PKS|terpene","bgc_subclasses":"Type
+    III|Sesquiterpene","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","compound_classes":"","compound_index":"4","compound_name":"deschloro-merochlorin
+    B","database_ids":"","entry_completeness":"complete","entry_quality":"questionable","entry_status":"active","entry_version":"5","genome_accession":"JX186999.1","locus_evidence_methods":"Knock-out
+    studies|Enzymatic assays|Heterologous expression","locus_from":"","locus_to":"","mibig_accession":"BGC0001083","primary_reference":"PMID:22784372","producer_evidence_basis":"BGC_CHARACTERIZED","reference_basis":"ENTRY","smiles":"OC1=C2C(C(C3C(C)(CC/C=C(C)/C)O4)(C/C(C3)=C(C)/C)C4=C([H])C2=O)=CC(O)=C1","standard_inchi":"InChI=1S/C25H30O4/c1-14(2)7-6-8-24(5)21-9-16(15(3)4)13-25(21)18-10-17(26)11-19(27)23(18)20(28)12-22(25)29-24/h7,10-12,21,26-27H,6,8-9,13H2,1-5H3","standard_inchi_key":"AKXGRVOOWGJLFD-UHFFFAOYSA-N","stereo_complete":"false","taxon_id":"NCBITaxon:1136432","taxon_label":"Streptomyces
+    sp. CNH189"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2316-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"AKXGRVOOWGJLFD-UHFFFAOYSA-N"}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"AKXGRVOOWGJLFD-UHFFFAOYSA-N"}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"AKXGRVOOWGJLFD-UHFFFAOYSA-N"}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[{"last_physical_line":62,"physical_line":62,"raw_tsv_record":"AKXGRVOOWGJLFD-UHFFFAOYSA-N\tOC1=C2C(C(C3C(C)(CC/C=C(C)/C)O4)(C/C(C3)=C(C)/C)C4=C([H])C2=O)=CC(O)=C1\tTerpenoids\tMeroterpenoids\tMiscellaneous
+    meroterpenoids\tfalse\tnpclassifier.gnps2.org@2026-09-07\n","row":{"class_results":"Miscellaneous
+    meroterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"OC1=C2C(C(C3C(C)(CC/C=C(C)/C)O4)(C/C(C3)=C(C)/C)C4=C([H])C2=O)=CC(O)=C1","standard_inchi_key":"AKXGRVOOWGJLFD-UHFFFAOYSA-N","superclass_results":"Meroterpenoids"},"row_sha256":"c4af941941d1640e249daa09322101a976ba2b279a36ddeaebb8e05d6ad29237"}],"predicate":"exact
+    complete standard_inchi_key equality","query":"AKXGRVOOWGJLFD-UHFFFAOYSA-N"}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 62–62, row_sha256 c4af941941d1640e249daa09322101a976ba2b279a36ddeaebb8e05d6ad29237
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained physical row payloads, every field: [{"class_results":"Miscellaneous
+    meroterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07","pathway_results":"Terpenoids","smiles":"OC1=C2C(C(C3C(C)(CC/C=C(C)/C)O4)(C/C(C3)=C(C)/C)C4=C([H])C2=O)=CC(O)=C1","standard_inchi_key":"AKXGRVOOWGJLFD-UHFFFAOYSA-N","superclass_results":"Meroterpenoids"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2316-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"AKXGRVOOWGJLFD-UHFFFAOYSA-N"}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"AKXGRVOOWGJLFD-UHFFFAOYSA-N"}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact complete standard_inchi_key equality","query":"AKXGRVOOWGJLFD-UHFFFAOYSA-N"}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete retained query frame, exact predicate and all matches/no-match
+    fields: {"matches":[],"predicate":"exact chebi_id from exact full-key structure
+    rows","query":[]}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/24/source_scope_inventory/source_taxa; /contexts/24/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/24/source_scope_inventory/nonorganism_matches; /contexts/24/source_scope_inventory/actual_assay_rows;
+    /contexts/24/source_scope_inventory/blank_AID_sentinels; /contexts/24/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Exact source taxon and route lists; source_taxa is distinct from the empty
+    forward/nonorganism and assay/related routes: {"actual_assay_rows":[],"blank_AID_sentinels":[],"forward_taxon_merge_matches":[],"nonorganism_matches":[],"related_corpus_rows":[],"source_taxa":["NCBITaxon:1136432"]}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/13
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Complete relevant cached stanzas, with no fresh taxonomy verification:
+    [{"complete_stanza":"[Term]\nid: NCBITaxon:1136432\nname: Streptomyces sp. CNH189\nsynonym:
+    \"Streptomyces sp. CNH-189\" EXACT []\n\n","id":"NCBITaxon:1136432","physical_line":119914}]'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /records/5/direct_companion_paths; /records/5/direct_companion_predicates
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Exact one-hop retained scope, without claim transfer: {"direct_companion_paths":["data/natural_products/polyketides/merochlorin-c.yaml","data/natural_products/terpenoids/deschloro-merochlorin-a.yaml","data/natural_products/terpenoids/dichloro-merochlorin-b.yaml","data/natural_products/terpenoids/isochloro-merochlorin-b.yaml","data/natural_products/terpenoids/merochlorin-a.yaml","data/natural_products/terpenoids/merochlorin-b.yaml","data/natural_products/unclassified/merochlorin-d.yaml"],"direct_companion_predicates":[{"path":"data/natural_products/polyketides/merochlorin-c.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0001083"]},{"path":"data/natural_products/terpenoids/deschloro-merochlorin-a.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0001083"]},{"path":"data/natural_products/terpenoids/dichloro-merochlorin-b.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0001083"]},{"path":"data/natural_products/terpenoids/isochloro-merochlorin-b.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0001083"]},{"path":"data/natural_products/terpenoids/merochlorin-a.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0001083"]},{"path":"data/natural_products/terpenoids/merochlorin-b.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0001083"]},{"path":"data/natural_products/unclassified/merochlorin-d.yaml","same_complete_InChIKey":false,"same_root_identifier":false,"shared_owned_BGCs":["BGC0001083"]}]}'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-companion-boundaries
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch232-tentative/bgc-prep/bgc-conditional232-source-inventory-DATA-001.json
+  locator: /contexts/2; /contexts/23; /contexts/25; /contexts/30; /contexts/31; /contexts/32;
+    /contexts/38
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: 'Whole context meanings and raw/history carries are attributed in the notes;
+    exact identities and root scopes: [{"fullkey":"OGKULKCQQIVNDI-UHFFFAOYSA-N","identifier":"naturalproductmech:mibig-6886375de9","mechanism_roots":[],"owned_BGCs":["BGC0001083"],"path":"data/natural_products/polyketides/merochlorin-c.yaml"},{"fullkey":"QHMTWUPGGIBSFH-KOSPYUSVSA-N","identifier":"naturalproductmech:mibig-ce8421bbb9","mechanism_roots":[],"owned_BGCs":["BGC0001083"],"path":"data/natural_products/terpenoids/deschloro-merochlorin-a.yaml"},{"fullkey":"HARGRIZLPBEAGS-UHFFFAOYSA-N","identifier":"naturalproductmech:mibig-8dfb937ebb","mechanism_roots":[],"owned_BGCs":["BGC0001083"],"path":"data/natural_products/terpenoids/dichloro-merochlorin-b.yaml"},{"fullkey":"MXYVQGBXMBHBHE-UHFFFAOYSA-N","identifier":"naturalproductmech:mibig-453c013dd5","mechanism_roots":[],"owned_BGCs":["BGC0001083"],"path":"data/natural_products/terpenoids/isochloro-merochlorin-b.yaml"},{"fullkey":"UOWJKRBYLCVYIT-UHFFFAOYSA-N","identifier":"naturalproductmech:mibig-fed97c0a20","mechanism_roots":[],"owned_BGCs":["BGC0001083"],"path":"data/natural_products/terpenoids/merochlorin-a.yaml"},{"fullkey":"WEFLJOVONZPAEL-UHFFFAOYSA-N","identifier":"naturalproductmech:mibig-5e7f0cb2fc","mechanism_roots":[],"owned_BGCs":["BGC0001083"],"path":"data/natural_products/terpenoids/merochlorin-b.yaml"},{"fullkey":"UUMRLFAHEFYGJM-UHFFFAOYSA-N","identifier":"naturalproductmech:mibig-c4912c165f","mechanism_roots":[],"owned_BGCs":["BGC0001083"],"path":"data/natural_products/unclassified/merochlorin-d.yaml"}]'
+  snapshot_sha256: a5d9879ae844721ebd2f3256381d8d8812c258a09e1a2563bb253dd4cded901a
+- evidence_id: bgc-2316-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 368–430
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: ChemicalStructure retains standardized-key limits and undefined stereocentres.
+    ComputedClassification is a named/versioned prediction, not a source assertion
+    or admission criterion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2316-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 142–173
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Maintained stereo_complete derives from FindMolChiralCenters and absence
+    of question-mark centre tags; it is not a blanket all-bond-geometry proof.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2316-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 974–1065
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: Maintained seeding preserves source structure and named/versioned model
+    values separately from BGC/source compound classes and cross-reference assertions.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2316-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole current profile
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: One-record scientific review requires claim-level evidence and twelve dimensions
+    with truthful partial completion and unavailable-check limits.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2316-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole current skill
+  accessed_at: '2026-11-03T23:30:34.168730Z'
+  support: supports
+  summary: The review does not edit records; overriding no-request instructions bound
+    evidence access.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-232/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-232/native-current232-five-gates-execution-001.json
+  accessed_at: '2026-11-03T23:06:58.212721Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 8f5917ea73bc1cfaff0acd36b896a8bf563a39d9fa0c06095a640ade8a7f0eb5
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-232/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-232/native-current232-five-gates-execution-001.json
+  accessed_at: '2026-11-03T23:07:23.062519Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 905f0c596112665df821aae49a7d58f13c781433d2bbd42c17b090f83c29ba07
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-232/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-232/native-current232-five-gates-execution-001.json
+  accessed_at: '2026-11-03T23:07:42.545614Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-232/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-232/native-current232-five-gates-execution-001.json
+  accessed_at: '2026-11-03T23:08:16.218635Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-232/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-232/native-current232-five-gates-execution-001.json
+  accessed_at: '2026-11-03T23:08:27.888600Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 135ad5a077a12b8b149dc037f520fc077338ad6bf40df6dfb82dc6c51e9e139b
+assessments:
+- assessment_id: bgc-2316-identity
+  area: identity
+  topic: Identity
+  outcome: supported
+  summary: The MINTED identifier preserves complete key AKXGRVOOWGJLFD-UHFFFAOYSA-N
+    for MIBiG BGC0001083 version 5, compound index 4. The exact retained ChEBI structure
+    join is empty. The seven direct locus companions retain distinct full keys; their
+    names, halogenation patterns, activities and structures cannot substitute for
+    this owner. The source label is retained without claiming a newly verified natural
+    stereoisomer.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  evidence_ids:
+  - bgc-2316-grounding-owner
+  - bgc-2316-source-mibig_compounds
+  - bgc-2316-query-chebi_structures
+  - bgc-2316-chemistry
+  - bgc-2316-direct-contexts
+  - bgc-2316-companion-boundaries
+  dimensions:
+  - name: standard_inchi_key
+    value: AKXGRVOOWGJLFD-UHFFFAOYSA-N; exact full retained source key, not a name
+      or first-block substitute.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2316-grounding-owner
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-query-chebi_structures
+    - bgc-2316-chemistry
+    - bgc-2316-direct-contexts
+    - bgc-2316-companion-boundaries
+  - name: grounding_scope
+    value: MINTED; empty exact retained ChEBI structure join. Natural identity and
+      external cross-references are not freshly verified.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2316-grounding-owner
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-query-chebi_structures
+    - bgc-2316-chemistry
+    - bgc-2316-direct-contexts
+    - bgc-2316-companion-boundaries
+- assessment_id: bgc-2316-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: 'Both saved forms are neutral C25H30O4, one connected component with 29
+    heavy atoms and 32 bonds. The four-ring polycyclic framework includes an aromatic
+    six-carbon ring, two phenolic hydroxyls, one ketone and a cyclic ether, plus nonaromatic
+    alkenes. Three tetrahedral centres are unspecified: SMILES atoms 4, 5 and 6 correspond
+    to InChI atoms 24, 20 and 23. No potential double-bond stereoelement is reported
+    in the complete saved tables. The false stereo_complete flag is consistent with
+    the unresolved centres. All ten comparisons are true and the saved chirality-aware
+    correspondence is complete; full_graph_identity_established remains false. These
+    are representation observations, not an experimental stereochemical assignment.'
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  evidence_ids:
+  - bgc-2316-grounding-owner
+  - bgc-2316-chemistry
+  - bgc-2316-topology
+  - bgc-2316-diagnostic-acceptance
+  - bgc-2316-structure-schema
+  - bgc-2316-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Three unspecified tetrahedral centres in both forms; retained false flag
+      is faithful. No natural absolute configuration is assigned.
+    definition: Saved complete stereo/atom/bond interpretation, not an experimental
+      assignment or a new parse.
+    evidence_ids:
+    - bgc-2316-grounding-owner
+    - bgc-2316-chemistry
+    - bgc-2316-topology
+    - bgc-2316-diagnostic-acceptance
+    - bgc-2316-structure-schema
+    - bgc-2316-stereo-method
+  - name: representation_correspondence
+    value: All ten within-record comparisons true with a complete stored chirality-aware
+      correspondence; full_graph_identity_established remains false.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2316-grounding-owner
+    - bgc-2316-chemistry
+    - bgc-2316-topology
+    - bgc-2316-diagnostic-acceptance
+    - bgc-2316-structure-schema
+    - bgc-2316-stereo-method
+- assessment_id: bgc-2316-origin
+  area: provenance
+  topic: Origin
+  outcome: supported
+  summary: The retained producer is Streptomyces sp. CNH189, NCBITaxon:1136432, with
+    BGC_CHARACTERIZED evidence. The cached CNH-189 spelling is an exact synonym of
+    that retained label, not a fresh species determination. BGC0001083 version 5 is
+    active, questionable and complete in the source inventory. Knock-out studies,
+    enzymatic assays and heterologous expression support the separate CLUSTER_DEMONSTRATED
+    locus grade. GenBank JX186999.1 is retained without invented locus coordinates.
+    The source PKS/TERPENE classes and Type III polyketide/Sesquiterpene subclass
+    strings do not establish a complete owner-specific pathway.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  evidence_ids:
+  - bgc-2316-origin-owner
+  - bgc-2316-source-mibig_compounds
+  - bgc-2316-cached-taxonomy
+  - bgc-2316-source-routes
+  - bgc-2316-direct-contexts
+  - bgc-2316-companion-boundaries
+  dimensions:
+  - name: taxon_scope
+    value: NCBITaxon:1136432 Streptomyces sp. CNH189/CNH-189 cached label scope; no
+      species refinement or occurrence inference.
+    definition: Source taxa and cached labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2316-origin-owner
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-cached-taxonomy
+    - bgc-2316-source-routes
+    - bgc-2316-direct-contexts
+    - bgc-2316-companion-boundaries
+  - name: producer_evidence
+    value: BGC_CHARACTERIZED source producer claim, independently distinguished from
+      locus and occurrence evidence.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2316-origin-owner
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-cached-taxonomy
+    - bgc-2316-source-routes
+    - bgc-2316-direct-contexts
+    - bgc-2316-companion-boundaries
+  - name: locus_evidence
+    value: BGC0001083 v5 active/questionable/complete; three named locus methods;
+      CLUSTER_DEMONSTRATED; no written bounds on JX186999.1.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2316-origin-owner
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-cached-taxonomy
+    - bgc-2316-source-routes
+    - bgc-2316-direct-contexts
+    - bgc-2316-companion-boundaries
+- assessment_id: bgc-2316-citations
+  area: evidence
+  topic: Citations
+  outcome: supported
+  summary: PMID:22784372 is explicitly ENTRY-level database provenance for this producer/locus
+    record. Repetition of the entry citation across the seven direct congeners is
+    not independent compound-level experimental support. The local review checks faithful
+    placement and scope of that citation; it does not re-read the primary publication
+    or assign an unrecorded enzyme mechanism.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  evidence_ids:
+  - bgc-2316-origin-owner
+  - bgc-2316-occurrence-owner
+  - bgc-2316-source-mibig_compounds
+  - bgc-2316-source-notes
+  - bgc-2316-direct-contexts
+  - bgc-2316-companion-boundaries
+  dimensions:
+  - name: citation_scope
+    value: ENTRY PMID:22784372; repeated congener/field placements are not independent
+      experiments.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2316-origin-owner
+    - bgc-2316-occurrence-owner
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-source-notes
+    - bgc-2316-direct-contexts
+    - bgc-2316-companion-boundaries
+- assessment_id: bgc-2316-bioactivity
+  area: evidence
+  topic: Occurrence and activity
+  outcome: supported
+  summary: No occurrence, bioactivity or molecular target is written for this owner.
+    The exact retained LOTUS, ChEBI-origin, CyanometDB, PubChem, BindingDB and AntibioticMech
+    joins are empty. This is a bounded saved-source result, not evidence of inactivity
+    or universal absence of occurrence. No activity or mechanism is transferred from
+    a merochlorin companion.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  evidence_ids:
+  - bgc-2316-occurrence-owner
+  - bgc-2316-assay-owner
+  - bgc-2316-grounding-owner
+  - bgc-2316-source-mibig_compounds
+  - bgc-2316-source-routes
+  - bgc-2316-cached-taxonomy
+  - bgc-2316-query-lotus_occurrences
+  - bgc-2316-query-chebi_origins
+  - bgc-2316-query-cyanometdb_occurrences
+  - bgc-2316-query-pubchem_bioassay
+  - bgc-2316-query-bindingdb_targets
+  - bgc-2316-query-antibioticmech_inchikeys
+  - bgc-2316-direct-contexts
+  - bgc-2316-companion-boundaries
+  dimensions:
+  - name: occurrence_scope
+    value: No written occurrence and no exact retained occurrence match; this is not
+      proof of universal absence.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2316-occurrence-owner
+    - bgc-2316-assay-owner
+    - bgc-2316-grounding-owner
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-source-routes
+    - bgc-2316-cached-taxonomy
+    - bgc-2316-query-lotus_occurrences
+    - bgc-2316-query-chebi_origins
+    - bgc-2316-query-cyanometdb_occurrences
+    - bgc-2316-query-pubchem_bioassay
+    - bgc-2316-query-bindingdb_targets
+    - bgc-2316-query-antibioticmech_inchikeys
+    - bgc-2316-direct-contexts
+    - bgc-2316-companion-boundaries
+  - name: assay_target_scope
+    value: No written activity/target, no retained assay/target match; no inactivity
+      or congener transfer inference.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2316-occurrence-owner
+    - bgc-2316-assay-owner
+    - bgc-2316-grounding-owner
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-source-routes
+    - bgc-2316-cached-taxonomy
+    - bgc-2316-query-lotus_occurrences
+    - bgc-2316-query-chebi_origins
+    - bgc-2316-query-cyanometdb_occurrences
+    - bgc-2316-query-pubchem_bioassay
+    - bgc-2316-query-bindingdb_targets
+    - bgc-2316-query-antibioticmech_inchikeys
+    - bgc-2316-direct-contexts
+    - bgc-2316-companion-boundaries
+- assessment_id: bgc-2316-classification
+  area: consistency
+  topic: Classification
+  outcome: supported
+  summary: NPClassifier npclassifier.gnps2.org@2026-09-07 retains Terpenoids / Meroterpenoids
+    / Miscellaneous meroterpenoids and is_glycoside:false. The complete aromatic/polycyclic
+    oxygenated topology is compatible with a broad meroterpenoid description, but
+    it does not experimentally establish the biosynthetic class. The versioned prediction
+    remains separate from the source PKS/TERPENE BGC classes; no concrete filing or
+    source-identity correction is established.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  evidence_ids:
+  - bgc-2316-classification-owner
+  - bgc-2316-source-npclassifier
+  - bgc-2316-source-mibig_compounds
+  - bgc-2316-chemistry
+  - bgc-2316-topology
+  - bgc-2316-structure-schema
+  - bgc-2316-classification-seeder
+  dimensions:
+  - name: classification_applicability
+    value: Versioned Meroterpenoids / Miscellaneous meroterpenoids and glycoside:false;
+      compatible broad topology, not experimental pathway proof.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2316-classification-owner
+    - bgc-2316-source-npclassifier
+    - bgc-2316-source-mibig_compounds
+    - bgc-2316-chemistry
+    - bgc-2316-topology
+    - bgc-2316-structure-schema
+    - bgc-2316-classification-seeder
+- assessment_id: bgc-2316-completion
+  area: completeness
+  topic: Completion
+  outcome: unknown
+  summary: All twelve scientific dimensions were assessed using the complete current
+    owner/history, actual canonical intake, retained source payloads and complete
+    saved paired molecular tables. Five original local gates passed, but full QC,
+    complete OAK authority coverage and fresh external verification remain unavailable.
+    This owner has no mechanism root or selected reader. The bounded eight-table curation
+    scan found no exact cohort-token match. No supported new maintained-source correction
+    is established; scientific completion remains partial and native curation status
+    is unchanged.
+  target_ids:
+  - naturalproductmech:mibig-21a81cb2e3
+  evidence_ids:
+  - bgc-2316-owner
+  - bgc-2316-capture
+  - bgc-2316-intake
+  - bgc-2316-intake-acceptance
+  - bgc-2316-inventory-acceptance
+  - bgc-2316-plan
+  - bgc-2316-plan-acceptance
+  - bgc-2316-source-notes
+  - bgc-2316-curation-scope
+  - bgc-2316-diagnostic-execution
+  - bgc-2316-diagnostic-acceptance
+  - bgc-2316-native-acceptance
+  - bgc-2316-review-profile
+  - bgc-2316-review-skill
+  dimensions:
+  - name: review_completion
+    value: Partial scientific review from retained evidence; full QC/OAK and fresh
+      primary/taxonomic/natural-identity verification remain unavailable. No native
+      status promotion.
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2316-owner
+    - bgc-2316-capture
+    - bgc-2316-intake
+    - bgc-2316-intake-acceptance
+    - bgc-2316-inventory-acceptance
+    - bgc-2316-plan
+    - bgc-2316-plan-acceptance
+    - bgc-2316-source-notes
+    - bgc-2316-curation-scope
+    - bgc-2316-diagnostic-execution
+    - bgc-2316-diagnostic-acceptance
+    - bgc-2316-native-acceptance
+    - bgc-2316-review-profile
+    - bgc-2316-review-skill
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally. External identifiers, primary publications, taxonomy
+  and natural stereochemical assignments were not refreshed under the absolute no-request
+  instruction.
+- Full QC and complete OAK authority coverage remain unavailable. Local gates and
+  successful stored parses establish only their stated mechanical scope.
+- Empty joins concern exact saved predicates and snapshots only. Shared loci, taxa,
+  names and citations do not transfer compound-specific production, activity, mechanism
+  or independent-study status.
+- Six original undefined-stereo warnings remain global and unassigned to records.
+  No additional molecular/YAML parse, source query or target invocation occurred during
+  scientific authoring.
+- No source record, native curation status or history is edited. Any later supported
+  correction belongs to the maintained owners identified in the accepted canonical
+  intake.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete owner/history and actual canonical intake were read. Full source payload
+  and companion reading/carry attribution is retained in the pinned notes.
+- 'BGC personally read all ten molecular forms for these five owners: 248 atom rows
+  and 276 bond rows plus all scalars, ring/stereo/motif tables and original comparisons/maps.
+  Diagnostic atom numbers are zero-based indices, not biochemical locants.'
+- ROOT operated original activation/capture, collector, composer and canonical intakes;
+  Native operated original gates and chemistry. BGC authored the collector/composer
+  source and notes but invoked no target for these scientific assessments.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-232
