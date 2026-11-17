@@ -1,0 +1,1656 @@
+# Scientific review of anabaenopeptin 788
+
+- Review: 20261026T161826Z-anabaenopeptin-788
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-26T15:24:28.619380Z
+- Finished UTC: 2026-10-26T16:18:26.937710Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Partial review of anabaenopeptin 788. The own original supports named 788 material from CT11 at a putative MS-assignment tier with genomic stereochemical prediction. The detailed NMR evidence for 802a/b does not establish 788 stereochemistry; figures and supplementary material were not inspected. Retained identifiers agree internally, with authority and locus-method verification incomplete.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 540, batch 054, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 598 of 3116 current records had campaign coverage and 2518 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-dedfa943d3 | data/natural_products/amino_acids_and_peptides/anabaenopeptin-788.yaml | generated | anabaenopeptin 788 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-dedfa943d3 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-dedfa943d3 | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-dedfa943d3 | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-dedfa943d3 | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-dedfa943d3 | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-dedfa943d3 | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Complete owner and seven-set fidelity | passed | True | naturalproductmech:mibig-dedfa943d3 | Actual selection, ten successful intakes and chronological ROOT binding are required. All ten owners and 70 exact-key source sets were literally read and mechanically preserved, including 21 ordered history events. Scientific owner and raw-row assessment is complete for 533–540 within the approved material and stock boundaries; 531/532 are limited to chemical identity and bibliography, excluding producer/locus biological interpretation. No inline or referenced graphs, pathways, molecular targets or emitted activity annotations occur. Blank-AID sentinels at 532 and 537 are no-assay provenance. The existing 537 discussion is preserved without a new adjudication. Current naming is unattempted under the existing export hold: no batch 54 request, response, individual rejection or explicit permission question is claimed. |
+| Required current taxonomy identifier context | unavailable | True | naturalproductmech:mibig-dedfa943d3 | Retained local identifier/label assertions only: NCBITaxon:2748322: Brasilonema sp. CT11; NCBITaxon:383614: Brasilonema. Current authoritative NCBI names, rank, parent, synonyms and resolution remain unavailable because no batch 54 naming request was attempted under the existing export hold. No producer, stock, taxon or congener merger is inferred. |
+| Required current literal organism routing | unavailable | True | naturalproductmech:mibig-dedfa943d3 | The 1 retained literal LOTUS route is mechanically preserved. Current Wikidata P225/P685 validation is unavailable; no matching, missing-property, failed-route, source-exclusion or occurrence conclusion is inferred. |
+| actual local sources and guarded authoring prerequisites | passed | True | naturalproductmech:mibig-dedfa943d3 | Exact local/source equality and scoped manual reading are recorded. This does not mean author runtime guards have executed; all ten ROOT receipts and source acceptance remain mandatory. |
+| bounded bibliography and named-source evidence | passed | True | naturalproductmech:mibig-dedfa943d3 | The own 2020 original supports anabaenopeptin 788 in Brasilonema sp. CT11 through a putative MS-based assignment. Stereochemistry is predicted from genomic evidence in the bounded paragraph. The detailed isolation/NMR identification concerns 802a/b and is not transferred to 788. No figure pixels or supplementary file were read. |
+| complete original-source identity and applicability | unavailable | True | naturalproductmech:mibig-dedfa943d3 | MS-based named-material/source support is available, but original figure/SI inspection, independently established natural stereochemistry and complete locus-method applicability remain unavailable. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-dedfa943d3 | The current owner/intake Standard InChI and full key agree, and every exact versioned raw row agrees in Standard and fixed-H diagnostics. Stored formula/layers are preserved. 0 reported unassigned tetrahedral centres; internal representation fidelity only, not natural-hand validation. |
+| Required current source or literal chemical authorities | unavailable | True | naturalproductmech:mibig-dedfa943d3 | All 19 literal owner authority roles and 17 distinct identifier/version tuples remain unattempted under inherited holds. No current 54 authority request, response, individual rejection, approval question, returned identifier or authority HTTP clock is inferred. Ordinary literature is a separate scope. |
+| Named primary constitution and exact depiction applicability | unavailable | True | naturalproductmech:mibig-dedfa943d3 | Anabaenopeptin 788 retains six assigned centres and agrees with version 3 BGC0002512 compound 1. The numerical congener label is not independent mass or structure proof. Exact primary depiction, absolute configuration and current literal NPAtlas correspondence remain unresolved. |
+| Original geometry and stereochemical precision | unavailable | True | naturalproductmech:mibig-dedfa943d3 | Reported assigned/unassigned centres and encoded alkene geometry remain retained-representation observations. Exact original depiction and natural absolute configuration have not been closed; no replacement or normalization is selected. |
+
+## Scientific And Domain Assessments
+
+### Complete history and native status
+
+provenance: supported. Targets: naturalproductmech:mibig-dedfa943d3.
+
+Native status remains SEEDED and all 2 history actions retain their exact order: ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES']. Source-seeding history does not replace claim-level scientific assessment.
+
+### Present optional assertions
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-dedfa943d3.
+
+No nonempty assertion occurs in these optional fields. Empty categories alone do not establish a scientific omission.
+
+### Exact computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-dedfa943d3.
+
+Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces filing, superclass/class and glycoside fields. Computed classification is not independent natural-origin or mechanistic proof; any accepted identity correction requires effective-key reclassification.
+
+### Unverified local labels versus current taxonomy
+
+provenance: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+Retained local identifier/label assertions only: NCBITaxon:2748322: Brasilonema sp. CT11; NCBITaxon:383614: Brasilonema. Current authoritative NCBI names, rank, parent, synonyms and resolution remain unavailable because no batch 54 naming request was attempted under the existing export hold. No producer, stock, taxon or congener merger is inferred.
+
+### Unavailable current organism routing
+
+grounding: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+The 1 retained literal LOTUS route is mechanically preserved. Current Wikidata P225/P685 validation is unavailable; no matching, missing-property, failed-route, source-exclusion or occurrence conclusion is inferred.
+
+### Native producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-dedfa943d3.
+
+The retained historical catalogue contains 20 organisms and 28 datasets at its original source clock. It supplies context only and establishes no exact producer stock, compound, gene or module association. It is not a current naming lookup or exhaustive applicability search.
+
+### bounded local owner and exact source roles
+
+provenance: supported. Targets: naturalproductmech:mibig-dedfa943d3.
+
+The complete current owner/history and all seven raw-source sets were read. BGC0002512 version 3 names 788 and CT11; the separate genus occurrence and source-specific coordinate assertion are retained.
+
+### named material and source context
+
+provenance: supported. Targets: naturalproductmech:mibig-dedfa943d3.
+
+The own 2020 original supports anabaenopeptin 788 in Brasilonema sp. CT11 through a putative MS-based assignment. Stereochemistry is predicted from genomic evidence in the bounded paragraph. The detailed isolation/NMR identification concerns 802a/b and is not transferred to 788. No figure pixels or supplementary file were read.
+
+### source and congener applicability limits
+
+evidence: supported. Targets: naturalproductmech:mibig-dedfa943d3.
+
+The bounded original supports a named 788/CT11 MS tier, with genomic stereochemical prediction. Detailed NMR evidence belongs to 802a/b. SOURCE_ASSERTION, CLUSTER_UNSTATED and empty methods remain unchanged; no figure, hand or complete locus-method closure is claimed.
+
+### remaining original-source closure
+
+completeness: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+MS-based named-material/source support is available, but original figure/SI inspection, independently established natural stereochemistry and complete locus-method applicability remain unavailable.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-dedfa943d3.
+
+The complete source row BGC0002512:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-dedfa943d3.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Candidate discovery was not performed; no negative remote search, alternative grounding or approval is inferred.
+
+### Exact literal chemical identifier scope
+
+representation: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+Required current literal availability: [{"absence_inferred": false, "identifier": "npatlas:NPA033119", "owner_role": "xref", "status": "unavailable_unattempted_under_inherited_hold"}]. Exact request spelling is preserved; no unavailable response, normalized returned identifier or numerical comparison is invented. No authority graph is adopted.
+
+### Existing ChEBI role and unavailable current validation
+
+grounding: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+[]. No exact-key ChEBI row belongs to this owner in the committed projection. This local result is not a negative remote search or a grounding recommendation.
+
+### Current literal authority availability
+
+scope: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+All 19 literal owner authority roles and 17 distinct identifier/version tuples remain unattempted under inherited holds. No current 54 authority request, response, individual rejection, approval question, returned identifier or authority HTTP clock is inferred. Ordinary literature is a separate scope.
+
+### Literal and derived representation boundary
+
+representation: supported. Targets: naturalproductmech:mibig-dedfa943d3.
+
+The current owner/intake Standard InChI and full key agree, and every exact versioned raw row agrees in Standard and fixed-H diagnostics. Stored formula/layers are preserved. 0 reported unassigned tetrahedral centres; internal representation fidelity only, not natural-hand validation.
+
+### Exact named material and source precision
+
+identity: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+Anabaenopeptin 788 retains six assigned centres and agrees with version 3 BGC0002512 compound 1. The numerical congener label is not independent mass or structure proof. Exact primary depiction, absolute configuration and current literal NPAtlas correspondence remain unresolved.
+
+### Excluded biological, pathway and assay material
+
+scope: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+Manual chemical identity, literal source and representation reading only. Whole-owner/raw scientific flags remain false in this chemistry component. Biological, pathway, operational, graph and assay interpretation is excluded. Records 531 and 532 remain chemical identity only; the blank-AID rows at 532 and 537 remain sentinels, not assay evidence.
+
+### Primary identity and experimental precision
+
+scope: unknown. Targets: naturalproductmech:mibig-dedfa943d3.
+
+Anabaenopeptin 788 retains six assigned centres and agrees with version 3 BGC0002512 compound 1. The numerical congener label is not independent mass or structure proof. Exact primary depiction, absolute configuration and current literal NPAtlas correspondence remain unresolved.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R540-OWNER | data/natural_products/amino_acids_and_peptides/anabaenopeptin-788.yaml; Prior bounded root owner read, mechanically verified unchanged against actual post-intake content | supports | Actual post-intake equality preserves 1 occurrence, 1 producer and 1 locus assertions, optional fields and history. The resolved view contains 0 exactly pinned external component(s). The separate ROOT scientific assessment retains its approved material/stock boundaries, scientific gaps and claim-level source limits. |
+| R540-LOCAL | /private/tmp/npm-review-work/540/local-sources.json; Complete resolved owner and all six captured source sets; seventh set independently compared | context_only | Exact captured rows and separately parsed PubChem rows match frozen preparation. Inventory equality does not establish experimental support. |
+| R540-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Complete exact-key retained assay-row inventory | context_only | This owner has 0 retained rows and 0 written observations. Only the blank-AID no-data sentinels at 532 and 537 occur; neither is an activity result. There are no AID-bearing selected rows, emitted activity annotations or graph components. Raw-only inventory does not establish an omission error or an experimental result. |
+| R540-NAMING-HOLD | /private/tmp/npm-review-work/shared-next-batch054/root-context/root-current54-context-data-peer-acceptance-001.json; ROOT acceptance of the local naming packet; no batch 54 authority request or response | context_only | Current naming is unattempted under the existing export hold. The prior batch 51 approval remains unresolved; no explicit batch 54 approval question, individual rejection, returned taxonomy/Wikidata object or HTTP clock is claimed. |
+| R540-LOCAL-NAMING | /private/tmp/npm-review-work/shared-next-batch054/root-authoring/source-plan-14373517-v1.json; Exact local taxon labels and literal LOTUS routing retained without current validation | context_only | Retained local identifier/label assertions only: NCBITaxon:2748322: Brasilonema sp. CT11; NCBITaxon:383614: Brasilonema. Current authoritative NCBI names, rank, parent, synonyms and resolution remain unavailable because no batch 54 naming request was attempted under the existing export hold. No producer, stock, taxon or congener merger is inferred. The 1 retained literal LOTUS route is mechanically preserved. Current Wikidata P225/P685 validation is unavailable; no matching, missing-property, failed-route, source-exclusion or occurrence conclusion is inferred. |
+| R540-IMODULON | https://imodulondb.org/api/datasets; Complete retained 20-organism/28-dataset catalogue | context_only | The retained historical catalogue contains 20 organisms and 28 datasets at its original source clock. It supplies context only and establishes no exact producer stock, compound, gene or module association. It is not a current naming lookup or exhaustive applicability search. |
+| S540-E-ACTUAL-LOCAL | /private/tmp/npm-review-work/540/local-sources.json; Complete resolved owner and captured rows; exact seven-set equality checked | context_only | Complete actual raw owner/history, exact component expansion and all seven source sets match mechanically. Bounded scientific source claims and remaining graph limitations are recorded in the target plan; no complete graph validation is implied. |
+| S540-E-CONSUMERS | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Current pinned source consumers: occurrence versus producer placement, method grading and exact maintained correction guards; no source-specific endpoint promotion | context_only | Static inspection covers exact source method grading, producer/reference qualification and consumed correction ordering. Current shared-structure replacement and consolidated discussions are separate capabilities; they do not select identity changes or broaden source endpoints. |
+| S540-E-GENERIC-SCHEMA | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv and grading.py also read and pinned | context_only | Producer tiers concern evidence in the named organism; cloned-locus experiments are a distinct cluster question. Empty methods and a source assertion do not independently assert native knockout or exact pure-enzyme proof. |
+| S540-E-SEARCH | /private/tmp/npm-review-work/540/science-search.json; Exact read scope | context_only | Exact current curated-decision search is retained. Its scope is the curation tree; it does not establish absence of experimental evidence or all possible consumers. |
+| S540-E-FORMAL-BINDING | /private/tmp/npm-review-work/shared-next-batch054/provisional-science-536-540/current-input-binding-provisional-v1.json; complete binding and future_required | context_only | Current official selection/intakes and exact source scope are fixed; future ROOT packet acceptance and all ten post-intake ROOT reads are mandatory before execution. |
+| S540-E-GUARDS | /private/tmp/npm-review-work/shared-next-batch054/provisional-science-536-540/source-row-guards.json; entries 531–540 | context_only | Complete all-ten 70 source-set guards; no scientific conclusion from equality. |
+| S540-E-INTAKE-VIEW | /private/tmp/npm-review-work/shared-next-batch054/provisional-science-536-540/expected-intake-view-mechanical-001.json; intake_views 531–540 | context_only | Current all-ten owner/expanded/source/intake equality only. |
+| S540-E-LOCAL | /private/tmp/npm-review-work/shared-next-batch054/owner-source-inventory.json; selected entries and complete seven source sets | context_only | Current official inventory fixes owner/history, exact raw rows and intake membership mechanically; it does not establish source applicability. |
+| S540-E-LOCAL-ROOT | /private/tmp/npm-review-work/shared-next-batch054/root-local-owner-source-read-001.json; manual_flags and exact source-read inputs | context_only | ROOT original manual masks: scientific owner/raw false for 531/532 and true for 533–540. All chemical model and primary-source conclusions remain separately scoped. |
+| S540-E-META-OWN-DOI-08-CROSSREF | DOI:10.3390/molecules25173786; Own DOI:10.3390/molecules25173786 bibliographic fields only; no reference-list transfer | context_only | Own-article bibliographic identifiers and returned links only; no abstract or original-main inference. |
+| S540-E-META-PMID-32825321 | PMID:32825321; Own PubmedArticle PMID:32825321; selected raw Unicode fragment coordinates in METADATA-READ, abstract only | partial | Own-article abstract, bounded material/source tier only. The abstract explicitly associates the study with Brasilonema sp. CT11 and names 788 among three compounds. Its spectroscopic-structure sentence specifically concerns the two 802 homologues, so those endpoints cannot be transferred to 788. No locus grade is promoted. |
+| S540-E-METADATA-PEER | /private/tmp/npm-review-work/shared-next-batch054/bgc-science/review-support-primary-followup54-source-plan-collector-peer-001.json; complete scoped peer | context_only | Independent metadata and original-request preparation peer; it does not itself establish original-main content. |
+| S540-E-METADATA-READ | /private/tmp/npm-review-work/shared-next-batch054/bgc-science/actual-primary-metadata-source-read-001.json; source_channels and selected record judgments | context_only | Own bibliography and bounded abstract evidence remain distinct from source-specific main-text evidence and access gaps. |
+| S540-E-ORIGINAL-ANABAENOPEPTIN788-2020-ORIGINAL | PMID:32825321; BioC document PMC7503407, front own DOI/PMID; bounded passages 7,9,10,12,32 and 90; exact selected short spans and complete passage hashes in ORIGINAL-READ. No figure pixels or SI. | partial | The own 2020 main assigns 788 in CT11 at a putative MS tier and predicts stereochemistry; detailed isolation/NMR identification concerns 802a/b, not 788. |
+| S540-E-ORIGINAL-PEER | /private/tmp/npm-review-work/shared-next-batch054/bgc-science/review-support-original54-source-label-proposal-peer-001.json; complete peer findings and limitations | context_only | Independent actual original-source and exact 537 claim-guard peer. |
+| S540-E-ORIGINAL-READ | /private/tmp/npm-review-work/shared-next-batch054/bgc-science/original-followup-bounded-source-read-001.json; five responses, seven short raw-text spans, passage hashes and selected record judgments | context_only | Two genuine original containers and three HTML access gaps are classified with exact original clocks. Conclusions use only bounded identity, source and congener passages. |
+| S540-E-ROOT-ADJUDICATION | /private/tmp/npm-review-work/shared-next-batch054/bgc-science/root-amychelin537-source-label-adjudication-001.json; accepted label-only finding scope; no identifier or occurrence replacement | context_only | ROOT adjudication of the bounded original sources and the exact conditional 537 source-label reconciliation. |
+| S540-E-ROOT-ORIGINAL | /private/tmp/npm-review-work/shared-next-batch054/bgc-science/root-primary-followup54-actual-source-read-001.json; actual source identity and bounded conclusions | context_only | ROOT original passage read preserves generic amychelin, the AA4 label conflict and the 788-versus-802 evidence distinction. |
+| S540-E-ROOT-SOURCE-ACCEPTANCE | /private/tmp/npm-review-work/shared-next-batch054/bgc-science/root-original54-source-projection-peer-acceptance-001.json; actual source projection and peer acceptance | context_only | ROOT accepted the complete bounded original-source projection and independent peer. |
+| S540-E-SOURCE-NOTES | /private/tmp/npm-review-work/shared-next-batch054/provisional-science-536-540/source-notes-001.json; entries for selected five | context_only | Five record-specific judgments retain bounded positive evidence, required gaps and exclusions. |
+| S540-E-SOURCE-READ | /private/tmp/npm-review-work/shared-next-batch054/bgc-science/actual-owner-raw-scientific-read-531540-001.json; entries for selected five; complete current masks and read disclosure | context_only | Complete bounded local reading and exact source roles, with 531/532 biological exclusions and no chemical model/assay/graph claim. |
+| C540-OWNER | data/natural_products/amino_acids_and_peptides/anabaenopeptin-788.yaml; Complete owner bytes and seven matching source-row sets mechanically checked; manual chemical identity scope only | supports | The chemical identity fields denote anabaenopeptin 788 under naturalproductmech:mibig-dedfa943d3. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "be64aa1c70294d36963635d7bfe018e39fefe95314ceabaf216f44acafc7a2d3", "selector": "BGC0002512:1", "version": "3"}]. The official intake and prepared owner bytes agree. |
+| C540-GRAPH | /private/tmp/npm-review-work/540/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored full key remains HEAKELJCVBVEKW-LBEIPMMNSA-N; the retained SMILES recomputes to HEAKELJCVBVEKW-LBEIPMMNSA-N, formula C41H56N8O8, formal charge 0. Exact stored comparisons: InChI=True, full key=True. Literal InChI formula/layers and derived metal/component diagnostics remain separate; no normalization or experimental identity proof is inferred. |
+| C540-COMPARISON | /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/retained-graph-comparison.json; Record 540; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C540-LOCAL-SEARCH | /private/tmp/npm-review-work/540/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C540-AUTHORITY-AVAILABILITY | /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/author-template-preparation/authority-limited-source-projection-prepared-001.json; Retained raw/versioned channels and explicitly unavailable current literal roles | partial | This is an availability and retained-source projection, not a fresh current-authority numerical comparison. Required held roles are not asserted absent, matching or mismatching. |
+| C540-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/author-template-preparation/source-plan-prepared-001.json; Retained raw/versioned channels and explicitly unavailable current literal roles | partial | This is an availability and retained-source projection, not a fresh current-authority numerical comparison. Required held roles are not asserted absent, matching or mismatching. |
+| C540-RETAINED | local:batch054-retained; entries[9]; complete stored layers and reported owner/raw graphs; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/retained-graph-comparison.json | partial | ROOT executed the retained diagnostic. Owner Standard InChI/key and all matching raw Standard/fixed-H comparisons agree. This supports internal representation fidelity only; source depiction and natural absolute configuration remain separate. |
+| C540-DIAGNOSTIC-ROOT | local:batch054-diagnostic-observation; checks and judgments; actual ROOT terminal and retained result pins; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/root-retained-diagnostic54-actual-observation-001.json | partial | ROOT observed the local diagnostic exit zero, ten owner and eleven raw comparisons, four false stereo flags and sixteen undefined-stereo warning lines. No external identity or natural-hand validation is claimed. |
+| C540-DIAGNOSTIC-PEER | local:batch054-diagnostic-peer; records[9] and bounded identity_judgments; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/review-support-actual54-retained-diagnostic-fidelity-peer-001.json | partial | Independent output/source fidelity preserves every original structure and comparison. The reported model outputs were not recomputed; primary depiction and authority identity are separate. |
+| C540-INVENTORY | local:batch054-actual-inventory; entries[9]; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/owner-source-inventory.json | partial | Exact selected owner and all seven source sets are mechanically bound to actual intakes. Whole-owner/raw and graph/assay scientific completion is not inferred. |
+| C540-AUTH-HOLD | local:batch054-authority-hold; entries[9], hold_boundary; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/authority-hold-and-verification-plan-001.json | context_only | All 19 literal owner authority roles and 17 distinct identifier/version tuples remain unattempted under inherited holds. No current 54 authority request, response, individual rejection, approval question, returned identifier or authority HTTP clock is inferred. Ordinary literature is a separate scope. |
+| C540-ORIGINAL-ACCESS-1 | https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7503407/unicode; status, content_type, bytes, sha256, original started_at/finished_at and exact URL; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/bgc-science/public-002/anabaenopeptin788-2020-original.xml.access.json | context_only | The exact original-literature route returned a complete HTTP 200 XML response. This access receipt proves retrieval only; chemical depiction, congener applicability and natural-hand interpretation are not inferred by this component from status or file type. |
+
+## Limits And Additional Notes
+
+- All ten owners and 70 source joins were literally read and mechanically preserved, including 21 ordered history events. Full owner and raw-row scientific assessment is limited to 533–540; 531/532 remain chemical identity and bibliography only, with producer/locus biological interpretation excluded. No inline or referenced graphs, pathways or emitted activity annotations occur. The two blank-AID sentinels at 532 and 537 are no-assay provenance entries. Current naming remains unattempted under the existing export hold, with no batch 54 response, individual rejection or explicit permission question claimed. The historical iModulon catalogue retains its original clock and establishes no exact stock, compound or module applicability.
+- MS-based named-material/source support is available, but original figure/SI inspection, independently established natural stereochemistry and complete locus-method applicability remain unavailable.
+- The bounded original supports a named 788/CT11 MS tier, with genomic stereochemical prediction. Detailed NMR evidence belongs to 802a/b. SOURCE_ASSERTION, CLUSTER_UNSTATED and empty methods remain unchanged; no figure, hand or complete locus-method closure is claimed.
+- Stored/raw and bounded original evidence retain their original scopes and clocks. The 19 literal authority roles/17 distinct identifier-version tuples remain unattempted under inherited holds; no new 54 rejection, approval question or HTTP clock is fabricated. Literal stored metal/charge/formula/InChI layers remain distinct from computed diagnostics; no normalization or natural-hand closure is inferred. Only actual diagnostic warnings may be reported. Biological, pathway, operational, graph and assay interpretation is excluded. Records 531/532 remain chemical identity only; 532/537 blank-AID rows remain sentinels. Organism, locus, classification and history claims are separately scoped.
+- All 19 literal owner authority roles and 17 distinct identifier/version tuples remain unattempted under inherited holds. No current 54 authority request, response, individual rejection, approval question, returned identifier or authority HTTP clock is inferred. Ordinary literature is a separate scope. Anabaenopeptin 788 retains six assigned centres and agrees with version 3 BGC0002512 compound 1. The numerical congener label is not independent mass or structure proof. Exact primary depiction, absolute configuration and current literal NPAtlas correspondence remain unresolved. Manual chemical identity, literal source and representation reading only. Whole-owner/raw scientific flags remain false in this chemistry component. Biological, pathway, operational, graph and assay interpretation is excluded. Records 531 and 532 remain chemical identity only; the blank-AID rows at 532 and 537 remain sentinels, not assay evidence.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+- Recovery disclosure: committed coverage for batches 1–47 uses the independently checked immutable proof; batches 48–53 use their exact recovery checkpoints and committed files. The administrative ledger preserves 166 historical temporary-input loss expectations recorded at earlier preflight; current observations are reported separately. Expected missing hashes are not verified bytes. No current54 direct-source loss is waived by this administrative module; prior50 source and prior51 lineage limitations remain in their immutable checkpoints; prior52 and prior53 current-source verification and administrative history remain in their immutable checkpoints. Four P23 original source files and the separate batch016 receipt were restored byte-identically after the batch50 checkpoint and are strict current dependencies. Original source and gate clocks remain unchanged. Recovery contract SHA256 6fa9f40e1eea3bc2bd998b0b247e422d492123b2b2d17325a8f52af1f487cf06. Publication and held external requests still require their separate explicit approval.
+- Current scientific evidence snapshots are strictly verified; no current source-body exception is used. Historical administrative expectations remain separately disclosed; current ROOT reading has no missing source references.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261026T161826Z-anabaenopeptin-788
+title: Scientific review of anabaenopeptin 788
+started_at: '2026-10-26T15:24:28.619380Z'
+finished_at: '2026-10-26T16:18:26.937710Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Partial review of anabaenopeptin 788. The own original supports named 788
+  material from CT11 at a putative MS-assignment tier with genomic stereochemical
+  prediction. The detailed NMR evidence for 802a/b does not establish 788 stereochemistry;
+  figures and supplementary material were not inspected. Retained identifiers agree
+  internally, with authority and locus-method verification incomplete.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/alcaligin.yaml
+    sha256: b8c910f231378c04035e650e6b915679d8981ecc4a60cbb5211fa31b7933cf91
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/am-toxin.yaml
+    sha256: 146daf01c7e9a8110817c5063ba53587305b5bb23f6ba029d959cbb355e719ef
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/ambactin.yaml
+    sha256: c891b321ace5872b455ee49cea819080fa43135282e97739c618dd2431f4ed1c
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/amonabactin-p-750.yaml
+    sha256: 23230e7dc4fa45d4b6e1a3b0c4f254074d7de0acecd55be9a262f40132d13190
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/amphibactin-e.yaml
+    sha256: 0ce1554a29ee46b96b30cdb2e30b8fe9f14712028ed1d39d2ec5f072770027c1
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/amphibactin-h.yaml
+    sha256: e8aab7feabdf865f4ff1e92c3404f58d780ad976781c36d577d3e7b12c094b2c
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/amychelin-a.yaml
+    sha256: 8b77c6136a08266bccbe5cc9dc8877420aef059c93caa79f2c5d3e51dd437ee1
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/amychelin-b.yaml
+    sha256: 40798be385c41d11aa1e90df6df2c2c7cb50842e25f8f7c750cd1f10b931e59f
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/amyxirubin-b.yaml
+    sha256: b51b5c631f4d0512b52dff1ac0aaf6a9cd6015f0e9e80c164b5daa26dcf5c2f9
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/anabaenopeptin-788.yaml
+    sha256: 67013ea83170b5062d57936d950a3d0d59ba45ea7f1a180acae7a509d5971816
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_groups.tsv
+    sha256: f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: data/raw/taxon_names.tsv
+    sha256: 9058b9a99260eb483ea21ce7cc9713fd336177031d883f0b5fb50325c7b2c371
+    role: context
+  - path: data/raw/taxon_non_organism.tsv
+    sha256: f2c1ee257bbbcb0854528196ab1f809d658c27f1c7b2036f7f71f088b52935bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/taxonomy.py
+    sha256: 6b0e780ac79ddd4de1d9ef459749d6c7432df123cb4c1d849c5feae0eab3e5ce
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 540, batch 054, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 598 of 3116 current
+    records had campaign coverage and 2518 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+targets:
+- target_id: naturalproductmech:mibig-dedfa943d3
+  path: data/natural_products/amino_acids_and_peptides/anabaenopeptin-788.yaml
+  label: anabaenopeptin 788
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/anabaenopeptin-788.yaml
+    --out /private/tmp/npm-review-work/540/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-26T15:24:31.575984Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch054 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch054. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch054 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch054. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch054 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch054. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch054 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch054. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch054 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch054. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+- check_id: R540-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: 'Actual selection, ten successful intakes and chronological ROOT binding
+    are required. All ten owners and 70 exact-key source sets were literally read
+    and mechanically preserved, including 21 ordered history events. Scientific owner
+    and raw-row assessment is complete for 533–540 within the approved material and
+    stock boundaries; 531/532 are limited to chemical identity and bibliography, excluding
+    producer/locus biological interpretation. No inline or referenced graphs, pathways,
+    molecular targets or emitted activity annotations occur. Blank-AID sentinels at
+    532 and 537 are no-assay provenance. The existing 537 discussion is preserved
+    without a new adjudication. Current naming is unattempted under the existing export
+    hold: no batch 54 request, response, individual rejection or explicit permission
+    question is claimed.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+  - R540-LOCAL
+  - R540-PUBCHEM-PREP
+- check_id: R540-CURRENT-TAXONOMY
+  name: Required current taxonomy identifier context
+  status: unavailable
+  required: true
+  summary: 'Retained local identifier/label assertions only: NCBITaxon:2748322: Brasilonema
+    sp. CT11; NCBITaxon:383614: Brasilonema. Current authoritative NCBI names, rank,
+    parent, synonyms and resolution remain unavailable because no batch 54 naming
+    request was attempted under the existing export hold. No producer, stock, taxon
+    or congener merger is inferred.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+  - R540-LOCAL-NAMING
+  - R540-NAMING-HOLD
+- check_id: R540-CURRENT-WIKIDATA
+  name: Required current literal organism routing
+  status: unavailable
+  required: true
+  summary: The 1 retained literal LOTUS route is mechanically preserved. Current Wikidata
+    P225/P685 validation is unavailable; no matching, missing-property, failed-route,
+    source-exclusion or occurrence conclusion is inferred.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+  - R540-LOCAL-NAMING
+  - R540-NAMING-HOLD
+- check_id: S540-C-LOCAL
+  name: actual local sources and guarded authoring prerequisites
+  status: passed
+  required: true
+  summary: Exact local/source equality and scoped manual reading are recorded. This
+    does not mean author runtime guards have executed; all ten ROOT receipts and source
+    acceptance remain mandatory.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - S540-E-GUARDS
+  - S540-E-INTAKE-VIEW
+  - S540-E-FORMAL-BINDING
+  - S540-E-SOURCE-READ
+- check_id: S540-C-SOURCE-TIER
+  name: bounded bibliography and named-source evidence
+  status: passed
+  required: true
+  summary: The own 2020 original supports anabaenopeptin 788 in Brasilonema sp. CT11
+    through a putative MS-based assignment. Stereochemistry is predicted from genomic
+    evidence in the bounded paragraph. The detailed isolation/NMR identification concerns
+    802a/b and is not transferred to 788. No figure pixels or supplementary file were
+    read.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - S540-E-SOURCE-READ
+  - S540-E-LOCAL
+  - S540-E-LOCAL-ROOT
+  - S540-E-METADATA-READ
+  - S540-E-ORIGINAL-READ
+  - S540-E-METADATA-PEER
+  - S540-E-ORIGINAL-PEER
+  - S540-E-ROOT-ORIGINAL
+  - S540-E-ROOT-SOURCE-ACCEPTANCE
+  - S540-E-ROOT-ADJUDICATION
+  - S540-E-SOURCE-NOTES
+  - S540-E-META-OWN-DOI-08-CROSSREF
+  - S540-E-META-PMID-32825321
+  - S540-E-ORIGINAL-ANABAENOPEPTIN788-2020-ORIGINAL
+- check_id: S540-C-REQUIRED-SOURCE
+  name: complete original-source identity and applicability
+  status: unavailable
+  required: true
+  summary: MS-based named-material/source support is available, but original figure/SI
+    inspection, independently established natural stereochemistry and complete locus-method
+    applicability remain unavailable.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - S540-E-SOURCE-READ
+  - S540-E-LOCAL
+  - S540-E-LOCAL-ROOT
+  - S540-E-METADATA-READ
+  - S540-E-ORIGINAL-READ
+  - S540-E-METADATA-PEER
+  - S540-E-ORIGINAL-PEER
+  - S540-E-ROOT-ORIGINAL
+  - S540-E-ROOT-SOURCE-ACCEPTANCE
+  - S540-E-ROOT-ADJUDICATION
+  - S540-E-SOURCE-NOTES
+  - S540-E-META-OWN-DOI-08-CROSSREF
+  - S540-E-META-PMID-32825321
+  - S540-E-ORIGINAL-ANABAENOPEPTIN788-2020-ORIGINAL
+- check_id: C540-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: The current owner/intake Standard InChI and full key agree, and every exact
+    versioned raw row agrees in Standard and fixed-H diagnostics. Stored formula/layers
+    are preserved. 0 reported unassigned tetrahedral centres; internal representation
+    fidelity only, not natural-hand validation.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+- check_id: C540-C-LITERAL-SCOPE
+  name: Required current source or literal chemical authorities
+  status: unavailable
+  required: true
+  summary: All 19 literal owner authority roles and 17 distinct identifier/version
+    tuples remain unattempted under inherited holds. No current 54 authority request,
+    response, individual rejection, approval question, returned identifier or authority
+    HTTP clock is inferred. Ordinary literature is a separate scope.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+- check_id: C540-C-PRIMARY-SCOPE
+  name: Named primary constitution and exact depiction applicability
+  status: unavailable
+  required: true
+  summary: Anabaenopeptin 788 retains six assigned centres and agrees with version
+    3 BGC0002512 compound 1. The numerical congener label is not independent mass
+    or structure proof. Exact primary depiction, absolute configuration and current
+    literal NPAtlas correspondence remain unresolved.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+- check_id: C540-C-SOURCE-PRECISION
+  name: Original geometry and stereochemical precision
+  status: unavailable
+  required: true
+  summary: Reported assigned/unassigned centres and encoded alkene geometry remain
+    retained-representation observations. Exact original depiction and natural absolute
+    configuration have not been closed; no replacement or normalization is selected.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+evidence:
+- evidence_id: R540-OWNER
+  kind: record_content
+  reference: data/natural_products/amino_acids_and_peptides/anabaenopeptin-788.yaml
+  locator: Prior bounded root owner read, mechanically verified unchanged against
+    actual post-intake content
+  accessed_at: '2026-10-26T15:48:51.267865Z'
+  support: supports
+  summary: Actual post-intake equality preserves 1 occurrence, 1 producer and 1 locus
+    assertions, optional fields and history. The resolved view contains 0 exactly
+    pinned external component(s). The separate ROOT scientific assessment retains
+    its approved material/stock boundaries, scientific gaps and claim-level source
+    limits.
+  snapshot_sha256: 67013ea83170b5062d57936d950a3d0d59ba45ea7f1a180acae7a509d5971816
+- evidence_id: R540-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/540/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-26T15:48:51.267865Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: d920a3f43b5d021b55722fbe9a3f544b6df95198943346a5558429fdda3800ed
+- evidence_id: R540-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained assay-row inventory
+  accessed_at: '2026-10-26T15:48:51.267865Z'
+  support: context_only
+  summary: This owner has 0 retained rows and 0 written observations. Only the blank-AID
+    no-data sentinels at 532 and 537 occur; neither is an activity result. There are
+    no AID-bearing selected rows, emitted activity annotations or graph components.
+    Raw-only inventory does not establish an omission error or an experimental result.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R540-NAMING-HOLD
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/root-context/root-current54-context-data-peer-acceptance-001.json
+  locator: ROOT acceptance of the local naming packet; no batch 54 authority request
+    or response
+  accessed_at: '2026-10-26T15:46:06.226377Z'
+  support: context_only
+  summary: Current naming is unattempted under the existing export hold. The prior
+    batch 51 approval remains unresolved; no explicit batch 54 approval question,
+    individual rejection, returned taxonomy/Wikidata object or HTTP clock is claimed.
+  snapshot_sha256: 20b032d5e00b879167719262f9b0dd9625e31f37f09422402afc67c9b11597a2
+- evidence_id: R540-LOCAL-NAMING
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/root-authoring/source-plan-14373517-v1.json
+  locator: Exact local taxon labels and literal LOTUS routing retained without current
+    validation
+  accessed_at: '2026-10-26T15:46:21.565687Z'
+  support: context_only
+  summary: 'Retained local identifier/label assertions only: NCBITaxon:2748322: Brasilonema
+    sp. CT11; NCBITaxon:383614: Brasilonema. Current authoritative NCBI names, rank,
+    parent, synonyms and resolution remain unavailable because no batch 54 naming
+    request was attempted under the existing export hold. No producer, stock, taxon
+    or congener merger is inferred. The 1 retained literal LOTUS route is mechanically
+    preserved. Current Wikidata P225/P685 validation is unavailable; no matching,
+    missing-property, failed-route, source-exclusion or occurrence conclusion is inferred.'
+  snapshot_sha256: 9ec79f4f62fd0b37247eb56272fc270cc77cbba66f936a155c4f41bc2432e7fb
+- evidence_id: R540-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete retained 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-22T04:52:27.596517Z'
+  support: context_only
+  summary: The retained historical catalogue contains 20 organisms and 28 datasets
+    at its original source clock. It supplies context only and establishes no exact
+    producer stock, compound, gene or module association. It is not a current naming
+    lookup or exhaustive applicability search.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S540-E-ACTUAL-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/540/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-26T16:09:57.209091Z'
+  support: context_only
+  summary: Complete actual raw owner/history, exact component expansion and all seven
+    source sets match mechanically. Bounded scientific source claims and remaining
+    graph limitations are recorded in the target plan; no complete graph validation
+    is implied.
+  snapshot_sha256: d920a3f43b5d021b55722fbe9a3f544b6df95198943346a5558429fdda3800ed
+- evidence_id: S540-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: 'Current pinned source consumers: occurrence versus producer placement,
+    method grading and exact maintained correction guards; no source-specific endpoint
+    promotion'
+  accessed_at: '2026-10-26T16:09:57.209091Z'
+  support: context_only
+  summary: Static inspection covers exact source method grading, producer/reference
+    qualification and consumed correction ordering. Current shared-structure replacement
+    and consolidated discussions are separate capabilities; they do not select identity
+    changes or broaden source endpoints.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S540-E-GENERIC-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-26T16:09:57.209091Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S540-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/540/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-26T16:09:57.214660Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: 7616b0bd49d33c8c17d9c02d8fee8d7003f37c695a70c38d8ddb74d9dc29bb7d
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S540-E-FORMAL-BINDING
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/provisional-science-536-540/current-input-binding-provisional-v1.json
+  locator: complete binding and future_required
+  accessed_at: '2026-10-26T15:59:32.094421Z'
+  support: context_only
+  summary: Current official selection/intakes and exact source scope are fixed; future
+    ROOT packet acceptance and all ten post-intake ROOT reads are mandatory before
+    execution.
+  snapshot_sha256: 127fa37896eec12d6bee46ece13150ebb4420a6a4aef6404c6b28754cd95ad93
+- evidence_id: S540-E-GUARDS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/provisional-science-536-540/source-row-guards.json
+  locator: entries 531–540
+  accessed_at: '2026-10-26T15:59:32.094421Z'
+  support: context_only
+  summary: Complete all-ten 70 source-set guards; no scientific conclusion from equality.
+  snapshot_sha256: 147af349ffddcc6ba4ca9abae2d1bcecfd9577da46cb1df4e0e30cc0254967e9
+- evidence_id: S540-E-INTAKE-VIEW
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/provisional-science-536-540/expected-intake-view-mechanical-001.json
+  locator: intake_views 531–540
+  accessed_at: '2026-10-26T15:59:32.094421Z'
+  support: context_only
+  summary: Current all-ten owner/expanded/source/intake equality only.
+  snapshot_sha256: 5538b1210831336afb261a10ca2711e5272234fd6eb3801a806d79293430ea99
+- evidence_id: S540-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/owner-source-inventory.json
+  locator: selected entries and complete seven source sets
+  accessed_at: '2026-10-26T15:30:14.575837Z'
+  support: context_only
+  summary: Current official inventory fixes owner/history, exact raw rows and intake
+    membership mechanically; it does not establish source applicability.
+  snapshot_sha256: fbf2cd63436ae62a02f9e77686a33711806e995c9717686018d125b8fb0f4e30
+- evidence_id: S540-E-LOCAL-ROOT
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/root-local-owner-source-read-001.json
+  locator: manual_flags and exact source-read inputs
+  accessed_at: '2026-10-26T15:38:20.848302Z'
+  support: context_only
+  summary: 'ROOT original manual masks: scientific owner/raw false for 531/532 and
+    true for 533–540. All chemical model and primary-source conclusions remain separately
+    scoped.'
+  snapshot_sha256: ad5ffea862e7cf26a9082b4ed72d27696238964055465881dd231c9436fdec0f
+- evidence_id: S540-E-META-OWN-DOI-08-CROSSREF
+  kind: primary_source
+  reference: DOI:10.3390/molecules25173786
+  locator: Own DOI:10.3390/molecules25173786 bibliographic fields only; no reference-list
+    transfer
+  accessed_at: '2026-10-26T15:31:17.812549Z'
+  support: context_only
+  summary: Own-article bibliographic identifiers and returned links only; no abstract
+    or original-main inference.
+  snapshot_sha256: 910caa6932455622009667da9f5dc9e21f58a22b807779303328afbd657e15fc
+- evidence_id: S540-E-META-PMID-32825321
+  kind: primary_source
+  reference: PMID:32825321
+  locator: Own PubmedArticle PMID:32825321; selected raw Unicode fragment coordinates
+    in METADATA-READ, abstract only
+  accessed_at: '2026-10-26T15:31:15.916425Z'
+  support: partial
+  summary: Own-article abstract, bounded material/source tier only. The abstract explicitly
+    associates the study with Brasilonema sp. CT11 and names 788 among three compounds.
+    Its spectroscopic-structure sentence specifically concerns the two 802 homologues,
+    so those endpoints cannot be transferred to 788. No locus grade is promoted.
+  snapshot_sha256: 47a3be963a868ed8f3a3fb3c796187620740d7c446beb72f2fcedc3276d5102d
+- evidence_id: S540-E-METADATA-PEER
+  kind: prior_review
+  reference: /private/tmp/npm-review-work/shared-next-batch054/bgc-science/review-support-primary-followup54-source-plan-collector-peer-001.json
+  locator: complete scoped peer
+  accessed_at: '2026-10-26T15:45:05.742425Z'
+  support: context_only
+  summary: Independent metadata and original-request preparation peer; it does not
+    itself establish original-main content.
+  snapshot_sha256: e1ea1144b04592f2f6066c3583aa332349009fe83d81d412ce561bb29cd7e580
+- evidence_id: S540-E-METADATA-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/bgc-science/actual-primary-metadata-source-read-001.json
+  locator: source_channels and selected record judgments
+  accessed_at: '2026-10-26T15:38:51.387429Z'
+  support: context_only
+  summary: Own bibliography and bounded abstract evidence remain distinct from source-specific
+    main-text evidence and access gaps.
+  snapshot_sha256: 7e243dcce16309080426720f3c9bc867814c0f1994e69509a70398b9a5b4bc21
+- evidence_id: S540-E-ORIGINAL-ANABAENOPEPTIN788-2020-ORIGINAL
+  kind: primary_source
+  reference: PMID:32825321
+  locator: BioC document PMC7503407, front own DOI/PMID; bounded passages 7,9,10,12,32
+    and 90; exact selected short spans and complete passage hashes in ORIGINAL-READ.
+    No figure pixels or SI.
+  accessed_at: '2026-10-26T15:46:25.572771Z'
+  support: partial
+  summary: The own 2020 main assigns 788 in CT11 at a putative MS tier and predicts
+    stereochemistry; detailed isolation/NMR identification concerns 802a/b, not 788.
+  snapshot_sha256: 31b0984a12e4236e481bffc1f5562ba9afb5a61646a15185657f793777c68fb2
+- evidence_id: S540-E-ORIGINAL-PEER
+  kind: prior_review
+  reference: /private/tmp/npm-review-work/shared-next-batch054/bgc-science/review-support-original54-source-label-proposal-peer-001.json
+  locator: complete peer findings and limitations
+  accessed_at: '2026-10-26T15:58:04.166612Z'
+  support: context_only
+  summary: Independent actual original-source and exact 537 claim-guard peer.
+  snapshot_sha256: 104c93deca99a9fc77465a3d18078162378518fe4ef18b74adba831e44afcf74
+- evidence_id: S540-E-ORIGINAL-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/bgc-science/original-followup-bounded-source-read-001.json
+  locator: five responses, seven short raw-text spans, passage hashes and selected
+    record judgments
+  accessed_at: '2026-10-26T15:54:40.494407Z'
+  support: context_only
+  summary: Two genuine original containers and three HTML access gaps are classified
+    with exact original clocks. Conclusions use only bounded identity, source and
+    congener passages.
+  snapshot_sha256: fcf7fa233bf97c5750dcc636c0da5f060fad211d5c4b56a920d14064e57932a4
+- evidence_id: S540-E-ROOT-ADJUDICATION
+  kind: prior_review
+  reference: /private/tmp/npm-review-work/shared-next-batch054/bgc-science/root-amychelin537-source-label-adjudication-001.json
+  locator: accepted label-only finding scope; no identifier or occurrence replacement
+  accessed_at: '2026-10-26T15:58:32.195304Z'
+  support: context_only
+  summary: ROOT adjudication of the bounded original sources and the exact conditional
+    537 source-label reconciliation.
+  snapshot_sha256: 46507c976348e470ab307ace274c4ebe839c61693fa3591eb3d66a2e8b8fe953
+- evidence_id: S540-E-ROOT-ORIGINAL
+  kind: prior_review
+  reference: /private/tmp/npm-review-work/shared-next-batch054/bgc-science/root-primary-followup54-actual-source-read-001.json
+  locator: actual source identity and bounded conclusions
+  accessed_at: '2026-10-26T15:47:32.933995Z'
+  support: context_only
+  summary: ROOT original passage read preserves generic amychelin, the AA4 label conflict
+    and the 788-versus-802 evidence distinction.
+  snapshot_sha256: af0cfc9d62392cbffcc33c7ecd711694301dbd4e9e12255eb3cea28611a1f973
+- evidence_id: S540-E-ROOT-SOURCE-ACCEPTANCE
+  kind: prior_review
+  reference: /private/tmp/npm-review-work/shared-next-batch054/bgc-science/root-original54-source-projection-peer-acceptance-001.json
+  locator: actual source projection and peer acceptance
+  accessed_at: '2026-10-26T15:58:32.195824Z'
+  support: context_only
+  summary: ROOT accepted the complete bounded original-source projection and independent
+    peer.
+  snapshot_sha256: 27eee2e95e5371a52778b14ad4571616c65593b17cf643943900a94fed271935
+- evidence_id: S540-E-SOURCE-NOTES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/provisional-science-536-540/source-notes-001.json
+  locator: entries for selected five
+  accessed_at: '2026-10-26T15:59:32.094421Z'
+  support: context_only
+  summary: Five record-specific judgments retain bounded positive evidence, required
+    gaps and exclusions.
+  snapshot_sha256: 34c62fc71beaed054b9523e617c7a4e61f2425c685a236e9603b9b7aba0ef9a6
+- evidence_id: S540-E-SOURCE-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/bgc-science/actual-owner-raw-scientific-read-531540-001.json
+  locator: entries for selected five; complete current masks and read disclosure
+  accessed_at: '2026-10-26T15:59:32.094421Z'
+  support: context_only
+  summary: Complete bounded local reading and exact source roles, with 531/532 biological
+    exclusions and no chemical model/assay/graph claim.
+  snapshot_sha256: f55870fa3b8383141c2c5aced71d4c15fd31975b6492f711011c7ccaa4b260db
+- evidence_id: C540-OWNER
+  kind: record_content
+  reference: data/natural_products/amino_acids_and_peptides/anabaenopeptin-788.yaml
+  locator: Complete owner bytes and seven matching source-row sets mechanically checked;
+    manual chemical identity scope only
+  accessed_at: '2026-10-26T15:56:47.357166Z'
+  support: supports
+  summary: 'The chemical identity fields denote anabaenopeptin 788 under naturalproductmech:mibig-dedfa943d3.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "be64aa1c70294d36963635d7bfe018e39fefe95314ceabaf216f44acafc7a2d3",
+    "selector": "BGC0002512:1", "version": "3"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: 67013ea83170b5062d57936d950a3d0d59ba45ea7f1a180acae7a509d5971816
+- evidence_id: C540-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/540/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-26T15:24:29.706113Z'
+  support: supports
+  summary: 'The stored full key remains HEAKELJCVBVEKW-LBEIPMMNSA-N; the retained
+    SMILES recomputes to HEAKELJCVBVEKW-LBEIPMMNSA-N, formula C41H56N8O8, formal charge
+    0. Exact stored comparisons: InChI=True, full key=True. Literal InChI formula/layers
+    and derived metal/component diagnostics remain separate; no normalization or experimental
+    identity proof is inferred.'
+  snapshot_sha256: 097fbe1b850a1830e044047bb211188fb5d82faa15f991cf90a035ff70c516d4
+- evidence_id: C540-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/retained-graph-comparison.json
+  locator: Record 540; exact source rows and each graph comparison
+  accessed_at: '2026-10-26T15:33:14.935348Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: cc10c89c683ab70a5ee66d500a3e3623d8a482d0deda576c269c4163c6c9b37d
+- evidence_id: C540-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/540/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-26T15:56:47.700854Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: a2109ad69017ec497a2b1a74fc98adf24ebb1f11ae6785522d602ec492a11d1a
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C540-AUTHORITY-AVAILABILITY
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/author-template-preparation/authority-limited-source-projection-prepared-001.json
+  locator: Retained raw/versioned channels and explicitly unavailable current literal
+    roles
+  accessed_at: '2026-10-26T15:47:24.798241Z'
+  support: partial
+  summary: This is an availability and retained-source projection, not a fresh current-authority
+    numerical comparison. Required held roles are not asserted absent, matching or
+    mismatching.
+  snapshot_sha256: c395f0fc8298af1d190b66981fdaf14385da6f169968d2b6280adbd34389f54b
+- evidence_id: C540-AUTHORITY-DETAIL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/author-template-preparation/source-plan-prepared-001.json
+  locator: Retained raw/versioned channels and explicitly unavailable current literal
+    roles
+  accessed_at: '2026-10-26T15:47:24.798241Z'
+  support: partial
+  summary: This is an availability and retained-source projection, not a fresh current-authority
+    numerical comparison. Required held roles are not asserted absent, matching or
+    mismatching.
+  snapshot_sha256: d881043fca1459186c61b53deea4950da2e30dbb38cf189e22ff308e205531cd
+- evidence_id: C540-RETAINED
+  kind: validation
+  reference: local:batch054-retained
+  locator: entries[9]; complete stored layers and reported owner/raw graphs; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/retained-graph-comparison.json
+  accessed_at: '2026-10-26T15:33:14.935348Z'
+  support: partial
+  summary: ROOT executed the retained diagnostic. Owner Standard InChI/key and all
+    matching raw Standard/fixed-H comparisons agree. This supports internal representation
+    fidelity only; source depiction and natural absolute configuration remain separate.
+  snapshot_sha256: cc10c89c683ab70a5ee66d500a3e3623d8a482d0deda576c269c4163c6c9b37d
+- evidence_id: C540-DIAGNOSTIC-ROOT
+  kind: prior_review
+  reference: local:batch054-diagnostic-observation
+  locator: checks and judgments; actual ROOT terminal and retained result pins; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/root-retained-diagnostic54-actual-observation-001.json
+  accessed_at: '2026-10-26T15:34:22.804664Z'
+  support: partial
+  summary: ROOT observed the local diagnostic exit zero, ten owner and eleven raw
+    comparisons, four false stereo flags and sixteen undefined-stereo warning lines.
+    No external identity or natural-hand validation is claimed.
+  snapshot_sha256: 9d942257592aa34458748a968bd1a6e42400be482ca6c4d08fb3128e3f608c60
+- evidence_id: C540-DIAGNOSTIC-PEER
+  kind: prior_review
+  reference: local:batch054-diagnostic-peer
+  locator: records[9] and bounded identity_judgments; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/review-support-actual54-retained-diagnostic-fidelity-peer-001.json
+  accessed_at: '2026-10-26T15:35:46.461981Z'
+  support: partial
+  summary: Independent output/source fidelity preserves every original structure and
+    comparison. The reported model outputs were not recomputed; primary depiction
+    and authority identity are separate.
+  snapshot_sha256: 7ad07705156f42a706f62857ee51c0820eb9f66e96d4ca7e04eb60a46ff26b9b
+- evidence_id: C540-INVENTORY
+  kind: record_content
+  reference: local:batch054-actual-inventory
+  locator: entries[9]; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/owner-source-inventory.json
+  accessed_at: '2026-10-26T15:30:14.575837Z'
+  support: partial
+  summary: Exact selected owner and all seven source sets are mechanically bound to
+    actual intakes. Whole-owner/raw and graph/assay scientific completion is not inferred.
+  snapshot_sha256: fbf2cd63436ae62a02f9e77686a33711806e995c9717686018d125b8fb0f4e30
+- evidence_id: C540-AUTH-HOLD
+  kind: record_content
+  reference: local:batch054-authority-hold
+  locator: entries[9], hold_boundary; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/chemistry-prep/authority-hold-and-verification-plan-001.json
+  accessed_at: '2026-10-26T15:47:24.798241Z'
+  support: context_only
+  summary: All 19 literal owner authority roles and 17 distinct identifier/version
+    tuples remain unattempted under inherited holds. No current 54 authority request,
+    response, individual rejection, approval question, returned identifier or authority
+    HTTP clock is inferred. Ordinary literature is a separate scope.
+  snapshot_sha256: 24563db68607433f6b90cecdac239e9e73f0e90682b4244ceed4bcd37cf6ad85
+- evidence_id: C540-ORIGINAL-ACCESS-1
+  kind: record_content
+  reference: https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC7503407/unicode
+  locator: status, content_type, bytes, sha256, original started_at/finished_at and
+    exact URL; retained snapshot /private/tmp/npm-review-work/shared-next-batch054/bgc-science/public-002/anabaenopeptin788-2020-original.xml.access.json
+  accessed_at: '2026-10-26T15:46:25.572771Z'
+  support: context_only
+  summary: The exact original-literature route returned a complete HTTP 200 XML response.
+    This access receipt proves retrieval only; chemical depiction, congener applicability
+    and natural-hand interpretation are not inferred by this component from status
+    or file type.
+  snapshot_sha256: 8635dca6a5edd6484ad9c16d4ab37b82d5e29df1c576f5e79685ddb51d31d866
+assessments:
+- assessment_id: R540-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 2 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'']. Source-seeding history
+    does not replace claim-level scientific assessment.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+- assessment_id: R540-OPTIONAL
+  area: completeness
+  topic: Present optional assertions
+  outcome: not_applicable
+  summary: No nonempty assertion occurs in these optional fields. Empty categories
+    alone do not establish a scientific omission.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+  - R540-LOCAL
+  - R540-PUBCHEM-PREP
+- assessment_id: R540-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+  - R540-LOCAL
+- assessment_id: R540-TAXON-SCOPE
+  area: provenance
+  topic: Unverified local labels versus current taxonomy
+  outcome: unknown
+  summary: 'Retained local identifier/label assertions only: NCBITaxon:2748322: Brasilonema
+    sp. CT11; NCBITaxon:383614: Brasilonema. Current authoritative NCBI names, rank,
+    parent, synonyms and resolution remain unavailable because no batch 54 naming
+    request was attempted under the existing export hold. No producer, stock, taxon
+    or congener merger is inferred.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+  - R540-LOCAL-NAMING
+  - R540-NAMING-HOLD
+- assessment_id: R540-ORGANISM-IDS
+  area: grounding
+  topic: Unavailable current organism routing
+  outcome: unknown
+  summary: The 1 retained literal LOTUS route is mechanically preserved. Current Wikidata
+    P225/P685 validation is unavailable; no matching, missing-property, failed-route,
+    source-exclusion or occurrence conclusion is inferred.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+  - R540-LOCAL-NAMING
+  - R540-NAMING-HOLD
+- assessment_id: R540-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: The retained historical catalogue contains 20 organisms and 28 datasets
+    at its original source clock. It supplies context only and establishes no exact
+    producer stock, compound, gene or module association. It is not a current naming
+    lookup or exhaustive applicability search.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - R540-OWNER
+  - R540-IMODULON
+- assessment_id: S540-A-LOCAL
+  area: provenance
+  topic: bounded local owner and exact source roles
+  outcome: supported
+  summary: The complete current owner/history and all seven raw-source sets were read.
+    BGC0002512 version 3 names 788 and CT11; the separate genus occurrence and source-specific
+    coordinate assertion are retained.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - S540-E-SOURCE-READ
+  - S540-E-LOCAL
+  - S540-E-LOCAL-ROOT
+  - S540-E-GUARDS
+  - S540-E-INTAKE-VIEW
+- assessment_id: S540-A-SOURCE
+  area: provenance
+  topic: named material and source context
+  outcome: supported
+  summary: The own 2020 original supports anabaenopeptin 788 in Brasilonema sp. CT11
+    through a putative MS-based assignment. Stereochemistry is predicted from genomic
+    evidence in the bounded paragraph. The detailed isolation/NMR identification concerns
+    802a/b and is not transferred to 788. No figure pixels or supplementary file were
+    read.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - S540-E-SOURCE-READ
+  - S540-E-LOCAL
+  - S540-E-LOCAL-ROOT
+  - S540-E-METADATA-READ
+  - S540-E-ORIGINAL-READ
+  - S540-E-METADATA-PEER
+  - S540-E-ORIGINAL-PEER
+  - S540-E-ROOT-ORIGINAL
+  - S540-E-ROOT-SOURCE-ACCEPTANCE
+  - S540-E-ROOT-ADJUDICATION
+  - S540-E-SOURCE-NOTES
+  - S540-E-META-OWN-DOI-08-CROSSREF
+  - S540-E-META-PMID-32825321
+  - S540-E-ORIGINAL-ANABAENOPEPTIN788-2020-ORIGINAL
+- assessment_id: S540-A-BOUNDARIES
+  area: evidence
+  topic: source and congener applicability limits
+  outcome: supported
+  summary: The bounded original supports a named 788/CT11 MS tier, with genomic stereochemical
+    prediction. Detailed NMR evidence belongs to 802a/b. SOURCE_ASSERTION, CLUSTER_UNSTATED
+    and empty methods remain unchanged; no figure, hand or complete locus-method closure
+    is claimed.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - S540-E-SOURCE-READ
+  - S540-E-LOCAL
+  - S540-E-LOCAL-ROOT
+  - S540-E-METADATA-READ
+  - S540-E-ORIGINAL-READ
+  - S540-E-METADATA-PEER
+  - S540-E-ORIGINAL-PEER
+  - S540-E-ROOT-ORIGINAL
+  - S540-E-ROOT-SOURCE-ACCEPTANCE
+  - S540-E-ROOT-ADJUDICATION
+  - S540-E-SOURCE-NOTES
+  - S540-E-META-OWN-DOI-08-CROSSREF
+  - S540-E-META-PMID-32825321
+  - S540-E-ORIGINAL-ANABAENOPEPTIN788-2020-ORIGINAL
+- assessment_id: S540-A-SOURCE-LIMIT
+  area: completeness
+  topic: remaining original-source closure
+  outcome: unknown
+  summary: MS-based named-material/source support is available, but original figure/SI
+    inspection, independently established natural stereochemistry and complete locus-method
+    applicability remain unavailable.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - S540-E-SOURCE-READ
+  - S540-E-LOCAL
+  - S540-E-LOCAL-ROOT
+  - S540-E-METADATA-READ
+  - S540-E-ORIGINAL-READ
+  - S540-E-METADATA-PEER
+  - S540-E-ORIGINAL-PEER
+  - S540-E-ROOT-ORIGINAL
+  - S540-E-ROOT-SOURCE-ACCEPTANCE
+  - S540-E-ROOT-ADJUDICATION
+  - S540-E-SOURCE-NOTES
+  - S540-E-META-OWN-DOI-08-CROSSREF
+  - S540-E-META-PMID-32825321
+  - S540-E-ORIGINAL-ANABAENOPEPTIN788-2020-ORIGINAL
+- assessment_id: C540-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0002512:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0002512:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C540-OWNER
+  - name: complete_raw_row_sha256
+    value: be64aa1c70294d36963635d7bfe018e39fefe95314ceabaf216f44acafc7a2d3
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C540-OWNER
+- assessment_id: C540-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Candidate discovery was not performed; no negative remote search, alternative
+    grounding or approval is inferred.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-OWNER
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-LOCAL-SEARCH
+- assessment_id: C540-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: unknown
+  summary: 'Required current literal availability: [{"absence_inferred": false, "identifier":
+    "npatlas:NPA033119", "owner_role": "xref", "status": "unavailable_unattempted_under_inherited_hold"}].
+    Exact request spelling is preserved; no unavailable response, normalized returned
+    identifier or numerical comparison is invented. No authority graph is adopted.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+- assessment_id: C540-A-ELIGIBILITY
+  area: grounding
+  topic: Existing ChEBI role and unavailable current validation
+  outcome: unknown
+  summary: '[]. No exact-key ChEBI row belongs to this owner in the committed projection.
+    This local result is not a negative remote search or a grounding recommendation.'
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+- assessment_id: C540-A-HELD-AUTHORITY
+  area: scope
+  topic: Current literal authority availability
+  outcome: unknown
+  summary: All 19 literal owner authority roles and 17 distinct identifier/version
+    tuples remain unattempted under inherited holds. No current 54 authority request,
+    response, individual rejection, approval question, returned identifier or authority
+    HTTP clock is inferred. Ordinary literature is a separate scope.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+- assessment_id: C540-A-REPRESENTATION-LIMITS
+  area: representation
+  topic: Literal and derived representation boundary
+  outcome: supported
+  summary: The current owner/intake Standard InChI and full key agree, and every exact
+    versioned raw row agrees in Standard and fixed-H diagnostics. Stored formula/layers
+    are preserved. 0 reported unassigned tetrahedral centres; internal representation
+    fidelity only, not natural-hand validation.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+- assessment_id: C540-A-SOURCE-IDENTITY
+  area: identity
+  topic: Exact named material and source precision
+  outcome: unknown
+  summary: Anabaenopeptin 788 retains six assigned centres and agrees with version
+    3 BGC0002512 compound 1. The numerical congener label is not independent mass
+    or structure proof. Exact primary depiction, absolute configuration and current
+    literal NPAtlas correspondence remain unresolved.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+- assessment_id: C540-A-EXCLUDED-GRAPH-ASSAY-SCOPE
+  area: scope
+  topic: Excluded biological, pathway and assay material
+  outcome: unknown
+  summary: Manual chemical identity, literal source and representation reading only.
+    Whole-owner/raw scientific flags remain false in this chemistry component. Biological,
+    pathway, operational, graph and assay interpretation is excluded. Records 531
+    and 532 remain chemical identity only; the blank-AID rows at 532 and 537 remain
+    sentinels, not assay evidence.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+- assessment_id: C540-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: unknown
+  summary: Anabaenopeptin 788 retains six assigned centres and agrees with version
+    3 BGC0002512 compound 1. The numerical congener label is not independent mass
+    or structure proof. Exact primary depiction, absolute configuration and current
+    literal NPAtlas correspondence remain unresolved.
+  target_ids:
+  - naturalproductmech:mibig-dedfa943d3
+  evidence_ids:
+  - C540-RETAINED
+  - C540-DIAGNOSTIC-ROOT
+  - C540-DIAGNOSTIC-PEER
+  - C540-INVENTORY
+  - C540-AUTH-HOLD
+  - C540-ORIGINAL-ACCESS-1
+  - C540-OWNER
+  - C540-GRAPH
+  - C540-COMPARISON
+  - C540-AUTHORITY-AVAILABILITY
+  - C540-AUTHORITY-DETAIL
+findings: []
+actions: []
+limitations:
+- All ten owners and 70 source joins were literally read and mechanically preserved,
+  including 21 ordered history events. Full owner and raw-row scientific assessment
+  is limited to 533–540; 531/532 remain chemical identity and bibliography only, with
+  producer/locus biological interpretation excluded. No inline or referenced graphs,
+  pathways or emitted activity annotations occur. The two blank-AID sentinels at 532
+  and 537 are no-assay provenance entries. Current naming remains unattempted under
+  the existing export hold, with no batch 54 response, individual rejection or explicit
+  permission question claimed. The historical iModulon catalogue retains its original
+  clock and establishes no exact stock, compound or module applicability.
+- MS-based named-material/source support is available, but original figure/SI inspection,
+  independently established natural stereochemistry and complete locus-method applicability
+  remain unavailable.
+- The bounded original supports a named 788/CT11 MS tier, with genomic stereochemical
+  prediction. Detailed NMR evidence belongs to 802a/b. SOURCE_ASSERTION, CLUSTER_UNSTATED
+  and empty methods remain unchanged; no figure, hand or complete locus-method closure
+  is claimed.
+- Stored/raw and bounded original evidence retain their original scopes and clocks.
+  The 19 literal authority roles/17 distinct identifier-version tuples remain unattempted
+  under inherited holds; no new 54 rejection, approval question or HTTP clock is fabricated.
+  Literal stored metal/charge/formula/InChI layers remain distinct from computed diagnostics;
+  no normalization or natural-hand closure is inferred. Only actual diagnostic warnings
+  may be reported. Biological, pathway, operational, graph and assay interpretation
+  is excluded. Records 531/532 remain chemical identity only; 532/537 blank-AID rows
+  remain sentinels. Organism, locus, classification and history claims are separately
+  scoped.
+- All 19 literal owner authority roles and 17 distinct identifier/version tuples remain
+  unattempted under inherited holds. No current 54 authority request, response, individual
+  rejection, approval question, returned identifier or authority HTTP clock is inferred.
+  Ordinary literature is a separate scope. Anabaenopeptin 788 retains six assigned
+  centres and agrees with version 3 BGC0002512 compound 1. The numerical congener
+  label is not independent mass or structure proof. Exact primary depiction, absolute
+  configuration and current literal NPAtlas correspondence remain unresolved. Manual
+  chemical identity, literal source and representation reading only. Whole-owner/raw
+  scientific flags remain false in this chemistry component. Biological, pathway,
+  operational, graph and assay interpretation is excluded. Records 531 and 532 remain
+  chemical identity only; the blank-AID rows at 532 and 537 remain sentinels, not
+  assay evidence.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+- 'Recovery disclosure: committed coverage for batches 1–47 uses the independently
+  checked immutable proof; batches 48–53 use their exact recovery checkpoints and
+  committed files. The administrative ledger preserves 166 historical temporary-input
+  loss expectations recorded at earlier preflight; current observations are reported
+  separately. Expected missing hashes are not verified bytes. No current54 direct-source
+  loss is waived by this administrative module; prior50 source and prior51 lineage
+  limitations remain in their immutable checkpoints; prior52 and prior53 current-source
+  verification and administrative history remain in their immutable checkpoints. Four
+  P23 original source files and the separate batch016 receipt were restored byte-identically
+  after the batch50 checkpoint and are strict current dependencies. Original source
+  and gate clocks remain unchanged. Recovery contract SHA256 6fa9f40e1eea3bc2bd998b0b247e422d492123b2b2d17325a8f52af1f487cf06.
+  Publication and held external requests still require their separate explicit approval.'
+- Current scientific evidence snapshots are strictly verified; no current source-body
+  exception is used. Historical administrative expectations remain separately disclosed;
+  current ROOT reading has no missing source references.
+tags:
+- path-order-campaign
+- batch-054
+```
