@@ -1,0 +1,1044 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T184806Z-chrysogine
+title: 'Chrysogine: source fidelity with unresolved primary stereochemistry and stock
+  bridge'
+started_at: '2026-10-21T18:41:44.747726Z'
+finished_at: '2026-10-21T18:48:06.265647Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The complete owner and source inventories reproduce the stored S representation
+  and literal NPAtlas identity. Original fungal isolation supports chrysogine constitution,
+  and the later primary abstract reports an absolute-configuration determination,
+  but its assigned hand and protocol remain unavailable. Positive NRPS14 genetic evidence
+  is retained without assuming the assayed stock is PH-1. Required evidence gaps make
+  the review partial; no confirmed correction is proposed.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/chlorizidine-a.yaml
+    sha256: cabd7d83d653e3d654b5d50295b23c241d0cd9a7fd27e8b9707794701961183d
+    role: context
+  - path: data/natural_products/alkaloids/chrysogine.yaml
+    sha256: ce45bc2502d8a7ee3fd67c527de804c159d93a5f7d484b90dfe4e4f185c197be
+    role: target
+  - path: data/natural_products/alkaloids/chuangxinmycin.yaml
+    sha256: 36c51885afcfddf9394c244f4b88b5687c1557d7b1a04087db41126006af496d
+    role: context
+  - path: data/natural_products/alkaloids/cichorine.yaml
+    sha256: 101e241cd5acb4d0c02a42db84cbaabbc03ab869d5b0c4d5fabea18af1d552a3
+    role: context
+  - path: data/natural_products/alkaloids/citridone-a.yaml
+    sha256: f910abc10d84b3c48dac02b1861d45c0065869314116902be46c8428e63d589a
+    role: context
+  - path: data/natural_products/alkaloids/citridone-b-2.yaml
+    sha256: fd5aa4ffd3ac824ecbc47379f9b1c8f7dbb49ed2968793d4acc090dd2a3e4695
+    role: context
+  - path: data/natural_products/alkaloids/citridone-b.yaml
+    sha256: 8b4377a61db1fb773fd214ff55e3c62ebce361387fe812fb3ab6e2889844a240
+    role: context
+  - path: data/natural_products/alkaloids/cj-15-696.yaml
+    sha256: fda593243686f09a350ff7e603bb4bfba5d678685dfde151ee2e0528dcddbbca
+    role: context
+  - path: data/natural_products/alkaloids/cj-16-173.yaml
+    sha256: 7200f279eec270a9fa7f8976a078b809cff2b3f6594d6b1b2c76f4e866e9d795
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-a.yaml
+    sha256: cfc868919d5cc38ed1607726d5af2b7e49986e7703bb3cb8fe839f07f6d23971
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-b.yaml
+    sha256: ebf1d143c88e640e485cad9d9e61dec31a196ddbd8be287ab0afc071ed04b36b
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-c.yaml
+    sha256: eb4d74869ecd66c8ac1c3c09ab4e66ef3e1d2cf0207d53acb07733cf4898fc5f
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-d.yaml
+    sha256: 8f0d5db52d4d3b0630cc37ffcd014e084565e71ceaf40b5059536e5bd5e7b644
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-e.yaml
+    sha256: 1168e4142c33233dd96970d1eb3f96fd586744ff797966456ec105b2f66c7177
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-f.yaml
+    sha256: 5c677ca21eaa238f47eb732e36352dc4a781d351e5e724e7f0723d5675d3dc58
+    role: context
+  - path: data/natural_products/alkaloids/cladoniamide-g.yaml
+    sha256: 6e4f7889efac34bc17f169d7c64850847595d2195d0bb9be94f463ac9bbaecd8
+    role: context
+  - path: data/natural_products/alkaloids/closoxazole-a.yaml
+    sha256: 1ffa0b3e5e9581d47032c4d771045adba5287fdc621288537464a2d7b93f4b5d
+    role: context
+  - path: data/natural_products/alkaloids/closoxazole-b.yaml
+    sha256: bc546837be7dc0d0c34602447f9de24ab507da8cc05ae2a900e7323a492c9f2e
+    role: context
+  - path: data/natural_products/alkaloids/closthioamide.yaml
+    sha256: 0a19c731af050a326b5cdb447ed85c90e5cfca98b9a41cc215d7ae31c8c7d388
+    role: context
+  - path: data/natural_products/alkaloids/coenzyme-f430.yaml
+    sha256: 8eed1aa5a67e40b5478c5edbd79a198c2684683b2cb19fe6302cbf7e7f85e92d
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: 11b2fc60dbe32154df63fb2e8c784c7c8ba6585581c09bba2eebe2c5192d4c06
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+  - path: tests/test_mibig_locus_evidence_overrides.py
+    sha256: 9177b5bd24f6e47cc4743857179217d9e0d4add9560b2ce3faefaebe53ba09a0
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: 17002ef1640464777f1925d12d842ed83c9098aad6de724ae0ea236ecccc4ff3
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 132, batch 014, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 184 of 3116 current
+    records had campaign coverage and 2932 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+targets:
+- target_id: naturalproductmech:mibig-6112bc1e65
+  path: data/natural_products/alkaloids/chrysogine.yaml
+  label: chrysogine
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  command: just validate-strict data/natural_products/alkaloids/chrysogine.yaml --out
+    /private/tmp/npm-review-work/132/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T18:41:46.313051Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch014 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch014. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch014 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch014. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch014 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch014. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch014 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch014. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch014
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch014.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+- check_id: R132-FULL-OWNER
+  name: Complete owner and captured-source scope
+  status: passed
+  required: true
+  summary: Successful official intake and a fresh root full-owner/read receipt precede
+    this authoring. All six officially captured sets and the separate seventh PubChem
+    preparation match; the external component set is empty.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - R132-OWNER
+  - R132-LOCAL
+  - R132-PUBCHEM-PREP
+- check_id: S132-C-ORIGIN
+  name: Native fungal origin
+  status: passed
+  required: true
+  summary: Original isolation supports chrysogine constitution and native fungal origin;
+    exact stereochemical occurrence resolution is a separate limitation.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - S132-E-1973
+  - S132-E-1992-ABSTRACT
+- check_id: S132-C-STOCK
+  name: Exact PH-1 method applicability and required original assignment
+  status: unavailable
+  required: true
+  summary: The 2017 main experimental-stock bridge and 1992 assigned absolute hand
+    remain unavailable; the source-faithful empty method set is not promoted.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - S132-E-2017-ABSTRACT
+  - S132-E-2017-SI
+  - S132-E-1992-ABSTRACT
+  - S132-E-ACCESS
+- check_id: C132-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - C132-OWNER
+  - C132-GRAPH
+  - C132-COMPARISON
+- check_id: C132-C-LITERAL-XREFS
+  name: Literal chemical identifiers and namespace resolution
+  status: passed
+  required: true
+  summary: Each present literal NPAtlas or PubChem cross-reference returned the exact
+    stored Standard and fixed-H graph. Legacy five-digit NPAtlas requests were queried
+    literally and their returned canonical identifiers retained. ChEBI and Wikidata
+    precision or tautomer differences are described separately.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - C132-COMPARISON
+  - C132-AUTH-1
+  - C132-AUTH-2
+  - C132-AUTH-3
+  - C132-AUTH-4
+  - C132-AUTH-5
+  - C132-AUTH-6
+- check_id: C132-C-ABSOLUTE
+  name: Exact later primary absolute assignment
+  status: unavailable
+  required: true
+  summary: The positive later assignment lead has not yielded its exact hand or protocol;
+    neither the original unassigned drawing nor matching databases resolves S independently.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - C132-PRIMARY-1973
+  - C132-LATER-HAND-ABSTRACT
+  - C132-LATER-HAND-LIMIT
+  - C132-COMPARISON
+evidence:
+- evidence_id: R132-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/chrysogine.yaml
+  locator: Complete post-intake owner, optional assertions and all history events
+  accessed_at: '2026-10-21T18:42:56.783639Z'
+  support: supports
+  summary: 'Root read the complete owner after successful official intake: 2 occurrence,
+    1 producer and 1 locus assertions. No referenced external component is present.
+    Optional fields: none.'
+  snapshot_sha256: ce45bc2502d8a7ee3fd67c527de804c159d93a5f7d484b90dfe4e4f185c197be
+- evidence_id: R132-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/132/local-sources.json
+  locator: Complete resolved owner and all six officially captured raw row sets
+  accessed_at: '2026-10-21T18:42:56.783639Z'
+  support: context_only
+  summary: All six captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and
+    NPClassifier sets match the frozen preparation, including empty sets. The separate
+    seventh PubChem inventory comparison is distinguished below. Source fidelity does
+    not itself establish experimental support.
+  snapshot_sha256: 92697506ab61f4051908062f9c4102c1a73e36872a4dac0d7825099e4198c8ab
+- evidence_id: R132-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Exact-key rows compared with the separate provisional seventh source set
+  accessed_at: '2026-10-21T18:43:01.202949Z'
+  support: context_only
+  summary: The separate committed PubChem raw set contains 0 matching rows and reproduces
+    the frozen preparation. This is not part of the official six-set intake. Empty
+    or no-assay-data rows are not tested outcomes; no emitted assay assertion is inferred.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R132-Q104596791
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q104596791
+  locator: P225 and P685 in the retained complete multi-entity response
+  accessed_at: '2026-10-21T18:06:35.196286Z'
+  support: context_only
+  summary: Literal P225 scientific name and P685 taxon identifier agree with the matched
+    imported rows. Identifier routing does not establish the occurrence chemistry,
+    producing stock or source experiment.
+  snapshot_sha256: 46a203c3d6228bb916e07591ac48400411617fbad4db9591dedebace849b5355
+- evidence_id: R132-Q137155
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q137155
+  locator: P225 and P685 in the retained complete multi-entity response
+  accessed_at: '2026-10-21T18:06:35.196286Z'
+  support: context_only
+  summary: Literal P225 scientific name and P685 taxon identifier agree with the matched
+    imported rows. Identifier routing does not establish the occurrence chemistry,
+    producing stock or source experiment.
+  snapshot_sha256: 46a203c3d6228bb916e07591ac48400411617fbad4db9591dedebace849b5355
+- evidence_id: R132-Q54356794
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q54356794
+  locator: P225 present and P685 absent in the separately retained raw-row entity
+    response
+  accessed_at: '2026-10-21T18:14:22.299114Z'
+  support: context_only
+  summary: Raw Q54356794 has P225 Fusarium roseum and no P685. Its imported NCBITaxon:5128
+    route is supported separately by the explicit NCBI Fusarium roseum synonym under
+    F. sambucinum; no direct Wikidata taxon match or universal historical-stock equivalence
+    is claimed.
+  snapshot_sha256: b65fddb17352af242e59d2d58c2f285fe5ed4bc90991572db33f48eb21f14224
+- evidence_id: R132-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=1048205,1288082,145745,162425,1883,2039464,227321,229533,29852,378258,446321,50193,50206,5073,5076,5081,5128,73504
+  locator: Exact relevant TaxId, ScientificName, Rank, ParentTaxId and OtherNames
+    fields
+  accessed_at: '2026-10-21T18:06:35.286307Z'
+  support: context_only
+  summary: NCBI 229533 is the F. graminearum PH-1 strain node. NCBI 5076 includes
+    P. notatum as a synonym of P. chrysogenum. NCBI 5128 includes Fusarium roseum
+    Link 1809 under F. sambucinum. The raw F. roseum Q54356794 has P225 but no P685;
+    the synonym route is supported by NCBI, not an invented direct Wikidata identifier
+    or universal historical-stock equivalence.
+  snapshot_sha256: d9a4adfefcd1a126125ab99439e14c0972874451f3b99b65dc1f6073f3ef4ad9
+- evidence_id: R132-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism, 28-dataset official catalogue
+  accessed_at: '2026-10-21T18:06:34.789679Z'
+  support: context_only
+  summary: The full retained catalogue establishes membership only. None of these
+    exact native producer labels occurs in it. Listed Streptomyces coelicolor or E.
+    coli datasets do not establish an introduced biosynthetic construct, recombinant
+    protein or native production.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S132-E-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/chrysogine.yaml
+  locator: Complete actual owner after official batch014 intake; exact resolved owner
+    and all six captured source sets reconciled with frozen preparation
+  accessed_at: '2026-10-21T18:42:56.783639Z'
+  support: supports
+  summary: The complete selected owner was read by root after successful official
+    intake. Its resolved contents and all six captured raw sets equal the frozen source
+    preparation. This adoption preserves original external retrieval times and does
+    not reclassify old literature preparation as newly retrieved evidence.
+  snapshot_sha256: ce45bc2502d8a7ee3fd67c527de804c159d93a5f7d484b90dfe4e4f185c197be
+- evidence_id: S132-E-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0001545:1
+  accessed_at: '2026-10-21T18:28:52.308417Z'
+  support: supports
+  summary: Exact raw row BGC0001545:1 was compared with the tentative snapshot. Complete
+    parsed source-row SHA256 3d2ac9c13194e46a6842473aa73b8b2ad87122d5e95314c9cdc0fae5a9857bdc
+    includes all fields and empty values.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S132-E-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete method vocabulary and inspected grading implementation
+  accessed_at: '2026-10-21T18:28:52.308417Z'
+  support: supports
+  summary: The configured Knock-out studies label assumes loss of production in the
+    native organism. Heterologous expression and Enzymatic assays support only the
+    locus. Empty methods faithfully yield SOURCE_ASSERTION / CLUSTER_UNSTATED.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S132-E-ROUTES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch014/curator-routing/routing-notes.json
+  locator: Complete static consumer feasibility notes, exact raw guards and flattened
+    implementation pins
+  accessed_at: '2026-10-21T18:28:52.308417Z'
+  support: supports
+  summary: Current consumers and static tests distinguish nonempty method REPLACE,
+    seven-field WITHDRAW, full-row-pinned citation/strain context, and exact-triple
+    occurrence exclusions. REPLACE expected_* fields alone are not enforced. No proposed
+    curation or test was executed.
+  snapshot_sha256: 26bf7b4ad7d6bbd8792ab2eb6bd1aa8e874c2cc11f7b5f510a9d7547ced8ca6d
+- evidence_id: S132-E-1973
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/yakushi1947/93/5/93_5_619/_pdf
+  locator: Original pp. 619–623, all pixels
+  accessed_at: '2026-10-21T18:03:31.784428Z'
+  support: supports
+  summary: All five original scanned pages support native P. chrysogenum isolation
+    and chrysogine constitution. Page 620 explicitly leaves the hydroxyethyl centre
+    unassigned despite a measured optical rotation.
+  snapshot_sha256: 7cfbf7b0c86472b06ceaccfb25f6261f86de81d4ae7d2c1a00d2e1cf27091539
+- evidence_id: S132-E-1992-ABSTRACT
+  kind: primary_source
+  reference: https://doi.org/10.1016/0040-4039(92)88083-H
+  locator: Retained primary publisher abstract, not a full-body read
+  accessed_at: '2026-10-21T18:06:08Z'
+  support: supports
+  summary: The original publisher abstract reports chrysogine 7 from F. sambucinum
+    and states a Helmchen absolute-configuration determination. The assigned hand
+    and detailed protocol remain unavailable. Artifact remarks for other numbered
+    compounds are not transferred to 7.
+  snapshot_sha256: 5c90d3c7563a610c3e9aef4bca3c5943c11be84a3eb06f90fde720543c31d5e8
+- evidence_id: S132-E-2017-ABSTRACT
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/28708398/
+  locator: Primary PubMed abstract
+  accessed_at: '2026-10-21T18:04:39Z'
+  support: supports
+  summary: The primary abstract reports elimination of chrysogine by NRPS14 deletion
+    and increased production after overexpression in F. graminearum. It does not establish
+    the exact PH-1 laboratory-stock bridge from the inspected text.
+  snapshot_sha256: ecc29020b1982e3e86747dbbde3ebed3c942a737a349a33fed8acdcdc2db10ef
+- evidence_id: S132-E-2017-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/8897584
+  locator: All SI text; original S5/S6/S7 pixels
+  accessed_at: '2026-10-21T18:04:15.106808Z'
+  support: supports
+  summary: Full SI text and original pages 5–7 show standard/product chromatograms,
+    deletion/overexpression PCR controls and RT-PCR. FGSG identifiers are annotation
+    references, not independent proof that the assayed stock is PH-1. No absolute-hand
+    experiment is shown in these SI pages.
+  snapshot_sha256: 8531e830552b76f5bfc3b1ac5c9cbdfb4b567a22356f3519e9e964fe5ea1e670
+- evidence_id: S132-E-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch014/review-support/source-notes-v2.json
+  locator: Retained attempts and precise read scopes
+  accessed_at: '2026-10-21T18:28:52.308417Z'
+  support: unknown
+  summary: Bounded publisher, institutional and indexed original-source routes did
+    not recover the 1992 full assignment or 2017 main. The 1973 source gives no assigned
+    hand; the positive 1992 abstract prevents any global claim that absolute assignment
+    was never studied.
+  snapshot_sha256: ae69a817b47ad86bbe78c791945216cb6ea03923bc68665cb2fdc43125853cc4
+  search_scope: Ignored-inclusive existing-source search followed by exact DOI publisher,
+    official SI, PubMed, institutional and indexed-author routes recorded in the frozen
+    batch014 source packet. No new network access during this draft.
+- evidence_id: S132-E-ADOPTION
+  kind: record_content
+  reference: /private/tmp/npm-review-work/132/local-sources.json
+  locator: Actual official local-sources snapshot and guarded adoption reconciliation
+  accessed_at: '2026-10-21T18:42:56.783639Z'
+  snapshot_sha256: 92697506ab61f4051908062f9c4102c1a73e36872a4dac0d7825099e4198c8ab
+  support: context_only
+  summary: Fresh selection, actual exit0 intake/strict receipts, root full-read receipt,
+    exact target identity, complete owner equality and six captured source-set equality
+    were required before adopting the prepared scientific scope. Other authority/root
+    assessments and overall completion remain separately adjudicated.
+- evidence_id: C132-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/chrysogine.yaml
+  locator: Complete owner and all local-source rows; no referenced components
+  accessed_at: '2026-10-21T18:44:13.287536Z'
+  support: supports
+  summary: The complete owner denotes chrysogine under naturalproductmech:mibig-6112bc1e65.
+    Its exact source selector is BGC0001545:1, version 3, with complete parsed raw-row
+    SHA256 3d2ac9c13194e46a6842473aa73b8b2ad87122d5e95314c9cdc0fae5a9857bdc. The official
+    intake and prepared owner bytes agree.
+  snapshot_sha256: ce45bc2502d8a7ee3fd67c527de804c159d93a5f7d484b90dfe4e4f185c197be
+- evidence_id: C132-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/132/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T18:41:45.382633Z'
+  support: supports
+  summary: The stored SMILES recomputes to BMBSGGZMJQTQSO-LURJTMIESA-N, formula C10H10N2O2,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 4399851feef45cd604905cb1df03a33f6632b04ffa9af56d2090a0ea5aed3ed4
+- evidence_id: C132-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch014/chemistry-prep/chemical-comparison.json
+  locator: Record 132; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T17:41:08.268885Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner, complete raw rows and current authority responses; primary experimental
+    proof is assessed separately.
+  snapshot_sha256: 35270d1dd852f3ca15712a2ecb46220b711b9df3c549d4b721a79ee0121f0987
+- evidence_id: C132-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/132/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T18:44:13.434038Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 8d8482198de10b5629130ac5724c779a1dc93cf9a843ff1b8cd610611d25be19
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C132-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=BMBSGGZMJQTQSO-LURJTMIESA-N&size=100
+  locator: Literal key search; chebi-key-chrysogine.json
+  accessed_at: '2026-10-21T17:40:14.957344Z'
+  support: supports
+  summary: 'No compound matches the provided term: ''BMBSGGZMJQTQSO-LURJTMIESA-N'''
+  snapshot_sha256: 906b280dee65f9f49a4d46336581907a397be805ad820df0d13f4de446550b13
+  search_scope: Official ChEBI es_search bounded key request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C132-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=chrysogine&size=100
+  locator: Literal name search; chebi-name-chrysogine.json
+  accessed_at: '2026-10-21T17:40:14.131095Z'
+  support: supports
+  summary: 1 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: 064c0dec566e42c3f5cb0a147f3e9401333becce32d976f9d3ba250fcf056c13
+  search_scope: Official ChEBI es_search bounded name request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C132-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001545.3/annotations.json
+  locator: compounds[].structure; BGC0001545.3.json
+  accessed_at: '2026-10-21T17:40:14.289756Z'
+  support: supports
+  summary: 'current MIBiG BGC0001545:1: representation parses=True; parsed key BMBSGGZMJQTQSO-LURJTMIESA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: a1ade46ae647326f8b0b83f8b7fc3facc778ee7d3f402cee7d166bb5f52aab71
+- evidence_id: C132-AUTH-2
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA09507
+  locator: smiles; NPA09507.json
+  accessed_at: '2026-10-21T17:40:13.415856Z'
+  support: supports
+  summary: 'NPAtlas literal NPA09507: representation parses=True; parsed key BMBSGGZMJQTQSO-LURJTMIESA-N;
+    exact stored Standard key match=True, fixed-H match=True. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: c8c645c4fae117bede65cfff0da87b8ddf26f07be5e7ec311b8415decc50c28d
+- evidence_id: C132-AUTH-3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/166873/
+  locator: default_structure.smiles; CHEBI166873.json
+  accessed_at: '2026-10-21T17:40:42.038987Z'
+  support: context_only
+  summary: 'ChEBI JSON 166873: representation parses=False; parsed key None; exact
+    stored Standard key match=False, fixed-H match=False. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 58f9f5433b51de4249462a3d986e7029e151556d40af36d440ea995049aab2f4
+- evidence_id: C132-AUTH-4
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/166873/
+  locator: official molfile endpoint; CHEBI166873-official.mol
+  accessed_at: '2026-10-21T17:40:41.956328Z'
+  support: context_only
+  summary: 'ChEBI MOL 166873: representation parses=True; parsed key BMBSGGZMJQTQSO-UHFFFAOYSA-N;
+    exact stored Standard key match=False, fixed-H match=False. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: d63f5e0bcf79c45f027c671049fd678e5453058ea370f8d398eee4093ac39164
+- evidence_id: C132-AUTH-5
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q77490422.json
+  locator: P2017; Q77490422.json
+  accessed_at: '2026-10-21T17:40:13.896821Z'
+  support: supports
+  summary: 'Wikidata Q77490422: representation parses=True; parsed key BMBSGGZMJQTQSO-LURJTMIESA-N;
+    exact stored Standard key match=True, fixed-H match=False. This current database
+    representation is not independent primary experimental proof.'
+  snapshot_sha256: c815711adefa0eefc20ca14258189fa0cdd41c76788702d01f2a782612ca74fa
+- evidence_id: C132-AUTH-6
+  kind: authority
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q77490422.json
+  locator: P233; Q77490422.json
+  accessed_at: '2026-10-21T17:40:13.896821Z'
+  support: context_only
+  summary: 'Wikidata Q77490422: representation parses=True; parsed key BMBSGGZMJQTQSO-UHFFFAOYSA-N;
+    exact stored Standard key match=False, fixed-H match=False. This current database
+    representation is not independent primary experimental proof. Canonical P233 is
+    not an isomeric stereo assertion; compare P2017 when present.'
+  snapshot_sha256: c815711adefa0eefc20ca14258189fa0cdd41c76788702d01f2a782612ca74fa
+- evidence_id: C132-PRIMARY-1973
+  kind: primary_source
+  reference: DOI:10.1248/yakushi1947.93.5_619
+  locator: Original pp620–621 and Chart 1 pixels; explicit configuration boundary
+  accessed_at: '2026-10-21T18:03:31.784428Z'
+  support: supports
+  summary: The original hydroxyethyl-quinazolinone constitution agrees after removing
+    the owner S tag. Page 620 explicitly leaves the hydroxyethyl configuration undetermined;
+    negative rotation alone does not select S.
+  snapshot_sha256: 7cfbf7b0c86472b06ceaccfb25f6261f86de81d4ae7d2c1a00d2e1cf27091539
+- evidence_id: C132-LATER-HAND-ABSTRACT
+  kind: primary_source
+  reference: DOI:10.1016/0040-4039(92)88083-H
+  locator: Original publisher abstract retained in b14search6.json; abstract scope
+    only
+  accessed_at: '2026-10-21T18:08:45Z'
+  support: partial
+  summary: The original 1992 publisher abstract explicitly reports a Helmchen absolute
+    assignment for chrysogine 7 from F. sambucinum. It does not expose the assigned
+    hand or detailed protocol; the positive assignment lead is not an assertion that
+    no primary absolute determination exists.
+  snapshot_sha256: 2c89223773447b682ab7a52b9e0d13fc1030a99bae0e6c0ffd966eb3a6aa99ee
+- evidence_id: C132-LATER-HAND-LIMIT
+  kind: authority
+  reference: DOI:10.1016/0040-4039(92)88083-H
+  locator: Retained failed complete-body HTTP response chrysogine1992.html; no scientific
+    body read
+  accessed_at: '2026-10-21T18:06:32.087477Z'
+  support: unknown
+  summary: The retained complete-body request returned HTTP 403. This response establishes
+    only the bounded access limitation, not the positive abstract or its assigned
+    hand.
+  snapshot_sha256: fe27e9e2833443d34b3570da5d71cfb4ff69ad077924bc1b5ba103f1590cd1ec
+assessments:
+- assessment_id: R132-HISTORY
+  area: provenance
+  topic: Native status and complete audit history
+  outcome: supported
+  summary: All 2 retained events are SEEDED_FROM_SOURCES. Native status remains SEEDED;
+    these are provenance events, not earlier structured-review passes, and no scientific
+    content or history is changed.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - R132-OWNER
+- assessment_id: R132-OPTIONAL
+  area: completeness
+  topic: Complete optional-assertion inventory
+  outcome: not_applicable
+  summary: No optional definition, pathway, causal graph, target, assay, application,
+    summary, cross-record relation, discussion or clinical-status assertion is present.
+    Optional enrichment is separate from checking the existing source claims.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - R132-OWNER
+  - R132-LOCAL
+- assessment_id: R132-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The exact-key NPClassifier projection and version npclassifier.gnps2.org@2026-09-07
+    reproduce the owner filing, superclass/class labels and glycoside value false.
+    Computed labels are not independent precursor, mechanism or natural-origin evidence.
+    Any accepted new identity requires reclassification for its effective key.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - R132-OWNER
+  - R132-LOCAL
+- assessment_id: R132-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism identifier routing
+  outcome: supported
+  summary: Literal organism routing is supported at the stated database scope; each
+    occurrence and experimental stock requires separate source assessment. The raw
+    F. roseum entity is an explicit exception to a direct P685 match and is retained
+    via the separately evidenced NCBI synonym route.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - R132-Q104596791
+  - R132-Q137155
+  - R132-Q54356794
+  - R132-TAXON-CONTEXT
+- assessment_id: R132-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic names versus experimental stocks
+  outcome: supported
+  summary: NCBI 229533 is the F. graminearum PH-1 strain node. NCBI 5076 includes
+    P. notatum as a synonym of P. chrysogenum. NCBI 5128 includes Fusarium roseum
+    Link 1809 under F. sambucinum. The raw F. roseum Q54356794 has P225 but no P685;
+    the synonym route is supported by NCBI, not an invented direct Wikidata identifier
+    or universal historical-stock equivalence.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - R132-TAXON-CONTEXT
+  - R132-OWNER
+- assessment_id: R132-IMODULON-SCOPE
+  area: completeness
+  topic: Producer transcriptomic applicability
+  outcome: not_applicable
+  summary: No exact native producer species/strain dataset is represented in the inspected
+    catalogue. Related species and possible experimental hosts do not establish a
+    construct/condition match; no gene/module or compound-production inference is
+    made.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - R132-OWNER
+  - R132-IMODULON
+- assessment_id: S132-A-PRODUCER
+  area: evidence
+  topic: Producer versus locus evidence scope
+  outcome: unknown
+  summary: The primary abstract and SI are positive for pathway involvement, but the
+    exact PH-1/native-locus applicability remains bounded. Current SOURCE_ASSERTION
+    / CLUSTER_UNSTATED faithfully reflect absent imported methods and do not claim
+    that the literature contains no experiments.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - S132-E-RAW
+  - S132-E-GRADING
+  - S132-E-2017-ABSTRACT
+  - S132-E-2017-SI
+  dimensions:
+  - name: experimental_stock
+    value: F. graminearum experimental stock unresolved against PH-1 reference annotation
+    definition: FGSG names alone do not prove stock identity.
+    evidence_ids:
+    - S132-E-2017-SI
+  - name: producer_locus_evidence_tiers
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED
+    definition: No unqualified native genetic upgrade is made while the source bridge
+      is incomplete.
+    evidence_ids:
+    - S132-E-RAW
+    - S132-E-GRADING
+- assessment_id: S132-A-OCCURRENCE
+  area: evidence
+  topic: Fungal occurrence citation resolution
+  outcome: unknown
+  summary: P. chrysogenum constitution-level isolation is direct. The 1992 F. sambucinum
+    occurrence and Helmchen statement are primary abstract positives; detailed stereochemical
+    equivalence remains unavailable. F. roseum and F. sambucinum raw rows share the
+    same taxon/DOI triple and are deduplicated; their synonym routing is checked separately
+    in root context. No exclusion follows from incomplete access.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - S132-E-OWNER
+  - S132-E-1973
+  - S132-E-1992-ABSTRACT
+  - S132-E-ACCESS
+  - S132-E-ROUTES
+- assessment_id: C132-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0001545:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - C132-OWNER
+  - C132-GRAPH
+  - C132-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001545:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C132-OWNER
+  - name: complete_raw_row_sha256
+    value: 3d2ac9c13194e46a6842473aa73b8b2ad87122d5e95314c9cdc0fae5a9857bdc
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C132-OWNER
+- assessment_id: C132-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - C132-OWNER
+  - C132-COMPARISON
+  - C132-LOCAL-SEARCH
+  - C132-CHEBI-SEARCH-1
+  - C132-CHEBI-SEARCH-2
+- assessment_id: C132-A-AUTHORITY-REPRESENTATION
+  area: representation
+  topic: Official MOL, JSON SMILES and chemical Wikidata fields
+  outcome: supported
+  summary: The retained comparisons distinguish valid official MOL structures from
+    default JSON SMILES that fail parsing. Only exact eligible three-star rows can
+    ground this corpus. Canonical Wikidata P233, isomeric P2017 and declared InChI/key
+    fields are separate assertions; a matching Standard key does not guarantee fixed-H
+    identity. No invalid JSON SMILES is proposed for copying.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - C132-COMPARISON
+  - C132-AUTH-1
+  - C132-AUTH-2
+  - C132-AUTH-3
+  - C132-AUTH-4
+  - C132-AUTH-5
+  - C132-AUTH-6
+- assessment_id: C132-A-STEREO
+  area: evidence
+  topic: Later absolute assignment and original unassigned centre
+  outcome: unknown
+  summary: Stored S and literal NPAtlas agree, but the exact primary bridge to S remains
+    unresolved. CHEBI:166873 is a broader two-star unspecified-centre graph; its invalid
+    JSON SMILES and valid MOL must be distinguished. Wikidata is a same-Standard fixed-H
+    tautomer difference, not a constitutional conflict.
+  target_ids:
+  - naturalproductmech:mibig-6112bc1e65
+  evidence_ids:
+  - C132-PRIMARY-1973
+  - C132-LATER-HAND-ABSTRACT
+  - C132-LATER-HAND-LIMIT
+  - C132-COMPARISON
+findings: []
+actions: []
+limitations:
+- The root section inventories present claims and source routing; chemical identities,
+  source-specific experiments, definition claims and optional sibling/activity assertions
+  require their separately scoped scientific assessments.
+- Required 1992 detailed stereochemical assignment and 2017 main laboratory-stock
+  verification remain unavailable.
+- Taxonomy synonym and exact authority representation checks are supplied separately.
+  No optional field absence is a finding.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- Current authority and literal identifier agreement is representation evidence. It
+  neither supplies a missing natural absolute-hand experiment nor proves a specific
+  producing stock.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-014
