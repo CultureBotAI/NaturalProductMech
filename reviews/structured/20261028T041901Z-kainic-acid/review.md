@@ -1,0 +1,1164 @@
+# Scientific review of kainic acid
+
+- Review: 20261028T041901Z-kainic-acid
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-28T03:35:30.414310Z
+- Finished UTC: 2026-10-28T04:19:01.805788Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The kainic acid record is internally consistent as C9H13NO4, but its calculated neutral mass (199.084457896 Da) is incompatible with the cited article's kainic acid signal at 212.1 ± 0.5 m/z under the reported negative molecular-ion interpretation. This identity mismatch is a blocker. The article's producer, pathway and activity statements cannot be assigned unconditionally to the encoded structure. The exact replacement structure, stereochemistry and correction target remain unresolved.
+
+## Scope And Provenance
+
+Review of the exact kainic acid record, retained source rows, saved chemical diagnostics and verified primary article. The primary molecular-ion evidence contradicts the encoded owner. The review records an identity blocker and keeps biological claims conditional on resolving the structure.
+
+Selection: One exact record selected in canonical repository path order from the unreviewed population; this report assesses only its declared partial scientific scope.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-a36b57cc8e | data/natural_products/amino_acids_and_peptides/kainic-acid.yaml | generated | kainic acid |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-a36b57cc8e | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-a36b57cc8e | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-a36b57cc8e | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-a36b57cc8e | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-a36b57cc8e | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-a36b57cc8e | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Whole owner and exact source-array reconciliation | passed | True | naturalproductmech:mibig-a36b57cc8e | The whole owner and seven retained plus two supplemental arrays are preserved, with one retained MIBiG row and one NPClassifier row, no supplemental rows, and the same one MIBiG plus one NPClassifier row in the actual intake. The correct exact-key ChEBI join remains empty; the later same-name CHEBI:31746 conflict is separate evidence. |
+| Internal representation agreement | passed | True | naturalproductmech:mibig-a36b57cc8e | Saved SMILES/InChI checks agree internally on the declared key and C9H13NO4 formula. This internal agreement cannot override the separately inspected primary molecular-ion incompatibility; no new molecular computation is performed. |
+| Own article identity and access scope | passed | True | naturalproductmech:mibig-a36b57cc8e | PMC6574125, PMID30995339 and DOI10.1002/anie.201902910 match the article frontmatter; the complete HTTP200 author-manuscript body and original access clock are preserved. This does not claim figure-image or supporting-file inspection. |
+| Identity applicability to the exact encoded owner | failed | True | naturalproductmech:mibig-a36b57cc8e | The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896. The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints (M H) followed by a separate superscript minus. Under the reported negative molecular-ion assignment, the encoded neutral mass is already below the lower window 211.6, so proton loss cannot make it fit. P10 separately identifies the major product by comparison with commercial kainic acid and NMR, and distinguishes a lactone product with the same expected mass. This supports a wrong-identity concern for the encoded owner, not selection of a replacement graph or stereochemistry. The original same-name ChEBI/MIBiG constitutional conflict independently reinforces the concern. |
+| Producer applicability to the exact encoded owner | unavailable | True | naturalproductmech:mibig-a36b57cc8e | The own primary treats Digenea simplex from Japan and Palmaria palmata as known kainic-acid producers and studies their kab genetic context. Related transcripts in three additional algal taxa are explicitly not evidence that those taxa produce kainic acid. These biological statements concern the article’s identified product; the primary mass conflict prevents attaching them without qualification to the encoded C9 owner. Current NCBITaxon:945030 identity or a physical stock was not independently queried. |
+| Occurrence applicability to the exact encoded owner | unavailable | True | naturalproductmech:mibig-a36b57cc8e | The paper reports precursor detection in D. simplex extract and separately discusses kainic acid and its lactone in the native-source context. A precursor signal is not an additional kainic-acid measurement, and the lactone is not interchangeable with kainic acid. The local exact-key occurrence arrays remain empty; this does not establish biological absence or distribution. Natural-product evidence in the article does not rescue the inconsistent C9 source-to-structure join. |
+| Locus applicability to the exact encoded owner | unavailable | True | naturalproductmech:mibig-a36b57cc8e | The primary supports co-clustered kab genes in D. simplex and P. palmata and biochemical characterization of DsKabA/DsKabC products. Recombinant individual enzymes and the reported E. coli DsKabC substrate biotransformation are not a demonstration of whole-cluster heterologous expression or a native knockout. Homolog transcripts do not establish production in other taxa. The retained MK312630.1 version and exact locus mapping were not independently fetched; P14’s BioProject deposits do not themselves verify that accession. Preserve the retained CLUSTER_UNSTATED source grade and keep each demonstrated activity separate from proposed mechanism and exact-owner linkage. |
+| Activity applicability to the exact encoded owner | unavailable | True | naturalproductmech:mibig-a36b57cc8e | The Introduction cites kainic-acid ionotropic glutamate receptor agonism, while P10 cites a distinct antagonist claim for kainic acid lactone. These are attributed prior pharmacology, not a new receptor assay of the encoded C9 owner. No antagonist/agonist result is transferred between the lactone and kainic acid, and no potency, target or activity is assigned to the incompatible retained structure. |
+| Classification applicability to the exact encoded owner | unavailable | True | naturalproductmech:mibig-a36b57cc8e | The paper supports an amino-acid and isoprenoid precursor context with a two-enzyme pathway; the owner’s Monoterpenoid field, OTHER BGC class and NPClassifier Aminoacids result are distinct source/model assertions. These labels do not determine the complete natural graph or repair the primary mass mismatch. No separate class finding is proposed without exact compound-level adjudication. |
+| Complete replacement structure and configuration | unavailable | True | naturalproductmech:mibig-a36b57cc8e | Primary mass rejects the retained encoding but does not determine full replacement connectivity or absolute stereochemistry. Figure images, detailed spectra and supporting assignments remain unread; no target key or ChEBI replacement is selected. |
+
+## Scientific And Domain Assessments
+
+### Identity source scope
+
+identity: concern. Targets: naturalproductmech:mibig-a36b57cc8e.
+
+The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896. The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints (M H) followed by a separate superscript minus. Under the reported negative molecular-ion assignment, the encoded neutral mass is already below the lower window 211.6, so proton loss cannot make it fit. P10 separately identifies the major product by comparison with commercial kainic acid and NMR, and distinguishes a lactone product with the same expected mass. This supports a wrong-identity concern for the encoded owner, not selection of a replacement graph or stereochemistry. The original same-name ChEBI/MIBiG constitutional conflict independently reinforces the concern.
+
+### Producer source scope
+
+provenance: unknown. Targets: naturalproductmech:mibig-a36b57cc8e.
+
+The own primary treats Digenea simplex from Japan and Palmaria palmata as known kainic-acid producers and studies their kab genetic context. Related transcripts in three additional algal taxa are explicitly not evidence that those taxa produce kainic acid. These biological statements concern the article’s identified product; the primary mass conflict prevents attaching them without qualification to the encoded C9 owner. Current NCBITaxon:945030 identity or a physical stock was not independently queried.
+
+### Occurrence source scope
+
+provenance: unknown. Targets: naturalproductmech:mibig-a36b57cc8e.
+
+The paper reports precursor detection in D. simplex extract and separately discusses kainic acid and its lactone in the native-source context. A precursor signal is not an additional kainic-acid measurement, and the lactone is not interchangeable with kainic acid. The local exact-key occurrence arrays remain empty; this does not establish biological absence or distribution. Natural-product evidence in the article does not rescue the inconsistent C9 source-to-structure join.
+
+### Locus source scope
+
+provenance: unknown. Targets: naturalproductmech:mibig-a36b57cc8e.
+
+The primary supports co-clustered kab genes in D. simplex and P. palmata and biochemical characterization of DsKabA/DsKabC products. Recombinant individual enzymes and the reported E. coli DsKabC substrate biotransformation are not a demonstration of whole-cluster heterologous expression or a native knockout. Homolog transcripts do not establish production in other taxa. The retained MK312630.1 version and exact locus mapping were not independently fetched; P14’s BioProject deposits do not themselves verify that accession. Preserve the retained CLUSTER_UNSTATED source grade and keep each demonstrated activity separate from proposed mechanism and exact-owner linkage.
+
+### Activity source scope
+
+quantity: unknown. Targets: naturalproductmech:mibig-a36b57cc8e.
+
+The Introduction cites kainic-acid ionotropic glutamate receptor agonism, while P10 cites a distinct antagonist claim for kainic acid lactone. These are attributed prior pharmacology, not a new receptor assay of the encoded C9 owner. No antagonist/agonist result is transferred between the lactone and kainic acid, and no potency, target or activity is assigned to the incompatible retained structure.
+
+### Classification source scope
+
+completeness: unknown. Targets: naturalproductmech:mibig-a36b57cc8e.
+
+The paper supports an amino-acid and isoprenoid precursor context with a two-enzyme pathway; the owner’s Monoterpenoid field, OTHER BGC class and NPClassifier Aminoacids result are distinct source/model assertions. These labels do not determine the complete natural graph or repair the primary mass mismatch. No separate class finding is proposed without exact compound-level adjudication.
+
+### Internal agreement versus external identity
+
+representation: supported. Targets: naturalproductmech:mibig-a36b57cc8e.
+
+Saved SMILES/InChI checks agree internally on the declared key and C9H13NO4 formula. This internal agreement cannot override the separately inspected primary molecular-ion incompatibility; no new molecular computation is performed.
+
+### Mechanism and exact-owner claim transfer
+
+graph: unknown. Targets: naturalproductmech:mibig-a36b57cc8e.
+
+The whole owner has no inline or referenced graph. Biochemical activities concern the article’s identified product; the incompatible current C9 identity prevents unqualified producer, locus, mechanism or activity transfer.
+
+## Findings
+
+### F783-RETAINED-NAME-CONSTITUTION-CONFLICT: Encoded kainic-acid owner conflicts with the primary molecular-ion identity
+
+blocker / open / confirmed; issue key: kainic-acid-mibig-1974-1-retained-name-constitution-conflict.
+
+The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896. The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints (M H) followed by a separate superscript minus. Under the reported negative molecular-ion assignment, the encoded neutral mass is already below the lower window 211.6, so proton loss cannot make it fit. P10 separately identifies the major product by comparison with commercial kainic acid and NMR, and distinguishes a lactone product with the same expected mass. This supports a wrong-identity concern for the encoded owner, not selection of a replacement graph or stereochemistry. The original same-name ChEBI/MIBiG constitutional conflict independently reinforces the concern.
+
+## Recommended Actions And Acceptance Checks
+
+### A783-VERIFY-IDENTITY-BEFORE-MAINTAINED-CORRECTION
+
+Resolve the complete natural kainic-acid structure and compound-index identity using the primary structural assignment and any necessary figure/spectrum evidence. The current encoded C9 graph is incompatible with the primary molecular-ion evidence and must not be treated as a validated natural identity. Preserve all original raw rows and the distinct lactone. Only after exact replacement adjudication assess a documented maintained correction and migration; CHEBI:31746 remains an unselected source lead. Do not transplant producer, locus, occurrence or activity claims by label.
+
+- Preserve the complete original MIBiG BGC0001974:1 and :2 rows, CHEBI:31746 row and MANIFEST; retain the correct original exact-full-key join and its empty ChEBI result.
+- Preserve and independently reproduce the own-primary identity, exact Figure 3 ion typography/window and saved current-owner neutral-mass comparison; then resolve full ring-to-carboxyl connectivity and supported stereochemistry from appropriate structural evidence before selecting a replacement.
+- Do not infer a replacement graph from the mass discrepancy, PubMed/Crossref metadata, a shared name, a three-star label or internal encoding agreement. Keep the original local-only major candidate and this stronger primary successor separate in history.
+- If a ChEBI-based correction is scientifically justified, verify the documented unique source ownership, unambiguous three-star default target, unoccupied destination key, complete parsed-row pins and verified target chemistry before selecting an action. No target, row digest or replacement key is prefilled here.
+- Reassess each producer, locus, occurrence and assay against the independently resolved compound; preserve SOURCE_ASSERTION and CLUSTER_UNSTATED until claim-specific evidence warrants a reviewed change.
+- Use only an authorized maintained correction and history-preserving validated migration; preserve applicable claims and history and do not edit the generated owner alone. Check applicable canary, reproduction and full corpus gates after any separately authorized curation.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| CAND783-LOCAL-CONFLICT | /private/tmp/npm-review-work/shared-next-batch079-tentative/source-science-preparation/bgc-tentative79-kainic-retained-constitution-conflict-DATA-001.json; /source_rows/chebi; /source_rows/mibig/rows/0; /claim_rows/0:2 | supports | The retained MIBiG BGC0001974:1 and three-star CHEBI:31746 rows share the name kainic acid but specify different full keys and literal constitutions. The ChEBI side chain contains ring–CH2–COOH; the MIBiG-derived owner has both carboxyl groups directly on ring atoms. Neither is chosen as the natural reference. |
+| CAND783-OWNER | /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/kainic-acid.yaml; /identifier; /label; /chemical_structure; /source_concepts/0; /biosynthesis_origin | supports | The uniquely resolved owner is naturalproductmech:mibig-a36b57cc8e, with the MIBiG index1 C9 encoding labelled kainic acid and NATURAL_PRODUCT. Its source-to-natural-identity assignment is contradicted by the later primary mass comparison; the exact target itself is unambiguous. |
+| CAND783-INTERNAL-CONSISTENCY | /private/tmp/npm-review-work/shared-next-batch079-tentative/source-science-preparation/root-tentative79-local-chemical-consistency-and-neighbors-001.json; /records/2 | context_only | Saved SMILES/InChI checks agree internally on the declared key and C9H13NO4 formula. This internal agreement cannot override the separately inspected primary molecular-ion incompatibility; no new molecular computation is performed. |
+| CAND783-CURATION-INTERFACE | /private/tmp/npm-record-reviews-20261021/docs/CURATION.md; MIBiG structure corrections, lines23–67 | context_only | The documented maintained correction interface requires source-specific identity adjudication, complete parsed-row pins and an unambiguous three-star default target satisfying the uniqueness and unoccupied-destination guards. It preserves raw rows and requires reviewed migration for an existing owner. It does not authorize choosing CHEBI:31746 merely by label. |
+| CAND783-CORRECTION-TABLE | /private/tmp/npm-record-reviews-20261021/curation/mibig_structure_corrections.tsv; complete header and both data rows | context_only | The captured maintained table has two existing correction rows; neither is BGC0001974:1. This is a statement about this exact complete captured table, not a search for all possible correction mechanisms. |
+| CAND783-SEED-CALLSITE | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; lines816–820 only | context_only | The inspected seeder call passes raw MIBiG rows, the correction inventory and ChEBI structure inventory to apply_structure_corrections. This establishes the regeneration entrypoint only; the implementation module body is not claimed as inspected or captured. |
+| CAND783-SEVERITY-RUBRIC | /private/tmp/npm-record-reviews-20261021/docs/record-reviews.md; Verdict And Severity | context_only | The captured rubric classifies wrong identity as a blocker. This review applies that severity to the encoded owner's incompatibility with the primary molecular-ion evidence. It does not select replacement chemistry. |
+| SCI783-LOCAL-JOINS | /private/tmp/npm-review-work/shared-next-batch079-tentative/tentative-owner-source-inventory-001.json; /entries/2/owner_document; /entries/2/rows; /entries/2/supplemental_retained_rows; /entries/2/expected_official_intake_rows | context_only | The whole owner and seven retained plus two supplemental arrays are preserved, with one retained MIBiG row and one NPClassifier row, no supplemental rows, and the same one MIBiG plus one NPClassifier row in the actual intake. The correct exact-key ChEBI join remains empty; the later same-name CHEBI:31746 conflict is separate evidence. |
+| SCI783-INTAKE-MASS | /private/tmp/npm-review-work/783/chemistry.json; /formula; /formal_charge; /exact_mass; /key; /inchi | supports | The original saved intake computes neutral exact mass 199.084457896, formula C9H13NO4 and formal charge 0 for the exact retained key. The saved owner-matching flags are true; no new RDKit computation or atomic-mass calculation is performed. |
+| SCI783-PRIMARY-MASS | /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml; .//fig[@id='F3']/caption/p[@id='P21'] | refutes | The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896. The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints (M H) followed by a separate superscript minus. Under the reported negative molecular-ion assignment, the encoded neutral mass is already below the lower window 211.6, so proton loss cannot make it fit. P10 separately identifies the major product by comparison with commercial kainic acid and NMR, and distinguishes a lactone product with the same expected mass. This supports a wrong-identity concern for the encoded owner, not selection of a replacement graph or stereochemistry. The original same-name ChEBI/MIBiG constitutional conflict independently reinforces the concern. |
+| SCI783-PRIMARY-IDENTITY | /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml; .//fig[@id='F3']/caption; .//p[@id='P10'] | partial | The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896. The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints (M H) followed by a separate superscript minus. Under the reported negative molecular-ion assignment, the encoded neutral mass is already below the lower window 211.6, so proton loss cannot make it fit. P10 separately identifies the major product by comparison with commercial kainic acid and NMR, and distinguishes a lactone product with the same expected mass. This supports a wrong-identity concern for the encoded owner, not selection of a replacement graph or stereochemistry. The original same-name ChEBI/MIBiG constitutional conflict independently reinforces the concern. |
+| SCI783-PRIMARY-PRODUCER | /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml; .//p[@id='P6']; .//p[@id='P7']; .//p[@id='P8'] | partial | The own primary treats Digenea simplex from Japan and Palmaria palmata as known kainic-acid producers and studies their kab genetic context. Related transcripts in three additional algal taxa are explicitly not evidence that those taxa produce kainic acid. These biological statements concern the article’s identified product; the primary mass conflict prevents attaching them without qualification to the encoded C9 owner. Current NCBITaxon:945030 identity or a physical stock was not independently queried. |
+| SCI783-PRIMARY-OCCURRENCE | /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml; .//p[@id='P9']; .//p[@id='P10'] | partial | The paper reports precursor detection in D. simplex extract and separately discusses kainic acid and its lactone in the native-source context. A precursor signal is not an additional kainic-acid measurement, and the lactone is not interchangeable with kainic acid. The local exact-key occurrence arrays remain empty; this does not establish biological absence or distribution. Natural-product evidence in the article does not rescue the inconsistent C9 source-to-structure join. |
+| SCI783-PRIMARY-LOCUS | /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml; .//p[@id='P7']; .//p[@id='P8']; .//p[@id='P9']; .//p[@id='P10']; .//fig[@id='F4']/caption; .//p[@id='P14'] | partial | The primary supports co-clustered kab genes in D. simplex and P. palmata and biochemical characterization of DsKabA/DsKabC products. Recombinant individual enzymes and the reported E. coli DsKabC substrate biotransformation are not a demonstration of whole-cluster heterologous expression or a native knockout. Homolog transcripts do not establish production in other taxa. The retained MK312630.1 version and exact locus mapping were not independently fetched; P14’s BioProject deposits do not themselves verify that accession. Preserve the retained CLUSTER_UNSTATED source grade and keep each demonstrated activity separate from proposed mechanism and exact-owner linkage. |
+| SCI783-PRIMARY-ACTIVITY | /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml; .//p[@id='P4']; .//p[@id='P10'] | partial | The Introduction cites kainic-acid ionotropic glutamate receptor agonism, while P10 cites a distinct antagonist claim for kainic acid lactone. These are attributed prior pharmacology, not a new receptor assay of the encoded C9 owner. No antagonist/agonist result is transferred between the lactone and kainic acid, and no potency, target or activity is assigned to the incompatible retained structure. |
+| SCI783-PRIMARY-CLASSIFICATION | /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml; .//p[@id='P7']; .//p[@id='P9']; .//p[@id='P10'] | partial | The paper supports an amino-acid and isoprenoid precursor context with a two-enzyme pathway; the owner’s Monoterpenoid field, OTHER BGC class and NPClassifier Aminoacids result are distinct source/model assertions. These labels do not determine the complete natural graph or repair the primary mass mismatch. No separate class finding is proposed without exact compound-level adjudication. |
+| SCI783-WILEY-ACCESS | /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-publisher-independent-001/PUB79-1/pub79-1-primary.html; whole original failed response and associated access receipt | context_only | The original exact Wiley route returned a complete HTTP403 challenge and remains held. The later verified own PubMed and separate own PMC retrieval add their own evidence without rewriting that original failed access. |
+
+## Limits And Additional Notes
+
+- The incomplete ion typography is explicit; the scientific inference is conditional on the article’s molecular-ion assignment, not a silently repaired quotation.
+- Mass exclusion does not determine replacement connectivity, absolute configuration, a ChEBI target or a correction action.
+- Primary biological results describe the identified article product; they are not transferred by name to the incompatible retained encoding.
+- Current taxonomy, physical stock, MK312630.1 sequence/version and exact locus interval remain independently unverified.
+- The primary caption’s raw (M H) plus superscript minus is retained without silent typographic repair.
+- Kainic acid and its lactone have the same expected mass in the paper yet are distinct products; mass alone does not distinguish them or resolve the replacement structure.
+- The original Wiley403 and exact-DOI ESearch guard failure remain historical failed accesses; later own PubMed/PMC identity does not rewrite their status.
+- The earlier local-source conflict assessment and its proposed major severity are retained as historical evidence. This review adopts the stronger identity blocker supported by the later primary source; replacement chemistry remains unresolved.
+- The documented correction interface is conditional: full source/target row pins, unique eligible three-star target, unoccupied destination, verified target chemistry, claim reassessment and reviewed migration are still required.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T041901Z-kainic-acid
+title: Scientific review of kainic acid
+started_at: '2026-10-28T03:35:30.414310Z'
+finished_at: '2026-10-28T04:19:01.805788Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The kainic acid record is internally consistent as C9H13NO4, but its calculated
+  neutral mass (199.084457896 Da) is incompatible with the cited article's kainic
+  acid signal at 212.1 ± 0.5 m/z under the reported negative molecular-ion interpretation.
+  This identity mismatch is a blocker. The article's producer, pathway and activity
+  statements cannot be assigned unconditionally to the encoded structure. The exact
+  replacement structure, stereochemistry and correction target remain unresolved.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/kainic-acid.yaml
+    sha256: eff5fe3c32f7856c2424e69c0ae675625e3e286225dc9f3f789ab0191dcbdca2
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-a36b57cc8e
+  path: data/natural_products/amino_acids_and_peptides/kainic-acid.yaml
+  label: kainic acid
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Review of the exact kainic acid record, retained source rows, saved
+    chemical diagnostics and verified primary article. The primary molecular-ion evidence
+    contradicts the encoded owner. The review records an identity blocker and keeps
+    biological claims conditional on resolving the structure.
+  selection: One exact record selected in canonical repository path order from the
+    unreviewed population; this report assesses only its declared partial scientific
+    scope.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+  exclusions:
+  - target: Full-owner scientific verification
+    reason: Not independently established within this report; the scientific checks,
+      assessments and source-access limitations retain their stated boundaries.
+  - target: Complete replacement connectivity, natural stereochemistry or a selected
+      ChEBI target
+    reason: Not independently established within this report; the scientific checks,
+      assessments and source-access limitations retain their stated boundaries.
+  - target: Current taxonomy, physical-stock or MK312630.1 sequence/version verification
+    reason: Not independently established within this report; the scientific checks,
+      assessments and source-access limitations retain their stated boundaries.
+  - target: Figure-image, supplementary-spectrum or full structural assignment read
+    reason: Not independently established within this report; the scientific checks,
+      assessments and source-access limitations retain their stated boundaries.
+  - target: Whole-cluster heterologous demonstration or native knockout from individual
+      enzyme experiments
+    reason: Not independently established within this report; the scientific checks,
+      assessments and source-access limitations retain their stated boundaries.
+  - target: Activity transfer from the paper product or lactone to the inconsistent
+      encoded owner
+    reason: Not independently established within this report; the scientific checks,
+      assessments and source-access limitations retain their stated boundaries.
+  - target: Operational production or assay instructions
+    reason: Not independently established within this report; the scientific checks,
+      assessments and source-access limitations retain their stated boundaries.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch079 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch079. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch079 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch079. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch079 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch079. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch079 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch079. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch079 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch079. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/kainic-acid.yaml
+    --out /private/tmp/npm-review-work/783/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T03:35:32.231817Z. Original
+    receipt: /private/tmp/npm-review-work/783/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-LOCAL-JOINS
+  name: Whole owner and exact source-array reconciliation
+  status: passed
+  required: true
+  summary: The whole owner and seven retained plus two supplemental arrays are preserved,
+    with one retained MIBiG row and one NPClassifier row, no supplemental rows, and
+    the same one MIBiG plus one NPClassifier row in the actual intake. The correct
+    exact-key ChEBI join remains empty; the later same-name CHEBI:31746 conflict is
+    separate evidence.
+  evidence_ids:
+  - SCI783-LOCAL-JOINS
+  - CAND783-LOCAL-CONFLICT
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-ENCODINGS
+  name: Internal representation agreement
+  status: passed
+  required: true
+  summary: Saved SMILES/InChI checks agree internally on the declared key and C9H13NO4
+    formula. This internal agreement cannot override the separately inspected primary
+    molecular-ion incompatibility; no new molecular computation is performed.
+  evidence_ids:
+  - CAND783-INTERNAL-CONSISTENCY
+  - SCI783-INTAKE-MASS
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-OWN-PRIMARY
+  name: Own article identity and access scope
+  status: passed
+  required: true
+  summary: PMC6574125, PMID30995339 and DOI10.1002/anie.201902910 match the article
+    frontmatter; the complete HTTP200 author-manuscript body and original access clock
+    are preserved. This does not claim figure-image or supporting-file inspection.
+  evidence_ids:
+  - SCI783-PRIMARY-IDENTITY
+  - SCI783-WILEY-ACCESS
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-IDENTITY-SCOPE
+  name: Identity applicability to the exact encoded owner
+  status: failed
+  required: true
+  summary: The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896.
+    The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints
+    (M H) followed by a separate superscript minus. Under the reported negative molecular-ion
+    assignment, the encoded neutral mass is already below the lower window 211.6,
+    so proton loss cannot make it fit. P10 separately identifies the major product
+    by comparison with commercial kainic acid and NMR, and distinguishes a lactone
+    product with the same expected mass. This supports a wrong-identity concern for
+    the encoded owner, not selection of a replacement graph or stereochemistry. The
+    original same-name ChEBI/MIBiG constitutional conflict independently reinforces
+    the concern.
+  evidence_ids:
+  - SCI783-PRIMARY-IDENTITY
+  - CAND783-OWNER
+  - SCI783-PRIMARY-MASS
+  - SCI783-INTAKE-MASS
+  - CAND783-LOCAL-CONFLICT
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-PRODUCER-SCOPE
+  name: Producer applicability to the exact encoded owner
+  status: unavailable
+  required: true
+  summary: The own primary treats Digenea simplex from Japan and Palmaria palmata
+    as known kainic-acid producers and studies their kab genetic context. Related
+    transcripts in three additional algal taxa are explicitly not evidence that those
+    taxa produce kainic acid. These biological statements concern the article’s identified
+    product; the primary mass conflict prevents attaching them without qualification
+    to the encoded C9 owner. Current NCBITaxon:945030 identity or a physical stock
+    was not independently queried.
+  evidence_ids:
+  - SCI783-PRIMARY-PRODUCER
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-OCCURRENCE-SCOPE
+  name: Occurrence applicability to the exact encoded owner
+  status: unavailable
+  required: true
+  summary: The paper reports precursor detection in D. simplex extract and separately
+    discusses kainic acid and its lactone in the native-source context. A precursor
+    signal is not an additional kainic-acid measurement, and the lactone is not interchangeable
+    with kainic acid. The local exact-key occurrence arrays remain empty; this does
+    not establish biological absence or distribution. Natural-product evidence in
+    the article does not rescue the inconsistent C9 source-to-structure join.
+  evidence_ids:
+  - SCI783-PRIMARY-OCCURRENCE
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-LOCUS-SCOPE
+  name: Locus applicability to the exact encoded owner
+  status: unavailable
+  required: true
+  summary: The primary supports co-clustered kab genes in D. simplex and P. palmata
+    and biochemical characterization of DsKabA/DsKabC products. Recombinant individual
+    enzymes and the reported E. coli DsKabC substrate biotransformation are not a
+    demonstration of whole-cluster heterologous expression or a native knockout. Homolog
+    transcripts do not establish production in other taxa. The retained MK312630.1
+    version and exact locus mapping were not independently fetched; P14’s BioProject
+    deposits do not themselves verify that accession. Preserve the retained CLUSTER_UNSTATED
+    source grade and keep each demonstrated activity separate from proposed mechanism
+    and exact-owner linkage.
+  evidence_ids:
+  - SCI783-PRIMARY-LOCUS
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-ACTIVITY-SCOPE
+  name: Activity applicability to the exact encoded owner
+  status: unavailable
+  required: true
+  summary: The Introduction cites kainic-acid ionotropic glutamate receptor agonism,
+    while P10 cites a distinct antagonist claim for kainic acid lactone. These are
+    attributed prior pharmacology, not a new receptor assay of the encoded C9 owner.
+    No antagonist/agonist result is transferred between the lactone and kainic acid,
+    and no potency, target or activity is assigned to the incompatible retained structure.
+  evidence_ids:
+  - SCI783-PRIMARY-ACTIVITY
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-CLASSIFICATION-SCOPE
+  name: Classification applicability to the exact encoded owner
+  status: unavailable
+  required: true
+  summary: The paper supports an amino-acid and isoprenoid precursor context with
+    a two-enzyme pathway; the owner’s Monoterpenoid field, OTHER BGC class and NPClassifier
+    Aminoacids result are distinct source/model assertions. These labels do not determine
+    the complete natural graph or repair the primary mass mismatch. No separate class
+    finding is proposed without exact compound-level adjudication.
+  evidence_ids:
+  - SCI783-PRIMARY-CLASSIFICATION
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- check_id: SCI783-FULL-REPLACEMENT
+  name: Complete replacement structure and configuration
+  status: unavailable
+  required: true
+  summary: Primary mass rejects the retained encoding but does not determine full
+    replacement connectivity or absolute stereochemistry. Figure images, detailed
+    spectra and supporting assignments remain unread; no target key or ChEBI replacement
+    is selected.
+  evidence_ids:
+  - SCI783-PRIMARY-MASS
+  - SCI783-PRIMARY-IDENTITY
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+evidence:
+- evidence_id: CAND783-LOCAL-CONFLICT
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/source-science-preparation/bgc-tentative79-kainic-retained-constitution-conflict-DATA-001.json
+  locator: /source_rows/chebi; /source_rows/mibig/rows/0; /claim_rows/0:2
+  snapshot_sha256: 7f54e548df1e1ee8e27a8e0df72d67a4b033cf88bf97915056ea9ffec913f131
+  accessed_at: '2026-10-28T03:26:26.195070Z'
+  support: supports
+  summary: The retained MIBiG BGC0001974:1 and three-star CHEBI:31746 rows share the
+    name kainic acid but specify different full keys and literal constitutions. The
+    ChEBI side chain contains ring–CH2–COOH; the MIBiG-derived owner has both carboxyl
+    groups directly on ring atoms. Neither is chosen as the natural reference.
+- evidence_id: CAND783-OWNER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/kainic-acid.yaml
+  locator: /identifier; /label; /chemical_structure; /source_concepts/0; /biosynthesis_origin
+  snapshot_sha256: eff5fe3c32f7856c2424e69c0ae675625e3e286225dc9f3f789ab0191dcbdca2
+  accessed_at: '2026-10-28T03:42:26.541314Z'
+  support: supports
+  summary: The uniquely resolved owner is naturalproductmech:mibig-a36b57cc8e, with
+    the MIBiG index1 C9 encoding labelled kainic acid and NATURAL_PRODUCT. Its source-to-natural-identity
+    assignment is contradicted by the later primary mass comparison; the exact target
+    itself is unambiguous.
+- evidence_id: CAND783-INTERNAL-CONSISTENCY
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/source-science-preparation/root-tentative79-local-chemical-consistency-and-neighbors-001.json
+  locator: /records/2
+  snapshot_sha256: 09d18a7de4401460ad13bef9cc7ff98681b8d3da942c53fe950700cdb9ce210e
+  accessed_at: '2026-10-28T02:30:34.473575Z'
+  support: context_only
+  summary: Saved SMILES/InChI checks agree internally on the declared key and C9H13NO4
+    formula. This internal agreement cannot override the separately inspected primary
+    molecular-ion incompatibility; no new molecular computation is performed.
+- evidence_id: CAND783-CURATION-INTERFACE
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  locator: MIBiG structure corrections, lines23–67
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+  accessed_at: '2026-10-28T03:42:26.541314Z'
+  support: context_only
+  summary: The documented maintained correction interface requires source-specific
+    identity adjudication, complete parsed-row pins and an unambiguous three-star
+    default target satisfying the uniqueness and unoccupied-destination guards. It
+    preserves raw rows and requires reviewed migration for an existing owner. It does
+    not authorize choosing CHEBI:31746 merely by label.
+- evidence_id: CAND783-CORRECTION-TABLE
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/curation/mibig_structure_corrections.tsv
+  locator: complete header and both data rows
+  snapshot_sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+  accessed_at: '2026-10-28T03:42:26.541314Z'
+  support: context_only
+  summary: The captured maintained table has two existing correction rows; neither
+    is BGC0001974:1. This is a statement about this exact complete captured table,
+    not a search for all possible correction mechanisms.
+- evidence_id: CAND783-SEED-CALLSITE
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines816–820 only
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+  accessed_at: '2026-10-28T03:42:26.541314Z'
+  support: context_only
+  summary: The inspected seeder call passes raw MIBiG rows, the correction inventory
+    and ChEBI structure inventory to apply_structure_corrections. This establishes
+    the regeneration entrypoint only; the implementation module body is not claimed
+    as inspected or captured.
+- evidence_id: CAND783-SEVERITY-RUBRIC
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-reviews.md
+  locator: Verdict And Severity
+  snapshot_sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+  accessed_at: '2026-10-28T03:42:26.541314Z'
+  support: context_only
+  summary: The captured rubric classifies wrong identity as a blocker. This review
+    applies that severity to the encoded owner's incompatibility with the primary
+    molecular-ion evidence. It does not select replacement chemistry.
+- evidence_id: SCI783-LOCAL-JOINS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-28T02:18:13.182364Z'
+  locator: /entries/2/owner_document; /entries/2/rows; /entries/2/supplemental_retained_rows;
+    /entries/2/expected_official_intake_rows
+  snapshot_sha256: ac69b4b6b952e7fb28fcdfe50935f4beb2744feaacd34702edb05d793b85b3d2
+  summary: The whole owner and seven retained plus two supplemental arrays are preserved,
+    with one retained MIBiG row and one NPClassifier row, no supplemental rows, and
+    the same one MIBiG plus one NPClassifier row in the actual intake. The correct
+    exact-key ChEBI join remains empty; the later same-name CHEBI:31746 conflict is
+    separate evidence.
+  support: context_only
+- evidence_id: SCI783-INTAKE-MASS
+  kind: validation
+  reference: /private/tmp/npm-review-work/783/chemistry.json
+  accessed_at: '2026-10-28T03:35:31.084914Z'
+  locator: /formula; /formal_charge; /exact_mass; /key; /inchi
+  snapshot_sha256: d0360cf103d77f19dcb76fa8627888d0a083e3998620d0eb72972703a622a31a
+  summary: The original saved intake computes neutral exact mass 199.084457896, formula
+    C9H13NO4 and formal charge 0 for the exact retained key. The saved owner-matching
+    flags are true; no new RDKit computation or atomic-mass calculation is performed.
+  support: supports
+- evidence_id: SCI783-PRIMARY-MASS
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml
+  accessed_at: '2026-10-28T03:53:48.647776Z'
+  locator: .//fig[@id='F3']/caption/p[@id='P21']
+  snapshot_sha256: d2c808e258d879dff43c94328baac036bd6565345801e0077cf8c79e41932ed6
+  summary: The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896.
+    The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints
+    (M H) followed by a separate superscript minus. Under the reported negative molecular-ion
+    assignment, the encoded neutral mass is already below the lower window 211.6,
+    so proton loss cannot make it fit. P10 separately identifies the major product
+    by comparison with commercial kainic acid and NMR, and distinguishes a lactone
+    product with the same expected mass. This supports a wrong-identity concern for
+    the encoded owner, not selection of a replacement graph or stereochemistry. The
+    original same-name ChEBI/MIBiG constitutional conflict independently reinforces
+    the concern.
+  support: refutes
+- evidence_id: SCI783-PRIMARY-IDENTITY
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml
+  accessed_at: '2026-10-28T03:53:48.647776Z'
+  locator: .//fig[@id='F3']/caption; .//p[@id='P10']
+  snapshot_sha256: d2c808e258d879dff43c94328baac036bd6565345801e0077cf8c79e41932ed6
+  summary: The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896.
+    The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints
+    (M H) followed by a separate superscript minus. Under the reported negative molecular-ion
+    assignment, the encoded neutral mass is already below the lower window 211.6,
+    so proton loss cannot make it fit. P10 separately identifies the major product
+    by comparison with commercial kainic acid and NMR, and distinguishes a lactone
+    product with the same expected mass. This supports a wrong-identity concern for
+    the encoded owner, not selection of a replacement graph or stereochemistry. The
+    original same-name ChEBI/MIBiG constitutional conflict independently reinforces
+    the concern.
+  support: partial
+- evidence_id: SCI783-PRIMARY-PRODUCER
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml
+  accessed_at: '2026-10-28T03:53:48.647776Z'
+  locator: .//p[@id='P6']; .//p[@id='P7']; .//p[@id='P8']
+  snapshot_sha256: d2c808e258d879dff43c94328baac036bd6565345801e0077cf8c79e41932ed6
+  summary: The own primary treats Digenea simplex from Japan and Palmaria palmata
+    as known kainic-acid producers and studies their kab genetic context. Related
+    transcripts in three additional algal taxa are explicitly not evidence that those
+    taxa produce kainic acid. These biological statements concern the article’s identified
+    product; the primary mass conflict prevents attaching them without qualification
+    to the encoded C9 owner. Current NCBITaxon:945030 identity or a physical stock
+    was not independently queried.
+  support: partial
+- evidence_id: SCI783-PRIMARY-OCCURRENCE
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml
+  accessed_at: '2026-10-28T03:53:48.647776Z'
+  locator: .//p[@id='P9']; .//p[@id='P10']
+  snapshot_sha256: d2c808e258d879dff43c94328baac036bd6565345801e0077cf8c79e41932ed6
+  summary: The paper reports precursor detection in D. simplex extract and separately
+    discusses kainic acid and its lactone in the native-source context. A precursor
+    signal is not an additional kainic-acid measurement, and the lactone is not interchangeable
+    with kainic acid. The local exact-key occurrence arrays remain empty; this does
+    not establish biological absence or distribution. Natural-product evidence in
+    the article does not rescue the inconsistent C9 source-to-structure join.
+  support: partial
+- evidence_id: SCI783-PRIMARY-LOCUS
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml
+  accessed_at: '2026-10-28T03:53:48.647776Z'
+  locator: .//p[@id='P7']; .//p[@id='P8']; .//p[@id='P9']; .//p[@id='P10']; .//fig[@id='F4']/caption;
+    .//p[@id='P14']
+  snapshot_sha256: d2c808e258d879dff43c94328baac036bd6565345801e0077cf8c79e41932ed6
+  summary: The primary supports co-clustered kab genes in D. simplex and P. palmata
+    and biochemical characterization of DsKabA/DsKabC products. Recombinant individual
+    enzymes and the reported E. coli DsKabC substrate biotransformation are not a
+    demonstration of whole-cluster heterologous expression or a native knockout. Homolog
+    transcripts do not establish production in other taxa. The retained MK312630.1
+    version and exact locus mapping were not independently fetched; P14’s BioProject
+    deposits do not themselves verify that accession. Preserve the retained CLUSTER_UNSTATED
+    source grade and keep each demonstrated activity separate from proposed mechanism
+    and exact-owner linkage.
+  support: partial
+- evidence_id: SCI783-PRIMARY-ACTIVITY
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml
+  accessed_at: '2026-10-28T03:53:48.647776Z'
+  locator: .//p[@id='P4']; .//p[@id='P10']
+  snapshot_sha256: d2c808e258d879dff43c94328baac036bd6565345801e0077cf8c79e41932ed6
+  summary: The Introduction cites kainic-acid ionotropic glutamate receptor agonism,
+    while P10 cites a distinct antagonist claim for kainic acid lactone. These are
+    attributed prior pharmacology, not a new receptor assay of the encoded C9 owner.
+    No antagonist/agonist result is transferred between the lactone and kainic acid,
+    and no potency, target or activity is assigned to the incompatible retained structure.
+  support: partial
+- evidence_id: SCI783-PRIMARY-CLASSIFICATION
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-kainic-001/pmc-6574125.xml
+  accessed_at: '2026-10-28T03:53:48.647776Z'
+  locator: .//p[@id='P7']; .//p[@id='P9']; .//p[@id='P10']
+  snapshot_sha256: d2c808e258d879dff43c94328baac036bd6565345801e0077cf8c79e41932ed6
+  summary: The paper supports an amino-acid and isoprenoid precursor context with
+    a two-enzyme pathway; the owner’s Monoterpenoid field, OTHER BGC class and NPClassifier
+    Aminoacids result are distinct source/model assertions. These labels do not determine
+    the complete natural graph or repair the primary mass mismatch. No separate class
+    finding is proposed without exact compound-level adjudication.
+  support: partial
+- evidence_id: SCI783-WILEY-ACCESS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch079-tentative/literature-preparation/public-primary-publisher-independent-001/PUB79-1/pub79-1-primary.html
+  accessed_at: '2026-10-28T03:12:23.558031Z'
+  locator: whole original failed response and associated access receipt
+  snapshot_sha256: 71b20246dc79a74eaf792504f7ee1f773b0381a0a86515bce1669bf634665223
+  summary: The original exact Wiley route returned a complete HTTP403 challenge and
+    remains held. The later verified own PubMed and separate own PMC retrieval add
+    their own evidence without rewriting that original failed access.
+  support: context_only
+assessments:
+- assessment_id: SCI783-IDENTITY
+  area: identity
+  topic: Identity source scope
+  outcome: concern
+  summary: The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896.
+    The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints
+    (M H) followed by a separate superscript minus. Under the reported negative molecular-ion
+    assignment, the encoded neutral mass is already below the lower window 211.6,
+    so proton loss cannot make it fit. P10 separately identifies the major product
+    by comparison with commercial kainic acid and NMR, and distinguishes a lactone
+    product with the same expected mass. This supports a wrong-identity concern for
+    the encoded owner, not selection of a replacement graph or stereochemistry. The
+    original same-name ChEBI/MIBiG constitutional conflict independently reinforces
+    the concern.
+  evidence_ids:
+  - SCI783-PRIMARY-IDENTITY
+  - CAND783-OWNER
+  - SCI783-PRIMARY-MASS
+  - SCI783-INTAKE-MASS
+  - CAND783-LOCAL-CONFLICT
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- assessment_id: SCI783-PRODUCER
+  area: provenance
+  topic: Producer source scope
+  outcome: unknown
+  summary: The own primary treats Digenea simplex from Japan and Palmaria palmata
+    as known kainic-acid producers and studies their kab genetic context. Related
+    transcripts in three additional algal taxa are explicitly not evidence that those
+    taxa produce kainic acid. These biological statements concern the article’s identified
+    product; the primary mass conflict prevents attaching them without qualification
+    to the encoded C9 owner. Current NCBITaxon:945030 identity or a physical stock
+    was not independently queried.
+  evidence_ids:
+  - SCI783-PRIMARY-PRODUCER
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- assessment_id: SCI783-OCCURRENCE
+  area: provenance
+  topic: Occurrence source scope
+  outcome: unknown
+  summary: The paper reports precursor detection in D. simplex extract and separately
+    discusses kainic acid and its lactone in the native-source context. A precursor
+    signal is not an additional kainic-acid measurement, and the lactone is not interchangeable
+    with kainic acid. The local exact-key occurrence arrays remain empty; this does
+    not establish biological absence or distribution. Natural-product evidence in
+    the article does not rescue the inconsistent C9 source-to-structure join.
+  evidence_ids:
+  - SCI783-PRIMARY-OCCURRENCE
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- assessment_id: SCI783-LOCUS
+  area: provenance
+  topic: Locus source scope
+  outcome: unknown
+  summary: The primary supports co-clustered kab genes in D. simplex and P. palmata
+    and biochemical characterization of DsKabA/DsKabC products. Recombinant individual
+    enzymes and the reported E. coli DsKabC substrate biotransformation are not a
+    demonstration of whole-cluster heterologous expression or a native knockout. Homolog
+    transcripts do not establish production in other taxa. The retained MK312630.1
+    version and exact locus mapping were not independently fetched; P14’s BioProject
+    deposits do not themselves verify that accession. Preserve the retained CLUSTER_UNSTATED
+    source grade and keep each demonstrated activity separate from proposed mechanism
+    and exact-owner linkage.
+  evidence_ids:
+  - SCI783-PRIMARY-LOCUS
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- assessment_id: SCI783-ACTIVITY
+  area: quantity
+  topic: Activity source scope
+  outcome: unknown
+  summary: The Introduction cites kainic-acid ionotropic glutamate receptor agonism,
+    while P10 cites a distinct antagonist claim for kainic acid lactone. These are
+    attributed prior pharmacology, not a new receptor assay of the encoded C9 owner.
+    No antagonist/agonist result is transferred between the lactone and kainic acid,
+    and no potency, target or activity is assigned to the incompatible retained structure.
+  evidence_ids:
+  - SCI783-PRIMARY-ACTIVITY
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- assessment_id: SCI783-CLASSIFICATION
+  area: completeness
+  topic: Classification source scope
+  outcome: unknown
+  summary: The paper supports an amino-acid and isoprenoid precursor context with
+    a two-enzyme pathway; the owner’s Monoterpenoid field, OTHER BGC class and NPClassifier
+    Aminoacids result are distinct source/model assertions. These labels do not determine
+    the complete natural graph or repair the primary mass mismatch. No separate class
+    finding is proposed without exact compound-level adjudication.
+  evidence_ids:
+  - SCI783-PRIMARY-CLASSIFICATION
+  - CAND783-OWNER
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- assessment_id: SCI783-ENCODING
+  area: representation
+  topic: Internal agreement versus external identity
+  outcome: supported
+  summary: Saved SMILES/InChI checks agree internally on the declared key and C9H13NO4
+    formula. This internal agreement cannot override the separately inspected primary
+    molecular-ion incompatibility; no new molecular computation is performed.
+  evidence_ids:
+  - CAND783-INTERNAL-CONSISTENCY
+  - SCI783-INTAKE-MASS
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+- assessment_id: SCI783-GRAPH
+  area: graph
+  topic: Mechanism and exact-owner claim transfer
+  outcome: unknown
+  summary: The whole owner has no inline or referenced graph. Biochemical activities
+    concern the article’s identified product; the incompatible current C9 identity
+    prevents unqualified producer, locus, mechanism or activity transfer.
+  evidence_ids:
+  - SCI783-LOCAL-JOINS
+  - SCI783-PRIMARY-LOCUS
+  - SCI783-PRIMARY-MASS
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+findings:
+- finding_id: F783-RETAINED-NAME-CONSTITUTION-CONFLICT
+  issue_key: kainic-acid-mibig-1974-1-retained-name-constitution-conflict
+  category: identity
+  severity: blocker
+  status: open
+  certainty: confirmed
+  title: Encoded kainic-acid owner conflicts with the primary molecular-ion identity
+  description: The encoded C9H13NO4 owner has saved neutral exact mass 199.084457896.
+    The own primary Figure 3 caption names kainic acid at 212.1 ± 0.5 m/z and prints
+    (M H) followed by a separate superscript minus. Under the reported negative molecular-ion
+    assignment, the encoded neutral mass is already below the lower window 211.6,
+    so proton loss cannot make it fit. P10 separately identifies the major product
+    by comparison with commercial kainic acid and NMR, and distinguishes a lactone
+    product with the same expected mass. This supports a wrong-identity concern for
+    the encoded owner, not selection of a replacement graph or stereochemistry. The
+    original same-name ChEBI/MIBiG constitutional conflict independently reinforces
+    the concern.
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+  field_paths:
+  - label
+  - chemical_structure
+  - source_concepts[0]
+  - biosynthesis_origin
+  evidence_ids:
+  - CAND783-LOCAL-CONFLICT
+  - CAND783-OWNER
+  - CAND783-INTERNAL-CONSISTENCY
+  - CAND783-SEVERITY-RUBRIC
+  - SCI783-PRIMARY-MASS
+  - SCI783-INTAKE-MASS
+  - SCI783-PRIMARY-IDENTITY
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: conditional maintained correction interface, only after identity and interface
+      prerequisites are independently established
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: documented source correction and history-preserving migration requirements
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: original BGC0001974 index1 and separate index2 source evidence to preserve
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: original same-name CHEBI:31746 source evidence, not a preselected correction
+      target
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: captured regeneration entrypoint; only the documented call site was inspected
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/kainic-acid.yaml
+    role: generated exact owner; no direct YAML-only correction
+  rule_id: source-to-natural-structure-identity-must-be-evidence-supported
+  native_severity: blocker for primary-backed encoded natural-product identity mismatch
+  normalization_reason: Blocker applies to the encoded C9H13NO4 owner’s incompatibility
+    with the primary kainic-acid negative molecular-ion assignment, a wrong-identity
+    defect under the captured review rubric. The raw incomplete (M H) typography and
+    the interpretation boundary remain explicit. The immutable local-only major judgment
+    addressed the earlier source conflict; the later primary evidence establishes
+    the stronger identity constraint. Replacement connectivity, stereochemistry and
+    correction target remain separately unresolved.
+actions:
+- action_id: A783-VERIFY-IDENTITY-BEFORE-MAINTAINED-CORRECTION
+  finding_ids:
+  - F783-RETAINED-NAME-CONSTITUTION-CONFLICT
+  target_ids:
+  - naturalproductmech:mibig-a36b57cc8e
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_structure_corrections.tsv
+    role: conditional maintained correction interface, only after identity and interface
+      prerequisites are independently established
+  - repository: CultureBotAI/NaturalProductMech
+    path: docs/CURATION.md
+    role: documented source correction and history-preserving migration requirements
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: original BGC0001974 index1 and separate index2 source evidence to preserve
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: original same-name CHEBI:31746 source evidence, not a preselected correction
+      target
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: captured regeneration entrypoint; only the documented call site was inspected
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/kainic-acid.yaml
+    role: generated exact owner; no direct YAML-only correction
+  description: Resolve the complete natural kainic-acid structure and compound-index
+    identity using the primary structural assignment and any necessary figure/spectrum
+    evidence. The current encoded C9 graph is incompatible with the primary molecular-ion
+    evidence and must not be treated as a validated natural identity. Preserve all
+    original raw rows and the distinct lactone. Only after exact replacement adjudication
+    assess a documented maintained correction and migration; CHEBI:31746 remains an
+    unselected source lead. Do not transplant producer, locus, occurrence or activity
+    claims by label.
+  acceptance_checks:
+  - Preserve the complete original MIBiG BGC0001974:1 and :2 rows, CHEBI:31746 row
+    and MANIFEST; retain the correct original exact-full-key join and its empty ChEBI
+    result.
+  - Preserve and independently reproduce the own-primary identity, exact Figure 3
+    ion typography/window and saved current-owner neutral-mass comparison; then resolve
+    full ring-to-carboxyl connectivity and supported stereochemistry from appropriate
+    structural evidence before selecting a replacement.
+  - Do not infer a replacement graph from the mass discrepancy, PubMed/Crossref metadata,
+    a shared name, a three-star label or internal encoding agreement. Keep the original
+    local-only major candidate and this stronger primary successor separate in history.
+  - If a ChEBI-based correction is scientifically justified, verify the documented
+    unique source ownership, unambiguous three-star default target, unoccupied destination
+    key, complete parsed-row pins and verified target chemistry before selecting an
+    action. No target, row digest or replacement key is prefilled here.
+  - Reassess each producer, locus, occurrence and assay against the independently
+    resolved compound; preserve SOURCE_ASSERTION and CLUSTER_UNSTATED until claim-specific
+    evidence warrants a reviewed change.
+  - Use only an authorized maintained correction and history-preserving validated
+    migration; preserve applicable claims and history and do not edit the generated
+    owner alone. Check applicable canary, reproduction and full corpus gates after
+    any separately authorized curation.
+  generator: scripts/seed_from_sources.py, only after separate identity adjudication,
+    maintained-input review and authorized migration
+limitations:
+- The incomplete ion typography is explicit; the scientific inference is conditional
+  on the article’s molecular-ion assignment, not a silently repaired quotation.
+- Mass exclusion does not determine replacement connectivity, absolute configuration,
+  a ChEBI target or a correction action.
+- Primary biological results describe the identified article product; they are not
+  transferred by name to the incompatible retained encoding.
+- Current taxonomy, physical stock, MK312630.1 sequence/version and exact locus interval
+  remain independently unverified.
+- The primary caption’s raw (M H) plus superscript minus is retained without silent
+  typographic repair.
+- Kainic acid and its lactone have the same expected mass in the paper yet are distinct
+  products; mass alone does not distinguish them or resolve the replacement structure.
+- The original Wiley403 and exact-DOI ESearch guard failure remain historical failed
+  accesses; later own PubMed/PMC identity does not rewrite their status.
+- The earlier local-source conflict assessment and its proposed major severity are
+  retained as historical evidence. This review adopts the stronger identity blocker
+  supported by the later primary source; replacement chemistry remains unresolved.
+- 'The documented correction interface is conditional: full source/target row pins,
+  unique eligible three-star target, unoccupied destination, verified target chemistry,
+  claim reassessment and reviewed migration are still required.'
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
