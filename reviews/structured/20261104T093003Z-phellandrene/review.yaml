@@ -1,0 +1,1477 @@
+schema_version: 1.0.0
+review_id: 20261104T093003Z-phellandrene
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: β-phellandrene'
+started_at: '2026-11-04T08:24:13.785451Z'
+finished_at: '2026-11-04T09:30:03.279583Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The two saved β-phellandrene forms agree locally and retain one unspecified
+  tetrahedral center. The 341 LOTUS rows reconcile to 337 taxon/reference signatures
+  and the written 25-plus-312 cap, without proving independent experiments or production.
+  The exact natural enantiomer and external source truth remain unverified in this
+  qualified partial review.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/lycosantalonol.yaml
+    sha256: 3166362b8754763a8c918f58e67a6e08d3ac2386284fb13db7afd9a8df03d872
+    role: context
+  - path: data/natural_products/terpenoids/phellandrene.yaml
+    sha256: b6a5342d0dd76f50eb0a5b40f29b199371d87fc897f9ef99b66b1760a4c0ff18
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2373; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:48741
+targets:
+- target_id: CHEBI:48741
+  path: data/natural_products/terpenoids/phellandrene.yaml
+  label: β-phellandrene
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/taxon_merged.tsv
+    role: Exact retained selected/direct taxon decision; no fresh authority.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:48741
+  command: just validate-strict data/natural_products/terpenoids/pentalenolactone.yaml
+    data/natural_products/terpenoids/pestalodiol-e.yaml data/natural_products/terpenoids/phellandrene.yaml
+    data/natural_products/terpenoids/phyllocladan-16-ol.yaml data/natural_products/terpenoids/phyllostictine-b.yaml
+    data/natural_products/terpenoids/phytocassane.yaml data/natural_products/terpenoids/pimara-8-14-15-diene.yaml
+    data/natural_products/terpenoids/platencin-2.yaml data/natural_products/terpenoids/platencin.yaml
+    data/natural_products/terpenoids/platensilin.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-238/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:48741
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-238/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:48741
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:48741
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:48741
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-238/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:48741
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:48741
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:48741
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2373-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/phellandrene.yaml
+  locator: Whole current owner plaintext and complete curation_history
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Complete current β-phellandrene owner and 2 history events; native status
+    remains SEEDED. No source record was edited.
+  snapshot_sha256: b6a5342d0dd76f50eb0a5b40f29b199371d87fc897f9ef99b66b1760a4c0ff18
+- evidence_id: bgc-2373-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/owner-capture-DATA-001.json
+  locator: /records/2
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Whole captured owner/history supports absence of all four mechanism roots,
+    component references and selected reader applicability.
+  snapshot_sha256: b4284b4720d05297c08bdd27f7431a79dab9dbcbb6cfa501532c6a300a56fcb1
+- evidence_id: bgc-2373-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/intakes/2373-inspect-001.json
+  locator: /status; /repository; /source; /targets
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: 'Actual canonical intake for CHEBI:48741: 39 current input placements and
+    complete source/curator ownership. Source and component corrections require their
+    maintained owners, not generated pages.'
+  snapshot_sha256: 114ff9e753b65cd339b88b48323557389a7328328664c06ba813ab5308aa93b1
+- evidence_id: bgc-2373-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/identifier; /records/2/owner_document/label;
+    /records/2/owner_document/chemical_structure; /records/2/owner_document/definition;
+    /records/2/owner_document/definition_source; /records/2/owner_document/xrefs;
+    /records/2/owner_document/source_concepts; /records/2/owner_document/grounding_status
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Retained identity, full structure/key, concepts and any unresolved discussion;
+    local agreement is not natural-identity authentication.
+  snapshot_sha256: b4284b4720d05297c08bdd27f7431a79dab9dbcbb6cfa501532c6a300a56fcb1
+- evidence_id: bgc-2373-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/producer_taxon_groups; /records/2/owner_document/producer_organisms;
+    /records/2/owner_document/biosynthetic_gene_clusters; /records/2/owner_document/source_concepts
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Retained source producer and locus grades, methods, genome scopes, entry
+    versions and citation levels.
+  snapshot_sha256: b4284b4720d05297c08bdd27f7431a79dab9dbcbb6cfa501532c6a300a56fcb1
+- evidence_id: bgc-2373-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/np_pathway; /records/2/owner_document/np_classification;
+    /records/2/owner_document/bgc_class; /records/2/owner_document/compound_classes;
+    /records/2/owner_document/biosynthesis_origin
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Named/versioned model output and source biosynthetic classes retain separate
+    authority.
+  snapshot_sha256: b4284b4720d05297c08bdd27f7431a79dab9dbcbb6cfa501532c6a300a56fcb1
+- evidence_id: bgc-2373-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/owner-capture-DATA-001.json
+  locator: /records/2/owner_document/occurrences; /records/2/owner_document/occurrence_taxon_groups
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: All written occurrence taxa/references and any cap note are retained. Occurrence
+    is distinct from production and independent publication evidence.
+  snapshot_sha256: b4284b4720d05297c08bdd27f7431a79dab9dbcbb6cfa501532c6a300a56fcb1
+- evidence_id: bgc-2373-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/owner-capture-DATA-001.json
+  locator: /records/2/owner_document
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Whole owner has no written bioactivities, bioactivity_summary or molecular_targets.
+    The available source snapshot does not establish inactivity.
+  snapshot_sha256: b4284b4720d05297c08bdd27f7431a79dab9dbcbb6cfa501532c6a300a56fcb1
+- evidence_id: bgc-2373-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/2/declared_structure; /records/2/literal_InChI_layers; /records/2/smiles;
+    /records/2/inchi; /records/2/comparisons; /records/2/atom_correspondence
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Both original stored forms parsed; all ten comparisons and complete atom-count
+    correspondence agree. The original full_graph_identity_established remains false.
+    This is saved-form consistency, not natural identity or an independent full-graph
+    proof.
+  snapshot_sha256: 40f4a4d85e9c291635bcae75d173e7cb6ea4bcc74a1f9e248a1a9f8c6dc328d3
+- evidence_id: bgc-2373-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/2/declared_structure; /records/2/literal_InChI_layers; /records/2/comparisons;
+    /records/2/atom_correspondence; /records/2/smiles/computed; /records/2/inchi/computed
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: The six-carbon ring is SMILES [3,9,8,6,5,4], with internal double bond8–9
+    and exocyclic methylene6=7. Carbon3 carries the isopropyl substituent and is the
+    single unspecified tetrahedral center. There are no heteroatoms, carbonyls or
+    glycosidic linkages. This topology is compatible with the retained β-phellandrene
+    double-bond-isomer definition without proving natural isomer purity.
+  snapshot_sha256: 40f4a4d85e9c291635bcae75d173e7cb6ea4bcc74a1f9e248a1a9f8c6dc328d3
+- evidence_id: bgc-2373-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/chemistry-local/diagnostic-execution-001.json
+  locator: /observer; /command; /started_at; /finished_at; /exit_code; /stdout; /stderr;
+    /retries; /external_requests
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: ROOT operated the original stored-form diagnostic once, exit 0 and no retry.
+    Exact stream pins and original timestamps are retained.
+  snapshot_sha256: c189304847deb6b5bcd363e93f191366348377f38746508ee229fd9fe75a9e8c
+- evidence_id: bgc-2373-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/chemistry-local/root-diagnostic-acceptance-001.json
+  locator: /accepted; /status; /DATA; /execution; /original_tools; /warnings; /limits
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: ROOT accepts original diagnostic integrity. Two omitted-undefined-stereo
+    warnings remain global and unassigned; they are not per-record findings.
+  snapshot_sha256: c58ec3eec001655cc705b5cb711fc96042b2dc765bacf31ef132ab3f8583f414
+- evidence_id: bgc-2373-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/root-intake-acceptance-001.json
+  locator: /accepted; /status; /summary; /records; /verification
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: ROOT accepts actual ten canonical intakes and exact source alignment. Intake
+    ownership and hashes do not themselves certify science.
+  snapshot_sha256: 3b660a99915d345d882a0d2bf5949015305d039e8bdd884b21e96240591549f4
+- evidence_id: bgc-2373-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/root-source-inventory-acceptance-001.json
+  locator: /accepted; /status; /inventory; /verification
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: ROOT accepts the original local extraction; complete scientific source
+    meanings are separately attributed.
+  snapshot_sha256: 8b502886402a2a78f2c2e47b1f1b14527b44355cc5396bd7088ac558ffd849d8
+- evidence_id: bgc-2373-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238/root-input-plan-acceptance-001.json
+  locator: /accepted; /status; /plan; /verification
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: ROOT accepts exact complete plan maps and source preservation; actual intake
+    acceptance separately supplies completed outcomes.
+  snapshot_sha256: c2eb7849664c6b9186115248a7edd7043745ff5ecd0664f37c5ec4bc0d9112e1
+- evidence_id: bgc-2373-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/bgc-prep/bgc-conditional238-target-input-plan-001.json
+  locator: /records/2
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Accepted per-record plan preserves exact current inputs, direct contexts
+    and complete source payloads, without a later silent refresh.
+  snapshot_sha256: d7f788858ab6b318cbd1ab1dbfdc3bd89de0f8b05206e546e3e109d858e8e77a
+- evidence_id: bgc-2373-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/bgc-prep/bgc-conditional238-source-scope-notes-001.json
+  locator: /reading; /cautions; /scientific_limits
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: 'Complete source/raw/history attribution: BGC 127 rows, Support 344 Phellandrene
+    rows, and Native 305 cached stanzas plus curation. Repeated shared source reading
+    is not counted twice.'
+  snapshot_sha256: 845e90961cd00a73cb97c0361f7f8a8c5dba5da7ec17d4b6c029dc816e44fbd7
+- evidence_id: bgc-2373-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/bgc-prep/bgc-conditional238-source-scope-notes-001.json
+  locator: /curation; /curation_scope; /curation_source_receipt
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Ignored-inclusive implemented-curation scan is attributed to Native. One
+    applicable Pentalenolactone BGC0000653 REPLACE row is distinguished from two unrelated
+    lexical hits; no matching LOTUS or assay exclusion was found. Reserved files are
+    not consumed corrections.
+  snapshot_sha256: 845e90961cd00a73cb97c0361f7f8a8c5dba5da7ec17d4b6c029dc816e44fbd7
+- evidence_id: bgc-2373-occurrence-reconciliation
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/support-prep/support-current238-phellandrene-source-reading-001.json
+  locator: /occurrence_reconciliation
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Support complete saved-row interpretation and exact four signature collapses
+    reconcile 341 LOTUS placements to 337 signatures, then the 25 written plus 312
+    omitted cap. The saved forward merge makes no additional collapse.
+  snapshot_sha256: 7a135d80fbfbd173ccf2a4ee43792670c247a43f319d0ef540e24924afdc7b45
+- evidence_id: bgc-2373-source-mibig_compounds
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line1; physical lines 1550–1550, row_sha256 c562fb62ce73dddf706c98ae735ec1ac21e63ab9b9da016b7159c787c124b463
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Complete identity/key, source class, locus version/quality, producer/locus
+    grades, and compound-versus-entry citation roles; implemented corrections are
+    separate. All 1 complete row placements are retained. Support complete Phellandrene
+    source reading carries.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2373-source-chebi_structures
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: Header line1; physical lines 13170–13170, row_sha256 c27a34b28eaad74ec4775a6976d0fa8bb398a207add57c9bd368a3a5ee55f484
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Complete retained ChEBI identifier, definition, star status, full key and
+    SMILES; no fresh ontology or natural-identity validation. All 1 complete row placements
+    are retained. Support complete Phellandrene source reading carries.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: bgc-2373-source-lotus_occurrences
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line1; physical lines 3834–3834, row_sha256 ed410012d42a212b2e9b13cbf57362a18c90efd27fc93ef8d5bb928cb89523ab;
+    physical lines 3835–3835, row_sha256 843779a5634bca7e09406ea60466e93b5bc7f862c243da20caa407a039ce9924;
+    physical lines 3836–3836, row_sha256 49bfaafa1412852a42cb92a8b2903743647108e87cdbecefcb2e742d94bc51b6;
+    physical lines 3837–3837, row_sha256 ca3c40a9ddca648c9403c6bbc9e58efa3772de190bb39d6fa965c6c2f36d8a81;
+    physical lines 3838–3838, row_sha256 5241af164b07570c50159ad230c6eaa464b3c6be060592a2f0067fa69515fe75;
+    physical lines 3839–3839, row_sha256 6825535f7510508608fe2c55f8272058bdaadb644b3963c35a058f04ad87d737;
+    physical lines 3840–3840, row_sha256 245a006f6f575f9da469d25c9393b08d7fcaff42f8c4a678137bf21e4d73d318;
+    physical lines 3841–3841, row_sha256 475a749e4cdb4b57a33548148fd1b579292242a08f20f94909d36c1f35267c78;
+    physical lines 3842–3842, row_sha256 39b876448ff275e9e1efa31a2c587bb9a68ddd7339389a98ce1fec9b1bed6d23;
+    physical lines 3843–3843, row_sha256 09da5bbff383170c625ea2d1336518ece21076407184bc8ab457795175b56d4a;
+    physical lines 3844–3844, row_sha256 93f20d5175dc773554356ffc660dd4c4945e0ea8d0ca9f00bc96e5080ce8b0ea;
+    physical lines 3845–3845, row_sha256 04ba62df98c2abea6e60cb2098727e929b2d03b1bd42944800c1d47f7a7e0ebc;
+    physical lines 3846–3846, row_sha256 c34b8f27165c2b0a9038f395419bd4e70607653d536dd8f8d3527927161d3057;
+    physical lines 3847–3847, row_sha256 f0a901533c503a32483b4c0c27b62cba2bf18e05b1f1d580ac8504a7a11eda24;
+    physical lines 3848–3848, row_sha256 2f7b84c9507882ec3bab23ef65672dd9ba4ea3e9851814b97bbf2b558e530303;
+    physical lines 3849–3849, row_sha256 ddc4ec3a4bfd99c9a3ffabfad53ef2632b0fdd7171300a6503c7b0bb13b4f130;
+    physical lines 3850–3850, row_sha256 f5d51b48c057a1bd815e2d0759f4ff29daa8ebd1478929ea404aae6ae5185a8f;
+    physical lines 3851–3851, row_sha256 5763b68024fe51508c92e9a3d053b3c21971135c871f1d4ad259499bbd96c5dd;
+    physical lines 3852–3852, row_sha256 38dd160b4ef67ec4589bc0d2bdb1bdad3c08111d51789b6f610cf85b9256281f;
+    physical lines 3853–3853, row_sha256 5185a0b86a8d19368d89d17159103ee1417d68aeeaba2e388af84f9a42614855;
+    physical lines 3854–3854, row_sha256 73e43e85bad06a784fabba43804edf1a0c629a886d284b09dc0fff101acce063;
+    physical lines 3855–3855, row_sha256 e83e0f51e11693d1791b2bed185bf8033389378713b0648b1097f6f029a4f477;
+    physical lines 3856–3856, row_sha256 00a14d1bfb9a7faaefb2a5a4a0af0426d4012173ab8afed3ed59af8fd37f25b8;
+    physical lines 3857–3857, row_sha256 55e8288ec5da50f4d5c785be51873647d023d4a8cade167eb37f37a3784056c4;
+    physical lines 3858–3858, row_sha256 60c5f0eca745017f32664eec19a928a7274611c681e7ce08cbdea18960e2e059;
+    physical lines 3859–3859, row_sha256 3f3b1595c370a21abb43b828f3ea50199ffc7fdb0b31437785cc6b6ae9d4ffda;
+    physical lines 3860–3860, row_sha256 9e4c272d0dff01091fb2d7ca38349a5331a34fa114e643eed4fe667e9043b199;
+    physical lines 3861–3861, row_sha256 2c9784ef94a7da58124a99eb8f8e10574037b5138f1ed51a25503338b2ba24ea;
+    physical lines 3862–3862, row_sha256 ff8fa0a69d68eddbc81fc48875b2832038d2f08301514e78635886303ffe3d60;
+    physical lines 3863–3863, row_sha256 48e539aad57af29b343ab53be446f89235631009dc63e16c13b77f41a3b75fd5;
+    physical lines 3864–3864, row_sha256 787e22f9f8cc1ff1d4d35c47e126c8edfff85cc72b94263d469df53718c51264;
+    physical lines 3865–3865, row_sha256 faeae42b0de59ee236226ec3d39a244bbc17061da3e2940e076f188fe5696154;
+    physical lines 3866–3866, row_sha256 c8fe62e9f194c8678d7779b5b93a5f7526394375d81cb3d2e6c4cb634d21f7d8;
+    physical lines 3867–3867, row_sha256 c586a1f3a8c9c86327316177535ad20bfe7ac9aeb53be10439382e6dafb0b3bb;
+    physical lines 3868–3868, row_sha256 e3d2a54a48c5a5472b34b745317879a20079cbd1584ea930eeb6f303ae98bb7e;
+    physical lines 3869–3869, row_sha256 a16fd0743eb822252ee83fdf82a8fefe7187077cee7800127ae36cfa40a0b615;
+    physical lines 3870–3870, row_sha256 73b19e85a2ad6273bb773ddf151f2786fdfbe8d4f9bd2e833dc9a824d9a3457c;
+    physical lines 3871–3871, row_sha256 04023c1ecb90a58cfe99782206e24c5eb6c8e365bfd9ad67c78e1d92f5d92b5a;
+    physical lines 3872–3872, row_sha256 c841b5afbf4955d474317e9adae287a5648b1d28543d9033a2972f63f9346472;
+    physical lines 3873–3873, row_sha256 c68c87f7209a4122c45fa0df830eea7d32304bf5f88f31f8462baffb1ac35b21;
+    physical lines 3874–3874, row_sha256 63dfa00ae05472ae585c3f671cd59ae1a52937aa237fbfb4c18e6676e7558e78;
+    physical lines 3875–3875, row_sha256 da877dd65db109bc78872999edc1da8ad3b8e6bef519ff1c18404f96b01950e2;
+    physical lines 3876–3876, row_sha256 c79510bb266ac39cbc92fef6dd3a7f132ee4d534a48f052daa52a9b67b91a708;
+    physical lines 3877–3877, row_sha256 e509bf9174d2b143010ac6d44dacc5828cce5ed7d3e40b76651a15dc6897eede;
+    physical lines 3878–3878, row_sha256 f09e3606bf9d80775585443959a6f216dc8a860d8487eb8675e82c985efc2a89;
+    physical lines 3879–3879, row_sha256 5ad080cc05000bc34808152edc29521304b5726a578e79212402cad687c1a735;
+    physical lines 3880–3880, row_sha256 012181a06d2c6bfd9c1f02886710db00630505e2ac5aa397f4112e640497f06a;
+    physical lines 3881–3881, row_sha256 73d6832866693c3e139c7f746b3cc495ca7a744cd1bfc19e8ffe29094c737927;
+    physical lines 3882–3882, row_sha256 27ca600fda7ce678c81913ab81b6dccf9d1cdc5870eb75830d53384e2a4773a4;
+    physical lines 3883–3883, row_sha256 56168684ba5c52029494669a791abd0be48a6547fb237bd327be2ed968e42945;
+    physical lines 3884–3884, row_sha256 9bfda64a474e6a7c465c7f657a9d41c2c3f89d435f2b7d4db7e5eef914b277f6;
+    physical lines 3885–3885, row_sha256 4c65d7ecc1b71c0f60d5d751ddb411ceae07485475763249e71772d3a2bef8c9;
+    physical lines 3886–3886, row_sha256 e15464e0e5b694d27c1f45d3625dada6899d2c6de3f465fe8d950fee86e1aae6;
+    physical lines 3887–3887, row_sha256 32ee603154411d8086252df64325c066a97a04873c330ae8b2795a9d6825d488;
+    physical lines 3888–3888, row_sha256 0653cd79a88ceeb1d5cb4f85a09546c6dc21375558b85a9622df680c479d6990;
+    physical lines 3889–3889, row_sha256 43e5475d12c277c6b287a1ffa21ccfc1bdae035999083d06a80eb769bb8c9549;
+    physical lines 3890–3890, row_sha256 6572a402af3cf126e4bc4bc16238e8f6696675037d2841c992ab642e57dae3fb;
+    physical lines 3891–3891, row_sha256 f0b69cb0ba9d7378af37d5cbb851a67280f6a70b6e58a259f1e7139b528e789a;
+    physical lines 3892–3892, row_sha256 77d139924b573a6eea1b131619e267cd7af0c3d3379db865e117076edbd2c9d5;
+    physical lines 3893–3893, row_sha256 6a7fc40f90ff77a689bb2fbffbfa944c5112a13f71b197534940fc0c69a74235;
+    physical lines 3894–3894, row_sha256 b5f851506daa2141ead9118895802e39bc1bf2b3e5f8b5a2217ca9cff63c6cb7;
+    physical lines 3895–3895, row_sha256 61e06e7090437694021bf120292234e76032953bb9f4bff6f4a650006ed6f4b0;
+    physical lines 3896–3896, row_sha256 3e28ed94dbe2e0071bec6ca50570135676f1f86d6c4f5febf76c288c60585271;
+    physical lines 3897–3897, row_sha256 0f43ec434614fb01ed26f895895ce8e0b20409162f23b773971c938332fdec03;
+    physical lines 3898–3898, row_sha256 5f82fe80ba1ae783041f7e4e4d5ece5f574c40b0b29ed3b52a6405bd15f37830;
+    physical lines 3899–3899, row_sha256 7ef0aaff1a29d22bd3fa8a5189bd6b386d7ff2d2339e236b975474995038374c;
+    physical lines 3900–3900, row_sha256 1173235d0da8ee1df52ed4a6885587184a2e75e52317bbe7d8e30dd9a831a30b;
+    physical lines 3901–3901, row_sha256 7f9692fb9cbea53d56edcbdedd32e6e0e369bf2bca3770ed614d243b9d703fe8;
+    physical lines 3902–3902, row_sha256 6f8ebfbf4e19351bf1162ce5ec5f6a125f91502419313c5fee8cf03ba77d3293;
+    physical lines 3903–3903, row_sha256 dd7135b7faf8d8468e4d017179017eb808cbe4e7630c32eeb7cb58725c842e5d;
+    physical lines 3904–3904, row_sha256 09be96604b887aeb4cf26a7b5a11ea5120ddbe27cad96346898a90d25f6d1dba;
+    physical lines 3905–3905, row_sha256 88d26ad83568297fa886c976be80671f4e433df3ec007d0fa78ebedcd1af55f5;
+    physical lines 3906–3906, row_sha256 7eb2273851a0393f077d3899aec221775e49c3e1b0b74648053b31bfb617c485;
+    physical lines 3907–3907, row_sha256 6803019cbbff1b04711325eba12237c813ca85751a5e5e0245ce88a3f42406df;
+    physical lines 3908–3908, row_sha256 387ff5591b1eb86c7bd465aa887295bbf29cfbdc39801b921398c7563d1ff3a0;
+    physical lines 3909–3909, row_sha256 9bfa876038f91387961459f78f68c39b51c2e2ee6bc9f37d05f28b846be7d25d;
+    physical lines 3910–3910, row_sha256 ed4e8f0ed6fa7280a59f2d00fb7d09d9df3144948a08c1ea732a4231e227a929;
+    physical lines 3911–3911, row_sha256 56213f79938caaa438bc1322c5760e98c3464c980b68dd5819c783d168b0f07b;
+    physical lines 3912–3912, row_sha256 66f91db88a3f3f46e8711403c74d64b2f70baf3de7f87a3e7877b2d13dc787d6;
+    physical lines 3913–3913, row_sha256 1eee80974868c7f38a7a0ac72d9daaf1a8f9dd73790a5b8f9b48deb35333d11c;
+    physical lines 3914–3914, row_sha256 dae4ced1b75c2920cf1ae4562801495d4fab3b0920686d734d0cdd5f202deee1;
+    physical lines 3915–3915, row_sha256 81752478c4ef6d88945977c6ad05f018075235fe33e26cc9072f960e02a780df;
+    physical lines 3916–3916, row_sha256 410c5bcf336dfcc87b163c44f1f105760fa252a3564aeeecdd1c6e37cd9b7b71;
+    physical lines 3917–3917, row_sha256 641ca79116f5b98f41506b98e8e65e37b184756db1c580c0e60887c2ef764752;
+    physical lines 3918–3918, row_sha256 79374a0449c0767d03f58a6ccdbea4a536aae09d446db30bff2481e0d5c5401b;
+    physical lines 3919–3919, row_sha256 54c73d078da11a1d1c7df56ce04fcba548d451b7660f25d46c81b618a386a9fa;
+    physical lines 3920–3920, row_sha256 88b7a89b803a2ccc84474e33adad36e5692a241205e376df27183c9bc036c694;
+    physical lines 3921–3921, row_sha256 d534a914bbd5db3481a5ede918b02c0b2267ec1d483d6fa8bda2d091e6b36736;
+    physical lines 3922–3922, row_sha256 2e947da73849f21976ae0acf9038bdbac04be99ae60ec166a58b22a8c58b762a;
+    physical lines 3923–3923, row_sha256 f344ae81b5ebf0e289e6fd4cee68e53b832352db7df6ed9006de2b91eda42156;
+    physical lines 3924–3924, row_sha256 3dd0d661b7a1e0b1b9c259a5eeced032028e49b703bfd7d6c9678d80950bc527;
+    physical lines 3925–3925, row_sha256 4ba1fd9f42f78eb62879f221c0e6ad4fe2b0c1541c32d8ea4540768358e7f9c2;
+    physical lines 3926–3926, row_sha256 710617021ed152555f93949abdbea74b49a36fd8bea2e5fe97e7bad3c75894db;
+    physical lines 3927–3927, row_sha256 ec79d9cb46c00ca5f7c52e40e8f8bbe5d2675dd788bfc14e40caafa6aa2f171a;
+    physical lines 3928–3928, row_sha256 cc45c8b84bcb9d3b52b5003c85ea1e65d931c3fd6a564b32fd0b34cbf4867d10;
+    physical lines 3929–3929, row_sha256 31db9ab8f7e1defb3de1c835e89d06806c44d2d94b4ed23c89d0b1863c2926e9;
+    physical lines 3930–3930, row_sha256 3bef649d4141b88b3aa49f4097fdae6d8a3d034da605e029a849f2b8c5f6aa2a;
+    physical lines 3931–3931, row_sha256 134b49aa7784eab8ded3188a182187ad2c36844d462ac81cbadb22812bb71321;
+    physical lines 3932–3932, row_sha256 fbf5eb5ee9cea829d5e3eaaa92f09241e977a6fd04d45b390de68aef7c4daa3a;
+    physical lines 3933–3933, row_sha256 1d6b12f533304f0dbe5cce9f2ea0c88a05e9b3b11582cab234878902b88915b4;
+    physical lines 3934–3934, row_sha256 04973dd175a1f3992f0b4eafe78b15f789013a64803410fd73e4e008879b1e90;
+    physical lines 3935–3935, row_sha256 a26f55919b21a8528dd0e9f9ae901ca4f3ee6a6b76980606ea329a7be7a66dc7;
+    physical lines 3936–3936, row_sha256 84baf64eeb0d39d16eb16f442a947aed2f91bd43c78600d27c7dcb7a43d46485;
+    physical lines 3937–3937, row_sha256 b556613f16efe9071bf86aaf581a371f1e2bcba401ba2df54d53312654ba3274;
+    physical lines 3938–3938, row_sha256 519eeba903f0facbf8abb20955780dd106c8d8278933aefff3c2f80eb08bf880;
+    physical lines 3939–3939, row_sha256 8638cb8991786255fa1ddcee3448b504016bda5a033c5db8439e471b1c3b921e;
+    physical lines 3940–3940, row_sha256 aed0402e81c2f89704eef2c0e6a560157e085839b4d9c954e94d29025a7f847b;
+    physical lines 3941–3941, row_sha256 eecfd9ceb2934931a01e5cbc7a01b5c3e2f1ffaa2ce8dbb4987837875a70293b;
+    physical lines 3942–3942, row_sha256 7d139f220fc81d8cd05e7bee8a9ddfb453d5d6102cd2b82e61ef0bd1427c9301;
+    physical lines 3943–3943, row_sha256 6c0d56c4076855d6a806bd05078898de89c378993527b7c644bbd8c38d0a9e3b;
+    physical lines 3944–3944, row_sha256 d18b32d4ee466ab4a3cb4000c3c386cded290c69f5b096833aed52b7070e2ed0;
+    physical lines 3945–3945, row_sha256 810353530285627d192825532a1c3226629a73c9761dae1073d088c78413e0f3;
+    physical lines 3946–3946, row_sha256 ac181b0a450ed4bd16ad0ba0cf9f6933549ce9904e32a1f1a607eb024496135b;
+    physical lines 3947–3947, row_sha256 0e4e74f1a979106d5035c7b170611d378a9070f2f926f0f756bc6ffe6a2c4b59;
+    physical lines 3948–3948, row_sha256 4a6438e27cfe0599dd161facbbc81c976272d70ddb3f05394e2840342944eac3;
+    physical lines 3949–3949, row_sha256 004cd23c08b2028f5aafb537c902e15e54a857df64c8b9a3e410c5a56e870948;
+    physical lines 3950–3950, row_sha256 1dee6a58bb14240120248661999700eb7edb302d8eea929a59562f99c4a79a4b;
+    physical lines 3951–3951, row_sha256 9e727b3790ecaa501fbfd9aa15814e50e05a4fe9fa2efa8b14dcc2d74b4d4c77;
+    physical lines 3952–3952, row_sha256 d2f629616ba1eb1f961bb7343b65d360969ec2f275ed7325fc85a50a0c69edbf;
+    physical lines 3953–3953, row_sha256 086512f9a23904c93a71cf1719cbda15d48a219fda81d39ce50c01b7933d25f7;
+    physical lines 3954–3954, row_sha256 4b66dea4efab16fdaf63c4ec956c81e6226e58a673f25fd2ab05f3dae22f0fbc;
+    physical lines 3955–3955, row_sha256 a78478acc5904121fb8ce10d195ceac1e1bb411d4ef590b99ac06434dfa2b95b;
+    physical lines 3956–3956, row_sha256 5b6f60152273955eb5ffd5363d0ced1cc07d18ca060c5cbcafead58379bc0f92;
+    physical lines 3957–3957, row_sha256 6e8d52ad471214742dc49afdbd581ec74d33bfcc220760ab2707ca7851264c1f;
+    physical lines 3958–3958, row_sha256 620b40b1d11813711feb16ff942557869294d380b55a2c80557a61b5f49ddd65;
+    physical lines 3959–3959, row_sha256 e0291d0da699976265381685370f3388c4da66f91d45f9a5416b077176345518;
+    physical lines 3960–3960, row_sha256 0f7ac577c57f84714499c4c4db5e258df2a032c78891446aceeaa4b6e14be3d7;
+    physical lines 3961–3961, row_sha256 49b41ee48d6fe9961c4e8fd9cd8866ba8a57f0dcb01c7e70047464e397fb1a14;
+    physical lines 3962–3962, row_sha256 802c9063709172b009ca8c131553c12a8df8b87de179606a4ec42e106526dd7d;
+    physical lines 3963–3963, row_sha256 147842496279d30d62e75bf8a7a04e80240aa5d9289cc34ec2cd2e6693b397a1;
+    physical lines 3964–3964, row_sha256 41067c41dfc3b861f4f923c51fd8543ecd288d9034517ab296b7e48283fc2a0d;
+    physical lines 3965–3965, row_sha256 5c5ec41ba295f174bbc3f93a952e00e9c98b2288dbbbc594dae38c89273bf0fb;
+    physical lines 3966–3966, row_sha256 af95caf449062bedd45765e767a04f29fe63e3a51ef04952baba74000e852bbf;
+    physical lines 3967–3967, row_sha256 64618b6e1c21be6fbafd8a08bc4e9bb45094187864fc18f680097856be953471;
+    physical lines 3968–3968, row_sha256 6ded8d0d31822d0dc1e02f002197d183253eadfba0a9f1851ca05bf3f3853ce2;
+    physical lines 3969–3969, row_sha256 3b081607d94b7022373d2e8031b7033a78d7d44ec42310ddd7824a5530e83b42;
+    physical lines 3970–3970, row_sha256 3751a52193abfa99dc9df42d5d36fd3949eb3fb4048d76bdc39b0ae1c233d63e;
+    physical lines 3971–3971, row_sha256 bd9f7d16024d06862dd039fdfdf197756a917d0408e470ac77c58d4583acedc6;
+    physical lines 3972–3972, row_sha256 a2f3aab8f110318b96d090fb57a4ac66975917b0d239edc14e00117e67357a57;
+    physical lines 3973–3973, row_sha256 d6d1f76d7c095be4e316cec0feaff7166c8787d87dc4f41836b07c2f75a522ed;
+    physical lines 3974–3974, row_sha256 b017ab9250583f4d520b76eb78f31e85df1ed43be619909fe17752bbae28a845;
+    physical lines 3975–3975, row_sha256 5d235573276c0c3924bc9b3023fb8344b412fa07e7930326c188e241394e53d8;
+    physical lines 3976–3976, row_sha256 223f174a4bd0e39f1050454f0ef03dd42b6778dc4cf125f172079637eb43739a;
+    physical lines 3977–3977, row_sha256 d12f66a260ce14a4ba4c7c8fcbe0120431585c511c91fb168345aa32370ab2e0;
+    physical lines 3978–3978, row_sha256 2c99ca0423a4646d09904a1d4a4f7c033975a7e479fa31d1ade4fee9afd05da6;
+    physical lines 3979–3979, row_sha256 c530692b6069e533de9730fd40135d4ec64b21410f8ada73ac63402a7d6371cb;
+    physical lines 3980–3980, row_sha256 ca977d98ac055c75f94691874bca2cbb7abd426b64fd3bfcbc906eba4caddbcf;
+    physical lines 3981–3981, row_sha256 1bd926f1fbea3f1291a0323acaed8ccdda7df22f2c9a9cb4249f8f5c40bc89cc;
+    physical lines 3982–3982, row_sha256 59d2d4236420f9b6206c9b767c383f6076e55a53d741d8544b62c79ffb804840;
+    physical lines 3983–3983, row_sha256 6641d704fdf860d123c1de404158e3b357a7ad2b533da1c8dd30f0d985187f6f;
+    physical lines 3984–3984, row_sha256 698e6c2d464740053078fc2bd132a79921d13ba0599d3193795b1fc440048b2f;
+    physical lines 3985–3985, row_sha256 0882afade584da1040ce341ee40ed607ac3d19e593785530f863df5b1e78bbd0;
+    physical lines 3986–3986, row_sha256 f781875e2445c03411213cbcf467dbcff5205329d20b4cebaccd9f2f6bf166f5;
+    physical lines 3987–3987, row_sha256 46c707773e3b1821f079466bc976cd6f175c7739bc1e6b2b4fbd35ade68c555a;
+    physical lines 3988–3988, row_sha256 86d077385940b8f378a62f4436cfded070be1fcb135fa45eb0861c47b8370235;
+    physical lines 3989–3989, row_sha256 c2cf02847bf60aa039c6c128827b5e4cee45e42f8d338256aada4a56bcdb1193;
+    physical lines 3990–3990, row_sha256 f8621a6bae1d95b45d45d548573fe92449ba568e1830ebdb3b50292fd6389d5e;
+    physical lines 3991–3991, row_sha256 2f238f5a81addcd4fa54812ebb0012266e49fa7b3ff227aecdfd42afd0ee9f3f;
+    physical lines 3992–3992, row_sha256 838fe883587c50132452c834f5382a174a63477b808b5d6c48774b9edd5bce35;
+    physical lines 3993–3993, row_sha256 c3abcbd7db8972e1675cd1ebe842bb70580f81dafaf8592f20cd67ed77ab74cc;
+    physical lines 3994–3994, row_sha256 3dbaf8e3db2f17b60379b69dca0e27cb4abab8e0a8f07499afd7080c4b06f105;
+    physical lines 3995–3995, row_sha256 bff7ea1338cc169d3cd58aa8b1d63ef1d931e6860d84ac8308e89b5faea399cc;
+    physical lines 3996–3996, row_sha256 455e0b84861f4f0574ec6d4a591ec3ce4a25093b605dccdc1c02a34c82e0a7c3;
+    physical lines 3997–3997, row_sha256 849f7d260c0844c9258bfb59160cb4f486e27c8ef69602ac17d6fb0ea4acead9;
+    physical lines 3998–3998, row_sha256 129dd363b1cc5a047638b768bf9282d5ff1185b8e5d7e91276d29dacac08c3dd;
+    physical lines 3999–3999, row_sha256 9a640fabb1b788f7c3d2b1683b3c69212e674f73e5698419d452478fdafb763e;
+    physical lines 4000–4000, row_sha256 57c9b8e2afd2bc298ee14c206e7b6e5545d77acf38f578a0b074b7e3b4cacf0a;
+    physical lines 4001–4001, row_sha256 57b3e444b095090ad5d317b7d966606e0d9eb6780ca7bf2e4e34ea64ab2118c4;
+    physical lines 4002–4002, row_sha256 2df885cb9d4ba44f8071e1b94d450c65dda0dd32003f1111502b19359f71add0;
+    physical lines 4003–4003, row_sha256 01fbe3e2d3cb94a3d55eb72c438c6cac27862352cf96fad8c4478fe4b622cf7f;
+    physical lines 4004–4004, row_sha256 0560008bb182cabc6f933dc4cf2ed87eb548c9f10959725ff465dc4772498a9f;
+    physical lines 4005–4005, row_sha256 8c769c18d49af4bb47efebf51133fa8015427b12fdd85e0912454591c3ad171e;
+    physical lines 4006–4006, row_sha256 719d274ae818f20497be0601a9b1f8cd6c319ae5680ed2e079642d5b5592f58d;
+    physical lines 4007–4007, row_sha256 8a962eb42a1ab83d2de136e3edff46602ed2dafdffb4c3d756b2b1199538c361;
+    physical lines 4008–4008, row_sha256 c832d6dad4eec0e20a8628ad1af58d7ba3262344c5d68ee5d2f1bfbe23a4bfa6;
+    physical lines 4009–4009, row_sha256 a225cd8b4e54e29dbf3bd269899e6746a40c16d388ad8f4befdfe579fe8a06fb;
+    physical lines 4010–4010, row_sha256 7e27ccc4985971631d609f27fdb5ad336dd7645c2f3dfcc420e9df5561aa761a;
+    physical lines 4011–4011, row_sha256 2188831325198f82af4608e64d9b0bd9f9d015917d58f0481a3d45f60647692b;
+    physical lines 4012–4012, row_sha256 7c67de963f13cc7231fb976862f76b9dd3d73ecb616366222680ca7b72657bc1;
+    physical lines 4013–4013, row_sha256 b88778d04123ff415e0db2637bf688e7ad7e8a96df20bd7acc1a6459868c35c1;
+    physical lines 4014–4014, row_sha256 5637a197d4267ffe62c78af67fca02e33317b25af4ab9c8c3083bd1a817d08e1;
+    physical lines 4015–4015, row_sha256 bf8bdf1083a25f36a863b32cc0cfd19c0c687360dbaf946b15ef78b3403b8c9b;
+    physical lines 4016–4016, row_sha256 b28e27b702c7db9af58f84d9a9f588eb2b889f628ae815b7ab7a1e697c120db1;
+    physical lines 4017–4017, row_sha256 054cf610a499dbaa267cf643db278fa0ae5b42b30d79a7ad0751901a41b5cedb;
+    physical lines 4018–4018, row_sha256 98d77fa3a1a4d39b99194a87355b08f2aed6acf106f82ab504e826e8203fcdab;
+    physical lines 4019–4019, row_sha256 d4c297263760cb3dda096ee8c9bf2013f025ad4546ae0f0e9426985dfc96ca3d;
+    physical lines 4020–4020, row_sha256 4789f5239dc0abf89403a499b61633c46ae11958ed9403aaa285684a6b561810;
+    physical lines 4021–4021, row_sha256 06ca18f0b06547554fac020bf6bebcc28662fda734a15f3603c087f3bfa75024;
+    physical lines 4022–4022, row_sha256 60189f4e42e8f5431fb523b1a85baeb438713a7e23d03044ce6139d1a3f737af;
+    physical lines 4023–4023, row_sha256 06de2d5aece03c004cf5a9c618c461ae46b3d7bdf31e978be8aeec119c19e47d;
+    physical lines 4024–4024, row_sha256 1b439d1bbce51986f7478a4cdedb797bba3773a2cf4350e2ce5bb074f53a0836;
+    physical lines 4025–4025, row_sha256 e1b7da1b177103b2aaabf17dbc88314696bbe00ebe2e3e762068faa4fbcb3421;
+    physical lines 4026–4026, row_sha256 774afdf03840f88bcf09b4035a3bbbe2a52e9043907085077383b751bb180a1f;
+    physical lines 4027–4027, row_sha256 8fd241598ff475b14baebb67114e94ac2d59f63c2e0b3cb991a8b58e22bd1d11;
+    physical lines 4028–4028, row_sha256 2f83031d5accffa5836ca1edee246349733b99de632ae2750194fa2d45545196;
+    physical lines 4029–4029, row_sha256 3cd1a2c97bfb65101d4ac8dada8bba3352ae45a3524d15cec39b7253394375d8;
+    physical lines 4030–4030, row_sha256 995989f94b1bf4808920351703a72840666b40128e3262a608ebf91f364aa106;
+    physical lines 4031–4031, row_sha256 7b5f347430d7064ec92cf2441b7eebcf92ad52444bfd089e304e895394853a08;
+    physical lines 4032–4032, row_sha256 23815d7e39ce75264e3c545a6ae1dea5e464edcc95ad0ba467915e38b82604ed;
+    physical lines 4033–4033, row_sha256 9e617405a6009b19a74a9709eb4aaa355b464787ac9a1c73206f3e1cd52dab16;
+    physical lines 4034–4034, row_sha256 58a4665731cb1b5a17f454d00bd227d531e9192ab383817bd0218bf13c913ddc;
+    physical lines 4035–4035, row_sha256 12a87bc3636c3f95d483347ed1bba49755bdee7977a89b175dbb7db526142386;
+    physical lines 4036–4036, row_sha256 cddcd76f6cdadcc5d89e2fa77e15ddd833b75a7a6bc15d18aaf64fcec94e6593;
+    physical lines 4037–4037, row_sha256 84deb887e5faa038aa34260a2a8f9c5d4a7e4970a0d45d1eed1e4a90a1df9207;
+    physical lines 4038–4038, row_sha256 0768d81a8b2810499b79db212acb552e65a5a99f23cb5fa084e600ccee425e90;
+    physical lines 4039–4039, row_sha256 7a9703bb6e714050d6a63ac946622bfe11b4a0eda824cf4098834cd19d322042;
+    physical lines 4040–4040, row_sha256 6757949ff8a1cc043c0140fadc3ae8ffeb7de99bde8bb4bb4419b6c1f8027e23;
+    physical lines 4041–4041, row_sha256 5570fb23e172d2629cb1cf629a056c9e2a7a199203ced281a605518dadf3d5a0;
+    physical lines 4042–4042, row_sha256 66d39b47d6994789776a087f34d11c08d57c4579bec7b0b5f7b48f5461c72cb5;
+    physical lines 4043–4043, row_sha256 921a7abd06978f29f4cdb8c3887bfc8ac37c67faa764126a5c741753130e4c7d;
+    physical lines 4044–4044, row_sha256 2a98ee864178be9803cbe0416d3f5c5fbcd2ce524ebf01fb35bb5e72f7ba7a1e;
+    physical lines 4045–4045, row_sha256 54793425e80f31c06583897db98e7c1579830938d627c674ff230cf69fdbe265;
+    physical lines 4046–4046, row_sha256 e1550a9dfaf3233919b0117ec199073359ec02932a2828658d5500e060c9a8ef;
+    physical lines 4047–4047, row_sha256 0b64979f6fd0123d6a851a68f7155804b2dcb9c810838528488a1bb60e9b641a;
+    physical lines 4048–4048, row_sha256 3a5a03fd2df74e660d6eb4770864c71b5046e1f2300f0a68125770005ed61cc9;
+    physical lines 4049–4049, row_sha256 4bf0a2fe871739af35d8ba8858a5476feab60d2c8444f3fef9a3f75b367f255a;
+    physical lines 4050–4050, row_sha256 40df9c947f021e1ac93dbc3e925b5fe4a1087c304771ca4648432a4bd3070c90;
+    physical lines 4051–4051, row_sha256 907a692cfab8c47b39dbd6621e025ab6b3c728db6c5ac07ccc173316e609f723;
+    physical lines 4052–4052, row_sha256 a68b1877f653d2dadd0a143dd314170bd2a3782cf0870038a19d04a51ae459d9;
+    physical lines 4053–4053, row_sha256 d15e1ba13989a1ed35b33f9142b4fa29ddd41bb7734158119038ac6eefacee82;
+    physical lines 4054–4054, row_sha256 110ba1a5d712419b20baee700ceb458255a837136c235aafe29c46a70c2991d7;
+    physical lines 4055–4055, row_sha256 c06196fc2787ac0a181311eda444209caef27a424d7df4f1e4875eab4c03fc55;
+    physical lines 4056–4056, row_sha256 7dc0fac9bdb7591481447e41a8e86456674175a1af0e1b9ca4c4a15e4c8758dc;
+    physical lines 4057–4057, row_sha256 2d4e6611d37d6bf09f4861e5069e8dc6030692804ddafdee4c78079b29b411e5;
+    physical lines 4058–4058, row_sha256 c18e79f6f4e8ddad28188ca08a0dceb0c6575e5b7f6f5a924d5f968a7ded67c7;
+    physical lines 4059–4059, row_sha256 a960f7e13da524bdeb83d406f6102638afcb20d3e233629302c1db04d24eaf50;
+    physical lines 4060–4060, row_sha256 2e89b75ade75acb2dab5789a086c881e12874004519d270d2931d836de620f8b;
+    physical lines 4061–4061, row_sha256 d7690cf2879fcbc554a4368d7760322ae05aa214e90738d1e984f8bfb8e11cad;
+    physical lines 4062–4062, row_sha256 cd3b251510fe3e0d60eba348e0ecbd8a253873f1a3be2ffa136bd9e191608ef7;
+    physical lines 4063–4063, row_sha256 032e7b787ec3dd57c9891e26acbc62057a050c15ccad3cfc9457e6bc142a756e;
+    physical lines 4064–4064, row_sha256 54ff77319b92848053f8eeb702aa83203b04b9395a5f574ccf71c18dcd918a6a;
+    physical lines 4065–4065, row_sha256 8ba9f724a8a7577a52738bce9f308c10708cabe8d1a67e0f90a605f798715a56;
+    physical lines 4066–4066, row_sha256 b81b48788d8aaa3b413fff1a035b3aa427496253bcc3b4dc85fa74064dc75cf0;
+    physical lines 4067–4067, row_sha256 91ebeae70465b8cb2d20db2ba019805f615868bf326f2660f6a87ee3283897d0;
+    physical lines 4068–4068, row_sha256 4c2716bb01d06f914e207b2c0911b69b9d14929a3dcbfef75fdddfefca301cc0;
+    physical lines 4069–4069, row_sha256 26f80b3b1ee9e60cb13894117521ca973ed66d24c890c0ce5b357c88ac9cb5ae;
+    physical lines 4070–4070, row_sha256 c2d2947cd267dacd37cdcd4f0e68a14682bcfe88ad0d3f082ab3039d571b7ba8;
+    physical lines 4071–4071, row_sha256 9111a40471c7a2247bb7bfd648091e2c452ca2ef1fbf325a48e4349ef13b8938;
+    physical lines 4072–4072, row_sha256 3646d18a3507bf924b27bbb4f90c35e63c69f3017166b8d1e632d3f8e1c17d47;
+    physical lines 4073–4073, row_sha256 733a2629041777f6685183d81137e0ec0130ff2c408bdbdf4219784a4c2c3f57;
+    physical lines 4074–4074, row_sha256 300e39e7427822db0f1c098fc0bbd9ab8a0a95dd4a1615d0df5be97e97fe773a;
+    physical lines 4075–4075, row_sha256 61fdc0c89eb4b6b7fa92c5b7b21c9cab04ec76ec61a0a77694a6d17bb96d98db;
+    physical lines 4076–4076, row_sha256 24c623dc68e49f8d8da9d8d810794cba4cc8e7d65c4a38e5b6a1b5e44e4bcbc3;
+    physical lines 4077–4077, row_sha256 be993b97a79e3638814b7b2d4a4f40ad1ba438ddead42360641c07b1da1f6f68;
+    physical lines 4078–4078, row_sha256 00a9ad5f000d27a29c479548b65845210ea4e1cae0bd88ef43ac5ce85f38b2af;
+    physical lines 4079–4079, row_sha256 635b312157bc9245b4f545c8cf846136f54f578c3d109c87ecdd732f323c67c6;
+    physical lines 4080–4080, row_sha256 8b3bb8ca40ba122a5558cf79bc22f61d649c34b8b3cff83b10c3d39b4df12d08;
+    physical lines 4081–4081, row_sha256 3377bcc81c48f5b0cf430572cff01d7f893bbafe4656e79f95f1f144b0f75dbc;
+    physical lines 4082–4082, row_sha256 06f258382f48ec37be6478566be4404b537a247213bd3aaac61fa38d824dbdab;
+    physical lines 4083–4083, row_sha256 29788e493ae6292ad0144767dddaf5f496742ff4014b3e7632757c4b84cfa077;
+    physical lines 4084–4084, row_sha256 9df29bbcf037c34466f0be4b44bb9bb9acbe522106d1805314743fd98787ba5d;
+    physical lines 4085–4085, row_sha256 4a8874c19414bd1300370216f84ee8a5212c6bb372394b4cf699ebe35abad258;
+    physical lines 4086–4086, row_sha256 c8abce49bd63ce0023c1fa5efaae69ef12cf5a3304fd25ee21f70c7b57c270b8;
+    physical lines 4087–4087, row_sha256 c99f47bdd2d6ff16080b28f62b6b3fc752bf080b4534d9ff8963551a27004a8b;
+    physical lines 4088–4088, row_sha256 1eef30dd52bc25a24d41a4dcfe9bf14bc717ac1c4677ac3cc1d1dea8e0ce12b3;
+    physical lines 4089–4089, row_sha256 dc6a2cd69002b03d728286e748e5385751d68e370dd1bc753db2ccb02aa6df8b;
+    physical lines 4090–4090, row_sha256 da7a82676b52ceeb38d3328e63afa7b8149e0cc0e8768ed2280dec188115372c;
+    physical lines 4091–4091, row_sha256 f0dd96d059ddaf795a6f4af93995ac5410c423ed165bf416db23cb66999748b7;
+    physical lines 4092–4092, row_sha256 89ac21dc5d2c1fbc825e6eab8bb5f0ede47436fe97ea116ac8b46c00f3dd182e;
+    physical lines 4093–4093, row_sha256 c8a9e72c7f6e27f477ef0eab10ed60ee1d8cbb3a53df61744d3c56f75affc25a;
+    physical lines 4094–4094, row_sha256 a2cbbdc7cccb0bfcf268ee0b9c56ed90b4caa90ef3c0b766a1272313ef3da68d;
+    physical lines 4095–4095, row_sha256 02eb723c1e241a8c092dbfc6e1e843f08ec65577072e5c2f64ab1ab74eee5b6e;
+    physical lines 4096–4096, row_sha256 2db52bf866d87fdbdf8cf36bd95143fbad5a3ef901176e793516e41f11fe289c;
+    physical lines 4097–4097, row_sha256 273424348cc1f06ce19b60973632bab77ed969f5e9a92f58021e4af8c83a2f01;
+    physical lines 4098–4098, row_sha256 a5d2f049ec883d0167ea65d28bc6059c2f5a6a25dbda33236c47168d4dcca66d;
+    physical lines 4099–4099, row_sha256 021adda107768fb3a1ce3046abe2632c4649b1c0b3c929c19672928068086d76;
+    physical lines 4100–4100, row_sha256 02e906897609673ce3c9dd22b9fb97f4b370ca6973c5ddb79d93719a64ea741b;
+    physical lines 4101–4101, row_sha256 01086ff41c689fda71add6f0efb77e4bcf1c04bfb32f3f761c136b3ca6d4b916;
+    physical lines 4102–4102, row_sha256 1d5c044420a66ea73bf36839ea01139991faee7cb93d079d51494611b6a9dc42;
+    physical lines 4103–4103, row_sha256 0425339e275136bae3bc84a7f4fa24bcc1f309d35664285950637c7d4479b232;
+    physical lines 4104–4104, row_sha256 68e3e31445dd24baa8b7285d23c097478fbe120a5248a50f4ad50d55c0dd05d8;
+    physical lines 4105–4105, row_sha256 efcf55f0cd7a9d64b0ad95a2110b42f13c0981ddf9aa498bd14b10f0907bf614;
+    physical lines 4106–4106, row_sha256 40e19589ea57738f8356581956b5448b23e4ae50a0c50acf4ada8e340c9ee007;
+    physical lines 4107–4107, row_sha256 2038bed5ac595e3dcab1b521e1c16c475422dc3659854424ae3f9cb1eef9e2b0;
+    physical lines 4108–4108, row_sha256 ccabec80df5fee34f022d52e313700ab25cf6302145c6308212b59e649382ebd;
+    physical lines 4109–4109, row_sha256 3a40b0e5f4f81f874345f41ef5e1c96b09ddef4026ef2dd5d611d7b7b0754f81;
+    physical lines 4110–4110, row_sha256 9832f7589545d0040ef84dc08d3d8cb37dee92629952d5c18daba579dd8c37ad;
+    physical lines 4111–4111, row_sha256 393510db1b328d6da8a6834523718c62d9a0d0c68653379084917238c99211e1;
+    physical lines 4112–4112, row_sha256 9bc1a9f88efb93111a4f8929be6ebd79a098da0579c3089a17f648e7c68b1d7b;
+    physical lines 4113–4113, row_sha256 64dd754ba9190ec33d0dc905ad7ec65e4e703aa121719d55d4bca68deea71350;
+    physical lines 4114–4114, row_sha256 7c5f94a3a859f241dead316bb9ef8f7805cc428762d7944519e244f87a07b70d;
+    physical lines 4115–4115, row_sha256 5fc1e7072e8b9962024c6505d4c443049bc6734cfda589759f86766b8f71b157;
+    physical lines 4116–4116, row_sha256 225e7242aa678964a4e0a0eeb9ef248f5ee387ab91a477c52e8be6a0041b303c;
+    physical lines 4117–4117, row_sha256 82a8c89c910184a8e4940faf85baeb1d67ba0bdac670a87ec505f65f81a8a0b0;
+    physical lines 4118–4118, row_sha256 c3e7b50ca0773f321b300ad9dd341512adaf9d7fb252851ba9ac0a40a1b8533b;
+    physical lines 4119–4119, row_sha256 fc264cd94a65dcd8dce6510b6724f9fd7a76a451fd0d9dfb9ae19954663a5e2f;
+    physical lines 4120–4120, row_sha256 d832b698877368429941118761c350fcb0b42ce3b2992df0556f543d0edf5fec;
+    physical lines 4121–4121, row_sha256 b40d015250cafe5517684a7100f99ad21f2fd78bb7582aa858bdea806f5bab84;
+    physical lines 4122–4122, row_sha256 9cceda6e304e7c8ec54ee02e43ab5003ca05b6ea387dbbfef6b630448b76fef4;
+    physical lines 4123–4123, row_sha256 cbc1004defd8ee75e96198f3877c219cb56fe9999c7e62930aa076172b567190;
+    physical lines 4124–4124, row_sha256 2132b5f454ce08d0ca277609398d76a7bc1e5bc16d2f8b20235e52f3cbcec6e7;
+    physical lines 4125–4125, row_sha256 81313b4ea2e806ae3128c8e9e09fe5cbe0689d7b334a02564b33f40142710f15;
+    physical lines 4126–4126, row_sha256 44caba543d5f25925a30290d79b6c888cd60c231ae18107166e238960c7f4565;
+    physical lines 4127–4127, row_sha256 3be6f07c3e2ee4c758431629ef9c2903bf80cce727c62b5f2730ae106d5d4eb4;
+    physical lines 4128–4128, row_sha256 6915bf6d29de3518b28d57ad5a7eeb2f1492a38a517e8476adba4358ec55634b;
+    physical lines 4129–4129, row_sha256 f2c01104d5df52714971321274e946d6ee72c9f6f5bfa3361968e379b697e77e;
+    physical lines 4130–4130, row_sha256 0dea31f35966c68663b4e22c6251e1e33e2de6af292bc20a71a28291241cd99d;
+    physical lines 4131–4131, row_sha256 d92d35aafec521c62b9fed54a5e8d8a0cea862bd6ba1d8da3ca2ecb13c0757e0;
+    physical lines 4132–4132, row_sha256 41483321d2e029eae36413fdcbc87841d205a9025d76092a4baa044678c93249;
+    physical lines 4133–4133, row_sha256 4df9bdc72ce932f643c21f8a4aaf3066d428675b673293dd9e3acd23d53da926;
+    physical lines 4134–4134, row_sha256 1d2cfd462ee67841444cf9225e5d35e79fcb3c3779047df4aa25cc8e502fb9a7;
+    physical lines 4135–4135, row_sha256 2609a5a5537f006e91803e0ddac973710c6c4eaccefc982fb0a3b725ee12ca10;
+    physical lines 4136–4136, row_sha256 4473767d5304c91b34ef31aab67f515995d02bcee0b3256de75c252c25910d87;
+    physical lines 4137–4137, row_sha256 d0e4773460a6953841adc2487a38d9ecda0a1fc4d709b4a872da6444380c509c;
+    physical lines 4138–4138, row_sha256 55954deea23ceb607ac0919a558c7fa058b5c7ffbb6e1ea11801a450b93110c9;
+    physical lines 4139–4139, row_sha256 7a251fd1a1515282a4eed7405d26b56e3f13f0ad81d3d9de77907c98fdb48535;
+    physical lines 4140–4140, row_sha256 3665099db30aa651ee8f5a1145027db2d8f7127a098ef283bc21d7db9175f9e7;
+    physical lines 4141–4141, row_sha256 6c89838ba346916c6fb827d91aa38c57cac6e2f0927a4946d49359a42be22947;
+    physical lines 4142–4142, row_sha256 d9307bee56ef033224ae39122b2193909944ec01e4483866e0542b28a9cbab63;
+    physical lines 4143–4143, row_sha256 79582de8041726c4e36bbbbb80905aecfcd871dc0d4580fdd14417a7af4e669d;
+    physical lines 4144–4144, row_sha256 37a85b8d961bbd3c00425c345970fa36e25c3b009fa0e6a1ff4953fa017bedc0;
+    physical lines 4145–4145, row_sha256 5f502fc19a0da3320d9da563afa9e883589c9c8432d31614c2a2c9c7117285ab;
+    physical lines 4146–4146, row_sha256 141d71990c0132b88171ac126d83490f082058e35a0875faa32f243ce07b7687;
+    physical lines 4147–4147, row_sha256 ae54d171de8388b5dfff446c408c51350b3cdc1f9eeb4de289b14ded2d8e5ea6;
+    physical lines 4148–4148, row_sha256 1ff9f2b3b92d2d52bd5552b83b6f5bca73eb4a0dbfbff4132a2e78aa30ba62c4;
+    physical lines 4149–4149, row_sha256 df45af176ebc4bf5f9cc465c7e8ecb701bb0675c281526f960bf9258bcfb5115;
+    physical lines 4150–4150, row_sha256 c517d0f2e081afd321dfeca55cacdb4ce96e9282f37bb08a48a20eab340cd4c4;
+    physical lines 4151–4151, row_sha256 157a918c4129011c74f05252e48f46b31f5eab4dacdd177751f4bde4244c0638;
+    physical lines 4152–4152, row_sha256 971014c77b5851384012bd94caf06aff00e15971398755f68f6debe6d63b496a;
+    physical lines 4153–4153, row_sha256 5c6d136079d82bed72341edfb38e6552d11134efd472bebd643e28b338b172ca;
+    physical lines 4154–4154, row_sha256 797d12e5665b42aa4b466959d1f1fe365f0054d281cf95b76d16074123d305ce;
+    physical lines 4155–4155, row_sha256 157feec86bbfaa0fdefabdd6746ff1d54b4f62f43bd685b1f11e28ccf78d8426;
+    physical lines 4156–4156, row_sha256 2b5f18c44b98ead2dbd2b91457de329dd8fe78d452862208209f540a23625bb8;
+    physical lines 4157–4157, row_sha256 045b9438fbdfeac50d008656ff92c93e873b50ea0b2c19677769c9c477e52a80;
+    physical lines 4158–4158, row_sha256 5ac92139e29aac2fd44352a0bdee5029386c42ed883789ed4c28053c941d12b7;
+    physical lines 4159–4159, row_sha256 4afd6bfc41ac843efdb59833b98becba4468cf2b25c659275f5b6a34099b9379;
+    physical lines 4160–4160, row_sha256 0e359d65c9bae93c35e5bc20f69e18893c2782aaef005773c4874eaaa754b395;
+    physical lines 4161–4161, row_sha256 1aa8bc7c0bca35ff2c4d2e615dfb2f1a5f7e9d365da2ed01fafb091c53d13343;
+    physical lines 4162–4162, row_sha256 67ec23bf5fffedd7a1b4f5f9bd659a2991d31aa8a0379f4a1ed055d9b953ca03;
+    physical lines 4163–4163, row_sha256 4f4491b190ab4e586c65d33544295df929cdd2ed604d76637a31b4b62fdd5688;
+    physical lines 4164–4164, row_sha256 3cb6ba07d6a82a623e2f500161b8d53f259fc6da9a7c9835bc505b8f7cb0a6de;
+    physical lines 4165–4165, row_sha256 f86426dc6583ca90dc2dbf1d4a091d07015c67dce2b537eae77081bc9c9ad055;
+    physical lines 4166–4166, row_sha256 2341fda79f2bbf6ba01ba4e7ff05c1f69000ab4759e6d782577bbf538445d68c;
+    physical lines 4167–4167, row_sha256 ab42f78f27f1b775f06e47f310504d01e7ebde4cc22f80fbfc4ca322a03f7ce9;
+    physical lines 4168–4168, row_sha256 466f0da2a8ab1fef6a592a32fd3832601e0e8f660d8efa32b23db59b58413166;
+    physical lines 4169–4169, row_sha256 89ebcc17ff690ae67bd5e71866c8c08ecd50da4ce1136c5f74938339dfde7c1b;
+    physical lines 4170–4170, row_sha256 15da5a6d9869a63b6b8ba16cd962f919bde31d039c664602ce100147d00a5b6e;
+    physical lines 4171–4171, row_sha256 b3b060db6e5ab269e6c503858f4b85e7826ef3d9326851ae8eaba14913bd7651;
+    physical lines 4172–4172, row_sha256 dda5a20af9a85494cac6c64a26744b4d31e77523c852671d674eaa80cfd53ed1;
+    physical lines 4173–4173, row_sha256 91c723875d26a8b1ffb33aa41ef29174f38c1fd516ec2e2f5c823970bcc01614;
+    physical lines 4174–4174, row_sha256 7428116bea4b6df356b6bdb45a0ad564eda0e1815356c2725a73a5fd12630831
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Complete literal organism, taxon, DOI and structure-organism fields; occurrence
+    is not independent production or experiment evidence. All 341 complete row placements
+    are retained. Support owns the complete 341-row Phellandrene LOTUS reading; this
+    author rejoins physical bytes and carries that attribution.
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2373-source-npclassifier
+  kind: database
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line1; physical lines 1346–1346, row_sha256 bd1f5283f7ad841d0c2a89edbd17d1e3a265db47763d6b94a98bb7386b9ea1ae
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Complete named/versioned computed prediction, including every blank class
+    and glycoside value; faithful ingestion is distinct from chemical applicability.
+    All 1 complete row placements are retained. Support complete Phellandrene source
+    reading carries.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2373-queries
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/bgc-prep/bgc-conditional238-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/mibig_compounds; /contexts/15/source_scope_inventory/joins/chebi_structures;
+    /contexts/15/source_scope_inventory/joins/lotus_occurrences; /contexts/15/source_scope_inventory/joins/cyanometdb_occurrences;
+    /contexts/15/source_scope_inventory/joins/npclassifier; /contexts/15/source_scope_inventory/joins/pubchem_bioassay;
+    /contexts/15/source_scope_inventory/joins/bindingdb_targets; /contexts/15/source_scope_inventory/joins/antibioticmech_inchikeys;
+    /contexts/15/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: 'All nine complete saved query frames and negative predicates: mibig_compounds=1,
+    chebi_structures=1, lotus_occurrences=341, cyanometdb_occurrences=0, npclassifier=1,
+    pubchem_bioassay=0, bindingdb_targets=0, antibioticmech_inchikeys=0, chebi_origins=0.
+    No source query was replayed.'
+  snapshot_sha256: 87339a105084ecf3ff4ffe58e38b8c4ad02b9d7048f8a9f72d17fddd7e80ed2c
+- evidence_id: bgc-2373-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/bgc-prep/bgc-conditional238-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/source_taxa; /contexts/15/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/15/source_scope_inventory/nonorganism_matches; /contexts/15/source_scope_inventory/actual_assay_rows;
+    /contexts/15/source_scope_inventory/blank_AID_sentinels; /contexts/15/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Exact selected source taxa and all route/sentinel/related lists. No actual
+    assay, nonorganism match or source-query replay is present. One saved forward
+    taxon merge is retained and resolved locally.
+  snapshot_sha256: 87339a105084ecf3ff4ffe58e38b8c4ad02b9d7048f8a9f72d17fddd7e80ed2c
+- evidence_id: bgc-2373-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/bgc-prep/bgc-conditional238-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/1; /cached_taxonomy/whole_stanzas/2;
+    /cached_taxonomy/whole_stanzas/3; /cached_taxonomy/whole_stanzas/4; /cached_taxonomy/whole_stanzas/5;
+    /cached_taxonomy/whole_stanzas/6; /cached_taxonomy/whole_stanzas/7; /cached_taxonomy/whole_stanzas/8;
+    /cached_taxonomy/whole_stanzas/9; /cached_taxonomy/whole_stanzas/10; /cached_taxonomy/whole_stanzas/11;
+    /cached_taxonomy/whole_stanzas/12; /cached_taxonomy/whole_stanzas/14; /cached_taxonomy/whole_stanzas/15;
+    /cached_taxonomy/whole_stanzas/16; /cached_taxonomy/whole_stanzas/17; /cached_taxonomy/whole_stanzas/18;
+    /cached_taxonomy/whole_stanzas/21; /cached_taxonomy/whole_stanzas/22; /cached_taxonomy/whole_stanzas/23;
+    /cached_taxonomy/whole_stanzas/24; /cached_taxonomy/whole_stanzas/25; /cached_taxonomy/whole_stanzas/27;
+    /cached_taxonomy/whole_stanzas/29; /cached_taxonomy/whole_stanzas/30; /cached_taxonomy/whole_stanzas/31;
+    /cached_taxonomy/whole_stanzas/32; /cached_taxonomy/whole_stanzas/33; /cached_taxonomy/whole_stanzas/34;
+    /cached_taxonomy/whole_stanzas/35; /cached_taxonomy/whole_stanzas/36; /cached_taxonomy/whole_stanzas/37;
+    /cached_taxonomy/whole_stanzas/38; /cached_taxonomy/whole_stanzas/40; /cached_taxonomy/whole_stanzas/41;
+    /cached_taxonomy/whole_stanzas/42; /cached_taxonomy/whole_stanzas/43; /cached_taxonomy/whole_stanzas/44;
+    /cached_taxonomy/whole_stanzas/45; /cached_taxonomy/whole_stanzas/47; /cached_taxonomy/whole_stanzas/50;
+    /cached_taxonomy/whole_stanzas/51; /cached_taxonomy/whole_stanzas/52; /cached_taxonomy/whole_stanzas/53;
+    /cached_taxonomy/whole_stanzas/54; /cached_taxonomy/whole_stanzas/55; /cached_taxonomy/whole_stanzas/56;
+    /cached_taxonomy/whole_stanzas/57; /cached_taxonomy/whole_stanzas/58; /cached_taxonomy/whole_stanzas/59;
+    /cached_taxonomy/whole_stanzas/60; /cached_taxonomy/whole_stanzas/61; /cached_taxonomy/whole_stanzas/62;
+    /cached_taxonomy/whole_stanzas/64; /cached_taxonomy/whole_stanzas/65; /cached_taxonomy/whole_stanzas/66;
+    /cached_taxonomy/whole_stanzas/67; /cached_taxonomy/whole_stanzas/68; /cached_taxonomy/whole_stanzas/69;
+    /cached_taxonomy/whole_stanzas/70; /cached_taxonomy/whole_stanzas/71; /cached_taxonomy/whole_stanzas/72;
+    /cached_taxonomy/whole_stanzas/73; /cached_taxonomy/whole_stanzas/74; /cached_taxonomy/whole_stanzas/75;
+    /cached_taxonomy/whole_stanzas/76; /cached_taxonomy/whole_stanzas/77; /cached_taxonomy/whole_stanzas/78;
+    /cached_taxonomy/whole_stanzas/79; /cached_taxonomy/whole_stanzas/80; /cached_taxonomy/whole_stanzas/81;
+    /cached_taxonomy/whole_stanzas/82; /cached_taxonomy/whole_stanzas/83; /cached_taxonomy/whole_stanzas/84;
+    /cached_taxonomy/whole_stanzas/85; /cached_taxonomy/whole_stanzas/86; /cached_taxonomy/whole_stanzas/87;
+    /cached_taxonomy/whole_stanzas/88; /cached_taxonomy/whole_stanzas/89; /cached_taxonomy/whole_stanzas/90;
+    /cached_taxonomy/whole_stanzas/91; /cached_taxonomy/whole_stanzas/92; /cached_taxonomy/whole_stanzas/93;
+    /cached_taxonomy/whole_stanzas/94; /cached_taxonomy/whole_stanzas/95; /cached_taxonomy/whole_stanzas/96;
+    /cached_taxonomy/whole_stanzas/97; /cached_taxonomy/whole_stanzas/98; /cached_taxonomy/whole_stanzas/99;
+    /cached_taxonomy/whole_stanzas/101; /cached_taxonomy/whole_stanzas/102; /cached_taxonomy/whole_stanzas/104;
+    /cached_taxonomy/whole_stanzas/105; /cached_taxonomy/whole_stanzas/106; /cached_taxonomy/whole_stanzas/107;
+    /cached_taxonomy/whole_stanzas/108; /cached_taxonomy/whole_stanzas/109; /cached_taxonomy/whole_stanzas/110;
+    /cached_taxonomy/whole_stanzas/111; /cached_taxonomy/whole_stanzas/112; /cached_taxonomy/whole_stanzas/113;
+    /cached_taxonomy/whole_stanzas/114; /cached_taxonomy/whole_stanzas/115; /cached_taxonomy/whole_stanzas/117;
+    /cached_taxonomy/whole_stanzas/118; /cached_taxonomy/whole_stanzas/119; /cached_taxonomy/whole_stanzas/120;
+    /cached_taxonomy/whole_stanzas/121; /cached_taxonomy/whole_stanzas/122; /cached_taxonomy/whole_stanzas/123;
+    /cached_taxonomy/whole_stanzas/124; /cached_taxonomy/whole_stanzas/126; /cached_taxonomy/whole_stanzas/127;
+    /cached_taxonomy/whole_stanzas/129; /cached_taxonomy/whole_stanzas/130; /cached_taxonomy/whole_stanzas/131;
+    /cached_taxonomy/whole_stanzas/132; /cached_taxonomy/whole_stanzas/133; /cached_taxonomy/whole_stanzas/134;
+    /cached_taxonomy/whole_stanzas/135; /cached_taxonomy/whole_stanzas/136; /cached_taxonomy/whole_stanzas/137;
+    /cached_taxonomy/whole_stanzas/138; /cached_taxonomy/whole_stanzas/139; /cached_taxonomy/whole_stanzas/140;
+    /cached_taxonomy/whole_stanzas/142; /cached_taxonomy/whole_stanzas/143; /cached_taxonomy/whole_stanzas/146;
+    /cached_taxonomy/whole_stanzas/147; /cached_taxonomy/whole_stanzas/148; /cached_taxonomy/whole_stanzas/149;
+    /cached_taxonomy/whole_stanzas/150; /cached_taxonomy/whole_stanzas/151; /cached_taxonomy/whole_stanzas/152;
+    /cached_taxonomy/whole_stanzas/153; /cached_taxonomy/whole_stanzas/154; /cached_taxonomy/whole_stanzas/155;
+    /cached_taxonomy/whole_stanzas/156; /cached_taxonomy/whole_stanzas/157; /cached_taxonomy/whole_stanzas/158;
+    /cached_taxonomy/whole_stanzas/159; /cached_taxonomy/whole_stanzas/160; /cached_taxonomy/whole_stanzas/161;
+    /cached_taxonomy/whole_stanzas/162; /cached_taxonomy/whole_stanzas/163; /cached_taxonomy/whole_stanzas/164;
+    /cached_taxonomy/whole_stanzas/165; /cached_taxonomy/whole_stanzas/166; /cached_taxonomy/whole_stanzas/167;
+    /cached_taxonomy/whole_stanzas/168; /cached_taxonomy/whole_stanzas/169; /cached_taxonomy/whole_stanzas/170;
+    /cached_taxonomy/whole_stanzas/171; /cached_taxonomy/whole_stanzas/172; /cached_taxonomy/whole_stanzas/173;
+    /cached_taxonomy/whole_stanzas/174; /cached_taxonomy/whole_stanzas/175; /cached_taxonomy/whole_stanzas/176;
+    /cached_taxonomy/whole_stanzas/177; /cached_taxonomy/whole_stanzas/178; /cached_taxonomy/whole_stanzas/179;
+    /cached_taxonomy/whole_stanzas/180; /cached_taxonomy/whole_stanzas/181; /cached_taxonomy/whole_stanzas/182;
+    /cached_taxonomy/whole_stanzas/183; /cached_taxonomy/whole_stanzas/184; /cached_taxonomy/whole_stanzas/185;
+    /cached_taxonomy/whole_stanzas/186; /cached_taxonomy/whole_stanzas/187; /cached_taxonomy/whole_stanzas/188;
+    /cached_taxonomy/whole_stanzas/189; /cached_taxonomy/whole_stanzas/190; /cached_taxonomy/whole_stanzas/191;
+    /cached_taxonomy/whole_stanzas/192; /cached_taxonomy/whole_stanzas/193; /cached_taxonomy/whole_stanzas/194;
+    /cached_taxonomy/whole_stanzas/195; /cached_taxonomy/whole_stanzas/196; /cached_taxonomy/whole_stanzas/197;
+    /cached_taxonomy/whole_stanzas/198; /cached_taxonomy/whole_stanzas/199; /cached_taxonomy/whole_stanzas/201;
+    /cached_taxonomy/whole_stanzas/202; /cached_taxonomy/whole_stanzas/203; /cached_taxonomy/whole_stanzas/205;
+    /cached_taxonomy/whole_stanzas/206; /cached_taxonomy/whole_stanzas/207; /cached_taxonomy/whole_stanzas/208;
+    /cached_taxonomy/whole_stanzas/210; /cached_taxonomy/whole_stanzas/211; /cached_taxonomy/whole_stanzas/212;
+    /cached_taxonomy/whole_stanzas/213; /cached_taxonomy/whole_stanzas/214; /cached_taxonomy/whole_stanzas/215;
+    /cached_taxonomy/whole_stanzas/216; /cached_taxonomy/whole_stanzas/217; /cached_taxonomy/whole_stanzas/218;
+    /cached_taxonomy/whole_stanzas/219; /cached_taxonomy/whole_stanzas/220; /cached_taxonomy/whole_stanzas/221;
+    /cached_taxonomy/whole_stanzas/222; /cached_taxonomy/whole_stanzas/223; /cached_taxonomy/whole_stanzas/224;
+    /cached_taxonomy/whole_stanzas/225; /cached_taxonomy/whole_stanzas/227; /cached_taxonomy/whole_stanzas/228;
+    /cached_taxonomy/whole_stanzas/229; /cached_taxonomy/whole_stanzas/230; /cached_taxonomy/whole_stanzas/231;
+    /cached_taxonomy/whole_stanzas/232; /cached_taxonomy/whole_stanzas/233; /cached_taxonomy/whole_stanzas/234;
+    /cached_taxonomy/whole_stanzas/235; /cached_taxonomy/whole_stanzas/236; /cached_taxonomy/whole_stanzas/237;
+    /cached_taxonomy/whole_stanzas/238; /cached_taxonomy/whole_stanzas/239; /cached_taxonomy/whole_stanzas/240;
+    /cached_taxonomy/whole_stanzas/241; /cached_taxonomy/whole_stanzas/242; /cached_taxonomy/whole_stanzas/244;
+    /cached_taxonomy/whole_stanzas/245; /cached_taxonomy/whole_stanzas/246; /cached_taxonomy/whole_stanzas/247;
+    /cached_taxonomy/whole_stanzas/248; /cached_taxonomy/whole_stanzas/249; /cached_taxonomy/whole_stanzas/250;
+    /cached_taxonomy/whole_stanzas/251; /cached_taxonomy/whole_stanzas/252; /cached_taxonomy/whole_stanzas/253;
+    /cached_taxonomy/whole_stanzas/254; /cached_taxonomy/whole_stanzas/255; /cached_taxonomy/whole_stanzas/256;
+    /cached_taxonomy/whole_stanzas/257; /cached_taxonomy/whole_stanzas/258; /cached_taxonomy/whole_stanzas/259;
+    /cached_taxonomy/whole_stanzas/260; /cached_taxonomy/whole_stanzas/261; /cached_taxonomy/whole_stanzas/262;
+    /cached_taxonomy/whole_stanzas/263; /cached_taxonomy/whole_stanzas/264; /cached_taxonomy/whole_stanzas/265;
+    /cached_taxonomy/whole_stanzas/266; /cached_taxonomy/whole_stanzas/267; /cached_taxonomy/whole_stanzas/269;
+    /cached_taxonomy/whole_stanzas/270; /cached_taxonomy/whole_stanzas/272; /cached_taxonomy/whole_stanzas/273;
+    /cached_taxonomy/whole_stanzas/274; /cached_taxonomy/whole_stanzas/275; /cached_taxonomy/whole_stanzas/276;
+    /cached_taxonomy/whole_stanzas/277; /cached_taxonomy/whole_stanzas/278; /cached_taxonomy/whole_stanzas/279;
+    /cached_taxonomy/whole_stanzas/280; /cached_taxonomy/whole_stanzas/281; /cached_taxonomy/whole_stanzas/282;
+    /cached_taxonomy/whole_stanzas/283; /cached_taxonomy/whole_stanzas/284; /cached_taxonomy/whole_stanzas/285;
+    /cached_taxonomy/whole_stanzas/286; /cached_taxonomy/whole_stanzas/287; /cached_taxonomy/whole_stanzas/288;
+    /cached_taxonomy/whole_stanzas/289; /cached_taxonomy/whole_stanzas/290; /cached_taxonomy/whole_stanzas/291;
+    /cached_taxonomy/whole_stanzas/292; /cached_taxonomy/whole_stanzas/293; /cached_taxonomy/whole_stanzas/294;
+    /cached_taxonomy/whole_stanzas/295; /cached_taxonomy/whole_stanzas/296; /cached_taxonomy/whole_stanzas/297;
+    /cached_taxonomy/whole_stanzas/298; /cached_taxonomy/whole_stanzas/299; /cached_taxonomy/whole_stanzas/300;
+    /cached_taxonomy/whole_stanzas/301; /cached_taxonomy/whole_stanzas/302; /cached_taxonomy/whole_stanzas/303;
+    /cached_taxonomy/whole_stanzas/304; /cached_taxonomy/unmatched_ids
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Complete retained local stanzas for this context (279 placements), with
+    Native's whole-cache reading attributed. Names and exact synonyms are not fresh
+    taxonomy or producer-strain equivalence. The old73828 missing stanza is distinguished
+    from saved destination3024264.
+  snapshot_sha256: 87339a105084ecf3ff4ffe58e38b8c4ad02b9d7048f8a9f72d17fddd7e80ed2c
+- evidence_id: bgc-2373-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/bgc-prep/bgc-conditional238-source-inventory-DATA-001.json
+  locator: /records/2/direct_companion_paths; /records/2/direct_companion_predicates
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Exact bounded direct companion membership; shared loci or references do
+    not transfer chemical identity, stereochemistry, production or assay claims.
+  snapshot_sha256: 87339a105084ecf3ff4ffe58e38b8c4ad02b9d7048f8a9f72d17fddd7e80ed2c
+- evidence_id: bgc-2373-companion-boundaries
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch238-tentative/bgc-prep/bgc-conditional238-source-inventory-DATA-001.json
+  locator: /contexts/11
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Complete saved direct-companion source/raw/history context is carried with
+    the original whole-reading attribution. Distinct full keys and experimental scopes
+    remain separate.
+  snapshot_sha256: 87339a105084ecf3ff4ffe58e38b8c4ad02b9d7048f8a9f72d17fddd7e80ed2c
+- evidence_id: bgc-2373-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines392–433
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: The structure flag records undefined stereocentres; computed classification
+    is a named/versioned prediction, not a source assertion.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2373-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines142–173
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: Maintained stereo_complete checks undefined tetrahedral chiral centers;
+    it is not fresh natural stereochemistry or a universal guarantee of all bond geometry.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2373-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines972–1020
+  accessed_at: '2026-11-04T09:20:46.041756Z'
+  support: supports
+  summary: The maintained seeder preserves lead source structure and named/versioned
+    prediction fields separately; filing is not experimental biosynthetic evidence.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-238/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-238/native-current238-five-gates-execution-001.json
+  accessed_at: '2026-11-04T08:26:48.360818Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: ddb6129d9b295966cf13f1cd3dd2a7a77a2f233e19dfb56af98af964a8ed5cfc
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-238/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-238/native-current238-five-gates-execution-001.json
+  accessed_at: '2026-11-04T08:27:14.590469Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 0c826a315a62b7ca5ace8d949bca7cafa3d6e3fc304c2051ce80758f76ac199f
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-238/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-238/native-current238-five-gates-execution-001.json
+  accessed_at: '2026-11-04T08:27:35.132292Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-238/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-238/native-current238-five-gates-execution-001.json
+  accessed_at: '2026-11-04T08:28:10.194681Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-238/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-238/native-current238-five-gates-execution-001.json
+  accessed_at: '2026-11-04T08:28:22.125818Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 467d79611b8ccea3ff2d99b2028febe6f7e14eab069e304257148ed41e7e8201
+assessments:
+- assessment_id: bgc-2373-identity
+  area: identity
+  topic: Retained identity/form consistency; natural identity unverified
+  outcome: supported
+  summary: CHEBI:48741 retains full key LFJQCDVYDGGFCH-UHFFFAOYSA-N, the MIBiG BGC0001322
+    v3 structure, PubChem:11142 and CHEMBL444254 cross-references. ChEBI row 13170
+    describes the β double-bond isomer with one exocyclic bond. That is a retained
+    definition, not fresh identity or isomer-purity verification. The owner preserves
+    stereo_complete:false; no enantiomer or optical sign is assigned from the unqualified
+    name. Lycosantalonol shares the locus as a direct context but has its own full
+    key and mechanism, which are not transferred.
+  target_ids:
+  - CHEBI:48741
+  evidence_ids:
+  - bgc-2373-grounding-owner
+  - bgc-2373-source-mibig_compounds
+  - bgc-2373-source-chebi_structures
+  - bgc-2373-queries
+  - bgc-2373-chemistry
+  - bgc-2373-direct-contexts
+  - bgc-2373-companion-boundaries
+  dimensions:
+  - name: standard_inchi_key
+    value: LFJQCDVYDGGFCH-UHFFFAOYSA-N; complete retained key, not a name-only identity
+      substitute.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2373-grounding-owner
+    - bgc-2373-source-mibig_compounds
+    - bgc-2373-source-chebi_structures
+    - bgc-2373-queries
+    - bgc-2373-chemistry
+    - bgc-2373-direct-contexts
+    - bgc-2373-companion-boundaries
+  - name: grounding_scope
+    value: CHEBI:48741 retains full key LFJQCDVYDGGFCH-UHFFFAOYSA-N, the MIBiG BGC0001322
+      v3 structure, PubChem:11142 and CHEMBL444254 cross-references. ChEBI row 13170
+      describes the β double-bond isomer with one exocyclic bond. That is a retained
+      definition, not fresh identity or isomer-purity verification. The owner preserves
+      stereo_complete:false; no enantiomer or optical sign is assigned from the unqualified
+      name. Lycosantalonol shares the locus as a direct context but has its own full
+      key and mechanism, which are not transferred.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2373-grounding-owner
+    - bgc-2373-source-mibig_compounds
+    - bgc-2373-source-chebi_structures
+    - bgc-2373-queries
+    - bgc-2373-chemistry
+    - bgc-2373-direct-contexts
+    - bgc-2373-companion-boundaries
+- assessment_id: bgc-2373-representation
+  area: representation
+  topic: Stored molecular representation and stereo scope
+  outcome: supported
+  summary: Both original forms are neutral C10H16 with ten carbon atoms and ten bonds;
+    all ten comparison flags agree. The graph has one six-carbon ring, one endocyclic
+    C=C and an exocyclic methylene, with an isopropyl substituent. One tetrahedral
+    center is unspecified in both forms, SMILES atom3 and InChI atom9, consistent
+    with stereo_complete:false. No absolute configuration or optical sign is assigned.
+    Complete atom-count correspondence is true but full_graph_identity_established
+    remains false; normalized form agreement does not prove an enantiopure natural
+    sample.
+  target_ids:
+  - CHEBI:48741
+  evidence_ids:
+  - bgc-2373-chemistry
+  - bgc-2373-topology
+  - bgc-2373-grounding-owner
+  - bgc-2373-structure-schema
+  - bgc-2373-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Both original forms are neutral C10H16 with ten carbon atoms and ten bonds;
+      all ten comparison flags agree. The graph has one six-carbon ring, one endocyclic
+      C=C and an exocyclic methylene, with an isopropyl substituent. One tetrahedral
+      center is unspecified in both forms, SMILES atom3 and InChI atom9, consistent
+      with stereo_complete:false. No absolute configuration or optical sign is assigned.
+      Complete atom-count correspondence is true but full_graph_identity_established
+      remains false; normalized form agreement does not prove an enantiopure natural
+      sample.
+    definition: Saved complete stereo/atom/bond interpretation, not an experimental
+      assignment or a new parse.
+    evidence_ids:
+    - bgc-2373-chemistry
+    - bgc-2373-topology
+    - bgc-2373-grounding-owner
+    - bgc-2373-structure-schema
+    - bgc-2373-stereo-method
+  - name: representation_correspondence
+    value: All ten original comparison flags and complete atom-count correspondence
+      are true; full_graph_identity_established remains false. Stored-form normalization
+      does not authenticate natural identity.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2373-chemistry
+    - bgc-2373-topology
+    - bgc-2373-grounding-owner
+    - bgc-2373-structure-schema
+    - bgc-2373-stereo-method
+- assessment_id: bgc-2373-provenance
+  area: provenance
+  topic: Producer and locus evidence
+  outcome: supported
+  summary: MIBiG row 1550 retains Solanum lycopersicum NCBITaxon:4081 as SOURCE_ASSERTION
+    and BGC0001322 v3 as CLUSTER_UNSTATED, with genome KC807995.1 and no listed locus
+    method. The large occurrence set does not upgrade this producer assertion. Historical
+    Lycosantalonol evidence in the direct companion has a different compound and experimental
+    scope; sharing BGC0001322 is insufficient for an enzyme or production claim here.
+  target_ids:
+  - CHEBI:48741
+  evidence_ids:
+  - bgc-2373-origin-owner
+  - bgc-2373-source-mibig_compounds
+  - bgc-2373-cached-taxonomy
+  - bgc-2373-source-routes
+  dimensions:
+  - name: taxon_scope
+    value: MIBiG row 1550 retains Solanum lycopersicum NCBITaxon:4081 as SOURCE_ASSERTION
+      and BGC0001322 v3 as CLUSTER_UNSTATED, with genome KC807995.1 and no listed
+      locus method. The large occurrence set does not upgrade this producer assertion.
+      Historical Lycosantalonol evidence in the direct companion has a different compound
+      and experimental scope; sharing BGC0001322 is insufficient for an enzyme or
+      production claim here.
+    definition: Source taxa and cached labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2373-origin-owner
+    - bgc-2373-source-mibig_compounds
+    - bgc-2373-cached-taxonomy
+    - bgc-2373-source-routes
+  - name: producer_evidence
+    value: MIBiG row 1550 retains Solanum lycopersicum NCBITaxon:4081 as SOURCE_ASSERTION
+      and BGC0001322 v3 as CLUSTER_UNSTATED, with genome KC807995.1 and no listed
+      locus method. The large occurrence set does not upgrade this producer assertion.
+      Historical Lycosantalonol evidence in the direct companion has a different compound
+      and experimental scope; sharing BGC0001322 is insufficient for an enzyme or
+      production claim here.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2373-origin-owner
+    - bgc-2373-source-mibig_compounds
+    - bgc-2373-cached-taxonomy
+    - bgc-2373-source-routes
+  - name: locus_evidence
+    value: MIBiG row 1550 retains Solanum lycopersicum NCBITaxon:4081 as SOURCE_ASSERTION
+      and BGC0001322 v3 as CLUSTER_UNSTATED, with genome KC807995.1 and no listed
+      locus method. The large occurrence set does not upgrade this producer assertion.
+      Historical Lycosantalonol evidence in the direct companion has a different compound
+      and experimental scope; sharing BGC0001322 is insufficient for an enzyme or
+      production claim here.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2373-origin-owner
+    - bgc-2373-source-mibig_compounds
+    - bgc-2373-cached-taxonomy
+    - bgc-2373-source-routes
+- assessment_id: bgc-2373-citations
+  area: evidence
+  topic: Citation authority and study scope
+  outcome: supported
+  summary: The MIBiG compound-evidence citation is DOI:10.1073/pnas.0904113106, distinct
+    from the Lycosantalonol companion's 2015 reference. The 341 saved LOTUS placements
+    contain 258 literal DOI strings and 278 source taxon IDs; these are metadata counts,
+    not counts of independently verified publications or experiments. Case, wording
+    and synonym variants are retained, and publication independence is not established.
+  target_ids:
+  - CHEBI:48741
+  evidence_ids:
+  - bgc-2373-grounding-owner
+  - bgc-2373-origin-owner
+  - bgc-2373-source-mibig_compounds
+  - bgc-2373-source-lotus_occurrences
+  - bgc-2373-queries
+  - bgc-2373-source-notes
+  - bgc-2373-direct-contexts
+  - bgc-2373-companion-boundaries
+  dimensions:
+  - name: citation_scope
+    value: The MIBiG compound-evidence citation is DOI:10.1073/pnas.0904113106, distinct
+      from the Lycosantalonol companion's 2015 reference. The 341 saved LOTUS placements
+      contain 258 literal DOI strings and 278 source taxon IDs; these are metadata
+      counts, not counts of independently verified publications or experiments. Case,
+      wording and synonym variants are retained, and publication independence is not
+      established.
+    definition: Distinguish retained database provenance, historical primary-experiment
+      annotations and occurrence references; ENTRY and compound-specific citation
+      bases remain separate. Repeated placements do not establish independent studies
+      or fresh primary access.
+    evidence_ids:
+    - bgc-2373-grounding-owner
+    - bgc-2373-origin-owner
+    - bgc-2373-source-mibig_compounds
+    - bgc-2373-source-lotus_occurrences
+    - bgc-2373-queries
+    - bgc-2373-source-notes
+    - bgc-2373-direct-contexts
+    - bgc-2373-companion-boundaries
+- assessment_id: bgc-2373-occurrence
+  area: evidence
+  topic: Retained occurrence and assay scope
+  outcome: supported
+  summary: 'Support''s complete saved-row reading reconciles four same-taxon/same-reference
+    duplicate pairs: Lepechinia urbani/urbanii, Croton stellulifer/stelluliferus,
+    Thymbra capitata/Thymus capitatus and Cantinoa/Hyptis mutabilis. The implemented
+    taxon/reference deduplication therefore yields 337 signatures, with the first
+    25 written and 312 reported in the retained note. The exact 25-entry ordered prefix
+    agrees with capture. The saved forward route NCBITaxon:73828 to NCBITaxon:3024264
+    resolves the old cache ID without an additional collapse; it supplies local taxonomy
+    context rather than fresh nomenclatural verification. Plant, fungal, animal and
+    genus-level occurrence placements are not endogenous-biosynthesis evidence. No
+    assay or molecular-target result is returned by the selected retained joins.'
+  target_ids:
+  - CHEBI:48741
+  evidence_ids:
+  - bgc-2373-occurrence-owner
+  - bgc-2373-assay-owner
+  - bgc-2373-source-lotus_occurrences
+  - bgc-2373-source-chebi_structures
+  - bgc-2373-queries
+  - bgc-2373-source-routes
+  - bgc-2373-cached-taxonomy
+  - bgc-2373-source-notes
+  - bgc-2373-occurrence-reconciliation
+  - bgc-2373-curation-scope
+  dimensions:
+  - name: occurrence_scope
+    value: 'Support''s complete saved-row reading reconciles four same-taxon/same-reference
+      duplicate pairs: Lepechinia urbani/urbanii, Croton stellulifer/stelluliferus,
+      Thymbra capitata/Thymus capitatus and Cantinoa/Hyptis mutabilis. The implemented
+      taxon/reference deduplication therefore yields 337 signatures, with the first
+      25 written and 312 reported in the retained note. The exact 25-entry ordered
+      prefix agrees with capture. The saved forward route NCBITaxon:73828 to NCBITaxon:3024264
+      resolves the old cache ID without an additional collapse; it supplies local
+      taxonomy context rather than fresh nomenclatural verification. Plant, fungal,
+      animal and genus-level occurrence placements are not endogenous-biosynthesis
+      evidence. No assay or molecular-target result is returned by the selected retained
+      joins.'
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2373-occurrence-owner
+    - bgc-2373-assay-owner
+    - bgc-2373-source-lotus_occurrences
+    - bgc-2373-source-chebi_structures
+    - bgc-2373-queries
+    - bgc-2373-source-routes
+    - bgc-2373-cached-taxonomy
+    - bgc-2373-source-notes
+    - bgc-2373-occurrence-reconciliation
+    - bgc-2373-curation-scope
+  - name: assay_target_scope
+    value: No written assay or target. The retained PubChem, BindingDB and related-corpus
+      joins are empty for this exact source scope; this does not establish inactivity.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2373-occurrence-owner
+    - bgc-2373-assay-owner
+    - bgc-2373-source-lotus_occurrences
+    - bgc-2373-source-chebi_structures
+    - bgc-2373-queries
+    - bgc-2373-source-routes
+    - bgc-2373-cached-taxonomy
+    - bgc-2373-source-notes
+    - bgc-2373-occurrence-reconciliation
+    - bgc-2373-curation-scope
+- assessment_id: bgc-2373-classification
+  area: consistency
+  topic: Faithful versioned classification and bounded applicability
+  outcome: supported
+  summary: NPClassifier retains Terpenoids, Monoterpenoids, Monocyclic monoterpenoids
+    and is_glycoside:false. The original saved C10 monocyclic hydrocarbon graph supports
+    that bounded chemical applicability and contains no sugar or glycosidic linkage.
+    MIBiG Monoterpenoid and TERPENE remain separately sourced assertions. Structural
+    consistency does not identify the natural enantiomer or verify biosynthesis in
+    every occurrence taxon.
+  target_ids:
+  - CHEBI:48741
+  evidence_ids:
+  - bgc-2373-classification-owner
+  - bgc-2373-source-npclassifier
+  - bgc-2373-source-mibig_compounds
+  - bgc-2373-chemistry
+  - bgc-2373-topology
+  - bgc-2373-structure-schema
+  - bgc-2373-classification-seeder
+  dimensions:
+  - name: classification_applicability
+    value: NPClassifier retains Terpenoids, Monoterpenoids, Monocyclic monoterpenoids
+      and is_glycoside:false. The original saved C10 monocyclic hydrocarbon graph
+      supports that bounded chemical applicability and contains no sugar or glycosidic
+      linkage. MIBiG Monoterpenoid and TERPENE remain separately sourced assertions.
+      Structural consistency does not identify the natural enantiomer or verify biosynthesis
+      in every occurrence taxon.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2373-classification-owner
+    - bgc-2373-source-npclassifier
+    - bgc-2373-source-mibig_compounds
+    - bgc-2373-chemistry
+    - bgc-2373-topology
+    - bgc-2373-structure-schema
+    - bgc-2373-classification-seeder
+- assessment_id: bgc-2373-completion
+  area: completeness
+  topic: Scientific review completion
+  outcome: unknown
+  summary: Complete current owner/history, actual intake and both original molecular
+    forms are read. Support's complete 344 positive rows and reconciliation, and Native's
+    complete cache/curation reading, remain explicitly attributed. No selected mechanism
+    reader applies. Completion remains partial because Full QC/OAK and fresh primary,
+    taxonomy and natural-identity verification are unavailable; no occurrence or identity
+    correction is inferred from the retained counts.
+  target_ids:
+  - CHEBI:48741
+  evidence_ids:
+  - bgc-2373-owner
+  - bgc-2373-capture
+  - bgc-2373-intake
+  - bgc-2373-plan
+  - bgc-2373-intake-acceptance
+  - bgc-2373-inventory-acceptance
+  - bgc-2373-plan-acceptance
+  - bgc-2373-source-notes
+  - bgc-2373-curation-scope
+  - bgc-2373-diagnostic-execution
+  - bgc-2373-diagnostic-acceptance
+  dimensions:
+  - name: review_completion
+    value: 'Partial: complete local source/intake/paired-form review; no applicable
+      selected reader. Full QC/OAK and fresh primary/natural-identity verification
+      remain unavailable; record-specific uncertainties remain explicit.'
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2373-owner
+    - bgc-2373-capture
+    - bgc-2373-intake
+    - bgc-2373-plan
+    - bgc-2373-intake-acceptance
+    - bgc-2373-inventory-acceptance
+    - bgc-2373-plan-acceptance
+    - bgc-2373-source-notes
+    - bgc-2373-curation-scope
+    - bgc-2373-diagnostic-execution
+    - bgc-2373-diagnostic-acceptance
+findings: []
+actions: []
+limitations:
+- All evidence is retained locally. No external publication, identifier, taxonomy,
+  assay, protein sequence or natural stereochemical assignment was refreshed.
+- Full QC and complete OAK coverage remain unavailable. Local diagnostics, source
+  joins and maintained preservation have only their stated scope.
+- Shared loci, names, taxa, source references or companion records do not transfer
+  identity, stereochemistry, production, activity or independent-study status.
+- Two original undefined-stereo warnings remain global and unassigned. No molecular/YAML
+  reparse, source query or target ran during scientific authoring.
+- No source status, record or history is edited. Any later supported correction belongs
+  to the maintained owners in the actual intake.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Complete first-five raw/history, actual intakes and all ten original stored forms
+  were personally read; the forms comprise 180 atom rows and 196 bond rows plus all
+  scalar/ring/stereo/motif/map fields. Diagnostic indices are zero-based, not biochemical
+  locants.
+- 'Source meanings retain exact attribution: BGC 127 non-Phellandrene rows, Support
+  344 Phellandrene rows, Native all305 cached stanzas and implemented curation. Complete
+  current prior raw/history carries are in accepted notes.'
+- ROOT operated original activation/capture, collector/composer, intakes and molecular
+  diagnostic. Native operated gates and the sole Pentalenolactone maintained reader.
+  BGC authored source planning and these scientific assessments without target invocation.
+- No finding/action is inferred solely from an unresolved source identity, partial
+  stereochemistry or faithful model-applicability concern.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-238
