@@ -1,0 +1,827 @@
+# Scientific review of lipopeptide 8D1-2
+
+- Review: 20261028T132119Z-lipopeptide-8d1-2
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-28T13:05:04.789817Z
+- Finished UTC: 2026-10-28T13:21:19.742669Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+lipopeptide 8D1-2 has internally consistent retained encodings with three unspecified carbon configurations. Own metadata supports the donor-versus-expression-host study context, while exact natural structure, native production, current locus grounding and congener-specific activity remain unresolved.
+
+## Scope And Provenance
+
+Whole exact lipopeptide 8D1-2 owner, resolved mechanism where present, complete retained source rows and bounded inspected primary or metadata evidence; exact natural stereochemistry, origin, locus and activity claims assessed only to the support described below.
+
+Selection: One resolved record in canonical path order from the actual batch083 selection; denominator one record.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-73ec255bab | data/natural_products/amino_acids_and_peptides/lipopeptide-8d1-2.yaml | generated | lipopeptide 8D1-2 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-73ec255bab | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-73ec255bab | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-73ec255bab | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-73ec255bab | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-73ec255bab | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-73ec255bab | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Whole owner and exact retained source rows | passed | True | naturalproductmech:mibig-73ec255bab | The whole retained lipopeptide 8D1-2 owner joins 1 mibig_compounds, 1 npclassifier. Its 2 seed-history entries preserve provenance, not independent scientific validation. The nine retained/supplemental source arrays and six prospective intake arrays remain distinct. Actual intake concordance is documented separately. |
+| Saved internal encoding agreement | passed | True | naturalproductmech:mibig-73ec255bab | Saved SMILES and Standard InChI diagnostics agree on C66H84N14O28, full key IIAGTWVBMJDMAG-ZSUMOKISSA-N, one component and neutral charge. The saved carbon-stereo scope is 3 unspecified tetrahedral carbon centres in each encoding; stereo_complete=false. Default InChI C(-O)=N descriptors are representation-local; none of these calculations proves natural configuration. |
+| Bounded declared-key distinction | passed | True | naturalproductmech:mibig-73ec255bab | The saved ignored-inclusive 3116-owner declared-key census has only this record at the full key. The connectivity prefix is also self-only in that frozen population. This is bounded literal identity checking, not natural-identity or synonym proof. |
+| Exact natural structure and configuration | unavailable | True | naturalproductmech:mibig-73ec255bab | lipopeptide 8D1-2 is retained as a specific C66H84N14O28 graph with three unspecified carbon configurations. The public abstract supports a pair of linear lipopeptides at family level, but does not independently map the name to this full graph or assign the missing configurations. |
+| Exact producer and material identity | unavailable | True | naturalproductmech:mibig-73ec255bab | MIBiG asserts S. rochei (NCBITaxon:1928) at SOURCE_ASSERTION grade. The own abstract identifies Sal35 as the source organism and S. lividans SBT5 as the expression host. This supports a microbial source-locus association, but neither native Sal35 production of this exact encoded congener nor equivalence of donor and host is established by the inspected text. |
+| Exact product-to-locus and current interval support | unavailable | True | naturalproductmech:mibig-73ec255bab | BGC0001370 version 4 retains KT362047.1 and NRPS class with CLUSTER_UNSTATED; coordinates and locus methods are absent in the exact retained row. The abstract reports a corresponding lipopeptide cluster, but does not independently verify this accession, an exact interval, or the product-to-locus mapping for this named congener. |
+| Occurrence assertion scope | not_applicable | False | naturalproductmech:mibig-73ec255bab | The owner has no occurrences field and its exact-key LOTUS join is empty. These bounded omissions do not imply absence from nature and do not authorize copying the other 8D1 congener’s occurrence. |
+| Exact quantitative activity and target | not_applicable | False | naturalproductmech:mibig-73ec255bab | No quantitative bioactivity or molecular target is retained. The abstract describes functional antimicrobial screening across several products and clusters; it does not establish an exact endpoint, potency or target for this particular 8D1 congener. An empty retained assay join is not a negative assay. |
+| Inline pathway and graph scope | not_applicable | False | naturalproductmech:mibig-73ec255bab | This whole owner has no biosynthetic_pathway, causal_graphs, causal_graph_refs or molecular_targets field. No new graph or protein grounding is proposed; missing optional content alone is not a defect. |
+
+## Scientific And Domain Assessments
+
+### Internal representation agreement
+
+consistency: supported. Targets: naturalproductmech:mibig-73ec255bab.
+
+Saved SMILES and Standard InChI diagnostics agree on C66H84N14O28, full key IIAGTWVBMJDMAG-ZSUMOKISSA-N, one component and neutral charge. The saved carbon-stereo scope is 3 unspecified tetrahedral carbon centres in each encoding; stereo_complete=false. Default InChI C(-O)=N descriptors are representation-local; none of these calculations proves natural configuration.
+
+### Exact named natural identity
+
+identity: unknown. Targets: naturalproductmech:mibig-73ec255bab.
+
+lipopeptide 8D1-2 is retained as a specific C66H84N14O28 graph with three unspecified carbon configurations. The public abstract supports a pair of linear lipopeptides at family level, but does not independently map the name to this full graph or assign the missing configurations.
+
+### Biological origin and exact producer
+
+evidence: unknown. Targets: naturalproductmech:mibig-73ec255bab.
+
+MIBiG asserts S. rochei (NCBITaxon:1928) at SOURCE_ASSERTION grade. The own abstract identifies Sal35 as the source organism and S. lividans SBT5 as the expression host. This supports a microbial source-locus association, but neither native Sal35 production of this exact encoded congener nor equivalence of donor and host is established by the inspected text.
+
+### Locus and protein-level claim scope
+
+evidence: unknown. Targets: naturalproductmech:mibig-73ec255bab.
+
+BGC0001370 version 4 retains KT362047.1 and NRPS class with CLUSTER_UNSTATED; coordinates and locus methods are absent in the exact retained row. The abstract reports a corresponding lipopeptide cluster, but does not independently verify this accession, an exact interval, or the product-to-locus mapping for this named congener.
+
+### Occurrence versus production
+
+evidence: not_applicable. Targets: naturalproductmech:mibig-73ec255bab.
+
+The owner has no occurrences field and its exact-key LOTUS join is empty. These bounded omissions do not imply absence from nature and do not authorize copying the other 8D1 congener’s occurrence.
+
+### Classification and pathway scope
+
+scope: supported. Targets: naturalproductmech:mibig-73ec255bab.
+
+NPClassifier predicts linear peptides, and MIBiG retains NRPS/Type I. The own abstract independently describes two linear lipopeptides, but exact congener chemistry and detailed biosynthesis remain outside the inspected material.
+
+### Activity, target and assay scope
+
+quantity: unknown. Targets: naturalproductmech:mibig-73ec255bab.
+
+No quantitative bioactivity or molecular target is retained. The abstract describes functional antimicrobial screening across several products and clusters; it does not establish an exact endpoint, potency or target for this particular 8D1 congener. An empty retained assay join is not a negative assay.
+
+### Source versions and evidence tiers
+
+provenance: supported. Targets: naturalproductmech:mibig-73ec255bab.
+
+MIBiG BGC0001370 entry version 4, compound_index 2, supplies the structure and biological assertions; retained entry quality is questionable and completeness unknown. The retained compound_index is the entry’s compound index, not assumed publication numbering. NPClassifier npclassifier.gnps2.org@2026-09-07 is a prediction. Repeated database citations and seed histories are not independent experimental support.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI823-LOCAL | /private/tmp/npm-review-work/shared-next-batch083-tentative/tentative-owner-source-inventory-001.json; /entries/2/owner_document; /entries/2/rows; /entries/2/graph_and_curation_scope | context_only | The whole retained lipopeptide 8D1-2 owner joins 1 mibig_compounds, 1 npclassifier. Its 2 seed-history entries preserve provenance, not independent scientific validation. The nine retained/supplemental source arrays and six prospective intake arrays remain distinct. Actual intake concordance is documented separately. |
+| SCI823-ENCODINGS | /private/tmp/npm-review-work/shared-next-batch083-tentative/source-science-preparation/root-tentative83-local-chemical-consistency-and-neighbors-001.json; /records/2 | supports | Saved SMILES and Standard InChI diagnostics agree on C66H84N14O28, full key IIAGTWVBMJDMAG-ZSUMOKISSA-N, one component and neutral charge. The saved carbon-stereo scope is 3 unspecified tetrahedral carbon centres in each encoding; stereo_complete=false. Default InChI C(-O)=N descriptors are representation-local; none of these calculations proves natural configuration. |
+| SCI823-KEY-CENSUS | /private/tmp/npm-review-work/shared-next-batch083-tentative/source-science-preparation/root-tentative83-declared-key-collision-census-001.json; /records/2; /population | context_only | The saved ignored-inclusive 3116-owner declared-key census has only this record at the full key. The connectivity prefix is also self-only in that frozen population. This is bounded literal identity checking, not natural-identity or synonym proof. |
+| SCI823-PM27451447 | /private/tmp/npm-review-work/shared-next-batch083-tentative/literature-preparation/public-metadata-pubmed-001/pmid-27451447.xml; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | partial | Own title/abstract and ArticleIdList verify PMID 27451447, DOI 10.1128/AEM.01383-16 and PMC5038051. The abstract reports two linear lipopeptides from a source-library study using S. rochei Sal35 and surrogate S. lividans SBT5; it does not name 8D1-1 versus 8D1-2 or supply their exact structure assignments. |
+| SCI823-PMC-FRONT | /private/tmp/npm-review-work/shared-next-batch083-tentative/literature-preparation/public-primary-single-PMC5038051-001/pmc5038051.xml; .//front/article-meta/abstract; absence of body in this exact response | partial | The own PMC response is complete frontmatter/abstract only with an explicit full-XML restriction; it repeats the source-organism/expression-host distinction. No full primary body or exact-congener structure/activity evidence was obtained. Original source failure remains held and is not a canonical validation failure. |
+
+## Limits And Additional Notes
+
+- The source set does not include inspected figure pixels or supplementary structure elucidation. Exact natural configuration and current sequence/interval authority remain unverified.
+- Stored taxon, locus and source-version grades are assessed as retained assertions; metadata and predicted classifications do not independently validate every claim.
+- No quantitative activity, target, pathway or causal edge is transferred from a different congener, the producing organism, an enzyme assay or a mixed fraction.
+- The scientific assessment is partial: retained source assertions, saved metadata and restricted frontmatter do not independently establish exact natural configuration, strain-specific production, complete locus causality or quantitative activity.
+- PMC5038051 returned HTTP 200 but no article body; the original failed source guard, access clock and held route are preserved. No retry or alternate request was made.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T132119Z-lipopeptide-8d1-2
+title: Scientific review of lipopeptide 8D1-2
+started_at: '2026-10-28T13:05:04.789817Z'
+finished_at: '2026-10-28T13:21:19.742669Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: lipopeptide 8D1-2 has internally consistent retained encodings with three
+  unspecified carbon configurations. Own metadata supports the donor-versus-expression-host
+  study context, while exact natural structure, native production, current locus grounding
+  and congener-specific activity remain unresolved.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/lipopeptide-8d1-2.yaml
+    sha256: a52abec26e4bc2086395b5afeed57d20814cd173b63504c603fee940c088a322
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-73ec255bab
+  path: data/natural_products/amino_acids_and_peptides/lipopeptide-8d1-2.yaml
+  label: lipopeptide 8D1-2
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Whole exact lipopeptide 8D1-2 owner, resolved mechanism where present,
+    complete retained source rows and bounded inspected primary or metadata evidence;
+    exact natural stereochemistry, origin, locus and activity claims assessed only
+    to the support described below.
+  selection: One resolved record in canonical path order from the actual batch083
+    selection; denominator one record.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-73ec255bab
+  exclusions:
+  - target: Uninspected complete primary sources, figure pixels, supplementary information
+      and current authority contents
+    reason: Access and inspected-content limits are stated for each evidence object
+      and assessment; encoding agreement does not establish natural structure or strain-specific
+      causality.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch083 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch083. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch083 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch083. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch083 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch083. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch083 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch083. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch083 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch083. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/lipopeptide-8d1-2.yaml
+    --out /private/tmp/npm-review-work/823/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T13:05:06.230153Z. Original
+    receipt: /private/tmp/npm-review-work/823/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-LOCAL-JOINS
+  name: Whole owner and exact retained source rows
+  status: passed
+  required: true
+  summary: The whole retained lipopeptide 8D1-2 owner joins 1 mibig_compounds, 1 npclassifier.
+    Its 2 seed-history entries preserve provenance, not independent scientific validation.
+    The nine retained/supplemental source arrays and six prospective intake arrays
+    remain distinct. Actual intake concordance is documented separately.
+  evidence_ids:
+  - SCI823-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-ENCODINGS
+  name: Saved internal encoding agreement
+  status: passed
+  required: true
+  summary: Saved SMILES and Standard InChI diagnostics agree on C66H84N14O28, full
+    key IIAGTWVBMJDMAG-ZSUMOKISSA-N, one component and neutral charge. The saved carbon-stereo
+    scope is 3 unspecified tetrahedral carbon centres in each encoding; stereo_complete=false.
+    Default InChI C(-O)=N descriptors are representation-local; none of these calculations
+    proves natural configuration.
+  evidence_ids:
+  - SCI823-ENCODINGS
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-KEY-CENSUS
+  name: Bounded declared-key distinction
+  status: passed
+  required: true
+  summary: The saved ignored-inclusive 3116-owner declared-key census has only this
+    record at the full key. The connectivity prefix is also self-only in that frozen
+    population. This is bounded literal identity checking, not natural-identity or
+    synonym proof.
+  evidence_ids:
+  - SCI823-KEY-CENSUS
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-NATURAL-IDENTITY
+  name: Exact natural structure and configuration
+  status: unavailable
+  required: true
+  summary: lipopeptide 8D1-2 is retained as a specific C66H84N14O28 graph with three
+    unspecified carbon configurations. The public abstract supports a pair of linear
+    lipopeptides at family level, but does not independently map the name to this
+    full graph or assign the missing configurations.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-ENCODINGS
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-PRODUCER
+  name: Exact producer and material identity
+  status: unavailable
+  required: true
+  summary: MIBiG asserts S. rochei (NCBITaxon:1928) at SOURCE_ASSERTION grade. The
+    own abstract identifies Sal35 as the source organism and S. lividans SBT5 as the
+    expression host. This supports a microbial source-locus association, but neither
+    native Sal35 production of this exact encoded congener nor equivalence of donor
+    and host is established by the inspected text.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-LOCUS
+  name: Exact product-to-locus and current interval support
+  status: unavailable
+  required: true
+  summary: BGC0001370 version 4 retains KT362047.1 and NRPS class with CLUSTER_UNSTATED;
+    coordinates and locus methods are absent in the exact retained row. The abstract
+    reports a corresponding lipopeptide cluster, but does not independently verify
+    this accession, an exact interval, or the product-to-locus mapping for this named
+    congener.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-OCCURRENCE
+  name: Occurrence assertion scope
+  status: not_applicable
+  required: false
+  summary: The owner has no occurrences field and its exact-key LOTUS join is empty.
+    These bounded omissions do not imply absence from nature and do not authorize
+    copying the other 8D1 congener’s occurrence.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-ACTIVITY
+  name: Exact quantitative activity and target
+  status: not_applicable
+  required: false
+  summary: No quantitative bioactivity or molecular target is retained. The abstract
+    describes functional antimicrobial screening across several products and clusters;
+    it does not establish an exact endpoint, potency or target for this particular
+    8D1 congener. An empty retained assay join is not a negative assay.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- check_id: SCI823-GRAPH
+  name: Inline pathway and graph scope
+  status: not_applicable
+  required: false
+  summary: This whole owner has no biosynthetic_pathway, causal_graphs, causal_graph_refs
+    or molecular_targets field. No new graph or protein grounding is proposed; missing
+    optional content alone is not a defect.
+  evidence_ids:
+  - SCI823-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+evidence:
+- evidence_id: SCI823-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch083-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/2/owner_document; /entries/2/rows; /entries/2/graph_and_curation_scope
+  accessed_at: '2026-10-28T11:54:51.682395Z'
+  snapshot_sha256: 7d7ff9c73487bbb09fa5741402790ccfbab639a432e0c0b4a176a6c6c27340f7
+  support: context_only
+  summary: The whole retained lipopeptide 8D1-2 owner joins 1 mibig_compounds, 1 npclassifier.
+    Its 2 seed-history entries preserve provenance, not independent scientific validation.
+    The nine retained/supplemental source arrays and six prospective intake arrays
+    remain distinct. Actual intake concordance is documented separately.
+- evidence_id: SCI823-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch083-tentative/source-science-preparation/root-tentative83-local-chemical-consistency-and-neighbors-001.json
+  locator: /records/2
+  accessed_at: '2026-10-28T12:09:50.993495Z'
+  snapshot_sha256: 4434ad8bba25afac401d5b2cbc344c8099ce722fe045c197d5c81a11bb0b357b
+  support: supports
+  summary: Saved SMILES and Standard InChI diagnostics agree on C66H84N14O28, full
+    key IIAGTWVBMJDMAG-ZSUMOKISSA-N, one component and neutral charge. The saved carbon-stereo
+    scope is 3 unspecified tetrahedral carbon centres in each encoding; stereo_complete=false.
+    Default InChI C(-O)=N descriptors are representation-local; none of these calculations
+    proves natural configuration.
+- evidence_id: SCI823-KEY-CENSUS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch083-tentative/source-science-preparation/root-tentative83-declared-key-collision-census-001.json
+  locator: /records/2; /population
+  accessed_at: '2026-10-28T12:10:10.592588Z'
+  snapshot_sha256: 33631cc44db334411af13d8ee11eef9628c418c7ff74b8af4c9914105eb15401
+  support: context_only
+  summary: The saved ignored-inclusive 3116-owner declared-key census has only this
+    record at the full key. The connectivity prefix is also self-only in that frozen
+    population. This is bounded literal identity checking, not natural-identity or
+    synonym proof.
+  search_scope: Saved 3116 current owner paths, including hidden/ignored paths under
+    the declared census predicate; full declared InChIKeys and 14-character prefixes
+    only. No new scan.
+- evidence_id: SCI823-PM27451447
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch083-tentative/literature-preparation/public-metadata-pubmed-001/pmid-27451447.xml
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  accessed_at: '2026-10-28T12:23:30.070253Z'
+  snapshot_sha256: fe2d7010ab4711c64990eab3bc3f12614dc894d705c07bb0ed94d70473282ef2
+  support: partial
+  summary: Own title/abstract and ArticleIdList verify PMID 27451447, DOI 10.1128/AEM.01383-16
+    and PMC5038051. The abstract reports two linear lipopeptides from a source-library
+    study using S. rochei Sal35 and surrogate S. lividans SBT5; it does not name 8D1-1
+    versus 8D1-2 or supply their exact structure assignments.
+- evidence_id: SCI823-PMC-FRONT
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch083-tentative/literature-preparation/public-primary-single-PMC5038051-001/pmc5038051.xml
+  locator: .//front/article-meta/abstract; absence of body in this exact response
+  accessed_at: '2026-10-28T12:38:28.721232Z'
+  snapshot_sha256: 3a5ee79d97b2bb9f5e2fae54f3cf2dfb2b748206e4e9c20bf557c403bdee7e27
+  support: partial
+  summary: The own PMC response is complete frontmatter/abstract only with an explicit
+    full-XML restriction; it repeats the source-organism/expression-host distinction.
+    No full primary body or exact-congener structure/activity evidence was obtained.
+    Original source failure remains held and is not a canonical validation failure.
+assessments:
+- assessment_id: SCI823-ENCODINGS
+  area: consistency
+  topic: Internal representation agreement
+  outcome: supported
+  summary: Saved SMILES and Standard InChI diagnostics agree on C66H84N14O28, full
+    key IIAGTWVBMJDMAG-ZSUMOKISSA-N, one component and neutral charge. The saved carbon-stereo
+    scope is 3 unspecified tetrahedral carbon centres in each encoding; stereo_complete=false.
+    Default InChI C(-O)=N descriptors are representation-local; none of these calculations
+    proves natural configuration.
+  evidence_ids:
+  - SCI823-ENCODINGS
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- assessment_id: SCI823-IDENTITY
+  area: identity
+  topic: Exact named natural identity
+  outcome: unknown
+  summary: lipopeptide 8D1-2 is retained as a specific C66H84N14O28 graph with three
+    unspecified carbon configurations. The public abstract supports a pair of linear
+    lipopeptides at family level, but does not independently map the name to this
+    full graph or assign the missing configurations.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-ENCODINGS
+  - SCI823-KEY-CENSUS
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+  dimensions:
+  - name: stereochemical_resolution
+    value: 3 unspecified tetrahedral carbon centres in each encoding; stereo_complete=false
+    definition: Saved representation-level carbon configuration, kept separate from
+      experimentally verified natural configuration.
+    evidence_ids:
+    - SCI823-LOCAL
+    - SCI823-ENCODINGS
+- assessment_id: SCI823-PRODUCER
+  area: evidence
+  topic: Biological origin and exact producer
+  outcome: unknown
+  summary: MIBiG asserts S. rochei (NCBITaxon:1928) at SOURCE_ASSERTION grade. The
+    own abstract identifies Sal35 as the source organism and S. lividans SBT5 as the
+    expression host. This supports a microbial source-locus association, but neither
+    native Sal35 production of this exact encoded congener nor equivalence of donor
+    and host is established by the inspected text.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+  dimensions:
+  - name: taxon_strain
+    value: Retained S. rochei NCBITaxon:1928, no strain field; abstract source Sal35
+      and expression host S. lividans SBT5 are distinct roles.
+    definition: Retained taxon resolution and source material roles; unresolved equivalence
+      is not a taxonomic correction.
+    evidence_ids:
+    - SCI823-LOCAL
+    - SCI823-PM27451447
+    - SCI823-PMC-FRONT
+- assessment_id: SCI823-LOCUS
+  area: evidence
+  topic: Locus and protein-level claim scope
+  outcome: unknown
+  summary: BGC0001370 version 4 retains KT362047.1 and NRPS class with CLUSTER_UNSTATED;
+    coordinates and locus methods are absent in the exact retained row. The abstract
+    reports a corresponding lipopeptide cluster, but does not independently verify
+    this accession, an exact interval, or the product-to-locus mapping for this named
+    congener.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- assessment_id: SCI823-OCCURRENCE
+  area: evidence
+  topic: Occurrence versus production
+  outcome: not_applicable
+  summary: The owner has no occurrences field and its exact-key LOTUS join is empty.
+    These bounded omissions do not imply absence from nature and do not authorize
+    copying the other 8D1 congener’s occurrence.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- assessment_id: SCI823-CLASSIFICATION
+  area: scope
+  topic: Classification and pathway scope
+  outcome: supported
+  summary: NPClassifier predicts linear peptides, and MIBiG retains NRPS/Type I. The
+    own abstract independently describes two linear lipopeptides, but exact congener
+    chemistry and detailed biosynthesis remain outside the inspected material.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- assessment_id: SCI823-ACTIVITY
+  area: quantity
+  topic: Activity, target and assay scope
+  outcome: unknown
+  summary: No quantitative bioactivity or molecular target is retained. The abstract
+    describes functional antimicrobial screening across several products and clusters;
+    it does not establish an exact endpoint, potency or target for this particular
+    8D1 congener. An empty retained assay join is not a negative assay.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+- assessment_id: SCI823-PROVENANCE
+  area: provenance
+  topic: Source versions and evidence tiers
+  outcome: supported
+  summary: MIBiG BGC0001370 entry version 4, compound_index 2, supplies the structure
+    and biological assertions; retained entry quality is questionable and completeness
+    unknown. The retained compound_index is the entry’s compound index, not assumed
+    publication numbering. NPClassifier npclassifier.gnps2.org@2026-09-07 is a prediction.
+    Repeated database citations and seed histories are not independent experimental
+    support.
+  evidence_ids:
+  - SCI823-LOCAL
+  - SCI823-PM27451447
+  - SCI823-PMC-FRONT
+  target_ids:
+  - naturalproductmech:mibig-73ec255bab
+  dimensions:
+  - name: source_version
+    value: MIBiG BGC0001370 version 4; NPClassifier npclassifier.gnps2.org@2026-09-07.
+    definition: Literal retained versions; source grades and current retrieval timestamps
+      are not release validation.
+    evidence_ids:
+    - SCI823-LOCAL
+  - name: evidence_tier
+    value: Retained databases and model prediction; own PubMed title/abstract and
+      restricted PMC frontmatter only.
+    definition: Evidence actually inspected and its claim limits; metadata is not
+      credited as a whole primary article.
+    evidence_ids:
+    - SCI823-LOCAL
+    - SCI823-PM27451447
+    - SCI823-PMC-FRONT
+findings: []
+actions: []
+limitations:
+- The source set does not include inspected figure pixels or supplementary structure
+  elucidation. Exact natural configuration and current sequence/interval authority
+  remain unverified.
+- Stored taxon, locus and source-version grades are assessed as retained assertions;
+  metadata and predicted classifications do not independently validate every claim.
+- No quantitative activity, target, pathway or causal edge is transferred from a different
+  congener, the producing organism, an enzyme assay or a mixed fraction.
+- 'The scientific assessment is partial: retained source assertions, saved metadata
+  and restricted frontmatter do not independently establish exact natural configuration,
+  strain-specific production, complete locus causality or quantitative activity.'
+- PMC5038051 returned HTTP 200 but no article body; the original failed source guard,
+  access clock and held route are preserved. No retry or alternate request was made.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
