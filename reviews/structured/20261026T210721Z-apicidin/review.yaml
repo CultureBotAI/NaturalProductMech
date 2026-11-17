@@ -1,0 +1,2145 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261026T210721Z-apicidin
+title: Scientific review of apicidin
+started_at: '2026-10-26T19:33:51.927480Z'
+finished_at: '2026-10-26T21:07:21.818470Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: One confirmed major finding concerns title-derived phenotypic classes on
+  two retained HDAC enzyme observations and their generated summary backing. The primary-confirmed
+  0.001 µM pfHDAC-1 value is an enzyme endpoint distinct from parasite proliferation;
+  neither number nor broader activity is rejected. All seven observations and five
+  graph edges remain intact, while the conditional generator/test follow-up, six human
+  assay values, current target grounding and natural stereochemistry remain unresolved.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-category/SKILL.md
+    sha256: 645746a86769610457ad445361746d6d5ccccdd29ddf29fc1ff256d419ff70de
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: PLAN.md
+    sha256: 5360993626369fec5462d45f3cfc68cb1653690ad72de10de6cad32d870e6035
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/aerobactin.yaml
+    sha256: 9bb8cd842d2ca9429bbfe3c66102cfe62da0286eac9931c5dd79b0d1c44e8f24
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/antipain.yaml
+    sha256: fafb90575c74fd54a0ca9054f1f90b0958d5287788639fc431e06d6dc48c5047
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/apicidin.yaml
+    sha256: 29de8c1ca3ae9743e8077f8bf321e212fef69f851a7d4eff96b39f3dcdf49770
+    role: target
+  - path: data/natural_products/amino_acids_and_peptides/arsinothricin.yaml
+    sha256: 66145aa7ca96112f013c073debf372d90942bdec4f67cc4a95f8af3e3893892c
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/arylomycin.yaml
+    sha256: 9900858246be23e009703b36547e84368e3e8d5fcba8a25599efda089c3bbe0c
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/avaroferrin.yaml
+    sha256: 7fa6856179084afa8b1009697ae64ddaf916aa4804ff6f435f3e7e792400eb9e
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/avoparcin.yaml
+    sha256: 8739e963d2e71764510fc1cf4dd4ac9ea08af652ec562c745570583e3fba1cbc
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/azolemycin-a.yaml
+    sha256: b189dab1bfaa24bf0be2bed29a5f51090b0a6a0ab99b5c60fc2d3f4f0344d4c4
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/azolemycin-b.yaml
+    sha256: d2d64fc468f81f0c9c4f20ea4c0ab6f2660543714ea371327882e14f487e8262
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/azolemycin-c.yaml
+    sha256: 22be98b064d2d148fb9293609fcfcd987cba88eb3e0f74a81f88f7417b6b2009
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/azolemycin-d.yaml
+    sha256: 55ac79fb4795db831ed3c17930e43063691861b7b6282837589e1638e5339055
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/ectoine.yaml
+    sha256: 60b091910a3d7469ec27a21ee5b845569b3a87171be2cc6dcae9f42d05b47f8a
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/putrebactin.yaml
+    sha256: fa0c9397a8f29a42ee0588b6a97c38bfe8b3b426ed59b78ee62e413c1f927d79
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/ulleungdin.yaml
+    sha256: e402961d5db98f9223379df1b8add98cc312dbe018f5504e433011b63985959d
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_groups.tsv
+    sha256: f73f228d57d79a1d85a1441efa6829917b1ffecac08cb7bdd4fc855046255f8f
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: data/raw/taxon_names.tsv
+    sha256: 9058b9a99260eb483ea21ce7cc9713fd336177031d883f0b5fb50325c7b2c371
+    role: context
+  - path: data/raw/taxon_non_organism.tsv
+    sha256: f2c1ee257bbbcb0854528196ab1f809d658c27f1c7b2036f7f71f088b52935bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/taxonomy.py
+    sha256: 6b0e780ac79ddd4de1d9ef459749d6c7432df123cb4c1d849c5feae0eab3e5ce
+    role: context
+  - path: tests/test_corpus_integrity.py
+    sha256: 4573cee6b6d03b60430cf067125744eba0665771825ae82abd0e762f4be2ba90
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 560cd80e53eda2bb0021c41f2b4571d583c02bdcfaa8506fccb337ee5065aec5
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 552, batch 056, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 618 of 3116 current
+    records had campaign coverage and 2498 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+targets:
+- target_id: naturalproductmech:mibig-f6e5a95e78
+  path: data/natural_products/amino_acids_and_peptides/apicidin.yaml
+  label: apicidin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/apicidin.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/apicidin.yaml
+    --out /private/tmp/npm-review-work/552/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-26T19:33:54.900771Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch056 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch056. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch056 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch056. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch056 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch056. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch056 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch056. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch056 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch056. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+- check_id: R552-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: ROOT personally read all ten complete owner YAMLs and all seventy local
+    source-row sets, including 26 history events. These original reads are explicitly
+    rebound to the same selected/intake-bound bytes; this is not a fresh full-file
+    reread after intake. Scientific reading covers material identity, asserted producer-versus-occurrence
+    and locus applicability, classifications, and the seven existing apicidin observations
+    and two inline graphs/five edges. Reading a claim does not validate it. Three
+    blank-AID rows at 555, 556 and 560 are no-assay provenance. Exact natural structures,
+    current chemical/protein/naming/taxon authorities and the source checks identified
+    in the separate scientific adjudication remain unresolved; all authority holds
+    persist without new attempts or rejections.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-LOCAL
+  - R552-PUBCHEM-PREP
+- check_id: R552-CURRENT-TAXONOMY
+  name: Required current taxonomy identifier context
+  status: unavailable
+  required: true
+  summary: 'Retained local identifier/label assertions only: NCBITaxon:1894967: Fusarium
+    incarnatum; NCBITaxon:298378: Fusarium incarnatum. Current authoritative naming,
+    rank, parent, synonyms and resolution remain unavailable under the existing hold.
+    No producer, stock, taxon or compound merger is inferred.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-LOCAL-NAMING
+  - R552-NAMING-HOLD
+- check_id: R552-CURRENT-WIKIDATA
+  name: Required current literal organism routing
+  status: unavailable
+  required: true
+  summary: The exact retained LOTUS occurrence route and original citation are mechanically
+    preserved. Current Wikidata P225/P685 validation is unavailable; no matching,
+    missing-property, failed-route or occurrence exclusion is inferred.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-LOCAL-NAMING
+  - R552-NAMING-HOLD
+- check_id: S552-C-LOCAL
+  name: actual local sources and explicit reading provenance
+  status: passed
+  required: true
+  summary: All seventy current source sets and ten intake bindings were checked mechanically;
+    original ROOT read masks and clocks are explicitly attributed. This is not a claim
+    that the future author has executed.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+- check_id: S552-C-SOURCE-TIER
+  name: bounded named-source evidence
+  status: passed
+  required: true
+  summary: The obtained primary text identifies apicidin as compound 7 and separates
+    pfHDAC-1 enzyme inhibition from parasite proliferation. The retained 0.001 uM
+    agrees with the enzyme cell in Table 2. All seven raw assay rows and seven owner
+    observations, plus two inline graphs and five edges, were read. Local static classifier
+    tracing confirms article-title context supplies two phenotypic observation classes.
+    The own 2010 Fusarium abstract reports functional cluster characterization for
+    F. semitectum KCTC16676; its exact relationship to current producer/taxon and
+    record grades remains unresolved.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+  - S552-E-METADATA-READ
+  - S552-E-META-01
+  - S552-E-META-02
+  - S552-E-META-03
+  - S552-E-META-04
+  - S552-E-META-05
+  - S552-E-META-06
+  - S552-E-META-07
+  - S552-E-META-08
+  - S552-E-API-MATERIAL
+  - S552-E-API-TABLE
+  - S552-E-API-CONSUMER-01
+  - S552-E-API-CONSUMER-02
+  - S552-E-API-CONSUMER-03
+  - S552-E-API-CONSUMER-04
+  - S552-E-API-CONSUMER-05
+  - S552-E-API-CONSUMER-06
+  - S552-E-API-CONSUMER-07
+  - S552-E-API-CONSUMER-08
+  - S552-E-API-CONSUMER-09
+  - S552-E-ACCESS-18308563
+  - S552-E-ACCESS-18370373
+  - S552-E-APICIDIN-ASSESSMENT
+- check_id: S552-C-REQUIRED-SOURCE
+  name: complete source-specific depiction, locus and authority closure
+  status: unavailable
+  required: true
+  summary: Six human-HDAC measurements and four human-target edges have not been verified
+    against their primary tables. No assertion that their numbers or target identities
+    are wrong is made. Current UniProt, organism/naming and chemical authorities remain
+    unattempted under existing holds. Historical PFI1260c is stated in the obtained
+    paper; current protein-identifier equivalence is not independently verified. The
+    retained unknown side-chain stereochemical site and exact natural form remain
+    unresolved. Imported producer/locus and occurrence roles are not upgraded or merged.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+  - S552-E-METADATA-READ
+  - S552-E-META-01
+  - S552-E-META-02
+  - S552-E-META-03
+  - S552-E-META-04
+  - S552-E-META-05
+  - S552-E-META-06
+  - S552-E-META-07
+  - S552-E-META-08
+  - S552-E-API-MATERIAL
+  - S552-E-API-TABLE
+  - S552-E-API-CONSUMER-01
+  - S552-E-API-CONSUMER-02
+  - S552-E-API-CONSUMER-03
+  - S552-E-API-CONSUMER-04
+  - S552-E-API-CONSUMER-05
+  - S552-E-API-CONSUMER-06
+  - S552-E-API-CONSUMER-07
+  - S552-E-API-CONSUMER-08
+  - S552-E-API-CONSUMER-09
+  - S552-E-ACCESS-18308563
+  - S552-E-ACCESS-18370373
+  - S552-E-APICIDIN-ASSESSMENT
+- check_id: S552-C-ENDPOINT
+  name: endpoint-classification and summary evidence placement
+  status: failed
+  required: true
+  summary: Endpoint-to-class evidence attribution by the maintained generator, demonstrated
+    on two retained enzyme observations. The primary-confirmed minimum case is AID1799021;
+    AID1798524 independently shows the same title-context classification mechanism
+    in the retained raw assertion.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+  - S552-E-METADATA-READ
+  - S552-E-META-01
+  - S552-E-META-02
+  - S552-E-META-03
+  - S552-E-META-04
+  - S552-E-META-05
+  - S552-E-META-06
+  - S552-E-META-07
+  - S552-E-META-08
+  - S552-E-API-MATERIAL
+  - S552-E-API-TABLE
+  - S552-E-API-CONSUMER-01
+  - S552-E-API-CONSUMER-02
+  - S552-E-API-CONSUMER-03
+  - S552-E-API-CONSUMER-04
+  - S552-E-API-CONSUMER-05
+  - S552-E-API-CONSUMER-06
+  - S552-E-API-CONSUMER-07
+  - S552-E-API-CONSUMER-08
+  - S552-E-API-CONSUMER-09
+  - S552-E-ACCESS-18308563
+  - S552-E-ACCESS-18370373
+  - S552-E-APICIDIN-ASSESSMENT
+- check_id: C552-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: The current owner, actual intake and complete MIBiG row agree in Standard
+    InChI/full-key and fixed-H comparisons. This validates retained representation
+    agreement only. Stored stereo_complete is false and the Standard InChI explicitly
+    retains t22?. The reported index41 and InChI atom22 use different numbering conventions.
+    Their agreement with the source row does not close that stereochemical gap.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+- check_id: C552-C-LITERAL-SCOPE
+  name: Required current source or literal chemical authorities
+  status: unavailable
+  required: true
+  summary: All 22 current literal roles and 19 identifier/version tuples remain unattempted
+    under inherited authority holds. No new rejection, permission question, response
+    or authority HTTP clock is inferred. Ordinary literature is separate.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+- check_id: C552-C-PRIMARY-SCOPE
+  name: Named primary constitution and exact depiction applicability
+  status: unavailable
+  required: true
+  summary: Apicidin retains one undefined side-chain centre; stored t22? and diagnostic
+    input index41 use different numbering conventions. The obtained own article identifies
+    apicidin as compound 7, but exact natural-form and missing-hand correspondence
+    remain unresolved. The separately ROOT-selected endpoint-classification finding
+    belongs to the science/assay component and is not repeated as a chemical identity
+    issue.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+- check_id: C552-C-SOURCE-PRECISION
+  name: Original geometry and stereochemical precision
+  status: unavailable
+  required: true
+  summary: Stored stereo_complete is false and the Standard InChI explicitly retains
+    t22?. The reported index41 and InChI atom22 use different numbering conventions.
+    Their agreement with the source row does not close that stereochemical gap. Exact
+    natural depiction, hand and form correspondence are not closed; no replacement
+    or normalization is selected.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+evidence:
+- evidence_id: R552-OWNER
+  kind: record_content
+  reference: data/natural_products/amino_acids_and_peptides/apicidin.yaml
+  locator: Original prior ROOT owner read and exact post-intake mechanical binding;
+    no fresh full-file reread claimed
+  accessed_at: '2026-10-26T20:36:49.927393Z'
+  support: supports
+  summary: Actual post-intake equality preserves 1 occurrence, 1 producer and 1 locus
+    assertions, optional fields and history. The resolved view contains 0 exactly
+    pinned external component(s). The separate ROOT scientific assessment retains
+    its approved material/stock boundaries, scientific gaps and claim-level source
+    limits.
+  snapshot_sha256: 29de8c1ca3ae9743e8077f8bf321e212fef69f851a7d4eff96b39f3dcdf49770
+- evidence_id: R552-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/552/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-26T20:36:49.927393Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: f0166e5ac82f37b1d20bc0dd20c75d35f70ea1f6bb26df26fc322f2e219242cd
+- evidence_id: R552-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained assay-row inventory
+  accessed_at: '2026-10-26T20:36:49.927393Z'
+  support: context_only
+  summary: This owner has 7 retained rows and 7 written observations. The three blank-AID
+    rows at 555, 556 and 560 are no-data sentinels. Record552 separately has seven
+    AID-bearing rows, seven emitted observations and two inline graphs/five edges.
+    Exact inventory equality alone does not verify an endpoint class, target, potency
+    or experimental result; bounded scientific adjudication is recorded separately.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R552-NAMING-HOLD
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/root-context/root-current56-context-data-peer-acceptance-001.json
+  locator: ROOT acceptance of the local naming packet; no batch 56 authority request
+    or response
+  accessed_at: '2026-10-26T20:32:52.198386Z'
+  support: context_only
+  summary: Current naming is unattempted under the existing export hold. The prior
+    batch 51 approval remains unresolved; no explicit batch 56 approval question,
+    individual rejection, returned taxonomy/Wikidata object or HTTP clock is claimed.
+  snapshot_sha256: b9f98f6437029ec650ded2b3e800f1fbd4c47ff81e741523553b760023c280ff
+- evidence_id: R552-LOCAL-NAMING
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/root-authoring/source-plan-14373517-v1.json
+  locator: Exact local taxon labels and literal LOTUS routing retained without current
+    validation
+  accessed_at: '2026-10-26T20:33:02.583727Z'
+  support: context_only
+  summary: 'Retained local identifier/label assertions only: NCBITaxon:1894967: Fusarium
+    incarnatum; NCBITaxon:298378: Fusarium incarnatum. Current authoritative naming,
+    rank, parent, synonyms and resolution remain unavailable under the existing hold.
+    No producer, stock, taxon or compound merger is inferred. The exact retained LOTUS
+    occurrence route and original citation are mechanically preserved. Current Wikidata
+    P225/P685 validation is unavailable; no matching, missing-property, failed-route
+    or occurrence exclusion is inferred.'
+  snapshot_sha256: 4cf3f7a80d943a90a5a7d208e3590e46b22fd62726a3d46a2a5cfec87db61aea
+- evidence_id: R552-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete retained 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-22T04:52:27.596517Z'
+  support: context_only
+  summary: The historical catalogue contains 20 organisms and 28 datasets at its original
+    access clock. It supplies context only, with no exact-stock, compound, gene or
+    module association and no current naming lookup.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S552-E-ACTUAL-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/552/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-26T20:43:42.022484Z'
+  support: context_only
+  summary: Complete actual raw owner/history, exact component expansion and all seven
+    source sets match mechanically. Bounded scientific source claims and remaining
+    graph limitations are recorded in the target plan; no complete graph validation
+    is implied.
+  snapshot_sha256: f0166e5ac82f37b1d20bc0dd20c75d35f70ea1f6bb26df26fc322f2e219242cd
+- evidence_id: S552-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: 'Current pinned source consumers: occurrence versus producer placement,
+    method grading and exact maintained correction guards; no source-specific endpoint
+    promotion'
+  accessed_at: '2026-10-26T20:43:42.022484Z'
+  support: context_only
+  summary: Static inspection covers exact source method grading, producer/reference
+    qualification and consumed correction ordering. Current shared-structure replacement
+    and consolidated discussions are separate capabilities; they do not select identity
+    changes or broaden source endpoints.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S552-E-GENERIC-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-26T20:43:42.022484Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S552-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/552/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-26T20:43:42.031338Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: b4bb9301ad14a7d7125a6d2bbb010f8725e693a110f10279a7610193a005b565
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S552-E-ACCESS-18308563
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-primary-002/pmid18308563-publisher-original.xml
+  locator: Complete response body classification and exact access receipt; no scientific-content
+    extraction
+  accessed_at: '2026-10-26T20:16:07.108088Z'
+  support: context_only
+  summary: The returned complete XML contains own bibliographic coredata only, with
+    no article body or abstract. It does not verify the retained human-HDAC endpoints;
+    openaccess0 in this response is not a global free-access claim.
+  snapshot_sha256: 83559e44b03f58a1401d8277837720407f4d51a0c3f2e3ff7517c829db9aec88
+- evidence_id: S552-E-ACCESS-18370373
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-primary-002/pmid18370373-publisher-original.pdf
+  locator: Complete response body classification and exact access receipt; no scientific-content
+    extraction
+  accessed_at: '2026-10-26T20:16:07.246636Z'
+  support: context_only
+  summary: The publisher PDF URL returned HTTP403 challenge HTML, not a PDF or scientific
+    article body. No retry or alternative was attempted.
+  snapshot_sha256: bfba98e6753a74b94cc7362846569a79332d60782bc47d622776127c72b227e0
+- evidence_id: S552-E-API-CONSUMER-01
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 128–178 inclusive; SHA256 dd0d9bd2c15c4c0efd5f8c1b36e296e1882f49e9e877e3b34f3b3cc5969556f6
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: Narrow-classification intent, broad article-title matching and specific-class
+    precedence.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S552-E-API-CONSUMER-02
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 1339–1359 inclusive; SHA256 d4a1c1fd53cfc744605beafc89d82da325cb1adf08f975b77ef5cb9f585ef3e7
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: Measurement, target, and activity class are attached separately to the
+    same observation.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S552-E-API-CONSUMER-03
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 1376–1381 inclusive; SHA256 413ff1642d8785d7ebed575ed28c9a87aab98f8536a9f2f052e9f087e9851667
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: Active classified observations contribute their classes to the derived
+    summary.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: S552-E-API-CONSUMER-04
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 631–653 inclusive; SHA256 4daf754baf87a449e1a79c622b7b3505bc047f83681d69cf1b5afeb80af02b51
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: One measured activity, with class and assay method on the same observation.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S552-E-API-CONSUMER-05
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 920–940 inclusive; SHA256 13f915670642f59d8bedef12a0836ae1bd5ad86bc51aa720c0709ea190f56218
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: The vocabulary is coarse but separates antiparasitic, cytotoxic and enzyme-inhibitor
+    buckets.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S552-E-API-CONSUMER-06
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  locator: Lines 278–325 inclusive; SHA256 a189e1654f757f6230467fb90ae982a9c873ec8b8b567fab0b8b6b224fc6ba5c
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: Maintained generator ownership, narrowest-object evidence and summary backing
+    rules.
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+- evidence_id: S552-E-API-CONSUMER-07
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  locator: Lines 195–214 inclusive; SHA256 6576656979e871cd2a373ec4a8a1973d7bea639801da1cfd7266f0406b46f4b1
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: Row exclusion removes a whole reviewed assertion; it is not an endpoint-class
+    repair.
+  snapshot_sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+- evidence_id: S552-E-API-CONSUMER-08
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/tests/test_seed_skeleton.py
+  locator: Lines 1013–1068 inclusive; SHA256 a703e1fc0e8881bd0d2a6637c0c174bba7f447fca3de14929e6ad66a7f6f0159
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: Existing unit tests document narrow classification, derived backing and
+    title-specific counterscreen distinction; read only, not executed.
+  snapshot_sha256: 560cd80e53eda2bb0021c41f2b4571d583c02bdcfaa8506fccb337ee5065aec5
+- evidence_id: S552-E-API-CONSUMER-09
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/tests/test_corpus_integrity.py
+  locator: Lines 158–212 inclusive; SHA256 0a6c8c49791fcdb62a869d7cb650c946d3cf7db970b92dc87bb8e8a47bbabc53
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: Current structural backing checks trace classes but do not by themselves
+    verify that a title-derived class denotes the measured endpoint; read only, not
+    executed.
+  snapshot_sha256: 4573cee6b6d03b60430cf067125744eba0665771825ae82abd0e762f4be2ba90
+- evidence_id: S552-E-API-MATERIAL
+  kind: primary_source
+  reference: PMID:19317450
+  locator: BioC document[0]/passage[5]/text raw Unicode [610:620), SHA256 f32ace9cf92c7271aeb639d00dbd345619f16a05a9fc62a63a9d38ab2bbf699a
+  accessed_at: '2026-10-26T20:01:59.488953Z'
+  support: partial
+  summary: The introduction identifies apicidin as compound 7.
+  snapshot_sha256: 7572bfd4e62f4fd1a18afb80b10d0aff27d953503507acd70865b6c278f737a8
+- evidence_id: S552-E-API-TABLE
+  kind: primary_source
+  reference: PMID:19317450
+  locator: BioC passage[15]/infon[@key=xml], table tbl2, row first td=7, separate
+    pfHDAC-1 and P.falciparum3D7 columns; embedded XML SHA256 fa97a95b354937f548f0c8b78183fadb87341877e5d82e8e7bcb7e57299fe03b
+  accessed_at: '2026-10-26T20:01:59.488953Z'
+  support: partial
+  summary: The retained 0.001 µM matches the enzyme column, while the same named material
+    has a separate parasite-proliferation result. That comparator is used only to
+    disambiguate the existing row, not to add a new observation.
+  snapshot_sha256: 7572bfd4e62f4fd1a18afb80b10d0aff27d953503507acd70865b6c278f737a8
+- evidence_id: S552-E-APICIDIN-ASSESSMENT
+  kind: prior_review
+  reference: /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/bgc-science-apicidin552-endpoint-classification-assessment-001.json
+  locator: guarded_observations, primary_evidence, source_contract_locators and critical_alternative
+  accessed_at: '2026-10-26T20:18:06.394239Z'
+  support: context_only
+  summary: The static classifier trace and exact two guarded observations establish
+    endpoint/title-context attribution concerns. The primary minimum is compound 7
+    Table 2 enzyme inhibition; no raw measurement is rejected.
+  snapshot_sha256: cf49c6e10bf127b8db9ef45898cc35762f162f2d2421b2b21dfa03ff76d7aec0
+- evidence_id: S552-E-FORMAL-BINDING
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/provisional-science-551-555/current-official56-source-binding-prepared-001.json
+  locator: Complete prepared current data object
+  accessed_at: '2026-10-26T20:35:18.483603Z'
+  support: context_only
+  summary: Actual selection, intakes and ROOT adjudication are bound. Author execution
+    and final source acceptance remain pending.
+  snapshot_sha256: ba5ce90a8d257cf672ac5227ad3d851d2ec79028b514c88d8b7688b270058d3e
+- evidence_id: S552-E-GUARDS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/provisional-science-551-555/source-row-guards.json
+  locator: Complete prepared current data object
+  accessed_at: '2026-10-26T20:35:18.483603Z'
+  support: context_only
+  summary: All seventy exact current source-row sets with full original rows and strict
+    owner pins.
+  snapshot_sha256: e92db8f5808400fe07a70bb719068ad96522cc3c1f44242b19f252a1c5b9921a
+- evidence_id: S552-E-INTAKE-VIEW
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/provisional-science-551-555/expected-intake-view-mechanical-001.json
+  locator: Complete prepared current data object
+  accessed_at: '2026-10-26T20:35:18.483603Z'
+  support: context_only
+  summary: Actual ten raw/expanded intake objects match mechanically; scientific reading
+    is separately attributed.
+  snapshot_sha256: 5b6c6ccb1fcaf4c6520599f384d7f892e3bb6eac7d31783057b94d998ff1c288
+- evidence_id: S552-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/owner-source-inventory.json
+  locator: entries[order=551..560], complete resolved owners and seven rows sets
+  accessed_at: '2026-10-26T19:43:29.570037Z'
+  support: context_only
+  summary: Exact ten retained owner objects, source roles and seventy matched source
+    sets; inventory creation itself is mechanical.
+  snapshot_sha256: 7b1e17e5dc963c1f52bd94b4125a2dd50030b0f9e79eda03a3849cdf20501b4e
+- evidence_id: S552-E-LOCAL-ROOT
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/root-local-owner-source-read-001.json
+  locator: manual_flags and read_basis; original owner/raw clocks retained
+  accessed_at: '2026-10-26T20:25:21.402589Z'
+  support: context_only
+  summary: ROOT explicitly rebinds prior complete owner/raw reads to actual selected/intake
+    bytes. All ten read masks mean read scope, not verification of every assertion.
+  snapshot_sha256: c668b577c77cd22942ce04028b4d1ccb88ef312803c042b19b69175bf7aacd7b
+- evidence_id: S552-E-META-01
+  kind: primary_source
+  reference: PMID:18308563
+  locator: PubmedArticle[0]/MedlineCitation/Article/Abstract plus PubmedData/ArticleIdList
+    (own article only)
+  accessed_at: '2026-10-26T19:44:55.807765Z'
+  support: partial
+  summary: The own abstract concerns vertebrate class IIa histone-deacetylase catalytic
+    activity. It supplies article-level context, not verification of the six retained
+    human-HDAC measurements or current protein identifiers.
+  snapshot_sha256: 3d71b5ae76c324678734a8b38ff534fd0666dbebce6164833885ff7259c7b113
+- evidence_id: S552-E-META-02
+  kind: primary_source
+  reference: PMID:18370373
+  locator: PubmedArticle[0]/MedlineCitation/Article/Abstract plus PubmedData/ArticleIdList
+    (own article only)
+  accessed_at: '2026-10-26T19:44:56.757394Z'
+  support: partial
+  summary: The own abstract concerns ketone histone-deacetylase inhibitors and broader
+    antitumor context. It does not establish that the retained 0.044 uM enzyme observation
+    measured cytotoxicity.
+  snapshot_sha256: 181f38056cc4404391e2747286829ca4e976131b00e4780c409c1a11544537fc
+- evidence_id: S552-E-META-03
+  kind: primary_source
+  reference: PMID:19317450
+  locator: PubmedArticle[0]/MedlineCitation/Article/Abstract plus PubmedData/ArticleIdList
+    (own article only)
+  accessed_at: '2026-10-26T19:44:57.894836Z'
+  support: partial
+  summary: The own abstract concerns inhibition of a Plasmodium histone deacetylase.
+    Exact enzyme-versus-proliferation support is taken separately from the obtained
+    Table 2.
+  snapshot_sha256: 462a2fb45f6ae5d908cb8d52d9392284c9db37714718ce4db80693be4089b96e
+- evidence_id: S552-E-META-04
+  kind: database
+  reference: doi:10.1016/j.bmcl.2008.02.025
+  locator: message.DOI/title; no reference-list identity transfer
+  accessed_at: '2026-10-26T19:44:58.867503Z'
+  support: context_only
+  summary: Own bibliographic fields are retained as citation context. This source
+    does not independently verify the exact retained structure, stock, locus or endpoint.
+  snapshot_sha256: cd2f9d42a498e2b3f13e955db117d63d88a9fb5e28ee57178020aca7dada536d
+- evidence_id: S552-E-META-05
+  kind: database
+  reference: doi:10.1021/jm800079s
+  locator: message.DOI/title; no reference-list identity transfer
+  accessed_at: '2026-10-26T19:44:59.835710Z'
+  support: context_only
+  summary: Own bibliographic fields are retained as citation context. This source
+    does not independently verify the exact retained structure, stock, locus or endpoint.
+  snapshot_sha256: e1db92b5d936b4534854127aa9b13341a3192ce2413a31e1e009daf2f7a5b8f0
+- evidence_id: S552-E-META-06
+  kind: database
+  reference: doi:10.1021/jm801654y
+  locator: message.DOI/title; no reference-list identity transfer
+  accessed_at: '2026-10-26T19:45:00.905908Z'
+  support: context_only
+  summary: Own bibliographic fields are retained as citation context. This source
+    does not independently verify the exact retained structure, stock, locus or endpoint.
+  snapshot_sha256: cf66952d568b4fc7937ac236beac333b21e7deda05178fd3fe9a493e1bde84de
+- evidence_id: S552-E-META-07
+  kind: database
+  reference: doi:10.1073/pnas.93.23.13143
+  locator: message.DOI/title/abstract; no reference-list identity transfer
+  accessed_at: '2026-10-26T19:45:01.863739Z'
+  support: context_only
+  summary: Own bibliographic fields and the deposited abstract are retained as citation
+    context. This source does not independently verify the exact retained structure,
+    stock, locus or endpoint.
+  snapshot_sha256: 7d50c209ec0e8307adc00fb780e6e6681d5ddec3d63104c02aaf8af71df5068b
+- evidence_id: S552-E-META-08
+  kind: primary_source
+  reference: doi:10.1111/j.1365-2958.2010.07109.x
+  locator: message.DOI/title/abstract; no reference-list identity transfer
+  accessed_at: '2026-10-26T19:45:02.873464Z'
+  support: partial
+  summary: The publisher-deposited abstract describes functional characterization
+    of the apicidin cluster in F. semitectum KCTC16676. Exact correspondence to retained
+    producer and taxon assertions remains unresolved.
+  snapshot_sha256: 26293b81bfd519a131d0140093c77098025a3d92ba85454b114ab4bec50ba326
+- evidence_id: S552-E-METADATA-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/root-actual56-metadata19-observation-and-abstract-read-001.json
+  locator: readings and limits
+  accessed_at: '2026-10-26T19:46:52.342994Z'
+  support: context_only
+  summary: ROOT read all nineteen own metadata responses; fourteen contain abstracts.
+    Metadata retrieval is distinct from complete article-body evidence.
+  snapshot_sha256: 9a5d91280177e6e6067aae316079b284c5bde8162f61045fd86b3d581be79c14
+- evidence_id: S552-E-ROOT-CONTEXT
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/root-context/actual-local-root-context-dependency-analysis-001.json
+  locator: entries, taxon_field_provenance, naming_access_state and limitations
+  accessed_at: '2026-10-26T20:29:12.259747Z'
+  support: context_only
+  summary: Current literal names, occurrence routes and history are local assertions;
+    all current authority requests remain unattempted.
+  snapshot_sha256: 696470f4843598bbd3d0a5fff76b6373aa23e57ef21cb55892190885365a4bb6
+- evidence_id: S552-E-SOURCE-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/root-scientific-adjudication-001.json
+  locator: records[order=551..560], scope and source_boundary
+  accessed_at: '2026-10-26T20:25:21.403056Z'
+  support: context_only
+  summary: 'ROOT-selected bounded scientific judgments: all ten partial, sole 552
+    major confirmed endpoint/evidence-placement issue, and 556 title-only scientific_review
+    false. These judgments do not upgrade source tiers or natural identity.'
+  snapshot_sha256: 53a65ee87e3d8311e0180dcb6de5872e690c8fb2ab0a267b894ba3601ea688a6
+- evidence_id: C552-OWNER
+  kind: record_content
+  reference: data/natural_products/amino_acids_and_peptides/apicidin.yaml
+  locator: Complete owner bytes and seven matching source-row sets mechanically checked;
+    manual chemical identity scope only
+  accessed_at: '2026-10-26T20:41:04.860918Z'
+  support: supports
+  summary: 'The chemical identity fields denote apicidin under naturalproductmech:mibig-f6e5a95e78.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "8273ddf8d09969ed68a9342b6ddaff65d1fd75773d688ceab820b7b3f9b68a7d",
+    "selector": "BGC0000304:1", "version": "4"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: 29de8c1ca3ae9743e8077f8bf321e212fef69f851a7d4eff96b39f3dcdf49770
+- evidence_id: C552-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/552/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-26T19:33:53.019382Z'
+  support: supports
+  summary: 'The stored full key remains JWOGUUIOCYMBPV-LQJYRIKDSA-N; the retained
+    SMILES recomputes to JWOGUUIOCYMBPV-LQJYRIKDSA-N, formula C34H49N5O6, formal charge
+    0. Exact stored comparisons: InChI=True, full key=True. Literal InChI formula/layers
+    and derived metal/component diagnostics remain separate; no normalization or experimental
+    identity proof is inferred.'
+  snapshot_sha256: ba50ca76d50b8a955ecc9649bb8325307c631b5e3fccc338bbf306c6160f91d2
+- evidence_id: C552-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/retained-graph-comparison.json
+  locator: Record 552; exact source rows and each graph comparison
+  accessed_at: '2026-10-26T19:51:08.589347Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 1b0d2362f1b515fd89a4f29b852a65b5bf0ae25fd2b3a7186e2496989c6050df
+- evidence_id: C552-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/552/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-26T20:41:05.272152Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: f193a3b071c7c54d6ebac5036bf9f182f2b37d951fd08857bbe5862df7c27e14
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C552-AUTHORITY-AVAILABILITY
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/author-template-preparation/authority-limited-source-projection-prepared-001.json
+  locator: Retained raw/versioned channels and explicitly unavailable current literal
+    roles
+  accessed_at: '2026-10-26T20:22:33.066840Z'
+  support: partial
+  summary: This is an availability and retained-source projection, not a fresh current-authority
+    numerical comparison. Required held roles are not asserted absent, matching or
+    mismatching.
+  snapshot_sha256: 7fc5125578c3659a1e2b60ca945d1eb45a795b52bd20271115e12f742ded64bd
+- evidence_id: C552-AUTHORITY-DETAIL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/author-template-preparation/source-plan-prepared-001.json
+  locator: Retained raw/versioned channels and explicitly unavailable current literal
+    roles
+  accessed_at: '2026-10-26T20:28:41.675576Z'
+  support: partial
+  summary: This is an availability and retained-source projection, not a fresh current-authority
+    numerical comparison. Required held roles are not asserted absent, matching or
+    mismatching.
+  snapshot_sha256: 953dd050da0568b8429e38efe32f14dde4925c80300402ab77c51af10c9d8d40
+- evidence_id: C552-RETAINED
+  kind: validation
+  reference: local:batch056-retained
+  locator: entries[1]; exact owner/raw stored and computed representations; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/retained-graph-comparison.json
+  accessed_at: '2026-10-26T19:51:08.589347Z'
+  support: partial
+  summary: Actual diagnostic owner Standard InChI/full-key and matching raw Standard/fixed-H
+    comparisons agree. This establishes internal representation fidelity only.
+  snapshot_sha256: 1b0d2362f1b515fd89a4f29b852a65b5bf0ae25fd2b3a7186e2496989c6050df
+- evidence_id: C552-ENCODING-NOTES
+  kind: prior_review
+  reference: local:batch056-retained-encoding-read
+  locator: entries[1]; retained_form_read and stereochemistry_and_identity_limits;
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/retained-chemical-encoding-reading-notes-001.json
+  accessed_at: '2026-10-26T19:59:04.696133Z'
+  support: partial
+  summary: The retained macrocyclic amide encoding includes an N-methoxy aromatic
+    unit, a long ketone-bearing side chain and the terminal C(C)CC branch in the literal
+    SMILES. The diagnostic lists four assigned centres and one undefined centre at
+    input index41. The undefined branch carbon is the first C in that C(C)CC side
+    chain; no hand is selected. Stored stereo_complete is false and the Standard InChI
+    explicitly retains t22?. The reported index41 and InChI atom22 use different numbering
+    conventions. Their agreement with the source row does not close that stereochemical
+    gap.
+  snapshot_sha256: f210c1d610fd19e51faa261fcf4c2f93bc3044690e3b4978aab878321f7df2e3
+- evidence_id: C552-DIAGNOSTIC-ROOT
+  kind: prior_review
+  reference: local:batch056-diagnostic-acceptance
+  locator: Actual diagnostic and independent-output fidelity acceptance; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/diagnostic-preparation/root-actual56-retained-diagnostic-peer-acceptance-001.json
+  accessed_at: '2026-10-26T19:55:06.573971Z'
+  support: partial
+  summary: ROOT accepted the actual local diagnostic and independent fidelity peer.
+    Original undefined-stereo warnings remain run-level observations and are not attributed
+    to individual records.
+  snapshot_sha256: 7610937936253ad62984cb23e95ea9ad427f2bebbfa202d791583dc8daf4d5e7
+- evidence_id: C552-ENCODING-ROOT
+  kind: prior_review
+  reference: local:batch056-encoding-acceptance
+  locator: Accepted bounded retained-encoding reading notes; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/root-retained56-chemical-encoding-notes-own-read-001.json
+  accessed_at: '2026-10-26T19:59:40.556195Z'
+  support: partial
+  summary: ROOT accepted the retained encoding notes as a bounded representation read;
+    natural primary identity remained a separate question.
+  snapshot_sha256: 77a02bf34b68bfc1f367138f46a349670a532555d0287a46dff28d3e2e8713be
+- evidence_id: C552-INVENTORY
+  kind: record_content
+  reference: local:batch056-actual-inventory
+  locator: entries[1]; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/owner-source-inventory.json
+  accessed_at: '2026-10-26T19:43:29.570037Z'
+  support: partial
+  summary: Exact selected owner and all seven local source sets are mechanically bound
+    to actual intakes. This does not make a whole-owner chemical or biological verification
+    claim.
+  snapshot_sha256: 7b1e17e5dc963c1f52bd94b4125a2dd50030b0f9e79eda03a3849cdf20501b4e
+- evidence_id: C552-AUTH-HOLD
+  kind: record_content
+  reference: local:batch056-authority-hold
+  locator: entries[1]; hold_boundary; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/chemistry-prep/authority-hold-and-verification-plan-001.json
+  accessed_at: '2026-10-26T20:22:33.066840Z'
+  support: context_only
+  summary: All 22 literal authority roles and 19 identifier/version tuples remain
+    unattempted under inherited holds. Ordinary literature access is separate; no
+    new authority response, rejection, approval question or HTTP clock is inferred.
+  snapshot_sha256: 2380a02b7f1cb9a3d3754ac9dfbff7d54e1a9439789daec0bbb123751f5da8cd
+- evidence_id: C552-ROOT-SOURCE-SCOPE
+  kind: prior_review
+  reference: local:batch056-root-scientific-adjudication
+  locator: records[1]; evidence_tier and chemical-form limits; chemical_findings=[];
+    retained snapshot /private/tmp/npm-review-work/shared-next-batch056/root-scientific-adjudication-001.json
+  accessed_at: '2026-10-26T20:25:21.403056Z'
+  support: partial
+  summary: Apicidin retains one undefined side-chain centre; stored t22? and diagnostic
+    input index41 use different numbering conventions. The obtained own article identifies
+    apicidin as compound 7, but exact natural-form and missing-hand correspondence
+    remain unresolved. The separately ROOT-selected endpoint-classification finding
+    belongs to the science/assay component and is not repeated as a chemical identity
+    issue.
+  snapshot_sha256: 53a65ee87e3d8311e0180dcb6de5872e690c8fb2ab0a267b894ba3601ea688a6
+- evidence_id: C552-ROOT-LOCAL-SCOPE
+  kind: prior_review
+  reference: local:batch056-root-local-reading
+  locator: manual_flags.552; scope and prior read_basis; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/root-local-owner-source-read-001.json
+  accessed_at: '2026-10-26T20:25:21.402589Z'
+  support: context_only
+  summary: ROOT rebound its earlier owner/raw manual reads to actual selected bytes.
+    This evidence retains ROOT authorship and does not promote chemistry whole-owner,
+    all-row, graph or assay flags.
+  snapshot_sha256: c668b577c77cd22942ce04028b4d1ccb88ef312803c042b19b69175bf7aacd7b
+- evidence_id: C552-LITERATURE-ACCESS-1
+  kind: record_content
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=18308563&retmode=xml
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-metadata-001/metadata-c96079ab1f5b.access.json
+  accessed_at: '2026-10-26T19:44:55.807765Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: 77eead00ed2b9047ff4cdfb7fe33e3ee41700056779b949ae8ff1b468f2fc149
+- evidence_id: C552-LITERATURE-ACCESS-2
+  kind: record_content
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=18370373&retmode=xml
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-metadata-001/metadata-b9124472c7ef.access.json
+  accessed_at: '2026-10-26T19:44:56.757394Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: eaa89756830b4bb4fb7fcbcd31d95624c1ec8674b03252ed9519ded921f4684d
+- evidence_id: C552-LITERATURE-ACCESS-3
+  kind: record_content
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=19317450&retmode=xml
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-metadata-001/metadata-184fda8e2137.access.json
+  accessed_at: '2026-10-26T19:44:57.894836Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: aae5da85ba7d36b0fd6b88fa46200afb00e6d9959d33cbc63333f90462f7a023
+- evidence_id: C552-LITERATURE-ACCESS-4
+  kind: record_content
+  reference: https://api.crossref.org/works/10.1016%2Fj.bmcl.2008.02.025
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-metadata-001/metadata-d6515b07adc8.access.json
+  accessed_at: '2026-10-26T19:44:58.867503Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: 4230edafa7948d1ecd50d8ea00bc5a6fbd81ae235d823719b6a2a77bf8cac7a6
+- evidence_id: C552-LITERATURE-ACCESS-5
+  kind: record_content
+  reference: https://api.crossref.org/works/10.1021%2Fjm800079s
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-metadata-001/metadata-20a54abd12bd.access.json
+  accessed_at: '2026-10-26T19:44:59.835710Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: 90ccc522bd0d17fe4fc825b33f1978e51dc220c9e8f06096b6480415d151bc51
+- evidence_id: C552-LITERATURE-ACCESS-6
+  kind: record_content
+  reference: https://api.crossref.org/works/10.1021%2Fjm801654y
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-metadata-001/metadata-d1dbf7453bb2.access.json
+  accessed_at: '2026-10-26T19:45:00.905908Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: edb45be73b66df7c51f9641da7b424ae42c5cdf68c55d68fc8d1b7b3e7010bd7
+- evidence_id: C552-LITERATURE-ACCESS-7
+  kind: record_content
+  reference: https://api.crossref.org/works/10.1073%2Fpnas.93.23.13143
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-metadata-001/metadata-68037a314a83.access.json
+  accessed_at: '2026-10-26T19:45:01.863739Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: cf042888bb2b7fc07c380fee6c83a10b83fced6bf4918c09a7ab8c0235f21348
+- evidence_id: C552-LITERATURE-ACCESS-8
+  kind: record_content
+  reference: https://api.crossref.org/works/10.1111%2Fj.1365-2958.2010.07109.x
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-metadata-001/metadata-bfa335e68a6a.access.json
+  accessed_at: '2026-10-26T19:45:02.873464Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: f340d313735572842be8e18b92efe321145a5c2cc555611b70e6feeb421be007
+- evidence_id: C552-LITERATURE-ACCESS-9
+  kind: record_content
+  reference: https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/19317450/unicode
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-primary-001/pmid19317450-original-availability.xml.access.json
+  accessed_at: '2026-10-26T20:01:59.488953Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: 0c1c55217f3051e35a9da907eeb74a83852d094435803be712bbbe41c014a63d
+- evidence_id: C552-LITERATURE-ACCESS-10
+  kind: record_content
+  reference: https://api.elsevier.com/content/article/PII:S0960894X08002072?httpAccept=text/xml
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-primary-002/pmid18308563-publisher-original.xml.access.json
+  accessed_at: '2026-10-26T20:16:07.108088Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. A complete HTTP
+    200 response is not by itself proof of article completeness, material correspondence
+    or natural hand.
+  snapshot_sha256: 46f54ae2422951c31058f146f0d10dca6881099ecfa5b4be86cb73944514bed9
+- evidence_id: C552-LITERATURE-ACCESS-11
+  kind: record_content
+  reference: https://pubs.acs.org/doi/pdf/10.1021/jm800079s
+  locator: Exact original request URL/status/body digest/bytes and original request
+    clocks; retained snapshot /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-primary-002/pmid18370373-publisher-original.pdf.access.json
+  accessed_at: '2026-10-26T20:16:07.246636Z'
+  support: context_only
+  summary: Original ordinary-literature access provenance only; chemical source interpretation
+    is attributed separately to ROOT’s accepted bounded judgment. An HTTP error or
+    challenge response supplies no article evidence.
+  snapshot_sha256: 658f1680db8ff43d6f540635ecbe042485a1a1ae6bede21153ff3657be3215c2
+assessments:
+- assessment_id: R552-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 6 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''RECORD_CURATED'', ''RECORD_CURATED'', ''RECORD_CURATED'',
+    ''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'']. Source-seeding history does
+    not replace claim-level scientific assessment.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+- assessment_id: R552-OPTIONAL
+  area: completeness
+  topic: Presence and local fidelity of optional fields
+  outcome: supported
+  summary: 'Retained optional fields: causal_graphs, bioactivities, bioactivity_summary.
+    This assessment supports their presence and exact local fidelity only; scientific
+    correctness remains separately assessed.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-LOCAL
+  - R552-PUBCHEM-PREP
+- assessment_id: R552-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-LOCAL
+- assessment_id: R552-TAXON-SCOPE
+  area: provenance
+  topic: Unverified local labels versus current taxonomy
+  outcome: unknown
+  summary: 'Retained local identifier/label assertions only: NCBITaxon:1894967: Fusarium
+    incarnatum; NCBITaxon:298378: Fusarium incarnatum. Current authoritative naming,
+    rank, parent, synonyms and resolution remain unavailable under the existing hold.
+    No producer, stock, taxon or compound merger is inferred.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-LOCAL-NAMING
+  - R552-NAMING-HOLD
+- assessment_id: R552-ORGANISM-IDS
+  area: grounding
+  topic: Unavailable current organism routing
+  outcome: unknown
+  summary: The exact retained LOTUS occurrence route and original citation are mechanically
+    preserved. Current Wikidata P225/P685 validation is unavailable; no matching,
+    missing-property, failed-route or occurrence exclusion is inferred.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-LOCAL-NAMING
+  - R552-NAMING-HOLD
+- assessment_id: R552-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: The historical catalogue contains 20 organisms and 28 datasets at its original
+    access clock. It supplies context only, with no exact-stock, compound, gene or
+    module association and no current naming lookup.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-IMODULON
+- assessment_id: R552-ASSAY-INVENTORY
+  area: scope
+  topic: Retained assay inventory and separately bounded scientific scope
+  outcome: unknown
+  summary: There are 7 exact-key retained rows, 7 written activities and 0 no-data
+    sentinels. ROOT read all seven existing observations and two inline graphs/five
+    edges. Local fidelity does not establish endpoint class or target correctness.
+    Separate science adjudication preserves the confirmed endpoint-to-class attribution
+    issue and qualifies unresolved human-HDAC source checks; no duplicate finding
+    is authored here.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - R552-OWNER
+  - R552-PUBCHEM-PREP
+- assessment_id: S552-A-LOCAL
+  area: provenance
+  topic: exact local source roles and original reading provenance
+  outcome: supported
+  summary: Complete current local owner/history and all seven matched source sets
+    retain their exact source roles. ROOT has explicitly rebound the original full
+    local reading; this is read scope and local fidelity, not verification of every
+    scientific assertion.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+- assessment_id: S552-A-SOURCE
+  area: provenance
+  topic: bounded named material and source applicability
+  outcome: supported
+  summary: The obtained primary text identifies apicidin as compound 7 and separates
+    pfHDAC-1 enzyme inhibition from parasite proliferation. The retained 0.001 uM
+    agrees with the enzyme cell in Table 2. All seven raw assay rows and seven owner
+    observations, plus two inline graphs and five edges, were read. Local static classifier
+    tracing confirms article-title context supplies two phenotypic observation classes.
+    The own 2010 Fusarium abstract reports functional cluster characterization for
+    F. semitectum KCTC16676; its exact relationship to current producer/taxon and
+    record grades remains unresolved.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+  - S552-E-METADATA-READ
+  - S552-E-META-01
+  - S552-E-META-02
+  - S552-E-META-03
+  - S552-E-META-04
+  - S552-E-META-05
+  - S552-E-META-06
+  - S552-E-META-07
+  - S552-E-META-08
+  - S552-E-API-MATERIAL
+  - S552-E-API-TABLE
+  - S552-E-API-CONSUMER-01
+  - S552-E-API-CONSUMER-02
+  - S552-E-API-CONSUMER-03
+  - S552-E-API-CONSUMER-04
+  - S552-E-API-CONSUMER-05
+  - S552-E-API-CONSUMER-06
+  - S552-E-API-CONSUMER-07
+  - S552-E-API-CONSUMER-08
+  - S552-E-API-CONSUMER-09
+  - S552-E-ACCESS-18308563
+  - S552-E-ACCESS-18370373
+  - S552-E-APICIDIN-ASSESSMENT
+- assessment_id: S552-A-REQUIRED-LIMIT
+  area: completeness
+  topic: remaining source-specific and authority closure
+  outcome: unknown
+  summary: Six human-HDAC measurements and four human-target edges have not been verified
+    against their primary tables. No assertion that their numbers or target identities
+    are wrong is made. Current UniProt, organism/naming and chemical authorities remain
+    unattempted under existing holds. Historical PFI1260c is stated in the obtained
+    paper; current protein-identifier equivalence is not independently verified. The
+    retained unknown side-chain stereochemical site and exact natural form remain
+    unresolved. Imported producer/locus and occurrence roles are not upgraded or merged.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+  - S552-E-METADATA-READ
+  - S552-E-META-01
+  - S552-E-META-02
+  - S552-E-META-03
+  - S552-E-META-04
+  - S552-E-META-05
+  - S552-E-META-06
+  - S552-E-META-07
+  - S552-E-META-08
+  - S552-E-API-MATERIAL
+  - S552-E-API-TABLE
+  - S552-E-API-CONSUMER-01
+  - S552-E-API-CONSUMER-02
+  - S552-E-API-CONSUMER-03
+  - S552-E-API-CONSUMER-04
+  - S552-E-API-CONSUMER-05
+  - S552-E-API-CONSUMER-06
+  - S552-E-API-CONSUMER-07
+  - S552-E-API-CONSUMER-08
+  - S552-E-API-CONSUMER-09
+  - S552-E-ACCESS-18308563
+  - S552-E-ACCESS-18370373
+  - S552-E-APICIDIN-ASSESSMENT
+- assessment_id: S552-A-ENDPOINT
+  area: evidence
+  topic: observation endpoint and title-context attribution
+  outcome: concern
+  summary: The generated activity classes on apicidin’s two retained HDAC inhibition
+    observations treat article-title context as the measured biological endpoint.
+    The 0.001 µM pfHDAC-1 measurement is classified ANTIPARASITIC even though the
+    cited paper separates enzyme inhibition from parasite proliferation. The 0.044
+    µM HDAC observation is classified CYTOTOXIC from the appended antitumor article-title
+    wording rather than a cytotoxicity endpoint. These classes also supply generated
+    summary backing. This is an evidence-placement and generator-classification defect,
+    not evidence that either retained number or apicidin’s broader biological activities
+    is false.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+  - S552-E-METADATA-READ
+  - S552-E-META-01
+  - S552-E-META-02
+  - S552-E-META-03
+  - S552-E-META-04
+  - S552-E-META-05
+  - S552-E-META-06
+  - S552-E-META-07
+  - S552-E-META-08
+  - S552-E-API-MATERIAL
+  - S552-E-API-TABLE
+  - S552-E-API-CONSUMER-01
+  - S552-E-API-CONSUMER-02
+  - S552-E-API-CONSUMER-03
+  - S552-E-API-CONSUMER-04
+  - S552-E-API-CONSUMER-05
+  - S552-E-API-CONSUMER-06
+  - S552-E-API-CONSUMER-07
+  - S552-E-API-CONSUMER-08
+  - S552-E-API-CONSUMER-09
+  - S552-E-ACCESS-18308563
+  - S552-E-ACCESS-18370373
+  - S552-E-APICIDIN-ASSESSMENT
+- assessment_id: C552-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0000304:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0000304:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C552-OWNER
+  - name: complete_raw_row_sha256
+    value: 8273ddf8d09969ed68a9342b6ddaff65d1fd75773d688ceab820b7b3f9b68a7d
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C552-OWNER
+- assessment_id: C552-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Candidate discovery was not performed; no negative remote search, alternative
+    grounding or approval is inferred.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-OWNER
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-LOCAL-SEARCH
+- assessment_id: C552-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: unknown
+  summary: 'Required current literal availability: [{"absence_inferred": false, "identifier":
+    "npatlas:NPA013880", "owner_role": "xref", "status": "unavailable_unattempted_under_inherited_hold"},
+    {"absence_inferred": false, "identifier": "pubchem:467801", "owner_role": "xref",
+    "status": "unavailable_unattempted_under_inherited_hold"}]. Exact request spelling
+    is preserved; no unavailable response, normalized returned identifier or numerical
+    comparison is invented. No authority graph is adopted.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+- assessment_id: C552-A-ELIGIBILITY
+  area: grounding
+  topic: Existing ChEBI role and unavailable current validation
+  outcome: unknown
+  summary: '[]. No exact-key ChEBI row belongs to this owner in the current committed
+    projection. This bounded local result is not a negative remote search or a target
+    recommendation.'
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+- assessment_id: C552-A-HELD-AUTHORITY
+  area: scope
+  topic: Current literal authority availability
+  outcome: unknown
+  summary: All 22 current literal roles and 19 identifier/version tuples remain unattempted
+    under inherited authority holds. No new rejection, permission question, response
+    or authority HTTP clock is inferred. Ordinary literature is separate.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+- assessment_id: C552-A-REPRESENTATION-LIMITS
+  area: representation
+  topic: Literal and derived representation boundary
+  outcome: supported
+  summary: The current owner, actual intake and complete MIBiG row agree in Standard
+    InChI/full-key and fixed-H comparisons. This validates retained representation
+    agreement only. Stored stereo_complete is false and the Standard InChI explicitly
+    retains t22?. The reported index41 and InChI atom22 use different numbering conventions.
+    Their agreement with the source row does not close that stereochemical gap.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+- assessment_id: C552-A-SOURCE-IDENTITY
+  area: identity
+  topic: Exact named material and source precision
+  outcome: unknown
+  summary: Apicidin retains one undefined side-chain centre; stored t22? and diagnostic
+    input index41 use different numbering conventions. The obtained own article identifies
+    apicidin as compound 7, but exact natural-form and missing-hand correspondence
+    remain unresolved. The separately ROOT-selected endpoint-classification finding
+    belongs to the science/assay component and is not repeated as a chemical identity
+    issue.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+- assessment_id: C552-A-EXCLUDED-BIOLOGY-ASSAY-SCOPE
+  area: scope
+  topic: Excluded biological, pathway and assay material
+  outcome: unknown
+  summary: Manual chemical representation and retained source precision only. Whole-owner
+    and all-local-row scientific flags remain false in chemistry. No biological, pathway,
+    operational, graph or assay interpretation is claimed. The seven apicidin assay
+    observations and five graph edges have a separate scientific assessment. Blank-AID
+    rows at 555/556/560 are no-assay provenance. Original source clocks and actual
+    diagnostic clocks remain separate.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+- assessment_id: C552-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: unknown
+  summary: Apicidin retains one undefined side-chain centre; stored t22? and diagnostic
+    input index41 use different numbering conventions. The obtained own article identifies
+    apicidin as compound 7, but exact natural-form and missing-hand correspondence
+    remain unresolved. The separately ROOT-selected endpoint-classification finding
+    belongs to the science/assay component and is not repeated as a chemical identity
+    issue.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  evidence_ids:
+  - C552-RETAINED
+  - C552-ENCODING-NOTES
+  - C552-DIAGNOSTIC-ROOT
+  - C552-ENCODING-ROOT
+  - C552-INVENTORY
+  - C552-AUTH-HOLD
+  - C552-ROOT-SOURCE-SCOPE
+  - C552-ROOT-LOCAL-SCOPE
+  - C552-LITERATURE-ACCESS-1
+  - C552-LITERATURE-ACCESS-2
+  - C552-LITERATURE-ACCESS-3
+  - C552-LITERATURE-ACCESS-4
+  - C552-LITERATURE-ACCESS-5
+  - C552-LITERATURE-ACCESS-6
+  - C552-LITERATURE-ACCESS-7
+  - C552-LITERATURE-ACCESS-8
+  - C552-LITERATURE-ACCESS-9
+  - C552-LITERATURE-ACCESS-10
+  - C552-LITERATURE-ACCESS-11
+  - C552-OWNER
+  - C552-GRAPH
+  - C552-COMPARISON
+  - C552-AUTHORITY-AVAILABILITY
+  - C552-AUTHORITY-DETAIL
+findings:
+- finding_id: S552-F-ENDPOINT
+  issue_key: apicidin-enzyme-endpoint-title-classification
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Title context is attributed as the endpoint of two enzyme measurements
+  description: The generated activity classes on apicidin’s two retained HDAC inhibition
+    observations treat article-title context as the measured biological endpoint.
+    The 0.001 µM pfHDAC-1 measurement is classified ANTIPARASITIC even though the
+    cited paper separates enzyme inhibition from parasite proliferation. The 0.044
+    µM HDAC observation is classified CYTOTOXIC from the appended antitumor article-title
+    wording rather than a cytotoxicity endpoint. These classes also supply generated
+    summary backing. This is an evidence-placement and generator-classification defect,
+    not evidence that either retained number or apicidin’s broader biological activities
+    is false.
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  field_paths:
+  - bioactivities[5].activity_class
+  - bioactivities[6].activity_class
+  - bioactivity_summary
+  evidence_ids:
+  - S552-E-SOURCE-READ
+  - S552-E-LOCAL
+  - S552-E-LOCAL-ROOT
+  - S552-E-GUARDS
+  - S552-E-INTAKE-VIEW
+  - S552-E-FORMAL-BINDING
+  - S552-E-ROOT-CONTEXT
+  - S552-E-METADATA-READ
+  - S552-E-META-01
+  - S552-E-META-02
+  - S552-E-META-03
+  - S552-E-META-04
+  - S552-E-META-05
+  - S552-E-META-06
+  - S552-E-META-07
+  - S552-E-META-08
+  - S552-E-API-MATERIAL
+  - S552-E-API-TABLE
+  - S552-E-API-CONSUMER-01
+  - S552-E-API-CONSUMER-02
+  - S552-E-API-CONSUMER-03
+  - S552-E-API-CONSUMER-04
+  - S552-E-API-CONSUMER-05
+  - S552-E-API-CONSUMER-06
+  - S552-E-API-CONSUMER-07
+  - S552-E-API-CONSUMER-08
+  - S552-E-API-CONSUMER-09
+  - S552-E-ACCESS-18308563
+  - S552-E-ACCESS-18370373
+  - S552-E-APICIDIN-ASSESSMENT
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/apicidin.yaml
+    role: affected generated record
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: maintained classification and summary generator
+actions:
+- action_id: S552-ACT-ENDPOINT
+  finding_ids:
+  - S552-F-ENDPOINT
+  target_ids:
+  - naturalproductmech:mibig-f6e5a95e78
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: maintained correction owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_seed_skeleton.py
+    role: endpoint-classification regression owner
+  - repository: CultureBotAI/NaturalProductMech
+    path: tests/test_corpus_integrity.py
+    role: summary-backing regression owner
+  description: 'Repair scripts/seed_from_sources.py classification and summary derivation
+    under the existing maintained code/test workflow, using the exact owner and full
+    raw-row guards above. Preserve these exact owner, observation and full source-row
+    guards: [{"expected_source_row_sha256": "dc47dc7a65de0ce0ab28cfd011a0ce0554b144dfc0775002d9241a81cc6f7daf",
+    "full_original_row": {"activity_name": "IC50", "activity_outcome": "Active", "activity_value_um":
+    "0.044", "aid": "1798524", "assay_name": "HDAC Activity Assay from Article 10.1021/jm800079s:
+    \"A novel series of potent and selective ketone histone deacetylase inhibitors
+    with antitumor activity in vivo.\"", "assay_type": "Confirmatory", "cid": "467801",
+    "depositor": "BindingDB", "reference": "PMID:18370373", "standard_inchi_key":
+    "JWOGUUIOCYMBPV-LQJYRIKDSA-N", "target_accession": "Q13547"}, "owner": {"bytes":
+    12009, "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/apicidin.yaml",
+    "sha256": "29de8c1ca3ae9743e8077f8bf321e212fef69f851a7d4eff96b39f3dcdf49770"},
+    "owner_json_path": "$.bioactivities[5]", "owner_observation_sha256": "b188081ab6db43223e498d82220f8b3b888952fc7108d059b9a00921628a4ac9",
+    "raw_table": {"bytes": 2093581, "path": "/private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv",
+    "sha256": "6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b"},
+    "selector": {"aid": "1798524", "cid": "467801", "reference": "PMID:18370373",
+    "standard_inchi_key": "JWOGUUIOCYMBPV-LQJYRIKDSA-N"}}, {"expected_source_row_sha256":
+    "92e0984debe10aa36546a634e0ca07140a0b9b9b419da947689a7a451f176bdb", "full_original_row":
+    {"activity_name": "IC50", "activity_outcome": "Active", "activity_value_um": "0.001",
+    "aid": "1799021", "assay_name": "pfHDAC-1 Enzyme Assay from Article 10.1021/jm801654y:
+    \"Identification and characterization of small molecule inhibitors of a class
+    I histone deacetylase from Plasmodium falciparum.\"", "assay_type": "Confirmatory",
+    "cid": "467801", "depositor": "BindingDB", "reference": "PMID:19317450", "standard_inchi_key":
+    "JWOGUUIOCYMBPV-LQJYRIKDSA-N", "target_accession": ""}, "owner": {"bytes": 12009,
+    "path": "/private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/apicidin.yaml",
+    "sha256": "29de8c1ca3ae9743e8077f8bf321e212fef69f851a7d4eff96b39f3dcdf49770"},
+    "owner_json_path": "$.bioactivities[6]", "owner_observation_sha256": "1cb6d85778c67a7c130cc8fc4d9512f6bd4b27dc98ef7f57f4ed90ebd6b0f7cb",
+    "raw_table": {"bytes": 2093581, "path": "/private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv",
+    "sha256": "6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b"},
+    "selector": {"aid": "1799021", "cid": "467801", "reference": "PMID:19317450",
+    "standard_inchi_key": "JWOGUUIOCYMBPV-LQJYRIKDSA-N"}}]. No correction, test, regeneration
+    or action has been executed.'
+  acceptance_checks:
+  - Treat the described assay endpoint separately from appended publication-title
+    context. Leave a class unset when the endpoint is insufficiently specific; do
+    not turn an organism mentioned in a title into a phenotype measurement.
+  - Preserve these existing raw assertions, numbers, units, calls, targets and citations.
+    The primary-confirmed pfHDAC observation supports enzyme inhibition; any broader
+    phenotype backing must be independently appropriate to that class.
+  - Recompute summary backing after the classification repair. Preserve a broader
+    summary value when other correctly placed evidence supports it; do not unconditionally
+    delete either summary class from the compound.
+  - Use meaningful endpoint-versus-title and separate-enzyme-versus-proliferation
+    regressions before normal reproduction/QC. No tests or regeneration have been
+    run in this assessment.
+limitations:
+- ROOT personally read all ten complete owner YAMLs and all seventy local source-row
+  sets, including 26 history events. These original reads are explicitly rebound to
+  the same selected/intake-bound bytes; this is not a fresh full-file reread after
+  intake. Scientific reading covers material identity, asserted producer-versus-occurrence
+  and locus applicability, classifications, and the seven existing apicidin observations
+  and two inline graphs/five edges. Reading a claim does not validate it. Three blank-AID
+  rows at 555, 556 and 560 are no-assay provenance. Exact natural structures, current
+  chemical/protein/naming/taxon authorities and the source checks identified in the
+  separate scientific adjudication remain unresolved; all authority holds persist
+  without new attempts or rejections. Root context records local field fidelity; the
+  separate science component carries the adjudicated endpoint-class finding and qualified
+  primary-source assessments. No new protocol, assay, authority mapping or replacement
+  is introduced.
+- Six human-HDAC measurements and four human-target edges have not been verified against
+  their primary tables. No assertion that their numbers or target identities are wrong
+  is made.
+- Current UniProt, organism/naming and chemical authorities remain unattempted under
+  existing holds. Historical PFI1260c is stated in the obtained paper; current protein-identifier
+  equivalence is not independently verified.
+- The retained unknown side-chain stereochemical site and exact natural form remain
+  unresolved. Imported producer/locus and occurrence roles are not upgraded or merged.
+- Required source and current-authority gaps keep this review partial; no new authority
+  attempt, natural-hand assignment, replacement structure or executed curation action.
+- Stored/raw and bounded original evidence retain their original scopes and clocks.
+  The 22 literal authority roles/19 distinct identifier-version tuples remain unattempted
+  under inherited holds; no new 56 rejection, approval question or HTTP clock is fabricated.
+  Literal stored metal/charge/formula/InChI layers remain distinct from computed diagnostics;
+  no normalization or natural-hand closure is inferred. Only actual diagnostic warnings
+  may be reported. Biological, pathway, operational, graph and assay interpretation
+  is excluded. All ten chemistry components remain chemical representation/source-basis
+  only; 555/556/560 blank-AID rows remain sentinels. Undefined retained centres at
+  552/553/556 remain unspecified. Arsenic diagnostic candidacy is not stable biological
+  chirality. The four azolemycin forms retain literal geometry distinctions without
+  a natural E/Z assignment. No replacement or hand is selected. Organism, locus, classification
+  and history claims are separately scoped.
+- All 22 current literal roles and 19 identifier/version tuples remain unattempted
+  under inherited authority holds. No new rejection, permission question, response
+  or authority HTTP clock is inferred. Ordinary literature is separate. Apicidin retains
+  one undefined side-chain centre; stored t22? and diagnostic input index41 use different
+  numbering conventions. The obtained own article identifies apicidin as compound
+  7, but exact natural-form and missing-hand correspondence remain unresolved. The
+  separately ROOT-selected endpoint-classification finding belongs to the science/assay
+  component and is not repeated as a chemical identity issue. Manual chemical representation
+  and retained source precision only. Whole-owner and all-local-row scientific flags
+  remain false in chemistry. No biological, pathway, operational, graph or assay interpretation
+  is claimed. The seven apicidin assay observations and five graph edges have a separate
+  scientific assessment. Blank-AID rows at 555/556/560 are no-assay provenance. Original
+  source clocks and actual diagnostic clocks remain separate.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+- 'Recovery disclosure: committed coverage for batches 1–47 uses the independently
+  checked immutable proof; batches 48–55 use their exact recovery checkpoints and
+  committed files. The administrative ledger preserves 166 historical temporary-input
+  loss expectations recorded at earlier preflight; current observations are reported
+  separately. Expected missing hashes are not verified bytes. No current56 direct-source
+  loss is waived by this administrative module; prior50 source and prior51 lineage
+  limitations remain in their immutable checkpoints; prior52, prior53, prior54 and
+  prior55 current-source verification and administrative history remain in their immutable
+  checkpoints. Four P23 original source files and the separate batch016 receipt were
+  restored byte-identically after the batch50 checkpoint and are strict current dependencies.
+  Original source and gate clocks remain unchanged. Recovery contract SHA256 0e8fe69ef6e9ca8c464719a053343c3de9eea3be17d12bb1c97976c2ece14632.
+  Publication and held external requests still require their separate explicit approval.'
+- Current scientific evidence snapshots are strictly verified; no current source-body
+  exception is used. Historical administrative expectations remain separately disclosed;
+  current ROOT reading has no missing source references.
+tags:
+- path-order-campaign
+- batch-056
