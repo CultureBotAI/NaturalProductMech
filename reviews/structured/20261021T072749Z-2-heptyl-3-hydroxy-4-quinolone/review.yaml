@@ -1,0 +1,1240 @@
+schema_version: 1.0.0
+review_id: 20261021T072749Z-2-heptyl-3-hydroxy-4-quinolone
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: '2-Heptyl-3-hydroxy-4-quinolone: native evidence and mechanism boundaries'
+started_at: '2026-10-21T07:13:58.892083Z'
+finished_at: '2026-10-21T07:27:49.957197Z'
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Exact PQS identity, ChEBI grounding, both occurrence associations and three
+  bounded mechanism graphs are supported. Four native protein references agree with
+  independent genomic translation. One confirmed minor finding identifies omitted
+  native knockout evidence in source-level locus grading. Annotation, strain, construct
+  and optional expression-source limits remain explicit.
+source:
+  git_revision: 10ed28fcdadb3d955c30732ff05b5d0e4adbee3b
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/2-heptyl-3-hydroxy-4-quinolone.yaml
+    sha256: 40116475604ba894f11aa628a76a5ce0438f82a8472120a4d1232df90da0da90
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: 'One complete owner and resolved mechanism: one pathway step, all thirteen
+    nodes and ten edges across three inline graphs, and every remaining assertion
+    group.'
+  selection: 'Tenth unreviewed path in deterministic order from the initial validated
+    list: 91 bundles covered 54 of 3,116 records and 3,062 remained. Ignored bundles
+    were included in coverage counting. This bundle assesses one target.'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:29472
+targets:
+- target_id: CHEBI:29472
+  path: data/natural_products/alkaloids/2-heptyl-3-hydroxy-4-quinolone.yaml
+  label: 2-heptyl-3-hydroxy-4-quinolone
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/alkaloids/2-heptyl-3-hydroxy-4-quinolone.yaml
+    role: Curator-owned biosynthetic step, inline causal graphs, discussion and append-only
+      curation history
+checks:
+- check_id: C-STRICT
+  name: Closed-schema and component validation
+  status: passed
+  required: true
+  summary: One complete owner, pathway step and three inline graphs validated with
+    zero ERROR rows.
+  command: just validate-strict data/natural_products/alkaloids/2-heptyl-3-hydroxy-4-quinolone.yaml
+    --out /private/tmp/npm-review-work/010/strict.tsv
+  exit_code: 0
+  target_ids:
+  - CHEBI:29472
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 record files agree with 3,116 PATHS.tsv rows and their pinned
+    filing pathways.
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-corpus
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016808Z; finished 2026-10-21T06:37:52.997020Z. Exact
+    session transcript: /private/tmp/npm-native-checks/verify-corpus.log.'
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 records are byte-identical to the seeder output from committed
+    inventories and maintained curation inputs.
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just verify-reproduction
+    --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016703Z; finished 2026-10-21T06:38:35.570687Z. Exact
+    session transcript: /private/tmp/npm-native-checks/verify-reproduction.log.'
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The documented exhaustive queue command produced 8,928 diagnostic rows
+    in 12 queues; deterministic queue output does not establish scientific review.
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just review-queue
+    --tsv /private/tmp/npm-review-queue-initial.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:36.016598Z; finished 2026-10-21T06:37:11.018366Z. Exact
+    session transcript: /private/tmp/npm-native-checks/review-queue.log.'
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'Full configured gate passed using existing CHEBI and GO caches plus the
+    committed taxonomy adapter: 13,434 canonical matches, 646 synonym matches, 35
+    documented exceptions, 499 warning-only mismatches and 4,722 pairs skipped because
+    their prefixes have no adapter.'
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.498212Z; finished 2026-10-21T06:38:54.776253Z. Exact
+    session transcript: /private/tmp/npm-native-checks/validate-products.log.'
+- check_id: qc-environment-attempt1
+  name: Initial QC attempt before installing the pinned linter
+  status: failed
+  required: false
+  summary: The first full QC invocation stopped at lint because the isolated copied
+    Python environment lacked Ruff. Exact uv.lock version Ruff 0.16.6 was subsequently
+    installed and lint passed on later invocations.
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:36:56.497107Z; finished 2026-10-21T06:36:56.918133Z. Exact
+    session transcript: /private/tmp/npm-native-checks/qc.log.'
+- check_id: qc-network-attempt2
+  name: QC attempt without network access
+  status: failed
+  required: false
+  summary: After Ruff installation, QC passed lint and stopped at vendored-sync because
+    sandbox DNS could not reach the pinned public CLAW governance source. Approved
+    network access allowed the next invocation to verify all 22 governed artifacts.
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:37:57.661447Z; finished 2026-10-21T06:37:59.874785Z. Exact
+    session transcript: /private/tmp/npm-native-checks/qc-attempt2.log.'
+- check_id: qc-tag-attempt3
+  name: QC attempt before restoring the required provenance tag
+  status: failed
+  required: false
+  summary: 'QC passed lint, vendored sync, documentation, provenance and source queue,
+    then stopped at tests: 998 passed, 1 failed, 4 skipped. The sole failure was the
+    isolated clone lacking refs/tags/review-base/gentamicin-20261013; it was not a
+    failed archive-content assertion. The tag was subsequently fetched from origin.'
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 1
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:38:17.713062Z; finished 2026-10-21T06:45:43.079802Z. Exact
+    session transcript: /private/tmp/npm-native-checks/qc-attempt3.log.'
+- check_id: qc-tag-remediation
+  name: Targeted verification after restoring the provenance tag
+  status: passed
+  required: false
+  summary: After restoring the required tag, the exact previously failed gentamicin
+    archive test passed (1 passed). No repository content was edited for this remediation.
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just test -q
+    tests/test_gentamicin_review_archive.py::test_gentamicin_archive_and_scoped_dispositions
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:45:52.383490Z; finished 2026-10-21T06:45:54.030116Z. Exact
+    session transcript: /private/tmp/npm-native-checks/gentamicin-tag-check.log.'
+- check_id: qc-skip-diagnosis
+  name: Diagnosis of the suite skip conditions
+  status: passed
+  required: false
+  summary: 'The four observed skip cases were reproduced with pytest skip reasons
+    enabled: the optional sibling AntibioticMech comparison has no sibling checkout
+    in the isolated clone, and three command-frontmatter tests have empty parameter
+    sets. This diagnostic invocation executed no passing tests; it reported four skips.'
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just test -q
+    -rs tests/test_schema.py::test_shared_mech_modules_are_byte_identical_to_the_fleet
+    tests/test_skill_frontmatter.py::test_command_frontmatter_has_no_duplicate_keys
+    tests/test_skill_frontmatter.py::test_command_frontmatter_is_valid_yaml tests/test_skill_frontmatter.py::test_command_declares_a_usable_description
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:30.259937Z; finished 2026-10-21T06:46:31.251048Z. Exact
+    session transcript: /private/tmp/npm-native-checks/skipped-tests-diagnosis.log.'
+- check_id: shared-qc
+  name: Full repository quality gate after environment repair
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed after installing the pinned
+    linter, allowing the read-only governance fetch, and restoring the required provenance
+    tag. Tests: 999 passed, 4 skipped, 2 warnings. Closed-schema validation: 3,116
+    records and zero errors. Documentation, provenance, source queue, governed artifacts,
+    generated pages, reproduction, filing integrity and corpus reporting all passed.'
+  target_ids:
+  - CHEBI:29472
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Shared read-only baseline over the isolated clone at /private/tmp/npm-record-reviews-20261021.
+    Started 2026-10-21T06:46:02.058886Z; finished 2026-10-21T06:54:53.950582Z. Exact
+    session transcript: /private/tmp/npm-native-checks/qc-attempt4.log.'
+- check_id: C-PRIMARY-SCOPE
+  name: Claim-specific primary evidence and annotation boundaries
+  status: passed
+  required: true
+  summary: Exact-species occurrence is explicit in the primary abstract. Native locus
+    genetics, PA14 fusion enzymology, reaction annotations and the complete PA14 reporter
+    methods support the respective bounded claims. PhnAB remains explicitly annotation-based.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - R-OCCURRENCE-PRIMARY
+  - bgc-primary2002-native
+  - pqsh-primary2010-exact-reaction
+  - pqsh-rhea-exact-participants
+  - R-MVFR-PRIMARY
+  - E-PHNA-UNIPROT
+  - E-PHNB-UNIPROT
+- check_id: C-PROTEIN
+  name: Native references and strain discrimination
+  status: passed
+  required: true
+  summary: Four complete genomic translations match annotation, independently retrieved
+    protein and UniProt; PA14/PAO1 MvfR and PqsH differences remain explicit.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - E-PROTEIN-EQUIVALENCE
+  - pqsh-pa14-pao1-distinct-references
+- check_id: C-PROVENANCE-URI
+  name: Species-level occurrence provenance
+  status: passed
+  required: true
+  summary: Official Wikidata API entity Q31856 resolves to the recorded species and
+    NCBI taxon.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - R-TAXON-PROVENANCE
+- check_id: imodulondb-precise364-context
+  name: Bounded iModulonDB component and dataset context audit
+  status: passed
+  required: false
+  summary: Relevant component 85 membership and dataset species/strain context were
+    inspected using the installed runner and the primary dataset publication. Coexpression
+    was kept separate from biosynthetic causality.
+  target_ids:
+  - CHEBI:29472
+  command: PYTHONDONTWRITEBYTECODE=1 /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/.venv/bin/kg-microbe-sources
+    imodulondb --timeout 25 summarize --organism p_aeruginosa --dataset precise364
+    --k 85 --limit 100
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - imodulon-component85-context
+  - imodulon-dataset-strain-context
+  scope_note: Read-only runner; working directory was the isolated review checkout.
+    No code edits, dependency synchronization or corpus mutation.
+- check_id: imodulondb-precise411-context
+  name: precise411 searches through installed source runner
+  status: failed
+  required: false
+  summary: The optional search command ran and exited 2 on typed regulator=NoneType
+    parsing; relevant dataset contents remained unavailable. No biological absence
+    conclusion.
+  target_ids:
+  - CHEBI:29472
+  command: /Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/.venv/bin/kg-microbe-sources
+    imodulondb --timeout 25 search --organism p_aeruginosa --dataset precise411 --query
+    pqs
+  exit_code: 2
+  expected_exit_code: 0
+  evidence_ids:
+  - imodulon-precise411-unavailable
+  scope_note: Original root command receipt reused; phn and mvfR queries failed with
+    the same typed error. No runner changes were attempted.
+evidence:
+- evidence_id: E-IDENTITY-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/2-heptyl-3-hydroxy-4-quinolone.yaml
+  locator: Complete owner, biosynthetic step and all three inline graphs
+  accessed_at: '2026-10-21T07:16:06Z'
+  support: supports
+  summary: The full owner encodes PQS as the neutral achiral C16H21NO2 molecule with
+    exact key CEIUIHOQDSVZJQ-UHFFFAOYSA-N, grounded to CHEBI:29472, and xref NPA019649.
+    Protein references are strain-qualified PAO1 PqsH/PhnA/PhnB and PA14 MvfR.
+  snapshot_sha256: 40116475604ba894f11aa628a76a5ce0438f82a8472120a4d1232df90da0da90
+- evidence_id: E-CHEBI-IDENTITY
+  kind: database
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/29472/
+  locator: stars, definition and default_structure id2780576
+  accessed_at: '2026-10-21T07:16:44.342863Z'
+  support: supports
+  summary: Current CHEBI:29472 remains three-star. Its default full InChI/key and
+    definition match the owner exactly. It includes PQS and Pseudomonas quinolone
+    signal as synonyms. Its exported SMILES has a separate parsing defect, documented
+    by E-CHEBI-REPRESENTATION; identity comparison uses the complete valid InChI.
+  snapshot_sha256: 0703e9c0f53999c7c7df3fd0700f858bdd644caad49cf0bfa3559271b2f5c21e
+- evidence_id: E-NPATLAS
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA019649?include=classifications
+  locator: Official JSON viewed through web tool; npaid, original_name, smiles, inchi,
+    inchikey and origin_reference
+  accessed_at: '2026-10-21T07:17:20Z'
+  support: supports
+  summary: NPA019649 exactly matches the owner full SMILES, InChI and key; the original
+    name is 2-heptyl-3-hydroxy-4-quinolone. Its origin reference is DOI 10.1073/pnas.96.20.11229,
+    PMID 10500159, and reassignments is empty. Direct filesystem retrieval returned
+    403, but the official API response was fully accessible through the web tool.
+- evidence_id: E-CHEMISTRY-IDENTITY
+  kind: validation
+  reference: /private/tmp/npm-review-work/010/chemistry.json
+  locator: RDKit 2026.03.5 result generated 2026-10-21T07:13:59.955820Z; complete
+    result inspected
+  accessed_at: '2026-10-21T07:16:06Z'
+  support: supports
+  summary: The owner SMILES regenerates the exact stored InChI/key, neutral formula
+    C16H21NO2 and exact mass 259.157228912. No tetrahedral stereocentre is present.
+  snapshot_sha256: 482f89c79f849e8927c9f5a3d7828fa83b84f0d6d8008ec575a756cb5a083dae
+- evidence_id: E-CHEBI-REPRESENTATION
+  kind: validation
+  reference: /private/tmp/npm-review-work/010/chebi-representation-check.json
+  locator: Independent parsing of current ChEBI default InChI and SMILES
+  accessed_at: '2026-10-21T07:19:52.567211Z'
+  support: supports
+  summary: ChEBI exported SMILES CCCCCCCc1nc2ccccc2c(=O)c1O cannot be kekulized by
+    RDKit. Its default InChI parses correctly and yields C16H21NO2, exact owner key
+    CEIUIHOQDSVZJQ-UHFFFAOYSA-N and normalized SMILES CCCCCCCc1[nH]c2ccccc2c(=O)c1O.
+    The owner uses a valid representation; the defect is in the upstream SMILES export.
+  snapshot_sha256: df814d56c225d78c3888aa4e3f466b66d4223f48cc94d5a1387531c0cb867c3d
+- evidence_id: E-GROUNDING-INVENTORY
+  kind: record_content
+  reference: data/raw/chebi_structures.tsv
+  locator: Complete inventory filtered by exact full key
+  accessed_at: '2026-10-21T07:19:29Z'
+  support: supports
+  summary: The exact full-key inventory match is CHEBI:29472, three-star, with the
+    same name and definition. The pinned source SMILES has the same upstream representation
+    defect as the current entry.
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: E-PQSH-UNIPROT
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/Q9I0Q0.json
+  locator: entryAudit, organism, genes, function, catalytic activity and sequence
+  accessed_at: '2026-10-21T07:16:44.443139Z'
+  support: supports
+  summary: Reviewed Q9I0Q0 entry version120 is PAO1 taxon 208964 pqsH/PA2587, 382
+    aa. It annotates HHQ hydroxylation to PQS and RHEA:37871. This verifies native
+    reference identity and current database annotation; direct assay claims are assessed
+    separately.
+  snapshot_sha256: 50995a12a5e550a282dba439d539804b07263a2a3d4df852dd52c6bed6ae29f5
+- evidence_id: E-PHNA-UNIPROT
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P09785.json
+  locator: entryAudit, organism, genes, FUNCTION, CATALYTIC ACTIVITY, SUBUNIT and
+    sequence
+  accessed_at: '2026-10-21T07:16:44.446233Z'
+  support: supports
+  summary: Reviewed P09785 version151 is PAO1 taxon 208964 phnA/PA1001, 530 aa. Anthranilate
+    production from chorismate plus glutamine and its contribution to PQS are annotated.
+    The PhnA/PhnB subunit division and heterotetrameric assembly explicitly include
+    by-similarity evidence (ECO:0000250). The historical trpE synonym is recorded
+    without changing the native PA1001 identity.
+  snapshot_sha256: 504acd736d94e7cdad8bf6800923f607258e7c78257394edf3fe2fbc7da207e8
+- evidence_id: E-PHNB-UNIPROT
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/P09786.json
+  locator: entryAudit, organism, genes, FUNCTION, CATALYTIC ACTIVITY, SUBUNIT and
+    sequence
+  accessed_at: '2026-10-21T07:16:44.447937Z'
+  support: supports
+  summary: Reviewed P09786 version154 is PAO1 taxon 208964 phnB/PA1002, 200 aa. Glutamine
+    amidotransferase activity is assigned to PhnB and the overall reaction yields
+    anthranilate, pyruvate, glutamate and H+. Subunit chemistry and assembly include
+    by-similarity evidence. The historical trpG synonym does not substitute a different
+    native locus.
+  snapshot_sha256: 3a5627453900ab5b53b4c89cc59ccae2eae0806737a0f9e093ed6b7e927635f7
+- evidence_id: E-MVFR-PA14-UNIPROT
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/A0A0H2Z7A6.json
+  locator: entryAudit, organism, genes, EMBL cross-reference and sequence
+  accessed_at: '2026-10-21T07:16:44.464132Z'
+  support: supports
+  summary: Unreviewed A0A0H2Z7A6 version 57 is UCBPP-PA14 taxon208963 mvfR/PA14_51340,
+    332 aa, linked to ABJ10167.1. The accession is strain-matched to the graph's native
+    reference; it does not identify a historical assay plasmid or tagged fragment.
+  snapshot_sha256: 6e070ea43943391902917a64628e31caf317d2e96fc9896fa776f8e18885933a
+- evidence_id: E-PHNA-GENPEPT
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AAG04390.1&db=protein&report=genpept&retmode=text
+  locator: LOCUS, source, CDS coded_by and complete ORIGIN
+  accessed_at: '2026-10-21T07:16:45.098656Z'
+  support: supports
+  summary: PAO1 PhnA AAG04390.1 is 530 aa, PA1001, taxon 208964, coded by AE004091.2:1083972..1085564
+    with table11.
+  snapshot_sha256: 773474b399e15721c2f052896a3ac4929e15ee3c2caf18fa1af148ab67b24708
+- evidence_id: E-PHNB-GENPEPT
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AAG04391.1&db=protein&report=genpept&retmode=text
+  locator: LOCUS, source, CDS coded_by and complete ORIGIN
+  accessed_at: '2026-10-21T07:16:45.101551Z'
+  support: supports
+  summary: PAO1 PhnB AAG04391.1 is 200 aa, PA1002, taxon 208964, coded by AE004091.2:1085542..1086144
+    with table11.
+  snapshot_sha256: 3691e7784bdbd746501811d00f9ec9ebb0560be34a0b00dafff939cc7a0d1cb3
+- evidence_id: E-MVFR-PA14-GENPEPT
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=ABJ10167.1&db=protein&report=genpept&retmode=text
+  locator: LOCUS, source, CDS coded_by and complete ORIGIN
+  accessed_at: '2026-10-21T07:16:45.104843Z'
+  support: supports
+  summary: PA14 MvfR ABJ10167.1 is 332 aa, PA14_51340, taxon208963, coded by CP000438.1:4562837..4563835
+    with table11.
+  snapshot_sha256: edf4ef76de5695e00f0a50df379147e4827a9cc59e221796a52e64fab9d1584a
+- evidence_id: E-PQSH-GENPEPT
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AAG05975.1&db=protein&report=genpept&retmode=text
+  locator: LOCUS, source, CDS coded_by and complete ORIGIN
+  accessed_at: '2026-10-21T07:17:48.094935Z'
+  support: supports
+  summary: PAO1 PqsH AAG05975.1 is 382 aa, PA2587, taxon 208964, coded by complement(AE004091.2:2926773..2927921)
+    with table11.
+  snapshot_sha256: c9d80490d3ec973cee688cdb158c3389d6c5c6ed0337243fc3a9cecd386cf57b
+- evidence_id: E-MVFR-PAO1-GENPEPT
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AAG04392.1&db=protein&report=genpept&retmode=text
+  locator: LOCUS, source, CDS coded_by and complete ORIGIN
+  accessed_at: '2026-10-21T07:17:48.098263Z'
+  support: supports
+  summary: The comparison reference AAG04392.1 is PAO1 MvfR, PA1003, taxon 208964,
+    332 aa. Its complete sequence differs from the PA14 reference at residue314.
+  snapshot_sha256: 73351c86249579c24eac252262eb6b4faa8f650acfa49eefeec6988f4a5b8807
+- evidence_id: E-PHNA-DNA
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AE004091.2&rettype=gb&retmode=text&seq_start=1083972&seq_stop=1085564
+  locator: Exact genomic slice; complete target CDS feature, annotated translation
+    and ORIGIN
+  accessed_at: '2026-10-21T07:17:48.099225Z'
+  support: supports
+  summary: The complete 1593-nt phnA CDS is present at AE004091.2:1083972..1085564,
+    plus strand, codon_start1/table11, with annotation AAG04390.1.
+  snapshot_sha256: a51759daf89ea9000ea7d94eaccc026b6eb1824079aade8acd95d776f8c87290
+- evidence_id: E-PHNB-DNA
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AE004091.2&rettype=gb&retmode=text&seq_start=1085542&seq_stop=1086144
+  locator: Exact genomic slice; complete target CDS feature, annotated translation
+    and ORIGIN
+  accessed_at: '2026-10-21T07:17:49.139160Z'
+  support: supports
+  summary: The complete 603-nt phnB CDS is present at AE004091.2:1085542..1086144,
+    plus strand, codon_start1/table11, with annotation AAG04391.1.
+  snapshot_sha256: b7d1c7e937be5c814942d1f8c4ea3227cb1938a8b793037cd7e21b8a7dae6234
+- evidence_id: E-MVFR-PA14-DNA
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=CP000438.1&rettype=gb&retmode=text&seq_start=4562837&seq_stop=4563835
+  locator: Exact genomic slice; complete target CDS feature, annotated translation
+    and ORIGIN
+  accessed_at: '2026-10-21T07:17:49.240081Z'
+  support: supports
+  summary: The complete 999-nt PA14 mvfR CDS is present at CP000438.1:4562837..4563835,
+    plus strand, codon_start1/table11, with annotation ABJ10167.1.
+  snapshot_sha256: d4fb186cb86f1072f8125b21defe67faa8eb860e395c8ad757486d0c97bce89e
+- evidence_id: E-PQSH-DNA
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AE004091.2&rettype=gb&retmode=text&seq_start=2926773&seq_stop=2927921
+  locator: Exact genomic slice; complete target CDS feature, annotated translation
+    and ORIGIN
+  accessed_at: '2026-10-21T07:18:34.903655Z'
+  support: supports
+  summary: The complete 1149-nt PAO1 pqsH CDS is present at AE004091.2:2926773..2927921,
+    reverse strand, codon_start1/table11, with annotation AAG05975.1.
+  snapshot_sha256: 547c7e9416ed9a597f61b9716637beb605e5cbbeb0736b7583c9d2668535c0a8
+- evidence_id: E-PQSH-PA14-COMPARATOR
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/search?query=%28gene_exact%3ApqsH%29+AND+%28organism_id%3A208963%29&format=json
+  locator: Official gene_exact:pqsH AND organism_id:208963 query; sole result Q02N79
+  accessed_at: '2026-10-21T07:18:34.904425Z'
+  support: supports
+  summary: The exact gene/taxon query returns reviewed PA14 PqsH Q02N79, PA14_30630,
+    taxon208963, 382 aa, linked to ABJ11810.1. It differs from PAO1 Q9I0Q0 at residue
+    91 (PA14S, PAO1N). This bounds transfer of direct experimental evidence between
+    strains.
+  snapshot_sha256: 4d062f5ee23e39c330b4698323b8a0b2fc34ec61306047a61a440667b1a89de5
+- evidence_id: E-PROTEIN-EQUIVALENCE
+  kind: validation
+  reference: /private/tmp/npm-review-work/010/protein-equivalence.json
+  locator: Independent table11 translations, reverse-complement handling for PAO1
+    pqsH, and complete sequence comparisons
+  accessed_at: '2026-10-21T07:18:56.671629Z'
+  support: supports
+  summary: 'All four genomic translations match their deposited CDS annotations, independently
+    retrieved GenPept ORIGIN sequences, and the selected UniProt entries exactly:
+    PhnA530, PhnB200, PA14MvfR332 and PAO1PqsH382 aa. PA14 and PAO1 MvfR differ only
+    at314V/A; PA14 and PAO1 PqsH differ only at91S/N. The result includes every source
+    coordinate and sequence checksum.'
+  snapshot_sha256: 93e6dc2a5c08179addf261efe20881a0e02d68a7af574e104f396f9d9b634d7e
+- evidence_id: R-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/2-heptyl-3-hydroxy-4-quinolone.yaml
+  locator: Complete owner, read_natural_product resolved view, exact source rows and
+    preserved-field seeder logic
+  accessed_at: '2026-10-21T07:22:15.623061Z'
+  support: supports
+  summary: One pathway step and three inline graphs contain thirteen nodes and ten
+    edges. Two species-level occurrence triples are distinct from the PAO1 source
+    producer. Two seed and two bounded curation events coexist with SEEDED status;
+    neither prior event claims full-record review. Computed classification matches
+    the exact-key inventory.
+  snapshot_sha256: 40116475604ba894f11aa628a76a5ce0438f82a8472120a4d1232df90da0da90
+- evidence_id: R-OCCURRENCE-PRIMARY
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=18016&retmode=xml
+  locator: PMID:10500159; DOI:10.1073/pnas.96.20.11229; complete accessible abstract,
+    not full article body
+  accessed_at: '2026-10-21T07:15:29.046053Z'
+  support: supports
+  summary: The primary abstract explicitly reports that Pseudomonas aeruginosa produces
+    the exact named 2-heptyl-3-hydroxy-4-quinolone, designated PQS. This supports
+    the species-level occurrence triple. No strain-specific or detailed isolation-method
+    inference is made from the abstract.
+  snapshot_sha256: 8bff29d161302fdc9f782a97ddded17dc006b8991d8d1e5c216fa8e9b044170f
+- evidence_id: R-OCCURRENCE-REVIEW
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=17083468,18704225&retmode=xml
+  locator: PubMed PMID:18704225, DOI:10.1039/b803796p; bibliographic type and complete
+    review abstract
+  accessed_at: '2026-10-21T07:15:29.048689Z'
+  support: supports
+  summary: This secondary review explicitly attributes exact PQS production to Pseudomonas
+    aeruginosa. It supports the recorded literature/organism association as a secondary
+    synthesis, not a second independent isolation experiment. The owner labels it
+    DATABASE_ASSERTION.
+  snapshot_sha256: efcded59bde52e7e11f565fe986cea7486bf02daaee1e0dc3e527748021ef29a
+- evidence_id: R-TAXON-PROVENANCE
+  kind: authority
+  reference: https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q31856&props=labels%7Cclaims&languages=en&format=json
+  locator: Q31856 English label and complete P685 claims
+  accessed_at: '2026-10-21T07:15:29.049525Z'
+  support: supports
+  summary: The provenance entity identifies Pseudomonas aeruginosa and maps to NCBITaxon:287,
+    matching both recorded species-level occurrences.
+  snapshot_sha256: 97ce526c846bd8d878c709b468a5b28085257ead7f5dc89f3d009bdf83a95dc2
+- evidence_id: R-MVFR-PRIMARY
+  kind: primary_source
+  reference: https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2958.2006.05462.x
+  locator: PMID:17083468; Results on exogenous HAQs, Figure 3 caption, Methods, Tables
+    1/3 and beta-galactosidase assay
+  accessed_at: '2026-10-21T07:21:39Z'
+  support: supports
+  summary: PQS stimulates the pqsA-lacZ reporter in the PA14 pqsA/pqsH double mutant.
+    The methods identify UCBPP-PA14 and pGX5, explain mutant construction and report
+    triplicate beta-galactosidase measurements. The separate His-tagged C87 fragment
+    experiment is not the graph claim. The short source snippet matches inspected
+    text.
+- evidence_id: R-OVERRIDE-GUARD
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: load_claim_references, reconciled with scripts/seed_from_sources.py load_mibig_locus_evidence_overrides
+  accessed_at: '2026-10-21T07:27:43.327965Z'
+  support: context_only
+  summary: Claim-reference corrections enforce an exact raw source-row SHA256. Method
+    REPLACE rows currently do not enforce expected_* context fields; WITHDRAW rows
+    do. Proposed REPLACE actions therefore require a paired pinned citation row or
+    an explicit loader extension before relying on source-drift guards.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: bgc-source922-v5
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000922.5/annotations.json
+  locator: 'complete version 5 entry: first compound, taxonomy, locus and biosynthesis'
+  accessed_at: '2026-10-21T07:17:15Z'
+  support: supports
+  summary: Source compound 1 is exact PQS, separate from its HHQ and dihydroxyquinoline
+    congeners. Taxon208964, AE004091.2:1073960..1087095, PKS/TypeIII and absence of
+    locus methods are faithfully generated. Compound identification cites authentic-standard
+    comparison in the 2002 primary study. Entry is active, questionable quality and
+    completeness unknown.
+- evidence_id: bgc-pao1-interval
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/sviewer/viewer.fcgi?id=AE004091.2&db=nuccore&report=genbank&retmode=text&from=1073960&to=1087095
+  locator: VERSION, source and complete interval CDS annotation
+  accessed_at: '2026-10-21T07:17:15Z'
+  support: supports
+  summary: The requested 13,136 bp PAO1 interval contains PA0996-PA1000 pqsABCDE,
+    PA1001/1002 phnAB and PA1003 mvfR, together with upstream genes. It includes the
+    primary pqsC/pqsD insertion positions. PA2587 pqsH is not in this interval; the
+    separate hydroxylation step is therefore a pathway component encoded elsewhere,
+    not a gene within these BGC bounds.
+- evidence_id: bgc-primary2002-native
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC135424/
+  locator: DOI:10.1128/JB.184.23.6472-6480.2002; Methods, Tables 1/4 and Figure 1B;
+    Results on isogenic mutant transfer
+  accessed_at: '2026-10-21T07:19:39Z'
+  support: supports
+  summary: Native pqsC/pqsD inactivation eliminates detected PQS in MPAO1. The study
+    explicitly describes PAO1seq-derived mutations transferred into MPAO1, maps insertion
+    sites to the PAO1 genome, and uses synthetic PQS for TLC comparison. These genes
+    lie inside the recorded locus. Thus exact-product native necessity is supported
+    while substrain and assay conditions remain explicit.
+- evidence_id: pqsh-primary2002-scope
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC135424/
+  locator: same article; PA2587 mutant MP562, Table1/4, Figure 1B and Discussion on
+    proposed PqsH function
+  accessed_at: '2026-10-21T07:19:39Z'
+  support: partial
+  summary: The unlinked PA2587 mutant loses PQS. The paper proposes a monooxygenase
+    function from sequence and genetics; it does not assay isolated PqsH with HHQ/NADH/O2.
+    Current evidence notes accurately describe the genetic experiment, so this is
+    partial support for the enzyme-reaction edge, alongside its explicit database
+    annotations.
+- evidence_id: pqsh-primary2010-exact-reaction
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3098721&retmode=xml
+  locator: PMID:20662781 / DOI:10.1111/j.1365-2958.2010.07303.x; Results Figures 1-3;
+    Experimental Procedures, Plasmid Construction and Steady State Kinetics
+  accessed_at: '2026-10-21T07:17:15Z'
+  support: supports
+  summary: Full primary XML reports PA14-derived MBP-PqsH converting exact HHQ into
+    PQS. Product agrees with synthetic PQS by TLC and spectra, with the expected positive-ion
+    mass. Kinetics establish HHQ, NADH and oxygen as substrates. The gene was PCR-amplified
+    from PA14 and plasmids sequence-confirmed; all enzyme experiments used the MBP
+    fusion. This is direct reaction evidence for that construct, not an independently
+    inspected assay of native PAO1 protein.
+- evidence_id: pqsh-current-uniprot
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/Q9I0Q0.json
+  locator: FUNCTION and CATALYTIC ACTIVITY; native-reference identity assessed separately;
+    reused official JSON
+  accessed_at: '2026-10-21T07:16:44Z'
+  support: supports
+  summary: Current reviewed PAO1 PqsH annotation names exact HHQ hydroxylation to
+    PQS and RHEA:37871 with NADH/O2/H+ and NAD+/water. Its function citation is PMID12426334.
+    Reused access time from identity review; this is database support and does not
+    transform the 2002 genetic experiment into a purified-enzyme assay.
+- evidence_id: pqsh-rhea-exact-participants
+  kind: database
+  reference: https://www.rhea-db.org/rhea/37871
+  locator: reaction heading and all seven reaction participants
+  accessed_at: '2026-10-21T07:19:39Z'
+  support: supports
+  summary: 'Rhea matches the represented reaction and exact structures: HHQ CHEBI:62219,
+    target PQS CHEBI:29472 with key CEIUIHOQDSVZJQ-UHFFFAOYSA-N, NADH, oxygen, proton,
+    NAD+ and water. The equation is balanced; enzyme class is EC 1.14.13.182. Direct
+    page and indexed participant details were inspected; RXN-file download returned
+    HTTP 403.'
+- evidence_id: bgc-local-source-method-gap
+  kind: record_content
+  reference: data/natural_products/alkaloids/2-heptyl-3-hydroxy-4-quinolone.yaml;
+    data/raw/mibig_compounds.tsv; conf/producer_evidence.tsv; curation/
+  locator: full owner and exact source row; scoped source-override/reference search
+  accessed_at: '2026-10-21T07:18:01Z'
+  support: partial
+  summary: The owner faithfully preserves missing upstream methods as SOURCE_ASSERTION/CLUSTER_UNSTATED
+    despite having the relevant native genetic paper already cited. Search for BGC0000922,
+    Q9I0Q0, RHEA37871 and PqsH graph identifier included ignored/hidden files in curation
+    and conf; no target-specific maintained evidence override was found there. No
+    universal absence beyond these scoped files is asserted.
+- evidence_id: pqsh-pa14-pao1-distinct-references
+  kind: database
+  reference: https://rest.uniprot.org/uniprotkb/search?query=%28gene_exact%3ApqsH%29+AND+%28organism_id%3A208963%29&format=json
+  locator: complete PA14 and PAO1 native reference sequences, independently compared
+    by identity reviewer in protein-equivalence.json
+  accessed_at: '2026-10-21T07:18:34Z'
+  support: context_only
+  summary: 'The inspected PA14 PqsH reference is Q02N79/PA14_30630, 382 aa. Full sequence
+    comparison with PAO1 Q9I0Q0 finds one difference at residue 91: PA14 Ser, PAO1
+    Asn. This reinforces the strain boundary for the 2010 PA14 MBP-fusion assay; it
+    neither disproves PAO1 function nor verifies the historical construct sequence.
+    Source query and original retrieval timestamp are reused from the identity review.'
+- evidence_id: imodulon-search-scope
+  kind: search
+  reference: https://imodulondb.org/dataset.html?organism=p_aeruginosa&dataset=precise364
+  locator: Installed kg-microbe-sources read-only searches for pqs, phn and mvfR;
+    imodulon-search-receipts.json and captured outputs
+  accessed_at: '2026-10-21T07:18:21Z'
+  support: context_only
+  summary: Bounded precise364 searches return component 85 MvfR/PQS signalling and
+    the corresponding pqs and phnA/phnB genes. The mvfR query also returns component
+    15 LasR, annotated for pyochelin biosynthesis and secretion, which was not treated
+    as exact-PQS biosynthetic evidence. The phn query's component 70 PhnR-2 concerns
+    phosphate/phosphonate transport context; it is not evidence for the similarly
+    named anthranilate synthase genes. Original root search receipts, not a fresh
+    search, were reused.
+  search_scope: Organism p_aeruginosa, dataset precise364; queries pqs, phn and mvfR.
+    Dataset-local search only, with separate gene and component matches.
+- evidence_id: imodulon-component85-context
+  kind: database
+  reference: https://imodulondb.org/api/imodulons/p_aeruginosa/precise364/85/genes
+  locator: Exact component-membership JSON endpoint used by installed runner get_imodulon_genes;
+    verified HTTP200 and matching seven-gene payload; imodulon-component85-source.json
+    plus source-access receipt. Original runner summary and context receipts retained.
+  accessed_at: '2026-10-21T07:25:32Z'
+  support: context_only
+  summary: 'The complete returned membership has seven genes: pqsA/PA0996, pqsB/PA0997,
+    pqsC/PA0998, pqsD/PA0999, pqsE/PA1000, phnA/PA1001 and phnB/PA1002. All seven
+    have positive weights above the reported threshold 0.115881 and member rows name
+    MvfR. PhnA/P09785 and PhnB/P09786 agree with the owner graph''s native reference
+    mappings. STRING identifiers use taxon 208964. PqsH is not among these seven component
+    members; no biological absence or lack of regulation follows. Component weights
+    represent a transcriptomic decomposition, not reaction rates or causal necessity.'
+- evidence_id: imodulon-dataset-strain-context
+  kind: primary_source
+  reference: https://academic.oup.com/nar/article/50/7/3658/6561658
+  locator: DOI:10.1093/nar/gkac187; Methods, RNA extraction and Data acquisition;
+    Results, iModulon structure of the transcriptome; dataset link
+  accessed_at: '2026-10-21T07:21:25Z'
+  support: context_only
+  summary: The dataset's primary publication explicitly links aeruPRECISE364 to the
+    inspected database dataset. It reports PAO1 and PAO1 delta-mexB expression profiles,
+    comprising 364 quality-filtered samples (83 new and 281 public), mapped to PAO1
+    genome NC_002516.2. Thus this is relevant PAO1 lineage regulatory context, not
+    a PA14 assay. The runner's dataset catalogue independently labels p_aeruginosa/precise364
+    as Pseudomonas aeruginosa but supplies no strain field; the strain attribution
+    comes from the primary methods.
+- evidence_id: imodulon-precise411-unavailable
+  kind: search
+  reference: https://imodulondb.org/dataset.html?organism=p_aeruginosa&dataset=precise411
+  locator: Original root search receipts and .err files for pqs, phn and mvfR
+  accessed_at: '2026-10-21T07:18:22Z'
+  support: unknown
+  summary: 'All three precise411 searches exited 2 with the typed error: imodulons[0].regulator
+    must be a JSON list, got NoneType. The outputs were empty because parsing failed.
+    The dataset is listed by the runner, but relevant components could not be assessed
+    through this runner. This is unavailable evidence, not a negative search result.'
+  search_scope: Three bounded installed-runner searches in p_aeruginosa/precise411
+    for pqs, phn and mvfR. Each failed during typed response parsing; results were
+    unavailable, not negative.
+assessments:
+- assessment_id: A-IDENTITY-REPRESENTATION
+  area: identity
+  topic: Exact neutral PQS and internally consistent record encoding
+  outcome: supported
+  summary: The owner is the named achiral PQS molecule. Its valid SMILES, full InChI/key,
+    formula and NPAtlas xref agree. The ChEBI default InChI agrees exactly despite
+    a separate malformed SMILES export in that source.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-NPATLAS
+  - E-CHEBI-IDENTITY
+  - E-CHEMISTRY-IDENTITY
+  - E-CHEBI-REPRESENTATION
+- assessment_id: A-XREF-EQUIVALENCE
+  area: identity
+  topic: NPA019649 is the exact structure
+  outcome: supported
+  summary: The official NPAtlas response identifies the same complete SMILES, InChI
+    and key with no recorded reassignment. No owner xref defect was found.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-NPATLAS
+- assessment_id: A-GROUNDING-DEFINITION
+  area: grounding
+  topic: Exact three-star ChEBI grounding and matching definition
+  outcome: supported
+  summary: CHEBI:29472 is a current three-star entry whose default full InChI/key,
+    name and definition match the owner and pinned inventory. EXACT grounding is supported.
+    The valid owner representation should be retained.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - E-CHEBI-IDENTITY
+  - E-GROUNDING-INVENTORY
+  - E-CHEBI-REPRESENTATION
+- assessment_id: A-PROTEIN-NATIVE-REFERENCES
+  area: grounding
+  topic: Four native protein references independently verified
+  outcome: supported
+  summary: The chosen PAO1 PqsH, PhnA and PhnB references and PA14 MvfR reference
+    have consistent gene, locus, taxon, full-length sequence and genomic CDS correspondence.
+    Complete DNA translation agrees with both deposited protein and UniProt for every
+    reference. This establishes native-reference identity, not historical assay-construct
+    identity.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - E-PQSH-UNIPROT
+  - E-PHNA-UNIPROT
+  - E-PHNB-UNIPROT
+  - E-MVFR-PA14-UNIPROT
+  - E-PQSH-GENPEPT
+  - E-PHNA-GENPEPT
+  - E-PHNB-GENPEPT
+  - E-MVFR-PA14-GENPEPT
+  - E-PQSH-DNA
+  - E-PHNA-DNA
+  - E-PHNB-DNA
+  - E-MVFR-PA14-DNA
+  - E-PROTEIN-EQUIVALENCE
+- assessment_id: A-PHNAB-ANNOTATION
+  area: evidence
+  topic: PhnAB graph accurately preserves database evidence limits
+  outcome: supported
+  summary: Current reviewed annotations support PhnA/PhnB complex membership, chorismate
+    and glutamine substrates, anthranilate production and its multistep contribution
+    to PQS. The graph correctly labels these as annotations and preserves the by-similarity
+    basis for subunit division and assembly. It does not adopt native complex stoichiometry,
+    a balanced reaction, exclusive dependence or direct conversion of anthranilate
+    to PQS.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - E-IDENTITY-LOCAL
+  - E-PHNA-UNIPROT
+  - E-PHNB-UNIPROT
+- assessment_id: A-MVFR-STRAIN-EQUIVALENCE
+  area: grounding
+  topic: PA14 reference retained instead of PAO1 homolog
+  outcome: supported
+  summary: The PA14 graph uses the exact native PA14 MvfR accession. PA14 has Val
+    314 and the PAO1 comparator Ala 314; all other positions agree. The distinction
+    in the graph notes is correct, and neither reference determines a historical plasmid
+    or fragment sequence.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - E-MVFR-PA14-UNIPROT
+  - E-MVFR-PA14-GENPEPT
+  - E-MVFR-PAO1-GENPEPT
+  - E-MVFR-PA14-DNA
+  - E-PROTEIN-EQUIVALENCE
+- assessment_id: R-OCCURRENCE
+  area: evidence
+  topic: Both species-level occurrence citations
+  outcome: supported
+  summary: Both references explicitly identify exact PQS and Pseudomonas aeruginosa.
+    The 1999 primary abstract and 2008 secondary review support their limited database-assertion
+    associations. They do not justify an extra strain-level production claim or two
+    independent experiments.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - R-LOCAL
+  - R-OCCURRENCE-PRIMARY
+  - R-OCCURRENCE-REVIEW
+  - R-TAXON-PROVENANCE
+- assessment_id: R-MVFR-GRAPH
+  area: evidence
+  topic: Bounded PA14 cellular reporter response
+  outcome: supported
+  summary: 'The two-edge graph is supported: PQS increases reporter activity, while
+    the strain-matched protein is a native reference for the regulator. No direct
+    binding constant, exact plasmid sequence or PA14 production claim is inferred.'
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - R-LOCAL
+  - R-MVFR-PRIMARY
+- assessment_id: R-CLASSIFICATION
+  area: provenance
+  topic: Computed filing versus asserted source classification
+  outcome: supported
+  summary: ALKALOIDS filing and the complete NPClassifier outputs match the exact-key
+    committed model result. Tryptophan and anthranilic-acid superclass predictions
+    are retained as computational outputs; Anthranilic acid-derived is a separate
+    MIBiG class. Neither is misrepresented as a direct precursor experiment.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - R-LOCAL
+- assessment_id: R-HISTORY
+  area: provenance
+  topic: Partial curation history and unresolved discussion
+  outcome: supported
+  summary: Two bounded mechanism curation events and the open discussion preserve
+    annotation, construct and historical access limits. SEEDED is consistent with
+    no full-record sign-off. The discussion is historical context rather than a prohibition
+    on later source-pinned grading; the current review makes no native status change.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - R-LOCAL
+- assessment_id: R-COMPLETE-SCOPE
+  area: scope
+  topic: All other owner and mechanism assertions
+  outcome: not_applicable
+  summary: The full resolved owner has no external graph components, separate molecular-target
+    entries, quantitative activity assertions or clinical claims. All thirteen inline
+    nodes and ten edges are assessed across the reaction, protein, annotation and
+    reporter checks. Optional absent fields do not require expansion.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - R-LOCAL
+- assessment_id: bgc-exact-target-native-supported
+  area: evidence
+  topic: Exact PQS native producer and locus
+  outcome: supported
+  summary: PQS identity, PAO1 taxon, deposited interval and primary native pqsC/pqsD
+    loss-of-product evidence agree. The retained source grades are faithful but can
+    now be strengthened reproducibly. This is necessity evidence for a biosynthetic
+    locus, not proof that the bounded region alone suffices; unlinked PqsH remains
+    required for final hydroxylation.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - bgc-source922-v5
+  - bgc-pao1-interval
+  - bgc-primary2002-native
+- assessment_id: pqsh-reaction-supported-with-source-boundaries
+  area: evidence
+  topic: PqsH pathway step and first causal graph
+  outcome: supported
+  summary: The exact HHQ→PQS reaction and Rhea/UniProt mappings are supported. Current
+    notes correctly identify 2002 as native genetic evidence. Direct biochemical confirmation
+    is available from a PA14 MBP fusion and can be added with that qualifier; it must
+    not be silently presented as an assay of the native PAO1 reference. No false-reaction
+    finding is warranted from the older citation alone because the record also explicitly
+    cites current reaction annotations. Native PA14 and PAO1 sequences differ at residue
+    91.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - pqsh-primary2002-scope
+  - pqsh-primary2010-exact-reaction
+  - pqsh-current-uniprot
+  - pqsh-rhea-exact-participants
+  - pqsh-pa14-pao1-distinct-references
+- assessment_id: bgc-evidence-completeness
+  area: completeness
+  topic: Resolvable source-method omission
+  outcome: concern
+  summary: The cited native knockout data support BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED
+    through a pinned method override. Record source provenance can be retained while
+    distinguishing its originally unstated metadata from the inspected primary evidence.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - bgc-primary2002-native
+  - bgc-local-source-method-gap
+- assessment_id: imodulon-bounded-regulatory-context
+  area: evidence
+  topic: PAO1 iModulon transcriptional context
+  outcome: supported
+  summary: The relevant precise364 component groups pqsABCDE with phnAB and is annotated
+    MvfR/PQS signalling in a PAO1-lineage compendium. This corroborates transcriptional
+    context for the recorded pathway and PhnAB annotation. It independently proves
+    neither exact chemical transformations, metabolite identity, native necessity
+    nor PhnAB complex assembly, and it is not used to change producer/locus grades.
+    No owner-record defect follows from this context audit.
+  target_ids:
+  - CHEBI:29472
+  evidence_ids:
+  - imodulon-search-scope
+  - imodulon-component85-context
+  - imodulon-dataset-strain-context
+  - imodulon-precise411-unavailable
+findings:
+- finding_id: bgc-pao1-native-method-omitted
+  issue_key: mibig-bgc0000922-compound1-native-genetic-evidence-completeness
+  category: completeness
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: PQS locus metadata omits available exact-product native genetic evidence
+  description: The inherited ungraded source methods underrepresent native pqsC/pqsD
+    loss-of-PQS experiments in the already-cited study. Both the exact product and
+    PAO1 locus are supported, so this is a resolvable evidence-completeness gap rather
+    than a false producer or wrong-compound claim. Preserve the MPAO1/PAO1seq experimental
+    context and do not include unlinked pqsH in the bounded locus.
+  target_ids:
+  - CHEBI:29472
+  field_paths:
+  - producer_organisms[0].evidence_basis
+  - producer_organisms[0].notes
+  - producer_organisms[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - biosynthetic_gene_clusters[0].link_evidence_basis
+  - biosynthetic_gene_clusters[0].evidence
+  evidence_ids:
+  - bgc-source922-v5
+  - bgc-primary2002-native
+  - bgc-pao1-interval
+  - bgc-local-source-method-gap
+  rule_id: 'review-yaml-record Evidence Rules and completeness: exact native experimental
+    support and reproducible source override'
+  native_severity: 'minor: supported claims retain weaker source-only grades despite
+    an accessible primary experiment'
+  normalization_reason: One issue covers producer and locus method completeness because
+    a single pinned native-genetic override fixes both. Correct reaction annotation
+    is not counted as a separate error.
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: pin native PAO1 genetic evidence to BGC0000922 compound 1
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: maintain claim-specific citation and experimental-context notes
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: exact BGC0000922:1 version 5 source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: emit reproducible producer/locus methods and grades
+actions:
+- action_id: represent-pao1-native-knockout-evidence
+  description: Add a source-pinned REPLACE override for BGC0000922:1 version 5, AE004091.2:1073960..1087095,
+    taxon 208964 and exact PQS key, with Knock-out studies. Retain DOI:10.1128/JB.184.23.6472-6480.2002
+    as the native primary reference and explain pqsC/pqsD mutants, MPAO1/PAO1seq provenance
+    and TLC product comparison. Regenerate BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED
+    while preserving the original missing-method metadata in audit notes. Do not use
+    the PA14 PqsH enzyme assay as evidence for this PAO1 interval.
+  finding_ids:
+  - bgc-pao1-native-method-omitted
+  target_ids:
+  - CHEBI:29472
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_locus_evidence_overrides.tsv
+    role: pin native PAO1 genetic evidence to BGC0000922 compound 1
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: maintain claim-specific citation and experimental-context notes
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: exact BGC0000922:1 version 5 source row
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: emit reproducible producer/locus methods and grades
+  generator: scripts/seed_from_sources.py with maintained mibig_locus_evidence_overrides.tsv
+    and claim references
+  acceptance_checks:
+  - Pair every REPLACE method override with a mibig_claim_references.tsv row pinned
+    by the exact raw source-row SHA256. The current REPLACE loader does not enforce
+    expected_* fields itself; the paired claim-reference loader must fail on source-row
+    drift. If no paired reference row is appropriate, extend the method loader to
+    enforce equivalent pins before relying on them.
+  - Only exact BGC0000922:1 target methods change; HHQ and dihydroxyquinoline congeners
+    are not upgraded by implication.
+  - Native pqsC/pqsD necessity is distinguished from whole-locus sufficiency and from
+    unlinked PqsH catalysis.
+  - Existing supported PqsH reaction and PA14 reporter/PhnAB graph boundaries remain
+    intact.
+  - Run just seed-canary CHEBI:29472, inspect generated output, then documented regeneration,
+    strict validation of this target, verify-reproduction, verify-corpus --summary
+    and qc.
+limitations:
+- ChEBI's current and pinned SMILES export fails RDKit kekulization; its full default
+  InChI parses to the exact valid owner structure. No invalid owner SMILES was found.
+- The NPAtlas official response was inspected through the web tool after direct download
+  returned HTTP 403; no local full-response checksum is claimed.
+- Current UniProt annotations verify the PhnAB graph's stated annotation basis. This
+  assessment does not reinterpret the historical primary subunit experiments or prove
+  a native oligomeric stoichiometry.
+- Reference sequence equivalence is not proof of historical assay-construct, experimental-stock
+  or mutant sequence identity.
+- PA14 PqsH differs from PAO1 at residue 91; any PA14 MBP-fusion assay must retain
+  its strain and construct scope when used alongside the PAO1 reference graph.
+- The 1999 occurrence source was available as a complete abstract but not full primary
+  body through the official XML endpoint; the exact species-level association is explicit
+  there. No detailed structure-elucidation method is inferred.
+- The 2008 occurrence citation is a secondary review, treated as bibliographic synthesis
+  rather than an independent primary experiment.
+- The 2006 reporter full HTML, caption and methods were inspected after the direct
+  PDF returned HTTP 403. No quantitative figure extraction or independent visual image
+  inspection is claimed.
+- Native-reference mapping does not establish historical construct sequences; the
+  existing PhnAB graph remains explicitly annotation-based and includes by-similarity
+  evidence.
+- Official 2002 PMC efetch returned metadata only and direct PMC rendering alternated
+  between content and a browser challenge. Detailed primary Methods, Tables 1/4 and
+  Figure 1 caption were inspected through the indexed primary page; no new visual
+  inspection of that TLC image is claimed.
+- The 2010 enzymology paper was retrieved in complete primary XML and its methods
+  inspected. Identity review confirms one native PA14/PAO1 amino-acid difference;
+  neither reference sequence alone verifies the historical MBP assay construct.
+- PqsH RXN-file download was forbidden, but the official Rhea page and current UniProt
+  reaction annotations were accessible and matched.
+- precise411 was unavailable through the installed runner because its regulator field
+  failed typed parsing; this does not establish absence of relevant components or
+  genes.
+- Component 15 was assessed only at its returned search annotation, which concerns
+  pyochelin/secretion; its detailed membership was not inspected because it did not
+  materially support the exact PQS claim.
+- The dataset strain description was verified in the primary publication. Individual
+  sample identities, current raw expression matrices, ICA recomputation and direct
+  regulator binding were not audited.
+- Coexpression/component membership does not independently establish exact product
+  chemistry, biosynthetic necessity, purified-enzyme activity or native protein-complex
+  assembly.
+- The configured full identifier-label gate accepts 499 warning-level taxon-label
+  mismatches, 35 explicit exceptions and 4,722 no-adapter pairs across the corpus;
+  its exit 0 is not independent verification of every identifier or of this record's
+  scientific claims.
+- The quality suite skips the optional sibling AntibioticMech checkout comparison
+  because the isolated clone has no sibling checkout, and skips three command-frontmatter
+  cases because their parameter sets are empty. Pinned-hash and network governance
+  checks still ran.
+- Shared native gates assess deterministic corpus consistency and configured invariants.
+  They do not establish biological production, stereochemical specificity, evidence
+  adequacy or literature-level claim support.
+notes:
+- No scientific owner, source inventory, component, native status or seed history
+  was edited. A qualified passing review does not promote native status to REVIEWED.
+- The minor finding concerns a resolvable source-method omission; the actual producer,
+  reaction and cellular reporter claims have positive evidence. The optional precise411
+  parser failure does not invalidate those independent sources.
+tags:
+- path-order-campaign
+- batch-001
+- pseudomonas-quinolone-signal
