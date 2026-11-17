@@ -1,0 +1,1388 @@
+schema_version: 1.0.0
+review_id: 20261103T143541Z-15-acetyldeoxynivalenol
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: 15-acetyldeoxynivalenol'
+started_at: '2026-11-03T14:04:12.438912Z'
+finished_at: '2026-11-03T14:35:41.867207Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: '15-acetyldeoxynivalenol: qualified partial review of exact retained source
+  scope, evidence grades, taxonomy and complete saved paired molecular tables, including
+  the accepted complete Tri8 reader.'
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/15-acetyldeoxynivalenol.yaml
+    sha256: c86cac6075d209906b7dca64f639d163fc28c9b5f5a6ded8f09cc474ffa50161
+    role: target
+  - path: data/natural_products/terpenoids/3-decalonectrin.yaml
+    sha256: 10bf2ac4e3d00b37a57febb5a475e7f9648e1dbbadb847b1ba9be2e31753387e
+    role: context
+  - path: data/natural_products/terpenoids/culmorin.yaml
+    sha256: fe164582fd1015a6d664739acd2dc1e7d0f2a8c3cdfaaa8c04dee07d83cdc7b6
+    role: context
+  - path: data/natural_products/terpenoids/juniperol-longiborneol.yaml
+    sha256: 24fa59757ad4e8724520eddca45b3d0b2ed63f87287f0ede6cd914b3aa96c2a2
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2240; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:146194
+targets:
+- target_id: CHEBI:146194
+  path: data/natural_products/terpenoids/15-acetyldeoxynivalenol.yaml
+  label: 15-acetyldeoxynivalenol
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Exact assay identity exclusion decisions for selected/direct source context.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained source-row identity/digest guard; text-only dependency.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/graph_components.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/validation/write_validated.py
+    role: Future maintained complete-owner reader implementation; not invoked in this
+      plan.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/15-acetyldeoxynivalenol.yaml
+    role: Curator-owned declared graphs, graph references, pathway steps and history;
+      imported molecular-target assertions and other seeded fields retain inventory
+      ownership. Curated graph/pathway changes require the validated writer and a
+      curation event.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners. This mechanism-bearing owner requires separately
+    authorized complete maintained resolution before scientific assessment and draft
+    assembly. Raw owner capture is not a maintained resolved view.
+checks:
+- check_id: maintained-mechanism-reader
+  name: Complete offline maintained reader for 15-acetyldeoxynivalenol
+  command: /private/tmp/npm-record-reviews-20261021/.venv/bin/python -I -B /private/tmp/npm-review-work/shared-next-batch224/read-selected-mechanism-guarded-001.py
+    2240 64aa432e4dc506e8e23cb70622aa7513ee504b79b73b1e2eaccf168c5c98de68 64e1b7d4dc81fac1a7bd64fb1611d11fb5a71c31c9180a763dc2c82f57961df7
+    6c67fa5d86cb6a283f3cbbbc2a0140c437c4ea88c89bd1e1f2e558e78473bb4c 1f609d8a7b403d773c69095a432eff10024020bf480f3b53ec8c8c6d75ae903a
+    a472935b9b1f86bfd1a83d9bad4bde718aa368a5a93ecc5c9712056d996e2b79
+  status: passed
+  required: true
+  exit_code: 0
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-reader-data
+  - support-2240-reader-execution
+  - support-2240-reader-acceptance
+  summary: Original single offline maintained call preserved the complete owner, one
+    graph/four nodes/three edges/seven graph references and one proposed step/five
+    pathway references; no components. This does not freshly verify primary science,
+    proteins, natural identity or pharmacological activity.
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:146194
+  command: just validate-strict data/natural_products/terpenoids/10-dehydroxy-dihydrobotrydialone.yaml
+    data/natural_products/terpenoids/10-epi-dihydrobotrydial.yaml data/natural_products/terpenoids/10-oxo-dihydrobotrydial.yaml
+    data/natural_products/terpenoids/10-oxodehydrodihydrobotrydial.yaml data/natural_products/terpenoids/10-oxodepressin.yaml
+    data/natural_products/terpenoids/10-oxodihydrobotry-1-9-4-5-diendial.yaml data/natural_products/terpenoids/11-hydroxy-hordetriene.yaml
+    data/natural_products/terpenoids/11-hydroxydehydrobotrydienol.yaml data/natural_products/terpenoids/12-hydroxydehydrobotrydienol.yaml
+    data/natural_products/terpenoids/15-acetyldeoxynivalenol.yaml --workers 1 --out
+    /private/tmp/npm-native-checks/batch-224/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:146194
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-224/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:146194
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:146194
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:146194
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-224/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:146194
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:146194
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:146194
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2240-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/15-acetyldeoxynivalenol.yaml
+  locator: lines 1–316
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Whole current plaintext owner and all 4 history events. Literal identifier
+    CHEBI:146194, label 15-acetyldeoxynivalenol and full key IDGRYIRJIFKTAN-HTJQZXIKSA-N.
+    Historical events are retained claims, not fresh scientific verification.
+  snapshot_sha256: c86cac6075d209906b7dca64f639d163fc28c9b5f5a6ded8f09cc474ffa50161
+- evidence_id: support-2240-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/owner-capture-DATA-001.json
+  locator: /records/9/owner_document; /records/9/owner_pin
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Exact captured complete owner including structure, provenance, occurrences,
+    computed classification, grounding and history; definition, discussion, graph
+    and proposed pathway are preserved.
+  snapshot_sha256: 1f609d8a7b403d773c69095a432eff10024020bf480f3b53ec8c8c6d75ae903a
+- evidence_id: support-2240-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Complete admitted selected context with 44 inputs and 3 distinct direct
+    companion paths. All nine retained query frames and complete matches are scoped
+    to the saved local inventories.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch224/intakes/2240-inspect-001.json
+  locator: /status; /source; /targets
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Original canonical inspection of the exact owner, source ownership and
+    current input snapshots; inspection is not a scientific verdict.
+  snapshot_sha256: 64e1b7d4dc81fac1a7bd64fb1611d11fb5a71c31c9180a763dc2c82f57961df7
+- evidence_id: support-2240-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch224/root-input-plan-acceptance-001.json
+  locator: /status; /input_plan; /inventory; /source_scope_notes; /verification
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: ROOT accepts the actual saved 520-placement/70-path input plan with current
+    owner, component and direct-context equality.
+  snapshot_sha256: da3962b4fe12850e53d3e2136f3ed0a1c2cdf9587ae719376ead739521412e37
+- evidence_id: support-2240-intake-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch224/root-intake-ready-001.json
+  locator: /status; /intake_summary; /intakes_execution; /source_placements; /unique_source_paths;
+    /mechanism_owner_orders
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: ROOT accepts all ten original canonical intakes and exact 520/70 snapshots;
+    sole selected mechanism owner is 2240.
+  snapshot_sha256: 1f72205492f09d0c086a807f917b4bcf17eaff42d69561dd277a1518be71c584
+- evidence_id: support-2240-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch224/root-local-diagnostics-acceptance-001.json
+  locator: /status; /results; /unavailable; /all_native_gates_passed; /chemistry_DATA;
+    /chemistry_execution
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: ROOT accepts five local gate exits 0 and twenty original saved molecular
+    parses with all 100 paired comparisons true and empty stderr. FullQC, complete
+    OAK and external verification remain unavailable; all_native_gates_passed is false
+    for that broader gate set.
+  snapshot_sha256: 43ebbc292b0c41391fc12c29a12363d1a780ad3c4641e351d63b09654e4ef315
+- evidence_id: support-2240-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/9/declared_structure; /records/9/literal_InChI_layers; /records/9/smiles;
+    /records/9/inchi; /records/9/comparisons; /records/9/atom_correspondence
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Both saved forms give neutral C17H22O7 with 24 atoms and 27 bonds. All
+    ten paired comparisons are true, including canonical isomeric/nonisomeric SMILES
+    and full InChI/key; the chirality-aware atom-count map is complete, while full_graph_identity_established
+    remains false. Seven tetrahedral centres are specified in each saved form. In
+    SMILES indexing these are 3 R, 4 R, 5 S, 9 R, 11 R, 12 R and 13 S; the complete
+    saved mapping retains the correspondence despite different atom ordering. No unspecified
+    potential unit is reported.
+  snapshot_sha256: e66cde7421469a28a7c887b4274a58659b679977f1286ed3b429a5b17e59c15c
+- evidence_id: support-2240-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/9/smiles/computed; /records/9/inchi/computed; /records/9/atom_correspondence
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: In SMILES indexing the graph contains ketone C6=O7, free hydroxyls at C5–O8
+    and C11–O17, epoxide C13–C14–O15, ether O16 between C3 and C12, and acetyl ester
+    C21(=O22)–O20–C19 with methyl C23. The four rings have sizes 6, 5, 3 and 6. The
+    helper C5O candidate cycle [3,4,9,12,13,16] is a fused trichothecene ether ring,
+    not a separate sugar residue or evidence of glycosylation. Numbering here is diagnostic
+    atom indexing, not natural-product nomenclature.
+  snapshot_sha256: e66cde7421469a28a7c887b4274a58659b679977f1286ed3b429a5b17e59c15c
+- evidence_id: support-2240-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: lines 142–173
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: The maintained structure_fields calculation uses FindMolChiralCenters(includeUnassigned=True,useLegacyImplementation=False)
+    and sets stereo_complete by absence of ? atom-centre labels. This calculation
+    does not separately assess potential double-bond geometry.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2240-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: lines 982–1019
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: The maintained seeder retains lead structure/key and copies stereo_complete,
+    stores a single matched ChEBI definition, and records versioned NPClassifier outputs
+    separately. This is code reading, not new molecular execution.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2240-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: lines 392–425
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: The stereo_complete description addresses undefined stereocentres. ComputedClassification
+    is explicitly a named/versioned prediction, never a source assertion or a reason
+    to admit a record.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: support-2240-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: lines 35–57
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: The local profile separates structure, provenance, evidence grades and
+    computed classification; generated ownership belongs to maintained inventories/extractors/seeder,
+    with curator claims/components retaining their own validated writer and histories.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: support-2240-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-source-scope-notes-001.json
+  locator: /reading; /taxonomy; /curation; /cautions; /actual_totals
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Complete named-team source/raw/history/cache reading is attributed here.
+    BGC reports a case-sensitive 75-token scan of eight implemented curation tables,
+    directly opened including ignored files, with zero matching rows in that bounded
+    scope; reserved decisions.tsv was not consumed.
+  snapshot_sha256: f610c862e06775768572fe9cb7d4faf101df772f22e18f57a1823102e074e191
+- evidence_id: support-2240-taxonomy-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/source_taxa; /records/9/source_scope_inventory/forward_taxon_merge_matches;
+    /records/9/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Selected saved source taxa ["NCBITaxon:229533","NCBITaxon:5516","NCBITaxon:5518"];
+    forward-merge and non-organism matches are empty for this context. No live taxonomy
+    query.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-mechanism-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/declared_mechanism_roots_literal; /records/9/component_paths;
+    /records/9/literal_mechanism_inventory; /records/9/proposed_companion_paths
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Sole selected graph/pathway owner 2240 has one inline graph and one proposed
+    step; no components or molecular targets. Unselected contextual mechanisms do
+    not extend this selected reader.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "IDGRYIRJIFKTAN-HTJQZXIKSA-N";
+    exactly 2 retained matching rows. This is the admitted local query scope, not
+    global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: physical lines 1506–1506
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained physical TSV payload: {"mibig_accession":"BGC0001277","entry_version":"4","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"15-acetyldeoxynivalenol","compound_index":"1","smiles":"CC(=O)OC[C@]12[C@H](O)C(=O)C(C)=C[C@H]1O[C@@H]1[C@H](O)C[C@@]2(C)[C@]12CO2","standard_inchi":"InChI=1S/C17H22O7/c1-8-4-11-16(6-22-9(2)18,13(21)12(8)20)15(3)5-10(19)14(24-11)17(15)7-23-17/h4,10-11,13-14,19,21H,5-7H2,1-3H3/t10-,11-,13-,14-,15-,16-,17+/m1/s1","standard_inchi_key":"IDGRYIRJIFKTAN-HTJQZXIKSA-N","stereo_complete":"true","compound_classes":"Sesquiterpenoid","database_ids":"pubchem:10382483|chembl:CHEMBL468823|chemspider:8557926","taxon_id":"NCBITaxon:5518","taxon_label":"Fusarium
+    graminearum","bgc_classes":"terpene","bgc_subclasses":"Unknown","genome_accession":"AF359361.3","locus_from":"","locus_to":"","locus_evidence_methods":"","producer_evidence_basis":"SOURCE_ASSERTION","cluster_link_evidence_basis":"CLUSTER_UNSTATED","primary_reference":"DOI:10.1128/aem.68.6.2959-2964.2002","reference_basis":"COMPOUND_EVIDENCE"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2240-row-mibig_compounds-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: physical lines 2576–2576
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained physical TSV payload: {"mibig_accession":"BGC0002176","entry_version":"3","entry_status":"active","entry_quality":"questionable","entry_completeness":"unknown","compound_name":"15-acetyldeoxynivalenol","compound_index":"3","smiles":"CC1=C[C@@H]2[C@]([C@@H](C1=O)O)([C@]3(C[C@H]([C@H]([C@@]34CO4)O2)O)C)COC(=O)C","standard_inchi":"InChI=1S/C17H22O7/c1-8-4-11-16(6-22-9(2)18,13(21)12(8)20)15(3)5-10(19)14(24-11)17(15)7-23-17/h4,10-11,13-14,19,21H,5-7H2,1-3H3/t10-,11-,13-,14-,15-,16-,17+/m1/s1","standard_inchi_key":"IDGRYIRJIFKTAN-HTJQZXIKSA-N","stereo_complete":"true","compound_classes":"","database_ids":"pubchem:10382483","taxon_id":"NCBITaxon:229533","taxon_label":"Fusarium
+    graminearum PH-1","bgc_classes":"terpene","bgc_subclasses":"Unknown","genome_accession":"CM000574.1","locus_from":"10717529","locus_to":"10718727","locus_evidence_methods":"Knock-out
+    studies|Heterologous expression","producer_evidence_basis":"BGC_CHARACTERIZED","cluster_link_evidence_basis":"CLUSTER_DEMONSTRATED","primary_reference":"DOI:10.1074/jbc.m109.045047","reference_basis":"COMPOUND_BIOACTIVITY"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2240-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "IDGRYIRJIFKTAN-HTJQZXIKSA-N";
+    exactly 1 retained matching rows. This is the admitted local query scope, not
+    global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-row-chebi_structures-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: physical lines 41768–41768
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained physical TSV payload: {"chebi_id":"CHEBI:146194","name":"15-acetyldeoxynivalenol","definition":"A
+    trichothecene mycotoxin that is deoxynivalenol acetylated on the oxygen at C-15.
+    A skin and eye irritant, along with its 3-acetyl regioisomer and its parent deoxynivalenol
+    it is considered among the most commonly and widely distributed cereal contaminants.","stars":"3","standard_inchi_key":"IDGRYIRJIFKTAN-HTJQZXIKSA-N","smiles":"[H][C@@]12C=C(C)C(=O)[C@@H](O)[C@]1(COC(C)=O)[C@@]1(C)C[C@@H](O)[C@@]([H])(O2)[C@@]12CO2"}'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: support-2240-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "IDGRYIRJIFKTAN-HTJQZXIKSA-N";
+    exactly 4 retained matching rows. This is the admitted local query scope, not
+    global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-row-lotus_occurrences-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 2730–2730
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained physical TSV payload: {"standard_inchi_key":"IDGRYIRJIFKTAN-HTJQZXIKSA-N","organism_name":"Fusarium
+    culmorum","taxon_id":"NCBITaxon:5516","organism_wikidata":"http://www.wikidata.org/entity/Q2712591","reference_doi":"10.1128/AEM.56.10.3047-3051.1990","structure_wikidata":"http://www.wikidata.org/entity/Q26840875"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2240-row-lotus_occurrences-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 2731–2731
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained physical TSV payload: {"standard_inchi_key":"IDGRYIRJIFKTAN-HTJQZXIKSA-N","organism_name":"Fusarium
+    graminearum","taxon_id":"NCBITaxon:5518","organism_wikidata":"http://www.wikidata.org/entity/Q103806070","reference_doi":"10.1007/BF00597600","structure_wikidata":"http://www.wikidata.org/entity/Q26840875"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2240-row-lotus_occurrences-2
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 2732–2732
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained physical TSV payload: {"standard_inchi_key":"IDGRYIRJIFKTAN-HTJQZXIKSA-N","organism_name":"Fusarium
+    graminearum","taxon_id":"NCBITaxon:5518","organism_wikidata":"http://www.wikidata.org/entity/Q103806070","reference_doi":"10.1007/BF00598566","structure_wikidata":"http://www.wikidata.org/entity/Q26840875"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2240-row-lotus_occurrences-3
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: physical lines 2733–2733
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained physical TSV payload: {"standard_inchi_key":"IDGRYIRJIFKTAN-HTJQZXIKSA-N","organism_name":"Fusarium
+    graminearum","taxon_id":"NCBITaxon:5518","organism_wikidata":"http://www.wikidata.org/entity/Q103806070","reference_doi":"10.1016/0031-9422(89)85014-9","structure_wikidata":"http://www.wikidata.org/entity/Q26840875"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2240-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "IDGRYIRJIFKTAN-HTJQZXIKSA-N";
+    exactly 0 retained matching rows. This is the admitted local query scope, not
+    global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "IDGRYIRJIFKTAN-HTJQZXIKSA-N";
+    exactly 1 retained matching rows. This is the admitted local query scope, not
+    global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: physical lines 951–951
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained physical TSV payload: {"standard_inchi_key":"IDGRYIRJIFKTAN-HTJQZXIKSA-N","smiles":"CC(=O)OC[C@]12[C@H](O)C(=O)C(C)=C[C@H]1O[C@@H]1[C@H](O)C[C@@]2(C)[C@]12CO2","pathway_results":"Terpenoids","superclass_results":"Sesquiterpenoids","class_results":"Trichothecane
+    sesquiterpenoids","is_glycoside":"false","model_version":"npclassifier.gnps2.org@2026-09-07"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2240-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "IDGRYIRJIFKTAN-HTJQZXIKSA-N";
+    exactly 0 retained matching rows. This is the admitted local query scope, not
+    global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "IDGRYIRJIFKTAN-HTJQZXIKSA-N";
+    exactly 0 retained matching rows. This is the admitted local query scope, not
+    global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "IDGRYIRJIFKTAN-HTJQZXIKSA-N";
+    exactly 0 retained matching rows. This is the admitted local query scope, not
+    global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Saved predicate exact chebi_id from exact full-key structure rows; query
+    ["CHEBI:146194"]; exactly 0 retained matching rows. This is the admitted local
+    query scope, not global source completeness.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-cache-5516
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 8616–8620
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Whole cached stanza with literal synonym scope, not live taxonomy: [Term]
+
+    id: NCBITaxon:5516
+
+    name: Fusarium culmorum
+
+    synonym: "Fusisporium culmorum" EXACT []'
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2240-cache-5518
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 8621–8626
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Whole cached stanza with literal synonym scope, not live taxonomy: [Term]
+
+    id: NCBITaxon:5518
+
+    name: Fusarium graminearum
+
+    synonym: "Gibberella zeae" EXACT []
+
+    synonym: "Sphaeria zeae" EXACT []'
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2240-cache-229533
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/corpus_taxa.obo
+  locator: physical lines 69588–69592
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Whole cached stanza with literal synonym scope, not live taxonomy: [Term]
+
+    id: NCBITaxon:229533
+
+    name: Fusarium graminearum PH-1
+
+    synonym: "Gibberella zeae PH-1" EXACT []'
+  snapshot_sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+- evidence_id: support-2240-companions
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /records/9/proposed_companion_paths; /records/9/direct_companion_predicates;
+    /raw_unselected_companions
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Exact declared direct context; properties do not transfer by shared BGC
+    alone. Current distinct owner identities: [{"path":"data/natural_products/terpenoids/3-decalonectrin.yaml","identifier":"naturalproductmech:mibig-bb64c05ac1","label":"3-decalonectrin","standard_inchi_key":"XJVUZQIPINLTLE-KWRZAIAESA-N"},{"path":"data/natural_products/terpenoids/culmorin.yaml","identifier":"naturalproductmech:mibig-f0432c8c31","label":"culmorin","standard_inchi_key":"VWMGBHVRRNKOAE-UHFFFAOYSA-N"},{"path":"data/natural_products/terpenoids/juniperol-longiborneol.yaml","identifier":"naturalproductmech:mibig-390b0e4f55","label":"(+)-juniperol(longiborneol)","standard_inchi_key":"MNNFKQAYXGEKFA-MJBFILCRSA-N"}]'
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-companion-culmorin
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /raw_unselected_companions/8
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Complete admitted culmorin context, including exact raw/history and saved
+    query payloads. This is an unselected owner; its assay and mechanism claims do
+    not transfer to 15-acetyldeoxynivalenol.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-companion-juniperol-longiborneol
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /raw_unselected_companions/13
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Complete admitted juniperol-longiborneol context, including exact raw/history
+    and saved query payloads. This is an unselected owner; its assay and mechanism
+    claims do not transfer to 15-acetyldeoxynivalenol.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-companion-3-decalonectrin
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224-tentative/bgc-prep/bgc-conditional224-target-input-plan-001.json
+  locator: /raw_unselected_companions/1
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Complete admitted 3-decalonectrin context, including exact raw/history
+    and saved query payloads. This is an unselected owner; its assay and mechanism
+    claims do not transfer to 15-acetyldeoxynivalenol.
+  snapshot_sha256: 7a543c946c947e661aca3902df11516ae7e744a40fa1823544de55df6cc468af
+- evidence_id: support-2240-reader-data
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch224/native-current224-15-acetyldeoxynivalenol-maintained-reader-DATA-001.json
+  locator: /raw_owner; /resolved_view; /expected_view; /returned_view_equals_expected_complete_owner;
+    /counts; /errors; /unexpected_denials; /review_check_metadata
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Original complete maintained owner equals the exact raw/captured/expected
+    owner. One graph/four nodes/three edges, one pathway step, four owner histories,
+    zero components/targets; no errors/unexpected denials. This is preservation/reader
+    evidence, not fresh scientific verification.
+  snapshot_sha256: ea898cd7171ab162ffa5f4144ec15fb0f7c264e15d19a60b83dbc9452a6bb0bf
+- evidence_id: support-2240-reader-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch224/native-current224-15-acetyldeoxynivalenol-reader-execution-001.json
+  locator: /started_at; /finished_at; /command; /exit_code; /DATA; /stderr; /retries;
+    /external_requests
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: The original single maintained reader execution terminated with exit code
+    0 and an empty stderr artifact. The execution receipt records retries=0 and external_requests=false.
+  snapshot_sha256: 72f4802076a0bcfadf4d94ff2c3584c8475837d426db60f72e4b2c7d8d3ccb18
+- evidence_id: support-2240-reader-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch224/root-current224-2240-maintained-reader-acceptance-001.json
+  locator: /status; /DATA; /execution; /verification; /review_check_contract; /limits
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: ROOT accepts the original reader and current complete-owner/input/technical
+    joins, with exact inherited review check metadata. Scientific primary/protein
+    verification remains outside this admission.
+  snapshot_sha256: 11f7adfd58e7ce805cdbff673bf9c995380e5508dcfe739654d0bcf12f970646
+- evidence_id: support-2240-mechanism-graph
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/native-current224-15-acetyldeoxynivalenol-maintained-reader-DATA-001.json
+  locator: /resolved_view/causal_graphs/0
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: 'Complete retained BIOSYNTHESIS Tri8 graph: four nodes, three edges, seven
+    evidence placements. The precursor and process are ungrounded; enzyme UniProtKB:Q9C1B2
+    and product CHEBI:146194 are retained identifiers. Historical primary/database
+    notes are attributed claims.'
+  snapshot_sha256: ea898cd7171ab162ffa5f4144ec15fb0f7c264e15d19a60b83dbc9452a6bb0bf
+- evidence_id: support-2240-mechanism-pathway
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch224/native-current224-15-acetyldeoxynivalenol-maintained-reader-DATA-001.json
+  locator: /resolved_view/biosynthetic_pathway/0
+  accessed_at: '2026-11-03T14:31:00.526051Z'
+  support: supports
+  summary: Complete retained proposed Tri8 C3-deacetylation step with five evidence
+    placements. Its note explicitly leaves the exact precursor ungrounded; historical
+    protein/sequence/source assertions were not freshly verified.
+  snapshot_sha256: ea898cd7171ab162ffa5f4144ec15fb0f7c264e15d19a60b83dbc9452a6bb0bf
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:05:51.408108Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 4c521ff8b25581d377da2677868b5abbff239b6f953434011b31a59e15b77f73
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:06:17.662354Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 5a7f2a7f4edba317004ec6539c96d2d9c81ea6b6b6cd544b1ee96df492591510
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:06:37.889880Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:07:12.763448Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-224/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-224/native-current224-five-gates-execution-001.json
+  accessed_at: '2026-11-03T14:07:24.696069Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 2a0ba11012203035d494b334e17527655e00af18303f045b8829a5e7808b65e9
+assessments:
+- assessment_id: support-2240-A1
+  area: identity
+  topic: Exact structure concept and grounding scope
+  outcome: supported
+  summary: 'CHEBI:146194 is the exact retained three-star ChEBI concept for 15-acetyldeoxynivalenol,
+    full key IDGRYIRJIFKTAN-HTJQZXIKSA-N. The key is shared by MIBiG BGC0001277 v4
+    and BGC0002176 v3, the ChEBI row, four LOTUS rows and the model row. Both MIBiG
+    entries are active but questionable quality with unknown completeness. The existing
+    OPEN shared-structure discussion is preserved: agreement of retained keys and
+    computed forms does not independently settle upstream cross-reference provenance.
+    The ChEBI definition identifies C-15 O-acetylated deoxynivalenol; its irritant/contaminant
+    prose is a database assertion rather than an inspected assay.'
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-owner
+  - support-2240-capture
+  - support-2240-source-plan
+  - support-2240-query-mibig_compounds
+  - support-2240-query-chebi_structures
+  - support-2240-chemistry
+  - support-2240-row-mibig_compounds-0
+  - support-2240-row-mibig_compounds-1
+  - support-2240-row-chebi_structures-0
+  - support-2240-row-lotus_occurrences-0
+  - support-2240-row-lotus_occurrences-1
+  - support-2240-row-lotus_occurrences-2
+  - support-2240-row-lotus_occurrences-3
+  - support-2240-row-npclassifier-0
+  dimensions:
+  - name: standard_inchi_key
+    value: IDGRYIRJIFKTAN-HTJQZXIKSA-N
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-owner
+    - support-2240-capture
+    - support-2240-source-plan
+    - support-2240-query-mibig_compounds
+    - support-2240-query-chebi_structures
+    - support-2240-chemistry
+    - support-2240-row-mibig_compounds-0
+    - support-2240-row-mibig_compounds-1
+    - support-2240-row-chebi_structures-0
+    - support-2240-row-lotus_occurrences-0
+    - support-2240-row-lotus_occurrences-1
+    - support-2240-row-lotus_occurrences-2
+    - support-2240-row-lotus_occurrences-3
+    - support-2240-row-npclassifier-0
+  - name: grounding_scope
+    value: Exact CHEBI:146194 with two retained MIBiG entries BGC0001277 v4 and BGC0002176
+      v3; existing shared-structure discussion stays OPEN.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-owner
+    - support-2240-capture
+    - support-2240-source-plan
+    - support-2240-query-mibig_compounds
+    - support-2240-query-chebi_structures
+    - support-2240-chemistry
+    - support-2240-row-mibig_compounds-0
+    - support-2240-row-mibig_compounds-1
+    - support-2240-row-chebi_structures-0
+    - support-2240-row-lotus_occurrences-0
+    - support-2240-row-lotus_occurrences-1
+    - support-2240-row-lotus_occurrences-2
+    - support-2240-row-lotus_occurrences-3
+    - support-2240-row-npclassifier-0
+- assessment_id: support-2240-A2
+  area: representation
+  topic: Paired representations and stereochemical limits
+  outcome: supported
+  summary: Both saved forms give neutral C17H22O7 with 24 atoms and 27 bonds. All
+    ten paired comparisons are true, including canonical isomeric/nonisomeric SMILES
+    and full InChI/key; the chirality-aware atom-count map is complete, while full_graph_identity_established
+    remains false. Seven tetrahedral centres are specified in each saved form. In
+    SMILES indexing these are 3 R, 4 R, 5 S, 9 R, 11 R, 12 R and 13 S; the complete
+    saved mapping retains the correspondence despite different atom ordering. No unspecified
+    potential unit is reported. Literal stereo_complete:true is scoped to the maintained
+    atom-centre calculation, not new experimental confirmation of the natural isomer.
+    Representation agreement does not prove natural identity or an independent full-graph
+    equivalence.
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-capture
+  - support-2240-chemistry
+  - support-2240-stereo-method
+  - support-2240-seeder
+  - support-2240-structure-schema
+  - support-2240-diagnostic-acceptance
+  dimensions:
+  - name: stereochemical_resolution
+    value: Seven tetrahedral centres are specified in each saved form. In SMILES indexing
+      these are 3 R, 4 R, 5 S, 9 R, 11 R, 12 R and 13 S; the complete saved mapping
+      retains the correspondence despite different atom ordering. No unspecified potential
+      unit is reported. Literal stereo_complete:true is scoped to the maintained atom-centre
+      calculation, not new experimental confirmation of the natural isomer.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-chemistry
+    - support-2240-stereo-method
+    - support-2240-seeder
+    - support-2240-structure-schema
+    - support-2240-diagnostic-acceptance
+  - name: representation_correspondence
+    value: All ten comparisons true; complete chirality-aware atom-count map; independent
+      full_graph_identity_established remains false.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-chemistry
+    - support-2240-stereo-method
+    - support-2240-seeder
+    - support-2240-structure-schema
+    - support-2240-diagnostic-acceptance
+- assessment_id: support-2240-A3
+  area: provenance
+  topic: Producer, occurrence and locus evidence grades
+  outcome: supported
+  summary: BGC0001277 v4 retains species Fusarium graminearum 5518 as SOURCE_ASSERTION,
+    AF359361.3 without a stated locus interval/method and CLUSTER_UNSTATED. BGC0002176
+    v3 separately retains F. graminearum PH-1 strain 229533 as BGC_CHARACTERIZED with
+    knockout/heterologous-expression CLUSTER_DEMONSTRATED evidence on CM000574.1:10717529–10718727.
+    Four LOTUS occurrences describe F. culmorum 5516 once and F. graminearum 5518
+    three times; these are occurrence assertions, not four producer demonstrations.
+    Whole cached stanzas preserve Fusisporium culmorum and Gibberella zeae/PH-1 naming
+    while keeping species and strain scopes separate.
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-capture
+  - support-2240-taxonomy-routes
+  - support-2240-source-notes
+  - support-2240-row-mibig_compounds-0
+  - support-2240-row-mibig_compounds-1
+  - support-2240-row-lotus_occurrences-0
+  - support-2240-row-lotus_occurrences-1
+  - support-2240-row-lotus_occurrences-2
+  - support-2240-row-lotus_occurrences-3
+  - support-2240-cache-5516
+  - support-2240-cache-5518
+  - support-2240-cache-229533
+  dimensions:
+  - name: taxon_and_strain_scope
+    value: BGC0001277 v4 retains species Fusarium graminearum 5518 as SOURCE_ASSERTION,
+      AF359361.3 without a stated locus interval/method and CLUSTER_UNSTATED. BGC0002176
+      v3 separately retains F. graminearum PH-1 strain 229533 as BGC_CHARACTERIZED
+      with knockout/heterologous-expression CLUSTER_DEMONSTRATED evidence on CM000574.1:10717529–10718727.
+      Four LOTUS occurrences describe F. culmorum 5516 once and F. graminearum 5518
+      three times; these are occurrence assertions, not four producer demonstrations.
+      Whole cached stanzas preserve Fusisporium culmorum and Gibberella zeae/PH-1
+      naming while keeping species and strain scopes separate.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-taxonomy-routes
+    - support-2240-source-notes
+    - support-2240-row-mibig_compounds-0
+    - support-2240-row-mibig_compounds-1
+    - support-2240-row-lotus_occurrences-0
+    - support-2240-row-lotus_occurrences-1
+    - support-2240-row-lotus_occurrences-2
+    - support-2240-row-lotus_occurrences-3
+    - support-2240-cache-5516
+    - support-2240-cache-5518
+    - support-2240-cache-229533
+  - name: producer_evidence_tier
+    value: 'BGC0001277: SOURCE_ASSERTION species 5518; BGC0002176: BGC_CHARACTERIZED
+      PH-1 strain 229533.'
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-taxonomy-routes
+    - support-2240-source-notes
+    - support-2240-row-mibig_compounds-0
+    - support-2240-row-mibig_compounds-1
+    - support-2240-row-lotus_occurrences-0
+    - support-2240-row-lotus_occurrences-1
+    - support-2240-row-lotus_occurrences-2
+    - support-2240-row-lotus_occurrences-3
+    - support-2240-cache-5516
+    - support-2240-cache-5518
+    - support-2240-cache-229533
+  - name: locus_evidence_tier
+    value: 'BGC0001277: CLUSTER_UNSTATED; BGC0002176: CLUSTER_DEMONSTRATED knockout/heterologous
+      expression, both questionable/unknown.'
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-taxonomy-routes
+    - support-2240-source-notes
+    - support-2240-row-mibig_compounds-0
+    - support-2240-row-mibig_compounds-1
+    - support-2240-row-lotus_occurrences-0
+    - support-2240-row-lotus_occurrences-1
+    - support-2240-row-lotus_occurrences-2
+    - support-2240-row-lotus_occurrences-3
+    - support-2240-cache-5516
+    - support-2240-cache-5518
+    - support-2240-cache-229533
+- assessment_id: support-2240-A4
+  area: evidence
+  topic: Citation placement and historical verification scope
+  outcome: supported
+  summary: BGC0001277 places DOI:10.1128/aem.68.6.2959-2964.2002 at COMPOUND_EVIDENCE;
+    BGC0002176 places DOI:10.1074/jbc.m109.045047 at COMPOUND_BIOACTIVITY. The latter
+    role is not generic primary proof for every mechanism or producer claim. Four
+    distinct LOTUS DOI strings retain occurrence scope without establishing independence
+    from producer literature. Historical Tri8 PRIMARY_EXPERIMENT and database labels
+    remain attributed to curator evidence; no original article/API response or protein
+    sequence was inspected in this review.
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-capture
+  - support-2240-source-notes
+  - support-2240-companions
+  - support-2240-row-mibig_compounds-0
+  - support-2240-row-mibig_compounds-1
+  - support-2240-row-lotus_occurrences-0
+  - support-2240-row-lotus_occurrences-1
+  - support-2240-row-lotus_occurrences-2
+  - support-2240-row-lotus_occurrences-3
+  dimensions:
+  - name: citation_scope
+    value: BGC0001277 places DOI:10.1128/aem.68.6.2959-2964.2002 at COMPOUND_EVIDENCE;
+      BGC0002176 places DOI:10.1074/jbc.m109.045047 at COMPOUND_BIOACTIVITY. The latter
+      role is not generic primary proof for every mechanism or producer claim. Four
+      distinct LOTUS DOI strings retain occurrence scope without establishing independence
+      from producer literature. Historical Tri8 PRIMARY_EXPERIMENT and database labels
+      remain attributed to curator evidence; no original article/API response or protein
+      sequence was inspected in this review.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-source-notes
+    - support-2240-companions
+    - support-2240-row-mibig_compounds-0
+    - support-2240-row-mibig_compounds-1
+    - support-2240-row-lotus_occurrences-0
+    - support-2240-row-lotus_occurrences-1
+    - support-2240-row-lotus_occurrences-2
+    - support-2240-row-lotus_occurrences-3
+- assessment_id: support-2240-A5
+  area: scope
+  topic: Occurrence, assay and companion boundaries
+  outcome: supported
+  summary: Four written LOTUS occurrences match four retained rows; no selected PubChem,
+    BindingDB, AntibioticMech, CyanoMetDB or ChEBI-origin match is retained. ChEBI
+    irritant/contaminant prose does not supply a measured selected assay. The three
+    direct companions are 3-decalonectrin, Culmorin and Juniperol-longiborneol. Culmorin
+    has five actual assay rows with one Active, three Inconclusive and one Inactive
+    call; these justify admitted assay-table context but do not transfer activity
+    or potency to this owner. Blank-AID sentinel rows in the other companions are
+    not negative assays. Juniperol mechanisms remain unselected context, separate
+    from the selected Tri8 pathway.
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-capture
+  - support-2240-mechanism-scope
+  - support-2240-companions
+  - support-2240-source-notes
+  - support-2240-query-mibig_compounds
+  - support-2240-query-chebi_structures
+  - support-2240-query-lotus_occurrences
+  - support-2240-query-cyanometdb_occurrences
+  - support-2240-query-npclassifier
+  - support-2240-query-pubchem_bioassay
+  - support-2240-query-bindingdb_targets
+  - support-2240-query-antibioticmech_inchikeys
+  - support-2240-query-chebi_origins
+  - support-2240-row-lotus_occurrences-0
+  - support-2240-row-lotus_occurrences-1
+  - support-2240-row-lotus_occurrences-2
+  - support-2240-row-lotus_occurrences-3
+  - support-2240-row-chebi_structures-0
+  - support-2240-companion-culmorin
+  - support-2240-companion-juniperol-longiborneol
+  - support-2240-companion-3-decalonectrin
+  dimensions:
+  - name: occurrence_scope
+    value: Four written LOTUS occurrences match four retained rows; no selected PubChem,
+      BindingDB, AntibioticMech, CyanoMetDB or ChEBI-origin match is retained. ChEBI
+      irritant/contaminant prose does not supply a measured selected assay. The three
+      direct companions are 3-decalonectrin, Culmorin and Juniperol-longiborneol.
+      Culmorin has five actual assay rows with one Active, three Inconclusive and
+      one Inactive call; these justify admitted assay-table context but do not transfer
+      activity or potency to this owner. Blank-AID sentinel rows in the other companions
+      are not negative assays. Juniperol mechanisms remain unselected context, separate
+      from the selected Tri8 pathway.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-mechanism-scope
+    - support-2240-companions
+    - support-2240-source-notes
+    - support-2240-query-mibig_compounds
+    - support-2240-query-chebi_structures
+    - support-2240-query-lotus_occurrences
+    - support-2240-query-cyanometdb_occurrences
+    - support-2240-query-npclassifier
+    - support-2240-query-pubchem_bioassay
+    - support-2240-query-bindingdb_targets
+    - support-2240-query-antibioticmech_inchikeys
+    - support-2240-query-chebi_origins
+    - support-2240-row-lotus_occurrences-0
+    - support-2240-row-lotus_occurrences-1
+    - support-2240-row-lotus_occurrences-2
+    - support-2240-row-lotus_occurrences-3
+    - support-2240-row-chebi_structures-0
+    - support-2240-companion-culmorin
+    - support-2240-companion-juniperol-longiborneol
+    - support-2240-companion-3-decalonectrin
+  - name: assay_scope
+    value: No selected measured assay/target row; Culmorin AID137/1468/2549/884/885
+      and companion sentinels remain context only.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-mechanism-scope
+    - support-2240-companions
+    - support-2240-source-notes
+    - support-2240-query-mibig_compounds
+    - support-2240-query-chebi_structures
+    - support-2240-query-lotus_occurrences
+    - support-2240-query-cyanometdb_occurrences
+    - support-2240-query-npclassifier
+    - support-2240-query-pubchem_bioassay
+    - support-2240-query-bindingdb_targets
+    - support-2240-query-antibioticmech_inchikeys
+    - support-2240-query-chebi_origins
+    - support-2240-row-lotus_occurrences-0
+    - support-2240-row-lotus_occurrences-1
+    - support-2240-row-lotus_occurrences-2
+    - support-2240-row-lotus_occurrences-3
+    - support-2240-row-chebi_structures-0
+    - support-2240-companion-culmorin
+    - support-2240-companion-juniperol-longiborneol
+    - support-2240-companion-3-decalonectrin
+- assessment_id: support-2240-A6
+  area: other
+  topic: Computed classification and full-table topology limits
+  outcome: supported
+  summary: In SMILES indexing the graph contains ketone C6=O7, free hydroxyls at C5–O8
+    and C11–O17, epoxide C13–C14–O15, ether O16 between C3 and C12, and acetyl ester
+    C21(=O22)–O20–C19 with methyl C23. The four rings have sizes 6, 5, 3 and 6. The
+    helper C5O candidate cycle [3,4,9,12,13,16] is a fused trichothecene ether ring,
+    not a separate sugar residue or evidence of glycosylation. Numbering here is diagnostic
+    atom indexing, not natural-product nomenclature. NPClassifier npclassifier.gnps2.org@2026-09-07
+    reports Terpenoids, Sesquiterpenoids, Trichothecane sesquiterpenoids and is_glycoside:false.
+    This model output is distinct from the asserted MIBiG Sesquiterpenoid class and
+    the locally described topology.
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-capture
+  - support-2240-topology
+  - support-2240-structure-schema
+  - support-2240-seeder
+  - support-2240-row-npclassifier-0
+  - support-2240-row-mibig_compounds-0
+  - support-2240-row-mibig_compounds-1
+  dimensions:
+  - name: computed_classification
+    value: NPClassifier npclassifier.gnps2.org@2026-09-07 reports Terpenoids, Sesquiterpenoids,
+      Trichothecane sesquiterpenoids and is_glycoside:false. This model output is
+      distinct from the asserted MIBiG Sesquiterpenoid class and the locally described
+      topology.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-capture
+    - support-2240-topology
+    - support-2240-structure-schema
+    - support-2240-seeder
+    - support-2240-row-npclassifier-0
+    - support-2240-row-mibig_compounds-0
+    - support-2240-row-mibig_compounds-1
+- assessment_id: support-2240-A7
+  area: completeness
+  topic: Partial completion and maintained ownership
+  outcome: unknown
+  summary: The actual 44-input intake, admitted source plan and original two-form
+    computation support a partial scientific review. The accepted sole maintained
+    call preserves the entire owner, including its one graph and one proposed pathway
+    step; it does not freshly verify primary or protein assertions. Five local gates
+    passed, while FullQC, complete OAK and external primary-source verification remain
+    unavailable. Generated source content and curator mechanism claims retain their
+    separate maintained ownership; no scientific source record or history was edited.
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-intake
+  - support-2240-intake-acceptance
+  - support-2240-plan-acceptance
+  - support-2240-diagnostic-acceptance
+  - support-2240-review-profile
+  - support-2240-mechanism-scope
+  - support-2240-source-notes
+  - support-2240-reader-data
+  - support-2240-reader-execution
+  - support-2240-reader-acceptance
+  dimensions:
+  - name: review_completion
+    value: The actual 44-input intake, admitted source plan and original two-form
+      computation support a partial scientific review. The accepted sole maintained
+      call preserves the entire owner, including its one graph and one proposed pathway
+      step; it does not freshly verify primary or protein assertions. Five local gates
+      passed, while FullQC, complete OAK and external primary-source verification
+      remain unavailable. Generated source content and curator mechanism claims retain
+      their separate maintained ownership; no scientific source record or history
+      was edited.
+    definition: Exact inspected scope; retained source assertions, original saved
+      computation and fresh experimental verification remain distinct.
+    evidence_ids:
+    - support-2240-intake
+    - support-2240-intake-acceptance
+    - support-2240-plan-acceptance
+    - support-2240-diagnostic-acceptance
+    - support-2240-review-profile
+    - support-2240-mechanism-scope
+    - support-2240-source-notes
+    - support-2240-reader-data
+    - support-2240-reader-execution
+    - support-2240-reader-acceptance
+- assessment_id: support-2240-A8
+  area: graph
+  topic: Complete maintained Tri8 biosynthetic scope
+  outcome: supported
+  summary: The accepted complete owner preserves one BIOSYNTHESIS graph with four
+    nodes, three edges and seven graph-evidence placements, plus one proposed pathway
+    step with five references. There are no components or molecular targets. The graph
+    distinguishes the ungrounded 3,15-diacetyldeoxynivalenol precursor, Tri8, the
+    C3-deacetylation process and CHEBI:146194 product; the step omits the ungrounded
+    precursor and explains that limit. Historical notes attribute Tri8 disruption
+    in Z3639, accumulation of C3-acetylated intermediates and yeast/cell-free feeding
+    evidence to the 2002 paper. These retained assertions are biosynthetic, not pharmacological
+    target or new enzyme-assay verification.
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-owner
+  - support-2240-capture
+  - support-2240-source-plan
+  - support-2240-plan-acceptance
+  - support-2240-reader-data
+  - support-2240-reader-execution
+  - support-2240-reader-acceptance
+  - support-2240-mechanism-graph
+  - support-2240-mechanism-pathway
+  - support-2240-review-profile
+  - support-2240-row-mibig_compounds-0
+  - support-2240-row-mibig_compounds-1
+  dimensions: []
+- assessment_id: support-2240-A9
+  area: grounding
+  topic: Organism-specific protein assertions and verification limits
+  outcome: unknown
+  summary: The saved curator assertions identify Fusarium graminearum Tri8 as UniProtKB:Q9C1B2,
+    AF359361.3 and NCBI_Protein:AAK33086.1, with historical retrieval and accession
+    cross-reference notes. The Z3639 experiments and MIBiG BGC0001277 species context
+    are not silently equated with the separate PH-1 BGC0002176 evidence. The ungrounded
+    precursor/process and proposed pathway status remain explicit. No original article/API
+    response or protein sequence was inspected in this review, and complete maintained-reader
+    preservation does not independently establish sequence identity, substrate specificity
+    or current database status.
+  target_ids:
+  - CHEBI:146194
+  evidence_ids:
+  - support-2240-owner
+  - support-2240-capture
+  - support-2240-source-plan
+  - support-2240-plan-acceptance
+  - support-2240-reader-data
+  - support-2240-reader-execution
+  - support-2240-reader-acceptance
+  - support-2240-mechanism-graph
+  - support-2240-mechanism-pathway
+  - support-2240-review-profile
+  - support-2240-row-mibig_compounds-0
+  - support-2240-row-mibig_compounds-1
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- FullQC and complete OAK were unavailable; five successful local gates do not establish
+  scientific completeness.
+- No external retrieval or live identifier, taxonomy, protein or publication query
+  was performed. These assessments use the original saved owner-form computations;
+  no additional molecular parses occurred during fragment authoring.
+- Retained source grades, database citations, cached taxonomy and versioned predictions
+  keep their own scopes. Representation agreement does not prove natural identity,
+  publication independence or complete natural stereochemistry.
+- No scientific source record or curation history was edited. Canonical persistence
+  and campaign operations remain ROOT-owned.
+- The retained Tri8 primary/database/sequence notes were not freshly verified; no
+  original article/API response or protein sequence was inspected. The accepted reader
+  establishes complete preservation, not scientific validation.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Selected graph/pathway reader is accepted with its exact three evidence roles; unselected
+  companion mechanisms and assays remain context only.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-224
