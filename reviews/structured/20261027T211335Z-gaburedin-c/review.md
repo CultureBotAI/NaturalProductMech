@@ -1,0 +1,731 @@
+# Scientific review of gaburedin C
+
+- Review: 20261027T211335Z-gaburedin-c
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-27T21:11:37.174812Z
+- Finished UTC: 2026-10-27T21:13:35.056688Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+gaburedin C retains a distinct, internally consistent C11H20N2O5 structure and its individual MIBiG compound identity. The inspected RSC bibliographic record supplies no abstract; current primary access returned HTTP 403 and the historical PDF remains unavailable. Exact congener structure, natural stereochemistry and stock/locus experiment applicability remain unresolved.
+
+## Scope And Provenance
+
+Inspect the original gaburedin C owner and exact retained rows, saved internal chemical consistency, and source-specific bibliography or abstract support while retaining the documented primary-access limits.
+
+Selection: One exact record selected in canonical repository path order from the unreviewed population; this observation assesses only its declared partial scientific scope.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 14373517042b407747272446f79953ae86d51fa4.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-8527fc2a0f | data/natural_products/amino_acids_and_peptides/gaburedin-c.yaml | generated | gaburedin C |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-8527fc2a0f | Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-8527fc2a0f | Fresh canonical reproduction gate passed:all3116 records byte-identical to source seeding; source warnings remain retained. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-8527fc2a0f | Fresh deterministic review queue completed:8922 rows across12 queues. Queue output is not scientific-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-8527fc2a0f | Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking mismatches and4898no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-8527fc2a0f | Canonical just qc completed with actual terminal exit0:1024 tests passed,4 skipped,2 dependency warnings;3116 records passed closed schema validation, site freshness, byte reproduction and lockfile integrity.22 governed artifacts and15 raw inventories passed. Prior DNS failed001 remains preserved. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-8527fc2a0f | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Two retained chemical encodings | passed | True | naturalproductmech:mibig-8527fc2a0f | The saved SMILES and Standard InChI yield the declared full key WVJSFRYGZMBJOD-CBAPKCEASA-N, formula C11H20N2O5, one fragment and net charge zero, and their normalized Standard InChI agrees. Both encodings retain 2 specified tetrahedral carbon centres and no unspecified tetrahedral carbon. This supports internal encoding consistency, not natural configuration or physiological microspecies. |
+| Original whole owner and retained source joins | passed | True | naturalproductmech:mibig-8527fc2a0f | The whole pinned owner and all nine retained/supplemental arrays reproduce their exact ordered row guards. This checks the original inventory snapshot and preserves each source assertion. |
+| Exact own bibliographic identity | passed | True | naturalproductmech:mibig-8527fc2a0f | The successful Crossref response owns DOI 10.1039/c3sc52536h. Its title and year establish bibliography only; no abstract is supplied. Case variation in the retained DOI does not provide an additional publication. |
+| Exact natural congener and stereochemistry | unavailable | True | naturalproductmech:mibig-8527fc2a0f | gaburedin C retains formula C11H20N2O5 and 2 specified carbon centres, but neither the stored stereo_complete flag nor title-only metadata independently verifies the natural structure. Spectra and congener-specific stereochemical methods remain unavailable. |
+| Primary article and historical PDF applicability | unavailable | True | naturalproductmech:mibig-8527fc2a0f | The RSC response is an HTTP 403 challenge, and the historically reported PDF is unavailable. Individual structure figures, knockout experiments, analytical procedures and supplements cannot be verified from either source. |
+| Current authority and accession mapping | unavailable | True | naturalproductmech:mibig-8527fc2a0f | No current chemical, taxonomic or sequence authority record was inspected. Stored NPA cross-references and the exact genome interval remain source assertions whose present applicability is unresolved. |
+
+## Scientific And Domain Assessments
+
+### Internal chemical consistency
+
+representation: supported. Targets: naturalproductmech:mibig-8527fc2a0f.
+
+The saved SMILES and Standard InChI yield the declared full key WVJSFRYGZMBJOD-CBAPKCEASA-N, formula C11H20N2O5, one fragment and net charge zero, and their normalized Standard InChI agrees. Both encodings retain 2 specified tetrahedral carbon centres and no unspecified tetrahedral carbon. This supports internal encoding consistency, not natural configuration or physiological microspecies.
+
+### Individual stored structure and natural assignment
+
+identity: unknown. Targets: naturalproductmech:mibig-8527fc2a0f.
+
+The retained SMILES has a branched side chain with two specified tetrahedral carbons. Both encoded centres and the exact connectivity require congener-specific natural-structure evidence. The parsed InChI has 1 unspecified C(-O)=N bond classified from saved atom neighbours. These describe imidic normalization, not missing C=C configuration.
+
+### Exact MIBiG compound and cross-reference
+
+identity: unknown. Targets: naturalproductmech:mibig-8527fc2a0f.
+
+BGC0002578 version 2 retains gaburedin C at compound index 3 with npatlas:NPA028619. The same entry-level citation does not independently establish every individual structure, and no finding or stereochemical protocol from gaburedin D is transferred.
+
+### Producer stock and species occurrence
+
+provenance: unknown. Targets: naturalproductmech:mibig-8527fc2a0f.
+
+MIBiG retains Streptomyces venezuelae ATCC 10712 (NCBITaxon:953739) with BGC_CHARACTERIZED producer evidence. LOTUS separately asserts occurrence in Streptomyces venezuelae (NCBITaxon:54571). The title-only source does not independently establish the exact stock or this congener, and occurrence is not promoted to production.
+
+### Locus grade and experiment applicability
+
+provenance: unknown. Targets: naturalproductmech:mibig-8527fc2a0f.
+
+The owner retains FR845719.1 positions 4521431–4531575, Knock-out studies and CLUSTER_DEMONSTRATED for BGC0002578 version 2. These source grades are preserved; the entry-level title does not independently verify the intervention, exact interval, product readout or congener assignment. The raw entry also retains questionable quality and unknown completeness.
+
+### Congener-specific biological activity
+
+quantity: unknown. Targets: naturalproductmech:mibig-8527fc2a0f.
+
+No assay rows or quantitative activity annotations are retained for this full key. The title-only bibliography supplies no material-specific activity or target evidence. Absence of such data does not establish inactivity and is not itself a corrective finding.
+
+### Source class, model prediction and mechanistic coverage
+
+completeness: unknown. Targets: naturalproductmech:mibig-8527fc2a0f.
+
+OTHER is the retained MIBiG source class. Small peptides/Dipeptides is an NPClassifier model prediction. The title provides family terminology only; it does not verify a detailed pathway, enzyme or causal graph. Missing graph content alone does not demonstrate a scientific defect.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI726-LOCAL | /private/tmp/npm-review-work/shared-next-batch073-tentative/tentative-owner-source-inventory-001.json; /entries/5/owner_document; /entries/5/rows; /entries/5/row_guards; /entries/5/supplemental_retained_rows | context_only | The complete original gaburedin C owner and its seven retained source arrays contain 3 rows. Both supplemental arrays are empty. The exact MIBiG, LOTUS and NPClassifier objects and original source grades remain separate; no retained bioactivity annotation, molecular target or causal graph supplies an additional experimental claim. |
+| SCI726-CHEM | /private/tmp/npm-review-work/shared-next-batch073-tentative/source-science-preparation/root-tentative73-local-chemical-consistency-and-neighbors-001.json; /records/5/comparisons; /records/5/smiles; /records/5/inchi | supports | The saved SMILES and Standard InChI yield the declared full key WVJSFRYGZMBJOD-CBAPKCEASA-N, formula C11H20N2O5, one fragment and net charge zero, and their normalized Standard InChI agrees. Both encodings retain 2 specified tetrahedral carbon centres and no unspecified tetrahedral carbon. This supports internal encoding consistency, not natural configuration or physiological microspecies. The parsed InChI has 1 unspecified C(-O)=N bond classified from saved atom neighbours. These describe imidic normalization, not missing C=C configuration. |
+| SCI726-BIBLIOGRAPHY | /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/public-metadata-001/metadata-02.json; /message/DOI; /message/title/0; /message/published; /message (abstract absent) | context_only | The own Crossref record identifies DOI 10.1039/c3sc52536h and the 2014 title about discovery of a family of gamma-aminobutyrate ureas by derepression of a silent bacterial gene cluster. It supplies no abstract. The title does not independently verify this individual congener, the producer stock, knockout experiment, natural stereochemistry or an assay. |
+| SCI726-ACCESS-LIMIT | /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/root-tentative73-RSC-failed-canary-observation-001.json; /original_access/http_status; /original_access/identity; /own_article_verified; /scope | context_only | The single current RSC HTML access returned an HTTP 403 challenge response. No own article was verified and no scientific text was obtained from that response. The saved failure documents an access limitation, not a defect in the compound or a failed scientific validation. |
+| SCI726-HISTORICAL-LIMIT | /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/tentative73-prior-attempt-cache-adjudication-001.json; /historical_missing_primary/reported_source; /historical_missing_primary/current_body; /historical_missing_primary/original_HTTP_receipt; /historical_missing_primary/reusable_scientific_content | context_only | The saved historical cache adjudication retains an earlier reported gaburedin PDF pin and reading time, but the original PDF body and HTTP receipt are unavailable. Its reported A/D observations cannot be re-inspected and are not reused as congener-specific scientific evidence or transferred as findings. |
+
+## Limits And Additional Notes
+
+- The own RSC metadata supplies a title but no abstract. The HTTP 403 challenge response is not article evidence; full text, structure figures, spectra and supplements remain unavailable.
+- The historically reported gaburedin PDF and original HTTP receipt are unavailable. Its reported A/D observations, methods and conclusions are not scientific evidence for this record.
+- MIBiG producer and locus grades are preserved as distinct source assertions; the title alone cannot independently verify stock, knockout design, interval or individual product assignment.
+- Encoding agreement and fully specified stored carbon centres do not independently establish natural stereochemistry or physiological microspecies. Imidic C=N flags retain their local representation scope.
+- No current chemical, taxonomic or sequence authority check, congener-specific assay verification or mechanistic graph reconstruction was performed.
+- Configured consistency only; independent scientific claim support and unrestricted remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint and before downstream tests. Its actual exit1/log/input capture/root observation remain pinned; the selected successful canonical QC attempt002 is separately timed. No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings; this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T211335Z-gaburedin-c
+title: Scientific review of gaburedin C
+started_at: '2026-10-27T21:11:37.174812Z'
+finished_at: '2026-10-27T21:13:35.056688Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: gaburedin C retains a distinct, internally consistent C11H20N2O5 structure
+  and its individual MIBiG compound identity. The inspected RSC bibliographic record
+  supplies no abstract; current primary access returned HTTP 403 and the historical
+  PDF remains unavailable. Exact congener structure, natural stereochemistry and stock/locus
+  experiment applicability remain unresolved.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/gaburedin-c.yaml
+    sha256: c117fc6ace39339f1d1a4ea4213be2eaf623c9e09bc195902d6f2849d6ab3e17
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-8527fc2a0f
+  path: data/natural_products/amino_acids_and_peptides/gaburedin-c.yaml
+  label: gaburedin C
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Inspect the original gaburedin C owner and exact retained rows, saved
+    internal chemical consistency, and source-specific bibliography or abstract support
+    while retaining the documented primary-access limits.
+  selection: One exact record selected in canonical repository path order from the
+    unreviewed population; this observation assesses only its declared partial scientific
+    scope.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+  exclusions:
+  - target: Full-owner scientific verification
+    reason: Not independently verified within the declared source-access and scientific
+      scope; the corresponding check or assessment remains unavailable or unknown.
+  - target: Independent complete primary/figure/supplement verification
+    reason: Not independently verified within the declared source-access and scientific
+      scope; the corresponding check or assessment remains unavailable or unknown.
+  - target: Current chemical/taxonomic/sequence authority verification
+    reason: Not independently verified within the declared source-access and scientific
+      scope; the corresponding check or assessment remains unavailable or unknown.
+  - target: Natural stereochemical assignment or uninspected exact strain/locus/assay
+      applicability
+    reason: Not independently verified within the declared source-access and scientific
+      scope; the corresponding check or assessment remains unavailable or unknown.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch073 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch073. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/gaburedin-c.yaml
+    --out /private/tmp/npm-review-work/726/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-27T21:11:38.533640Z. Original
+    receipt: /private/tmp/npm-review-work/726/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: SCI726-ENCODINGS
+  name: Two retained chemical encodings
+  status: passed
+  required: true
+  summary: The saved SMILES and Standard InChI yield the declared full key WVJSFRYGZMBJOD-CBAPKCEASA-N,
+    formula C11H20N2O5, one fragment and net charge zero, and their normalized Standard
+    InChI agrees. Both encodings retain 2 specified tetrahedral carbon centres and
+    no unspecified tetrahedral carbon. This supports internal encoding consistency,
+    not natural configuration or physiological microspecies.
+  evidence_ids:
+  - SCI726-CHEM
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: SCI726-LOCAL-JOINS
+  name: Original whole owner and retained source joins
+  status: passed
+  required: true
+  summary: The whole pinned owner and all nine retained/supplemental arrays reproduce
+    their exact ordered row guards. This checks the original inventory snapshot and
+    preserves each source assertion.
+  evidence_ids:
+  - SCI726-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: SCI726-OWN-BIBLIOGRAPHY
+  name: Exact own bibliographic identity
+  status: passed
+  required: true
+  summary: The successful Crossref response owns DOI 10.1039/c3sc52536h. Its title
+    and year establish bibliography only; no abstract is supplied. Case variation
+    in the retained DOI does not provide an additional publication.
+  evidence_ids:
+  - SCI726-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: SCI726-NATURAL-IDENTITY
+  name: Exact natural congener and stereochemistry
+  status: unavailable
+  required: true
+  summary: gaburedin C retains formula C11H20N2O5 and 2 specified carbon centres,
+    but neither the stored stereo_complete flag nor title-only metadata independently
+    verifies the natural structure. Spectra and congener-specific stereochemical methods
+    remain unavailable.
+  evidence_ids:
+  - SCI726-LOCAL
+  - SCI726-CHEM
+  - SCI726-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: SCI726-FULL-PRIMARY
+  name: Primary article and historical PDF applicability
+  status: unavailable
+  required: true
+  summary: The RSC response is an HTTP 403 challenge, and the historically reported
+    PDF is unavailable. Individual structure figures, knockout experiments, analytical
+    procedures and supplements cannot be verified from either source.
+  evidence_ids:
+  - SCI726-ACCESS-LIMIT
+  - SCI726-HISTORICAL-LIMIT
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- check_id: SCI726-AUTHORITIES
+  name: Current authority and accession mapping
+  status: unavailable
+  required: true
+  summary: No current chemical, taxonomic or sequence authority record was inspected.
+    Stored NPA cross-references and the exact genome interval remain source assertions
+    whose present applicability is unresolved.
+  evidence_ids:
+  - SCI726-LOCAL
+  - SCI726-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+evidence:
+- evidence_id: SCI726-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/tentative-owner-source-inventory-001.json
+  accessed_at: '2026-10-27T19:51:34.418315Z'
+  locator: /entries/5/owner_document; /entries/5/rows; /entries/5/row_guards; /entries/5/supplemental_retained_rows
+  snapshot_sha256: 788b6fddd1f7231dabd600f954acab42ec52cf9ac6a034c85f1d617cc51fe940
+  support: context_only
+  summary: The complete original gaburedin C owner and its seven retained source arrays
+    contain 3 rows. Both supplemental arrays are empty. The exact MIBiG, LOTUS and
+    NPClassifier objects and original source grades remain separate; no retained bioactivity
+    annotation, molecular target or causal graph supplies an additional experimental
+    claim.
+- evidence_id: SCI726-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/source-science-preparation/root-tentative73-local-chemical-consistency-and-neighbors-001.json
+  accessed_at: '2026-10-27T19:55:46.015537Z'
+  locator: /records/5/comparisons; /records/5/smiles; /records/5/inchi
+  snapshot_sha256: 91c60f950f4e278744c390c479817e556bff70212dc75cf099fc91a789112124
+  support: supports
+  summary: The saved SMILES and Standard InChI yield the declared full key WVJSFRYGZMBJOD-CBAPKCEASA-N,
+    formula C11H20N2O5, one fragment and net charge zero, and their normalized Standard
+    InChI agrees. Both encodings retain 2 specified tetrahedral carbon centres and
+    no unspecified tetrahedral carbon. This supports internal encoding consistency,
+    not natural configuration or physiological microspecies. The parsed InChI has
+    1 unspecified C(-O)=N bond classified from saved atom neighbours. These describe
+    imidic normalization, not missing C=C configuration.
+- evidence_id: SCI726-BIBLIOGRAPHY
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/public-metadata-001/metadata-02.json
+  accessed_at: '2026-10-27T20:01:38.977135Z'
+  locator: /message/DOI; /message/title/0; /message/published; /message (abstract
+    absent)
+  snapshot_sha256: 1862746809c18425304de406a30a6a934d9bc36d5c057e5b630d015386a23dc6
+  support: context_only
+  summary: The own Crossref record identifies DOI 10.1039/c3sc52536h and the 2014
+    title about discovery of a family of gamma-aminobutyrate ureas by derepression
+    of a silent bacterial gene cluster. It supplies no abstract. The title does not
+    independently verify this individual congener, the producer stock, knockout experiment,
+    natural stereochemistry or an assay.
+- evidence_id: SCI726-ACCESS-LIMIT
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/root-tentative73-RSC-failed-canary-observation-001.json
+  accessed_at: '2026-10-27T20:16:15.449333Z'
+  locator: /original_access/http_status; /original_access/identity; /own_article_verified;
+    /scope
+  snapshot_sha256: e63074e97334244b075322b1f6d62cc682bcc99024a5633803501b2b6922e32d
+  support: context_only
+  summary: The single current RSC HTML access returned an HTTP 403 challenge response.
+    No own article was verified and no scientific text was obtained from that response.
+    The saved failure documents an access limitation, not a defect in the compound
+    or a failed scientific validation.
+- evidence_id: SCI726-HISTORICAL-LIMIT
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch073-tentative/literature-preparation/tentative73-prior-attempt-cache-adjudication-001.json
+  accessed_at: '2026-10-27T20:23:41.186201Z'
+  locator: /historical_missing_primary/reported_source; /historical_missing_primary/current_body;
+    /historical_missing_primary/original_HTTP_receipt; /historical_missing_primary/reusable_scientific_content
+  snapshot_sha256: e82df70e95c0604efbf8704a998fa4164a906ee995735ccb901995c2db78a18f
+  support: context_only
+  summary: The saved historical cache adjudication retains an earlier reported gaburedin
+    PDF pin and reading time, but the original PDF body and HTTP receipt are unavailable.
+    Its reported A/D observations cannot be re-inspected and are not reused as congener-specific
+    scientific evidence or transferred as findings.
+assessments:
+- assessment_id: SCI726-ENCODING
+  area: representation
+  topic: Internal chemical consistency
+  outcome: supported
+  summary: The saved SMILES and Standard InChI yield the declared full key WVJSFRYGZMBJOD-CBAPKCEASA-N,
+    formula C11H20N2O5, one fragment and net charge zero, and their normalized Standard
+    InChI agrees. Both encodings retain 2 specified tetrahedral carbon centres and
+    no unspecified tetrahedral carbon. This supports internal encoding consistency,
+    not natural configuration or physiological microspecies.
+  evidence_ids:
+  - SCI726-CHEM
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- assessment_id: SCI726-CONGENER-IDENTITY
+  area: identity
+  topic: Individual stored structure and natural assignment
+  outcome: unknown
+  summary: The retained SMILES has a branched side chain with two specified tetrahedral
+    carbons. Both encoded centres and the exact connectivity require congener-specific
+    natural-structure evidence. The parsed InChI has 1 unspecified C(-O)=N bond classified
+    from saved atom neighbours. These describe imidic normalization, not missing C=C
+    configuration.
+  evidence_ids:
+  - SCI726-LOCAL
+  - SCI726-CHEM
+  - SCI726-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- assessment_id: SCI726-CONGENER-PARTITION
+  area: identity
+  topic: Exact MIBiG compound and cross-reference
+  outcome: unknown
+  summary: BGC0002578 version 2 retains gaburedin C at compound index 3 with npatlas:NPA028619.
+    The same entry-level citation does not independently establish every individual
+    structure, and no finding or stereochemical protocol from gaburedin D is transferred.
+  evidence_ids:
+  - SCI726-LOCAL
+  - SCI726-BIBLIOGRAPHY
+  - SCI726-HISTORICAL-LIMIT
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- assessment_id: SCI726-PRODUCER-OCCURRENCE
+  area: provenance
+  topic: Producer stock and species occurrence
+  outcome: unknown
+  summary: MIBiG retains Streptomyces venezuelae ATCC 10712 (NCBITaxon:953739) with
+    BGC_CHARACTERIZED producer evidence. LOTUS separately asserts occurrence in Streptomyces
+    venezuelae (NCBITaxon:54571). The title-only source does not independently establish
+    the exact stock or this congener, and occurrence is not promoted to production.
+  evidence_ids:
+  - SCI726-LOCAL
+  - SCI726-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- assessment_id: SCI726-LOCUS
+  area: provenance
+  topic: Locus grade and experiment applicability
+  outcome: unknown
+  summary: The owner retains FR845719.1 positions 4521431–4531575, Knock-out studies
+    and CLUSTER_DEMONSTRATED for BGC0002578 version 2. These source grades are preserved;
+    the entry-level title does not independently verify the intervention, exact interval,
+    product readout or congener assignment. The raw entry also retains questionable
+    quality and unknown completeness.
+  evidence_ids:
+  - SCI726-LOCAL
+  - SCI726-BIBLIOGRAPHY
+  - SCI726-ACCESS-LIMIT
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- assessment_id: SCI726-ACTIVITY
+  area: quantity
+  topic: Congener-specific biological activity
+  outcome: unknown
+  summary: No assay rows or quantitative activity annotations are retained for this
+    full key. The title-only bibliography supplies no material-specific activity or
+    target evidence. Absence of such data does not establish inactivity and is not
+    itself a corrective finding.
+  evidence_ids:
+  - SCI726-LOCAL
+  - SCI726-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+- assessment_id: SCI726-CLASS-COVERAGE
+  area: completeness
+  topic: Source class, model prediction and mechanistic coverage
+  outcome: unknown
+  summary: OTHER is the retained MIBiG source class. Small peptides/Dipeptides is
+    an NPClassifier model prediction. The title provides family terminology only;
+    it does not verify a detailed pathway, enzyme or causal graph. Missing graph content
+    alone does not demonstrate a scientific defect.
+  evidence_ids:
+  - SCI726-LOCAL
+  - SCI726-BIBLIOGRAPHY
+  target_ids:
+  - naturalproductmech:mibig-8527fc2a0f
+findings: []
+actions: []
+limitations:
+- The own RSC metadata supplies a title but no abstract. The HTTP 403 challenge response
+  is not article evidence; full text, structure figures, spectra and supplements remain
+  unavailable.
+- The historically reported gaburedin PDF and original HTTP receipt are unavailable.
+  Its reported A/D observations, methods and conclusions are not scientific evidence
+  for this record.
+- MIBiG producer and locus grades are preserved as distinct source assertions; the
+  title alone cannot independently verify stock, knockout design, interval or individual
+  product assignment.
+- Encoding agreement and fully specified stored carbon centres do not independently
+  establish natural stereochemistry or physiological microspecies. Imidic C=N flags
+  retain their local representation scope.
+- No current chemical, taxonomic or sequence authority check, congener-specific assay
+  verification or mechanistic graph reconstruction was performed.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
