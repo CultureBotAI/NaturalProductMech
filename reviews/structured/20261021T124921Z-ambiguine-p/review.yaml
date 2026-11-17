@@ -1,0 +1,1034 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T124921Z-ambiguine-p
+title: 'Review ambiguine P: supported identity and occurrence with an unresolved TAU
+  locus assertion'
+started_at: '2026-10-21T12:39:55.170559Z'
+finished_at: '2026-10-21T12:49:21.058155Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact ambiguine P structure and UTEX 1903 occurrence are supported by
+  the inspected sources. The original relative-stereochemistry prose conflicts with
+  its drawing; both primary drawings and later synthesis agree with the owner. Exact
+  TAU/fil biosynthetic support remains unresolved. One minor finding corrects the
+  CyanoMetDB NMR-use wording.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: conf/sources.yaml
+    sha256: d5e8ab63eeebb376589a0c9bf6f7eb92f45913b84243de20d820442ec88d5a98
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/ambiguine-p.yaml
+    sha256: 57c6904e27932cf70a3946bdcb0724b37ac485ad80bea1dbb27c67f230e017b4
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_cyanometdb.py
+    sha256: cccfc32d65a5df99c768bf5055f7ea56ac9678b7029b9dd23483295603ec365e
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 61, batch 007, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated pending-PR targets.
+    At selection, 114 of 3116 current records had campaign coverage and 3002 remained.
+    The population search included ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-158d84566b
+targets:
+- target_id: naturalproductmech:mibig-158d84566b
+  path: data/natural_products/alkaloids/ambiguine-p.yaml
+  label: ambiguine P
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  command: just validate-strict data/natural_products/alkaloids/ambiguine-p.yaml --out
+    /private/tmp/npm-review-work/061/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T12:40:01.540820Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch007 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch007 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch007. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch007
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch007.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+- check_id: R061-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: The complete owner and all present fields were read. The parsed component-reference
+    set is empty, so no referenced component was omitted. All existing inspection
+    input hashes still match.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - R061-OWNER
+  - R061-LOCAL-SOURCES
+- check_id: S061-C-IDENTITY
+  name: Published exact P identity and source stereochemical qualification
+  status: passed
+  required: true
+  summary: The owner matches the inspected primary drawings and later chiral-pool
+    synthetic correlation, with the 2010 relative-descriptor conflict explicitly retained.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - S061-2010-STEREO
+  - S061-2010-DRAWING
+  - S061-2019-SYNTHESIS
+  - S061-DRAWING-MAP
+- check_id: S061-C-OCCURRENCE
+  name: Exact cited natural occurrence
+  status: passed
+  required: true
+  summary: The same 2010 primary supports both occurrence imports and native UTEX
+    1903 isolation, without promoting it to TAU production.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - S061-2010-OCCURRENCE
+  - S061-2010-ORIGIN
+- check_id: S061-C-EXACT-TAU-LINK
+  name: Exact TAU producer and fil-to-P support
+  status: unavailable
+  required: true
+  summary: The inspected study supplies the accession and related cyclase chemistry
+    but no exact P endpoint. A claim-specific source would be required to resolve
+    the separate TAU database assertion; do not upgrade it from a homologous product
+    assay.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - S061-RAW
+  - S061-2017-LOCUS
+  - S061-2017-SI
+  - S061-ACCESS
+- check_id: C061-CHEM-CHECK
+  name: Exact graph and xref verification
+  status: passed
+  required: true
+  summary: Owner, current NPAtlas, PubChem and official ChEBI MOL agree on full Standard
+    and fixed-H identity; the source descriptor inconsistency and invalid two-star
+    default SMILES are separately preserved.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - C061-CALC
+  - C061-NPA
+  - C061-PC
+  - C061-CHEBI-MOL
+  - C061-PRIMARY-GRAPH
+evidence:
+- evidence_id: R061-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/ambiguine-p.yaml
+  locator: Complete owner YAML, including every history entry, source claim and discussion
+  accessed_at: '2026-10-21T12:44:40.079412Z'
+  support: supports
+  summary: Root read the complete ambiguine P owner after its individual intake. It
+    has 1 MIBiG source concepts, 2 occurrence entries, 1 producers and 1 loci. There
+    are no inline or referenced mechanism graphs, pathway steps, molecular targets,
+    bioactivity rows or synthetic-biology applications in this owner. The complete
+    parsed owner was inspected; ignored-file filters were not used to infer field
+    absence.
+  snapshot_sha256: 57c6904e27932cf70a3946bdcb0724b37ac485ad80bea1dbb27c67f230e017b4
+- evidence_id: R061-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/061/local-sources.json
+  locator: Complete target-specific MIBiG, LOTUS, CyanoMetDB, ChEBI and NPClassifier
+    slices
+  accessed_at: '2026-10-21T12:44:40.079412Z'
+  support: context_only
+  summary: Root read every matching local source row and compared it with the complete
+    emitted owner. The separate scientific and identifier assessments decide claim
+    support; deterministic reproduction does not establish primary evidence.
+  snapshot_sha256: f3f0316654a9170aa9cc3ba6ee28eb4802579ae71f373134571c4019d96a0747
+- evidence_id: R061-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Complete 28-row dataset catalogue; actual command receipt in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The successful structured-adapter catalogue retrieved at 07:21:15 UTC was
+    fully re-read. Its 28 datasets contain no Fischerella, Azotobacter, Kamptonema/Oscillatoria,
+    Vibrio anguillarum or V. campbellii, Streptomyces uncialis, S. hygrospinosus or
+    S. venezuelae dataset. The Streptomyces entries are S. albidoflavus and S. coelicolor;
+    the Vibrio entries are V. natriegens. A genus-level occurrence does not justify
+    substituting a different species. This same-session catalogue retains its original
+    retrieval time; a fresh request is not claimed.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R061-CYANO-FLAG
+  kind: record_content
+  reference: data/raw/cyanometdb_occurrences.tsv
+  locator: Exact row YIXMOSKWKGHGSQ-LOSJGSFVSA-N, NCBITaxon:56108, DOI:10.1016/j.phytochem.2010.09.004,
+    strain UTEX 1903
+  accessed_at: '2026-10-21T12:44:40.079412Z'
+  support: supports
+  summary: The source stores nmr_used=yes, a flag reporting NMR use. Its generated
+    occurrence note says structure confirmed by yes, which presents the Boolean flag
+    as a confirmation method. Exact compound and source applicability are separately
+    assessed against the primary literature.
+  snapshot_sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+- evidence_id: R061-CYANO-EXTRACT
+  kind: record_content
+  reference: scripts/extract_cyanometdb.py
+  locator: NMR_used source-column mapping to nmr_used in extracted occurrence rows
+  accessed_at: '2026-10-21T12:44:40.079412Z'
+  support: context_only
+  summary: The extractor preserves the literal NMR-use metadata; it does not turn
+    yes into a named analytical technique or an absolute-configuration determination.
+  snapshot_sha256: cccfc32d65a5df99c768bf5055f7ea56ac9678b7029b9dd23483295603ec365e
+- evidence_id: R061-CYANO-SEED
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: CyanoMetDB occurrence evidence-note assembly, lines 1225–1235
+  accessed_at: '2026-10-21T12:44:40.079412Z'
+  support: context_only
+  summary: The maintained emitter places nmr_used after structure confirmed by. This
+    directly explains the inaccurate note in the reviewed occurrence.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S061-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/ambiguine-p.yaml
+  locator: Entire owner YAML, complete resolved owner and all local source rows
+  accessed_at: '2026-10-21T12:42:43.989268Z'
+  support: supports
+  summary: Ambiguine P is the neutral C25H29NO owner YIXMOSKWKGHGSQ-LOSJGSFVSA-N with
+    two specified centres, no nitrile/isonitrile, one LOTUS and one CyanoMetDB occurrence
+    from the same 2010 study. Its separate TAU/BGC0001501 assertion remains SOURCE_ASSERTION/CLUSTER_UNSTATED
+    with empty methods and bounds; no proteins or mechanistic graphs are asserted.
+  snapshot_sha256: 57c6904e27932cf70a3946bdcb0724b37ac485ad80bea1dbb27c67f230e017b4
+- evidence_id: S061-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete BGC0001501:1 version 5 row and exact key occurrence rows
+  accessed_at: '2026-10-21T12:42:43.989268Z'
+  support: supports
+  summary: The active/questionable/unknown-completeness row faithfully emits the existing
+    TAU assertion, KY026488.1 and PMID28288107. Canonical complete-row SHA256 f49caa0d74ac0eeb15025bd5a687437229821a68c5f69c82677c8c2ddf98e6b6.
+    These database flags do not establish exact P formation or absence.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S061-2010-OCCURRENCE
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2981615&retmode=xml
+  locator: Original complete main; Results compound 3; Experimental 4.2–4.3.3; Table
+    2
+  accessed_at: '2026-10-21T12:05:31.479066Z'
+  support: supports
+  summary: Fischerella ambigua UTEX 1903 was cultivated in Allen medium at 22 °C,
+    18/6-hour light/dark, then harvested after 6–8 weeks. The second 5-L culture yielded
+    0.4 mg named ambiguine P (compound 3), isolated by chromatography and characterized
+    by HRMS, NMR and optical rotation. Only one nitrogen and no isonitrile/nitrile
+    functionality are reported. Both owner occurrence entries refer to this same study,
+    and the CyanoMetDB UTEX 1903 detection context is supported.
+  snapshot_sha256: 48eb0d31d503250374d923d33154dfb818ede73ca79dd887626a62938dafa48c
+- evidence_id: S061-2010-ORIGIN
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2981615&retmode=xml
+  locator: Final Results paragraph and Experimental 4.5
+  accessed_at: '2026-10-21T12:05:31.479066Z'
+  support: supports
+  summary: Crude-extract LC-MS peaks corresponding to P and Q support occurrence before
+    final purification. The separate 24-hour silica/CH2Cl2:MeOH challenge used ambiguine
+    E isonitrile, not P or a proven P precursor, and did not generate G nitrile or
+    detectable decomposition. This supports the reported natural occurrence without
+    proving that every conceivable artifact route is absent.
+  snapshot_sha256: 48eb0d31d503250374d923d33154dfb818ede73ca79dd887626a62938dafa48c
+- evidence_id: S061-2010-STEREO
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=2981615&retmode=xml
+  locator: Compound3 NOESY paragraph; Table 2; Experimental 4.3.3 and4.4
+  accessed_at: '2026-10-21T12:05:31.479066Z'
+  support: supports
+  summary: The paper prints relative 12R*/15R* for P, whereas its oriented Figure
+    1 drawing independently maps to C12R/C15S. Preserve this internal descriptor/drawing
+    discrepancy. Reported P rotation is −37 (c 0.03, MeOH); the paper’s X-ray is fischambiguine
+    A, not P, and does not establish P absolute configuration.
+  snapshot_sha256: 48eb0d31d503250374d923d33154dfb818ede73ca79dd887626a62938dafa48c
+- evidence_id: S061-2010-DRAWING
+  kind: primary_source
+  reference: https://cdn.ncbi.nlm.nih.gov/pmc/blobs/7f3e/2981615/2112ca6cdced/nihms-242177-f0001.jpg
+  locator: Original Figure 1 compound 3, both stereo indicators and full connectivity
+  accessed_at: '2026-10-21T12:10:27.931146Z'
+  support: supports
+  summary: Independent direct-pixel inspection and numbered transcription reproduce
+    the owner C12R/C15S drawing and full key LOSJGSFV. This is agreement with the
+    depicted orientation, not a new absolute-configuration experiment.
+  snapshot_sha256: 1e210990ec818569cc8b6824c4d4370b815c517025ebde32cabcbd44e5ca6f8e
+- evidence_id: S061-2017-LOCUS
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=5391265&retmode=xml
+  locator: Complete main and Online Methods; FilC1 experiments, Figure 2 and Data
+    availability
+  accessed_at: '2026-10-21T06:55:05Z'
+  support: context_only
+  summary: The paper identifies fil from Fischerella sp. IL-199-3-1 and deposits it
+    as KY026488. Recombinant N-terminally truncated FilC1, expressed in E. coli, cyclizes
+    central intermediate 3 to 12-epi-hapalindole U (4). It does not show exact ambiguine
+    P formation. This accession-specific label bridge is compatible with GenBank TAU
+    but does not equate TAU with UTEX 1903. The retained ungraded P association is
+    a database assertion, not an experimentally demonstrated exact-product link.
+  snapshot_sha256: 7768d09b6701c88fe7dddc2d2c9bd9822f51ef95db35dcd5f13a4fe67f651410
+- evidence_id: S061-2017-SI
+  kind: primary_source
+  reference: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnchembio.2327/MediaObjects/41589_2017_BFnchembio2327_MOESM211_ESM.pdf
+  locator: Supplementary Results, fil Table3, and original Supplementary Figure 5
+    printed page 8
+  accessed_at: '2026-10-21T12:08:40.891056Z'
+  support: context_only
+  summary: The P panel belongs to the catalogue of previously isolated UTEX 1903 metabolites,
+    alongside other congeners. It is not an assay product chromatogram for FilC1.
+    The explicit upper-left H is at C13; C12 retains its methyl and vinyl. No exact
+    native TAU P isolation or fil-dependent P endpoint was established in the inspected
+    main/SI.
+  snapshot_sha256: 8e1807144428ff29a5591e8de3729834dd74d7ebf383443802c986d39166f9eb
+- evidence_id: S061-2019-SYNTHESIS
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/14245259
+  locator: Official SI S15–S18; original S16/S18 final-product drawings and characterization
+  accessed_at: '2026-10-21T12:09:07.776817Z'
+  support: supports
+  summary: The enantioselective route from (S)-carvone yields compound 11 (−)-ambiguine
+    P and a separately characterized C15 epimer. Original S16 P depicts C12R/C15S,
+    matching the owner; the epimer has the opposite C15 OH orientation. Reported P
+    rotation −48 and spectroscopic comparison provide synthetic correlation, not a
+    new native-production assay. The prose’s S7 versus drawing/data S8 epimer label
+    and mismatched comparison citation are retained as source editing limits.
+  snapshot_sha256: 907be2a16564c71357bc08d0f7cf6645e2ce6be6ecb77ad43dccf813aa47ccd6
+- evidence_id: S061-DRAWING-MAP
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch007/primary-graphs/independent-P-stereo-qa.json
+  locator: Numbered original 2010/2019 drawing transcription and independent manual
+    CIP
+  accessed_at: '2026-10-21T12:42:43.989268Z'
+  support: supports
+  summary: C12 priorities are C11>vinylC20>C13>methylC19, giving R; C15 priorities
+    are OH>C10>C16>C14, and the hashed OH gives S. Both depictions match LOSJGSFV.
+    No source absolute proof is manufactured from this graph check.
+  snapshot_sha256: 79fcd8a5e28a14782025cb5ade9c17906f629e811ec945eebd551e1e69e44e4f
+- evidence_id: S061-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch007/ambiguine-p/source-notes.json
+  locator: Retained bounded 2010 SI failures and complete available main/2017SI/2019SI
+    read scopes
+  accessed_at: '2026-10-21T12:42:43.989268Z'
+  support: context_only
+  summary: 'The 2010 raw-NMR SI was not obtained: EuropePMC returned a non-OA error
+    despite HTTP 200 and the exact PMC attachment returned a JavaScript challenge.
+    Full main, Table 2 and original drawing were available. No failed route was repeated.
+    Exact TAU P support remains unresolved in the inspected 2017 study; this is not
+    an exhaustive claim that no later study exists.'
+  snapshot_sha256: e2cc2919f49c5bc168131688ef7663c2664713e8bd5a8d577ec6813471aaea0a
+  search_scope: Ignored-inclusive prepared-source inventory and the retained official
+    NCBI/EuropePMC/Springer Nature/ACS receipts only; no literature-wide absence conclusion.
+- evidence_id: C061-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/ambiguine-p.yaml
+  locator: Complete owner and resolved source projection
+  accessed_at: '2026-10-21T12:48:49.839239Z'
+  support: supports
+  summary: The owner identifies ambiguine P with full key YIXMOSKWKGHGSQ-LOSJGSFVSA-N;
+    exact source rows, xrefs, source concepts and classification were read.
+  snapshot_sha256: 57c6904e27932cf70a3946bdcb0724b37ac485ad80bea1dbb27c67f230e017b4
+- evidence_id: C061-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete relevant raw rows and local exact-key inventories
+  accessed_at: '2026-10-21T12:48:49.839239Z'
+  support: supports
+  summary: 'Exact source row SHA-256 values: BGC0001501:1 = f49caa0d74ac0eeb15025bd5a687437229821a68c5f69c82677c8c2ddf98e6b6.
+    Digests cover every column using canonical sorted JSON. Complete exact-key eligible
+    ChEBI projection has 0 row(s).'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: C061-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact-key classification row and owner attribution
+  accessed_at: '2026-10-21T12:48:49.839239Z'
+  support: context_only
+  summary: The filing and NPClassifier superclass/class outputs are attributed to
+    the pinned model version. MIBiG biosynthetic classes remain a separate source
+    axis; current authority ontology relations are not silently promoted into asserted
+    corpus classes.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: C061-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/061/chemistry-local-search.txt
+  locator: Complete matching path list
+  accessed_at: '2026-10-21T12:48:49.938738Z'
+  support: supports
+  summary: Ignored-inclusive search checks the exact full key, current slug and target
+    ID across current owners, curation, configuration and source code. Exact raw inventory
+    rows were separately parsed. This bounded search does not claim universal absence.
+  snapshot_sha256: f6f7bfc41b1e910eb9aa04b34dae8e157b1cd73100e1c4bd6a890d1572d5f5c7
+  search_scope: rg --no-ignore --hidden -l -F -e YIXMOSKWKGHGSQ-LOSJGSFVSA-N -e ambiguine-p
+    -e naturalproductmech:mibig-158d84566b data/natural_products curation conf src
+    scripts
+- evidence_id: C061-NPA
+  kind: database
+  reference: https://www.npatlas.org/api/v1/compound/NPA010396
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:21:54.655815Z'
+  support: supports
+  summary: NPA010396 resolves in the NPAtlas compound namespace. Its complete identity,
+    structure history and origin-reference fields were read; current formula C25H29NO
+    and full key YIXMOSKWKGHGSQ-LOSJGSFVSA-N. Exact graph results are retained in
+    the independent comparison.
+  snapshot_sha256: d6d65c5b6b30646301c7319723085de77d2548955a6a9f4d95f5253a00937bc5
+- evidence_id: C061-PC
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/YIXMOSKWKGHGSQ-LOSJGSFVSA-N/JSON
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:21:54.395116Z'
+  support: supports
+  summary: PubChem Compound CID 50905032 resolves for the exact-key query. Identity
+    properties and the complete atom/bond/stereo representation are retained; CID
+    is not a Substance SID.
+  snapshot_sha256: 07b01a70fb948763e9ee5b0a47ac39b3ff288dfcc0470c6903ff5f5003e88fcd
+- evidence_id: C061-CHEBI-SEARCH
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=YIXMOSKWKGHGSQ-LOSJGSFVSA-N&size=100
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:21:54.394735Z'
+  support: supports
+  summary: Bounded exact full-key ChEBI query and returned candidate list inspected.
+    The returned two-star entry is not a three-star eligible grounding; no global
+    absence claim is made.
+  snapshot_sha256: df075aeac5c905ad853b33b586155b4dca01ebd61a9fd45c1aae29c1834c3e40
+- evidence_id: C061-CHEBI
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/213712/
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:22:15.542526Z'
+  support: supports
+  summary: Current CHEBI:213712 is 2-star and therefore is outside this repository's
+    three-star eligibility rule. Complete identity, default structure, origins and
+    ontology relations were inspected. Its public entry is not an eligible replacement
+    solely because its key matches.
+  snapshot_sha256: 0a0005a7daf8ab5688ed15e36cbf7c8d058f831510db87784ed13a091e1eb187
+- evidence_id: C061-CHEBI-MOL
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/213712/
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:22:15.542891Z'
+  support: supports
+  summary: The official MOL was parsed independently, without editing. It supplies
+    the representation comparison; agreement of a MOL does not validate a contradictory
+    default SMILES.
+  snapshot_sha256: 6cf65811ec12e8ff3862ac7086eaf471001ea73ef06e3aa9731e26884229e74c
+- evidence_id: C061-CALC
+  kind: validation
+  reference: /private/tmp/npm-review-work/061/chemistry-authority-comparison.json
+  locator: Fresh full Standard and fixed-H graph comparison, charge, formula and every
+    tetrahedral centre
+  accessed_at: '2026-10-21T12:48:49.940950Z'
+  support: supports
+  summary: Owner, NPAtlas, PubChem and official ChEBI MOL reconstruct to YIXMOSKWKGHGSQ-LOSJGSFVSA-N.
+    Full Standard and fixed-H InChI, formula, charge and assigned/undefined centres
+    are retained per representation. Default ChEBI SMILES is separately tested and
+    is not silently repaired.
+  snapshot_sha256: 2855c916f099824de47098797ecd714e94d8f043699e4461532ef1aaac7777c2
+- evidence_id: C061-WD-Q67339754
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q67339754.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.458630Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q67339754", "label": "Fischerella
+    ambigua", "P235": [], "P234": [], "P2017": [], "P685": ["56108"], "P225": ["Fischerella
+    ambigua"]}. Chemical and organism namespaces are kept distinct; this resolution
+    is not primary occurrence evidence.'
+  snapshot_sha256: a8df1d1d19c13568df97f4515fa5a8f68709b536da1f21ca18b3bb668d36b73e
+- evidence_id: C061-WD-Q77495976
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q77495976.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:44:56.636822Z'
+  support: supports
+  summary: 'Current LOTUS-linked Wikidata entity: {"qid": "Q77495976", "label": "Ambiguine
+    P", "P235": ["YIXMOSKWKGHGSQ-LOSJGSFVSA-N"], "P234": ["InChI=1S/C25H29NO/c1-7-24(6)13-14-25(27)20-16(24)11-12-22(2,3)21-19(20)18-15(23(25,4)5)9-8-10-17(18)26-21/h7-12,26-27H,1,13-14H2,2-6H3/t24-,25+/m0/s1"],
+    "P2017": ["C=C[C@@]1(C)CC[C@@]2(O)C3=C1C=CC(C)(C)c1[nH]c4cccc(c4c13)C2(C)C"],
+    "P685": [], "P225": []}. Chemical and organism namespaces are kept distinct; this
+    resolution is not primary occurrence evidence.'
+  snapshot_sha256: e7ccb9d22f1aa03213cb9599aacbd767e9decedd83c3877c48ea6114a657fe0a
+- evidence_id: C061-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001501.5/annotations.json
+  locator: Complete exact identity, identifier, provenance and relevant source fields
+  accessed_at: '2026-10-21T12:21:54.394157Z'
+  support: supports
+  summary: BGC0001501 version 5 is active, with questionable quality and unknown completeness.
+    It retains exact ambiguine P, NPA010396, Fischerella sp. TAU 1930928 and KY026488.1.
+    Empty method evidence and source zero interval are preserved; these do not establish
+    native production of this congener.
+  snapshot_sha256: f437b0a5790d60b06b34f5c4c51086bb7b92b0fa5d4ffe94888ba31138a10646
+- evidence_id: C061-TAX
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=1930928,1283330,1048205,56108,354,230521&retmode=xml
+  locator: Complete relevant Taxon records, names, ranks, parents, aliases and lineages
+  accessed_at: '2026-10-21T12:25:18.454076Z'
+  support: supports
+  summary: NCBI1930928 is Fischerella sp. TAU at species rank; NCBI56108 is F. ambigua
+    and NCBI230521 is its UTEX1903 strain. TAU and UTEX1903 are distinct deposited
+    source identities. Cyanobacterial grouping is consistent with their lineages.
+  snapshot_sha256: 59a73aa6f2724bd0982590842fa1708abe0260289499b5cc047354af2a2fa26f
+- evidence_id: C061-GENBANK
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY026488.1&rettype=gb&retmode=text
+  locator: Header, references and complete source feature; no CDS functional or sequence-equivalence
+    inference
+  accessed_at: '2026-10-21T12:08:41.468871Z'
+  support: supports
+  summary: Version KY026488.1 is a 42,974 bp deposited TAU sequence. Header/source
+    qualifiers explicitly identify Fischerella sp. TAU and taxon1930928. This metadata
+    bridge does not prove exact P production or an enzyme/construct identity, and
+    no bounds are invented from an empty source interval.
+  snapshot_sha256: 7e15f9a20ad65a747511ffee873bb7e53e0aa6b78eea59218d2358bf6fbfa90e
+- evidence_id: C061-PRIMARY-GRAPH
+  kind: primary_source
+  reference: DOI:10.1016/j.phytochem.2010.09.004
+  locator: 2010 Figure1 compound3 and exact P NOESY paragraph; corroborating 2019
+    official SI S16 compound11, DOI10.1021/jacs.8b13388
+  accessed_at: '2026-10-21T12:10:27.931146Z'
+  support: supports
+  summary: The original 2010 drawing and the 2019 synthesis drawing reconstruct to
+    the owner full key and 12R,15S CIP descriptors. The 2010 prose instead prints
+    12R*,15R* in its relative-assignment statement. This internal descriptor discrepancy
+    is retained rather than changing the owner by label or authority vote. The X-ray
+    experiment is for fischambiguine A, not P. Drawing agreement and synthetic corroboration
+    do not independently establish exact P production in TAU.
+  snapshot_sha256: 1e210990ec818569cc8b6824c4d4370b815c517025ebde32cabcbd44e5ca6f8e
+- evidence_id: C061-PRIMARY-QA
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch007/primary-graphs/independent-P-stereo-qa.json
+  locator: Independent complete CIP interpretation and pinned original image/2019
+    SI inputs
+  accessed_at: '2026-10-21T12:48:49.839239Z'
+  support: supports
+  summary: Original pixels were independently inspected. Their graph agrees with owner/NPA/official
+    ChEBI MOL; the source-text descriptor inconsistency remains explicit.
+  snapshot_sha256: 79fcd8a5e28a14782025cb5ade9c17906f629e811ec945eebd551e1e69e44e4f
+assessments:
+- assessment_id: R061-HISTORY
+  area: provenance
+  topic: Native status and retained seed history
+  outcome: supported
+  summary: The 2 dated seed events and SEEDED status describe generated provenance.
+    This review does not relabel the owner REVIEWED or treat seed history as scientific
+    approval. Both retained events are source seeding events.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - R061-OWNER
+- assessment_id: R061-OPTIONAL
+  area: completeness
+  topic: Optional mechanism and application content
+  outcome: not_applicable
+  summary: The owner has no structured pathway steps, causal edges, organism-specific
+    proteins, molecular-target items, bioactivity rows or synthetic-biology applications.
+    Their absence alone is not a defect in this source-generated record. No enzyme,
+    target, activity or engineering claim is inferred from the name or chemical class.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - R061-OWNER
+  - R061-LOCAL-SOURCES
+- assessment_id: R061-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: No exact named native producer and strain is covered by the inspected iModulonDB
+    dataset catalogue. E. coli used as a recombinant expression host in source experiments
+    does not supply native-producer expression context; genus-only occurrences cannot
+    identify a covered species or strain. No applicable module query follows from
+    these records. This bounded coverage limit is not negative evidence about production
+    or function.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - R061-OWNER
+  - R061-IMODULON-DATASETS
+- assessment_id: R061-NMR
+  area: representation
+  topic: Reported NMR use and confirmation wording
+  outcome: concern
+  summary: The current note loses the meaning of the source flag and implies confirmation
+    without identifying a method. The repair should state reported NMR use and retain
+    database attribution; it does not decide the separate primary stereochemistry
+    questions.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - R061-CYANO-FLAG
+  - R061-CYANO-EXTRACT
+  - R061-CYANO-SEED
+- assessment_id: S061-A-IDENTITY
+  area: identity
+  topic: Exact structure, depicted configuration and original source conflict
+  outcome: supported
+  summary: The two-centre neutral P structure agrees with both inspected drawings
+    and the 2019 synthetic product. Preserve the 2010 relative 12R*/15R* wording discrepancy
+    and avoid claiming that source as an absolute X-ray assignment.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - S061-OWNER
+  - S061-2010-STEREO
+  - S061-2010-DRAWING
+  - S061-2019-SYNTHESIS
+  - S061-DRAWING-MAP
+- assessment_id: S061-A-OCCURRENCE
+  area: evidence
+  topic: Natural origin and the two occurrence sources
+  outcome: supported
+  summary: LOTUS and CyanoMetDB retain the same valid 2010 study, not two independent
+    experiments. UTEX 1903 isolation and crude-extract evidence support natural origin;
+    no purification-artifact defect was established.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - S061-OWNER
+  - S061-2010-OCCURRENCE
+  - S061-2010-ORIGIN
+- assessment_id: S061-A-LOCUS
+  area: evidence
+  topic: TAU source assertion versus exact compound demonstration
+  outcome: unknown
+  summary: The current weak database grades faithfully distinguish the unresolved
+    exact-P assertion from proven FilC1 chemistry. The2017 experiments end at 12-epi-hapalindole
+    U and do not authorize transferring enzyme evidence or native UTEX 1903 occurrence
+    to TAU. No confirmed removal or replacement is proposed solely from this bounded
+    lack of exact-product evidence.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - S061-RAW
+  - S061-2017-LOCUS
+  - S061-2017-SI
+  dimensions:
+  - name: source_and_experimental_strains
+    value: BGC source TAU; deposited fil source IL-199-3-1; isolated ambiguine P from
+      UTEX 1903
+    definition: Accession-linked source names are distinguished from the organism
+      used for the exact native metabolite isolation. No strain equivalence to UTEX
+      1903 is inferred.
+    evidence_ids:
+    - S061-RAW
+    - S061-2010-OCCURRENCE
+    - S061-2017-LOCUS
+  - name: evidence_tier
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED for exact P
+    definition: Recombinant FilC1 chemistry ends at 12-epi-hapalindole U and does
+      not establish exact P formation or native necessity.
+    evidence_ids:
+    - S061-2017-LOCUS
+    - S061-2017-SI
+- assessment_id: C061-IDENTITY
+  area: identity
+  topic: Exact neutral graph, stereochemistry and identifiers
+  outcome: supported
+  summary: The owner denotes neutral C25H29NO with two assigned centres, full key
+    YIXMOSKWKGHGSQ-LOSJGSFVSA-N. Its actual graph agrees with current NPAtlas, PubChem,
+    official ChEBI MOL and the inspected primary drawings. The two-star ChEBI default
+    SMILES is invalid and must not be copied or treated as an owner defect.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - C061-OWNER
+  - C061-CALC
+  - C061-NPA
+  - C061-PC
+  - C061-CHEBI
+  - C061-CHEBI-MOL
+  - C061-PRIMARY-GRAPH
+  - C061-PRIMARY-QA
+- assessment_id: C061-GROUNDING
+  area: provenance
+  topic: Source-concept identity and eligible grounding
+  outcome: supported
+  summary: The source concept BGC0001501:1 is distinct from a chemical graph identifier.
+    Its SHA256-based source/source_id mint reproduces naturalproductmech:mibig-158d84566b.
+    There is no exact eligible row in the pinned ChEBI inventory; the current two-star
+    entry cannot replace the minted ID under the source policy. The NPAtlas xref resolves
+    to the exact graph.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - C061-RAW
+  - C061-MIBIG
+  - C061-CHEBI
+  - C061-CHEBI-SEARCH
+  - C061-NPA
+  - C061-SEARCH
+- assessment_id: C061-TAXON
+  area: scope
+  topic: Source and occurrence taxon identifiers
+  outcome: supported
+  summary: The deposited TAU source and F. ambigua UTEX1903 isolation identity resolve
+    separately. Wikidata chemical Q77495976 resolves to the same full key; organism
+    Q67339754 maps to NCBI56108. Species-level occurrence aggregation is not a claim
+    that every F. ambigua strain produces P.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - C061-TAX
+  - C061-GENBANK
+  - C061-WD-Q77495976
+  - C061-WD-Q67339754
+  - C061-MIBIG
+- assessment_id: C061-CLASSIFICATION
+  area: provenance
+  topic: Predicted filing and source-asserted BGC class
+  outcome: supported
+  summary: The alkaloid filing follows the exact-key NPClassifier record, with versioned
+    Tryptophan/Hapalindole predictions. MIBiG OTHER remains a separate asserted biosynthetic
+    class. The current two-star ChEBI indole relation is not an eligible asserted
+    corpus class.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  evidence_ids:
+  - C061-CLASS
+  - C061-CHEBI
+  - C061-RAW
+  - C061-OWNER
+findings:
+- finding_id: R061-NMR-WORDING
+  issue_key: cyanometdb-nmr-used-rendered-as-structure-confirmed
+  category: representation
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Render the CyanoMetDB flag as reported NMR use
+  description: The source nmr_used=yes flag is emitted as structure confirmed by yes.
+    The wording incorrectly treats a Boolean usage flag as a confirmation method.
+    This is the shared generator cause identified in earlier campaign records; each
+    affected target retains its own precise location.
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  field_paths:
+  - occurrences[1].evidence[0].notes
+  evidence_ids:
+  - R061-CYANO-FLAG
+  - R061-CYANO-EXTRACT
+  - R061-CYANO-SEED
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Shared CyanoMetDB evidence-note emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: Preserved source NMR-use, reference and strain fields
+actions:
+- action_id: R061-CORRECT-NMR-NOTE
+  description: 'Correct the maintained CyanoMetDB note emitter to state NMR used according
+    to CyanoMetDB: yes, or equivalent precise wording. Preserve DATABASE_ASSERTION,
+    the raw flag, DOI, taxon and UTEX 1903 context. Keep this wording repair separate
+    from any independently justified chemical-identity or evidence-grade change.'
+  finding_ids:
+  - R061-NMR-WORDING
+  target_ids:
+  - naturalproductmech:mibig-158d84566b
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Shared CyanoMetDB evidence-note emitter
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: Preserved source NMR-use, reference and strain fields
+  generator: scripts/seed_from_sources.py
+  acceptance_checks:
+  - The yes, no and blank NMR-use cases retain their separate meanings, without structure
+    confirmed by yes or no.
+  - The target retains its chemical key, occurrence reference, taxon, strain and source
+    attribution unless separately adjudicated curation explicitly changes them.
+  - A focused generation check covers all three flag states and prevents duplication
+    or replacement of unrelated evidence.
+  - Regeneration, strict validation and the required reproduction and quality gates
+    pass after implementation.
+limitations:
+- This review audits the present assertions and the concrete source questions they
+  raise; it does not claim exhaustive discovery of every later activity or biosynthetic
+  study. Optional enrichment remains distinct from correcting an unsupported current
+  assertion.
+- Exact native TAU ambiguine P production and the fil-to-P relationship remain unresolved;
+  required claim-level scientific support is unavailable, so this scope recommends
+  partial completion.
+- The original 2010 raw-NMR SI remains inaccessible through the retained bounded public
+  routes. Available main/tabulated NMR and original figures support the stated comparison;
+  raw spectra were not reprocessed.
+- P activity could be optionally added from the original compound-specific MIC data
+  (Candida albicans 32.9 µM), but the owner asserts no activity and its absence is
+  not a defect. No activity or toxicity is transferred from other congeners.
+- Current authority, taxonomy, genomic accession and general metadata checks are supplied
+  in separate coordinator packets; this packet does not claim a full native-protein
+  translation audit.
+- The 2010 relative descriptor sentence differs from the CIP assignment of its own
+  depicted graph. The review preserves this discrepancy and does not claim a new experimental
+  absolute assignment.
+- Current authority and taxonomy agreement is not independent proof of exact-congener
+  native production in TAU; the separate scientific packet evaluates that required
+  question.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-007
+- ambiguine-p
+- source-scope
+- stereochemistry
