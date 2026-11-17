@@ -1,0 +1,2050 @@
+# Scientific review of loline
+
+- Review: 20261022T064959Z-loline
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-22T06:41:02.336447Z
+- Finished UTC: 2026-10-22T06:49:59.553504Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The literal PubChem loline identifier specifies two additional stereocentres and is not exact equivalence to the partially specified retained graph and literal NPAtlas entry. Correct this confirmed precision mismatch through the guarded consumer while resolving natural hand separately; the committed fully specified three-star candidate does not select a replacement. Exact native e167 loline and crude-extract formation/consumption are supported, with other-stock and congener experiments kept separate. Earlier original-source gaps and the no-assay sentinel remain explicit.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 288, batch 029, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 340 of 3116 current records had campaign coverage and 2776 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base df0178be20b3e00b424e89f8a52a7377105d60e8.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-0118f04440 | data/natural_products/alkaloids/loline.yaml | generated | loline |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-0118f04440 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-0118f04440 | Fresh complete final log read:3116records/3116PATHSrows/3116files correctly filed. Path integrity is not scientific accuracy. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-0118f04440 | Complete final log read:3116records byte-identical to seeded sources; known5unresolved assay-organism rows,42withheld producer claims and161taxon rewrites retained as reported. Reproducibility is not scientific accuracy. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-0118f04440 | Final log header/all12queue summaries and footer read; complete8928rowTSV parsed and category counts independently reconciled. Individual unrelated queue lines not exhaustively read. This queue does not replace authoritative structured-review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-0118f04440 | Complete final identifier-label log read:13448canonical,646synonym,35exception,499nonblocking mismatches,4750skipped-no-adapter. Exit0 retains warnings/skips and is not exhaustive label/scientific validation. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-0118f04440 | Full fresh QC retry002 completed with exit0: lint, 22 governed artifacts, documentation, 15 raw inventories, 44-source queue, 1011 tests passed/4 skipped/2 warnings, strict validation of3116 records with zero errors, generated pages,3116-record byte reproduction, lockfile integrity and live report all passed. |
+| Complete owner and seven-set fidelity | passed | True | naturalproductmech:mibig-0118f04440 | All ten successful official intakes and post-intake root reads precede authoring. Every complete owner and seven-source-set join matches the prepared bytes. Leporin B has three inline graphs with nodes3/4/3 and edges2/4/2, all within the bounded scientific assessment. No component, pathway step, molecular target or written assay is present in this cohort. |
+| Complete actual owner and all seven source sets | passed | True | naturalproductmech:mibig-0118f04440 | Complete owner/history/optional content and exact seven-set rows match the prepared read after the official intake and all-ten live guards. |
+| Required complete original source applicability | unavailable | True | naturalproductmech:mibig-0118f04440 | Complete original2001 occurrence and2002 source-stock/endpoint bodies remain unavailable. Original2005 RNAi full body remains unavailable; family-level abstract is not exact loline-specific knockout proof. |
+| Bounded positive original-source scope | passed | True | naturalproductmech:mibig-0118f04440 | Positive original text and inspected pixels support only the explicitly described native, introduced-host, precursor or congener endpoints. Missing sources remain separate. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-0118f04440 | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Exact literal chemical authority scope | failed | True | naturalproductmech:mibig-0118f04440 | Exact asserted identifiers retain their literal spellings. Loline CID716098 assigns two additional centres; other asserted identifiers match. Candidate ChEBI graphs are not automatically adopted. |
+| Exact named published structure scope | passed | True | naturalproductmech:mibig-0118f04440 | Literal CID716098 explicitly specifies four centres (FKSUSPIL), whereas the retained loline graph and literal short NPA05369 (returned NPA005369) retain two assigned and two unspecified centres (JAFIHTMF). The PubChem original SDF and explicit property SMILES/InChI agree; this is a confirmed literal-xref precision mismatch with the same constitution, formula and charge. The independently mapped original 2014 perspective cage supports exact heavy-atom topology. Three-star ChEBI156448 has the fully specified graph but is not an eligible exact committed join for this owner. |
+| Original structure assignment and source precision | unavailable | True | naturalproductmech:mibig-0118f04440 | The bounded source model does not certify complete cage-to-absolute-hand decoding and does not assert that the original perspective drawing is underspecified. Natural absolute-hand selection remains separate from the measured identifier mismatch. No automatic completion or replacement is selected; the PubChem source row is a no-assay sentinel. Literal short NPAtlas spelling is preserved. |
+
+## Scientific And Domain Assessments
+
+### Complete history and native status
+
+provenance: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+Native status remains SEEDED and all 3 history actions retain their exact order: ['SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES', 'SEEDED_FROM_SOURCES']. Source-seeding history does not replace claim-level scientific assessment.
+
+### Present optional assertions
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-0118f04440.
+
+The complete owner contains none of the listed optional assertions. Missing optional fields alone do not establish a scientific defect.
+
+### Exact computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces filing, superclass/class and glycoside fields. Computed classification is not independent natural-origin or mechanistic proof; any accepted identity correction requires effective-key reclassification.
+
+### Taxonomic identifiers versus experimental stocks
+
+provenance: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+Literal current identifier context: 5050: Epichloe uncinata (species). Identifier agreement does not establish original stock, exact congener, occurrence or native production. Epichloe uncinata has listed Acremonium uncinatum and Neotyphodium uncinatum synonyms; this alone does not prove source-strain applicability.
+
+### Literal organism routing
+
+grounding: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+The relevant literal P225/P685 routes match. Taxonomic spelling changes are preserved separately from experimental stock and exact congener applicability.
+
+### Native producer transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-0118f04440.
+
+The complete captured catalogue contains20 organisms and28 datasets. Its two other Streptomyces species are broader contexts; none matches an exact retained native producer species/stock. No compound, locus or expression-module association is established, and no global dataset absence or cross-species transfer is inferred.
+
+### Retained assay rows versus no-data sentinel
+
+scope: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+There are 1 exact-key retained rows, 0 written observations and 1 no-data sentinel. A no-data sentinel is not an assay or evidence of biological inactivity.
+
+### Exact named identity, depicted precision and sample scope
+
+scope: unknown. Targets: naturalproductmech:mibig-0118f04440.
+
+Biological conclusions preserve exact source labels and current row identity. Independent chemistry adjudicates depicted graph/hand and literal cross-references; no replacement or identity migration follows from this source assessment.
+
+### producer_organisms[0]; biosynthetic_gene_clusters[0]
+
+scope: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+Original2001 abstract names exact loline in N. uncinatum cultures; complete2014 independently supports native e167 loline. Imported2002 citation is family-level expression association. e167 LolM yeast crude extracts form loline from norloline and consume it to N-methylloline; E2368 loss/rescue of other congeners and plant conversion remain distinct. Empty methods are not a confirmed defect.
+
+### Faithful conservative imported method and evidence grades
+
+evidence: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+The empty imported method list is faithfully retained as SOURCE_ASSERTION and CLUSTER_UNSTATED. More specific original experiments may support optional enrichment, but their availability does not make this conservative serialization an error.
+
+### biosynthetic_gene_clusters[0].genome_accession and source stock
+
+scope: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+Deposited CBS102646/e167 LOL1-region source/feature metadata supports the stock association, not every gene function or exact study construct. Source-feature annotation is not an independent sequence/construct identity calculation.
+
+### Optional primary activity context and exact imported assay scope
+
+evidence: not_applicable. Targets: naturalproductmech:mibig-0118f04440.
+
+General family insecticidal context is not an exact retained assay; current PubChem row is a no-assay sentinel. No experimental bioactivity, molecular target or causal graph is emitted for this owner. Only loline and lomofungin have PubChem rows in this five-record set, and those rows are no-assay sentinels.
+
+### e167 LolM formation and consumption endpoints
+
+evidence: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+The 2014 source identifies native e167 loline. e167 LolM expressed in yeast is assayed in crude protein extracts: norloline gives loline/N-methylloline and loline is consumed to N-methylloline, with empty-vector controls. E2368 in-plant deletion/rescue of other congeners is a different stock and endpoint. No purified LolM or full heterologous pathway production is inferred.
+
+### occurrences[0]
+
+evidence: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+The original 2001 abstract directly names exact loline from N. uncinatum cultures with identity confirmation. Current Epichloe uncinata synonymy is independently supported at identifier scope. The complete original occurrence body remains a stated source-level gap.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+The complete source row BGC0000815:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Exact literal chemical identifier scope
+
+representation: concern. Targets: naturalproductmech:mibig-0118f04440.
+
+Measured exact-literal comparisons: [{"comparison": {"same_charge": true, "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi": true, "same_stereo_removed_standard": true}, "identifier": "npatlas:NPA05369", "returned_identifier": "NPA005369", "scope": "Exact retained authority response; default strings, fixed-H and stereo precision remain separate"}, {"comparison": {"same_charge": true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key": false, "same_standard_inchi": false, "same_stereo_removed_standard": true}, "identifier": "pubchem:716098", "returned_identifier": null, "scope": "Exact retained authority response; default strings, fixed-H and stereo precision remain separate"}]. Literal source identifiers retain their exact spelling. Standard identity does not erase fixed-H or stereo differences; no authority graph is automatically adopted.
+
+### ChEBI full-key eligibility and literal serialization
+
+grounding: supported. Targets: naturalproductmech:mibig-0118f04440.
+
+[{"eligible": false, "id": 156448, "literal_default_comparison": {"same_charge": true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key": false, "same_standard_inchi": false, "same_stereo_removed_standard": true}, "literal_default_parse": true, "mol_comparison": {"same_charge": true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key": false, "same_standard_inchi": false, "same_stereo_removed_standard": true}, "name": "loline", "stars": 3}]. No eligible exact committed three-star ChEBI join exists. Search candidates are not asserted xrefs; source MOL, literal default SMILES and reconstruction of stated InChI remain separate representations. Three-star CHEBI156448 is fully specified but differs from this owner; it is not automatically eligible. The committed raw projection does contain CHEBI:156448 as a possible separately adjudicated fully specified target; absence of an exact owner join is not absence of that candidate.
+
+### Primary identity and experimental precision
+
+scope: concern. Targets: naturalproductmech:mibig-0118f04440.
+
+Literal CID716098 explicitly specifies four centres (FKSUSPIL), whereas the retained loline graph and literal short NPA05369 (returned NPA005369) retain two assigned and two unspecified centres (JAFIHTMF). The PubChem original SDF and explicit property SMILES/InChI agree; this is a confirmed literal-xref precision mismatch with the same constitution, formula and charge. The independently mapped original 2014 perspective cage supports exact heavy-atom topology. Three-star ChEBI156448 has the fully specified graph but is not an eligible exact committed join for this owner.
+
+## Findings
+
+### C288-F-XREF-PRECISION: The literal PubChem identifier specifies two omitted stereocentres
+
+major / open / confirmed; issue key: mibig-loline-literal-stereo-precision.
+
+The retained loline graph and literal NPA05369 have two assigned and two unspecified centres (JAFIHTMF), whereas literal CID716098 has four assigned centres (FKSUSPIL). Explicit PubChem property SMILES/InChI and original SDF agree, with the same constitution/formula/charge. This confirmed equivalence mismatch does not choose a natural hand or certify complete decoding of the original cage drawing.
+
+## Recommended Actions And Acceptance Checks
+
+### C288-ACTION-XREF-PRECISION
+
+Withhold or explicitly qualify pubchem:716098 as exact equivalence to this partially specified owner through a maintained consumed decision with exact version/source selector/full-row guard. Preserve literal NPA05369 and all raw assertions. Resolve natural absolute-hand support separately before any owner completion. If a complete graph is later selected, explicitly reconcile or retire the exclusion because current consumers reject stacked xref exclusions after structure correction; do not adopt the fully specified ChEBI candidate solely from authority agreement. Preserve exact source/version/full-row guards [{"entry_version": "4", "expected_source_row_sha256": "fae9b4fe3c87c3224b1fad2bf7ecfd45c76b9aaf946fa3182b9e9bd681910a07", "full_original_row": {"bgc_classes": "other", "bgc_subclasses": "other", "cluster_link_evidence_basis": "CLUSTER_UNSTATED", "compound_classes": "", "compound_index": "1", "compound_name": "loline", "database_ids": "npatlas:NPA05369&#124;pubchem:716098", "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version": "4", "genome_accession": "AY723749.1", "locus_evidence_methods": "", "locus_from": "", "locus_to": "", "mibig_accession": "BGC0000815", "primary_reference": "PMID:12135580", "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles": "CNC1[C@H]2CN3C1[C@@H](O2)CC3", "standard_inchi": "InChI=1S/C8H14N2O/c1-9-7-6-4-10-3-2-5(11-6)8(7)10/h5-9H,2-4H2,1H3/t5-,6+,7?,8?/m0/s1", "standard_inchi_key": "OPMNROCQHKJDAQ-JAFIHTMFSA-N", "stereo_complete": "false", "taxon_id": "NCBITaxon:5050", "taxon_label": "Epichloe uncinata"}, "source_id": "BGC0000815:1"}]. No action has been executed.
+
+- Exact source/version/index and every raw-row field are guarded; drift or duplicate decisions fail closed.
+- Regeneration removes only the mismatching PubChem equivalence, preserving literal NPA05369, raw assertions and biological claims.
+- Current CID precision and unresolved primary absolute-hand proof remain distinct; no automatic completion.
+- Any later structure correction and exclusion are jointly adjudicated and tested under actual consumer rejection rules.
+- Authorized curator runs the documented canary, reproduction and required native gates after implementing a decision.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R288-OWNER | data/natural_products/alkaloids/loline.yaml; Complete actual owner, all optional fields and history events | supports | Root read the complete post-intake owner: 1 occurrence, 1 producer and 1 locus assertions. Present optional fields: none. No external component is present. |
+| R288-LOCAL | /private/tmp/npm-review-work/288/local-sources.json; Complete resolved owner and all six captured source sets; seventh set independently compared | context_only | Exact captured rows and separately parsed PubChem rows match frozen preparation. Inventory equality does not establish experimental support. |
+| R288-PUBCHEM-PREP | data/raw/pubchem_bioassay.tsv; Complete exact-key retained rows and no-data sentinels | context_only | This owner has 1 retained rows and 0 written observations. Across the cohort there are zero written observations and three no-data sentinels; no fresh compound-assay catalogue is claimed. |
+| R288-Q104084116 | https://www.wikidata.org/wiki/Q104084116; Exact retained six-entity response: English label and P225/P685 for this entity | context_only | Literal organism name/taxon routing agrees; this is not experimental occurrence, stock equivalence or production evidence. |
+| R288-TAXON-CONTEXT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;retmode=xml&amp;id=1269,1883,5050,5059,68229,332952,563922,758803,1400207; Relevant TaxId/ScientificName/rank/parent and OtherNames in nine-record response | context_only | Literal current identifier context: 5050: Epichloe uncinata (species). Identifier agreement does not establish original stock, exact congener, occurrence or native production. Epichloe uncinata has listed Acremonium uncinatum and Neotyphodium uncinatum synonyms; this alone does not prove source-strain applicability. |
+| R288-IDENTIFIER-READ | /private/tmp/npm-review-work/shared-next-batch029/root-authoring/identifier-counts-addendum-001.json; Thirteen literal organism routes across six Wikidata entities and nine taxa | context_only | Root read original identifier values and naming context. These are not experimental occurrence, production or stock-equivalence proofs. |
+| R288-IMODULON | https://imodulondb.org/api/datasets; Complete 20-organism/28-dataset official catalogue | context_only | The complete captured catalogue contains20 organisms and28 datasets. Its two other Streptomyces species are broader contexts; none matches an exact retained native producer species/stock. No compound, locus or expression-module association is established, and no global dataset absence or cross-species transfer is inferred. |
+| S288-E-LOCAL | /private/tmp/npm-review-work/288/local-sources.json; Complete resolved owner and captured rows; exact seven-set equality checked | context_only | Complete actual owner including any inline graph/pathway, six captured source sets and separately compared seventh PubChem set match the prepared complete reads. |
+| S288-E-CONSUMERS | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Current base df0178be20b3e00b424e89f8a52a7377105d60e8; load_mibig_locus_evidence_overrides/apply and build_records: exact method/producer grading, occurrence exclusions and qualification ordering; current structure-source exception at lines1116–1121 | context_only | Static inspection covers exact LOTUS exclusions, source method grading and producer/reference qualification order. Exact consumers have their own evidence snapshots. |
+| S288-E-SCHEMA | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv and grading.py also read and pinned | context_only | Producer tiers concern evidence in the named organism; cloned-locus experiments are a distinct cluster question. Empty methods and a source assertion do not independently assert native knockout or exact pure-enzyme proof. |
+| S288-E-SEARCH | /private/tmp/npm-review-work/288/science-search.json; Exact read scope | context_only | Exact current curated-decision search is retained. Its scope is the curation tree; it does not establish absence of experimental evidence or all possible consumers. |
+| S288-E-GRADE-MAP | /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv; Complete method-to-producer/link grading table and comments | context_only | Conservative empty methods and source assertions do not independently assert native knockout. Heterologous expression supports the demonstrated congener/construct, not every family member. |
+| S288-E-GUARDS | /private/tmp/npm-review-work/shared-next-batch029/science-authoring/source-row-guards.json; All ten owner pins and all70 exact parsed source sets; canonical per-row digests | context_only | Fresh official intake/root read and complete seven-set equality are required before any authoring output. |
+| S288-E-LIMITS | /private/tmp/npm-review-work/shared-next-batch029/review-support/source-notes.json; All five narratives, required source gaps, retained access failures and source_scope_principles | context_only | Current source scopes preserve native stock, introduced host, precursor versus final congener, and unresolved original-body questions. |
+| S288-E-LOL-GB | https://www.ncbi.nlm.nih.gov/nuccore/AY723749.1; Complete header and source/feature qualifiers read; CBS102646/e167 tax5050 and LOL1. ORIGIN not compared; no sequence/construct equality claim. | partial | Deposited CBS102646/e167 LOL1-region source/feature metadata supports the stock association, not every gene function or exact study construct. |
+| S288-E-LOL01-ABSTRACT | PMID:11557071; Exact PubmedArticle PMID11557071, complete title/abstract and metadata. | partial | Original abstract names exact loline from N. uncinatum cultures with GC-MS/13C NMR identity support. Complete source-stock/experimental body remains unread. |
+| S288-E-LOL02-ABSTRACT | PMID:12135580; Exact PubmedArticle PMID12135580, complete title/abstract and metadata. | partial | Original imported citation abstract concerns family-level transcript association and cross-isolate correlation, not exact loline-specific knockout proof. |
+| S288-E-LOL14-FIG1 | DOI:10.1371/journal.pone.0115590; Original complete pixels viewed: numbered common loline core and substituent crosswalk; chemistry hand interpretation delegated. | partial | Original named congener drawing context; exact stereochemical reconciliation remains separately assessed. |
+| S288-E-LOL14-FIG6 | DOI:10.1371/journal.pone.0115590; Original complete pixels viewed: norloline-to-loline and loline-to-NML in LolM yeast extracts versus empty-vector extracts. Not purified protein or full-pathway production. | partial | LolM yeast crude extracts form loline from norloline and consume loline to N-methylloline, with empty-vector extract comparisons. |
+| S288-E-LOL14-MAIN | DOI:10.1371/journal.pone.0115590; Complete scientific body/tables/captions; initial truncated middle recovered elements344-500. Table2 e167 exact loline positive; methods use e167 LolM in yeast crude protein extract. E.festucae E2368 deletion/rescue profiles measure other congeners and are distinct from e167. | partial | Exact e167 native loline and LolM yeast crude-extract formation/consumption are distinct from E2368 native loss/rescue of other congeners. Whole-cell feeding and purified protein are not substituted for this extract experiment. |
+| S288-E-OCCURRENCES | /private/tmp/npm-review-work/shared-next-batch029/review-support/occurrence-ledger.json; Seven individually identified exact occurrences and their source-scoped interpretations | context_only | Each occurrence is evaluated independently; repeated references are not new independent experiments. |
+| S288-E-READ-SCOPE | /private/tmp/npm-review-work/shared-next-batch029/review-support/source-read-receipt-001.json; Earlier full read index plus added original2009 SI and2018 SI pixel/text scopes | context_only | Source text, selected original pixels and derivative/provenance checks are distinguished; no numerical spectrum reassignment or unperformed experiment is claimed. |
+| S288-E-ROOT-CONTEXT | /private/tmp/npm-review-work/shared-next-batch029/root-identifier-context-read-001.json; Scoped official identifier metadata and complete stated organism/dataset catalogue | context_only | Taxonomic names and synonyms support identifier normalization, not independent production or exact stock endpoints. |
+| S288-E-ROUTES | /private/tmp/npm-review-work/shared-next-batch029/review-support/curator-routing.json; Exact consumer paths, supported optional enrichment and conditional routes | context_only | No method/citation/exclusion correction is selected merely because an older full body is unavailable. Chemical-key and biological actions must compose on the same exact raw row. |
+| C288-OWNER | data/natural_products/alkaloids/loline.yaml; Complete owner and all seven matching source-row sets; no referenced components | supports | The complete owner denotes loline under naturalproductmech:mibig-0118f04440. All source selectors, versions and complete row digests are retained in COMPARISON: [{"row_sha256": "fae9b4fe3c87c3224b1fad2bf7ecfd45c76b9aaf946fa3182b9e9bd681910a07", "selector": "BGC0000815:1", "version": "4"}]. The official intake and prepared owner bytes agree. |
+| C288-GRAPH | /private/tmp/npm-review-work/288/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to OPMNROCQHKJDAQ-JAFIHTMFSA-N, formula C8H14N2O, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C288-COMPARISON | /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/retained-graph-comparison.json; Record 288; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner and complete raw rows; current authority responses and primary proof are separate evidence. |
+| C288-LOCAL-SEARCH | /private/tmp/npm-review-work/288/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C288-AUTHORITY-COMPARISON | /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-graph-comparison.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C288-AUTHORITY-DETAIL | /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/source-plan-005.json; Complete literal Standard/fixed-H, formula, charge and stereo comparison; exact source payload pins retained | supports | Current authority graphs and source-specific serialization differences are independently compared. Database agreement is not primary natural-hand proof. |
+| C288-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0000815.4/annotations.json; Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-001-public/BGC0000815.4.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C288-AUTH-2 | https://www.npatlas.org/api/v1/compound/NPA05369; Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-001-public/NPA05369.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C288-AUTH-3 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/716098/SDF?record_type=2d; Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-001-public/CID716098.sdf | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C288-AUTH-4 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/156583135,716098,5351222/property/Title,IUPACName,MolecularFormula,InChI,InChIKey,IsomericSMILES/JSON; Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-002-public/pubchem-three-literals.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C288-AUTH-5 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/156448/; Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-004-public/CHEBI156448.json | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C288-AUTH-6 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/156448/; Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-004-public/CHEBI156448.mol | supports | Exact source representation at its recorded access time; primary identity and natural hand are assessed separately. |
+| C288-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=OPMNROCQHKJDAQ-JAFIHTMFSA-N&amp;size=100; Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-002-public/chebi-key-288.json | supports | HTTP404; exact source response and candidate eligibility preserved. |
+| C288-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=loline&amp;size=100; Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-003-public/chebi-name-288.json | supports | HTTP200; exact source response and candidate eligibility preserved. |
+| C288-LOL14-FIG1 | DOI:10.1371/journal.pone.0115590; Original Figure 1 Loline entry, R1=H and R2=CH3; perspective cage; retained snapshot /private/tmp/npm-review-work/shared-next-batch029/review-support/public-009-retry/loline2014-figure1.png | supports | Exact heavy-atom topology is independently mapped; complete cage-to-absolute-hand decoding is not certified by this bounded model. |
+| C288-LOL01-ABSTRACT | PMID:11557071; Original 2001 abstract and metadata only; retained snapshot /private/tmp/npm-review-work/shared-next-batch029/review-support/public-002-retry/primary-pubmed.xml | supports | Named loline occurrence context is distinct from an independently inspected original absolute-configuration protocol. |
+| C288-SOURCE-LIMITS | /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/source-notes.json; Entry 288: observations, limitations and complete raw source rows; retained snapshot /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/source-notes.json | supports | Source-specific graph precision, original drawing conflicts and access limitations; authority agreement is not natural-hand proof. |
+| C288-PRIMARY-COMPARISON-1 | /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/primary-mapping-001/other-primary-comparison-001.json; Target 288: original perspective cage heavy-atom topology, stereo-stripped comparison and explicit no-complete-hand-decoding limit; retained snapshot /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/primary-mapping-001/other-primary-comparison-001.json | supports | Independent topology-only transcription; the source carries stereochemical information but complete cage-to-absolute decoding is not certified. |
+| C288-STRUCTURE-CONSUMER | src/naturalproductmech/curate/structure_corrections.py; apply_structure_corrections exact source/target rows, three-star target and collision guards; retained snapshot /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/structure_corrections.py | supports | Committed CHEBI:156448 is a structured three-star fully specified candidate, but it is not an exact join to this partially specified owner. The current correction loader still requires a separately adjudicated complete target, exact row pins and collision checks; its presence does not select a replacement. |
+| C288-XREF-CONSUMER | src/naturalproductmech/curate/xref_exclusions.py; load_xref_exclusions literal identifier and unique full-row source guard; retained snapshot /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/xref_exclusions.py | supports | The mismatching PubChem literal can be withheld by the current exact consumed exclusion route; this changes equivalence, not the owner stereograph. |
+| C288-SEED-CONSUMER | scripts/seed_from_sources.py; build_records lines 783, 813–818 and 1053–1056: structure correction then xref exclusion and changed-key guard; retained snapshot /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py | supports | The current seeder rejects stacked exclusions after structure correction. A later identity correction and existing xref decision require explicit tested reconciliation. |
+| C288-CURATION-CONTRACT | docs/CURATION.md; MIBiG structure/xref correction contracts and generated-record boundaries; retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md | supports | A future decision uses a maintained consumed contract with exact selectors/full-row guard and documented reproduction checks; no raw or generated record is hand-edited. |
+
+## Limits And Additional Notes
+
+- Context establishes exact owner/history/source inventory, literal identifier routing and computed classification. Primary production, congener identity, stock applicability, protein/graph and method claims retain their separate scientific scope. Leporin B context remains chemical identity/provenance and high-level evidence only.
+- Original-source assertions, native production, introduced-host experiments, precursor reactions and exact final congener measurements are distinct. Missing full bodies do not establish nonproduction; independent chemistry governs graph/hand adjudication.
+- Complete original2001 occurrence and2002 source-stock/endpoint bodies remain unavailable.
+- Original2005 RNAi full body remains unavailable; family-level abstract is not exact loline-specific knockout proof.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Organism, locus, classification and history claims are assessed separately.
+- The bounded source model does not certify complete cage-to-absolute-hand decoding and does not assert that the original perspective drawing is underspecified. Natural absolute-hand selection remains separate from the measured identifier mismatch. No automatic completion or replacement is selected; the PubChem source row is a no-assay sentinel. Literal short NPAtlas spelling is preserved.
+- The first fresh QC attempt failed during the public vendored-sync fetch after lint passed. Only the separately recorded complete successful QC retry002 is used as the baseline check; the actual failed001 receipt/log/capture/root observation remain bound.
+- Four tests were skipped and two dependency deprecation warnings remain in the exact transcript.
+- Reproduction retains five unresolved assay-organism rows,42 withheld producer claims and161 merged-taxon rewrites.
+- Configured quality gates establish consistency; they do not independently verify scientific claims.
+- Original QC001 DNS failure remains preserved separately; only this successful retry establishes the full baseline QC.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions and no-adapter pairs; a successful command does not convert these into verified scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population was checked; external caches and generated bytecode are not asserted to be independently byte-pinned.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command receipts for this base. Scientific failed or unavailable checks are distinct from bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments; source access and unresolved scopes remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261022T064959Z-loline
+title: Scientific review of loline
+started_at: '2026-10-22T06:41:02.336447Z'
+finished_at: '2026-10-22T06:49:59.553504Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The literal PubChem loline identifier specifies two additional stereocentres
+  and is not exact equivalence to the partially specified retained graph and literal
+  NPAtlas entry. Correct this confirmed precision mismatch through the guarded consumer
+  while resolving natural hand separately; the committed fully specified three-star
+  candidate does not select a replacement. Exact native e167 loline and crude-extract
+  formation/consumption are supported, with other-stock and congener experiments kept
+  separate. Earlier original-source gaps and the no-assay sentinel remain explicit.
+source:
+  git_revision: df0178be20b3e00b424e89f8a52a7377105d60e8
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: INFRA_TASKS.md
+    sha256: 89170da685b469ae622a1571037899bfa82c9413a4ee55fafc5cf42e7d46a490
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: 6a9594c1159fc8038b59f8d421efd15dfb3d748e8e6d508b8f7fb84c43abe09b
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: 8879da121435bf96833919d8300031745197ee78a527d602b233dcd1dde23268
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/hancockiamide-c.yaml
+    sha256: f5455801d553581ab6b134955ecb527b48fcdc2aa4e10c86e498aee815ed3335
+    role: context
+  - path: data/natural_products/alkaloids/hancockiamide-d.yaml
+    sha256: 758bf46b4fe8f6572a482e563b64e2899f1d012dcd59d74cb761270fdc8e741f
+    role: context
+  - path: data/natural_products/alkaloids/hexadehydroastechrome.yaml
+    sha256: a065c38b64efa17029b83d2381f84e8973b2f450b3a1b37a194ad0f639c12497
+    role: context
+  - path: data/natural_products/alkaloids/holomycin.yaml
+    sha256: 125f0e310f19582f45f65b82dca90f687fd9463338de592bea14c720e432c3fa
+    role: context
+  - path: data/natural_products/alkaloids/homoanatoxin-a.yaml
+    sha256: 532435867b2dc7742709c97d2e7a857d707bfdce2218e799b7fba96c4f7cd952
+    role: context
+  - path: data/natural_products/alkaloids/huperzine-a.yaml
+    sha256: 5cd4ffb5e2c23fa2cc74b8982cab87d6dc4fe1aaaac89ca759d117fdb364a5a4
+    role: context
+  - path: data/natural_products/alkaloids/hydroxysporine.yaml
+    sha256: 82203ab475b10e5e75bc4742963c5d1eb7ea98aa28ac2ea2c8e961d0d98ac163
+    role: context
+  - path: data/natural_products/alkaloids/ilicicolin-h.yaml
+    sha256: a40244c649b727e078fae647300d2be11f9abd1616d865fe7c3d50e48be62bda
+    role: context
+  - path: data/natural_products/alkaloids/ilicicolin-j.yaml
+    sha256: 83af9c59c72e30686a5bce5d8d725afa9b1475d36aa7609c676fbd6f5d759057
+    role: context
+  - path: data/natural_products/alkaloids/iminimycin-a.yaml
+    sha256: c3d760bfba7f1a604735bf4d3a4ba4d04225870643d0e0dddc5edd172372ec00
+    role: context
+  - path: data/natural_products/alkaloids/iminimycin-b.yaml
+    sha256: 486bec3a8bb7fe97f77bce427b87ccb1d0e965338fabfde34cc8d0af8055e0bc
+    role: context
+  - path: data/natural_products/alkaloids/imizoquin-c.yaml
+    sha256: 67fc96ff1f98fa217c3533ee1c0ae689c339e8c5580d1a3ab580193c8edba624
+    role: context
+  - path: data/natural_products/alkaloids/imizoquin-d.yaml
+    sha256: d651476e0ef9ae0622f52517b8c89e098692146c1e7be603668a1ce25f0ebed6
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-a.yaml
+    sha256: 4867b4ccd262132aab7d66c81d7a418c1f6f81bbfebcd7a8ba6e82fe0ba526df
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-b.yaml
+    sha256: 8c02b3b43dc1a267c31cc4940d7d65383aa8dbd58bc74a61f9e1a7693b513d78
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-c.yaml
+    sha256: 1f331e4e464f472c02a4417dd4fe03bd908003032b7b5b9199d25da68fa5ad2e
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-d.yaml
+    sha256: f113324530458ad4f2d148f97b83e1972ed461158c6b0a762eaf9c358cc6b5ab
+    role: context
+  - path: data/natural_products/alkaloids/indimicin-e.yaml
+    sha256: d2aa92f1a00cd22dae3faa532ebb3ab4542427c329646b066fe8b62cecb56b18
+    role: context
+  - path: data/natural_products/alkaloids/indolmycin.yaml
+    sha256: 48aa7a59f48d7a586c2b1f67ed695a51aabb46641c5d953874745b9ab3257ac6
+    role: context
+  - path: data/natural_products/alkaloids/iodinin.yaml
+    sha256: 883f3b3f30ad1e52c4852386e47611cdd1624bf2fcb81c41fefd4e7f5f596c7b
+    role: context
+  - path: data/natural_products/alkaloids/iso-migrastatin.yaml
+    sha256: a15544ce2de7c5ae505156fdcb32c0464fb2243394f9eb3636d0a6f440d49db5
+    role: context
+  - path: data/natural_products/alkaloids/isoflavipucine.yaml
+    sha256: 043fc6e11d9b3f540abb0ad4f4618e6bf349974f754a5b8dab54d443e506d94c
+    role: context
+  - path: data/natural_products/alkaloids/isoindolin-1-one.yaml
+    sha256: 58d8bda964a940942564931c77eb85e958aae92ec4f1c08766ea61152c65055b
+    role: context
+  - path: data/natural_products/alkaloids/izumiphenazine-c.yaml
+    sha256: 0fff4636be4372fea28c3ec38dc3bbc2de8c2160ac1d3eb3196c2f76bb5e0b54
+    role: context
+  - path: data/natural_products/alkaloids/jawsamycin.yaml
+    sha256: 31487ceb51e33d085eecabeeba7f2b0728ec88e337bcd07551a39e29566db437
+    role: context
+  - path: data/natural_products/alkaloids/jbir-126.yaml
+    sha256: 741d70271ed93cbee622938ce6c000379dd47624b24fcffa26375f1994166dad
+    role: context
+  - path: data/natural_products/alkaloids/jomthonic-acid-a.yaml
+    sha256: 30c0ec98132cc040fb8ff0f2d0a75e1f80e4d0e35e30b9ade6ec4b8b48210e4c
+    role: context
+  - path: data/natural_products/alkaloids/jomthonic-acid-c.yaml
+    sha256: f6139ac0e8d7cb41e281e5640fc168fe7408c1e8a7c6fc51d31251cb5e7135d5
+    role: context
+  - path: data/natural_products/alkaloids/k-252a-2.yaml
+    sha256: dfa2372f86bb18635451b9a052a1f98df66442d8ad23ac42789010c31edee218
+    role: context
+  - path: data/natural_products/alkaloids/k-252a.yaml
+    sha256: 433eb784b7c133c380864f5b97239c466965c5a9b42c4a4ec70e042a83db49c9
+    role: context
+  - path: data/natural_products/alkaloids/kitasetaline.yaml
+    sha256: 93f8d6429a40cf961f13ebe6cf69a870a454397e7234354feab2240d60b5e1b6
+    role: context
+  - path: data/natural_products/alkaloids/labradorin-1.yaml
+    sha256: 72189001ed00a5872ff32f4c32cc22fb9ade9add50095e3878e9f58cf5de0e03
+    role: context
+  - path: data/natural_products/alkaloids/labradorin-2.yaml
+    sha256: 64a3d946a7aeb4151fb88bf3e4f74fadeb7251bd7c9bcdc531b913a615b9b002
+    role: context
+  - path: data/natural_products/alkaloids/lactimidomycin.yaml
+    sha256: d6d777077883cfc63d9531a791f7594d7616a75b80a243b35c6f70aea9aaf34c
+    role: context
+  - path: data/natural_products/alkaloids/lazarimide-a.yaml
+    sha256: 85907e9f531302fb5f160d44088fb5e2bd38b7b032d1322b95e6c095e7ca44ce
+    role: context
+  - path: data/natural_products/alkaloids/lazarimide-b.yaml
+    sha256: af45a87853c0a484ab91e1ccba9ab95ae0f88be8e9f4fdb6f0f0107b7d21ae01
+    role: context
+  - path: data/natural_products/alkaloids/lazarimide-c.yaml
+    sha256: 0725529951b87de0305bd1b7acc2d369e0ddc9955e8e8925ad46a878dfd23443
+    role: context
+  - path: data/natural_products/alkaloids/legonindolizine-a.yaml
+    sha256: 6a5d049f7002200178a54b24b8f2df750f815cb78d9ea90652f116d741b30ec7
+    role: context
+  - path: data/natural_products/alkaloids/legonindolizine-b.yaml
+    sha256: 8daf0da742c9499fa0ec31036ac04d943c82b94377fd43e4ea38d37eda88108d
+    role: context
+  - path: data/natural_products/alkaloids/legonmycin-a.yaml
+    sha256: 56ff4ea37f8ef1e06ed485e11e58bd797f578bc2f6fce31a49c5e6e933fa769d
+    role: context
+  - path: data/natural_products/alkaloids/legonmycin-b.yaml
+    sha256: f8596a2dca8cd64f84e5b59bb9c684a9a5ea098fae77f1e315a9caaa0cbfee5e
+    role: context
+  - path: data/natural_products/alkaloids/leporin-b.yaml
+    sha256: daf2f14b80ba4346eb2b2160a1ab57ad0be89e5f84ef79c1f45a0d1a6758e67a
+    role: context
+  - path: data/natural_products/alkaloids/limazepine-a.yaml
+    sha256: 2704b278c8341be5cc9f9aca628d75f7ecbb10c49dcf69ac96b8a36db0205132
+    role: context
+  - path: data/natural_products/alkaloids/limazepine-c.yaml
+    sha256: 5ad4986e7337f009011cd85559bf6d7c2bff0908c056be906ef0ccf5f51de939
+    role: context
+  - path: data/natural_products/alkaloids/limazepine-d.yaml
+    sha256: 7ed79dfe1214449a27ddb253a1e39d3cb1051615cc4413760cd24a28160ea9e9
+    role: context
+  - path: data/natural_products/alkaloids/limazepine-e.yaml
+    sha256: 2107ed7ed53dac9bacd5be96ea3fa40f8ad579b0048cadbe1cc7bf898b7bd867
+    role: context
+  - path: data/natural_products/alkaloids/limazepine-f.yaml
+    sha256: f29aaa82a42b5e551c3637211c02ca622e4d1f7e02c60f85887af32d19da21a6
+    role: context
+  - path: data/natural_products/alkaloids/loline.yaml
+    sha256: 4479e99604f98afe6f48c1743281e631f3cbd0d63c965d4843a7088160c06b31
+    role: target
+  - path: data/natural_products/alkaloids/lomofungin.yaml
+    sha256: 80e649f6866265d567839cb36541f3cb02f5bbc6212ba2fe59962c22a0d24c87
+    role: context
+  - path: data/natural_products/alkaloids/loonamycin-a.yaml
+    sha256: d16cdba01c4cfadf5273acff7dbfd88475da977ad148514cc0580aadda0f9de4
+    role: context
+  - path: data/natural_products/alkaloids/loonamycin-b.yaml
+    sha256: 6f9f5752cc6a2f04b5ce805c097a35c0353c6cd47efb85f27a8bbc24af843ed7
+    role: context
+  - path: data/natural_products/alkaloids/loonamycin-c.yaml
+    sha256: 5c6a0e197c807b491d0d62f30a6890b2cc8aa5fbdbe7b90e2c961db65d7ed4ee
+    role: context
+  - path: data/natural_products/alkaloids/lucilactaene.yaml
+    sha256: 8b79e4d8cc58bc4b242a46508d0269679af9a3271f267554d3bedcd5da470673
+    role: context
+  - path: data/natural_products/alkaloids/lymphostin.yaml
+    sha256: 4926dfdae95986182ab78c57681e46d5beda785f95f8d28afe65e9e05a53993b
+    role: context
+  - path: data/natural_products/alkaloids/lymphostinol.yaml
+    sha256: 707f8a38f2ee24bc75fa422d44198e5ce0f89e1de4d5eef8161c12cebfc4af84
+    role: context
+  - path: data/natural_products/alkaloids/lynamicin-a.yaml
+    sha256: f972881d5d5c065fd31fec6418244397a38b392814afeab4fec5616627d52bd7
+    role: context
+  - path: data/natural_products/alkaloids/lynamicin-d.yaml
+    sha256: 4a923cf96469996c7eb1f9dc69cdaffbc54445de1d8824b03acc51c577c8e993
+    role: context
+  - path: data/natural_products/alkaloids/lynamicin-f.yaml
+    sha256: 3834c1fec921c27e4f247355391e1e545895738a170a9db3a6b58f88969ad8d5
+    role: context
+  - path: data/natural_products/alkaloids/lynamicin-g.yaml
+    sha256: 51fc2b10f2501523f29ae51eb0eff20d87f7ddba84acce30be5af3a1a5a9d7a7
+    role: context
+  - path: data/natural_products/alkaloids/lyngbyatoxin.yaml
+    sha256: e06fe3f1ed1c3d7abb15484c55397630f82036ca189bd6c3172ea7eff0777100
+    role: context
+  - path: data/natural_products/alkaloids/malbrancheamide-a.yaml
+    sha256: 0d5c8ddc06440af552d89eae5e8bbc6670f3d0959f745fc4217db38b5d06a10b
+    role: context
+  - path: data/natural_products/alkaloids/malleobactin-b.yaml
+    sha256: c70f7acbf9ac8d7e3c26ef85b472667a66268c62198234916be55392083658d1
+    role: context
+  - path: data/natural_products/alkaloids/malleobactin-d.yaml
+    sha256: fec2eae53dbd191295af0b21bb111f38527bc3db9a48d72b6912cc3d28ebcb3d
+    role: context
+  - path: data/natural_products/alkaloids/marinacarboline-a.yaml
+    sha256: cdc0cd05ad71216f40a006152069ee7dd74709a4e3501afc1a9d4fe28ff7f6c1
+    role: context
+  - path: data/natural_products/alkaloids/marinacarboline-b.yaml
+    sha256: 098f156df437ca474344fa88687b3cd51e63f230553ae2249da694e3f2a5948a
+    role: context
+  - path: data/natural_products/alkaloids/marinacarboline-c.yaml
+    sha256: a7c582cc8281b9b0a81792b3a68f0d7d35396307ec1e6da9c9e1d852c83e71dc
+    role: context
+  - path: data/natural_products/alkaloids/marinacarboline-d.yaml
+    sha256: 497e7db52ec61bd0e4e1b31b56e4fcc1fb9bbf32d75ec7cb6e209653aac90680
+    role: context
+  - path: data/natural_products/alkaloids/marineosin-a.yaml
+    sha256: a410ab4381c37c5bf1ec606386b0d9d7294a56e59d5c6e9acda1c7e5899970ba
+    role: context
+  - path: data/natural_products/alkaloids/marineosin-b.yaml
+    sha256: 3816dc69d467101429fbc1d6366851d65d8caab4410b7b1edba97c6f62980326
+    role: context
+  - path: data/natural_products/alkaloids/marinophenazine-a.yaml
+    sha256: 6d96a6b56c4e201dbece52a4897442337d4487fd1e83bca952edd761f7ac20b0
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-a.yaml
+    sha256: dcb61573eced11ed01f1d5ff71829046f192dbb23cedb6518b16967283deb81c
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-b.yaml
+    sha256: 357c50a35d5e0f3a8fcc230a978eb6c0e09197448e047c914cde58f0009e53bf
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-c.yaml
+    sha256: e4cfcfb306feee302651e09a945a2c6b12e3919557dfe271a5c136d4cea8f0b5
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-d.yaml
+    sha256: 5bf20a408a8d38780c11c1e50dc0c12eabe63f4fe3e3fb61db7a917b08633d7a
+    role: context
+  - path: data/natural_products/alkaloids/marinopyrrole-e.yaml
+    sha256: d97396a04c8ef04e2e64a1fbae41605f815264cf7c283878ceff2862da861a3e
+    role: context
+  - path: data/natural_products/alkaloids/melanin.yaml
+    sha256: 56b568b00596b272bc27907520dafcffe8145f3119b0ea8fd4ba869e9a00b498
+    role: context
+  - path: data/natural_products/alkaloids/meleagrine.yaml
+    sha256: 1b00a87404a9dcdc1353fc84b465fcd49401f0a75ecabf1032d0692ab0beb765
+    role: context
+  - path: data/natural_products/alkaloids/metacycloprodigiosin.yaml
+    sha256: 6c050712c67da3414341854dd286167e10266ef60d5f251af728ab632ae13019
+    role: context
+  - path: data/natural_products/alkaloids/methylarcyriarubin.yaml
+    sha256: 15d5f412072336b825474230401844e5f7503d1be460c16c3ac530c61125e5ad
+    role: context
+  - path: data/natural_products/alkaloids/methylpendolmycin.yaml
+    sha256: 0edcbea57bbe52620de8952cfe9bf73bfa8f1cec803026d11ae0da5038ff98bb
+    role: context
+  - path: data/natural_products/alkaloids/microansamycin-i.yaml
+    sha256: 2e29826a0be2421992edc189a02ffe18d70350e9cae84e44601d56f1c85ce144
+    role: context
+  - path: data/natural_products/alkaloids/migrastatin.yaml
+    sha256: ac689bc0ba74ddc794e8eba25e7b368ad1ced4fc9da68c4e7510de0b31d34f2d
+    role: context
+  - path: data/natural_products/alkaloids/molybdenum-cofactor.yaml
+    sha256: 13342ab28394a7a941b20ab3a5f33c76928b3153d2279eb53345da3d4662d619
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-a.yaml
+    sha256: 2c8cb40be089df46a6d614d794a72de9c1ed60e4b00c0d739374af7914f4be84
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-b-2.yaml
+    sha256: 411480d13437b1d4df8709b19ce98871a9d34f59d0f6d26c3b0c4ee403151539
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-b.yaml
+    sha256: ea3043709a28498e3ea4ac7794103168db21d2c7b3345b3766f89fbe0993918d
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-n.yaml
+    sha256: 8e19b4c971d6dcec9c8b894635cc02dad599dbab58815bcdb5d6dcc746e48ecb
+    role: context
+  - path: data/natural_products/alkaloids/myxochelin-o.yaml
+    sha256: 5247635c23d524ef7ff2844be6f7f6adb69ecbb9552e31e18632178077d7e1eb
+    role: context
+  - path: data/natural_products/alkaloids/myxofacycline-e.yaml
+    sha256: 217af40d7f6cdd5fce6c715f301ea53722f984d736a3d07aab4fb03e3b6ad965
+    role: context
+  - path: data/natural_products/alkaloids/myxofacycline-f.yaml
+    sha256: b883a268156852475a3290c9e411c02ea61f0b350edf5dfb703b82caa28fb689
+    role: context
+  - path: data/natural_products/alkaloids/myxofacycline-g.yaml
+    sha256: 97805dfcd098cd821ed1a5ef68861472311ebcebc8967e60f1482c4dd6b9ee9a
+    role: context
+  - path: data/natural_products/alkaloids/n-acetylnorloline.yaml
+    sha256: cc969071f667e5660ee15c4f020514eaa94bb186247f7c28b7b458b83cabfc39
+    role: context
+  - path: data/natural_products/alkaloids/n-formylloline.yaml
+    sha256: 84b04a5f0dbc8388888e4779cfc6d156f8dae59ed5d19526e032202fa2ee2b90
+    role: context
+  - path: data/natural_products/alkaloids/n-n-dioxide-containing-derivate.yaml
+    sha256: 143122644bfd7ebced215e7fbb9019b419049fe9ca1e7058c6418edd4f4b5d3b
+    role: context
+  - path: data/natural_products/alkaloids/nanangelenin-b.yaml
+    sha256: de1037953b59cb475f30aef57aa03efbcd81e6cc0f3c13d5cd9e44edab3aa176
+    role: context
+  - path: data/natural_products/alkaloids/naphthyridinomycin.yaml
+    sha256: 0bf08a52a175371b33cc47927db5ad5fe0e068ea5d8bed86138b9393f01387ab
+    role: context
+  - path: data/natural_products/alkaloids/nematophin.yaml
+    sha256: e448b2f44c27ce1c6c859c283279b6d8580715cb2212de042d50f9aabab6f099
+    role: context
+  - path: data/natural_products/alkaloids/neocarazostatin-a.yaml
+    sha256: 91df47070c186084e036a65b339542b0437041310fccbdd7c1b98f2c55ad0d72
+    role: context
+  - path: data/natural_products/alkaloids/neolymphostin-b-2.yaml
+    sha256: f24278430db0ffe01c239b5789ae6d4e3a78b4906fad5e4a81c584cf8658f972
+    role: context
+  - path: data/natural_products/alkaloids/neolymphostin-b.yaml
+    sha256: 61d36e3ff38724c900b991e2cea235ab15719608acb5e71f4c506a7f23eb5f27
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: ee8f572f191ee2bc92a18ed57b115faca186d56c6f7dab38ef7521c1473de31d
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: reviews/workflow/latest.yaml
+    sha256: d353962aae698a013b52f0557e77ef58b5c75fe1eaa62c60e14bc3c3f576d282
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/coverage.json
+    sha256: 4f3248606f0ccae157f0b3b0b04cefefae9df3d9a7eb01060f05ef5e7ed54ef7
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/evidence.yaml
+    sha256: 3d721c2eb94fafbc852fbe639540e26e80c954050880367f9723903d5175e9de
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+    sha256: baa241042ae1229c6b293da1bc6301ab8f897d8dcd5e20b432957920fe2aaf28
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/infra_snapshot.md
+    sha256: 72912d45e04c287bdd1dd1324b4a047fcb8950b60de781f8b16197ce79552a40
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+    sha256: 9bf6fbc33cf2a8c9055aa52f720acd24364e78e0bba8851a2db0f10b03d0055c
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/check_reproduction.py
+    sha256: b00efb72ebf81c84760ccb4a0a491a596d1198d1e21613df6cb417e68caff868
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/record_review.py
+    sha256: 95a4ec41e38ec47ba3578e76838c46a0adbf47e49ad3636524735d08cfcb1c4d
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: b992853ea5e476fa27937bd6641ebe9b266f178215572e45d16ba597115e250d
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/graph_components.py
+    sha256: 10f08517869f482954fd583fd19d5750ef286a76297c231e6c9a5ba8dc023e17
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: src/naturalproductmech/templates/record.html
+    sha256: 4c5143ae98b51531c3b708cf73590decd50f3e222e375d91288a54ef767e7893
+    role: context
+  - path: src/naturalproductmech/validation/write_validated.py
+    sha256: 4b7648fc5d2e7a5d26ad8bb168dbcae609aaa2694434a8ed5cfcb33fb66ff80a
+    role: context
+  - path: tests/test_claim_references.py
+    sha256: c8711a31d0582d92af31795ea27df4b814da018efac40f5467fcc7cfefb8ed5f
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 70fd5471426ffbc7bbb788afc06e8e157bd98249091f75ca702d60a3121eb12d
+    role: context
+  - path: tests/test_producer_strains.py
+    sha256: f978eccb57951669e566a608e3ad4cfc72059c456e2a29651afc3cf0b63e9dc3
+    role: context
+  - path: tests/test_seed_skeleton.py
+    sha256: 560cd80e53eda2bb0021c41f2b4571d583c02bdcfaa8506fccb337ee5065aec5
+    role: context
+  - path: tests/test_write_validated.py
+    sha256: ed0b7a953cb45b3bc35ee65f4f65d2f13558a704e0dbc0e60328a5f71c014534
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 288, batch 029, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 340 of 3116 current
+    records had campaign coverage and 2776 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-0118f04440
+targets:
+- target_id: naturalproductmech:mibig-0118f04440
+  path: data/natural_products/alkaloids/loline.yaml
+  label: loline
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  command: just validate-strict data/natural_products/alkaloids/loline.yaml --out
+    /private/tmp/npm-review-work/288/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-22T06:41:04.711152Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh complete final log read:3116records/3116PATHSrows/3116files correctly
+    filed. Path integrity is not scientific accuracy.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=df0178be20b3e00b424e89f8a52a7377105d60e8
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-029-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh batch029 execution on df0178be20b3e00b424e89f8a52a7377105d60e8
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T06:22:41.526480Z;
+    finished 2026-10-22T06:23:06.506445Z; root observed terminal0 at 2026-10-22T06:23:38.575517Z.
+    Actual receipt: /private/tmp/npm-native-checks/batch-029/verify-corpus.json; exact
+    transcript: /private/tmp/npm-native-checks/batch-029/verify-corpus.log; input
+    proof: /private/tmp/npm-native-checks/batch-029/verify-corpus-fresh-inputs.json.
+    Dedicated pytest basetemp isolates fixture retention; no cleanup was performed.
+    Warnings, skips and configured exceptions remain part of this gate scope.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Complete final log read:3116records byte-identical to seeded sources; known5unresolved
+    assay-organism rows,42withheld producer claims and161taxon rewrites retained as
+    reported. Reproducibility is not scientific accuracy.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=df0178be20b3e00b424e89f8a52a7377105d60e8
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-029-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh batch029 execution on df0178be20b3e00b424e89f8a52a7377105d60e8
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T06:22:45.511231Z;
+    finished 2026-10-22T06:23:26.428638Z; root observed terminal0 at 2026-10-22T06:24:29.564639Z.
+    Actual receipt: /private/tmp/npm-native-checks/batch-029/verify-reproduction.json;
+    exact transcript: /private/tmp/npm-native-checks/batch-029/verify-reproduction.log;
+    input proof: /private/tmp/npm-native-checks/batch-029/verify-reproduction-fresh-inputs.json.
+    Dedicated pytest basetemp isolates fixture retention; no cleanup was performed.
+    Warnings, skips and configured exceptions remain part of this gate scope.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Final log header/all12queue summaries and footer read; complete8928rowTSV
+    parsed and category counts independently reconciled. Individual unrelated queue
+    lines not exhaustively read. This queue does not replace authoritative structured-review
+    coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=df0178be20b3e00b424e89f8a52a7377105d60e8
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-029-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-029.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh batch029 execution on df0178be20b3e00b424e89f8a52a7377105d60e8
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T06:23:29.854892Z;
+    finished 2026-10-22T06:23:44.520638Z; root observed terminal0 at 2026-10-22T06:24:29.566247Z.
+    Actual receipt: /private/tmp/npm-native-checks/batch-029/review-queue.json; exact
+    transcript: /private/tmp/npm-native-checks/batch-029/review-queue.log; input proof:
+    /private/tmp/npm-native-checks/batch-029/review-queue-fresh-inputs.json. Dedicated
+    pytest basetemp isolates fixture retention; no cleanup was performed. Warnings,
+    skips and configured exceptions remain part of this gate scope.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Complete final identifier-label log read:13448canonical,646synonym,35exception,499nonblocking
+    mismatches,4750skipped-no-adapter. Exit0 retains warnings/skips and is not exhaustive
+    label/scientific validation.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=df0178be20b3e00b424e89f8a52a7377105d60e8
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-029-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh batch029 execution on df0178be20b3e00b424e89f8a52a7377105d60e8
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T06:23:29.853824Z;
+    finished 2026-10-22T06:24:15.142840Z; root observed terminal0 at 2026-10-22T06:24:46.137420Z.
+    Actual receipt: /private/tmp/npm-native-checks/batch-029/validate-products.json;
+    exact transcript: /private/tmp/npm-native-checks/batch-029/validate-products.log;
+    input proof: /private/tmp/npm-native-checks/batch-029/validate-products-fresh-inputs.json.
+    Dedicated pytest basetemp isolates fixture retention; no cleanup was performed.
+    Warnings, skips and configured exceptions remain part of this gate scope.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: 'Full fresh QC retry002 completed with exit0: lint, 22 governed artifacts,
+    documentation, 15 raw inventories, 44-source queue, 1011 tests passed/4 skipped/2
+    warnings, strict validation of3116 records with zero errors, generated pages,3116-record
+    byte reproduction, lockfile integrity and live report all passed.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=df0178be20b3e00b424e89f8a52a7377105d60e8
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-029-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Fresh batch029 execution on df0178be20b3e00b424e89f8a52a7377105d60e8
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-22T06:27:45.868842Z;
+    finished 2026-10-22T06:33:08.959187Z; root observed terminal0 at 2026-10-22T06:33:26.494778Z.
+    Actual receipt: /private/tmp/npm-native-checks/batch-029/qc-attempt-002.json;
+    exact transcript: /private/tmp/npm-native-checks/batch-029/qc-attempt-002.log;
+    input proof: /private/tmp/npm-native-checks/batch-029/qc-attempt-002-fresh-inputs.json.
+    Dedicated pytest basetemp isolates fixture retention; no cleanup was performed.
+    Warnings, skips and configured exceptions remain part of this gate scope.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+- check_id: R288-FULL-OWNER
+  name: Complete owner and seven-set fidelity
+  status: passed
+  required: true
+  summary: All ten successful official intakes and post-intake root reads precede
+    authoring. Every complete owner and seven-source-set join matches the prepared
+    bytes. Leporin B has three inline graphs with nodes3/4/3 and edges2/4/2, all within
+    the bounded scientific assessment. No component, pathway step, molecular target
+    or written assay is present in this cohort.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - R288-OWNER
+  - R288-LOCAL
+  - R288-PUBCHEM-PREP
+- check_id: S288-C-LOCAL
+  name: Complete actual owner and all seven source sets
+  status: passed
+  required: true
+  summary: Complete owner/history/optional content and exact seven-set rows match
+    the prepared read after the official intake and all-ten live guards.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOCAL
+  - S288-E-GUARDS
+- check_id: S288-C-ORIGINAL
+  name: Required complete original source applicability
+  status: unavailable
+  required: true
+  summary: Complete original2001 occurrence and2002 source-stock/endpoint bodies remain
+    unavailable. Original2005 RNAi full body remains unavailable; family-level abstract
+    is not exact loline-specific knockout proof.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LIMITS
+  - S288-E-READ-SCOPE
+  - S288-E-LOL01-ABSTRACT
+  - S288-E-LOL02-ABSTRACT
+  - S288-E-LOL14-MAIN
+  - S288-E-LOL14-FIG1
+  - S288-E-LOL14-FIG6
+  - S288-E-LOL-GB
+- check_id: S288-C-POSITIVE-SCOPE
+  name: Bounded positive original-source scope
+  status: passed
+  required: true
+  summary: Positive original text and inspected pixels support only the explicitly
+    described native, introduced-host, precursor or congener endpoints. Missing sources
+    remain separate.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOCAL
+  - S288-E-LOL01-ABSTRACT
+  - S288-E-LOL02-ABSTRACT
+  - S288-E-LOL14-MAIN
+  - S288-E-LOL14-FIG1
+  - S288-E-LOL14-FIG6
+  - S288-E-LOL-GB
+- check_id: C288-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+- check_id: C288-C-LITERAL-SCOPE
+  name: Exact literal chemical authority scope
+  status: failed
+  required: true
+  summary: Exact asserted identifiers retain their literal spellings. Loline CID716098
+    assigns two additional centres; other asserted identifiers match. Candidate ChEBI
+    graphs are not automatically adopted.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-LOL14-FIG1
+  - C288-LOL01-ABSTRACT
+  - C288-SOURCE-LIMITS
+  - C288-PRIMARY-COMPARISON-1
+  - C288-STRUCTURE-CONSUMER
+  - C288-XREF-CONSUMER
+  - C288-SEED-CONSUMER
+  - C288-CURATION-CONTRACT
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+  - C288-AUTHORITY-COMPARISON
+  - C288-AUTHORITY-DETAIL
+  - C288-AUTH-1
+  - C288-AUTH-2
+  - C288-AUTH-3
+  - C288-AUTH-4
+  - C288-AUTH-5
+  - C288-AUTH-6
+- check_id: C288-C-PRIMARY-SCOPE
+  name: Exact named published structure scope
+  status: passed
+  required: true
+  summary: Literal CID716098 explicitly specifies four centres (FKSUSPIL), whereas
+    the retained loline graph and literal short NPA05369 (returned NPA005369) retain
+    two assigned and two unspecified centres (JAFIHTMF). The PubChem original SDF
+    and explicit property SMILES/InChI agree; this is a confirmed literal-xref precision
+    mismatch with the same constitution, formula and charge. The independently mapped
+    original 2014 perspective cage supports exact heavy-atom topology. Three-star
+    ChEBI156448 has the fully specified graph but is not an eligible exact committed
+    join for this owner.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-LOL14-FIG1
+  - C288-LOL01-ABSTRACT
+  - C288-SOURCE-LIMITS
+  - C288-PRIMARY-COMPARISON-1
+  - C288-STRUCTURE-CONSUMER
+  - C288-XREF-CONSUMER
+  - C288-SEED-CONSUMER
+  - C288-CURATION-CONTRACT
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+  - C288-AUTHORITY-COMPARISON
+  - C288-AUTHORITY-DETAIL
+  - C288-AUTH-1
+  - C288-AUTH-2
+  - C288-AUTH-3
+  - C288-AUTH-4
+  - C288-AUTH-5
+  - C288-AUTH-6
+- check_id: C288-C-EXPERIMENTAL-PRECISION
+  name: Original structure assignment and source precision
+  status: unavailable
+  required: true
+  summary: The bounded source model does not certify complete cage-to-absolute-hand
+    decoding and does not assert that the original perspective drawing is underspecified.
+    Natural absolute-hand selection remains separate from the measured identifier
+    mismatch. No automatic completion or replacement is selected; the PubChem source
+    row is a no-assay sentinel. Literal short NPAtlas spelling is preserved.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-LOL14-FIG1
+  - C288-LOL01-ABSTRACT
+  - C288-SOURCE-LIMITS
+  - C288-PRIMARY-COMPARISON-1
+  - C288-STRUCTURE-CONSUMER
+  - C288-XREF-CONSUMER
+  - C288-SEED-CONSUMER
+  - C288-CURATION-CONTRACT
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+  - C288-AUTHORITY-COMPARISON
+  - C288-AUTHORITY-DETAIL
+  - C288-AUTH-1
+  - C288-AUTH-2
+  - C288-AUTH-3
+  - C288-AUTH-4
+  - C288-AUTH-5
+  - C288-AUTH-6
+evidence:
+- evidence_id: R288-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/loline.yaml
+  locator: Complete actual owner, all optional fields and history events
+  accessed_at: '2026-10-22T06:41:47.845414Z'
+  support: supports
+  summary: 'Root read the complete post-intake owner: 1 occurrence, 1 producer and
+    1 locus assertions. Present optional fields: none. No external component is present.'
+  snapshot_sha256: 4479e99604f98afe6f48c1743281e631f3cbd0d63c965d4843a7088160c06b31
+- evidence_id: R288-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/288/local-sources.json
+  locator: Complete resolved owner and all six captured source sets; seventh set independently
+    compared
+  accessed_at: '2026-10-22T06:41:47.845414Z'
+  support: context_only
+  summary: Exact captured rows and separately parsed PubChem rows match frozen preparation.
+    Inventory equality does not establish experimental support.
+  snapshot_sha256: 3588e1b75f5927b5f6e144383e9c9056404c003ff479524c42211e88e4d04844
+- evidence_id: R288-PUBCHEM-PREP
+  kind: record_content
+  reference: data/raw/pubchem_bioassay.tsv
+  locator: Complete exact-key retained rows and no-data sentinels
+  accessed_at: '2026-10-22T06:41:47.845414Z'
+  support: context_only
+  summary: This owner has 1 retained rows and 0 written observations. Across the cohort
+    there are zero written observations and three no-data sentinels; no fresh compound-assay
+    catalogue is claimed.
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: R288-Q104084116
+  kind: database
+  reference: https://www.wikidata.org/wiki/Q104084116
+  locator: 'Exact retained six-entity response: English label and P225/P685 for this
+    entity'
+  accessed_at: '2026-10-22T02:16:14.942355Z'
+  support: context_only
+  summary: Literal organism name/taxon routing agrees; this is not experimental occurrence,
+    stock equivalence or production evidence.
+  snapshot_sha256: a2763bf88b369dbd09e31f0e82c9ae4dfa8e90e9a122e08d7ca43b12fcc4d80e
+- evidence_id: R288-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=1269,1883,5050,5059,68229,332952,563922,758803,1400207
+  locator: Relevant TaxId/ScientificName/rank/parent and OtherNames in nine-record
+    response
+  accessed_at: '2026-10-22T02:16:14.825248Z'
+  support: context_only
+  summary: 'Literal current identifier context: 5050: Epichloe uncinata (species).
+    Identifier agreement does not establish original stock, exact congener, occurrence
+    or native production. Epichloe uncinata has listed Acremonium uncinatum and Neotyphodium
+    uncinatum synonyms; this alone does not prove source-strain applicability.'
+  snapshot_sha256: 51553c97045a87c8e68b6086a4b92a1acc20cc0f6559b599c8d0a84a21417c25
+- evidence_id: R288-IDENTIFIER-READ
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch029/root-authoring/identifier-counts-addendum-001.json
+  locator: Thirteen literal organism routes across six Wikidata entities and nine
+    taxa
+  accessed_at: '2026-10-22T02:16:43.504583Z'
+  support: context_only
+  summary: Root read original identifier values and naming context. These are not
+    experimental occurrence, production or stock-equivalence proofs.
+  snapshot_sha256: dbeff034cc59209a5652c0984853b3b77049dbb32198a8e02d51ec6ed64c99ff
+- evidence_id: R288-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete 20-organism/28-dataset official catalogue
+  accessed_at: '2026-10-22T02:16:14.927679Z'
+  support: context_only
+  summary: The complete captured catalogue contains20 organisms and28 datasets. Its
+    two other Streptomyces species are broader contexts; none matches an exact retained
+    native producer species/stock. No compound, locus or expression-module association
+    is established, and no global dataset absence or cross-species transfer is inferred.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S288-E-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/288/local-sources.json
+  locator: Complete resolved owner and captured rows; exact seven-set equality checked
+  accessed_at: '2026-10-22T06:49:02.614203Z'
+  support: context_only
+  summary: Complete actual owner including any inline graph/pathway, six captured
+    source sets and separately compared seventh PubChem set match the prepared complete
+    reads.
+  snapshot_sha256: 3588e1b75f5927b5f6e144383e9c9056404c003ff479524c42211e88e4d04844
+- evidence_id: S288-E-CONSUMERS
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: 'Current base df0178be20b3e00b424e89f8a52a7377105d60e8; load_mibig_locus_evidence_overrides/apply
+    and build_records: exact method/producer grading, occurrence exclusions and qualification
+    ordering; current structure-source exception at lines1116–1121'
+  accessed_at: '2026-10-22T06:49:02.614203Z'
+  support: context_only
+  summary: Static inspection covers exact LOTUS exclusions, source method grading
+    and producer/reference qualification order. Exact consumers have their own evidence
+    snapshots.
+  snapshot_sha256: b992853ea5e476fa27937bd6641ebe9b266f178215572e45d16ba597115e250d
+- evidence_id: S288-E-SCHEMA
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: ProducerEvidenceBasisEnum and ClusterLinkEvidenceEnum; conf/producer_evidence.tsv
+    and grading.py also read and pinned
+  accessed_at: '2026-10-22T06:49:02.614203Z'
+  support: context_only
+  summary: Producer tiers concern evidence in the named organism; cloned-locus experiments
+    are a distinct cluster question. Empty methods and a source assertion do not independently
+    assert native knockout or exact pure-enzyme proof.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: S288-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/288/science-search.json
+  locator: Exact read scope
+  accessed_at: '2026-10-22T06:49:02.620513Z'
+  support: context_only
+  summary: Exact current curated-decision search is retained. Its scope is the curation
+    tree; it does not establish absence of experimental evidence or all possible consumers.
+  snapshot_sha256: f800e60564fbba722b64578ff0b459a361d21c845d3dbef72813042532b306fc
+  search_scope: rg --no-ignore --hidden -n -F over curation using exact identifier,
+    label, full key and source accessions
+- evidence_id: S288-E-GRADE-MAP
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/conf/producer_evidence.tsv
+  locator: Complete method-to-producer/link grading table and comments
+  accessed_at: '2026-10-22T02:58:23.520404Z'
+  support: context_only
+  summary: Conservative empty methods and source assertions do not independently assert
+    native knockout. Heterologous expression supports the demonstrated congener/construct,
+    not every family member.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S288-E-GUARDS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch029/science-authoring/source-row-guards.json
+  locator: All ten owner pins and all70 exact parsed source sets; canonical per-row
+    digests
+  accessed_at: '2026-10-22T02:58:23.520404Z'
+  support: context_only
+  summary: Fresh official intake/root read and complete seven-set equality are required
+    before any authoring output.
+  snapshot_sha256: f0804104fcde46dc02b418a86aef589c88439e9f90b05bc4e6f1aed5c564a3a9
+- evidence_id: S288-E-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch029/review-support/source-notes.json
+  locator: All five narratives, required source gaps, retained access failures and
+    source_scope_principles
+  accessed_at: '2026-10-22T02:58:23.520404Z'
+  support: context_only
+  summary: Current source scopes preserve native stock, introduced host, precursor
+    versus final congener, and unresolved original-body questions.
+  snapshot_sha256: 74fe3a05d3228b065765fddb04f0322be3243ce8a31c972acc356079ec5e9750
+- evidence_id: S288-E-LOL-GB
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/AY723749.1
+  locator: Complete header and source/feature qualifiers read; CBS102646/e167 tax5050
+    and LOL1. ORIGIN not compared; no sequence/construct equality claim.
+  accessed_at: '2026-10-22T02:31:52.542745Z'
+  support: partial
+  summary: Deposited CBS102646/e167 LOL1-region source/feature metadata supports the
+    stock association, not every gene function or exact study construct.
+  snapshot_sha256: 077d6e8c58ffcbe15d1b9ee7a1a5c378efbeefef6a1513b535bc948ef8e56fa6
+- evidence_id: S288-E-LOL01-ABSTRACT
+  kind: primary_source
+  reference: PMID:11557071
+  locator: Exact PubmedArticle PMID11557071, complete title/abstract and metadata.
+  accessed_at: '2026-10-22T02:31:52.107485Z'
+  support: partial
+  summary: Original abstract names exact loline from N. uncinatum cultures with GC-MS/13C
+    NMR identity support. Complete source-stock/experimental body remains unread.
+  snapshot_sha256: 2a0c99c06276f32b31541496f5e5ff353ceb4535c84c049be71ae544207b7ded
+- evidence_id: S288-E-LOL02-ABSTRACT
+  kind: primary_source
+  reference: PMID:12135580
+  locator: Exact PubmedArticle PMID12135580, complete title/abstract and metadata.
+  accessed_at: '2026-10-22T02:31:52.107485Z'
+  support: partial
+  summary: Original imported citation abstract concerns family-level transcript association
+    and cross-isolate correlation, not exact loline-specific knockout proof.
+  snapshot_sha256: 2a0c99c06276f32b31541496f5e5ff353ceb4535c84c049be71ae544207b7ded
+- evidence_id: S288-E-LOL14-FIG1
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0115590
+  locator: 'Original complete pixels viewed: numbered common loline core and substituent
+    crosswalk; chemistry hand interpretation delegated.'
+  accessed_at: '2026-10-22T02:35:57.902601Z'
+  support: partial
+  summary: Original named congener drawing context; exact stereochemical reconciliation
+    remains separately assessed.
+  snapshot_sha256: ad5209344d5bfb7088e442e04a9fea5ec19c1db230313c698092d3eee51bbd58
+- evidence_id: S288-E-LOL14-FIG6
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0115590
+  locator: 'Original complete pixels viewed: norloline-to-loline and loline-to-NML
+    in LolM yeast extracts versus empty-vector extracts. Not purified protein or full-pathway
+    production.'
+  accessed_at: '2026-10-22T02:35:58.352609Z'
+  support: partial
+  summary: LolM yeast crude extracts form loline from norloline and consume loline
+    to N-methylloline, with empty-vector extract comparisons.
+  snapshot_sha256: 600be3cb25ff6842c021a42c3d3500faf0ebf966312a14a8ba77ea417de11250
+- evidence_id: S288-E-LOL14-MAIN
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0115590
+  locator: Complete scientific body/tables/captions; initial truncated middle recovered
+    elements344-500. Table2 e167 exact loline positive; methods use e167 LolM in yeast
+    crude protein extract. E.festucae E2368 deletion/rescue profiles measure other
+    congeners and are distinct from e167.
+  accessed_at: '2026-10-22T02:33:20.155940Z'
+  support: partial
+  summary: Exact e167 native loline and LolM yeast crude-extract formation/consumption
+    are distinct from E2368 native loss/rescue of other congeners. Whole-cell feeding
+    and purified protein are not substituted for this extract experiment.
+  snapshot_sha256: e77d9632e1b5b5abb9f479773b0eb5d9529e80a9336aa8827ee7a891797d2090
+- evidence_id: S288-E-OCCURRENCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch029/review-support/occurrence-ledger.json
+  locator: Seven individually identified exact occurrences and their source-scoped
+    interpretations
+  accessed_at: '2026-10-22T02:58:23.520404Z'
+  support: context_only
+  summary: Each occurrence is evaluated independently; repeated references are not
+    new independent experiments.
+  snapshot_sha256: a1ec3e9a8e1f2a87d032f9f5739555236feca02c512d56aabcaed7ee9abee54b
+- evidence_id: S288-E-READ-SCOPE
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch029/review-support/source-read-receipt-001.json
+  locator: Earlier full read index plus added original2009 SI and2018 SI pixel/text
+    scopes
+  accessed_at: '2026-10-22T02:58:23.520404Z'
+  support: context_only
+  summary: Source text, selected original pixels and derivative/provenance checks
+    are distinguished; no numerical spectrum reassignment or unperformed experiment
+    is claimed.
+  snapshot_sha256: c7374313d13a348d6144b8ee22418a167d3295a81987dfc2c1af04ca677788c1
+- evidence_id: S288-E-ROOT-CONTEXT
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch029/root-identifier-context-read-001.json
+  locator: Scoped official identifier metadata and complete stated organism/dataset
+    catalogue
+  accessed_at: '2026-10-22T02:58:23.520404Z'
+  support: context_only
+  summary: Taxonomic names and synonyms support identifier normalization, not independent
+    production or exact stock endpoints.
+  snapshot_sha256: 3d61f00404ec01dbae6705e1d8e5e8edd11a473cc50d92c4d804f72b2d727002
+- evidence_id: S288-E-ROUTES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch029/review-support/curator-routing.json
+  locator: Exact consumer paths, supported optional enrichment and conditional routes
+  accessed_at: '2026-10-22T02:58:23.520404Z'
+  support: context_only
+  summary: No method/citation/exclusion correction is selected merely because an older
+    full body is unavailable. Chemical-key and biological actions must compose on
+    the same exact raw row.
+  snapshot_sha256: 2cbd9b8670e371ac02b59a66c0fa6f6b3b598271cba07b0e20e72a0bc951cbb0
+- evidence_id: C288-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/loline.yaml
+  locator: Complete owner and all seven matching source-row sets; no referenced components
+  accessed_at: '2026-10-22T06:49:21.726999Z'
+  support: supports
+  summary: 'The complete owner denotes loline under naturalproductmech:mibig-0118f04440.
+    All source selectors, versions and complete row digests are retained in COMPARISON:
+    [{"row_sha256": "fae9b4fe3c87c3224b1fad2bf7ecfd45c76b9aaf946fa3182b9e9bd681910a07",
+    "selector": "BGC0000815:1", "version": "4"}]. The official intake and prepared
+    owner bytes agree.'
+  snapshot_sha256: 4479e99604f98afe6f48c1743281e631f3cbd0d63c965d4843a7088160c06b31
+- evidence_id: C288-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/288/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-22T06:41:03.350134Z'
+  support: supports
+  summary: The stored SMILES recomputes to OPMNROCQHKJDAQ-JAFIHTMFSA-N, formula C8H14N2O,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: 7b5865a41c14ff3554cc79b0679d6af255749f8a5a31cf9beb6f4d470cd31870
+- evidence_id: C288-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/retained-graph-comparison.json
+  locator: Record 288; exact source rows and each graph comparison
+  accessed_at: '2026-10-22T02:33:12.787771Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner and complete raw rows; current authority responses and primary
+    proof are separate evidence.
+  snapshot_sha256: 76d2dfb85e4dde1b79a0486f68e1927c11175d3dda6a5e21003ea0fe6111a047
+- evidence_id: C288-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/288/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-22T06:49:22.069052Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: 777ce38f4dbd6e352e0f3fac94c49ac765c4366343f42d117dd6ecafe2ed15f8
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C288-AUTHORITY-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-graph-comparison.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-22T02:37:47.506658Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: bf6979490bf3d0b76705355ee9da791285d8eda8ee120d5cc7a2f645d503db95
+- evidence_id: C288-AUTHORITY-DETAIL
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/source-plan-005.json
+  locator: Complete literal Standard/fixed-H, formula, charge and stereo comparison;
+    exact source payload pins retained
+  accessed_at: '2026-10-22T06:23:33.545832Z'
+  support: supports
+  summary: Current authority graphs and source-specific serialization differences
+    are independently compared. Database agreement is not primary natural-hand proof.
+  snapshot_sha256: d9ea3b4db6ddc6f1082ea8a37625485bfe1b1df2ed6a6d486f52d26f7b1ec97a
+- evidence_id: C288-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0000815.4/annotations.json
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-001-public/BGC0000815.4.json
+  accessed_at: '2026-10-22T02:33:35.571015Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 5bea91546cf8fcb1b5614f44a874553be478ad34d042252a78b7fa5f2e07c69e
+- evidence_id: C288-AUTH-2
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA05369
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-001-public/NPA05369.json
+  accessed_at: '2026-10-22T02:33:36.776620Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: d4b4542ba86225ae54519353da889eaadda5cd20bd3f57190a7edb32b022f4c9
+- evidence_id: C288-AUTH-3
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/716098/SDF?record_type=2d
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-001-public/CID716098.sdf
+  accessed_at: '2026-10-22T02:33:37.131518Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: a70d331e4a405dee18623733320e2afd4d44507f9917ceb6ac6a458dba9e17e6
+- evidence_id: C288-AUTH-4
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/156583135,716098,5351222/property/Title,IUPACName,MolecularFormula,InChI,InChIKey,IsomericSMILES/JSON
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-002-public/pubchem-three-literals.json
+  accessed_at: '2026-10-22T02:34:03.554304Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 50f27aa4bf84e761a336409ab4edbac0e816a4bbdd9131fa6c35ea64ea98da34
+- evidence_id: C288-AUTH-5
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/156448/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-004-public/CHEBI156448.json
+  accessed_at: '2026-10-22T02:37:28.663174Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 65518fbdb6fff4885eb907aabd44c2b36dd74568d23eb10a0186e978a84b979e
+- evidence_id: C288-AUTH-6
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/156448/
+  locator: Complete retained payload /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-004-public/CHEBI156448.mol
+  accessed_at: '2026-10-22T02:37:29.090931Z'
+  support: supports
+  summary: Exact source representation at its recorded access time; primary identity
+    and natural hand are assessed separately.
+  snapshot_sha256: 8e9b6836f44ac2230992a6f5e36d3e8927543c78bf697ea76e023e96546958cb
+- evidence_id: C288-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=OPMNROCQHKJDAQ-JAFIHTMFSA-N&size=100
+  locator: Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-002-public/chebi-key-288.json
+  accessed_at: '2026-10-22T02:34:02.968714Z'
+  support: supports
+  summary: HTTP404; exact source response and candidate eligibility preserved.
+  snapshot_sha256: c6ab4995b5173260b8a2480bd550fe54ab2d68bc3b84d57d816477f885597d3d
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload. No global absence inference.
+- evidence_id: C288-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=loline&size=100
+  locator: Complete bounded key/name response /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/authority-phase-003-public/chebi-name-288.json
+  accessed_at: '2026-10-22T02:37:00.737334Z'
+  support: supports
+  summary: HTTP200; exact source response and candidate eligibility preserved.
+  snapshot_sha256: 3d40a3faf2401939b27ca5aca95fcca1c79544bb390d8e2daa4c61203df70e32
+  search_scope: Official ChEBI exact literal key/name request, size100; complete returned
+    payload. No global absence inference.
+- evidence_id: C288-LOL14-FIG1
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0115590
+  locator: Original Figure 1 Loline entry, R1=H and R2=CH3; perspective cage; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch029/review-support/public-009-retry/loline2014-figure1.png
+  accessed_at: '2026-10-22T02:35:57.902601Z'
+  support: supports
+  summary: Exact heavy-atom topology is independently mapped; complete cage-to-absolute-hand
+    decoding is not certified by this bounded model.
+  snapshot_sha256: ad5209344d5bfb7088e442e04a9fea5ec19c1db230313c698092d3eee51bbd58
+- evidence_id: C288-LOL01-ABSTRACT
+  kind: primary_source
+  reference: PMID:11557071
+  locator: Original 2001 abstract and metadata only; retained snapshot /private/tmp/npm-review-work/shared-next-batch029/review-support/public-002-retry/primary-pubmed.xml
+  accessed_at: '2026-10-22T02:31:52.107485Z'
+  support: supports
+  summary: Named loline occurrence context is distinct from an independently inspected
+    original absolute-configuration protocol.
+  snapshot_sha256: 2a0c99c06276f32b31541496f5e5ff353ceb4535c84c049be71ae544207b7ded
+- evidence_id: C288-SOURCE-LIMITS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/source-notes.json
+  locator: 'Entry 288: observations, limitations and complete raw source rows; retained
+    snapshot /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/source-notes.json'
+  accessed_at: '2026-10-22T03:10:09.650683Z'
+  support: supports
+  summary: Source-specific graph precision, original drawing conflicts and access
+    limitations; authority agreement is not natural-hand proof.
+  snapshot_sha256: a1672b4b1c5ac977165d65cb47bc1af77a2a99713d1200d8b7030eb19503d277
+- evidence_id: C288-PRIMARY-COMPARISON-1
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/primary-mapping-001/other-primary-comparison-001.json
+  locator: 'Target 288: original perspective cage heavy-atom topology, stereo-stripped
+    comparison and explicit no-complete-hand-decoding limit; retained snapshot /private/tmp/npm-review-work/shared-next-batch029/chemistry-prep/primary-mapping-001/other-primary-comparison-001.json'
+  accessed_at: '2026-10-22T02:58:01.977680Z'
+  support: supports
+  summary: Independent topology-only transcription; the source carries stereochemical
+    information but complete cage-to-absolute decoding is not certified.
+  snapshot_sha256: 71e07d1c2e2d1bab006269a6af0873897e714ca4352370f7a157f7ca2eee35b9
+- evidence_id: C288-STRUCTURE-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: apply_structure_corrections exact source/target rows, three-star target
+    and collision guards; retained snapshot /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/structure_corrections.py
+  accessed_at: '2026-10-22T03:13:49.364443Z'
+  support: supports
+  summary: Committed CHEBI:156448 is a structured three-star fully specified candidate,
+    but it is not an exact join to this partially specified owner. The current correction
+    loader still requires a separately adjudicated complete target, exact row pins
+    and collision checks; its presence does not select a replacement.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+- evidence_id: C288-XREF-CONSUMER
+  kind: record_content
+  reference: src/naturalproductmech/curate/xref_exclusions.py
+  locator: load_xref_exclusions literal identifier and unique full-row source guard;
+    retained snapshot /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/curate/xref_exclusions.py
+  accessed_at: '2026-10-22T03:11:37.859941Z'
+  support: supports
+  summary: The mismatching PubChem literal can be withheld by the current exact consumed
+    exclusion route; this changes equivalence, not the owner stereograph.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+- evidence_id: C288-SEED-CONSUMER
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: 'build_records lines 783, 813–818 and 1053–1056: structure correction then
+    xref exclusion and changed-key guard; retained snapshot /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py'
+  accessed_at: '2026-10-22T05:44:50.625524Z'
+  support: supports
+  summary: The current seeder rejects stacked exclusions after structure correction.
+    A later identity correction and existing xref decision require explicit tested
+    reconciliation.
+  snapshot_sha256: b992853ea5e476fa27937bd6641ebe9b266f178215572e45d16ba597115e250d
+- evidence_id: C288-CURATION-CONTRACT
+  kind: record_content
+  reference: docs/CURATION.md
+  locator: MIBiG structure/xref correction contracts and generated-record boundaries;
+    retained snapshot /private/tmp/npm-record-reviews-20261021/docs/CURATION.md
+  accessed_at: '2026-10-22T06:23:33.545832Z'
+  support: supports
+  summary: A future decision uses a maintained consumed contract with exact selectors/full-row
+    guard and documented reproduction checks; no raw or generated record is hand-edited.
+  snapshot_sha256: ee8f572f191ee2bc92a18ed57b115faca186d56c6f7dab38ef7521c1473de31d
+assessments:
+- assessment_id: R288-HISTORY
+  area: provenance
+  topic: Complete history and native status
+  outcome: supported
+  summary: 'Native status remains SEEDED and all 3 history actions retain their exact
+    order: [''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES'', ''SEEDED_FROM_SOURCES''].
+    Source-seeding history does not replace claim-level scientific assessment.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - R288-OWNER
+- assessment_id: R288-OPTIONAL
+  area: completeness
+  topic: Present optional assertions
+  outcome: not_applicable
+  summary: The complete owner contains none of the listed optional assertions. Missing
+    optional fields alone do not establish a scientific defect.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - R288-OWNER
+  - R288-LOCAL
+  - R288-PUBCHEM-PREP
+- assessment_id: R288-FILING
+  area: representation
+  topic: Exact computed classification provenance
+  outcome: supported
+  summary: Exact-key NPClassifier version npclassifier.gnps2.org@2026-09-07 reproduces
+    filing, superclass/class and glycoside fields. Computed classification is not
+    independent natural-origin or mechanistic proof; any accepted identity correction
+    requires effective-key reclassification.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - R288-OWNER
+  - R288-LOCAL
+- assessment_id: R288-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic identifiers versus experimental stocks
+  outcome: supported
+  summary: 'Literal current identifier context: 5050: Epichloe uncinata (species).
+    Identifier agreement does not establish original stock, exact congener, occurrence
+    or native production. Epichloe uncinata has listed Acremonium uncinatum and Neotyphodium
+    uncinatum synonyms; this alone does not prove source-strain applicability.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - R288-OWNER
+  - R288-TAXON-CONTEXT
+  - R288-Q104084116
+- assessment_id: R288-ORGANISM-IDS
+  area: grounding
+  topic: Literal organism routing
+  outcome: supported
+  summary: The relevant literal P225/P685 routes match. Taxonomic spelling changes
+    are preserved separately from experimental stock and exact congener applicability.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - R288-OWNER
+  - R288-TAXON-CONTEXT
+  - R288-IDENTIFIER-READ
+  - R288-Q104084116
+- assessment_id: R288-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer transcriptomic applicability
+  outcome: not_applicable
+  summary: The complete captured catalogue contains20 organisms and28 datasets. Its
+    two other Streptomyces species are broader contexts; none matches an exact retained
+    native producer species/stock. No compound, locus or expression-module association
+    is established, and no global dataset absence or cross-species transfer is inferred.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - R288-OWNER
+  - R288-IMODULON
+- assessment_id: R288-ASSAY-INVENTORY
+  area: scope
+  topic: Retained assay rows versus no-data sentinel
+  outcome: supported
+  summary: There are 1 exact-key retained rows, 0 written observations and 1 no-data
+    sentinel. A no-data sentinel is not an assay or evidence of biological inactivity.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - R288-OWNER
+  - R288-PUBCHEM-PREP
+- assessment_id: S288-A-CHEM-SCOPE
+  area: scope
+  topic: Exact named identity, depicted precision and sample scope
+  outcome: unknown
+  summary: Biological conclusions preserve exact source labels and current row identity.
+    Independent chemistry adjudicates depicted graph/hand and literal cross-references;
+    no replacement or identity migration follows from this source assessment.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOCAL
+  - S288-E-LIMITS
+  - S288-E-LOL14-FIG1
+- assessment_id: S288-A-SOURCE
+  area: scope
+  topic: producer_organisms[0]; biosynthetic_gene_clusters[0]
+  outcome: supported
+  summary: Original2001 abstract names exact loline in N. uncinatum cultures; complete2014
+    independently supports native e167 loline. Imported2002 citation is family-level
+    expression association. e167 LolM yeast crude extracts form loline from norloline
+    and consume it to N-methylloline; E2368 loss/rescue of other congeners and plant
+    conversion remain distinct. Empty methods are not a confirmed defect.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOCAL
+  - S288-E-LOL01-ABSTRACT
+  - S288-E-LOL02-ABSTRACT
+  - S288-E-LOL14-MAIN
+  - S288-E-LOL14-FIG1
+  - S288-E-LOL14-FIG6
+  - S288-E-LOL-GB
+- assessment_id: S288-A-GRADE
+  area: evidence
+  topic: Faithful conservative imported method and evidence grades
+  outcome: supported
+  summary: The empty imported method list is faithfully retained as SOURCE_ASSERTION
+    and CLUSTER_UNSTATED. More specific original experiments may support optional
+    enrichment, but their availability does not make this conservative serialization
+    an error.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOCAL
+  - S288-E-GRADE-MAP
+  - S288-E-ROUTES
+  - S288-E-LOL01-ABSTRACT
+  - S288-E-LOL02-ABSTRACT
+- assessment_id: S288-A-GENOME
+  area: scope
+  topic: biosynthetic_gene_clusters[0].genome_accession and source stock
+  outcome: supported
+  summary: Deposited CBS102646/e167 LOL1-region source/feature metadata supports the
+    stock association, not every gene function or exact study construct. Source-feature
+    annotation is not an independent sequence/construct identity calculation.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOCAL
+  - S288-E-LOL-GB
+  - S288-E-ROOT-CONTEXT
+- assessment_id: S288-A-ASSAYS
+  area: evidence
+  topic: Optional primary activity context and exact imported assay scope
+  outcome: not_applicable
+  summary: General family insecticidal context is not an exact retained assay; current
+    PubChem row is a no-assay sentinel. No experimental bioactivity, molecular target
+    or causal graph is emitted for this owner. Only loline and lomofungin have PubChem
+    rows in this five-record set, and those rows are no-assay sentinels.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOCAL
+  - S288-E-GUARDS
+  - S288-E-LOL01-ABSTRACT
+- assessment_id: S288-A-EXTRACT
+  area: evidence
+  topic: e167 LolM formation and consumption endpoints
+  outcome: supported
+  summary: 'The 2014 source identifies native e167 loline. e167 LolM expressed in
+    yeast is assayed in crude protein extracts: norloline gives loline/N-methylloline
+    and loline is consumed to N-methylloline, with empty-vector controls. E2368 in-plant
+    deletion/rescue of other congeners is a different stock and endpoint. No purified
+    LolM or full heterologous pathway production is inferred.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOL14-MAIN
+  - S288-E-LOL14-FIG6
+  - S288-E-LOL-GB
+- assessment_id: S288-A-OCC0
+  area: evidence
+  topic: occurrences[0]
+  outcome: supported
+  summary: The original 2001 abstract directly names exact loline from N. uncinatum
+    cultures with identity confirmation. Current Epichloe uncinata synonymy is independently
+    supported at identifier scope. The complete original occurrence body remains a
+    stated source-level gap.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - S288-E-LOCAL
+  - S288-E-LOL01-ABSTRACT
+  - S288-E-ROOT-CONTEXT
+  - S288-E-OCCURRENCES
+- assessment_id: C288-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0000815:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0000815:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C288-OWNER
+  - name: complete_raw_row_sha256
+    value: fae9b4fe3c87c3224b1fad2bf7ecfd45c76b9aaf946fa3182b9e9bd681910a07
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C288-OWNER
+- assessment_id: C288-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-OWNER
+  - C288-COMPARISON
+  - C288-AUTHORITY-COMPARISON
+  - C288-LOCAL-SEARCH
+  - C288-CHEBI-SEARCH-1
+  - C288-CHEBI-SEARCH-2
+- assessment_id: C288-A-XREF
+  area: representation
+  topic: Exact literal chemical identifier scope
+  outcome: concern
+  summary: 'Measured exact-literal comparisons: [{"comparison": {"same_charge": true,
+    "same_fixed_h": true, "same_formula": true, "same_full_standard_key": true, "same_standard_inchi":
+    true, "same_stereo_removed_standard": true}, "identifier": "npatlas:NPA05369",
+    "returned_identifier": "NPA005369", "scope": "Exact retained authority response;
+    default strings, fixed-H and stereo precision remain separate"}, {"comparison":
+    {"same_charge": true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key":
+    false, "same_standard_inchi": false, "same_stereo_removed_standard": true}, "identifier":
+    "pubchem:716098", "returned_identifier": null, "scope": "Exact retained authority
+    response; default strings, fixed-H and stereo precision remain separate"}]. Literal
+    source identifiers retain their exact spelling. Standard identity does not erase
+    fixed-H or stereo differences; no authority graph is automatically adopted.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-LOL14-FIG1
+  - C288-LOL01-ABSTRACT
+  - C288-SOURCE-LIMITS
+  - C288-PRIMARY-COMPARISON-1
+  - C288-STRUCTURE-CONSUMER
+  - C288-XREF-CONSUMER
+  - C288-SEED-CONSUMER
+  - C288-CURATION-CONTRACT
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+  - C288-AUTHORITY-COMPARISON
+  - C288-AUTHORITY-DETAIL
+  - C288-AUTH-1
+  - C288-AUTH-2
+  - C288-AUTH-3
+  - C288-AUTH-4
+  - C288-AUTH-5
+  - C288-AUTH-6
+- assessment_id: C288-A-ELIGIBILITY
+  area: grounding
+  topic: ChEBI full-key eligibility and literal serialization
+  outcome: supported
+  summary: '[{"eligible": false, "id": 156448, "literal_default_comparison": {"same_charge":
+    true, "same_fixed_h": false, "same_formula": true, "same_full_standard_key": false,
+    "same_standard_inchi": false, "same_stereo_removed_standard": true}, "literal_default_parse":
+    true, "mol_comparison": {"same_charge": true, "same_fixed_h": false, "same_formula":
+    true, "same_full_standard_key": false, "same_standard_inchi": false, "same_stereo_removed_standard":
+    true}, "name": "loline", "stars": 3}]. No eligible exact committed three-star
+    ChEBI join exists. Search candidates are not asserted xrefs; source MOL, literal
+    default SMILES and reconstruction of stated InChI remain separate representations.
+    Three-star CHEBI156448 is fully specified but differs from this owner; it is not
+    automatically eligible. The committed raw projection does contain CHEBI:156448
+    as a possible separately adjudicated fully specified target; absence of an exact
+    owner join is not absence of that candidate.'
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-LOL14-FIG1
+  - C288-LOL01-ABSTRACT
+  - C288-SOURCE-LIMITS
+  - C288-PRIMARY-COMPARISON-1
+  - C288-STRUCTURE-CONSUMER
+  - C288-XREF-CONSUMER
+  - C288-SEED-CONSUMER
+  - C288-CURATION-CONTRACT
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+  - C288-AUTHORITY-COMPARISON
+  - C288-AUTHORITY-DETAIL
+  - C288-AUTH-1
+  - C288-AUTH-2
+  - C288-AUTH-3
+  - C288-AUTH-4
+  - C288-AUTH-5
+  - C288-AUTH-6
+  - C288-CHEBI-SEARCH-1
+  - C288-CHEBI-SEARCH-2
+- assessment_id: C288-A-PRIMARY-SCOPE
+  area: scope
+  topic: Primary identity and experimental precision
+  outcome: concern
+  summary: Literal CID716098 explicitly specifies four centres (FKSUSPIL), whereas
+    the retained loline graph and literal short NPA05369 (returned NPA005369) retain
+    two assigned and two unspecified centres (JAFIHTMF). The PubChem original SDF
+    and explicit property SMILES/InChI agree; this is a confirmed literal-xref precision
+    mismatch with the same constitution, formula and charge. The independently mapped
+    original 2014 perspective cage supports exact heavy-atom topology. Three-star
+    ChEBI156448 has the fully specified graph but is not an eligible exact committed
+    join for this owner.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  evidence_ids:
+  - C288-LOL14-FIG1
+  - C288-LOL01-ABSTRACT
+  - C288-SOURCE-LIMITS
+  - C288-PRIMARY-COMPARISON-1
+  - C288-STRUCTURE-CONSUMER
+  - C288-XREF-CONSUMER
+  - C288-SEED-CONSUMER
+  - C288-CURATION-CONTRACT
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+  - C288-AUTHORITY-COMPARISON
+  - C288-AUTHORITY-DETAIL
+  - C288-AUTH-1
+  - C288-AUTH-2
+  - C288-AUTH-3
+  - C288-AUTH-4
+  - C288-AUTH-5
+  - C288-AUTH-6
+findings:
+- finding_id: C288-F-XREF-PRECISION
+  issue_key: mibig-loline-literal-stereo-precision
+  category: representation
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The literal PubChem identifier specifies two omitted stereocentres
+  description: The retained loline graph and literal NPA05369 have two assigned and
+    two unspecified centres (JAFIHTMF), whereas literal CID716098 has four assigned
+    centres (FKSUSPIL). Explicit PubChem property SMILES/InChI and original SDF agree,
+    with the same constitution/formula/charge. This confirmed equivalence mismatch
+    does not choose a natural hand or certify complete decoding of the original cage
+    drawing.
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  field_paths:
+  - xrefs[1]
+  evidence_ids:
+  - C288-LOL14-FIG1
+  - C288-LOL01-ABSTRACT
+  - C288-SOURCE-LIMITS
+  - C288-PRIMARY-COMPARISON-1
+  - C288-STRUCTURE-CONSUMER
+  - C288-XREF-CONSUMER
+  - C288-SEED-CONSUMER
+  - C288-CURATION-CONTRACT
+  - C288-OWNER
+  - C288-GRAPH
+  - C288-COMPARISON
+  - C288-AUTHORITY-COMPARISON
+  - C288-AUTHORITY-DETAIL
+  - C288-AUTH-1
+  - C288-AUTH-2
+  - C288-AUTH-3
+  - C288-AUTH-4
+  - C288-AUTH-5
+  - C288-AUTH-6
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Exact literal PubChem exclusion with complete source-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Consumed literal-identifier exclusion contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Preserve source assertions and test overlay composition
+  rule_id: review-yaml-record:exact-chemical-identity-and-evidence
+  native_severity: major
+  normalization_reason: Confirmed exact-equivalence precision mismatch is major independently
+    of the unresolved natural absolute-hand assignment.
+actions:
+- action_id: C288-ACTION-XREF-PRECISION
+  finding_ids:
+  - C288-F-XREF-PRECISION
+  target_ids:
+  - naturalproductmech:mibig-0118f04440
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Exact literal PubChem exclusion with complete source-row guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Consumed literal-identifier exclusion contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Preserve source assertions and test overlay composition
+  description: 'Withhold or explicitly qualify pubchem:716098 as exact equivalence
+    to this partially specified owner through a maintained consumed decision with
+    exact version/source selector/full-row guard. Preserve literal NPA05369 and all
+    raw assertions. Resolve natural absolute-hand support separately before any owner
+    completion. If a complete graph is later selected, explicitly reconcile or retire
+    the exclusion because current consumers reject stacked xref exclusions after structure
+    correction; do not adopt the fully specified ChEBI candidate solely from authority
+    agreement. Preserve exact source/version/full-row guards [{"entry_version": "4",
+    "expected_source_row_sha256": "fae9b4fe3c87c3224b1fad2bf7ecfd45c76b9aaf946fa3182b9e9bd681910a07",
+    "full_original_row": {"bgc_classes": "other", "bgc_subclasses": "other", "cluster_link_evidence_basis":
+    "CLUSTER_UNSTATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "loline", "database_ids": "npatlas:NPA05369|pubchem:716098", "entry_completeness":
+    "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version":
+    "4", "genome_accession": "AY723749.1", "locus_evidence_methods": "", "locus_from":
+    "", "locus_to": "", "mibig_accession": "BGC0000815", "primary_reference": "PMID:12135580",
+    "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles":
+    "CNC1[C@H]2CN3C1[C@@H](O2)CC3", "standard_inchi": "InChI=1S/C8H14N2O/c1-9-7-6-4-10-3-2-5(11-6)8(7)10/h5-9H,2-4H2,1H3/t5-,6+,7?,8?/m0/s1",
+    "standard_inchi_key": "OPMNROCQHKJDAQ-JAFIHTMFSA-N", "stereo_complete": "false",
+    "taxon_id": "NCBITaxon:5050", "taxon_label": "Epichloe uncinata"}, "source_id":
+    "BGC0000815:1"}]. No action has been executed.'
+  generator: Existing exact PubChem xref-exclusion consumer; broader qualification
+    or identity contracts require reviewed implementation and tests.
+  acceptance_checks:
+  - Exact source/version/index and every raw-row field are guarded; drift or duplicate
+    decisions fail closed.
+  - Regeneration removes only the mismatching PubChem equivalence, preserving literal
+    NPA05369, raw assertions and biological claims.
+  - Current CID precision and unresolved primary absolute-hand proof remain distinct;
+    no automatic completion.
+  - Any later structure correction and exclusion are jointly adjudicated and tested
+    under actual consumer rejection rules.
+  - Authorized curator runs the documented canary, reproduction and required native
+    gates after implementing a decision.
+limitations:
+- Context establishes exact owner/history/source inventory, literal identifier routing
+  and computed classification. Primary production, congener identity, stock applicability,
+  protein/graph and method claims retain their separate scientific scope. Leporin
+  B context remains chemical identity/provenance and high-level evidence only.
+- Original-source assertions, native production, introduced-host experiments, precursor
+  reactions and exact final congener measurements are distinct. Missing full bodies
+  do not establish nonproduction; independent chemistry governs graph/hand adjudication.
+- Complete original2001 occurrence and2002 source-stock/endpoint bodies remain unavailable.
+- Original2005 RNAi full body remains unavailable; family-level abstract is not exact
+  loline-specific knockout proof.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Organism, locus, classification and history claims are assessed separately.
+- The bounded source model does not certify complete cage-to-absolute-hand decoding
+  and does not assert that the original perspective drawing is underspecified. Natural
+  absolute-hand selection remains separate from the measured identifier mismatch.
+  No automatic completion or replacement is selected; the PubChem source row is a
+  no-assay sentinel. Literal short NPAtlas spelling is preserved.
+- The first fresh QC attempt failed during the public vendored-sync fetch after lint
+  passed. Only the separately recorded complete successful QC retry002 is used as
+  the baseline check; the actual failed001 receipt/log/capture/root observation remain
+  bound.
+- Four tests were skipped and two dependency deprecation warnings remain in the exact
+  transcript.
+- Reproduction retains five unresolved assay-organism rows,42 withheld producer claims
+  and161 merged-taxon rewrites.
+- Configured quality gates establish consistency; they do not independently verify
+  scientific claims.
+- Original QC001 DNS failure remains preserved separately; only this successful retry
+  establishes the full baseline QC.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Shared baseline gates and target strict validation retain their actual fresh command
+  receipts for this base. Scientific failed or unavailable checks are distinct from
+  bundle validation.
+- Scientific conclusions integrate the chemical, biological and provenance assessments;
+  source access and unresolved scopes remain explicit.
+tags:
+- path-order-campaign
+- batch-029
+```
