@@ -1,0 +1,560 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261029T195003Z-pseudovibriamide-b5
+title: Scientific review of pseudovibriamide B5
+started_at: '2026-10-29T19:37:46.851758Z'
+finished_at: '2026-10-29T19:50:03.054591Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Pseudovibriamide B5 has congener-level isolation and proposed MS/Marfey structural
+  support within the reported 11/12 mixture; full stored-atom and stereochemical equivalence
+  remains unresolved.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/pseudovibriamide-b5.yaml
+    sha256: 3b5da4cefc58b180bfc12be1b6234d3904beb69c8ec9a68afabc57870b9846b7
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-f17f2b729f
+  path: data/natural_products/amino_acids_and_peptides/pseudovibriamide-b5.yaml
+  label: pseudovibriamide B5
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Bounded scientific review of pseudovibriamide B5 isolation in the reported
+    11/12 mixture, its paper11/Ile correspondence and proposed MS/Marfey structure.
+    Includes the whole local owner, retained source rows, accepted current intake,
+    saved dual-encoding diagnostics, PMC8269750 text/captions and the previously inspected
+    Figure 2. Ab134 production and family genetics remain separate from isolated-congener
+    activity and complete configuration.
+  selection: 'Current official batch099 order981: naturalproductmech:mibig-f17f2b729f
+    at data/natural_products/amino_acids_and_peptides/pseudovibriamide-b5.yaml, using
+    the accepted actual99 intake reconciliation; one exact owner is in scope.'
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  exclusions:
+  - target: Complete natural identity and stereochemical certification
+    reason: Saved representations and the bounded inspected sources do not establish
+      an independent full-atom and configuration match for this owner.
+  - target: Exact-compound molecular targets and complete biosynthetic enzymology
+    reason: Family, strain and predicted pathway observations do not establish every
+      isolated-congener assay, direct target or individual enzyme mechanism.
+  - target: Supporting-information spectra and tables
+    reason: The exact historical SI route returned challenge HTML instead of an inspected
+      PDF. Supporting spectra and tables remain unread and that route remains held.
+  - target: Independent individual B5/B6 NMR and complete configuration
+    reason: The paper reports a1.4mg mixture and proposed MS/Marfey structures. Detailed
+      B1 NMR results and A5/A6-specific limitations are not transferred to B5/B6.
+  - target: DOI alias equivalence and exact locus coordinates
+    reason: The retained ange DOI and own anie DOI remain distinct identifiers; exact
+      coordinate and version applicability was not independently established by the
+      bounded main-text reading.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh corpus gate passed:3116 PATHS.tsv rows and3116 files, each at its
+    pinned path.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338684Z;
+    finished 2026-10-28T21:33:29.829334Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh reproduction gate passed:all3116 records are byte-identical to seeding
+    from maintained inputs.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338638Z;
+    finished 2026-10-28T21:33:44.898261Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue produced8922 rows across12 queues; this
+    is not scientific review coverage.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-087-freshce6a5498-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340163Z;
+    finished 2026-10-28T21:33:21.471992Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472 canonical,657 synonym
+    and35 exception matches;499 nonblocking mismatches and4898 no-adapter skips remain
+    explicit.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340947Z;
+    finished 2026-10-28T21:33:45.063118Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Fresh full quality gate passed:1024 tests passed,4 skipped,2 dependency
+    warnings;3116 closed-schema records have zero errors; site freshness, reproduction
+    and lockfile checks passed, alongside22 governed artifacts and15 raw inventories.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:14.328372Z;
+    finished 2026-10-28T21:38:03.336464Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/pseudovibriamide-b5.yaml
+    --out /private/tmp/npm-review-work/981/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-29T19:37:48.278524Z. Original
+    receipt: /private/tmp/npm-review-work/981/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+- check_id: SCI981-LOCAL
+  name: Whole owner and exact named raw-source fidelity
+  status: passed
+  required: true
+  summary: Whole owner, original history and all nine named source arrays were independently
+    rechecked; two retained rows and two official rows match exactly. Accepted current99
+    intake and reconciliation preserve the whole owner, six official arrays and 37
+    original source inputs.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-LOCAL
+  - SCI981-ROWS
+  scope_note: Exact local provenance is reconciled with the official intake; complete
+    natural identity remains unverified.
+- check_id: SCI981-ENCODINGS
+  name: Saved dual-encoding internal consistency
+  status: passed
+  required: true
+  summary: Saved successful parses, literal owner key/formula/Standard InChI joins
+    and original clocks were rechecked without rerunning chemistry; canonical-string
+    differences and unspecified stereo are retained.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-ENCODINGS
+  scope_note: Internal checks do not establish full natural identity.
+- check_id: SCI981-SOURCE
+  name: Own-source identity and bounded access accounting
+  status: passed
+  required: true
+  summary: Evidence locators and own response identities match the pinned saved bytes;
+    original request/parse/owner clocks and closed current99 epoch are preserved.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-PUB
+  - SCI981-ACCESS
+  scope_note: Uses saved own-source evidence within the closed source epoch; no held
+    route was retried.
+evidence:
+- evidence_id: SCI981-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/pseudovibriamide-b5.yaml
+  locator: whole owner
+  accessed_at: '2026-10-29T18:15:32.831606Z'
+  snapshot_sha256: 3b5da4cefc58b180bfc12be1b6234d3904beb69c8ec9a68afabc57870b9846b7
+  support: context_only
+  summary: Whole stored assertions, chemistry strings and original history; this is
+    local provenance, not an independent natural-identity determination.
+- evidence_id: SCI981-ROWS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch099-tentative/source-science-preparation/bgc-tentative99-ten-owner-scientific-leads-DATA-001.json
+  locator: /records/0/row_guards; whole retained_rows and supplemental_rows
+  accessed_at: '2026-10-29T18:15:32.831606Z'
+  snapshot_sha256: b7eb00bddc56dc9edaf2bfc358aade0c44ec9b7b78175a42562ed4bf0b80a0f6
+  support: supports
+  summary: All nine named source tables were rejoined exactly to this owner key, preserving
+    their complete matched rows and original row order. These bounded local arrays
+    do not establish global source absence.
+- evidence_id: SCI981-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch099-tentative/source-science-preparation/bgc-tentative99-ten-owner-dual-encoding-results-001.json
+  locator: /records/0; smiles, inchi, comparisons, stereo_counts and atom_correspondence
+  accessed_at: '2026-10-29T18:39:39.105488Z'
+  snapshot_sha256: 8b03e8e07c586a4de420d56cc92f6d021e3732a17cc3b458242c027fdd55976d
+  support: context_only
+  summary: Saved dual-encoding parses agree on declared key, formula and Standard
+    InChI. Both canonical SMILES comparisons differ; no complete atom correspondence
+    was established. These are internal representation observations, not a natural-identity
+    proof.
+- evidence_id: SCI981-PUB
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch098-tentative/literature-preparation/public-primary-single-initial-PMC8269750-001/pmc8269750.xml
+  locator: .//p[@id='P18']; .//p[@id='P19']; .//p[@id='P29']; .//fig[@id='F2']/caption
+  accessed_at: '2026-10-29T17:10:49.165217Z'
+  snapshot_sha256: 459d02fb50db5e607e9cb86eee9bdba344b4936e01ba124c368f080964f47739
+  support: partial
+  summary: The paper reports 1.4 mg of mixed compounds 11 and 12 from cell extract.
+    B2–B6 structures are proposed from MS/MS and advanced Marfey analyses; the detailed
+    B1 NMR characterization is not individual B5/B6 NMR proof. The cyclic motif is
+    reported, while its formation remains unresolved.
+- evidence_id: SCI981-GENETICS
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch098-tentative/literature-preparation/public-primary-single-initial-PMC8269750-001/pmc8269750.xml
+  locator: .//p[@id='P8']; .//p[@id='P11']; .//p[@id='P12']; .//p[@id='P13']; .//p[@id='P20'];
+    .//p[@id='P22']; .//p[@id='P23']; .//p[@id='P30']; .//p[@id='P31']
+  accessed_at: '2026-10-29T17:10:49.165217Z'
+  snapshot_sha256: 459d02fb50db5e607e9cb86eee9bdba344b4936e01ba124c368f080964f47739
+  support: supports
+  summary: Own-strain isolation and ppp deletion/complementation support the pathway
+    and pseudovibriamide family. Strain-level motility/biofilm phenotypes and the
+    tested antibacterial comparison do not establish an isolated B5/B6 activity, target,
+    or individual biosynthetic enzyme mechanism.
+- evidence_id: SCI981-FIGURE
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch098-tentative/literature-preparation/public-primary-single-initial-PMC8269750-Figure2-001/nihms-1706309-f0003.jpg
+  locator: Figure 2, lower cyclic pseudovibriamides B panel and its numbered side-chain
+    legend; source caption .//fig[@id='F2']/caption
+  accessed_at: '2026-10-29T17:45:25.708751Z'
+  snapshot_sha256: 77495fc8490960b599608cd34fd6f08e9d14eaf51f6a823f214ef929f146e614
+  support: partial
+  summary: The saved full Figure 2 maps paper compound 11 to B5 and the Ile side chain.
+    The figure uses a question-mark cyclization arrow and leaves several extension
+    stereocenters unspecified. It does not provide a complete stored-atom configuration
+    mapping.
+- evidence_id: SCI981-SOURCE-ACCESS
+  kind: authority
+  reference: /private/tmp/npm-review-work/shared-next-batch098-tentative/literature-preparation/root-current98-single-SI-PDF-failed-route-reading-001.json
+  locator: /whole_access; /SI_read; /route_held
+  accessed_at: '2026-10-29T17:54:19.663144Z'
+  snapshot_sha256: 59977ff2b447cfa0fa100dc0d97d4e137780a294758a21a0cb8ef8389a329138
+  support: context_only
+  summary: The prior SI request returned challenge HTML, not an inspected PDF. Supporting
+    spectra and tables were not read. Its historical held status remains unchanged;
+    it is not a current99 request failure.
+- evidence_id: SCI981-ACCESS
+  kind: authority
+  reference: /private/tmp/npm-review-work/shared-next-batch099-tentative/literature-preparation/root-current99-final-source-epoch-acceptance-001.json
+  locator: /request_counts; /source_epoch_closed; /held_counts; /ledger
+  accessed_at: '2026-10-29T19:34:50.360556Z'
+  snapshot_sha256: a35adfd90b58c45a5d14499067d896f33e74c210b01829537edd6f92d92bca23
+  support: context_only
+  summary: ROOT closed exactly four successful current99 requests with no new failure
+    or pending request. The whole historical36-event hold ledger remains unchanged;
+    cached PMC8269750/Figure2 are not counted as current99 calls. No additional request
+    is selected.
+assessments:
+- assessment_id: SCI981-LOCAL
+  area: provenance
+  topic: Whole local owner and retained-source fidelity
+  outcome: supported
+  summary: Whole owner, original history and all nine named source arrays were independently
+    rechecked; two retained rows and two official rows match exactly. Accepted current99
+    intake and reconciliation preserve the whole owner, six official arrays and 37
+    original source inputs.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-LOCAL
+  - SCI981-ROWS
+- assessment_id: SCI981-IDENTITY
+  area: identity
+  topic: Congener correspondence and analytical limits
+  outcome: supported
+  summary: Paper number 11 maps to pseudovibriamide B5, with Ile side chain in Figure
+    2, consistent with the corresponding literal terminal side-chain pattern in the
+    stored SMILES. P18/P19 support isolation in a B5/B6 mixture and proposed MS/Marfey
+    structures. The retained MIBiG compound_index is a database array index, not a
+    paper compound number. Complete graph equivalence is not established.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-LOCAL
+  - SCI981-PUB
+  - SCI981-FIGURE
+- assessment_id: SCI981-STEREO
+  area: representation
+  topic: Partial stereochemistry and encoding comparisons
+  outcome: unknown
+  summary: Saved SMILES and InChI each retain 4 unspecified tetrahedral centers. Extra
+    unspecified double-bond entries in the InChI representation are recorded separately
+    and are not additional demonstrated natural stereocenter defects. The own figure
+    and reported Marfey scope do not establish every retained configuration; preserve
+    partial stereo and do not transfer the A5/A6 methyl-ester site conflict to B5.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-ENCODINGS
+  - SCI981-PUB
+  - SCI981-FIGURE
+- assessment_id: SCI981-PRODUCER
+  area: evidence
+  topic: Producer and cluster evidence at its demonstrated scope
+  outcome: supported
+  summary: The own primary paper establishes isolation from Pseudovibrio brasiliensis
+    Ab134 and experimental ppp pathway/family linkage through knockout and complementation.
+    This supports positive producer/pathway evidence while leaving exact-congener
+    structural completeness and individual predicted enzyme functions separate.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-GENETICS
+  - SCI981-PUB
+  - SCI981-ROWS
+- assessment_id: SCI981-ACTIVITY
+  area: scope
+  topic: Family phenotypes versus isolated-congener mechanisms
+  outcome: unknown
+  summary: The reported motility, biofilm and antibacterial comparisons concern strains
+    or combined pseudovibriamide production. They do not supply a purified B5/B6-specific
+    potency, direct target or mechanism. Proposed cyclization and tailoring steps
+    remain hypotheses; the possible A5/A6 extraction artifacts are not evidence that
+    B5/B6 share those artifacts.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-GENETICS
+  - SCI981-PUB
+  - SCI981-FIGURE
+- assessment_id: SCI981-BOUNDARY
+  area: scope
+  topic: Closed source epoch and held routes
+  outcome: supported
+  summary: The current99 epoch is closed at four successes and zero new failures.
+    The historical36 events,201 event leaves,210 held leaves,6 separate contextual
+    leaves and9 old403 leaves remain preserved; source access events are separate
+    from canonical review validation.
+  target_ids:
+  - naturalproductmech:mibig-f17f2b729f
+  evidence_ids:
+  - SCI981-ACCESS
+findings: []
+actions: []
+limitations:
+- No SI PDF, spectra or tables were read; the historical challenge response and route
+  hold remain preserved.
+- B5/B6 were reported as a 1.4 mg mixture; detailed B1 NMR observations are not transferred
+  to either individual congener.
+- Full saved Figure 2 was viewed locally and compared with the original ROOT visual
+  reading; no atom-mapped reconstruction or new chemistry calculation was performed.
+- Entry-level literal DOI10.1002/ange.202017320 is retained; own PMC article DOI10.1002/anie.202017320
+  is recorded separately without an alias-equivalence assertion.
+- Experimental family genetics and strain phenotypes are not exact-congener activity
+  or enzyme-mechanism demonstrations.
+- Source seeding retains five unresolved assay-organism targets (one distinct Human
+  label),42 withheld nonspecific producer claims and161 merged-taxonomy rewrites.
+- Queue diagnostics rank deterministic curation questions and do not prove literature
+  support or review completion.
+- 499 configured nonblocking mismatches remain warnings;4898 pairs lacked an adapter.35
+  exception and657 synonym matches retain their configured scope; no fresh ontology
+  authority retrieval is asserted.
+- Four tests were skipped; two dependency deprecations concern LinkML dataclass and
+  Pandas copy-on-write behavior. Source seeding warnings and configured gate boundaries
+  are retained in the full log.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- Configured ontology caches and scientific/test skips retain their original scope;
+  a new command execution is not a fresh retrieval of every authority.
+- All tracked link objects are hashed as link-target bytes without dereferencing;
+  canonical record source intake remains regular-file-only and uses the separately
+  reviewed AGENTS.md context projection.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
