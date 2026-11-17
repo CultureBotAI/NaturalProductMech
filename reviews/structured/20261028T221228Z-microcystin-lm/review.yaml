@@ -1,0 +1,627 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261028T221228Z-microcystin-lm
+title: Scientific review of microcystin-LM
+started_at: '2026-10-28T22:02:43.355169Z'
+finished_at: '2026-10-28T22:12:28.501404Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Microcystin-LM has internally agreeing standardized identifiers, but both
+  saved molecular parses have an open peptide topology and only an aromatic ring.
+  The available own Fischerella abstract supports microcystin-family context without
+  resolving this exact LM graph; identity remains a material verification gap.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/microcystin-lm.yaml
+    sha256: cebe8e6b4c8cc9469433763ec0da66c37a4b4e3ffef761cfc327f920bb0b3ab1
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-1756f20ded
+  path: data/natural_products/amino_acids_and_peptides/microcystin-lm.yaml
+  label: microcystin-LM
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Bounded scientific review of microcystin-LM. Whole current owner and
+    retained source rows, saved dual-encoding diagnostics and verified own publication
+    metadata or frontmatter. Identity, origin, producer, occurrence, locus and activity
+    claims retain their stated evidence limits.
+  selection: One record selected in canonical path order as order 861 of batch87 from
+    the accepted unreviewed-record inventory.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-1756f20ded
+  exclusions:
+  - target: Complete primary structural and stereochemical verification
+    reason: Complete compound-specific primary structures and supporting evidence
+      were not inspected; local encoding agreement does not establish the natural
+      structure.
+  - target: Current external accession and organism authorities
+    reason: Retained accession versions, strain/taxon mappings and protein identities
+      were not independently reverified against current authority records.
+  - target: Exact-compound claims inferred from related compounds or hosts
+    reason: Family, congener and recombinant-host context does not independently establish
+      the retained compound-specific claim.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh corpus gate passed:3116 PATHS.tsv rows and3116 files, each at its
+    pinned path.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338684Z;
+    finished 2026-10-28T21:33:29.829334Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh reproduction gate passed:all3116 records are byte-identical to seeding
+    from maintained inputs.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338638Z;
+    finished 2026-10-28T21:33:44.898261Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue produced8922 rows across12 queues; this
+    is not scientific review coverage.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-087-freshce6a5498-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340163Z;
+    finished 2026-10-28T21:33:21.471992Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472 canonical,657 synonym
+    and35 exception matches;499 nonblocking mismatches and4898 no-adapter skips remain
+    explicit.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340947Z;
+    finished 2026-10-28T21:33:45.063118Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Fresh full quality gate passed:1024 tests passed,4 skipped,2 dependency
+    warnings;3116 closed-schema records have zero errors; site freshness, reproduction
+    and lockfile checks passed, alongside22 governed artifacts and15 raw inventories.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:14.328372Z;
+    finished 2026-10-28T21:38:03.336464Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/microcystin-lm.yaml
+    --out /private/tmp/npm-review-work/861/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-28T22:02:44.792654Z. Original
+    receipt: /private/tmp/npm-review-work/861/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: SCI861-OWNER-ROWS
+  name: Whole owner and original exact-row joins
+  status: passed
+  required: true
+  summary: The current owner was compared whole with its saved inventory document,
+    and all seven retained arrays were independently rejoined to the pinned current
+    raw tables with their original complete-row digests.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ROWS
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: SCI861-SAVED-ENCODINGS
+  name: Saved dual-encoding result inspection
+  status: passed
+  required: true
+  summary: Both existing parse payloads, original calculation clocks, standardized
+    identifiers and ring/stereo summaries were read. No dual-encoding calculation
+    was rerun for this scientific reading; the later official intake separately computed
+    SMILES diagnostics.
+  evidence_ids:
+  - SCI861-ENCODINGS
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: SCI861-OWN-METADATA
+  name: Own article identity and original access
+  status: passed
+  required: true
+  summary: Original body/access/index pins and the own PMID/DOI fields were joined
+    for each cited metadata response. Foreign reference identifiers were not promoted
+    to own aliases.
+  evidence_ids:
+  - SCI861-PUBMED-29154789
+  - SCI861-PUBMED-12511503
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: SCI861-IDENTITY-SCOPE
+  name: Exact natural-structure verification
+  status: unavailable
+  required: false
+  summary: The named-congener graph and absolute stereochemistry have not been independently
+    established from complete compound-specific primary evidence in this bounded reading.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ENCODINGS
+  - SCI861-PUBMED-29154789
+  - SCI861-PUBMED-12511503
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- check_id: SCI861-NATIVE-STATE
+  name: Formal and official state boundary
+  status: passed
+  required: false
+  summary: The scientific section was reconciled to the actual batch 87 selection
+    and official intake. The review header, source capture, strict result and five
+    fresh baseline results come from separately observed current executions.
+  evidence_ids:
+  - SCI861-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+evidence:
+- evidence_id: SCI861-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch087-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/0/owner_document
+  accessed_at: '2026-10-28T20:57:33.720781Z'
+  snapshot_sha256: fb17ef0fae966807fb0365db74221c559decaf6c20b450bd90737a212776dfad
+  support: context_only
+  summary: The complete retained owner supplies its exact named structure, source
+    concepts, taxon assertions, evidence grades, computed classification and curation
+    history. These are maintained record assertions, not independent verification
+    of the cited publications.
+- evidence_id: SCI861-ROWS
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch087-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/0/rows
+  accessed_at: '2026-10-28T20:57:33.720781Z'
+  snapshot_sha256: fb17ef0fae966807fb0365db74221c559decaf6c20b450bd90737a212776dfad
+  support: context_only
+  summary: The seven complete retained source arrays contain 2 exact joined rows for
+    this owner. Original empty fields, source versions and full-row digests are preserved.
+    These rows state database assertions and computed classification only.
+- evidence_id: SCI861-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch087-tentative/source-science-preparation/bgc-tentative87-ten-owner-dual-encoding-results-001.json
+  locator: /records/0
+  accessed_at: '2026-10-28T21:10:01.389891Z'
+  snapshot_sha256: a30a48a6074a74084f1eb3b2d9b76ab0c2fd52b4a46ab20eaeec218ec9e47ef9
+  support: supports
+  summary: The saved SMILES and InChI parses both report C48H72N7O12S, the declared
+    key, charge 0 and one fragment. Their cycle rank is 1; saved SMILES ring sizes
+    are [6]. Standard InChI and keys agree, but isomeric and nonisomeric canonical
+    SMILES comparisons are both false and no complete atom correspondence was established.
+    These are saved local representation facts, not natural-identity proof.
+- evidence_id: SCI861-PUBMED-29154789
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch086-tentative/literature-preparation/public-metadata-pubmed-001/pmid-29154789.xml
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  accessed_at: '2026-10-28T19:30:59.418498Z'
+  snapshot_sha256: 8fbed762821798ff59f1d8c1cf4bdbe0229387a17832c2e41be613be66006f19
+  support: supports
+  summary: The own title and abstract concern microcystin biosynthesis in Fischerella
+    CENA161 and report a characterized family biosynthetic region with investigation
+    of possible variants. The abstract does not name microcystin-LM or individually
+    establish a retained complete congener graph.
+- evidence_id: SCI861-PUBMED-12511503
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch087-tentative/literature-preparation/public-metadata-pubmed-001/pmid-12511503.xml
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract;
+    ./PubmedArticle/PubmedData/ArticleIdList
+  accessed_at: '2026-10-28T21:23:43.808080Z'
+  snapshot_sha256: 3eeb0f14eb1dc31caad4e830e185220652d8d4accff612816e7df63d29f2bb47
+  support: supports
+  summary: The own title and abstract concern microcystin biosynthesis in Planktothrix
+    agardhii CYA126 and describe the family as cyclic heptapeptides. The abstract
+    reports reduced phosphatase inhibition for a modified microcystin variant; that
+    statement is specific to the described variant.
+assessments:
+- assessment_id: SCI861-ENCODINGS
+  area: consistency
+  topic: Standardized local encoding agreement
+  outcome: supported
+  summary: The two saved parses agree on the declared Standard InChI, key, formula,
+    charge, fragment count and cycle rank. The unequal canonical SMILES and missing
+    complete atom correspondence remain disclosed; no atom-for-atom equivalence or
+    natural identity is inferred from key agreement.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ENCODINGS
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+  dimensions:
+  - name: stereochemical_resolution
+    value: Retained stereo_complete=false; one unspecified SMILES tetrahedral site,
+      with additional unspecified double-bond sites in the InChI-derived representation.
+    definition: Declared/computed stereochemical resolution is distinct from an independently
+      demonstrated natural stereoisomer.
+    evidence_ids:
+    - SCI861-LOCAL
+    - SCI861-ENCODINGS
+- assessment_id: SCI861-IDENTITY
+  area: identity
+  topic: Open encoded topology and named LM applicability
+  outcome: concern
+  summary: Both saved representations have only one aromatic six-carbon cycle and
+    no peptide macrocycle. The original SMILES retains a terminal NH2 and CC[C]=O
+    branch. Independent own family abstracts describe cyclic microcystins, whereas
+    own PMID 29154789 does not name LM or establish this exact graph. This is a concrete
+    identity-support gap; it does not prove a corrected LM structure, a precursor
+    identity, or a wrong-molecule replacement.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ROWS
+  - SCI861-ENCODINGS
+  - SCI861-PUBMED-29154789
+  - SCI861-PUBMED-12511503
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- assessment_id: SCI861-ORIGIN
+  area: evidence
+  topic: Fischerella producer and exact congener boundary
+  outcome: supported
+  summary: The own PMID 29154789 abstract explicitly concerns MC-producing Fischerella
+    CENA161, matching the retained organism context. This supports that family/strain
+    context only; the exact LM graph and its compound-specific production remain unverified.
+    Retained SOURCE_ASSERTION and CLUSTER_UNSTATED are not upgraded.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ROWS
+  - SCI861-PUBMED-29154789
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+  dimensions:
+  - name: taxon_strain
+    value: Fischerella sp. CENA161, retained NCBITaxon:548826; the own abstract names
+      CENA161.
+    definition: Exact named organism context does not establish every compound graph
+      attributed to that source.
+    evidence_ids:
+    - SCI861-LOCAL
+    - SCI861-ROWS
+    - SCI861-PUBMED-29154789
+- assessment_id: SCI861-OCCURRENCE
+  area: evidence
+  topic: Occurrence coverage
+  outcome: unknown
+  summary: The exact retained owner has no occurrence objects and its retained occurrence
+    arrays are empty. This is a bounded local observation, not evidence that the compound
+    is absent from other organisms.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ROWS
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- assessment_id: SCI861-BGC
+  area: evidence
+  topic: Versioned locus and exact compound support
+  outcome: unknown
+  summary: The retained BGC0001667 version 4 row lists KX891213.1 with unstated locus-method
+    fields. Own PMID 29154789 supports a Fischerella microcystin-family cluster; the
+    exact accession version, product graph and absolute configurations are not verified
+    here.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ROWS
+  - SCI861-PUBMED-29154789
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- assessment_id: SCI861-ACTIVITY
+  area: quantity
+  topic: Exact-congener activity
+  outcome: unknown
+  summary: No owner-specific assay observation occurs in the inspected owner or retained
+    rows. Family phosphatase descriptions do not establish a quantitative LM endpoint
+    or activity of this open encoded graph.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ROWS
+  - SCI861-PUBMED-29154789
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- assessment_id: SCI861-CLASSIFICATION
+  area: representation
+  topic: Computed class and filing provenance
+  outcome: supported
+  summary: The owner is filed under data/natural_products/amino_acids_and_peptides
+    with np_pathway=AMINO_ACIDS_AND_PEPTIDES. Its retained NPClassifier output (npclassifier.gnps2.org@2026-09-07)
+    labels the pathway Amino acids and Peptides, superclass Oligopeptides and classes
+    Linear peptides, with is_glycoside=false. These computed labels and the folder
+    placement are compatible with the stored peptide scaffold at this broad level;
+    they do not independently verify natural identity or biological origin.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ROWS
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- assessment_id: SCI861-MECHANISM
+  area: graph
+  topic: Pathway and graph coverage
+  outcome: not_applicable
+  summary: The inspected owner has no biosynthetic pathway or causal-graph component
+    to audit. No experimental method, protein sequence, pathway reconstruction or
+    new mechanistic edge is added from the article abstracts.
+  evidence_ids:
+  - SCI861-LOCAL
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+- assessment_id: SCI861-PROVENANCE
+  area: provenance
+  topic: Retained versions and evidence tiers
+  outcome: supported
+  summary: The owner, complete exact source rows, original local computation clocks
+    and own article-access clocks are preserved. Current authority freshness and complete
+    exact-compound verification are not asserted; primary-route failures remain separate
+    from canonical validation.
+  evidence_ids:
+  - SCI861-LOCAL
+  - SCI861-ROWS
+  - SCI861-ENCODINGS
+  - SCI861-PUBMED-29154789
+  - SCI861-PUBMED-12511503
+  target_ids:
+  - naturalproductmech:mibig-1756f20ded
+  dimensions:
+  - name: source_version
+    value: MIBiG version 4; NPClassifier npclassifier.gnps2.org@2026-09-07.
+    definition: Versions label the retained sources and do not assert current external
+      freshness.
+    evidence_ids:
+    - SCI861-LOCAL
+    - SCI861-ROWS
+  - name: evidence_tier
+    value: Retained DATABASE_ASSERTION rows, saved local computation, own PubMed title/abstract/IDs.
+    definition: Evidence tiers describe what was actually inspected; database and
+      computational facts do not become primary structure proof.
+    evidence_ids:
+    - SCI861-LOCAL
+    - SCI861-ROWS
+    - SCI861-ENCODINGS
+    - SCI861-PUBMED-29154789
+    - SCI861-PUBMED-12511503
+findings: []
+actions: []
+limitations:
+- This bounded scientific review was adopted after actual batch 87 selection and intake
+  reconciliation. Complete natural-identity verification remains outside its completed
+  scope.
+- Treat exact LM identity as an unresolved material support gap. Record the confirmed
+  open topology and request a source-grounded identity adjudication of BGC0001667:5
+  before any structure replacement or full identity sign-off.
+- Exact primary structures, complete stereochemical assignments, current chemical/taxon/accession
+  authorities and every retained occurrence/assay are outside the completed scientific
+  scope. Full-owner scientific read is false despite whole literal owner and row reads.
+- Original HTTP and local-computation clocks are retained. Unlabelled saved RDKit
+  warnings remain unassigned; unequal canonical strings are not treated as independent
+  identity failures.
+- Document the specified identity or source questions in curator-owned discussion
+  as proposed follow-up only. No discussion or issue identifier is claimed to exist,
+  and no network, GitHub or record mutation is authorized by this DATA.
+- Source seeding retains five unresolved assay-organism targets (one distinct Human
+  label),42 withheld nonspecific producer claims and161 merged-taxonomy rewrites.
+- Queue diagnostics rank deterministic curation questions and do not prove literature
+  support or review completion.
+- 499 configured nonblocking mismatches remain warnings;4898 pairs lacked an adapter.35
+  exception and657 synonym matches retain their configured scope; no fresh ontology
+  authority retrieval is asserted.
+- Four tests were skipped; two dependency deprecations concern LinkML dataclass and
+  Pandas copy-on-write behavior. Source seeding warnings and configured gate boundaries
+  are retained in the full log.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- Configured ontology caches and scientific/test skips retain their original scope;
+  a new command execution is not a fresh retrieval of every authority.
+- All tracked link objects are hashed as link-target bytes without dereferencing;
+  canonical record source intake remains regular-file-only and uses the separately
+  reviewed AGENTS.md context projection.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
