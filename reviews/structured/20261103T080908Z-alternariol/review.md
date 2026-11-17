@@ -1,0 +1,2389 @@
+# Local evidence review: alternariol
+
+- Review: 20261103T080908Z-alternariol
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-11-03T07:43:36.029620Z
+- Finished UTC: 2026-11-03T08:09:08.515297Z
+- Reviewer: Codex root with native_checks, bgc_science and review_support peer agents (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+alternariol: qualified partial review preserving exact identity, source grades and bounded representation/activity claims.
+
+## Scope And Provenance
+
+One complete NaturalProductRecord, including all present scientific claims, history and declared mechanisms; external verification remains unavailable.
+
+Selection: Campaign path order 2179; one of the next ten uncovered paths selected from the 3116-record corpus. Membership uses the canonical validated catalogue plus retained committed campaign bundles.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| CHEBI:64983 | data/natural_products/shikimates_and_phenylpropanoids/alternariol.yaml | generated | alternariol |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| strict_ten | passed | True | CHEBI:64983 | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| strict_full | passed | True | CHEBI:64983 | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| lockfile | passed | True | CHEBI:64983 | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| reproduction | passed | True | CHEBI:64983 | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| queue | passed | True | CHEBI:64983 | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+| Full just qc | unavailable | True | CHEBI:64983 | Not run under the external-request prohibition: the complete recipe includes upstream vendored synchronization. The five executed local checks are recorded separately. |
+| Complete OAK identifier/label authority check | unavailable | True | CHEBI:64983 | Complete offline ontology authority coverage was not established for this run; no ontology retrieval or remote resolution was attempted. Retained taxonomy evidence has only its explicitly stated local scope. |
+| Primary literature and current structured database/identifier verification | unavailable | True | CHEBI:64983 | All external requests are prohibited by the user. Fresh database and identifier verification and complete primary-literature coverage are unavailable. Any retained original literature actually inspected is recorded separately with its historical scope. |
+
+## Scientific And Domain Assessments
+
+### Exact identity and grounding scope
+
+identity: supported. Targets: CHEBI:64983.
+
+CHEBI:64983, MIBiG BGC0000013 version 3 compound 1 and the saved paired structures agree on CEBXXEKPIIDJHL-UHFFFAOYSA-N/C14H10O5. The retained three-star ChEBI definition describes a methyl-trihydroxy benzochromenone, compatible with the saved topology. Its broader ecological and mycotoxin statements remain cited source assertions, not newly verified universals. No direct companion is admitted.
+
+### Paired representations and stereochemistry limits
+
+representation: supported. Targets: CHEBI:64983.
+
+Both saved forms parse as neutral C14H10O5 (19 atoms/21 bonds), agree on all ten saved comparisons and retain a complete atom map with full_graph_identity_established:false. Both saved forms have no detected potential tetrahedral or double-bond stereoelements and literal stereo_complete:true. Canonical isomeric and nonisomeric strings are identical for this encoded fused aromatic structure. That local consistency does not prove natural identity or all physical stereochemical behavior. Two original global warnings remain unassigned.
+
+### Producer, occurrence and locus grades
+
+provenance: supported. Targets: CHEBI:64983.
+
+Aspergillus nidulans FGSC A4 (NCBITaxon:227321) remains a SOURCE_ASSERTION producer with CLUSTER_UNSTATED BGC0000013, no locus method stated, and BN001304.1 coordinates 1119810–1127658. The source entry is active version 3, questionable quality and unknown completeness. Plant, fungal and actinobacterial occurrence annotations are separate from that strain-level producer claim.
+
+### Claim-level citation support
+
+evidence: supported. Targets: CHEBI:64983.
+
+DOI:10.1042/bj0550421 is MIBiG COMPOUND_EVIDENCE scope. The retained ChEBI definition and 43 LOTUS rows are separate source assertions; 35 distinct taxon/reference pairs, not 43 independent experiments, are represented before the written-occurrence cap. AIDs1259407 and 2322 are database references without supplied paper references. No original publication or assay protocol was inspected.
+
+### Occurrence and assay boundaries
+
+scope: supported. Targets: CHEBI:64983.
+
+All 43 LOTUS rows were read: 35 distinct taxon/reference pairs, 25 written occurrences and 10 explicitly omitted. Source-name synonyms share cached taxa (including Alternaria tenuis/alternata5599 and Rhizopycnis/Acrocalymma1589764), explaining duplicate pairs without proving publication independence. Cached Maytenus hookeri205464 and source labels are retained rather than silently modernized. Two exact-key PubChem observations are ACTIVE: AID1259407, CCRIS mutagenicity studies (Other; depositor22070), and AID2322, Luminescence Homogenous Primary HTS to Identify Inhibitors of STK33 Activity (Screening; Broad Institute). TOXIN and ENZYME_INHIBITOR are coarse title-derived annotations backed by these written calls. Both retained rows lack activity_name, activity_value_um, target_accession and paper reference; neither supplies potency, direct STK33 binding, selectivity, mechanism or an in-vivo effect. No target accession is invented. Empty BindingDB/sibling frames remain bounded.
+
+### Computed classification and topology applicability
+
+other: supported. Targets: CHEBI:64983.
+
+NPClassifier reports Shikimates and Phenylpropanoids / Coumarins / Isocoumarins, is_glycoside=false (npclassifier.gnps2.org@2026-09-07). The isocoumarin/Coumarins model is a coarse classification compatible with a benzochromenone-containing topology; model filing does not replace the PKS source class or prove biosynthesis. Three fused six-membered rings comprise two aromatic carbon rings and an aromaticized cyclic ester ring. The SMILES tables show carbonyl C13=O14, ring oxygen O15, methyl C0 and three phenolic hydroxyls O16/O17/O18 attached to C11/C9/C3. The narrow ester motif list is empty because the ring C–O bonds are aromatic; the ring/bond tables still show the cyclic ester. No saturated C5O candidate sugar ring is present.
+
+### Partial completion and maintained ownership
+
+completeness: supported. Targets: CHEBI:64983.
+
+All seven core areas and twelve dimensions were assessed against the actual intake, complete raw/history, retained source rows/cache and both saved chemical forms. Five local commands passed; full QC/OAK and external verification remain unavailable. This owner declares no mechanism roots/components and needs no maintained reader. The pinned source assertions and local structure are positively supported within that scope; no concrete contradiction requiring a finding was established. SEEDED status/history and all source records remain unchanged.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| support-2179-owner | /private/tmp/npm-record-reviews-20261021/data/natural_products/shikimates_and_phenylpropanoids/alternariol.yaml; Complete raw owner, lines 1-362. | supports | Whole selected raw owner and 2 complete history events personally read; exact bytes retained. |
+| support-2179-capture | /private/tmp/npm-review-work/shared-next-batch218/owner-capture-DATA-001.json; /records/8/owner_document; /records/8/owner_pin; /records/8/read_started_at; /records/8/read_finished_at | supports | Actual captured complete owner, current raw pin and original access clocks. |
+| support-2179-intake | /private/tmp/npm-review-work/shared-next-batch218/intakes/2179-inspect-001.json; /status; /source; /targets/0 | supports | Original inspection-only intake with 39 current admitted inputs and explicit maintained owner paths. |
+| support-2179-source-plan | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-target-input-plan-001.json; /records/8; /source_placement_count; /unique_source_path_count | supports | Exact selected raw/history/source frames and input map match accepted inventory and actual intake. Whole cohort 392placements67 paths; no future scientific authority inferred. |
+| support-2179-plan-acceptance | /private/tmp/npm-review-work/shared-next-batch218-tentative/root-conditional218-input-plan-acceptance-001.json; /accepted; /plan; /inventory; /per_order_counts | supports | ROOT accepts the exact saved plan and joins all actual intake maps; no scientific verdict is conferred. |
+| support-2179-history | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/complete_raw_history; /contexts/15/history_count | supports | All 2 complete history events retained unchanged. |
+| support-2179-direct-contexts | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-target-input-plan-001.json; /records/8/proposed_companion_paths; /records/8/direct_companion_predicates; /records/8/declared_mechanism_roots_literal; /records/8/component_paths | supports | No direct companions, four mechanism roots or components are admitted for this selected owner; no maintained reader applies. |
+| support-2179-query-mibig_compounds | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/mibig_compounds | supports | Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N"; 1 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-row-mibig_compounds-0 | /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv; Header line 1; physical TSV line 20. | supports | Retained row only, row SHA256 660ccec53650472afc2c2b8579001a3cf5d89bfbcb77fa8704d49d66289420d7: {"bgc_classes": "PKS", "bgc_subclasses": "Unknown", "cluster_link_evidence_basis": "CLUSTER_UNSTATED", "compound_classes": "", "compound_index": "1", "compound_name": "alternariol", "database_ids": "npatlas:NPA020438&#124;pubchem:5359485", "entry_completeness": "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version": "3", "genome_accession": "BN001304.1", "locus_evidence_methods": "", "locus_from": "1119810", "locus_to": "1127658", "mibig_accession": "BGC0000013", "primary_reference": "DOI:10.1042/bj0550421", "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "COMPOUND_EVIDENCE", "smiles": "CC1=CC(=CC2=C1C3=CC(=CC(=C3C(=O)O2)O)O)O", "standard_inchi": "InChI=1S/C14H10O5/c1-6-2-7(15)5-11-12(6)9-3-8(16)4-10(17)13(9)14(18)19-11/h2-5,15-17H,1H3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "stereo_complete": "true", "taxon_id": "NCBITaxon:227321", "taxon_label": "Aspergillus nidulans FGSC A4"} |
+| support-2179-query-chebi_structures | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/chebi_structures | supports | Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N"; 1 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-row-chebi_structures-0 | /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv; Header line 1; physical TSV line 21269. | supports | Retained row only, row SHA256 55d1477629028b1fd3ee9a5aa150cf49e6137b2d0e527535923ae7f277accf96: {"chebi_id": "CHEBI:64983", "definition": "A benzochromenone that is 6H-benzo[c]chromen-6-one which is substituted by a methyl group at position 1 and by hydroxy groups at positions 3, 7, and 9. It is the most important mycotoxin produced by the black mould Alternaria species, which are the most common mycoflora infecting small grain cereals worldwide.", "name": "alternariol", "smiles": "Cc1cc(O)cc2oc(=O)c3c(O)cc(O)cc3c12", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "stars": "3"} |
+| support-2179-query-lotus_occurrences | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/lotus_occurrences | supports | Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N"; 43 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-row-lotus_occurrences-0 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 734. | supports | Retained row only, row SHA256 37707ce0f8c459313a899a95f41b1e768fdcd9b84878b7672a1d9ae25e81d7ea: {"organism_name": "Sonneratia alba", "organism_wikidata": "http://www.wikidata.org/entity/Q1150684", "reference_doi": "10.1021/NP900417G", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:122812"} |
+| support-2179-row-lotus_occurrences-1 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 735. | supports | Retained row only, row SHA256 8b1a9258993e80a04a8921a45a9fa90ced4b1e54c72ced16f53ed7f98e24b212: {"organism_name": "Acrocalymma vagum", "organism_wikidata": "http://www.wikidata.org/entity/Q104083898", "reference_doi": "10.1021/ACS.JNATPROD.6B00327", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:1589764"} |
+| support-2179-row-lotus_occurrences-2 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 736. | supports | Retained row only, row SHA256 47e292e8f530a84c7976c6dffb7bc0f14212f32b5a623f23363cee9af800254d: {"organism_name": "Rhizopycnis vagum", "organism_wikidata": "http://www.wikidata.org/entity/Q10653178", "reference_doi": "10.1021/ACS.JNATPROD.6B00327", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:1589764"} |
+| support-2179-row-lotus_occurrences-3 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 737. | supports | Retained row only, row SHA256 75aca6e26d6f65db7aa78745b82349829a38c2f72f4e2e2b079b9fcceac8e3ea: {"organism_name": "Aspergillus nidulans", "organism_wikidata": "http://www.wikidata.org/entity/Q683881", "reference_doi": "10.1021/JA3016395", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:162425"} |
+| support-2179-row-lotus_occurrences-4 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 738. | supports | Retained row only, row SHA256 b2224510bf8184584404cc1bdc5890ecde99f770132b3f9689060da8bfcc2731: {"organism_name": "Streptomyces fradiae", "organism_wikidata": "http://www.wikidata.org/entity/Q7623383", "reference_doi": "10.3390/MD12042079", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:1906"} |
+| support-2179-row-lotus_occurrences-5 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 739. | supports | Retained row only, row SHA256 dbe0fa63b09cb967ab5a9dc0b1c0064de3807f22e98b41de0d02cb8d1bec4460: {"organism_name": "Gymnosporia acuminata", "organism_wikidata": "http://www.wikidata.org/entity/Q17247598", "reference_doi": "10.1007/S10600-010-9662-X", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:205464"} |
+| support-2179-row-lotus_occurrences-6 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 740. | supports | Retained row only, row SHA256 481592e27b20f9363c1e196f48d2decc5d0afc2301d77d429d61aec471ba313a: {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391", "reference_doi": "10.1007/S00204-011-0781-3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"} |
+| support-2179-row-lotus_occurrences-7 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 741. | supports | Retained row only, row SHA256 c6a16f4bb2debe97c97d09a6308125d4d168e748f33dd8c7cd282767c63cb583: {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391", "reference_doi": "10.1016/B978-0-12-179760-7.50017-6", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"} |
+| support-2179-row-lotus_occurrences-8 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 742. | supports | Retained row only, row SHA256 5354eb401d1ce7f9364e9e6c047b6bd2ae73f919fef37d1a3a89fa6470b852c0: {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391", "reference_doi": "10.1016/J.FITOTE.2012.05.002", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"} |
+| support-2179-row-lotus_occurrences-9 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 743. | supports | Retained row only, row SHA256 25e8b7c47a34b471d4ec61240bb277f8db9c5703bf88e8b81a99ff6fe8f2dda0: {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391", "reference_doi": "10.1016/J.TIV.2012.04.014", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"} |
+| support-2179-row-lotus_occurrences-10 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 744. | supports | Retained row only, row SHA256 a6e530553394d86425195fa352c8383f52cac04469ad00bbaa538e60d33faa8b: {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391", "reference_doi": "10.1016/S0031-9422(00)86666-2", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"} |
+| support-2179-row-lotus_occurrences-11 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 745. | supports | Retained row only, row SHA256 4cab4ab033d8bf1519d73f68d97058a68764ff3695dc9f757a54ce049e4da757: {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391", "reference_doi": "10.1021/JF102156W", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"} |
+| support-2179-row-lotus_occurrences-12 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 746. | supports | Retained row only, row SHA256 5c6a472659ef099d1daa95e6441bc8f7e10813a12488a2a3b2e3a40378cb84e6: {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391", "reference_doi": "10.1042/BJ0550421", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"} |
+| support-2179-row-lotus_occurrences-13 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 747. | supports | Retained row only, row SHA256 687aa2ed00c806f88d2dc383825bb0f346fb7cbb4943d85480bf7ae3060bb848: {"organism_name": "Penicillium concentricum", "organism_wikidata": "http://www.wikidata.org/entity/Q20720926", "reference_doi": "10.1021/ACS.JNATPROD.6B01069", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:293559"} |
+| support-2179-row-lotus_occurrences-14 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 748. | supports | Retained row only, row SHA256 a048f56a3e0a10ed91f98c5d350199a6fda22084db472174eb4fe77eeb8b3d00: {"organism_name": "Sorghum bicolor", "organism_wikidata": "http://www.wikidata.org/entity/Q332062", "reference_doi": "10.1021/JF60197A015", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:4558"} |
+| support-2179-row-lotus_occurrences-15 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 749. | supports | Retained row only, row SHA256 24dd8179c3bbea6fa2d07b3753e2ceca85ae4407279c55a85d25404b32ef9e16: {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354", "reference_doi": "10.1007/S00204-011-0781-3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"} |
+| support-2179-row-lotus_occurrences-16 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 750. | supports | Retained row only, row SHA256 26ef670efd76faab307aca92489e4abe18e7d13c8d0430820dc38c96844b86d3: {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354", "reference_doi": "10.1016/B978-0-12-179760-7.50017-6", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"} |
+| support-2179-row-lotus_occurrences-17 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 751. | supports | Retained row only, row SHA256 74e30ae9b90fd2cd5cf0bba1b429043b3a5a2216c3f5ec56eeb3ffaae7488fc3: {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354", "reference_doi": "10.1016/J.FITOTE.2012.05.002", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"} |
+| support-2179-row-lotus_occurrences-18 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 752. | supports | Retained row only, row SHA256 2376c6fca8d9a7483fd8b99b236ac8e56bec7c12f5f404936aa3923d1c5883cb: {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354", "reference_doi": "10.1016/J.TIV.2012.04.014", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"} |
+| support-2179-row-lotus_occurrences-19 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 753. | supports | Retained row only, row SHA256 c09533d55275ed6c704ec3a30c43e42ea46352fc6d4e0b53d50b95aa32d38c77: {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354", "reference_doi": "10.1021/JF102156W", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"} |
+| support-2179-row-lotus_occurrences-20 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 754. | supports | Retained row only, row SHA256 78a80ece27bee88c866daea170543f076ff849d9c58a72ba449ac3ec93d439bd: {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354", "reference_doi": "10.1042/BJ0550421", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"} |
+| support-2179-row-lotus_occurrences-21 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 755. | supports | Retained row only, row SHA256 276cd81fb5e42fe8b4f7996307e5f364e925c7aef7dff33b459dbb40e707d5dc: {"organism_name": "Alternaria porri", "organism_wikidata": "http://www.wikidata.org/entity/Q10406928", "reference_doi": "10.1080/14786410802265415", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48098"} |
+| support-2179-row-lotus_occurrences-22 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 756. | supports | Retained row only, row SHA256 5bbcc0748f51f731018438c36220a6f3d30a5ffe8b201d58c26c37575c618392: {"organism_name": "Adenocarpus foliolosus", "organism_wikidata": "http://www.wikidata.org/entity/Q13883591", "reference_doi": "10.1002/EJOC.200500471", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:49789"} |
+| support-2179-row-lotus_occurrences-23 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 757. | supports | Retained row only, row SHA256 3955ca169fd643a56f25b8b2fe46fac636004c4b8dd3d720d05d80cb16a5693a: {"organism_name": "Alternaria", "organism_wikidata": "http://www.wikidata.org/entity/Q133266", "reference_doi": "10.1021/JF60197A015", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5598"} |
+| support-2179-row-lotus_occurrences-24 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 758. | supports | Retained row only, row SHA256 8e7724d9444fefef8a69d340cc89ad79c4f077dd5443e6f8630b148620e5465e: {"organism_name": "Alternaria", "organism_wikidata": "http://www.wikidata.org/entity/Q133266", "reference_doi": "10.1021/NP070447M", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5598"} |
+| support-2179-row-lotus_occurrences-25 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 759. | supports | Retained row only, row SHA256 a502770b4dd9e5a2087ff1f59168ea06d3b7068eb212ab980c7fa625eabff8a5: {"organism_name": "Alternaria", "organism_wikidata": "http://www.wikidata.org/entity/Q133266", "reference_doi": "10.1021/NP900417G", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5598"} |
+| support-2179-row-lotus_occurrences-26 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 760. | supports | Retained row only, row SHA256 d9e5dc61dddb06867532c9bd6af7659e7fbb61404d0aba21418d85a0b422ef34: {"organism_name": "Alternaria", "organism_wikidata": "http://www.wikidata.org/entity/Q133266", "reference_doi": "10.1055/S-0029-1234616", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5598"} |
+| support-2179-row-lotus_occurrences-27 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 761. | supports | Retained row only, row SHA256 9067567bda5e44dcf708128fb9000ddb8cd57a6b4e3c0a0a08c85a3fafdd2828: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1007/BF03192156", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-28 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 762. | supports | Retained row only, row SHA256 9b6131ad8dd4cf3ed634f038a2bcbd445d6432e31e3807c75ecf131df50e6903: {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166", "reference_doi": "10.1007/S00204-011-0781-3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-29 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 763. | supports | Retained row only, row SHA256 ab07957a7ac52f5cae809ea4782c9b2e1d4e7dc2628dd64ff43f5a7b44278525: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1007/S00204-011-0781-3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-30 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 764. | supports | Retained row only, row SHA256 513f64e1f29d4637247123b91c221ed5b1b5fbdcc1721c068a9a70b4b71e4ccc: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1007/S10600-010-9662-X", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-31 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 765. | supports | Retained row only, row SHA256 5074ae812b0a81d6a7648689d304f5fb847d136f2e60ab2e9b2fab150940fb13: {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166", "reference_doi": "10.1016/B978-0-12-179760-7.50017-6", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-32 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 766. | supports | Retained row only, row SHA256 0775d020120f9de3b3221b58fd4696cf031118ea3e6f3209ff0a4d8a720b4e5d: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1016/B978-0-12-179760-7.50017-6", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-33 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 767. | supports | Retained row only, row SHA256 f6f6b96d55be4ff11c8acbbb857361d1b1dbd44d9852ddb742df3544f46618bf: {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166", "reference_doi": "10.1016/J.FITOTE.2012.05.002", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-34 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 768. | supports | Retained row only, row SHA256 1b034e380e1baa418614523bb7f6cdd02b6994f56f3fdcc7c0bed9ac97055205: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1016/J.FITOTE.2012.05.002", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-35 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 769. | supports | Retained row only, row SHA256 bd71ac2e62a3d1a7e6484fe940520a9b41aa173095e77a23694f50679fd2e2c4: {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166", "reference_doi": "10.1016/J.TIV.2012.04.014", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-36 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 770. | supports | Retained row only, row SHA256 a399f409a0b8cfd694a903ca3e9e8f16f52be17509baf5cbe83b3ec89def6fcc: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1016/J.TIV.2012.04.014", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-37 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 771. | supports | Retained row only, row SHA256 0865a1c04ed4fe6b111df195adec2f8565fdadd53616fe506ad4e01dcad9a820: {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166", "reference_doi": "10.1021/JF102156W", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-38 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 772. | supports | Retained row only, row SHA256 74e83f06d0793e628d34c15c3e5a2cccd376b53989907baa49b0bff11e41e6a4: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1021/JF102156W", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-39 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 773. | supports | Retained row only, row SHA256 c31262f233ff49aa72a50ba5a8e7f9971c05f974baba8f604c93f4f9d3b456c1: {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166", "reference_doi": "10.1039/C39870001235", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-40 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 774. | supports | Retained row only, row SHA256 4b7cef45bdb82a4388f401e6b2cc640513569a0127f7523cd655965effb9ae89: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1039/C39870001235", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-41 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 775. | supports | Retained row only, row SHA256 338729f17c9f767469053258560b2b06b256d0308cf18c18f7746e39dc0e392a: {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166", "reference_doi": "10.1042/BJ0550421", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-row-lotus_occurrences-42 | /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv; Header line 1; physical TSV line 776. | supports | Retained row only, row SHA256 65161df29a5175110662eaaf059b40677872e0b5276e8134f601c9aabef00fc9: {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244", "reference_doi": "10.1042/BJ0550421", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"} |
+| support-2179-query-cyanometdb_occurrences | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/cyanometdb_occurrences | supports | Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N"; 0 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-query-npclassifier | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/npclassifier | supports | Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N"; 1 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-row-npclassifier-0 | /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv; Header line 1; physical TSV line 271. | supports | Retained row only, row SHA256 8e74c3f1c3707cd06895bff37ad4c05907895183ec280c616ba04f92876d65db: {"class_results": "Isocoumarins", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07", "pathway_results": "Shikimates and Phenylpropanoids", "smiles": "CC1=CC(=CC2=C1C3=CC(=CC(=C3C(=O)O2)O)O)O", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "superclass_results": "Coumarins"} |
+| support-2179-query-pubchem_bioassay | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/pubchem_bioassay | supports | Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N"; 2 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-row-pubchem_bioassay-0 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; Header line 1; physical TSV line 899. | supports | Retained row only, row SHA256 507b2d6f692d6e17efb54c9cd636ea94d04e8778687cc1995b995fcd116f9855: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "1259407", "assay_name": "CCRIS mutagenicity studies", "assay_type": "Other", "cid": "5359485", "depositor": "22070", "reference": "", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "target_accession": ""} |
+| support-2179-row-pubchem_bioassay-1 | /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv; Header line 1; physical TSV line 900. | supports | Retained row only, row SHA256 ce6f5f8edbaef8379f36e3647628f275c09301124ac59356f1552525f38f2d72: {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid": "2322", "assay_name": "Luminescence Homogenous Primary HTS to Identify Inhibitors of STK33 Activity", "assay_type": "Screening", "cid": "5359485", "depositor": "Broad Institute", "reference": "", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "target_accession": ""} |
+| support-2179-query-bindingdb_targets | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/bindingdb_targets | supports | Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N"; 0 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-query-antibioticmech_inchikeys | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/antibioticmech_inchikeys | supports | Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N"; 0 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-query-chebi_origins | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/joins/chebi_origins | supports | Saved predicate exact chebi_id from exact full-key structure rows; query ["CHEBI:64983"]; 0 retained rows. Empty results describe only this pinned scope, not inactivity or literature absence. |
+| support-2179-taxon-routes | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /contexts/15/source_scope_inventory/source_taxa; /contexts/15/source_scope_inventory/forward_taxon_merge_matches; /contexts/15/source_scope_inventory/nonorganism_matches | supports | Exact source taxa NCBITaxon:122812, NCBITaxon:1589764, NCBITaxon:162425, NCBITaxon:1906, NCBITaxon:205464, NCBITaxon:227321, NCBITaxon:283358, NCBITaxon:293559, NCBITaxon:4558, NCBITaxon:48095, NCBITaxon:48098, NCBITaxon:49789, NCBITaxon:5598, NCBITaxon:5599; no retained forward merge or nonorganism matches. Cached labels do not establish production or fresh taxonomic authority. |
+| support-2179-taxon-122812 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/32; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:122812 names Sonneratia alba at OBO line 46908. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-1589764 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/61; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:1589764 names Acrocalymma vagum at OBO line 134025. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-162425 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/35; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:162425 names Aspergillus nidulans at OBO line 55539. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-1906 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/5; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:1906 names Streptomyces fradiae at OBO line 2941. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-205464 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/40; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:205464 names Maytenus hookeri at OBO line 65612. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-227321 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/43; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:227321 names Aspergillus nidulans FGSC A4 at OBO line 69073. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-283358 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/45; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:283358 names Alternaria cucumerina at OBO line 77590. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-293559 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/47; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:293559 names Penicillium concentricum at OBO line 79163. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-4558 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/8; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:4558 names Sorghum bicolor at OBO line 7198. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-48095 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/22; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:48095 names Alternaria dauci at OBO line 21773. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-48098 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/23; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:48098 names Alternaria porri at OBO line 21780. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-49789 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/24; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:49789 names Adenocarpus foliolosus at OBO line 22667. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-5598 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/12; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:5598 names Alternaria at OBO line 8772. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-taxon-5599 | /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json; /cached_taxonomy/whole_stanzas/13; /cached_taxonomy/input | supports | Whole cached stanza for NCBITaxon:5599 names Alternaria alternata at OBO line 8779. Source/historical labels and any synonyms remain scoped; no live taxonomy or production proof. |
+| support-2179-chemistry | /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-DATA-001.json; /records/8/declared_structure; /records/8/smiles/computed; /records/8/inchi/computed; /records/8/comparisons; /records/8/atom_correspondence; /records/8/literal_InChI_layers | supports | Both saved forms parse as neutral C14H10O5 with 19 atoms/21 bonds; all ten comparisons true and complete chirality-aware atom map. full_graph_identity_established:false; no fresh parse or proof of natural identity. |
+| support-2179-topology | /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-DATA-001.json; /records/8/smiles/computed; /records/8/inchi/computed | supports | Three fused six-membered rings comprise two aromatic carbon rings and an aromaticized cyclic ester ring. The SMILES tables show carbonyl C13=O14, ring oxygen O15, methyl C0 and three phenolic hydroxyls O16/O17/O18 attached to C11/C9/C3. The narrow ester motif list is empty because the ring C–O bonds are aromatic; the ring/bond tables still show the cyclic ester. No saturated C5O candidate sugar ring is present. |
+| support-2179-stereo | /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-DATA-001.json; /records/8/declared_structure; /records/8/smiles/computed/potential_stereo; /records/8/inchi/computed/potential_stereo; /records/8/smiles/computed/stereo_counts; /records/8/inchi/computed/stereo_counts; /records/8/smiles/computed/atoms; /records/8/inchi/computed/atoms; /records/8/smiles/computed/bonds; /records/8/inchi/computed/bonds; /records/8/smiles/computed/canonical_isomeric_smiles; /records/8/inchi/computed/canonical_isomeric_smiles; /records/8/smiles/computed/canonical_nonisomeric_smiles; /records/8/inchi/computed/canonical_nonisomeric_smiles | supports | Both saved forms have no detected potential tetrahedral or double-bond stereoelements and literal stereo_complete:true. Canonical isomeric and nonisomeric strings are identical for this encoded fused aromatic structure. That local consistency does not prove natural identity or all physical stereochemical behavior. |
+| support-2179-stereo-method | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; Lines 165-172. | supports | Maintained stereo_complete derives from unassigned atom-centered FindMolChiralCenters results; no independent axial/all-natural-stereo claim. |
+| support-2179-diagnostic-execution | /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-execution-001.json; /exit_code; /target_invocations; /retries; /DATA; /stderr | supports | Original ROOT diagnostic exit0, one target invocation/no retries; exact DATA and stderr pins. |
+| support-2179-diagnostic-acceptance | /private/tmp/npm-review-work/shared-next-batch218/root-diagnostic-acceptance-001.json; /accepted; /verification; /limits; /DATA | supports | ROOT accepts 20 parsed forms/all 100 comparisons true. Two original global stereo warnings remain unassigned; natural identity and complete stereochemistry are not established. |
+| support-2179-warnings | /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-stderr-001.log; Complete original stderr, lines 1-4. | supports | Two original global omitted-undefined-stereo warnings with blank separators; not assigned to any one owner. |
+| support-2179-intake-acceptance | /private/tmp/npm-review-work/shared-next-batch218/root-intake-ready-001.json; /status; /input_placements; /unique_input_paths; /input_counts; /reader_orders | supports | ROOT accepts all 10 original inspection-only intakes 392placements67 paths with no selected readers. |
+| support-2179-native-acceptance | /private/tmp/npm-review-work/shared-next-batch218/root-native-gates-acceptance-001.json; /results; /unavailable_required_gates; /all_native_gates_passed; /selected_queue_rows | supports | Five actual local commands passed; strict selected 10/full 3116 zero errors and 3116 byte-identical reproduction. Only 14 selected queue rows and 12 group counts are read here; full QC/OAK unavailable and all_native_gates_passed:false. |
+| support-2179-source-ownership | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Lines 950-1005; lines 1252-1308; lines 1310-1381; lines 1438-1468. | supports | Maintained exact-key grounding, literal stereo-source carry, occurrence deduplication/cap, written ACTIVE assay summary and coarse same-key sibling summary derivation; generator read as text only. |
+| support-2179-activity-method | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; Lines 128-178; lines 1310-1381; lines 1438-1468. | supports | Assay names supply coarse classes only for ACTIVE written calls; sibling mappings support coarse summary without target, MIC or mechanism transfer. |
+| support-2179-activity-schema | /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml; Lines 273-286; lines 920-949. | supports | The schema requires a backed coarse activity summary and distinguishes measurements from bare observations; no potency is invented. |
+| root-native-strict_ten | /private/tmp/npm-native-checks/batch-218/validate-strict-selected10-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json | supports | Closed-schema validation of the ten selected owners and any referenced components reported zero errors. |
+| root-native-strict_full | /private/tmp/npm-native-checks/batch-218/validate-all-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json | supports | Full closed-schema validation scanned all 3116 owners and reported zero errors. |
+| root-native-lockfile | /private/tmp/npm-native-checks/batch-218/verify-corpus-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json | supports | PATHS.tsv and filesystem agree on all 3116 records and their pinned filing pathways. |
+| root-native-reproduction | /private/tmp/npm-native-checks/batch-218/verify-reproduction-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json | supports | All 3116 records reproduce byte-identically from the retained inventories and carried curator content. This does not independently validate curator science. |
+| root-native-queue | /private/tmp/npm-native-checks/batch-218/review-queue-001.log; Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json | supports | The full local queue contains 8922 diagnostic rows; selected-target entries were inspected. Queue diagnostics are leads, not scientific sign-off. |
+
+## Limits And Additional Notes
+
+- No external requests, original-paper reading or live ontology/taxonomy/accession/sibling verification. Imported identifiers and quotations retain their source scope.
+- All ten saved comparisons agree, but full_graph_identity_established remains false. The two original global stereo warnings are unassigned; natural identity and unmeasured stereochemistry are not proved.
+- Full QC/OAK remain unavailable. Local gate success and selected queue rows do not establish scientific completeness.
+- Empty retained query frames apply only to the exact pinned key/query; no inactivity, literature absence or congener-transfer inference. Curation reading is limited to the admitted seven baseline tables plus the assay exclusion table for this owner.
+- The whole selected owner was read, but scientific completion is partial because full QC, complete ontology authority coverage and external source verification were unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main verification and publication are deferred because the user prohibits all external requests.
+- Whole selected raw/history and both complete saved molecular tables personally read. BGC owns collector/composer and other source partitions; Support owns this target's retained payloads and relevant cached stanzas.
+- No source, status or history edits, additional molecular/YAML parses, maintained-reader/gate/assembly/canonical invocation or outbound activity.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state. Proposed actions are not performed edits.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T080908Z-alternariol
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: alternariol'
+started_at: '2026-11-03T07:43:36.029620Z'
+finished_at: '2026-11-03T08:09:08.515297Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'alternariol: qualified partial review preserving exact identity, source
+  grades and bounded representation/activity claims.'
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/shikimates_and_phenylpropanoids/alternariol.yaml
+    sha256: bfe913d416b89805416ed15a88a42df03dfe3363b86e0cb2782c3e48fd460d74
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2179; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:64983
+targets:
+- target_id: CHEBI:64983
+  path: data/natural_products/shikimates_and_phenylpropanoids/alternariol.yaml
+  label: alternariol
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/pubchem_bioassay.tsv
+    role: Retained assay rows or empty-assay sentinels; source outcome and title alone
+      do not establish mechanism.
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/pubchem_bioassay_exclusions.tsv
+    role: Exact assay identity exclusion decisions for selected/direct source context.
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/bioassay_exclusions.py
+    role: Maintained source-row identity/digest guard; text-only dependency.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:64983
+  command: just validate-strict data/natural_products/shikimates_and_phenylpropanoids/3-5-dibromo-p-anisic-acid.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/3-p-hydroxyphenyl-1-2-propanediol.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/4-hydroxy-3-prenylbenzoic-acid.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/6-hydroxymellein.yaml data/natural_products/shikimates_and_phenylpropanoids/6-methylsalicylic-acid.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/8-methyldiaporthin.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/aflavarin.yaml data/natural_products/shikimates_and_phenylpropanoids/ajudazol-a.yaml
+    data/natural_products/shikimates_and_phenylpropanoids/alternariol.yaml data/natural_products/shikimates_and_phenylpropanoids/aspulvinone-e.yaml
+    --workers 1 --out /private/tmp/npm-native-checks/batch-218/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:64983
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-218/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:64983
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:64983
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:64983
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-218/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:64983
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:64983
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:64983
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: support-2179-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/shikimates_and_phenylpropanoids/alternariol.yaml
+  locator: Complete raw owner, lines 1-362.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole selected raw owner and 2 complete history events personally read;
+    exact bytes retained.
+  snapshot_sha256: bfe913d416b89805416ed15a88a42df03dfe3363b86e0cb2782c3e48fd460d74
+- evidence_id: support-2179-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218/owner-capture-DATA-001.json
+  locator: /records/8/owner_document; /records/8/owner_pin; /records/8/read_started_at;
+    /records/8/read_finished_at
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Actual captured complete owner, current raw pin and original access clocks.
+  snapshot_sha256: 111c8ab76adff18f87f09f85986dc5108a336fb3802a5dfa9dad09abdf9407df
+- evidence_id: support-2179-intake
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch218/intakes/2179-inspect-001.json
+  locator: /status; /source; /targets/0
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Original inspection-only intake with 39 current admitted inputs and explicit
+    maintained owner paths.
+  snapshot_sha256: 641637bfe9a21391e5f34e22cce2dfd983593c0f6564e27e88f224495751c517
+- evidence_id: support-2179-source-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-target-input-plan-001.json
+  locator: /records/8; /source_placement_count; /unique_source_path_count
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Exact selected raw/history/source frames and input map match accepted inventory
+    and actual intake. Whole cohort 392placements67 paths; no future scientific authority
+    inferred.
+  snapshot_sha256: aaf42729452d321d4ecd04f5c235e6b0edd5b3e6da8a853294180d2376980f39
+- evidence_id: support-2179-plan-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/root-conditional218-input-plan-acceptance-001.json
+  locator: /accepted; /plan; /inventory; /per_order_counts
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: ROOT accepts the exact saved plan and joins all actual intake maps; no
+    scientific verdict is conferred.
+  snapshot_sha256: 938383f6b986f11823252b0a936784870aac1edd32b51ca4eea8c01b059af7ed
+- evidence_id: support-2179-history
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/complete_raw_history; /contexts/15/history_count
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: All 2 complete history events retained unchanged.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-target-input-plan-001.json
+  locator: /records/8/proposed_companion_paths; /records/8/direct_companion_predicates;
+    /records/8/declared_mechanism_roots_literal; /records/8/component_paths
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: No direct companions, four mechanism roots or components are admitted for
+    this selected owner; no maintained reader applies.
+  snapshot_sha256: aaf42729452d321d4ecd04f5c235e6b0edd5b3e6da8a853294180d2376980f39
+- evidence_id: support-2179-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N";
+    1 retained rows. Empty results describe only this pinned scope, not inactivity
+    or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-row-mibig_compounds-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical TSV line 20.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 660ccec53650472afc2c2b8579001a3cf5d89bfbcb77fa8704d49d66289420d7:
+    {"bgc_classes": "PKS", "bgc_subclasses": "Unknown", "cluster_link_evidence_basis":
+    "CLUSTER_UNSTATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "alternariol", "database_ids": "npatlas:NPA020438|pubchem:5359485", "entry_completeness":
+    "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version":
+    "3", "genome_accession": "BN001304.1", "locus_evidence_methods": "", "locus_from":
+    "1119810", "locus_to": "1127658", "mibig_accession": "BGC0000013", "primary_reference":
+    "DOI:10.1042/bj0550421", "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis":
+    "COMPOUND_EVIDENCE", "smiles": "CC1=CC(=CC2=C1C3=CC(=CC(=C3C(=O)O2)O)O)O", "standard_inchi":
+    "InChI=1S/C14H10O5/c1-6-2-7(15)5-11-12(6)9-3-8(16)4-10(17)13(9)14(18)19-11/h2-5,15-17H,1H3",
+    "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:227321", "taxon_label": "Aspergillus nidulans FGSC A4"}'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: support-2179-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N";
+    1 retained rows. Empty results describe only this pinned scope, not inactivity
+    or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-row-chebi_structures-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: Header line 1; physical TSV line 21269.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 55d1477629028b1fd3ee9a5aa150cf49e6137b2d0e527535923ae7f277accf96:
+    {"chebi_id": "CHEBI:64983", "definition": "A benzochromenone that is 6H-benzo[c]chromen-6-one
+    which is substituted by a methyl group at position 1 and by hydroxy groups at
+    positions 3, 7, and 9. It is the most important mycotoxin produced by the black
+    mould Alternaria species, which are the most common mycoflora infecting small
+    grain cereals worldwide.", "name": "alternariol", "smiles": "Cc1cc(O)cc2oc(=O)c3c(O)cc(O)cc3c12",
+    "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "stars": "3"}'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: support-2179-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N";
+    43 retained rows. Empty results describe only this pinned scope, not inactivity
+    or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-row-lotus_occurrences-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 734.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 37707ce0f8c459313a899a95f41b1e768fdcd9b84878b7672a1d9ae25e81d7ea:
+    {"organism_name": "Sonneratia alba", "organism_wikidata": "http://www.wikidata.org/entity/Q1150684",
+    "reference_doi": "10.1021/NP900417G", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:122812"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 735.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 8b1a9258993e80a04a8921a45a9fa90ced4b1e54c72ced16f53ed7f98e24b212:
+    {"organism_name": "Acrocalymma vagum", "organism_wikidata": "http://www.wikidata.org/entity/Q104083898",
+    "reference_doi": "10.1021/ACS.JNATPROD.6B00327", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:1589764"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-2
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 736.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 47e292e8f530a84c7976c6dffb7bc0f14212f32b5a623f23363cee9af800254d:
+    {"organism_name": "Rhizopycnis vagum", "organism_wikidata": "http://www.wikidata.org/entity/Q10653178",
+    "reference_doi": "10.1021/ACS.JNATPROD.6B00327", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:1589764"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-3
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 737.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 75aca6e26d6f65db7aa78745b82349829a38c2f72f4e2e2b079b9fcceac8e3ea:
+    {"organism_name": "Aspergillus nidulans", "organism_wikidata": "http://www.wikidata.org/entity/Q683881",
+    "reference_doi": "10.1021/JA3016395", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:162425"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-4
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 738.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 b2224510bf8184584404cc1bdc5890ecde99f770132b3f9689060da8bfcc2731:
+    {"organism_name": "Streptomyces fradiae", "organism_wikidata": "http://www.wikidata.org/entity/Q7623383",
+    "reference_doi": "10.3390/MD12042079", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:1906"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-5
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 739.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 dbe0fa63b09cb967ab5a9dc0b1c0064de3807f22e98b41de0d02cb8d1bec4460:
+    {"organism_name": "Gymnosporia acuminata", "organism_wikidata": "http://www.wikidata.org/entity/Q17247598",
+    "reference_doi": "10.1007/S10600-010-9662-X", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:205464"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-6
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 740.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 481592e27b20f9363c1e196f48d2decc5d0afc2301d77d429d61aec471ba313a:
+    {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391",
+    "reference_doi": "10.1007/S00204-011-0781-3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-7
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 741.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 c6a16f4bb2debe97c97d09a6308125d4d168e748f33dd8c7cd282767c63cb583:
+    {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391",
+    "reference_doi": "10.1016/B978-0-12-179760-7.50017-6", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-8
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 742.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 5354eb401d1ce7f9364e9e6c047b6bd2ae73f919fef37d1a3a89fa6470b852c0:
+    {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391",
+    "reference_doi": "10.1016/J.FITOTE.2012.05.002", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-9
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 743.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 25e8b7c47a34b471d4ec61240bb277f8db9c5703bf88e8b81a99ff6fe8f2dda0:
+    {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391",
+    "reference_doi": "10.1016/J.TIV.2012.04.014", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-10
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 744.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 a6e530553394d86425195fa352c8383f52cac04469ad00bbaa538e60d33faa8b:
+    {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391",
+    "reference_doi": "10.1016/S0031-9422(00)86666-2", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-11
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 745.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 4cab4ab033d8bf1519d73f68d97058a68764ff3695dc9f757a54ce049e4da757:
+    {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391",
+    "reference_doi": "10.1021/JF102156W", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-12
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 746.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 5c6a472659ef099d1daa95e6441bc8f7e10813a12488a2a3b2e3a40378cb84e6:
+    {"organism_name": "Alternaria cucumerina", "organism_wikidata": "http://www.wikidata.org/entity/Q18353391",
+    "reference_doi": "10.1042/BJ0550421", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:283358"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-13
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 747.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 687aa2ed00c806f88d2dc383825bb0f346fb7cbb4943d85480bf7ae3060bb848:
+    {"organism_name": "Penicillium concentricum", "organism_wikidata": "http://www.wikidata.org/entity/Q20720926",
+    "reference_doi": "10.1021/ACS.JNATPROD.6B01069", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:293559"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-14
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 748.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 a048f56a3e0a10ed91f98c5d350199a6fda22084db472174eb4fe77eeb8b3d00:
+    {"organism_name": "Sorghum bicolor", "organism_wikidata": "http://www.wikidata.org/entity/Q332062",
+    "reference_doi": "10.1021/JF60197A015", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:4558"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-15
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 749.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 24dd8179c3bbea6fa2d07b3753e2ceca85ae4407279c55a85d25404b32ef9e16:
+    {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354",
+    "reference_doi": "10.1007/S00204-011-0781-3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-16
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 750.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 26ef670efd76faab307aca92489e4abe18e7d13c8d0430820dc38c96844b86d3:
+    {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354",
+    "reference_doi": "10.1016/B978-0-12-179760-7.50017-6", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-17
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 751.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 74e30ae9b90fd2cd5cf0bba1b429043b3a5a2216c3f5ec56eeb3ffaae7488fc3:
+    {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354",
+    "reference_doi": "10.1016/J.FITOTE.2012.05.002", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-18
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 752.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 2376c6fca8d9a7483fd8b99b236ac8e56bec7c12f5f404936aa3923d1c5883cb:
+    {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354",
+    "reference_doi": "10.1016/J.TIV.2012.04.014", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-19
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 753.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 c09533d55275ed6c704ec3a30c43e42ea46352fc6d4e0b53d50b95aa32d38c77:
+    {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354",
+    "reference_doi": "10.1021/JF102156W", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-20
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 754.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 78a80ece27bee88c866daea170543f076ff849d9c58a72ba449ac3ec93d439bd:
+    {"organism_name": "Alternaria dauci", "organism_wikidata": "http://www.wikidata.org/entity/Q4736354",
+    "reference_doi": "10.1042/BJ0550421", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48095"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-21
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 755.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 276cd81fb5e42fe8b4f7996307e5f364e925c7aef7dff33b459dbb40e707d5dc:
+    {"organism_name": "Alternaria porri", "organism_wikidata": "http://www.wikidata.org/entity/Q10406928",
+    "reference_doi": "10.1080/14786410802265415", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:48098"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-22
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 756.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 5bbcc0748f51f731018438c36220a6f3d30a5ffe8b201d58c26c37575c618392:
+    {"organism_name": "Adenocarpus foliolosus", "organism_wikidata": "http://www.wikidata.org/entity/Q13883591",
+    "reference_doi": "10.1002/EJOC.200500471", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:49789"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-23
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 757.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 3955ca169fd643a56f25b8b2fe46fac636004c4b8dd3d720d05d80cb16a5693a:
+    {"organism_name": "Alternaria", "organism_wikidata": "http://www.wikidata.org/entity/Q133266",
+    "reference_doi": "10.1021/JF60197A015", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5598"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-24
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 758.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 8e7724d9444fefef8a69d340cc89ad79c4f077dd5443e6f8630b148620e5465e:
+    {"organism_name": "Alternaria", "organism_wikidata": "http://www.wikidata.org/entity/Q133266",
+    "reference_doi": "10.1021/NP070447M", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5598"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-25
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 759.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 a502770b4dd9e5a2087ff1f59168ea06d3b7068eb212ab980c7fa625eabff8a5:
+    {"organism_name": "Alternaria", "organism_wikidata": "http://www.wikidata.org/entity/Q133266",
+    "reference_doi": "10.1021/NP900417G", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5598"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-26
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 760.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 d9e5dc61dddb06867532c9bd6af7659e7fbb61404d0aba21418d85a0b422ef34:
+    {"organism_name": "Alternaria", "organism_wikidata": "http://www.wikidata.org/entity/Q133266",
+    "reference_doi": "10.1055/S-0029-1234616", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5598"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-27
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 761.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 9067567bda5e44dcf708128fb9000ddb8cd57a6b4e3c0a0a08c85a3fafdd2828:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1007/BF03192156", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-28
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 762.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 9b6131ad8dd4cf3ed634f038a2bcbd445d6432e31e3807c75ecf131df50e6903:
+    {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166",
+    "reference_doi": "10.1007/S00204-011-0781-3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-29
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 763.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 ab07957a7ac52f5cae809ea4782c9b2e1d4e7dc2628dd64ff43f5a7b44278525:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1007/S00204-011-0781-3", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-30
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 764.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 513f64e1f29d4637247123b91c221ed5b1b5fbdcc1721c068a9a70b4b71e4ccc:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1007/S10600-010-9662-X", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-31
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 765.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 5074ae812b0a81d6a7648689d304f5fb847d136f2e60ab2e9b2fab150940fb13:
+    {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166",
+    "reference_doi": "10.1016/B978-0-12-179760-7.50017-6", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-32
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 766.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 0775d020120f9de3b3221b58fd4696cf031118ea3e6f3209ff0a4d8a720b4e5d:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1016/B978-0-12-179760-7.50017-6", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-33
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 767.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 f6f6b96d55be4ff11c8acbbb857361d1b1dbd44d9852ddb742df3544f46618bf:
+    {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166",
+    "reference_doi": "10.1016/J.FITOTE.2012.05.002", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-34
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 768.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 1b034e380e1baa418614523bb7f6cdd02b6994f56f3fdcc7c0bed9ac97055205:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1016/J.FITOTE.2012.05.002", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-35
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 769.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 bd71ac2e62a3d1a7e6484fe940520a9b41aa173095e77a23694f50679fd2e2c4:
+    {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166",
+    "reference_doi": "10.1016/J.TIV.2012.04.014", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-36
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 770.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 a399f409a0b8cfd694a903ca3e9e8f16f52be17509baf5cbe83b3ec89def6fcc:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1016/J.TIV.2012.04.014", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-37
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 771.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 0865a1c04ed4fe6b111df195adec2f8565fdadd53616fe506ad4e01dcad9a820:
+    {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166",
+    "reference_doi": "10.1021/JF102156W", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-38
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 772.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 74e83f06d0793e628d34c15c3e5a2cccd376b53989907baa49b0bff11e41e6a4:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1021/JF102156W", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-39
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 773.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 c31262f233ff49aa72a50ba5a8e7f9971c05f974baba8f604c93f4f9d3b456c1:
+    {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166",
+    "reference_doi": "10.1039/C39870001235", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-40
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 774.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 4b7cef45bdb82a4388f401e6b2cc640513569a0127f7523cd655965effb9ae89:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1039/C39870001235", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-41
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 775.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 338729f17c9f767469053258560b2b06b256d0308cf18c18f7746e39dc0e392a:
+    {"organism_name": "Alternaria tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q104084166",
+    "reference_doi": "10.1042/BJ0550421", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-row-lotus_occurrences-42
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical TSV line 776.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 65161df29a5175110662eaaf059b40677872e0b5276e8134f601c9aabef00fc9:
+    {"organism_name": "Alternaria alternata", "organism_wikidata": "http://www.wikidata.org/entity/Q2704244",
+    "reference_doi": "10.1042/BJ0550421", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q410677", "taxon_id": "NCBITaxon:5599"}'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: support-2179-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N";
+    0 retained rows. Empty results describe only this pinned scope, not inactivity
+    or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N";
+    1 retained rows. Empty results describe only this pinned scope, not inactivity
+    or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-row-npclassifier-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical TSV line 271.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 8e74c3f1c3707cd06895bff37ad4c05907895183ec280c616ba04f92876d65db:
+    {"class_results": "Isocoumarins", "is_glycoside": "false", "model_version": "npclassifier.gnps2.org@2026-09-07",
+    "pathway_results": "Shikimates and Phenylpropanoids", "smiles": "CC1=CC(=CC2=C1C3=CC(=CC(=C3C(=O)O2)O)O)O",
+    "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "superclass_results": "Coumarins"}'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: support-2179-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N";
+    2 retained rows. Empty results describe only this pinned scope, not inactivity
+    or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-row-pubchem_bioassay-0
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Header line 1; physical TSV line 899.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 507b2d6f692d6e17efb54c9cd636ea94d04e8778687cc1995b995fcd116f9855:
+    {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid":
+    "1259407", "assay_name": "CCRIS mutagenicity studies", "assay_type": "Other",
+    "cid": "5359485", "depositor": "22070", "reference": "", "standard_inchi_key":
+    "CEBXXEKPIIDJHL-UHFFFAOYSA-N", "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2179-row-pubchem_bioassay-1
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/pubchem_bioassay.tsv
+  locator: Header line 1; physical TSV line 900.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: 'Retained row only, row SHA256 ce6f5f8edbaef8379f36e3647628f275c09301124ac59356f1552525f38f2d72:
+    {"activity_name": "", "activity_outcome": "Active", "activity_value_um": "", "aid":
+    "2322", "assay_name": "Luminescence Homogenous Primary HTS to Identify Inhibitors
+    of STK33 Activity", "assay_type": "Screening", "cid": "5359485", "depositor":
+    "Broad Institute", "reference": "", "standard_inchi_key": "CEBXXEKPIIDJHL-UHFFFAOYSA-N",
+    "target_accession": ""}'
+  snapshot_sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+- evidence_id: support-2179-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N";
+    0 retained rows. Empty results describe only this pinned scope, not inactivity
+    or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact complete standard_inchi_key equality; query "CEBXXEKPIIDJHL-UHFFFAOYSA-N";
+    0 retained rows. Empty results describe only this pinned scope, not inactivity
+    or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Saved predicate exact chebi_id from exact full-key structure rows; query
+    ["CHEBI:64983"]; 0 retained rows. Empty results describe only this pinned scope,
+    not inactivity or literature absence.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /contexts/15/source_scope_inventory/source_taxa; /contexts/15/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/15/source_scope_inventory/nonorganism_matches
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Exact source taxa NCBITaxon:122812, NCBITaxon:1589764, NCBITaxon:162425,
+    NCBITaxon:1906, NCBITaxon:205464, NCBITaxon:227321, NCBITaxon:283358, NCBITaxon:293559,
+    NCBITaxon:4558, NCBITaxon:48095, NCBITaxon:48098, NCBITaxon:49789, NCBITaxon:5598,
+    NCBITaxon:5599; no retained forward merge or nonorganism matches. Cached labels
+    do not establish production or fresh taxonomic authority.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-122812
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/32; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:122812 names Sonneratia alba at OBO line
+    46908. Source/historical labels and any synonyms remain scoped; no live taxonomy
+    or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-1589764
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/61; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:1589764 names Acrocalymma vagum at OBO
+    line 134025. Source/historical labels and any synonyms remain scoped; no live
+    taxonomy or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-162425
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/35; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:162425 names Aspergillus nidulans at
+    OBO line 55539. Source/historical labels and any synonyms remain scoped; no live
+    taxonomy or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-1906
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/5; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:1906 names Streptomyces fradiae at OBO
+    line 2941. Source/historical labels and any synonyms remain scoped; no live taxonomy
+    or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-205464
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/40; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:205464 names Maytenus hookeri at OBO
+    line 65612. Source/historical labels and any synonyms remain scoped; no live taxonomy
+    or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-227321
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/43; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:227321 names Aspergillus nidulans FGSC
+    A4 at OBO line 69073. Source/historical labels and any synonyms remain scoped;
+    no live taxonomy or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-283358
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/45; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:283358 names Alternaria cucumerina at
+    OBO line 77590. Source/historical labels and any synonyms remain scoped; no live
+    taxonomy or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-293559
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/47; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:293559 names Penicillium concentricum
+    at OBO line 79163. Source/historical labels and any synonyms remain scoped; no
+    live taxonomy or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-4558
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/8; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:4558 names Sorghum bicolor at OBO line
+    7198. Source/historical labels and any synonyms remain scoped; no live taxonomy
+    or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-48095
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/22; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:48095 names Alternaria dauci at OBO line
+    21773. Source/historical labels and any synonyms remain scoped; no live taxonomy
+    or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-48098
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/23; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:48098 names Alternaria porri at OBO line
+    21780. Source/historical labels and any synonyms remain scoped; no live taxonomy
+    or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-49789
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/24; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:49789 names Adenocarpus foliolosus at
+    OBO line 22667. Source/historical labels and any synonyms remain scoped; no live
+    taxonomy or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-5598
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/12; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:5598 names Alternaria at OBO line 8772.
+    Source/historical labels and any synonyms remain scoped; no live taxonomy or production
+    proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-taxon-5599
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218-tentative/bgc-prep/bgc-conditional218-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/whole_stanzas/13; /cached_taxonomy/input
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Whole cached stanza for NCBITaxon:5599 names Alternaria alternata at OBO
+    line 8779. Source/historical labels and any synonyms remain scoped; no live taxonomy
+    or production proof.
+  snapshot_sha256: edc2e9c98e618d5d71a47c7ee5e0cd2053a1708f67466ad0b99b4e4cb33465f5
+- evidence_id: support-2179-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/8/declared_structure; /records/8/smiles/computed; /records/8/inchi/computed;
+    /records/8/comparisons; /records/8/atom_correspondence; /records/8/literal_InChI_layers
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Both saved forms parse as neutral C14H10O5 with 19 atoms/21 bonds; all
+    ten comparisons true and complete chirality-aware atom map. full_graph_identity_established:false;
+    no fresh parse or proof of natural identity.
+  snapshot_sha256: 4e71336f0142da26d4b24905132c2acb742b3252da930bfd5b6bc483129f1330
+- evidence_id: support-2179-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/8/smiles/computed; /records/8/inchi/computed
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Three fused six-membered rings comprise two aromatic carbon rings and an
+    aromaticized cyclic ester ring. The SMILES tables show carbonyl C13=O14, ring
+    oxygen O15, methyl C0 and three phenolic hydroxyls O16/O17/O18 attached to C11/C9/C3.
+    The narrow ester motif list is empty because the ring C–O bonds are aromatic;
+    the ring/bond tables still show the cyclic ester. No saturated C5O candidate sugar
+    ring is present.
+  snapshot_sha256: 4e71336f0142da26d4b24905132c2acb742b3252da930bfd5b6bc483129f1330
+- evidence_id: support-2179-stereo
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/8/declared_structure; /records/8/smiles/computed/potential_stereo;
+    /records/8/inchi/computed/potential_stereo; /records/8/smiles/computed/stereo_counts;
+    /records/8/inchi/computed/stereo_counts; /records/8/smiles/computed/atoms; /records/8/inchi/computed/atoms;
+    /records/8/smiles/computed/bonds; /records/8/inchi/computed/bonds; /records/8/smiles/computed/canonical_isomeric_smiles;
+    /records/8/inchi/computed/canonical_isomeric_smiles; /records/8/smiles/computed/canonical_nonisomeric_smiles;
+    /records/8/inchi/computed/canonical_nonisomeric_smiles
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Both saved forms have no detected potential tetrahedral or double-bond
+    stereoelements and literal stereo_complete:true. Canonical isomeric and nonisomeric
+    strings are identical for this encoded fused aromatic structure. That local consistency
+    does not prove natural identity or all physical stereochemical behavior.
+  snapshot_sha256: 4e71336f0142da26d4b24905132c2acb742b3252da930bfd5b6bc483129f1330
+- evidence_id: support-2179-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 165-172.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Maintained stereo_complete derives from unassigned atom-centered FindMolChiralCenters
+    results; no independent axial/all-natural-stereo claim.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: support-2179-diagnostic-execution
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-execution-001.json
+  locator: /exit_code; /target_invocations; /retries; /DATA; /stderr
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Original ROOT diagnostic exit0, one target invocation/no retries; exact
+    DATA and stderr pins.
+  snapshot_sha256: 2ef21bfab2aa20e8c198737cd65814fabc3cf91a51eb09cb617abb548c80cc06
+- evidence_id: support-2179-diagnostic-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch218/root-diagnostic-acceptance-001.json
+  locator: /accepted; /verification; /limits; /DATA
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: ROOT accepts 20 parsed forms/all 100 comparisons true. Two original global
+    stereo warnings remain unassigned; natural identity and complete stereochemistry
+    are not established.
+  snapshot_sha256: 0f1c218ef2948f88c16e3ae0c830644e13e2d397ea05a9e4604a715e8da98443
+- evidence_id: support-2179-warnings
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch218/chemistry-local/diagnostic-stderr-001.log
+  locator: Complete original stderr, lines 1-4.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Two original global omitted-undefined-stereo warnings with blank separators;
+    not assigned to any one owner.
+  snapshot_sha256: 836c9e40af7d808b240d363bb89b8b73c826451b24292cbfa9509297a4b6c480
+- evidence_id: support-2179-intake-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch218/root-intake-ready-001.json
+  locator: /status; /input_placements; /unique_input_paths; /input_counts; /reader_orders
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: ROOT accepts all 10 original inspection-only intakes 392placements67 paths
+    with no selected readers.
+  snapshot_sha256: 4d19c500387ec2c243eb986a2e00c596a04a9fa2e4f1879d15165d0fcd2ac0cd
+- evidence_id: support-2179-native-acceptance
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch218/root-native-gates-acceptance-001.json
+  locator: /results; /unavailable_required_gates; /all_native_gates_passed; /selected_queue_rows
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Five actual local commands passed; strict selected 10/full 3116 zero errors
+    and 3116 byte-identical reproduction. Only 14 selected queue rows and 12 group
+    counts are read here; full QC/OAK unavailable and all_native_gates_passed:false.
+  snapshot_sha256: 57138741c14dfd03efcb91097dad031f0dc2209cb36d90f08c3b8796ae6f17b5
+- evidence_id: support-2179-source-ownership
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 950-1005; lines 1252-1308; lines 1310-1381; lines 1438-1468.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Maintained exact-key grounding, literal stereo-source carry, occurrence
+    deduplication/cap, written ACTIVE assay summary and coarse same-key sibling summary
+    derivation; generator read as text only.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2179-activity-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 128-178; lines 1310-1381; lines 1438-1468.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: Assay names supply coarse classes only for ACTIVE written calls; sibling
+    mappings support coarse summary without target, MIC or mechanism transfer.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: support-2179-activity-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 273-286; lines 920-949.
+  accessed_at: '2026-11-03T07:56:30.757326Z'
+  support: supports
+  summary: The schema requires a backed coarse activity summary and distinguishes
+    measurements from bare observations; no potency is invented.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-218/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json
+  accessed_at: '2026-11-03T07:45:15.668585Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: 35b181876d50c61aae3d6d9f47dda6fb34ee6cde4034660f8fc4f331a26db38d
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-218/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json
+  accessed_at: '2026-11-03T07:45:43.691892Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 9a21ff2483495ee3c3d0e1631a10c4dd5cf399ea7f3f5838778bf6c4104dd10d
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-218/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json
+  accessed_at: '2026-11-03T07:46:05.559629Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-218/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json
+  accessed_at: '2026-11-03T07:46:42.649455Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-218/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-218/native-current218-five-gates-execution-001.json
+  accessed_at: '2026-11-03T07:46:55.530300Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: cf9808fb82c82233d73dbf69f7483bb393c3341686b96881f6fc8137b53cdbaa
+assessments:
+- assessment_id: support-2179-A1
+  area: identity
+  topic: Exact identity and grounding scope
+  outcome: supported
+  summary: CHEBI:64983, MIBiG BGC0000013 version 3 compound 1 and the saved paired
+    structures agree on CEBXXEKPIIDJHL-UHFFFAOYSA-N/C14H10O5. The retained three-star
+    ChEBI definition describes a methyl-trihydroxy benzochromenone, compatible with
+    the saved topology. Its broader ecological and mycotoxin statements remain cited
+    source assertions, not newly verified universals. No direct companion is admitted.
+  target_ids:
+  - CHEBI:64983
+  evidence_ids:
+  - support-2179-owner
+  - support-2179-capture
+  - support-2179-intake
+  - support-2179-source-plan
+  - support-2179-plan-acceptance
+  - support-2179-direct-contexts
+  - support-2179-query-chebi_structures
+  - support-2179-row-mibig_compounds-0
+  - support-2179-row-chebi_structures-0
+  dimensions:
+  - name: standard_inchi_key
+    value: CEBXXEKPIIDJHL-UHFFFAOYSA-N
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-direct-contexts
+    - support-2179-query-chebi_structures
+    - support-2179-row-mibig_compounds-0
+    - support-2179-row-chebi_structures-0
+  - name: grounding_scope
+    value: EXACT; one retained three-star CHEBI:64983 full-key match
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-direct-contexts
+    - support-2179-query-chebi_structures
+    - support-2179-row-mibig_compounds-0
+    - support-2179-row-chebi_structures-0
+- assessment_id: support-2179-A2
+  area: representation
+  topic: Paired representations and stereochemistry limits
+  outcome: supported
+  summary: Both saved forms parse as neutral C14H10O5 (19 atoms/21 bonds), agree on
+    all ten saved comparisons and retain a complete atom map with full_graph_identity_established:false.
+    Both saved forms have no detected potential tetrahedral or double-bond stereoelements
+    and literal stereo_complete:true. Canonical isomeric and nonisomeric strings are
+    identical for this encoded fused aromatic structure. That local consistency does
+    not prove natural identity or all physical stereochemical behavior. Two original
+    global warnings remain unassigned.
+  target_ids:
+  - CHEBI:64983
+  evidence_ids:
+  - support-2179-owner
+  - support-2179-capture
+  - support-2179-intake
+  - support-2179-source-plan
+  - support-2179-plan-acceptance
+  - support-2179-chemistry
+  - support-2179-stereo
+  - support-2179-stereo-method
+  - support-2179-diagnostic-execution
+  - support-2179-diagnostic-acceptance
+  - support-2179-warnings
+  dimensions:
+  - name: stereochemical_resolution
+    value: Both saved forms have no detected potential tetrahedral or double-bond
+      stereoelements and literal stereo_complete:true. Canonical isomeric and nonisomeric
+      strings are identical for this encoded fused aromatic structure. That local
+      consistency does not prove natural identity or all physical stereochemical behavior.
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-chemistry
+    - support-2179-stereo
+    - support-2179-stereo-method
+    - support-2179-diagnostic-execution
+    - support-2179-diagnostic-acceptance
+    - support-2179-warnings
+  - name: representation_correspondence
+    value: Ten comparisons true; complete chirality-aware map; full_graph_identity_established:false
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-chemistry
+    - support-2179-stereo
+    - support-2179-stereo-method
+    - support-2179-diagnostic-execution
+    - support-2179-diagnostic-acceptance
+    - support-2179-warnings
+- assessment_id: support-2179-A3
+  area: provenance
+  topic: Producer, occurrence and locus grades
+  outcome: supported
+  summary: Aspergillus nidulans FGSC A4 (NCBITaxon:227321) remains a SOURCE_ASSERTION
+    producer with CLUSTER_UNSTATED BGC0000013, no locus method stated, and BN001304.1
+    coordinates 1119810–1127658. The source entry is active version 3, questionable
+    quality and unknown completeness. Plant, fungal and actinobacterial occurrence
+    annotations are separate from that strain-level producer claim.
+  target_ids:
+  - CHEBI:64983
+  evidence_ids:
+  - support-2179-owner
+  - support-2179-capture
+  - support-2179-intake
+  - support-2179-source-plan
+  - support-2179-plan-acceptance
+  - support-2179-row-mibig_compounds-0
+  - support-2179-row-lotus_occurrences-0
+  - support-2179-row-lotus_occurrences-1
+  - support-2179-row-lotus_occurrences-2
+  - support-2179-row-lotus_occurrences-3
+  - support-2179-row-lotus_occurrences-4
+  - support-2179-row-lotus_occurrences-5
+  - support-2179-row-lotus_occurrences-6
+  - support-2179-row-lotus_occurrences-7
+  - support-2179-row-lotus_occurrences-8
+  - support-2179-row-lotus_occurrences-9
+  - support-2179-row-lotus_occurrences-10
+  - support-2179-row-lotus_occurrences-11
+  - support-2179-row-lotus_occurrences-12
+  - support-2179-row-lotus_occurrences-13
+  - support-2179-row-lotus_occurrences-14
+  - support-2179-row-lotus_occurrences-15
+  - support-2179-row-lotus_occurrences-16
+  - support-2179-row-lotus_occurrences-17
+  - support-2179-row-lotus_occurrences-18
+  - support-2179-row-lotus_occurrences-19
+  - support-2179-row-lotus_occurrences-20
+  - support-2179-row-lotus_occurrences-21
+  - support-2179-row-lotus_occurrences-22
+  - support-2179-row-lotus_occurrences-23
+  - support-2179-row-lotus_occurrences-24
+  - support-2179-row-lotus_occurrences-25
+  - support-2179-row-lotus_occurrences-26
+  - support-2179-row-lotus_occurrences-27
+  - support-2179-row-lotus_occurrences-28
+  - support-2179-row-lotus_occurrences-29
+  - support-2179-row-lotus_occurrences-30
+  - support-2179-row-lotus_occurrences-31
+  - support-2179-row-lotus_occurrences-32
+  - support-2179-row-lotus_occurrences-33
+  - support-2179-row-lotus_occurrences-34
+  - support-2179-row-lotus_occurrences-35
+  - support-2179-row-lotus_occurrences-36
+  - support-2179-row-lotus_occurrences-37
+  - support-2179-row-lotus_occurrences-38
+  - support-2179-row-lotus_occurrences-39
+  - support-2179-row-lotus_occurrences-40
+  - support-2179-row-lotus_occurrences-41
+  - support-2179-row-lotus_occurrences-42
+  - support-2179-taxon-routes
+  - support-2179-taxon-122812
+  - support-2179-taxon-1589764
+  - support-2179-taxon-162425
+  - support-2179-taxon-1906
+  - support-2179-taxon-205464
+  - support-2179-taxon-227321
+  - support-2179-taxon-283358
+  - support-2179-taxon-293559
+  - support-2179-taxon-4558
+  - support-2179-taxon-48095
+  - support-2179-taxon-48098
+  - support-2179-taxon-49789
+  - support-2179-taxon-5598
+  - support-2179-taxon-5599
+  dimensions:
+  - name: taxon_and_strain_scope
+    value: NCBITaxon:122812; NCBITaxon:1589764; NCBITaxon:162425; NCBITaxon:1906;
+      NCBITaxon:205464; NCBITaxon:227321; NCBITaxon:283358; NCBITaxon:293559; NCBITaxon:4558;
+      NCBITaxon:48095; NCBITaxon:48098; NCBITaxon:49789; NCBITaxon:5598; NCBITaxon:5599;
+      source/cached labels only
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-row-mibig_compounds-0
+    - support-2179-row-lotus_occurrences-0
+    - support-2179-row-lotus_occurrences-1
+    - support-2179-row-lotus_occurrences-2
+    - support-2179-row-lotus_occurrences-3
+    - support-2179-row-lotus_occurrences-4
+    - support-2179-row-lotus_occurrences-5
+    - support-2179-row-lotus_occurrences-6
+    - support-2179-row-lotus_occurrences-7
+    - support-2179-row-lotus_occurrences-8
+    - support-2179-row-lotus_occurrences-9
+    - support-2179-row-lotus_occurrences-10
+    - support-2179-row-lotus_occurrences-11
+    - support-2179-row-lotus_occurrences-12
+    - support-2179-row-lotus_occurrences-13
+    - support-2179-row-lotus_occurrences-14
+    - support-2179-row-lotus_occurrences-15
+    - support-2179-row-lotus_occurrences-16
+    - support-2179-row-lotus_occurrences-17
+    - support-2179-row-lotus_occurrences-18
+    - support-2179-row-lotus_occurrences-19
+    - support-2179-row-lotus_occurrences-20
+    - support-2179-row-lotus_occurrences-21
+    - support-2179-row-lotus_occurrences-22
+    - support-2179-row-lotus_occurrences-23
+    - support-2179-row-lotus_occurrences-24
+    - support-2179-row-lotus_occurrences-25
+    - support-2179-row-lotus_occurrences-26
+    - support-2179-row-lotus_occurrences-27
+    - support-2179-row-lotus_occurrences-28
+    - support-2179-row-lotus_occurrences-29
+    - support-2179-row-lotus_occurrences-30
+    - support-2179-row-lotus_occurrences-31
+    - support-2179-row-lotus_occurrences-32
+    - support-2179-row-lotus_occurrences-33
+    - support-2179-row-lotus_occurrences-34
+    - support-2179-row-lotus_occurrences-35
+    - support-2179-row-lotus_occurrences-36
+    - support-2179-row-lotus_occurrences-37
+    - support-2179-row-lotus_occurrences-38
+    - support-2179-row-lotus_occurrences-39
+    - support-2179-row-lotus_occurrences-40
+    - support-2179-row-lotus_occurrences-41
+    - support-2179-row-lotus_occurrences-42
+    - support-2179-taxon-routes
+    - support-2179-taxon-122812
+    - support-2179-taxon-1589764
+    - support-2179-taxon-162425
+    - support-2179-taxon-1906
+    - support-2179-taxon-205464
+    - support-2179-taxon-227321
+    - support-2179-taxon-283358
+    - support-2179-taxon-293559
+    - support-2179-taxon-4558
+    - support-2179-taxon-48095
+    - support-2179-taxon-48098
+    - support-2179-taxon-49789
+    - support-2179-taxon-5598
+    - support-2179-taxon-5599
+  - name: producer_evidence_tier
+    value: SOURCE_ASSERTION
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-row-mibig_compounds-0
+    - support-2179-row-lotus_occurrences-0
+    - support-2179-row-lotus_occurrences-1
+    - support-2179-row-lotus_occurrences-2
+    - support-2179-row-lotus_occurrences-3
+    - support-2179-row-lotus_occurrences-4
+    - support-2179-row-lotus_occurrences-5
+    - support-2179-row-lotus_occurrences-6
+    - support-2179-row-lotus_occurrences-7
+    - support-2179-row-lotus_occurrences-8
+    - support-2179-row-lotus_occurrences-9
+    - support-2179-row-lotus_occurrences-10
+    - support-2179-row-lotus_occurrences-11
+    - support-2179-row-lotus_occurrences-12
+    - support-2179-row-lotus_occurrences-13
+    - support-2179-row-lotus_occurrences-14
+    - support-2179-row-lotus_occurrences-15
+    - support-2179-row-lotus_occurrences-16
+    - support-2179-row-lotus_occurrences-17
+    - support-2179-row-lotus_occurrences-18
+    - support-2179-row-lotus_occurrences-19
+    - support-2179-row-lotus_occurrences-20
+    - support-2179-row-lotus_occurrences-21
+    - support-2179-row-lotus_occurrences-22
+    - support-2179-row-lotus_occurrences-23
+    - support-2179-row-lotus_occurrences-24
+    - support-2179-row-lotus_occurrences-25
+    - support-2179-row-lotus_occurrences-26
+    - support-2179-row-lotus_occurrences-27
+    - support-2179-row-lotus_occurrences-28
+    - support-2179-row-lotus_occurrences-29
+    - support-2179-row-lotus_occurrences-30
+    - support-2179-row-lotus_occurrences-31
+    - support-2179-row-lotus_occurrences-32
+    - support-2179-row-lotus_occurrences-33
+    - support-2179-row-lotus_occurrences-34
+    - support-2179-row-lotus_occurrences-35
+    - support-2179-row-lotus_occurrences-36
+    - support-2179-row-lotus_occurrences-37
+    - support-2179-row-lotus_occurrences-38
+    - support-2179-row-lotus_occurrences-39
+    - support-2179-row-lotus_occurrences-40
+    - support-2179-row-lotus_occurrences-41
+    - support-2179-row-lotus_occurrences-42
+    - support-2179-taxon-routes
+    - support-2179-taxon-122812
+    - support-2179-taxon-1589764
+    - support-2179-taxon-162425
+    - support-2179-taxon-1906
+    - support-2179-taxon-205464
+    - support-2179-taxon-227321
+    - support-2179-taxon-283358
+    - support-2179-taxon-293559
+    - support-2179-taxon-4558
+    - support-2179-taxon-48095
+    - support-2179-taxon-48098
+    - support-2179-taxon-49789
+    - support-2179-taxon-5598
+    - support-2179-taxon-5599
+  - name: locus_evidence_tier
+    value: CLUSTER_UNSTATED; no locus method stated
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-row-mibig_compounds-0
+    - support-2179-row-lotus_occurrences-0
+    - support-2179-row-lotus_occurrences-1
+    - support-2179-row-lotus_occurrences-2
+    - support-2179-row-lotus_occurrences-3
+    - support-2179-row-lotus_occurrences-4
+    - support-2179-row-lotus_occurrences-5
+    - support-2179-row-lotus_occurrences-6
+    - support-2179-row-lotus_occurrences-7
+    - support-2179-row-lotus_occurrences-8
+    - support-2179-row-lotus_occurrences-9
+    - support-2179-row-lotus_occurrences-10
+    - support-2179-row-lotus_occurrences-11
+    - support-2179-row-lotus_occurrences-12
+    - support-2179-row-lotus_occurrences-13
+    - support-2179-row-lotus_occurrences-14
+    - support-2179-row-lotus_occurrences-15
+    - support-2179-row-lotus_occurrences-16
+    - support-2179-row-lotus_occurrences-17
+    - support-2179-row-lotus_occurrences-18
+    - support-2179-row-lotus_occurrences-19
+    - support-2179-row-lotus_occurrences-20
+    - support-2179-row-lotus_occurrences-21
+    - support-2179-row-lotus_occurrences-22
+    - support-2179-row-lotus_occurrences-23
+    - support-2179-row-lotus_occurrences-24
+    - support-2179-row-lotus_occurrences-25
+    - support-2179-row-lotus_occurrences-26
+    - support-2179-row-lotus_occurrences-27
+    - support-2179-row-lotus_occurrences-28
+    - support-2179-row-lotus_occurrences-29
+    - support-2179-row-lotus_occurrences-30
+    - support-2179-row-lotus_occurrences-31
+    - support-2179-row-lotus_occurrences-32
+    - support-2179-row-lotus_occurrences-33
+    - support-2179-row-lotus_occurrences-34
+    - support-2179-row-lotus_occurrences-35
+    - support-2179-row-lotus_occurrences-36
+    - support-2179-row-lotus_occurrences-37
+    - support-2179-row-lotus_occurrences-38
+    - support-2179-row-lotus_occurrences-39
+    - support-2179-row-lotus_occurrences-40
+    - support-2179-row-lotus_occurrences-41
+    - support-2179-row-lotus_occurrences-42
+    - support-2179-taxon-routes
+    - support-2179-taxon-122812
+    - support-2179-taxon-1589764
+    - support-2179-taxon-162425
+    - support-2179-taxon-1906
+    - support-2179-taxon-205464
+    - support-2179-taxon-227321
+    - support-2179-taxon-283358
+    - support-2179-taxon-293559
+    - support-2179-taxon-4558
+    - support-2179-taxon-48095
+    - support-2179-taxon-48098
+    - support-2179-taxon-49789
+    - support-2179-taxon-5598
+    - support-2179-taxon-5599
+- assessment_id: support-2179-A4
+  area: evidence
+  topic: Claim-level citation support
+  outcome: supported
+  summary: DOI:10.1042/bj0550421 is MIBiG COMPOUND_EVIDENCE scope. The retained ChEBI
+    definition and 43 LOTUS rows are separate source assertions; 35 distinct taxon/reference
+    pairs, not 43 independent experiments, are represented before the written-occurrence
+    cap. AIDs1259407 and 2322 are database references without supplied paper references.
+    No original publication or assay protocol was inspected.
+  target_ids:
+  - CHEBI:64983
+  evidence_ids:
+  - support-2179-owner
+  - support-2179-capture
+  - support-2179-intake
+  - support-2179-source-plan
+  - support-2179-plan-acceptance
+  - support-2179-history
+  - support-2179-row-mibig_compounds-0
+  - support-2179-row-chebi_structures-0
+  - support-2179-row-lotus_occurrences-0
+  - support-2179-row-lotus_occurrences-1
+  - support-2179-row-lotus_occurrences-2
+  - support-2179-row-lotus_occurrences-3
+  - support-2179-row-lotus_occurrences-4
+  - support-2179-row-lotus_occurrences-5
+  - support-2179-row-lotus_occurrences-6
+  - support-2179-row-lotus_occurrences-7
+  - support-2179-row-lotus_occurrences-8
+  - support-2179-row-lotus_occurrences-9
+  - support-2179-row-lotus_occurrences-10
+  - support-2179-row-lotus_occurrences-11
+  - support-2179-row-lotus_occurrences-12
+  - support-2179-row-lotus_occurrences-13
+  - support-2179-row-lotus_occurrences-14
+  - support-2179-row-lotus_occurrences-15
+  - support-2179-row-lotus_occurrences-16
+  - support-2179-row-lotus_occurrences-17
+  - support-2179-row-lotus_occurrences-18
+  - support-2179-row-lotus_occurrences-19
+  - support-2179-row-lotus_occurrences-20
+  - support-2179-row-lotus_occurrences-21
+  - support-2179-row-lotus_occurrences-22
+  - support-2179-row-lotus_occurrences-23
+  - support-2179-row-lotus_occurrences-24
+  - support-2179-row-lotus_occurrences-25
+  - support-2179-row-lotus_occurrences-26
+  - support-2179-row-lotus_occurrences-27
+  - support-2179-row-lotus_occurrences-28
+  - support-2179-row-lotus_occurrences-29
+  - support-2179-row-lotus_occurrences-30
+  - support-2179-row-lotus_occurrences-31
+  - support-2179-row-lotus_occurrences-32
+  - support-2179-row-lotus_occurrences-33
+  - support-2179-row-lotus_occurrences-34
+  - support-2179-row-lotus_occurrences-35
+  - support-2179-row-lotus_occurrences-36
+  - support-2179-row-lotus_occurrences-37
+  - support-2179-row-lotus_occurrences-38
+  - support-2179-row-lotus_occurrences-39
+  - support-2179-row-lotus_occurrences-40
+  - support-2179-row-lotus_occurrences-41
+  - support-2179-row-lotus_occurrences-42
+  - support-2179-row-pubchem_bioassay-0
+  - support-2179-row-pubchem_bioassay-1
+  dimensions:
+  - name: citation_scope
+    value: MIBiG COMPOUND_EVIDENCE DOI10.1042/bj0550421; LOTUS taxon/reference claims
+      and two AID references distinct
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-history
+    - support-2179-row-mibig_compounds-0
+    - support-2179-row-chebi_structures-0
+    - support-2179-row-lotus_occurrences-0
+    - support-2179-row-lotus_occurrences-1
+    - support-2179-row-lotus_occurrences-2
+    - support-2179-row-lotus_occurrences-3
+    - support-2179-row-lotus_occurrences-4
+    - support-2179-row-lotus_occurrences-5
+    - support-2179-row-lotus_occurrences-6
+    - support-2179-row-lotus_occurrences-7
+    - support-2179-row-lotus_occurrences-8
+    - support-2179-row-lotus_occurrences-9
+    - support-2179-row-lotus_occurrences-10
+    - support-2179-row-lotus_occurrences-11
+    - support-2179-row-lotus_occurrences-12
+    - support-2179-row-lotus_occurrences-13
+    - support-2179-row-lotus_occurrences-14
+    - support-2179-row-lotus_occurrences-15
+    - support-2179-row-lotus_occurrences-16
+    - support-2179-row-lotus_occurrences-17
+    - support-2179-row-lotus_occurrences-18
+    - support-2179-row-lotus_occurrences-19
+    - support-2179-row-lotus_occurrences-20
+    - support-2179-row-lotus_occurrences-21
+    - support-2179-row-lotus_occurrences-22
+    - support-2179-row-lotus_occurrences-23
+    - support-2179-row-lotus_occurrences-24
+    - support-2179-row-lotus_occurrences-25
+    - support-2179-row-lotus_occurrences-26
+    - support-2179-row-lotus_occurrences-27
+    - support-2179-row-lotus_occurrences-28
+    - support-2179-row-lotus_occurrences-29
+    - support-2179-row-lotus_occurrences-30
+    - support-2179-row-lotus_occurrences-31
+    - support-2179-row-lotus_occurrences-32
+    - support-2179-row-lotus_occurrences-33
+    - support-2179-row-lotus_occurrences-34
+    - support-2179-row-lotus_occurrences-35
+    - support-2179-row-lotus_occurrences-36
+    - support-2179-row-lotus_occurrences-37
+    - support-2179-row-lotus_occurrences-38
+    - support-2179-row-lotus_occurrences-39
+    - support-2179-row-lotus_occurrences-40
+    - support-2179-row-lotus_occurrences-41
+    - support-2179-row-lotus_occurrences-42
+    - support-2179-row-pubchem_bioassay-0
+    - support-2179-row-pubchem_bioassay-1
+- assessment_id: support-2179-A5
+  area: scope
+  topic: Occurrence and assay boundaries
+  outcome: supported
+  summary: 'All 43 LOTUS rows were read: 35 distinct taxon/reference pairs, 25 written
+    occurrences and 10 explicitly omitted. Source-name synonyms share cached taxa
+    (including Alternaria tenuis/alternata5599 and Rhizopycnis/Acrocalymma1589764),
+    explaining duplicate pairs without proving publication independence. Cached Maytenus
+    hookeri205464 and source labels are retained rather than silently modernized.
+    Two exact-key PubChem observations are ACTIVE: AID1259407, CCRIS mutagenicity
+    studies (Other; depositor22070), and AID2322, Luminescence Homogenous Primary
+    HTS to Identify Inhibitors of STK33 Activity (Screening; Broad Institute). TOXIN
+    and ENZYME_INHIBITOR are coarse title-derived annotations backed by these written
+    calls. Both retained rows lack activity_name, activity_value_um, target_accession
+    and paper reference; neither supplies potency, direct STK33 binding, selectivity,
+    mechanism or an in-vivo effect. No target accession is invented. Empty BindingDB/sibling
+    frames remain bounded.'
+  target_ids:
+  - CHEBI:64983
+  evidence_ids:
+  - support-2179-owner
+  - support-2179-capture
+  - support-2179-intake
+  - support-2179-source-plan
+  - support-2179-plan-acceptance
+  - support-2179-query-lotus_occurrences
+  - support-2179-query-cyanometdb_occurrences
+  - support-2179-query-pubchem_bioassay
+  - support-2179-query-bindingdb_targets
+  - support-2179-query-antibioticmech_inchikeys
+  - support-2179-query-chebi_origins
+  - support-2179-row-lotus_occurrences-0
+  - support-2179-row-lotus_occurrences-1
+  - support-2179-row-lotus_occurrences-2
+  - support-2179-row-lotus_occurrences-3
+  - support-2179-row-lotus_occurrences-4
+  - support-2179-row-lotus_occurrences-5
+  - support-2179-row-lotus_occurrences-6
+  - support-2179-row-lotus_occurrences-7
+  - support-2179-row-lotus_occurrences-8
+  - support-2179-row-lotus_occurrences-9
+  - support-2179-row-lotus_occurrences-10
+  - support-2179-row-lotus_occurrences-11
+  - support-2179-row-lotus_occurrences-12
+  - support-2179-row-lotus_occurrences-13
+  - support-2179-row-lotus_occurrences-14
+  - support-2179-row-lotus_occurrences-15
+  - support-2179-row-lotus_occurrences-16
+  - support-2179-row-lotus_occurrences-17
+  - support-2179-row-lotus_occurrences-18
+  - support-2179-row-lotus_occurrences-19
+  - support-2179-row-lotus_occurrences-20
+  - support-2179-row-lotus_occurrences-21
+  - support-2179-row-lotus_occurrences-22
+  - support-2179-row-lotus_occurrences-23
+  - support-2179-row-lotus_occurrences-24
+  - support-2179-row-lotus_occurrences-25
+  - support-2179-row-lotus_occurrences-26
+  - support-2179-row-lotus_occurrences-27
+  - support-2179-row-lotus_occurrences-28
+  - support-2179-row-lotus_occurrences-29
+  - support-2179-row-lotus_occurrences-30
+  - support-2179-row-lotus_occurrences-31
+  - support-2179-row-lotus_occurrences-32
+  - support-2179-row-lotus_occurrences-33
+  - support-2179-row-lotus_occurrences-34
+  - support-2179-row-lotus_occurrences-35
+  - support-2179-row-lotus_occurrences-36
+  - support-2179-row-lotus_occurrences-37
+  - support-2179-row-lotus_occurrences-38
+  - support-2179-row-lotus_occurrences-39
+  - support-2179-row-lotus_occurrences-40
+  - support-2179-row-lotus_occurrences-41
+  - support-2179-row-lotus_occurrences-42
+  - support-2179-row-pubchem_bioassay-0
+  - support-2179-row-pubchem_bioassay-1
+  - support-2179-activity-method
+  - support-2179-activity-schema
+  - support-2179-row-chebi_structures-0
+  - support-2179-taxon-5599
+  - support-2179-taxon-1589764
+  - support-2179-taxon-205464
+  dimensions:
+  - name: occurrence_scope
+    value: 'All 43 LOTUS rows were read: 35 distinct taxon/reference pairs, 25 written
+      occurrences and 10 explicitly omitted. Source-name synonyms share cached taxa
+      (including Alternaria tenuis/alternata5599 and Rhizopycnis/Acrocalymma1589764),
+      explaining duplicate pairs without proving publication independence. Cached
+      Maytenus hookeri205464 and source labels are retained rather than silently modernized.'
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-query-lotus_occurrences
+    - support-2179-query-cyanometdb_occurrences
+    - support-2179-query-pubchem_bioassay
+    - support-2179-query-bindingdb_targets
+    - support-2179-query-antibioticmech_inchikeys
+    - support-2179-query-chebi_origins
+    - support-2179-row-lotus_occurrences-0
+    - support-2179-row-lotus_occurrences-1
+    - support-2179-row-lotus_occurrences-2
+    - support-2179-row-lotus_occurrences-3
+    - support-2179-row-lotus_occurrences-4
+    - support-2179-row-lotus_occurrences-5
+    - support-2179-row-lotus_occurrences-6
+    - support-2179-row-lotus_occurrences-7
+    - support-2179-row-lotus_occurrences-8
+    - support-2179-row-lotus_occurrences-9
+    - support-2179-row-lotus_occurrences-10
+    - support-2179-row-lotus_occurrences-11
+    - support-2179-row-lotus_occurrences-12
+    - support-2179-row-lotus_occurrences-13
+    - support-2179-row-lotus_occurrences-14
+    - support-2179-row-lotus_occurrences-15
+    - support-2179-row-lotus_occurrences-16
+    - support-2179-row-lotus_occurrences-17
+    - support-2179-row-lotus_occurrences-18
+    - support-2179-row-lotus_occurrences-19
+    - support-2179-row-lotus_occurrences-20
+    - support-2179-row-lotus_occurrences-21
+    - support-2179-row-lotus_occurrences-22
+    - support-2179-row-lotus_occurrences-23
+    - support-2179-row-lotus_occurrences-24
+    - support-2179-row-lotus_occurrences-25
+    - support-2179-row-lotus_occurrences-26
+    - support-2179-row-lotus_occurrences-27
+    - support-2179-row-lotus_occurrences-28
+    - support-2179-row-lotus_occurrences-29
+    - support-2179-row-lotus_occurrences-30
+    - support-2179-row-lotus_occurrences-31
+    - support-2179-row-lotus_occurrences-32
+    - support-2179-row-lotus_occurrences-33
+    - support-2179-row-lotus_occurrences-34
+    - support-2179-row-lotus_occurrences-35
+    - support-2179-row-lotus_occurrences-36
+    - support-2179-row-lotus_occurrences-37
+    - support-2179-row-lotus_occurrences-38
+    - support-2179-row-lotus_occurrences-39
+    - support-2179-row-lotus_occurrences-40
+    - support-2179-row-lotus_occurrences-41
+    - support-2179-row-lotus_occurrences-42
+    - support-2179-row-pubchem_bioassay-0
+    - support-2179-row-pubchem_bioassay-1
+    - support-2179-activity-method
+    - support-2179-activity-schema
+    - support-2179-row-chebi_structures-0
+    - support-2179-taxon-5599
+    - support-2179-taxon-1589764
+    - support-2179-taxon-205464
+  - name: assay_scope
+    value: Two ACTIVE written calls; no quantitative endpoint, accession or direct
+      mechanism proof
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-query-lotus_occurrences
+    - support-2179-query-cyanometdb_occurrences
+    - support-2179-query-pubchem_bioassay
+    - support-2179-query-bindingdb_targets
+    - support-2179-query-antibioticmech_inchikeys
+    - support-2179-query-chebi_origins
+    - support-2179-row-lotus_occurrences-0
+    - support-2179-row-lotus_occurrences-1
+    - support-2179-row-lotus_occurrences-2
+    - support-2179-row-lotus_occurrences-3
+    - support-2179-row-lotus_occurrences-4
+    - support-2179-row-lotus_occurrences-5
+    - support-2179-row-lotus_occurrences-6
+    - support-2179-row-lotus_occurrences-7
+    - support-2179-row-lotus_occurrences-8
+    - support-2179-row-lotus_occurrences-9
+    - support-2179-row-lotus_occurrences-10
+    - support-2179-row-lotus_occurrences-11
+    - support-2179-row-lotus_occurrences-12
+    - support-2179-row-lotus_occurrences-13
+    - support-2179-row-lotus_occurrences-14
+    - support-2179-row-lotus_occurrences-15
+    - support-2179-row-lotus_occurrences-16
+    - support-2179-row-lotus_occurrences-17
+    - support-2179-row-lotus_occurrences-18
+    - support-2179-row-lotus_occurrences-19
+    - support-2179-row-lotus_occurrences-20
+    - support-2179-row-lotus_occurrences-21
+    - support-2179-row-lotus_occurrences-22
+    - support-2179-row-lotus_occurrences-23
+    - support-2179-row-lotus_occurrences-24
+    - support-2179-row-lotus_occurrences-25
+    - support-2179-row-lotus_occurrences-26
+    - support-2179-row-lotus_occurrences-27
+    - support-2179-row-lotus_occurrences-28
+    - support-2179-row-lotus_occurrences-29
+    - support-2179-row-lotus_occurrences-30
+    - support-2179-row-lotus_occurrences-31
+    - support-2179-row-lotus_occurrences-32
+    - support-2179-row-lotus_occurrences-33
+    - support-2179-row-lotus_occurrences-34
+    - support-2179-row-lotus_occurrences-35
+    - support-2179-row-lotus_occurrences-36
+    - support-2179-row-lotus_occurrences-37
+    - support-2179-row-lotus_occurrences-38
+    - support-2179-row-lotus_occurrences-39
+    - support-2179-row-lotus_occurrences-40
+    - support-2179-row-lotus_occurrences-41
+    - support-2179-row-lotus_occurrences-42
+    - support-2179-row-pubchem_bioassay-0
+    - support-2179-row-pubchem_bioassay-1
+    - support-2179-activity-method
+    - support-2179-activity-schema
+    - support-2179-row-chebi_structures-0
+    - support-2179-taxon-5599
+    - support-2179-taxon-1589764
+    - support-2179-taxon-205464
+- assessment_id: support-2179-A6
+  area: other
+  topic: Computed classification and topology applicability
+  outcome: supported
+  summary: NPClassifier reports Shikimates and Phenylpropanoids / Coumarins / Isocoumarins,
+    is_glycoside=false (npclassifier.gnps2.org@2026-09-07). The isocoumarin/Coumarins
+    model is a coarse classification compatible with a benzochromenone-containing
+    topology; model filing does not replace the PKS source class or prove biosynthesis.
+    Three fused six-membered rings comprise two aromatic carbon rings and an aromaticized
+    cyclic ester ring. The SMILES tables show carbonyl C13=O14, ring oxygen O15, methyl
+    C0 and three phenolic hydroxyls O16/O17/O18 attached to C11/C9/C3. The narrow
+    ester motif list is empty because the ring C–O bonds are aromatic; the ring/bond
+    tables still show the cyclic ester. No saturated C5O candidate sugar ring is present.
+  target_ids:
+  - CHEBI:64983
+  evidence_ids:
+  - support-2179-owner
+  - support-2179-capture
+  - support-2179-intake
+  - support-2179-source-plan
+  - support-2179-plan-acceptance
+  - support-2179-topology
+  - support-2179-chemistry
+  - support-2179-row-npclassifier-0
+  - support-2179-row-mibig_compounds-0
+  dimensions:
+  - name: computed_classification
+    value: Shikimates and Phenylpropanoids / Coumarins / Isocoumarins; glycoside=false;
+      npclassifier.gnps2.org@2026-09-07
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-topology
+    - support-2179-chemistry
+    - support-2179-row-npclassifier-0
+    - support-2179-row-mibig_compounds-0
+- assessment_id: support-2179-A7
+  area: completeness
+  topic: Partial completion and maintained ownership
+  outcome: supported
+  summary: All seven core areas and twelve dimensions were assessed against the actual
+    intake, complete raw/history, retained source rows/cache and both saved chemical
+    forms. Five local commands passed; full QC/OAK and external verification remain
+    unavailable. This owner declares no mechanism roots/components and needs no maintained
+    reader. The pinned source assertions and local structure are positively supported
+    within that scope; no concrete contradiction requiring a finding was established.
+    SEEDED status/history and all source records remain unchanged.
+  target_ids:
+  - CHEBI:64983
+  evidence_ids:
+  - support-2179-owner
+  - support-2179-capture
+  - support-2179-intake
+  - support-2179-source-plan
+  - support-2179-plan-acceptance
+  - support-2179-history
+  - support-2179-direct-contexts
+  - support-2179-intake-acceptance
+  - support-2179-native-acceptance
+  - support-2179-diagnostic-acceptance
+  - support-2179-source-ownership
+  dimensions:
+  - name: review_completion
+    value: partial; QC/OAK/external unavailable; native source/status/history unchanged
+    definition: Exact inspected scope; retained assertions, computed facts and fresh
+      experimental verification remain distinct.
+    evidence_ids:
+    - support-2179-owner
+    - support-2179-capture
+    - support-2179-intake
+    - support-2179-source-plan
+    - support-2179-plan-acceptance
+    - support-2179-history
+    - support-2179-direct-contexts
+    - support-2179-intake-acceptance
+    - support-2179-native-acceptance
+    - support-2179-diagnostic-acceptance
+    - support-2179-source-ownership
+findings: []
+actions: []
+limitations:
+- No external requests, original-paper reading or live ontology/taxonomy/accession/sibling
+  verification. Imported identifiers and quotations retain their source scope.
+- All ten saved comparisons agree, but full_graph_identity_established remains false.
+  The two original global stereo warnings are unassigned; natural identity and unmeasured
+  stereochemistry are not proved.
+- Full QC/OAK remain unavailable. Local gate success and selected queue rows do not
+  establish scientific completeness.
+- Empty retained query frames apply only to the exact pinned key/query; no inactivity,
+  literature absence or congener-transfer inference. Curation reading is limited to
+  the admitted seven baseline tables plus the assay exclusion table for this owner.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- Whole selected raw/history and both complete saved molecular tables personally read.
+  BGC owns collector/composer and other source partitions; Support owns this target's
+  retained payloads and relevant cached stanzas.
+- No source, status or history edits, additional molecular/YAML parses, maintained-reader/gate/assembly/canonical
+  invocation or outbound activity.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-218
+```
