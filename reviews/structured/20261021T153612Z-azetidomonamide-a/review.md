@@ -1,0 +1,1295 @@
+# azetidomonamide A: correct the B-specific citation and experimental context
+
+- Review: 20261021T153612Z-azetidomonamide-a
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T15:23:07.172100Z
+- Finished UTC: 2026-10-21T15:36:12.769353Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The stored A structure and native production in PAO1-derived AB16.2 are supported. The producer/locus citation and one occurrence incorrectly point to a study of B and its proline analogue; route those claims to the compound-specific Hong study and preserve the tested strain context. The original Hong ECD and construct supplement remains unavailable.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 96, batch 010, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 144 of 3116 current records had campaign coverage and 2972 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-2f56aeb70a | data/natural_products/alkaloids/azetidomonamide-a.yaml | generated | azetidomonamide A |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-2f56aeb70a | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-2f56aeb70a | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-2f56aeb70a | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-2f56aeb70a | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-2f56aeb70a | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-2f56aeb70a | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and referenced-component scope | passed | True | naturalproductmech:mibig-2f56aeb70a | The entire owner and all matching local source rows were read. The resolved view confirms the empty component-reference set; all formal input hashes and fresh intake/strict success receipts agree. |
+| Exact native product and locus primary-source support | failed | True | naturalproductmech:mibig-2f56aeb70a | A has a confirmed compound-specific citation and occurrence routing error. |
+| Original Hong construct and ECD supporting-information access | unavailable | True | naturalproductmech:mibig-2f56aeb70a | Full main is positive; original supplemental construct/ECD details were not recovered. This limits independent verification and is not a negative experimental result. |
+| Exact PAO1 accession and interval bridge | passed | True | naturalproductmech:mibig-2f56aeb70a | Exact source window and all eleven feature boundaries inspected; no unsupported whole-stock or construct equality. |
+| Optional later full-main access | unavailable | False | naturalproductmech:mibig-2f56aeb70a | Official SI is inspected; the full 2022 main was not recovered, so no later enzyme result is silently transferred. |
+| Internal exact graph and provenance consistency | passed | True | naturalproductmech:mibig-2f56aeb70a | SMILES, Standard InChI, key, formula/charge, source concepts and literal current xrefs are consistent at the stored resolution. This check does not independently prove all experimental stereochemistry. |
+| Primary A depiction versus owner | passed | True | naturalproductmech:mibig-2f56aeb70a | The original drawing reproduces 5R and E, not merely the elemental connectivity. |
+| Original Hong ECD evidence verification | unavailable | True | naturalproductmech:mibig-2f56aeb70a | Original ECD curves and computation details remain inaccessible; main-body assignment and drawing are preserved as positive evidence. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The dated seed events and retained SEEDED status document generated provenance. This review adds no native curation event or status promotion.
+
+### Present optional assertions and enrichment limits
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The complete owner contains no structured pathway, causal graph, molecular target, bioactivity, clinical status, application, cross-corpus relationship or discussion. Optional enrichment is separate from correcting present claims; compound names and computed classes do not establish a mechanism or activity.
+
+### Computed filing and returned class scope
+
+representation: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The owner reproduces its exact-key NPClassifier result, including model version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every superclass/class label (including the empty returned sets where applicable), and false glycoside flag. These remain computed predictions, not experiments proving precursor use, natural origin or stereochemistry. BGC classes retain their separate MIBiG source and biological assessment.
+
+### Matching producer transcriptomic resources
+
+completeness: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The catalogue contains two P. aeruginosa datasets, making exact PAO1 locus-tag queries appropriate. Their retained query/member-summary outputs and original receipts are assessed in the scientific section. Module membership is expression context and does not establish metabolite production, direct regulator binding, identity of AB16.2 or a recombinant protein construct.
+
+### Literal LOTUS organism-identifier routing
+
+provenance: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+Every literal organism entity in the matching LOTUS rows resolves to its retained taxon and NCBI identifier. The primary-source assessment independently addresses exact compound occurrence, native producer, collection host and experimental strain.
+
+### Natural occurrence and source-specific culture scope
+
+evidence: concern. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+Hong supports species-level A occurrence from a native PAO1-derived culture. The Org. Lett. occurrence triple and producer/locus citation conflate B or its proline analogue with A; retain the positive Hong occurrence.
+
+### Exact product, native background and evidence tier
+
+evidence: concern. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+Retain Knock-out studies and CLUSTER_DEMONSTRATED with the correct Hong citation and explicit PAO1-derived AB16.2 context; the current first-reference routing does not support A.
+
+### Reference locus and source-version meaning
+
+grounding: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The current MIBiG interval is the exact PAO1 reference window and maps to eleven native features. No complete tagged construct or AB16.2 whole-genome identity is asserted; NRPS is a supported pathway class.
+
+### Bounded additional mechanism and expression evidence
+
+completeness: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The existing sparse owner has no mandatory optional-mechanism deficit. Later native promoter engineering and expression modules are available context; missing individual enzyme graphs are not findings. Phenotype differences between mutants are not assigned to purified A or B without compound-specific tests.
+
+### Classifier provenance and filing
+
+representation: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The complete exact-key NPClassifier row reproduces the stored Alkaloids filing and all supplied superclass/class labels; empty finer classifications are preserved. This is model-derived classification, not evidence of biological origin.
+
+### Exact 5R and E primary assignment
+
+identity: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The original Hong A drawing and stated 5R assignment agree with the complete stored graph; current MIBiG, NPAtlas, PubChem, Wikidata and ChEBI graphs agree at full and fixed-H levels. Patteson compound 1 is B/azabicyclene and does not independently support an A assignment.
+
+### Two-star current graph and classification scope
+
+grounding: supported. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+CHEBI:220634 is two-star and therefore not eligible exact grounding. Its organosulfur-heterocycle relationship is inconsistent with the sulfur-free formula and is not imported into this record; the retained Alkaloids model assignment and empty finer classifications are unchanged.
+
+### Reported 5R versus original ECD verification
+
+evidence: unknown. Targets: naturalproductmech:mibig-2f56aeb70a.
+
+The complete main reports 5R, but unavailable original SI prevents detailed independent assessment of the ECD evidence. This is an access limitation rather than evidence for an opposite hand.
+
+## Findings
+
+### S096-F-CITATION: A inherits a B-specific paper and loses the tested AB16.2 context
+
+major / open / confirmed; issue key: mibig-bgc0002037-compound1-b-specific-citation-and-occurrence.
+
+PMID 31247735 studies azabicyclene/B and its proline analogue; it does not report the exact A endpoint. It is nevertheless the sole producer/locus citation and an additional A occurrence DOI. Hong directly supports A in selected PAO1-derived AB16.2, including loss and complementation. Correct routing and strain context while preserving native A occurrence and the supported genetic method.
+
+## Recommended Actions And Acceptance Checks
+
+### S096-ACT-CITATION
+
+For source_id BGC0002037:1, expected_source_row_sha256=596a88e542dd5ecf6617f6c40a15c04ed70e028c075e0b01fc924faa05f5abdc, add a consumed claim-reference decision with producer_reference and locus_reference DOI:10.1002/anie.201809981, retaining original PMID:31247735 in raw provenance. Add the same full-row-pinned producer-strain qualification as PAO1-derived AB16.2, with rationale distinguishing the PAO1 reference accession from the selected experimental derivative. Exclude only LOTUS triple (AIECUUXSLHXKBY-UFUPEUMYSA-N, NCBITaxon:287, 10.1021/ACS.ORGLETT.9B01383) at expected_source_row_sha256=33aeb8ce596a597fb4a7e5329ced22198591eaa278b5a7c0bc53d74b9996df8c through lotus_occurrence_exclusions.tsv. Preserve the Hong triple and current genetic methods/grades. This is an implemented route; if combined with a chemistry correction, first extend and test the current fail-closed composition contract rather than bypassing it.
+
+- Exact complete source rows, including empty values, must match their SHA256 guards; duplicate/missing/drifted rows fail closed.
+- Regenerated A cites Hong for producer and locus, explicitly distinguishes AB16.2 from unmodified PAO1, retains Knock-out studies and retains the supported species occurrence.
+- Only the exact Org. Lett. A triple is withheld; preserve raw upstream assertion and exclude no B occurrence.
+- No purified precursor assay becomes a final-product assay and no universal per-gene necessity is inferred.
+- Test any structure/citation/strain composition explicitly before authorized regeneration; run documented strict, reproduction, corpus and QC gates in that separate curation.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R096-OWNER | data/natural_products/alkaloids/azetidomonamide-a.yaml; Complete owner, every assertion, inline graph, discussion and history event | supports | Root read the complete azetidomonamide A owner after its individual intake. It contains 2 occurrence, 1 producer and 1 cluster assertions. Referenced components are empty. Present optional fields: none. This scope is based on complete parsed contents, not a filtered search miss. |
+| R096-LOCAL-SOURCES | /private/tmp/npm-review-work/096/local-sources.json; Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row and complete resolved owner | context_only | Root read every matching source row. The native resolved owner equals the complete parsed raw YAML. Imported assertions and deterministic joins remain distinct from independently inspected primary experiments. |
+| R096-IMODULON-DATASETS | /private/tmp/npm-review-work/010/imodulon-datasets.txt; Complete 28-row dataset catalogue; original receipt 010/imodulon-context-receipts.json | context_only | The catalogue was retrieved on 2026-10-21 at 07:21:15 UTC and is reused with that original time. It includes P. aeruginosa precise364/precise411 and S. albidoflavus/S. coelicolor datasets. It has no named Stigmatella, Rhodococcus, Herpetosiphon or S. mirabilis dataset, and no identified NA04227 dataset. Species or genus matching alone does not establish exact stock, gene, locus or metabolite evidence. |
+| R096-Q31856 | https://www.wikidata.org/wiki/Special:EntityData/Q31856.json; Exact organism entity, scientific name and P685 NCBI Taxonomy mapping | context_only | Literal entity Q31856 resolves as Pseudomonas aeruginosa, P685 287, matching every associated local LOTUS row. This verifies identifier routing only, not compound occurrence, experimental strain identity or historical taxonomic revisions. |
+| S096-E-LOCAL | data/natural_products/alkaloids/azetidomonamide-a.yaml; Complete owner; resolved/components and every matching local source row | supports | Exact A row BGC0002037:1, version 3, raw-row SHA256 596a88e542dd5ecf6617f6c40a15c04ed70e028c075e0b01fc924faa05f5abdc. Producer PAO1 and locus AE004091.2:3729471..3746067 carry Knock-out studies, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED with PMID 31247735. No inline or referenced mechanism components are present. |
+| S096-E-HONG | https://polytechnique.hal.science/hal-02096769/document; Complete scientific main re-read; Figures 1 and 2, isolation, feeding, AzeJ and phenotype paragraphs | supports | The complete scientific main identifies A as compound 1, isolated and structurally characterized from AB16.2, a spontaneous PAO1 derivative selected at 16 mg/L colistin. Both A and B are absent in the PA3327-deficient comparison and after azeJ/PA3335 inactivation; attB::PA3335 complementation restores both at lower abundance. AZC feeding restores B only and suppresses A. Recombinant AzeJ produces the AZC building block, not final A/B; AzeB domain assays measure substrate activation. These native-lineage genetic results support the locus but require the selected-strain context. The main claims 5R A and 4R B by rotation/ECD comparison, whose original detailed SI remains unavailable. |
+| S096-E-PATTESON | https://par.nsf.gov/servlets/purl/10162901; Complete main; Figures 1–4 and printed pp. 4955–4958; exact product numbering and polarity qualification | supports | The complete main explicitly identifies azabicyclene 1 as azetidomonamide B; its product 2 is a proline analogue, not A. PAO1 cultures contain B at lower basal levels and more after AHL supplementation. B/C/F/I insertion mutants lose B; D/G/H/J reduce it; E increases it. The authors explicitly cannot exclude insertion polarity. Purified His6-AzeB forms pyridinone intermediates 3/4, not final A or B; 3 has NMR support, 4 HRMS/MS without isolated NMR. No exact A isolation or A-specific genetic endpoint is established by this source. |
+| S096-E-PATTESON-SI | https://ndownloader.figshare.com/files/15592466; Official SI S3–S6, S9/Table S2 and Figure S11; original complete-source preparation plus targeted re-read | supports | Official SI S3–S6 specifies PAO1, lacZ insertions in B/C/D/E/F/H/I/J and phoA in G; short-extension PCR verifies the insertion comparison, not whole-stock sequence identity or a nonpolar deletion. Cultures use 6 µM 3-oxo-C12-AHL and 30 µM C4-AHL at 37 °C for 14 h. Native B is purified and NMR-characterized. PAO1 azeB DNA is cloned into pLIC-His for E. coli BL21-Gold(DE3); the isolated enzyme assay stops at intermediates. The G label differs from the main figure, so the explicit Methods are retained. S9/Table S2 B crotonyl couplings 15.3/15.2 Hz support E geometry; the main leaves the ring absolute hand undetermined. |
+| S096-E-ERNST-SI | https://ndownloader.figshare.com/files/34875104; Original SI pp. 3–5 and 8, Table S1 p. 35; retained original p. 8 render | supports | Original 2022 SI pp. 3–5, 8 and Table S1 describes PAO1azeind, made by inserting rhaRS/PrhaB 26 bp upstream of PA3327, with PCR/sequencing and azeB RT-qPCR. This is native promoter engineering, separate from AB16.2, insertion-library genotypes and E. coli recombinant-protein hosts. A and B are numbered 3 and 4; original p. 8 gives A crotonyl J 15.3/15.3 Hz and B 15.3/15.4 Hz. The unavailable full main is not used to certify every later enzyme reaction. |
+| S096-E-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0002037.3/annotations.json; Complete current annotation; compounds, locus, taxonomy and legacy references | supports | Current version 3 remains active/questionable/completeness unknown. It lists both final compounds under one locus, PAO1 taxon 208964 and both 2019 references. The entry-level ordering does not make the first paper compound-specific proof for A. NRPS classification is compatible with the experimentally studied bimodular AzeB. |
+| S096-E-LOCUS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=AE004091.2&amp;seq_start=3729471&amp;seq_stop=3746067&amp;rettype=gbwithparts&amp;retmode=text; Header, source and all 11 CDS feature locations; retained locus-map.json | supports | The exact reference window is 16,597 bp and explicitly PAO1/taxon 208964. It spans PA3326–PA3336; AzeB/PA3327=AAG06715.1, AzeJ/PA3335=AAG06723.1, AzeK/PA3336=AAG06724.1. Hong uses ten genes through PA3335; Patteson includes PA3336. The reference deposit is not an independently sequenced AB16.2 stock, and interval membership does not prove every gene necessary. |
+| S096-E-IMODULON | https://imodulondb.org; Structured runner summaries p_aeruginosa/precise364/88 and p_aeruginosa/precise411/59; exact PA3326–PA3336 member rows | context_only | Both components contain the eleven PA locus tags with STRING taxon 208964. precise411/59 additionally contains phzB1/PA4211; its aggregate regulator labels cannot be transferred to the aze genes. These modules supply expression context, not final-product chemistry, AB16.2 stock sequence identity or native necessity. |
+| S096-E-ACCESS | https://doi.org/10.1002/anie.201809981; Retained bounded original Hong SI attempts and Ernst full-main attempts | context_only | Hong full main is available, but detailed original SI, ECD parameters and all construct protocols remain unavailable. The 2022 official SI is available, its full main is not. No absence of uninspected experimental results is inferred. |
+| S096-E-CONSUMERS | scripts/seed_from_sources.py; Source loading, claim-reference and strain application; full producer_strains.py, claim_references.py and lotus_exclusions.py contracts | supports | The implemented claim-reference and strain tables pin the entire original raw row. Strain qualification changes context only, not taxon or grades. LOTUS exclusions pin the exact key/taxon/DOI and entire triple row. Claim-reference and strain application reject structure_correction_note, requiring tested composition before any chemistry repair. The ignored-inclusive search found no existing matching maintained correction in the searched scope. |
+| S096-E-SEARCH | /private/tmp/npm-review-work/096/science-overlay-search.json; Actual rg --no-ignore --hidden search receipt | context_only | Ignored-inclusive exact accession, names and full-key prefixes in all maintained curation tables, scripts and curate consumers; no claim of absence elsewhere. |
+| C096-OWNER | /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/azetidomonamide-a.yaml; Complete owner, literal xrefs, definition, source concepts, classification and discussion/history | supports | Owner and resolved packet are identical. Intake chemistry gives AIECUUXSLHXKBY-UFUPEUMYSA-N, formula C11H12N2O4, charge 0 and centres [[10, 'R']]. The evidence scope here is chemical identity and provenance; biology and causal claims are assessed separately. |
+| C096-RAW | /private/tmp/npm-review-work/096/local-sources.json; All matching complete raw MIBiG, ChEBI, LOTUS and classifier rows | supports | All 1 MIBiG rows, 2 LOTUS rows, 0 eligible ChEBI rows and 1 classifier rows were read. Complete parsed row SHA256 values and reproduced source-concept IDs are retained in the per-record comparison. |
+| C096-COMPARISON | /private/tmp/npm-review-work/shared-next-batch010/chemistry-first-seven/chemical-comparison.json; azetidomonamide A complete Standard and fixed-H graph comparison | supports | Raw/current BGC0002037.3 compound 1, NPAtlas NPA032933, PubChem 169492152 and two-star CHEBI220634 JSON/MOL agree Standard InChI and fixed-H; source 5R centre and crotonyl E are assigned. |
+| C096-AUTH0 | https://mibig.secondarymetabolites.org/repository/BGC0002037.3/annotations.json; current BGC0002037; compounds[0].structure | supports | Valid parsed representation: True. Key AIECUUXSLHXKBY-UFUPEUMYSA-N; formula C11H12N2O4; charge 0; tetrahedral centres [[10, 'R']]. |
+| C096-AUTH1 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/AIECUUXSLHXKBY-UFUPEUMYSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; PubChem 169492152; PropertyTable.Properties[0].SMILES | supports | Valid parsed representation: True. Key AIECUUXSLHXKBY-UFUPEUMYSA-N; formula C11H12N2O4; charge 0; tetrahedral centres [[10, 'R']]. |
+| C096-AUTH2 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/220634/; ChEBI JSON CHEBI:220634; default_structure.smiles | supports | Valid parsed representation: True. Key AIECUUXSLHXKBY-UFUPEUMYSA-N; formula C11H12N2O4; charge 0; tetrahedral centres [[10, 'R']]. |
+| C096-AUTH3 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/220634/; ChEBI MOL 220634; official MOL | supports | Valid parsed representation: True. Key AIECUUXSLHXKBY-UFUPEUMYSA-N; formula C11H12N2O4; charge 0; tetrahedral centres [[10, 'R']]. |
+| C096-GROUNDING-CODE | /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py; mint_identifier, choose_pathway, grouping and exact-key ChEBI grounding; source_concepts emission | supports | Source-concept identifiers hash source and accession:compound index, not labels or chemical keys. A unique eligible exact-key ChEBI row grounds EXACT; absent eligible rows retain the minted source identifier. Classification is joined by exact key. |
+| C096-ELIGIBILITY-CODE | /private/tmp/npm-record-reviews-20261021/scripts/extract_chebi.py; MIN_STARS and extract_compounds status/stars filter | supports | Only the eligible three-star projection enters exact grounding; a currently accessible two-star record is not an asserted eligible authority. |
+| C096-WIKIDATA-Q113958880 | https://www.wikidata.org/wiki/Special:EntityData/Q113958880.json; Current P235, P234, P2017 and literal chemical entity identity | supports | Literal LOTUS chemical entity Q113958880 resolves to the stored full key; every retained isomeric SMILES reproduces the same Standard key and fixed-H graph. Canonical stereo-free SMILES is not substituted for the isomeric property. |
+| C096-OWNER-COMPARISON | /private/tmp/npm-review-work/096/chemistry-owner-comparison.json; Exact owner/current authority linkage; independently parsed Wikidata and reconstructed source-concept hashes | supports | Recomputed all literal chemical Wikidata isomeric graphs and 1 accession:index source concepts against this owner. Full row pins and ignored-inclusive local search are recorded. |
+| C096-PRIMARY | https://polytechnique.hal.science/hal-02096769/document; Hong 2019 accepted manuscript, complete structural paragraph and original Figure 1b | supports | Hong names azetidomonamide A compound 1 and reports 5R from specific rotation and measured/calculated ECD. The original drawing shows the same 5R ring centre and E crotonyl chain as the owner; it is distinct from B compound 2. The valid PDF is retained under the original .html filename. |
+| C096-PRIMARY-GRAPH | /private/tmp/npm-review-work/shared-next-batch010/chemistry-first-seven/primary-transcription.json; azetidomonamide-A-Hong2019 numbered independent source drawing | supports | Original atom/bond/wedge transcription gives AIECUUXSLHXKBY-UFUPEUMYSA-N, source C5 R and crotonyl E. No authority stereotags were used to construct this drawing model. |
+| C096-PIXEL-QA | /private/tmp/npm-review-work/shared-next-batch010/review-support/primary-transcription-qa/independent-primary-transcription-qa.json; Hong A manual CIP and crotonyl orientation | supports | Independent manual QA agrees: OH &gt; fused C4 &gt; C6 &gt; H gives 5R, and the crotonyl carbon substituents lie on opposite sides of the C=C bond. |
+| C096-ECD-ACCESS | https://onlinelibrary.wiley.com/doi/suppl/10.1002/anie.201809981/supinfo/anie201809981-sup-0001-misc_information.pdf; Actual publisher-linked original supplementary PDF request | context_only | The original Hong ECD supplement was unavailable on the bounded publisher-linked route. Main-body assignment is positive, but original ECD curves, conformer treatment and calculation settings were not inspected. |
+
+## Limits And Additional Notes
+
+- The review assesses current assertions and concrete evidence gaps. It does not claim exhaustive discovery of every later study or require every optional mechanism for review coverage.
+- Original Hong ECD/construct SI remains unavailable despite retained bounded routes; the positive main-body results remain usable at their explicit scope.
+- The 2022 full main is unavailable; inspected SI is not a substitute for every main-body enzyme result.
+- The PAO1 accession is a reference-sequence bridge, not an independent genome comparison of AB16.2, every insertion stock or a recombinant fusion.
+- Chemistry/xref assessments are delivered separately; no optional pathway completion is required by this packet.
+- Authority agreement is not independent experimental proof of 5R. No alternate absolute hand or constitutional correction is proposed; original Hong ECD SI is unavailable and the separate biological citation-routing audit is not replaced by this chemical agreement.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T153612Z-azetidomonamide-a
+title: 'azetidomonamide A: correct the B-specific citation and experimental context'
+started_at: '2026-10-21T15:23:07.172100Z'
+finished_at: '2026-10-21T15:36:12.769353Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The stored A structure and native production in PAO1-derived AB16.2 are supported.
+  The producer/locus citation and one occurrence incorrectly point to a study of B
+  and its proline analogue; route those claims to the compound-specific Hong study
+  and preserve the tested strain context. The original Hong ECD and construct supplement
+  remains unavailable.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/azetidomonamide-a.yaml
+    sha256: 6334e8ad4c562cc56894444389bf44883128e2d49f7ef67bb97cac60d9f4b70f
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/grading.py
+    sha256: ece54c4a2c0803f034ac59de51b1006cf79ea8d6b6256d75757d4adb88ea9630
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 96, batch 010, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 144 of 3116 current
+    records had campaign coverage and 2972 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+targets:
+- target_id: naturalproductmech:mibig-2f56aeb70a
+  path: data/natural_products/alkaloids/azetidomonamide-a.yaml
+  label: azetidomonamide A
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  command: just validate-strict data/natural_products/alkaloids/azetidomonamide-a.yaml
+    --out /private/tmp/npm-review-work/096/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T15:23:08.600751Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch010 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch010 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch010. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch010
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch010.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+- check_id: R096-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: The entire owner and all matching local source rows were read. The resolved
+    view confirms the empty component-reference set; all formal input hashes and fresh
+    intake/strict success receipts agree.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - R096-OWNER
+  - R096-LOCAL-SOURCES
+- check_id: S096-C-PRIMARY
+  name: Exact native product and locus primary-source support
+  status: failed
+  required: true
+  summary: A has a confirmed compound-specific citation and occurrence routing error.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - S096-E-HONG
+  - S096-E-PATTESON
+  - S096-E-PATTESON-SI
+- check_id: S096-C-HONG-SI
+  name: Original Hong construct and ECD supporting-information access
+  status: unavailable
+  required: true
+  summary: Full main is positive; original supplemental construct/ECD details were
+    not recovered. This limits independent verification and is not a negative experimental
+    result.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - S096-E-ACCESS
+  - S096-E-HONG
+- check_id: S096-C-LOCUS
+  name: Exact PAO1 accession and interval bridge
+  status: passed
+  required: true
+  summary: Exact source window and all eleven feature boundaries inspected; no unsupported
+    whole-stock or construct equality.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - S096-E-LOCUS
+  - S096-E-MIBIG
+- check_id: S096-C-2022
+  name: Optional later full-main access
+  status: unavailable
+  required: false
+  summary: Official SI is inspected; the full 2022 main was not recovered, so no later
+    enzyme result is silently transferred.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - S096-E-ERNST-SI
+  - S096-E-ACCESS
+- check_id: C096-INTERNAL
+  name: Internal exact graph and provenance consistency
+  status: passed
+  required: true
+  summary: SMILES, Standard InChI, key, formula/charge, source concepts and literal
+    current xrefs are consistent at the stored resolution. This check does not independently
+    prove all experimental stereochemistry.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - C096-OWNER
+  - C096-RAW
+  - C096-COMPARISON
+  - C096-OWNER-COMPARISON
+  - C096-AUTH0
+  - C096-AUTH1
+  - C096-AUTH2
+  - C096-AUTH3
+- check_id: C096-PRIMARY-GRAPH
+  name: Primary A depiction versus owner
+  status: passed
+  required: true
+  summary: The original drawing reproduces 5R and E, not merely the elemental connectivity.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - C096-PRIMARY
+  - C096-PRIMARY-GRAPH
+  - C096-PIXEL-QA
+- check_id: C096-ABSOLUTE-METHOD
+  name: Original Hong ECD evidence verification
+  status: unavailable
+  required: true
+  summary: Original ECD curves and computation details remain inaccessible; main-body
+    assignment and drawing are preserved as positive evidence.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - C096-PRIMARY
+  - C096-ECD-ACCESS
+evidence:
+- evidence_id: R096-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/azetidomonamide-a.yaml
+  locator: Complete owner, every assertion, inline graph, discussion and history event
+  accessed_at: '2026-10-21T15:24:59.730317Z'
+  support: supports
+  summary: 'Root read the complete azetidomonamide A owner after its individual intake.
+    It contains 2 occurrence, 1 producer and 1 cluster assertions. Referenced components
+    are empty. Present optional fields: none. This scope is based on complete parsed
+    contents, not a filtered search miss.'
+  snapshot_sha256: 6334e8ad4c562cc56894444389bf44883128e2d49f7ef67bb97cac60d9f4b70f
+- evidence_id: R096-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/096/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row and
+    complete resolved owner
+  accessed_at: '2026-10-21T15:24:59.730317Z'
+  support: context_only
+  summary: Root read every matching source row. The native resolved owner equals the
+    complete parsed raw YAML. Imported assertions and deterministic joins remain distinct
+    from independently inspected primary experiments.
+  snapshot_sha256: 5e85a6355c5352345db34d9b684503d298d0937efd25814234f91003334bdc88
+- evidence_id: R096-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Complete 28-row dataset catalogue; original receipt 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The catalogue was retrieved on 2026-10-21 at 07:21:15 UTC and is reused
+    with that original time. It includes P. aeruginosa precise364/precise411 and S.
+    albidoflavus/S. coelicolor datasets. It has no named Stigmatella, Rhodococcus,
+    Herpetosiphon or S. mirabilis dataset, and no identified NA04227 dataset. Species
+    or genus matching alone does not establish exact stock, gene, locus or metabolite
+    evidence.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R096-Q31856
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q31856.json
+  locator: Exact organism entity, scientific name and P685 NCBI Taxonomy mapping
+  accessed_at: '2026-10-21T15:06:30.095702Z'
+  support: context_only
+  summary: Literal entity Q31856 resolves as Pseudomonas aeruginosa, P685 287, matching
+    every associated local LOTUS row. This verifies identifier routing only, not compound
+    occurrence, experimental strain identity or historical taxonomic revisions.
+  snapshot_sha256: b69ab9ff8da6d2c792ff586cfd3ea808c4d65392011b49db7a7b3e8a0ad801dc
+- evidence_id: S096-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/azetidomonamide-a.yaml
+  locator: Complete owner; resolved/components and every matching local source row
+  accessed_at: '2026-10-21T15:29:02.968595Z'
+  support: supports
+  summary: Exact A row BGC0002037:1, version 3, raw-row SHA256 596a88e542dd5ecf6617f6c40a15c04ed70e028c075e0b01fc924faa05f5abdc.
+    Producer PAO1 and locus AE004091.2:3729471..3746067 carry Knock-out studies, BGC_CHARACTERIZED
+    and CLUSTER_DEMONSTRATED with PMID 31247735. No inline or referenced mechanism
+    components are present.
+  snapshot_sha256: 6334e8ad4c562cc56894444389bf44883128e2d49f7ef67bb97cac60d9f4b70f
+- evidence_id: S096-E-HONG
+  kind: primary_source
+  reference: https://polytechnique.hal.science/hal-02096769/document
+  locator: Complete scientific main re-read; Figures 1 and 2, isolation, feeding,
+    AzeJ and phenotype paragraphs
+  accessed_at: '2026-10-21T14:45:41.096540Z'
+  support: supports
+  summary: The complete scientific main identifies A as compound 1, isolated and structurally
+    characterized from AB16.2, a spontaneous PAO1 derivative selected at 16 mg/L colistin.
+    Both A and B are absent in the PA3327-deficient comparison and after azeJ/PA3335
+    inactivation; attB::PA3335 complementation restores both at lower abundance. AZC
+    feeding restores B only and suppresses A. Recombinant AzeJ produces the AZC building
+    block, not final A/B; AzeB domain assays measure substrate activation. These native-lineage
+    genetic results support the locus but require the selected-strain context. The
+    main claims 5R A and 4R B by rotation/ECD comparison, whose original detailed
+    SI remains unavailable.
+  snapshot_sha256: 0b5119850fd70aa51ffda9c29130d52253ceb4815a06530978fd53031680959e
+- evidence_id: S096-E-PATTESON
+  kind: primary_source
+  reference: https://par.nsf.gov/servlets/purl/10162901
+  locator: Complete main; Figures 1–4 and printed pp. 4955–4958; exact product numbering
+    and polarity qualification
+  accessed_at: '2026-10-21T14:44:57.255817Z'
+  support: supports
+  summary: The complete main explicitly identifies azabicyclene 1 as azetidomonamide
+    B; its product 2 is a proline analogue, not A. PAO1 cultures contain B at lower
+    basal levels and more after AHL supplementation. B/C/F/I insertion mutants lose
+    B; D/G/H/J reduce it; E increases it. The authors explicitly cannot exclude insertion
+    polarity. Purified His6-AzeB forms pyridinone intermediates 3/4, not final A or
+    B; 3 has NMR support, 4 HRMS/MS without isolated NMR. No exact A isolation or
+    A-specific genetic endpoint is established by this source.
+  snapshot_sha256: 6a1a7f30c86108de005666f95442519b9823bb2b721be9ec21dc8a0d94b0b00f
+- evidence_id: S096-E-PATTESON-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/15592466
+  locator: Official SI S3–S6, S9/Table S2 and Figure S11; original complete-source
+    preparation plus targeted re-read
+  accessed_at: '2026-10-21T14:46:06.145223Z'
+  support: supports
+  summary: Official SI S3–S6 specifies PAO1, lacZ insertions in B/C/D/E/F/H/I/J and
+    phoA in G; short-extension PCR verifies the insertion comparison, not whole-stock
+    sequence identity or a nonpolar deletion. Cultures use 6 µM 3-oxo-C12-AHL and
+    30 µM C4-AHL at 37 °C for 14 h. Native B is purified and NMR-characterized. PAO1
+    azeB DNA is cloned into pLIC-His for E. coli BL21-Gold(DE3); the isolated enzyme
+    assay stops at intermediates. The G label differs from the main figure, so the
+    explicit Methods are retained. S9/Table S2 B crotonyl couplings 15.3/15.2 Hz support
+    E geometry; the main leaves the ring absolute hand undetermined.
+  snapshot_sha256: 42c1afc289be154f2b5cf9f6c496795ab74749b20a2b2b10166d905b6684cec1
+- evidence_id: S096-E-ERNST-SI
+  kind: primary_source
+  reference: https://ndownloader.figshare.com/files/34875104
+  locator: Original SI pp. 3–5 and 8, Table S1 p. 35; retained original p. 8 render
+  accessed_at: '2026-10-21T14:48:59.968530Z'
+  support: supports
+  summary: Original 2022 SI pp. 3–5, 8 and Table S1 describes PAO1azeind, made by
+    inserting rhaRS/PrhaB 26 bp upstream of PA3327, with PCR/sequencing and azeB RT-qPCR.
+    This is native promoter engineering, separate from AB16.2, insertion-library genotypes
+    and E. coli recombinant-protein hosts. A and B are numbered 3 and 4; original
+    p. 8 gives A crotonyl J 15.3/15.3 Hz and B 15.3/15.4 Hz. The unavailable full
+    main is not used to certify every later enzyme reaction.
+  snapshot_sha256: abca22f6dccbaebedc5f987b70242859e74fcb6eec0cd1af1f7da01b1906e722
+- evidence_id: S096-E-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002037.3/annotations.json
+  locator: Complete current annotation; compounds, locus, taxonomy and legacy references
+  accessed_at: '2026-10-21T14:57:06.938945Z'
+  support: supports
+  summary: Current version 3 remains active/questionable/completeness unknown. It
+    lists both final compounds under one locus, PAO1 taxon 208964 and both 2019 references.
+    The entry-level ordering does not make the first paper compound-specific proof
+    for A. NRPS classification is compatible with the experimentally studied bimodular
+    AzeB.
+  snapshot_sha256: e94d035f8df6d66b82a9fa2c471f91c80511e5cf159c3035686176088df4931b
+- evidence_id: S096-E-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=AE004091.2&seq_start=3729471&seq_stop=3746067&rettype=gbwithparts&retmode=text
+  locator: Header, source and all 11 CDS feature locations; retained locus-map.json
+  accessed_at: '2026-10-21T15:05:12.157842Z'
+  support: supports
+  summary: The exact reference window is 16,597 bp and explicitly PAO1/taxon 208964.
+    It spans PA3326–PA3336; AzeB/PA3327=AAG06715.1, AzeJ/PA3335=AAG06723.1, AzeK/PA3336=AAG06724.1.
+    Hong uses ten genes through PA3335; Patteson includes PA3336. The reference deposit
+    is not an independently sequenced AB16.2 stock, and interval membership does not
+    prove every gene necessary.
+  snapshot_sha256: 795ff688eb66d07e8b02960a453a42b394d7fd7d16d9912e93b8a6f08e96df80
+- evidence_id: S096-E-IMODULON
+  kind: database
+  reference: https://imodulondb.org
+  locator: Structured runner summaries p_aeruginosa/precise364/88 and p_aeruginosa/precise411/59;
+    exact PA3326–PA3336 member rows
+  accessed_at: '2026-10-21T14:54:44.212639Z'
+  support: context_only
+  summary: Both components contain the eleven PA locus tags with STRING taxon 208964.
+    precise411/59 additionally contains phzB1/PA4211; its aggregate regulator labels
+    cannot be transferred to the aze genes. These modules supply expression context,
+    not final-product chemistry, AB16.2 stock sequence identity or native necessity.
+  snapshot_sha256: 6e74cda69716d7051bc46c500829e62a50d3131de1297a83534f3cf5aa78587e
+- evidence_id: S096-E-ACCESS
+  kind: search
+  reference: https://doi.org/10.1002/anie.201809981
+  locator: Retained bounded original Hong SI attempts and Ernst full-main attempts
+  accessed_at: '2026-10-21T14:47:45.400165Z'
+  support: context_only
+  summary: Hong full main is available, but detailed original SI, ECD parameters and
+    all construct protocols remain unavailable. The 2022 official SI is available,
+    its full main is not. No absence of uninspected experimental results is inferred.
+  snapshot_sha256: 3591ba26f522c35f5d9f2dfb71718d7bb97cf6422016f36507372be74acd5a25
+  search_scope: Only retained official Wiley SI links/static alternatives and published/author
+    2022 full-main routes; no new network requests or global absence claim.
+- evidence_id: S096-E-CONSUMERS
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Source loading, claim-reference and strain application; full producer_strains.py,
+    claim_references.py and lotus_exclusions.py contracts
+  accessed_at: '2026-10-21T15:29:02.968595Z'
+  support: supports
+  summary: The implemented claim-reference and strain tables pin the entire original
+    raw row. Strain qualification changes context only, not taxon or grades. LOTUS
+    exclusions pin the exact key/taxon/DOI and entire triple row. Claim-reference
+    and strain application reject structure_correction_note, requiring tested composition
+    before any chemistry repair. The ignored-inclusive search found no existing matching
+    maintained correction in the searched scope.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: S096-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/096/science-overlay-search.json
+  locator: Actual rg --no-ignore --hidden search receipt
+  accessed_at: '2026-10-21T15:29:02.968595Z'
+  support: context_only
+  summary: Ignored-inclusive exact accession, names and full-key prefixes in all maintained
+    curation tables, scripts and curate consumers; no claim of absence elsewhere.
+  snapshot_sha256: a4747e9c8e9f6bd63315097798c6aade373c9d89648d003e004686f6ef3c81c0
+  search_scope: Ignored-inclusive exact accession, names and full-key prefixes in
+    all maintained curation tables, scripts and curate consumers; no claim of absence
+    elsewhere.
+- evidence_id: C096-OWNER
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/alkaloids/azetidomonamide-a.yaml
+  locator: Complete owner, literal xrefs, definition, source concepts, classification
+    and discussion/history
+  accessed_at: '2026-10-21T15:31:24.966534Z'
+  support: supports
+  summary: Owner and resolved packet are identical. Intake chemistry gives AIECUUXSLHXKBY-UFUPEUMYSA-N,
+    formula C11H12N2O4, charge 0 and centres [[10, 'R']]. The evidence scope here
+    is chemical identity and provenance; biology and causal claims are assessed separately.
+  snapshot_sha256: 6334e8ad4c562cc56894444389bf44883128e2d49f7ef67bb97cac60d9f4b70f
+- evidence_id: C096-RAW
+  kind: record_content
+  reference: /private/tmp/npm-review-work/096/local-sources.json
+  locator: All matching complete raw MIBiG, ChEBI, LOTUS and classifier rows
+  accessed_at: '2026-10-21T15:31:24.966534Z'
+  support: supports
+  summary: All 1 MIBiG rows, 2 LOTUS rows, 0 eligible ChEBI rows and 1 classifier
+    rows were read. Complete parsed row SHA256 values and reproduced source-concept
+    IDs are retained in the per-record comparison.
+  snapshot_sha256: 5e85a6355c5352345db34d9b684503d298d0937efd25814234f91003334bdc88
+- evidence_id: C096-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch010/chemistry-first-seven/chemical-comparison.json
+  locator: azetidomonamide A complete Standard and fixed-H graph comparison
+  accessed_at: '2026-10-21T14:58:36.456215Z'
+  support: supports
+  summary: Raw/current BGC0002037.3 compound 1, NPAtlas NPA032933, PubChem 169492152
+    and two-star CHEBI220634 JSON/MOL agree Standard InChI and fixed-H; source 5R
+    centre and crotonyl E are assigned.
+  snapshot_sha256: 68a2e565c0d5e67c8e524396a3d503990757f4924b65437559ab5129ab112710
+- evidence_id: C096-AUTH0
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0002037.3/annotations.json
+  locator: current BGC0002037; compounds[0].structure
+  accessed_at: '2026-10-21T14:57:06.938945Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key AIECUUXSLHXKBY-UFUPEUMYSA-N; formula
+    C11H12N2O4; charge 0; tetrahedral centres [[10, ''R'']].'
+  snapshot_sha256: e94d035f8df6d66b82a9fa2c471f91c80511e5cf159c3035686176088df4931b
+- evidence_id: C096-AUTH1
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/AIECUUXSLHXKBY-UFUPEUMYSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: PubChem 169492152; PropertyTable.Properties[0].SMILES
+  accessed_at: '2026-10-21T14:57:06.372896Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key AIECUUXSLHXKBY-UFUPEUMYSA-N; formula
+    C11H12N2O4; charge 0; tetrahedral centres [[10, ''R'']].'
+  snapshot_sha256: f9dc30916548b378f6f6bffa6dee319fda6da82be5d6f4ef5d85bf6657af4fba
+- evidence_id: C096-AUTH2
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/220634/
+  locator: ChEBI JSON CHEBI:220634; default_structure.smiles
+  accessed_at: '2026-10-21T14:57:57.572842Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key AIECUUXSLHXKBY-UFUPEUMYSA-N; formula
+    C11H12N2O4; charge 0; tetrahedral centres [[10, ''R'']].'
+  snapshot_sha256: 7f6d54d15f1304fb2d22cfbfb820faedc65c02af58e1ec1400f894175d5972ae
+- evidence_id: C096-AUTH3
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/220634/
+  locator: ChEBI MOL 220634; official MOL
+  accessed_at: '2026-10-21T14:57:57.654504Z'
+  support: supports
+  summary: 'Valid parsed representation: True. Key AIECUUXSLHXKBY-UFUPEUMYSA-N; formula
+    C11H12N2O4; charge 0; tetrahedral centres [[10, ''R'']].'
+  snapshot_sha256: f59834dbc2c06ba2af3eb51b091947af8ccf77e90706e83768d880c7454ce49f
+- evidence_id: C096-GROUNDING-CODE
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: mint_identifier, choose_pathway, grouping and exact-key ChEBI grounding;
+    source_concepts emission
+  accessed_at: '2026-10-21T15:31:24.966534Z'
+  support: supports
+  summary: Source-concept identifiers hash source and accession:compound index, not
+    labels or chemical keys. A unique eligible exact-key ChEBI row grounds EXACT;
+    absent eligible rows retain the minted source identifier. Classification is joined
+    by exact key.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C096-ELIGIBILITY-CODE
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_chebi.py
+  locator: MIN_STARS and extract_compounds status/stars filter
+  accessed_at: '2026-10-21T15:31:24.966534Z'
+  support: supports
+  summary: Only the eligible three-star projection enters exact grounding; a currently
+    accessible two-star record is not an asserted eligible authority.
+  snapshot_sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+- evidence_id: C096-WIKIDATA-Q113958880
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q113958880.json
+  locator: Current P235, P234, P2017 and literal chemical entity identity
+  accessed_at: '2026-10-21T15:27:08.276752Z'
+  support: supports
+  summary: Literal LOTUS chemical entity Q113958880 resolves to the stored full key;
+    every retained isomeric SMILES reproduces the same Standard key and fixed-H graph.
+    Canonical stereo-free SMILES is not substituted for the isomeric property.
+  snapshot_sha256: b166608f8795a0cda25743a9ccb60c0709ed00f110ea7fbe96aadd5d13eaca21
+- evidence_id: C096-OWNER-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/096/chemistry-owner-comparison.json
+  locator: Exact owner/current authority linkage; independently parsed Wikidata and
+    reconstructed source-concept hashes
+  accessed_at: '2026-10-21T15:31:26.316531Z'
+  support: supports
+  summary: Recomputed all literal chemical Wikidata isomeric graphs and 1 accession:index
+    source concepts against this owner. Full row pins and ignored-inclusive local
+    search are recorded.
+  snapshot_sha256: e52213a81a780de530ea84babf3d5bc2e9fc2ca59cd94622f1c30f00f9944a46
+- evidence_id: C096-PRIMARY
+  kind: primary_source
+  reference: https://polytechnique.hal.science/hal-02096769/document
+  locator: Hong 2019 accepted manuscript, complete structural paragraph and original
+    Figure 1b
+  accessed_at: '2026-10-21T14:45:41.096540Z'
+  support: supports
+  summary: Hong names azetidomonamide A compound 1 and reports 5R from specific rotation
+    and measured/calculated ECD. The original drawing shows the same 5R ring centre
+    and E crotonyl chain as the owner; it is distinct from B compound 2. The valid
+    PDF is retained under the original .html filename.
+  snapshot_sha256: 0b5119850fd70aa51ffda9c29130d52253ceb4815a06530978fd53031680959e
+- evidence_id: C096-PRIMARY-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch010/chemistry-first-seven/primary-transcription.json
+  locator: azetidomonamide-A-Hong2019 numbered independent source drawing
+  accessed_at: '2026-10-21T15:00:14.209577Z'
+  support: supports
+  summary: Original atom/bond/wedge transcription gives AIECUUXSLHXKBY-UFUPEUMYSA-N,
+    source C5 R and crotonyl E. No authority stereotags were used to construct this
+    drawing model.
+  snapshot_sha256: afc598797396441ba958b0cc1a5c2b756a7379c32e403a286c8e7ccfc12f5cbb
+- evidence_id: C096-PIXEL-QA
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch010/review-support/primary-transcription-qa/independent-primary-transcription-qa.json
+  locator: Hong A manual CIP and crotonyl orientation
+  accessed_at: '2026-10-21T15:06:21.544569Z'
+  support: supports
+  summary: 'Independent manual QA agrees: OH > fused C4 > C6 > H gives 5R, and the
+    crotonyl carbon substituents lie on opposite sides of the C=C bond.'
+  snapshot_sha256: 4085600b4eaee5674850820fb0a4d3e82ae080270b1177f06699970b709b11f0
+- evidence_id: C096-ECD-ACCESS
+  kind: search
+  reference: https://onlinelibrary.wiley.com/doi/suppl/10.1002/anie.201809981/supinfo/anie201809981-sup-0001-misc_information.pdf
+  locator: Actual publisher-linked original supplementary PDF request
+  accessed_at: '2026-10-21T14:47:45.400165Z'
+  support: context_only
+  summary: The original Hong ECD supplement was unavailable on the bounded publisher-linked
+    route. Main-body assignment is positive, but original ECD curves, conformer treatment
+    and calculation settings were not inspected.
+  snapshot_sha256: 3591ba26f522c35f5d9f2dfb71718d7bb97cf6422016f36507372be74acd5a25
+  search_scope: The retained publisher-linked anie201809981-sup-0001-misc_information.pdf
+    access attempt and previously retained bounded public routes; no claim that the
+    supplement does not exist.
+assessments:
+- assessment_id: R096-HISTORY
+  area: provenance
+  topic: Native status and retained audit history
+  outcome: supported
+  summary: The dated seed events and retained SEEDED status document generated provenance.
+    This review adds no native curation event or status promotion.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - R096-OWNER
+- assessment_id: R096-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment limits
+  outcome: not_applicable
+  summary: The complete owner contains no structured pathway, causal graph, molecular
+    target, bioactivity, clinical status, application, cross-corpus relationship or
+    discussion. Optional enrichment is separate from correcting present claims; compound
+    names and computed classes do not establish a mechanism or activity.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - R096-OWNER
+  - R096-LOCAL-SOURCES
+- assessment_id: R096-FILING
+  area: representation
+  topic: Computed filing and returned class scope
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier result, including model
+    version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, every superclass/class
+    label (including the empty returned sets where applicable), and false glycoside
+    flag. These remain computed predictions, not experiments proving precursor use,
+    natural origin or stereochemistry. BGC classes retain their separate MIBiG source
+    and biological assessment.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - R096-OWNER
+  - R096-LOCAL-SOURCES
+- assessment_id: R096-IMODULON-SCOPE
+  area: completeness
+  topic: Matching producer transcriptomic resources
+  outcome: supported
+  summary: The catalogue contains two P. aeruginosa datasets, making exact PAO1 locus-tag
+    queries appropriate. Their retained query/member-summary outputs and original
+    receipts are assessed in the scientific section. Module membership is expression
+    context and does not establish metabolite production, direct regulator binding,
+    identity of AB16.2 or a recombinant protein construct.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - R096-OWNER
+  - R096-IMODULON-DATASETS
+- assessment_id: R096-ORGANISM-IDS
+  area: provenance
+  topic: Literal LOTUS organism-identifier routing
+  outcome: supported
+  summary: Every literal organism entity in the matching LOTUS rows resolves to its
+    retained taxon and NCBI identifier. The primary-source assessment independently
+    addresses exact compound occurrence, native producer, collection host and experimental
+    strain.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - R096-LOCAL-SOURCES
+  - R096-Q31856
+- assessment_id: S096-A-ORIGIN
+  area: evidence
+  topic: Natural occurrence and source-specific culture scope
+  outcome: concern
+  summary: Hong supports species-level A occurrence from a native PAO1-derived culture.
+    The Org. Lett. occurrence triple and producer/locus citation conflate B or its
+    proline analogue with A; retain the positive Hong occurrence.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - S096-E-LOCAL
+  - S096-E-HONG
+  - S096-E-PATTESON
+  - S096-E-PATTESON-SI
+- assessment_id: S096-A-LOCUS
+  area: evidence
+  topic: Exact product, native background and evidence tier
+  outcome: concern
+  summary: Retain Knock-out studies and CLUSTER_DEMONSTRATED with the correct Hong
+    citation and explicit PAO1-derived AB16.2 context; the current first-reference
+    routing does not support A.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - S096-E-HONG
+  - S096-E-PATTESON
+  - S096-E-PATTESON-SI
+  - S096-E-LOCUS
+  - S096-E-MIBIG
+  dimensions:
+  - name: experimental_strain
+    value: PAO1-derived AB16.2
+    definition: Experimental culture background is distinct from the reference locus
+      and recombinant protein-expression host.
+    evidence_ids:
+    - S096-E-HONG
+    - S096-E-PATTESON
+    - S096-E-LOCUS
+  - name: assay_endpoint
+    value: Final native A/B loss and rescue; isolated precursor enzymology
+    definition: AzeJ yields AZC and purified AzeB yields intermediates, not a demonstrated
+      complete heterologous final-product pathway.
+    evidence_ids:
+    - S096-E-HONG
+    - S096-E-PATTESON-SI
+  - name: stereochemical_resolution
+    value: Hong claims A 5R / B 4R; original ECD SI inaccessible
+    definition: Main-body assignment is retained without an independent ECD recalculation;
+      geometry is adjudicated separately.
+    evidence_ids:
+    - S096-E-HONG
+    - S096-E-ACCESS
+- assessment_id: S096-A-SEQUENCE
+  area: grounding
+  topic: Reference locus and source-version meaning
+  outcome: supported
+  summary: The current MIBiG interval is the exact PAO1 reference window and maps
+    to eleven native features. No complete tagged construct or AB16.2 whole-genome
+    identity is asserted; NRPS is a supported pathway class.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - S096-E-LOCUS
+  - S096-E-MIBIG
+  - S096-E-PATTESON-SI
+- assessment_id: S096-A-OPTIONAL
+  area: completeness
+  topic: Bounded additional mechanism and expression evidence
+  outcome: supported
+  summary: The existing sparse owner has no mandatory optional-mechanism deficit.
+    Later native promoter engineering and expression modules are available context;
+    missing individual enzyme graphs are not findings. Phenotype differences between
+    mutants are not assigned to purified A or B without compound-specific tests.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - S096-E-HONG
+  - S096-E-ERNST-SI
+  - S096-E-IMODULON
+- assessment_id: C096-CLASS
+  area: representation
+  topic: Classifier provenance and filing
+  outcome: supported
+  summary: The complete exact-key NPClassifier row reproduces the stored Alkaloids
+    filing and all supplied superclass/class labels; empty finer classifications are
+    preserved. This is model-derived classification, not evidence of biological origin.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - C096-RAW
+  - C096-GROUNDING-CODE
+- assessment_id: C096-IDENTITY
+  area: identity
+  topic: Exact 5R and E primary assignment
+  outcome: supported
+  summary: The original Hong A drawing and stated 5R assignment agree with the complete
+    stored graph; current MIBiG, NPAtlas, PubChem, Wikidata and ChEBI graphs agree
+    at full and fixed-H levels. Patteson compound 1 is B/azabicyclene and does not
+    independently support an A assignment.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - C096-PRIMARY
+  - C096-PRIMARY-GRAPH
+  - C096-PIXEL-QA
+  - C096-COMPARISON
+  - C096-OWNER-COMPARISON
+  - C096-AUTH0
+  - C096-AUTH1
+  - C096-AUTH2
+  - C096-AUTH3
+- assessment_id: C096-GROUNDING
+  area: grounding
+  topic: Two-star current graph and classification scope
+  outcome: supported
+  summary: CHEBI:220634 is two-star and therefore not eligible exact grounding. Its
+    organosulfur-heterocycle relationship is inconsistent with the sulfur-free formula
+    and is not imported into this record; the retained Alkaloids model assignment
+    and empty finer classifications are unchanged.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - C096-RAW
+  - C096-ELIGIBILITY-CODE
+  - C096-GROUNDING-CODE
+  - C096-COMPARISON
+  - C096-AUTH0
+  - C096-AUTH1
+  - C096-AUTH2
+  - C096-AUTH3
+- assessment_id: C096-ABSOLUTE-LIMIT
+  area: evidence
+  topic: Reported 5R versus original ECD verification
+  outcome: unknown
+  summary: The complete main reports 5R, but unavailable original SI prevents detailed
+    independent assessment of the ECD evidence. This is an access limitation rather
+    than evidence for an opposite hand.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  evidence_ids:
+  - C096-PRIMARY
+  - C096-ECD-ACCESS
+findings:
+- finding_id: S096-F-CITATION
+  issue_key: mibig-bgc0002037-compound1-b-specific-citation-and-occurrence
+  category: provenance
+  severity: major
+  status: open
+  certainty: confirmed
+  title: A inherits a B-specific paper and loses the tested AB16.2 context
+  description: PMID 31247735 studies azabicyclene/B and its proline analogue; it does
+    not report the exact A endpoint. It is nevertheless the sole producer/locus citation
+    and an additional A occurrence DOI. Hong directly supports A in selected PAO1-derived
+    AB16.2, including loss and complementation. Correct routing and strain context
+    while preserving native A occurrence and the supported genetic method.
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  field_paths:
+  - producer_organisms[0].evidence
+  - producer_organisms[0].strain
+  - producer_organisms[0].notes
+  - biosynthetic_gene_clusters[0].evidence
+  - occurrences[1].evidence[0].reference
+  evidence_ids:
+  - S096-E-LOCAL
+  - S096-E-HONG
+  - S096-E-PATTESON
+  - S096-E-PATTESON-SI
+  - S096-E-CONSUMERS
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Exact compound citation routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Experimental lineage qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Exact unsupported occurrence triple
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Full-row citation guard and composition contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Full-row strain guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Exact-triple guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consumed emission and composition
+actions:
+- action_id: S096-ACT-CITATION
+  finding_ids:
+  - S096-F-CITATION
+  target_ids:
+  - naturalproductmech:mibig-2f56aeb70a
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Exact compound citation routing
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Experimental lineage qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/lotus_occurrence_exclusions.tsv
+    role: Exact unsupported occurrence triple
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Full-row citation guard and composition contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Full-row strain guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/lotus_exclusions.py
+    role: Exact-triple guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Consumed emission and composition
+  generator: scripts/seed_from_sources.py
+  description: For source_id BGC0002037:1, expected_source_row_sha256=596a88e542dd5ecf6617f6c40a15c04ed70e028c075e0b01fc924faa05f5abdc,
+    add a consumed claim-reference decision with producer_reference and locus_reference
+    DOI:10.1002/anie.201809981, retaining original PMID:31247735 in raw provenance.
+    Add the same full-row-pinned producer-strain qualification as PAO1-derived AB16.2,
+    with rationale distinguishing the PAO1 reference accession from the selected experimental
+    derivative. Exclude only LOTUS triple (AIECUUXSLHXKBY-UFUPEUMYSA-N, NCBITaxon:287,
+    10.1021/ACS.ORGLETT.9B01383) at expected_source_row_sha256=33aeb8ce596a597fb4a7e5329ced22198591eaa278b5a7c0bc53d74b9996df8c
+    through lotus_occurrence_exclusions.tsv. Preserve the Hong triple and current
+    genetic methods/grades. This is an implemented route; if combined with a chemistry
+    correction, first extend and test the current fail-closed composition contract
+    rather than bypassing it.
+  acceptance_checks:
+  - Exact complete source rows, including empty values, must match their SHA256 guards;
+    duplicate/missing/drifted rows fail closed.
+  - Regenerated A cites Hong for producer and locus, explicitly distinguishes AB16.2
+    from unmodified PAO1, retains Knock-out studies and retains the supported species
+    occurrence.
+  - Only the exact Org. Lett. A triple is withheld; preserve raw upstream assertion
+    and exclude no B occurrence.
+  - No purified precursor assay becomes a final-product assay and no universal per-gene
+    necessity is inferred.
+  - Test any structure/citation/strain composition explicitly before authorized regeneration;
+    run documented strict, reproduction, corpus and QC gates in that separate curation.
+limitations:
+- The review assesses current assertions and concrete evidence gaps. It does not claim
+  exhaustive discovery of every later study or require every optional mechanism for
+  review coverage.
+- Original Hong ECD/construct SI remains unavailable despite retained bounded routes;
+  the positive main-body results remain usable at their explicit scope.
+- The 2022 full main is unavailable; inspected SI is not a substitute for every main-body
+  enzyme result.
+- The PAO1 accession is a reference-sequence bridge, not an independent genome comparison
+  of AB16.2, every insertion stock or a recombinant fusion.
+- Chemistry/xref assessments are delivered separately; no optional pathway completion
+  is required by this packet.
+- Authority agreement is not independent experimental proof of 5R. No alternate absolute
+  hand or constitutional correction is proposed; original Hong ECD SI is unavailable
+  and the separate biological citation-routing audit is not replaced by this chemical
+  agreement.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-010
+```
