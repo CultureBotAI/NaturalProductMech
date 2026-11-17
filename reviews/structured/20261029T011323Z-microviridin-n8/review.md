@@ -1,0 +1,1092 @@
+# Scientific review of microviridin N8
+
+- Review: 20261029T011323Z-microviridin-n8
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-29T01:00:48.955839Z
+- Finished UTC: 2026-10-29T01:13:23.212367Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+microviridin N8 retains exact local row/key/formula consistency at an explicitly incomplete stereochemical resolution. The own PubMed/PMC sugar-transporter evidence and 2019 Crossref metadata leave exact variant, producer, occurrence and locus correspondence unresolved. Database grades, computed classes and differing molecular representations remain separately qualified.
+
+## Scope And Provenance
+
+Read-only scientific review of this exact microviridin owner, complete retained source rows, saved dual-encoding diagnostics, the inspected sugar-transporter abstract/frontmatter and2019 bibliographic metadata. Variant, strain, occurrence and locus correspondence retain their separate unresolved scopes.
+
+Selection: One current unreviewed record selected in canonical path order; official batch89 selection and intake exactly reconcile the frozen owner and source evidence.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base ce6a5498df5be51116bd5e0c119023ee62bb5464.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-2e356855fd | data/natural_products/amino_acids_and_peptides/microviridin-n8.yaml | generated | microviridin N8 |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-2e356855fd | Fresh corpus gate passed:3116 PATHS.tsv rows and3116 files, each at its pinned path. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-2e356855fd | Fresh reproduction gate passed:all3116 records are byte-identical to seeding from maintained inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-2e356855fd | Fresh deterministic review queue produced8922 rows across12 queues; this is not scientific review coverage. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-2e356855fd | Fresh configured identifier-label gate passed:13472 canonical,657 synonym and35 exception matches;499 nonblocking mismatches and4898 no-adapter skips remain explicit. |
+| Full repository quality gate on the fresh main baseline | passed | True | naturalproductmech:mibig-2e356855fd | Fresh full quality gate passed:1024 tests passed,4 skipped,2 dependency warnings;3116 closed-schema records have zero errors; site freshness, reproduction and lockfile checks passed, alongside22 governed artifacts and15 raw inventories. |
+| Native strict target validation | passed | True | naturalproductmech:mibig-2e356855fd | The selected owner passed the documented strict validator. This establishes configured consistency only. |
+| Saved dual-encoding consistency | passed | True | naturalproductmech:mibig-2e356855fd | microviridin N8 has saved formula C103H143N23O32, neutral formal charge and exact full-key/StandardInChI agreement across the two parses. The actual canonical isomeric and nonisomeric strings differ and exact correspondence is empty; the amide versus imidic representation difference is preserved. This supports bounded encoding consistency and establishes neither whole graph isomorphism nor natural compound identity. |
+| Exact variant-to-primary correspondence | unavailable | True | naturalproductmech:mibig-2e356855fd | The retained label microviridin N8, full key KALZIAHHFBESNS-MDYWKTFMSA-N and MIBiG compound_index2 agree within the selected local row and owner. No inspected primary body or exact structure figure maps that label to this complete structure. Crossref verifies a relevant paper title only; its DOI is not a replacement citation, and the database index is not a paper compound number. |
+| Stereochemical and representation limits | unavailable | True | naturalproductmech:mibig-2e356855fd | microviridin N8 retains one unspecified ring tetrahedral site and one guanidine-related C=N feature in the saved SMILES diagnostic. The false stereo_complete flag is consistent with the unresolved tetrahedral site under the maintained extractor definition. Extra potential InChI-derived double sites arise in the differing representation and are not promoted to new natural defects. Absolute configuration and exact natural stereostructure remain unverified. |
+| Strain-specific biosynthetic support | unavailable | True | naturalproductmech:mibig-2e356855fd | The microviridin N8 producer claim is the retained MIBiG BGC_CORRELATED assertion for Nostoc punctiforme PCC73102, NCBITaxon:63737. The locus methods are not direct proof that this exact taxon naturally makes this exact variant. The inspected sugar-transporter abstract and Crossref title do not resolve that question; no change to BGC_CHARACTERIZED, HETEROLOGOUS_EXPRESSION or species-wide production is justified here. |
+| Exact active-locus correspondence | unavailable | True | naturalproductmech:mibig-2e356855fd | The selected microviridin N8 row retains active BGC0002049 version3, genome NC_010628.1 and coordinates2708890–2716448, with heterologous-expression and correlated-expression methods graded CLUSTER_DEMONSTRATED. Those are locus assertions, separate from producer grade. The entry-level PMID23463784 does not establish these compound-specific claims in the inspected abstract/frontmatter. Exact locus and congener correspondence remain questions; no inference of a wrong accession, producer or replacement source is made. |
+| Occurrence versus production | unavailable | True | naturalproductmech:mibig-2e356855fd | microviridin N8 has separate LOTUS occurrences for Nostoc commune and Nostoc punctiforme linked to DOI10.1021/ACSCHEMBIO.9B00240. Crossref verifies this DOI and title but not the exact variant or either occurrence taxon. No occurrence is promoted to production, and no taxon is relabeled from the paper title. |
+| Computed filing and asserted class axes | passed | True | naturalproductmech:mibig-2e356855fd | microviridin N8 is filed under AMINO_ACIDS_AND_PEPTIDES. Its retained NPClassifier2026-09-07 row reports Cyclic peptides, Depsipeptides, RiPPs-Lanthipeptides, with Oligopeptides and Amino acids and Peptides; these match the owner. The separately asserted MIBiG BGC class is RIBOSOMAL and its compound_classes cell is empty. The extra model labels RiPPs-Lanthipeptides remain classifier outputs; they do not establish sulfur bridge chemistry, topology or a curated biosynthetic class. |
+| No-assay sentinel and optional mechanism scope | unavailable | True | naturalproductmech:mibig-2e356855fd | The microviridin N8 PubChem row for CID155802410 has blank AID, no assay data, no outcome and no numeric activity. It is a source-coverage sentinel, not evidence of inactivity. The owner contains no pathway, causal graph, bioactivity or molecular-target assertion; family membership and sugar-transporter biology are not used to add one. |
+| Exact external identifiers | unavailable | True | naturalproductmech:mibig-2e356855fd | microviridin N8 retains the minted identifier naturalproductmech:mibig-2e356855fd and xrefs pubchem:155802410, npatlas:NPA032897. Their literal correspondence to the MIBiG row is preserved, but no independent ChEBI/PubChem/NPAtlas identity or taxon accession resolution is claimed. Shared BGC membership does not merge the six distinct full-key records. |
+| Source grades versions and history | passed | True | naturalproductmech:mibig-2e356855fd | Whole retained microviridin N8 row and owner joins preserve MIBiG v3 compound_index2, its separate producer/locus evidence grades, all NPClassifier classes, exact LOTUS citations, blank-AID sentinel and two seed-history entries. Entry quality questionable and completeness complete are retained database descriptors, not truth or experimental confidence grades. Original retrieval and computation timestamps remain distinct from this later reading. |
+| Bounded available source evidence | passed | True | naturalproductmech:mibig-2e356855fd | Own PubMed metadata was read, and the PMC route returned matching frontmatter/abstracts without a substantive body. The exact primary route remains held under the ROOT observation; no retry, alternate format or link fanout is selected. The 2019 Crossref canary supplied bibliographic metadata without an abstract or body. This evidence boundary is not a claim that the complete publications lack support. |
+
+## Scientific And Domain Assessments
+
+### Saved dual-encoding consistency
+
+consistency: supported. Targets: naturalproductmech:mibig-2e356855fd.
+
+microviridin N8 has saved formula C103H143N23O32, neutral formal charge and exact full-key/StandardInChI agreement across the two parses. The actual canonical isomeric and nonisomeric strings differ and exact correspondence is empty; the amide versus imidic representation difference is preserved. This supports bounded encoding consistency and establishes neither whole graph isomorphism nor natural compound identity.
+
+### Exact variant-to-primary correspondence
+
+identity: unknown. Targets: naturalproductmech:mibig-2e356855fd.
+
+The retained label microviridin N8, full key KALZIAHHFBESNS-MDYWKTFMSA-N and MIBiG compound_index2 agree within the selected local row and owner. No inspected primary body or exact structure figure maps that label to this complete structure. Crossref verifies a relevant paper title only; its DOI is not a replacement citation, and the database index is not a paper compound number.
+
+### Stereochemical and representation limits
+
+identity: unknown. Targets: naturalproductmech:mibig-2e356855fd.
+
+microviridin N8 retains one unspecified ring tetrahedral site and one guanidine-related C=N feature in the saved SMILES diagnostic. The false stereo_complete flag is consistent with the unresolved tetrahedral site under the maintained extractor definition. Extra potential InChI-derived double sites arise in the differing representation and are not promoted to new natural defects. Absolute configuration and exact natural stereostructure remain unverified.
+
+### Strain-specific biosynthetic support
+
+evidence: unknown. Targets: naturalproductmech:mibig-2e356855fd.
+
+The microviridin N8 producer claim is the retained MIBiG BGC_CORRELATED assertion for Nostoc punctiforme PCC73102, NCBITaxon:63737. The locus methods are not direct proof that this exact taxon naturally makes this exact variant. The inspected sugar-transporter abstract and Crossref title do not resolve that question; no change to BGC_CHARACTERIZED, HETEROLOGOUS_EXPRESSION or species-wide production is justified here.
+
+### Exact active-locus correspondence
+
+evidence: unknown. Targets: naturalproductmech:mibig-2e356855fd.
+
+The selected microviridin N8 row retains active BGC0002049 version3, genome NC_010628.1 and coordinates2708890–2716448, with heterologous-expression and correlated-expression methods graded CLUSTER_DEMONSTRATED. Those are locus assertions, separate from producer grade. The entry-level PMID23463784 does not establish these compound-specific claims in the inspected abstract/frontmatter. Exact locus and congener correspondence remain questions; no inference of a wrong accession, producer or replacement source is made.
+
+### Occurrence versus production
+
+evidence: unknown. Targets: naturalproductmech:mibig-2e356855fd.
+
+microviridin N8 has separate LOTUS occurrences for Nostoc commune and Nostoc punctiforme linked to DOI10.1021/ACSCHEMBIO.9B00240. Crossref verifies this DOI and title but not the exact variant or either occurrence taxon. No occurrence is promoted to production, and no taxon is relabeled from the paper title.
+
+### Computed filing and asserted class axes
+
+provenance: supported. Targets: naturalproductmech:mibig-2e356855fd.
+
+microviridin N8 is filed under AMINO_ACIDS_AND_PEPTIDES. Its retained NPClassifier2026-09-07 row reports Cyclic peptides, Depsipeptides, RiPPs-Lanthipeptides, with Oligopeptides and Amino acids and Peptides; these match the owner. The separately asserted MIBiG BGC class is RIBOSOMAL and its compound_classes cell is empty. The extra model labels RiPPs-Lanthipeptides remain classifier outputs; they do not establish sulfur bridge chemistry, topology or a curated biosynthetic class.
+
+### No-assay sentinel and optional mechanism scope
+
+evidence: unknown. Targets: naturalproductmech:mibig-2e356855fd.
+
+The microviridin N8 PubChem row for CID155802410 has blank AID, no assay data, no outcome and no numeric activity. It is a source-coverage sentinel, not evidence of inactivity. The owner contains no pathway, causal graph, bioactivity or molecular-target assertion; family membership and sugar-transporter biology are not used to add one.
+
+### Exact external identifiers
+
+grounding: unknown. Targets: naturalproductmech:mibig-2e356855fd.
+
+microviridin N8 retains the minted identifier naturalproductmech:mibig-2e356855fd and xrefs pubchem:155802410, npatlas:NPA032897. Their literal correspondence to the MIBiG row is preserved, but no independent ChEBI/PubChem/NPAtlas identity or taxon accession resolution is claimed. Shared BGC membership does not merge the six distinct full-key records.
+
+### Source grades versions and history
+
+provenance: supported. Targets: naturalproductmech:mibig-2e356855fd.
+
+Whole retained microviridin N8 row and owner joins preserve MIBiG v3 compound_index2, its separate producer/locus evidence grades, all NPClassifier classes, exact LOTUS citations, blank-AID sentinel and two seed-history entries. Entry quality questionable and completeness complete are retained database descriptors, not truth or experimental confidence grades. Original retrieval and computation timestamps remain distinct from this later reading.
+
+### Bounded available source evidence
+
+scope: supported. Targets: naturalproductmech:mibig-2e356855fd.
+
+Own PubMed metadata was read, and the PMC route returned matching frontmatter/abstracts without a substantive body. The exact primary route remains held under the ROOT observation; no retry, alternate format or link fanout is selected. The 2019 Crossref canary supplied bibliographic metadata without an abstract or body. This evidence boundary is not a claim that the complete publications lack support.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| SCI885-LOCAL | /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/microviridin-n8.yaml; whole owner; chemical_structure; source_concepts; producer_organisms; biosynthetic_gene_clusters; occurrences; np_classification; curation_history | context_only | The microviridin N8 owner declares full key KALZIAHHFBESNS-MDYWKTFMSA-N, MIBIG BGC0002049 structure source, stereo_complete=false, NATURAL_PRODUCT, MINTED and SEEDED. Its producer is Nostoc punctiforme PCC 73102 (NCBITaxon:63737) at BGC_CORRELATED, while its BGC0002049 version3 locus uses CLUSTER_DEMONSTRATED. Separate LOTUS occurrences use Nostoc commune NCBITaxon:1178 and Nostoc punctiforme NCBITaxon:272131. It retains 2 occurrence objects and two seed-history entries. No pathway, causal graph, activity or molecular-target field occurs in these owner bytes. |
+| SCI885-ROWS | /private/tmp/npm-review-work/shared-next-batch089-tentative/bgc-tentative89-owner-source-reconnaissance-DATA-001.json; /records/4/retained_rows; /records/4/row_guards; exact full key KALZIAHHFBESNS-MDYWKTFMSA-N | supports | The literal microviridin N8 selection contains 5 rows in seven retained arrays: one MIBiG compound row (compound_index=2), 2 LOTUS rows, one NPClassifier row and one PubChem no-assay sentinel; the three other retained arrays are empty. MIBiG version3 is active, with entry_quality=questionable and entry_completeness=complete, and carries ENTRY-level PMID23463784. Producer and locus grades are distinct raw fields. This is retained-source content, not independent proof of the underlying biology. |
+| SCI885-ENCODINGS | /private/tmp/npm-review-work/shared-next-batch089-tentative/source-science-preparation/native-tentative89-ten-owner-dual-encoding-results-001.json; /records/4/smiles; /records/4/inchi; /records/4/stereo_counts; /records/4/comparisons; /records/4/atom_correspondence | supports | The two saved RDKit 2026.03.5 parses for microviridin N8 agree on C103H143N23O32, full key KALZIAHHFBESNS-MDYWKTFMSA-N, normalized StandardInChI and formal charge0. Both canonical SMILES equality flags are false and the complete atom map is empty. The SMILES payload has 22 potential tetrahedral sites, with ring atom138 unspecified, and one unspecified C=N feature at bond114 whose carbon has three nitrogen neighbors. The InChI-derived representation contains additional C(O)=N sites. These are saved molecular-representation observations, not independent natural-structure evidence. |
+| SCI885-PMID | /private/tmp/npm-review-work/shared-next-batch089-tentative/literature-preparation/public-metadata-PMID23463784-001/pmid-23463784.xml; ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList | context_only | The own PubMed record23463784 identifies DOI10.1104/pp.112.213116 and PMCIDPMC3613469. Its title and abstract concern Nostoc punctiforme sugar transport and cyanobacterium–plant symbiosis. The inspected abstract does not identify any of these six microviridin variants or establish their structures, production or locus assignment. Foreign bibliography identifiers are separate references; this observation is limited to the received metadata. |
+| SCI885-PMC | /private/tmp/npm-review-work/shared-next-batch089-tentative/literature-preparation/public-primary-single-initial-PMC3613469-001/pmc3613469.xml; ./article/front/article-meta/article-id; ./article/front/article-meta/title-group; ./article/front/article-meta/abstract; whole received article body scope | context_only | The saved PMC3613469 response identifies its own PMID23463784 and DOI10.1104/pp.112.213116 and contains sugar-transport/symbiosis frontmatter and abstracts. It contains no article body. The missing body prevents a full-paper correspondence assessment; the received frontmatter does not establish a microviridin-specific structure or production claim. |
+| SCI885-PMC-ACCESS | /private/tmp/npm-review-work/shared-next-batch089-tentative/literature-preparation/public-primary-single-initial-PMC3613469-001/pmc3613469.xml.access.json; /http_status; /identity; /success; /body; /started_at; /finished_at | supports | The original access receipt records HTTP200, matched own frontmatter, article_body_present=false, frontmatter_only=true and success=false. Its exact response bytes and original retrieval timestamps are retained; this records availability rather than a scientific negative result. |
+| SCI885-CROSSREF | /private/tmp/npm-review-work/shared-next-batch089-tentative/literature-preparation/public-metadata-six-unresolved-crossref-001/doi-01.json; /message/DOI; /message/title; /message/container-title; /message/volume; /message/issue; /message/page; /message/published-online; /message/reference; complete message key set | context_only | Crossref verifies own DOI10.1021/acschembio.9b00240 and the 2019 ACS Chemical Biology14(6):1271–1279 paper on spatial control of secondary metabolism in Nostoc punctiforme. The response supplies no abstract or article body. Its title does not establish any exact N3/N4/N6/N7/N8/N9 structure, producing strain, occurrence taxon or locus. Forty reference entries are foreign works; publisher links are bibliographic leads. |
+| SCI885-STEREO-METHOD | /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py; _chemistry: FindMolChiralCenters/includeUnassigned; stereo_complete assignment | supports | The maintained MIBiG extractor sets stereo_complete from whether FindMolChiralCenters reports an unassigned tetrahedral center. That implementation does not declare all double-bond geometry or natural stereochemical identity resolved. |
+| SCI885-PROFILE | /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md; Native questions and ownership; REVIEWED prerequisites; four native dimensions | supports | The native profile separates exact structure and stereochemical resolution, producer versus occurrence, source version and evidence tier; it requires taxon/strain, stereochemical_resolution, source_version and evidence_tier dimensions and does not equate BGC_CORRELATED with BGC_CHARACTERIZED. |
+
+## Limits And Additional Notes
+
+- This partial assessment reconciles the current official intake with the complete owner, retained source rows and saved diagnostics. Independent primary evidence remains limited to the inspected abstracts, frontmatter and bibliographic metadata.
+- Exact microviridin N8 primary-structure, strain, occurrence and locus correspondence remain unresolved. The retained entry-level citation and bibliographic paper title are insufficient to prove these claims, but the bounded abstract/frontmatter reading does not prove a wrong citation, wrong molecule or wrong producer.
+- The saved microviridin N8 ring tetrahedral and guanidine-related double feature remain unspecified. Amide/imidic canonical strings differ, with no complete exact atom map; no missing stereochemistry is invented and no structure replacement is proposed.
+- The two species-level LOTUS occurrence taxa remain distinct from the strain-bearing MIBiG producer; no species/strain equivalence or producer promotion is inferred.
+- No full primary body, figure pixels, supplementary structures, sequence/locus reconstruction, operational protocol, natural activity assay or complete external identifier resolution was inspected. The absence of these sources is a scope limit, not a major finding by itself.
+- A curator can document and reconcile the exact entry-level citation-to-compound mapping in curator-owned discussion before any evidence-backed maintained-source change. Generated owner records, raw inventories and their seeder remain unchanged; no replacement citation, methyl configuration, stereoisomer or locus is prescribed.
+- Literal whole owners and raw rows were read, but the whole owner is not claimed scientifically validated. No native status or curation history is promoted.
+- Source seeding retains five unresolved assay-organism targets (one distinct Human label),42 withheld nonspecific producer claims and161 merged-taxonomy rewrites.
+- Queue diagnostics rank deterministic curation questions and do not prove literature support or review completion.
+- 499 configured nonblocking mismatches remain warnings;4898 pairs lacked an adapter.35 exception and657 synonym matches retain their configured scope; no fresh ontology authority retrieval is asserted.
+- Four tests were skipped; two dependency deprecations concern LinkML dataclass and Pandas copy-on-write behavior. Source seeding warnings and configured gate boundaries are retained in the full log.
+- Native baseline gates establish configured consistency, not independent biological production, exact stereochemistry or primary-source adequacy.
+- Configured ontology caches and scientific/test skips retain their original scope; a new command execution is not a fresh retrieval of every authority.
+- All tracked link objects are hashed as link-target bytes without dereferencing; canonical record source intake remains regular-file-only and uses the separately reviewed AGENTS.md context projection.
+- The whole local owner and retained source rows were read. Full-owner scientific verification remains false; scientific_review denotes the bounded scientific interpretation in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP retrieval and later metadata reading retain separate clocks. Official intake separately computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any findings and actions record ROOT-adopted proposed work; exact-source limitations and unavailable checks remain explicit.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261029T011323Z-microviridin-n8
+title: Scientific review of microviridin N8
+started_at: '2026-10-29T01:00:48.955839Z'
+finished_at: '2026-10-29T01:13:23.212367Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: microviridin N8 retains exact local row/key/formula consistency at an explicitly
+  incomplete stereochemical resolution. The own PubMed/PMC sugar-transporter evidence
+  and 2019 Crossref metadata leave exact variant, producer, occurrence and locus correspondence
+  unresolved. Database grades, computed classes and differing molecular representations
+  remain separately qualified.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/microviridin-n8.yaml
+    sha256: badf8ca10a3a07a6d685ae0a43c286d805ddebded285313d858157413c4ce3a3
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-2e356855fd
+  path: data/natural_products/amino_acids_and_peptides/microviridin-n8.yaml
+  label: microviridin N8
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+scope:
+  description: Read-only scientific review of this exact microviridin owner, complete
+    retained source rows, saved dual-encoding diagnostics, the inspected sugar-transporter
+    abstract/frontmatter and2019 bibliographic metadata. Variant, strain, occurrence
+    and locus correspondence retain their separate unresolved scopes.
+  selection: One current unreviewed record selected in canonical path order; official
+    batch89 selection and intake exactly reconcile the frozen owner and source evidence.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  exclusions:
+  - target: Complete natural structure and stereochemistry
+    reason: Full primary bodies, structure figure pixels, supplementary data and complete
+      atom-level correspondence were not inspected; normalized InChI agreement is
+      bounded representation evidence.
+  - target: Exact variant producer, occurrence and locus evidence
+    reason: The inspected sugar-transporter abstract/frontmatter and2019 paper title
+      do not establish exact-congener assignments; the complete articles and supplementary
+      structures were not inspected.
+  - target: Fresh external authority resolution
+    reason: Retained chemical and taxon identifiers were checked in local rows; complete
+      live authority equivalence was not established.
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh corpus gate passed:3116 PATHS.tsv rows and3116 files, each at its
+    pinned path.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338684Z;
+    finished 2026-10-28T21:33:29.829334Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-corpus.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh reproduction gate passed:all3116 records are byte-identical to seeding
+    from maintained inputs.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.338638Z;
+    finished 2026-10-28T21:33:44.898261Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/verify-reproduction.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue produced8922 rows across12 queues; this
+    is not scientific review coverage.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-087-freshce6a5498-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340163Z;
+    finished 2026-10-28T21:33:21.471992Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/review-queue.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472 canonical,657 synonym
+    and35 exception matches;499 nonblocking mismatches and4898 no-adapter skips remain
+    explicit.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:09.340947Z;
+    finished 2026-10-28T21:33:45.063118Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/validate-products.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Fresh full quality gate passed:1024 tests passed,4 skipped,2 dependency
+    warnings;3116 closed-schema records have zero errors; site freshness, reproduction
+    and lockfile checks passed, alongside22 governed artifacts and15 raw inventories.
+  command: env -u PYTEST_ADDOPTS UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache
+    RECORD_REVIEW_BASE=ce6a5498df5be51116bd5e0c119023ee62bb5464 PYTHONDONTWRITEBYTECODE=1
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: Fresh batch087 command on ce6a5498df5be51116bd5e0c119023ee62bb5464 in
+    /private/tmp/npm-record-reviews-20261021. Started 2026-10-28T21:33:14.328372Z;
+    finished 2026-10-28T21:38:03.336464Z; ROOT observed at 2026-10-28T21:38:57.679080Z.
+    Original receipt /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.json;
+    transcript /private/tmp/npm-native-checks/batch-087/fresh-ce6a5498-001/qc.log.
+    PYTEST_ADDOPTS was explicitly unset. Full tracked byte/mode capture and recheck
+    occurred separately after these gates; no pre-gate capture is inferred. Warnings,
+    configured exceptions and skips remain in the original transcript.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/microviridin-n8.yaml
+    --out /private/tmp/npm-review-work/885/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-29T01:00:50.307503Z. Original
+    receipt: /private/tmp/npm-review-work/885/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+- check_id: SCI885-ENCODINGS
+  name: Saved dual-encoding consistency
+  status: passed
+  required: true
+  summary: microviridin N8 has saved formula C103H143N23O32, neutral formal charge
+    and exact full-key/StandardInChI agreement across the two parses. The actual canonical
+    isomeric and nonisomeric strings differ and exact correspondence is empty; the
+    amide versus imidic representation difference is preserved. This supports bounded
+    encoding consistency and establishes neither whole graph isomorphism nor natural
+    compound identity.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ENCODINGS
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-IDENTITY
+  name: Exact variant-to-primary correspondence
+  status: unavailable
+  required: true
+  summary: The retained label microviridin N8, full key KALZIAHHFBESNS-MDYWKTFMSA-N
+    and MIBiG compound_index2 agree within the selected local row and owner. No inspected
+    primary body or exact structure figure maps that label to this complete structure.
+    Crossref verifies a relevant paper title only; its DOI is not a replacement citation,
+    and the database index is not a paper compound number.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-ENCODINGS
+  - SCI885-CROSSREF
+  - SCI885-PMID
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-STEREO
+  name: Stereochemical and representation limits
+  status: unavailable
+  required: true
+  summary: microviridin N8 retains one unspecified ring tetrahedral site and one guanidine-related
+    C=N feature in the saved SMILES diagnostic. The false stereo_complete flag is
+    consistent with the unresolved tetrahedral site under the maintained extractor
+    definition. Extra potential InChI-derived double sites arise in the differing
+    representation and are not promoted to new natural defects. Absolute configuration
+    and exact natural stereostructure remain unverified.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ENCODINGS
+  - SCI885-STEREO-METHOD
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-PRODUCER
+  name: Strain-specific biosynthetic support
+  status: unavailable
+  required: true
+  summary: The microviridin N8 producer claim is the retained MIBiG BGC_CORRELATED
+    assertion for Nostoc punctiforme PCC73102, NCBITaxon:63737. The locus methods
+    are not direct proof that this exact taxon naturally makes this exact variant.
+    The inspected sugar-transporter abstract and Crossref title do not resolve that
+    question; no change to BGC_CHARACTERIZED, HETEROLOGOUS_EXPRESSION or species-wide
+    production is justified here.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-PMID
+  - SCI885-PMC
+  - SCI885-CROSSREF
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-LOCUS
+  name: Exact active-locus correspondence
+  status: unavailable
+  required: true
+  summary: The selected microviridin N8 row retains active BGC0002049 version3, genome
+    NC_010628.1 and coordinates2708890–2716448, with heterologous-expression and correlated-expression
+    methods graded CLUSTER_DEMONSTRATED. Those are locus assertions, separate from
+    producer grade. The entry-level PMID23463784 does not establish these compound-specific
+    claims in the inspected abstract/frontmatter. Exact locus and congener correspondence
+    remain questions; no inference of a wrong accession, producer or replacement source
+    is made.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-PMID
+  - SCI885-PMC
+  - SCI885-CROSSREF
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-OCCURRENCE
+  name: Occurrence versus production
+  status: unavailable
+  required: true
+  summary: microviridin N8 has separate LOTUS occurrences for Nostoc commune and Nostoc
+    punctiforme linked to DOI10.1021/ACSCHEMBIO.9B00240. Crossref verifies this DOI
+    and title but not the exact variant or either occurrence taxon. No occurrence
+    is promoted to production, and no taxon is relabeled from the paper title.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-CROSSREF
+  - SCI885-PMID
+  - SCI885-PMC
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-FILING
+  name: Computed filing and asserted class axes
+  status: passed
+  required: true
+  summary: microviridin N8 is filed under AMINO_ACIDS_AND_PEPTIDES. Its retained NPClassifier2026-09-07
+    row reports Cyclic peptides, Depsipeptides, RiPPs-Lanthipeptides, with Oligopeptides
+    and Amino acids and Peptides; these match the owner. The separately asserted MIBiG
+    BGC class is RIBOSOMAL and its compound_classes cell is empty. The extra model
+    labels RiPPs-Lanthipeptides remain classifier outputs; they do not establish sulfur
+    bridge chemistry, topology or a curated biosynthetic class.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-ACTIVITY
+  name: No-assay sentinel and optional mechanism scope
+  status: unavailable
+  required: true
+  summary: The microviridin N8 PubChem row for CID155802410 has blank AID, no assay
+    data, no outcome and no numeric activity. It is a source-coverage sentinel, not
+    evidence of inactivity. The owner contains no pathway, causal graph, bioactivity
+    or molecular-target assertion; family membership and sugar-transporter biology
+    are not used to add one.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-PMID
+  - SCI885-PMC
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-GROUNDING
+  name: Exact external identifiers
+  status: unavailable
+  required: true
+  summary: microviridin N8 retains the minted identifier naturalproductmech:mibig-2e356855fd
+    and xrefs pubchem:155802410, npatlas:NPA032897. Their literal correspondence to
+    the MIBiG row is preserved, but no independent ChEBI/PubChem/NPAtlas identity
+    or taxon accession resolution is claimed. Shared BGC membership does not merge
+    the six distinct full-key records.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-PROVENANCE
+  name: Source grades versions and history
+  status: passed
+  required: true
+  summary: Whole retained microviridin N8 row and owner joins preserve MIBiG v3 compound_index2,
+    its separate producer/locus evidence grades, all NPClassifier classes, exact LOTUS
+    citations, blank-AID sentinel and two seed-history entries. Entry quality questionable
+    and completeness complete are retained database descriptors, not truth or experimental
+    confidence grades. Original retrieval and computation timestamps remain distinct
+    from this later reading.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-ENCODINGS
+  - SCI885-PMID
+  - SCI885-PMC-ACCESS
+  - SCI885-CROSSREF
+  - SCI885-PROFILE
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+- check_id: SCI885-AVAILABILITY
+  name: Bounded available source evidence
+  status: passed
+  required: true
+  summary: Own PubMed metadata was read, and the PMC route returned matching frontmatter/abstracts
+    without a substantive body. The exact primary route remains held under the ROOT
+    observation; no retry, alternate format or link fanout is selected. The 2019 Crossref
+    canary supplied bibliographic metadata without an abstract or body. This evidence
+    boundary is not a claim that the complete publications lack support.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-PMID
+  - SCI885-PMC
+  - SCI885-PMC-ACCESS
+  - SCI885-CROSSREF
+  scope_note: Bounded scientific assessment of retained owner rows, saved diagnostics
+    and inspected publication evidence. Executed command checks and their original
+    receipts are listed separately.
+evidence:
+- evidence_id: SCI885-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/amino_acids_and_peptides/microviridin-n8.yaml
+  locator: whole owner; chemical_structure; source_concepts; producer_organisms; biosynthetic_gene_clusters;
+    occurrences; np_classification; curation_history
+  accessed_at: '2026-10-28T23:47:10.320197Z'
+  snapshot_sha256: badf8ca10a3a07a6d685ae0a43c286d805ddebded285313d858157413c4ce3a3
+  support: context_only
+  summary: The microviridin N8 owner declares full key KALZIAHHFBESNS-MDYWKTFMSA-N,
+    MIBIG BGC0002049 structure source, stereo_complete=false, NATURAL_PRODUCT, MINTED
+    and SEEDED. Its producer is Nostoc punctiforme PCC 73102 (NCBITaxon:63737) at
+    BGC_CORRELATED, while its BGC0002049 version3 locus uses CLUSTER_DEMONSTRATED.
+    Separate LOTUS occurrences use Nostoc commune NCBITaxon:1178 and Nostoc punctiforme
+    NCBITaxon:272131. It retains 2 occurrence objects and two seed-history entries.
+    No pathway, causal graph, activity or molecular-target field occurs in these owner
+    bytes.
+- evidence_id: SCI885-ROWS
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch089-tentative/bgc-tentative89-owner-source-reconnaissance-DATA-001.json
+  locator: /records/4/retained_rows; /records/4/row_guards; exact full key KALZIAHHFBESNS-MDYWKTFMSA-N
+  accessed_at: '2026-10-28T23:47:10.320197Z'
+  snapshot_sha256: 1fb4869ecc967e2a94b073ff4b524f8b9d084f2e15f3b7e8aa9429d9734ea6e2
+  support: supports
+  summary: 'The literal microviridin N8 selection contains 5 rows in seven retained
+    arrays: one MIBiG compound row (compound_index=2), 2 LOTUS rows, one NPClassifier
+    row and one PubChem no-assay sentinel; the three other retained arrays are empty.
+    MIBiG version3 is active, with entry_quality=questionable and entry_completeness=complete,
+    and carries ENTRY-level PMID23463784. Producer and locus grades are distinct raw
+    fields. This is retained-source content, not independent proof of the underlying
+    biology.'
+- evidence_id: SCI885-ENCODINGS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch089-tentative/source-science-preparation/native-tentative89-ten-owner-dual-encoding-results-001.json
+  locator: /records/4/smiles; /records/4/inchi; /records/4/stereo_counts; /records/4/comparisons;
+    /records/4/atom_correspondence
+  accessed_at: '2026-10-28T23:59:21.440528Z'
+  snapshot_sha256: 356c8827be928050a8b7082816ba6ea6f707f5a5881cf0f1ceecf15e16e37570
+  support: supports
+  summary: The two saved RDKit 2026.03.5 parses for microviridin N8 agree on C103H143N23O32,
+    full key KALZIAHHFBESNS-MDYWKTFMSA-N, normalized StandardInChI and formal charge0.
+    Both canonical SMILES equality flags are false and the complete atom map is empty.
+    The SMILES payload has 22 potential tetrahedral sites, with ring atom138 unspecified,
+    and one unspecified C=N feature at bond114 whose carbon has three nitrogen neighbors.
+    The InChI-derived representation contains additional C(O)=N sites. These are saved
+    molecular-representation observations, not independent natural-structure evidence.
+- evidence_id: SCI885-PMID
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch089-tentative/literature-preparation/public-metadata-PMID23463784-001/pmid-23463784.xml
+  locator: ./PubmedArticle/MedlineCitation/PMID; ./PubmedArticle/MedlineCitation/Article/ArticleTitle;
+    ./PubmedArticle/MedlineCitation/Article/Abstract; ./PubmedArticle/PubmedData/ArticleIdList
+  accessed_at: '2026-10-29T00:14:14.274213Z'
+  snapshot_sha256: fc291242d594f95d66cc1a76af4ae1b4482056108580898435a5ab488c7d5b7e
+  support: context_only
+  summary: The own PubMed record23463784 identifies DOI10.1104/pp.112.213116 and PMCIDPMC3613469.
+    Its title and abstract concern Nostoc punctiforme sugar transport and cyanobacterium–plant
+    symbiosis. The inspected abstract does not identify any of these six microviridin
+    variants or establish their structures, production or locus assignment. Foreign
+    bibliography identifiers are separate references; this observation is limited
+    to the received metadata.
+- evidence_id: SCI885-PMC
+  kind: primary_source
+  reference: /private/tmp/npm-review-work/shared-next-batch089-tentative/literature-preparation/public-primary-single-initial-PMC3613469-001/pmc3613469.xml
+  locator: ./article/front/article-meta/article-id; ./article/front/article-meta/title-group;
+    ./article/front/article-meta/abstract; whole received article body scope
+  accessed_at: '2026-10-29T00:26:39.389055Z'
+  snapshot_sha256: 592e3d3aecc8059b1079c6db20229fe9397ef10285d0d20077880e77f36474f9
+  support: context_only
+  summary: The saved PMC3613469 response identifies its own PMID23463784 and DOI10.1104/pp.112.213116
+    and contains sugar-transport/symbiosis frontmatter and abstracts. It contains
+    no article body. The missing body prevents a full-paper correspondence assessment;
+    the received frontmatter does not establish a microviridin-specific structure
+    or production claim.
+- evidence_id: SCI885-PMC-ACCESS
+  kind: search
+  reference: /private/tmp/npm-review-work/shared-next-batch089-tentative/literature-preparation/public-primary-single-initial-PMC3613469-001/pmc3613469.xml.access.json
+  locator: /http_status; /identity; /success; /body; /started_at; /finished_at
+  accessed_at: '2026-10-29T00:26:39.389055Z'
+  snapshot_sha256: 606799f19d9a4eaba7450add02a7992ddbeb72674c4a345f10f71e825cb3acd3
+  support: supports
+  summary: The original access receipt records HTTP200, matched own frontmatter, article_body_present=false,
+    frontmatter_only=true and success=false. Its exact response bytes and original
+    retrieval timestamps are retained; this records availability rather than a scientific
+    negative result.
+  search_scope: 'One completed initial request to https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=3613469&retmode=xml
+    for PMCID:PMC3613469, with the complete saved 10483-byte XML response and its
+    original access receipt, from 2026-10-29T00:26:39.039467Z to 2026-10-29T00:26:39.389055Z.
+    This availability observation is limited to that exact request and received response:
+    HTTP 200 with matched own frontmatter and no substantive article body. It is not
+    a literature-wide search or evidence that any scientific claim is absent; no retry,
+    alternate route, new request or later-reading timestamp is represented.'
+- evidence_id: SCI885-CROSSREF
+  kind: database
+  reference: /private/tmp/npm-review-work/shared-next-batch089-tentative/literature-preparation/public-metadata-six-unresolved-crossref-001/doi-01.json
+  locator: /message/DOI; /message/title; /message/container-title; /message/volume;
+    /message/issue; /message/page; /message/published-online; /message/reference;
+    complete message key set
+  accessed_at: '2026-10-29T00:56:52.975212Z'
+  snapshot_sha256: 705905abb6b6ce571275b663faba56f2e8a2ad8c0977162bdfb7e7d25cb7fa6a
+  support: context_only
+  summary: Crossref verifies own DOI10.1021/acschembio.9b00240 and the 2019 ACS Chemical
+    Biology14(6):1271–1279 paper on spatial control of secondary metabolism in Nostoc
+    punctiforme. The response supplies no abstract or article body. Its title does
+    not establish any exact N3/N4/N6/N7/N8/N9 structure, producing strain, occurrence
+    taxon or locus. Forty reference entries are foreign works; publisher links are
+    bibliographic leads.
+- evidence_id: SCI885-STEREO-METHOD
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: '_chemistry: FindMolChiralCenters/includeUnassigned; stereo_complete assignment'
+  accessed_at: '2026-10-29T01:00:44.166527Z'
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+  support: supports
+  summary: The maintained MIBiG extractor sets stereo_complete from whether FindMolChiralCenters
+    reports an unassigned tetrahedral center. That implementation does not declare
+    all double-bond geometry or natural stereochemical identity resolved.
+- evidence_id: SCI885-PROFILE
+  kind: authority
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Native questions and ownership; REVIEWED prerequisites; four native dimensions
+  accessed_at: '2026-10-29T01:00:44.166527Z'
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+  support: supports
+  summary: The native profile separates exact structure and stereochemical resolution,
+    producer versus occurrence, source version and evidence tier; it requires taxon/strain,
+    stereochemical_resolution, source_version and evidence_tier dimensions and does
+    not equate BGC_CORRELATED with BGC_CHARACTERIZED.
+assessments:
+- assessment_id: SCI885-ENCODINGS
+  area: consistency
+  topic: Saved dual-encoding consistency
+  outcome: supported
+  summary: microviridin N8 has saved formula C103H143N23O32, neutral formal charge
+    and exact full-key/StandardInChI agreement across the two parses. The actual canonical
+    isomeric and nonisomeric strings differ and exact correspondence is empty; the
+    amide versus imidic representation difference is preserved. This supports bounded
+    encoding consistency and establishes neither whole graph isomorphism nor natural
+    compound identity.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ENCODINGS
+- assessment_id: SCI885-IDENTITY
+  area: identity
+  topic: Exact variant-to-primary correspondence
+  outcome: unknown
+  summary: The retained label microviridin N8, full key KALZIAHHFBESNS-MDYWKTFMSA-N
+    and MIBiG compound_index2 agree within the selected local row and owner. No inspected
+    primary body or exact structure figure maps that label to this complete structure.
+    Crossref verifies a relevant paper title only; its DOI is not a replacement citation,
+    and the database index is not a paper compound number.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-ENCODINGS
+  - SCI885-CROSSREF
+  - SCI885-PMID
+- assessment_id: SCI885-STEREO
+  area: identity
+  topic: Stereochemical and representation limits
+  outcome: unknown
+  summary: microviridin N8 retains one unspecified ring tetrahedral site and one guanidine-related
+    C=N feature in the saved SMILES diagnostic. The false stereo_complete flag is
+    consistent with the unresolved tetrahedral site under the maintained extractor
+    definition. Extra potential InChI-derived double sites arise in the differing
+    representation and are not promoted to new natural defects. Absolute configuration
+    and exact natural stereostructure remain unverified.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ENCODINGS
+  - SCI885-STEREO-METHOD
+  dimensions:
+  - name: stereochemical_resolution
+    value: 'microviridin N8: 21/22 SMILES potential tetrahedral sites specified; ring
+      atom138 unknown; one guanidine-related double feature unknown; stereo_complete=false'
+    definition: Saved tetrahedral and double-bond encoding resolution for this exact
+      variant, distinct from natural assignment and amide/imidic representation differences.
+    evidence_ids:
+    - SCI885-LOCAL
+    - SCI885-ENCODINGS
+    - SCI885-STEREO-METHOD
+- assessment_id: SCI885-PRODUCER
+  area: evidence
+  topic: Strain-specific biosynthetic support
+  outcome: unknown
+  summary: The microviridin N8 producer claim is the retained MIBiG BGC_CORRELATED
+    assertion for Nostoc punctiforme PCC73102, NCBITaxon:63737. The locus methods
+    are not direct proof that this exact taxon naturally makes this exact variant.
+    The inspected sugar-transporter abstract and Crossref title do not resolve that
+    question; no change to BGC_CHARACTERIZED, HETEROLOGOUS_EXPRESSION or species-wide
+    production is justified here.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-PMID
+  - SCI885-PMC
+  - SCI885-CROSSREF
+  dimensions:
+  - name: taxon_strain
+    value: 'microviridin N8: MIBiG Nostoc punctiforme PCC73102 / NCBITaxon:63737;
+      separate LOTUS Nostoc commune1178 and Nostoc punctiforme272131'
+    definition: The retained strain-bearing producer assertion is distinct from the
+      two species-level occurrence taxa; independent exact-congener production and
+      taxonomic correspondence remain unresolved.
+    evidence_ids:
+    - SCI885-LOCAL
+    - SCI885-ROWS
+    - SCI885-PMID
+    - SCI885-CROSSREF
+- assessment_id: SCI885-LOCUS
+  area: evidence
+  topic: Exact active-locus correspondence
+  outcome: unknown
+  summary: The selected microviridin N8 row retains active BGC0002049 version3, genome
+    NC_010628.1 and coordinates2708890–2716448, with heterologous-expression and correlated-expression
+    methods graded CLUSTER_DEMONSTRATED. Those are locus assertions, separate from
+    producer grade. The entry-level PMID23463784 does not establish these compound-specific
+    claims in the inspected abstract/frontmatter. Exact locus and congener correspondence
+    remain questions; no inference of a wrong accession, producer or replacement source
+    is made.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-PMID
+  - SCI885-PMC
+  - SCI885-CROSSREF
+- assessment_id: SCI885-OCCURRENCE
+  area: evidence
+  topic: Occurrence versus production
+  outcome: unknown
+  summary: microviridin N8 has separate LOTUS occurrences for Nostoc commune and Nostoc
+    punctiforme linked to DOI10.1021/ACSCHEMBIO.9B00240. Crossref verifies this DOI
+    and title but not the exact variant or either occurrence taxon. No occurrence
+    is promoted to production, and no taxon is relabeled from the paper title.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-CROSSREF
+  - SCI885-PMID
+  - SCI885-PMC
+- assessment_id: SCI885-FILING
+  area: provenance
+  topic: Computed filing and asserted class axes
+  outcome: supported
+  summary: microviridin N8 is filed under AMINO_ACIDS_AND_PEPTIDES. Its retained NPClassifier2026-09-07
+    row reports Cyclic peptides, Depsipeptides, RiPPs-Lanthipeptides, with Oligopeptides
+    and Amino acids and Peptides; these match the owner. The separately asserted MIBiG
+    BGC class is RIBOSOMAL and its compound_classes cell is empty. The extra model
+    labels RiPPs-Lanthipeptides remain classifier outputs; they do not establish sulfur
+    bridge chemistry, topology or a curated biosynthetic class.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+- assessment_id: SCI885-ACTIVITY
+  area: evidence
+  topic: No-assay sentinel and optional mechanism scope
+  outcome: unknown
+  summary: The microviridin N8 PubChem row for CID155802410 has blank AID, no assay
+    data, no outcome and no numeric activity. It is a source-coverage sentinel, not
+    evidence of inactivity. The owner contains no pathway, causal graph, bioactivity
+    or molecular-target assertion; family membership and sugar-transporter biology
+    are not used to add one.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-PMID
+  - SCI885-PMC
+- assessment_id: SCI885-GROUNDING
+  area: grounding
+  topic: Exact external identifiers
+  outcome: unknown
+  summary: microviridin N8 retains the minted identifier naturalproductmech:mibig-2e356855fd
+    and xrefs pubchem:155802410, npatlas:NPA032897. Their literal correspondence to
+    the MIBiG row is preserved, but no independent ChEBI/PubChem/NPAtlas identity
+    or taxon accession resolution is claimed. Shared BGC membership does not merge
+    the six distinct full-key records.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+- assessment_id: SCI885-PROVENANCE
+  area: provenance
+  topic: Source grades versions and history
+  outcome: supported
+  summary: Whole retained microviridin N8 row and owner joins preserve MIBiG v3 compound_index2,
+    its separate producer/locus evidence grades, all NPClassifier classes, exact LOTUS
+    citations, blank-AID sentinel and two seed-history entries. Entry quality questionable
+    and completeness complete are retained database descriptors, not truth or experimental
+    confidence grades. Original retrieval and computation timestamps remain distinct
+    from this later reading.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-LOCAL
+  - SCI885-ROWS
+  - SCI885-ENCODINGS
+  - SCI885-PMID
+  - SCI885-PMC-ACCESS
+  - SCI885-CROSSREF
+  - SCI885-PROFILE
+  dimensions:
+  - name: source_version
+    value: 'microviridin N8: BGC0002049 v3 compound_index2; NPClassifier npclassifier.gnps2.org@2026-09-07;
+      saved own PubMed23463784 and Crossref2019 metadata'
+    definition: Exact retained versions and variant row identifier; database compound_index
+      is not treated as a paper compound number.
+    evidence_ids:
+    - SCI885-ROWS
+    - SCI885-CROSSREF
+    - SCI885-PMID
+  - name: evidence_tier
+    value: 'microviridin N8: retained database assertions plus saved local encoding
+      checks; abstract/frontmatter and bibliographic metadata only; no exact-compound
+      primary body'
+    definition: The present evidence supports provenance and limited encoding consistency,
+      not full natural identity, per-variant biosynthesis or an upgraded producer
+      grade.
+    evidence_ids:
+    - SCI885-ROWS
+    - SCI885-ENCODINGS
+    - SCI885-PMID
+    - SCI885-PMC
+    - SCI885-CROSSREF
+- assessment_id: SCI885-AVAILABILITY
+  area: scope
+  topic: Bounded available source evidence
+  outcome: supported
+  summary: Own PubMed metadata was read, and the PMC route returned matching frontmatter/abstracts
+    without a substantive body. The exact primary route remains held under the ROOT
+    observation; no retry, alternate format or link fanout is selected. The 2019 Crossref
+    canary supplied bibliographic metadata without an abstract or body. This evidence
+    boundary is not a claim that the complete publications lack support.
+  target_ids:
+  - naturalproductmech:mibig-2e356855fd
+  evidence_ids:
+  - SCI885-PMID
+  - SCI885-PMC
+  - SCI885-PMC-ACCESS
+  - SCI885-CROSSREF
+findings: []
+actions: []
+limitations:
+- This partial assessment reconciles the current official intake with the complete
+  owner, retained source rows and saved diagnostics. Independent primary evidence
+  remains limited to the inspected abstracts, frontmatter and bibliographic metadata.
+- Exact microviridin N8 primary-structure, strain, occurrence and locus correspondence
+  remain unresolved. The retained entry-level citation and bibliographic paper title
+  are insufficient to prove these claims, but the bounded abstract/frontmatter reading
+  does not prove a wrong citation, wrong molecule or wrong producer.
+- The saved microviridin N8 ring tetrahedral and guanidine-related double feature
+  remain unspecified. Amide/imidic canonical strings differ, with no complete exact
+  atom map; no missing stereochemistry is invented and no structure replacement is
+  proposed.
+- The two species-level LOTUS occurrence taxa remain distinct from the strain-bearing
+  MIBiG producer; no species/strain equivalence or producer promotion is inferred.
+- No full primary body, figure pixels, supplementary structures, sequence/locus reconstruction,
+  operational protocol, natural activity assay or complete external identifier resolution
+  was inspected. The absence of these sources is a scope limit, not a major finding
+  by itself.
+- A curator can document and reconcile the exact entry-level citation-to-compound
+  mapping in curator-owned discussion before any evidence-backed maintained-source
+  change. Generated owner records, raw inventories and their seeder remain unchanged;
+  no replacement citation, methyl configuration, stereoisomer or locus is prescribed.
+- Literal whole owners and raw rows were read, but the whole owner is not claimed
+  scientifically validated. No native status or curation history is promoted.
+- Source seeding retains five unresolved assay-organism targets (one distinct Human
+  label),42 withheld nonspecific producer claims and161 merged-taxonomy rewrites.
+- Queue diagnostics rank deterministic curation questions and do not prove literature
+  support or review completion.
+- 499 configured nonblocking mismatches remain warnings;4898 pairs lacked an adapter.35
+  exception and657 synonym matches retain their configured scope; no fresh ontology
+  authority retrieval is asserted.
+- Four tests were skipped; two dependency deprecations concern LinkML dataclass and
+  Pandas copy-on-write behavior. Source seeding warnings and configured gate boundaries
+  are retained in the full log.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- Configured ontology caches and scientific/test skips retain their original scope;
+  a new command execution is not a fresh retrieval of every authority.
+- All tracked link objects are hashed as link-target bytes without dereferencing;
+  canonical record source intake remains regular-file-only and uses the separately
+  reviewed AGENTS.md context projection.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, primary-text reading, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
+```
