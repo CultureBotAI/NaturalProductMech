@@ -1,0 +1,1333 @@
+# Celesticetin: stereochemical cross-reference and ccb evidence review
+
+- Review: 20261021T180228Z-celesticetin
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T17:52:01.929584Z
+- Finished UTC: 2026-10-21T18:02:28.810772Z
+- Reviewer: Codex (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+The literal PubChem cross-reference specifies two R stereocentres that the stored celesticetin graph leaves undefined, creating a confirmed exact-equivalence precision error. The exact NPAtlas reference and native S. caelestis ATCC 15084 cluster association remain supported. The cited 2015 new knockout and loading experiments concern lincomycin-pathway lmb proteins and do not justify upgrading celesticetin ccb methods; original absolute-assignment ancestry remains unresolved.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 125, batch 013, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 174 of 3116 current records had campaign coverage and 2942 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-3aa9fcb0a8 | data/natural_products/alkaloids/celesticetin.yaml | generated | celesticetin |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and referenced-component scope | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | The complete owner and all six captured source-row sets were read after successful official intake and agree with the pinned preparation. The external component set is empty. Fresh strict validation is retained separately. |
+| Native producer and exact deposited source applicability | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | The full primary explicitly identifies ATCC 15084 as celesticetin producer and cluster DNA source; the GQ844764.1 source feature agrees at strain and taxon scope. |
+| Cited locus, methods and source grade | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | GQ844764.1 and the stored 5268..32621 bounds identify the annotated ccb cluster. Empty imported methods remain SOURCE_ASSERTION/CLUSTER_UNSTATED; the primary new lmb experiments do not require a ccb method upgrade. |
+| Optional earlier CcbC/CcbJ experimental detail | unavailable | False | naturalproductmech:mibig-3aa9fcb0a8 | The 2015 article cites earlier CcbC/CcbJ studies, but no exact protein/reaction claim from them is emitted in this owner. Their original detailed assays were not independently read in this review and are not imported as new findings. |
+| Stored chemical representation and complete source row | passed | True | naturalproductmech:mibig-3aa9fcb0a8 | Fresh intake derivation agrees with the stored graph; the source selector, full row and prepared snapshot were independently rechecked. |
+| Literal PubChem exact stereo resolution | failed | True | naturalproductmech:mibig-3aa9fcb0a8 | CID20054860 encodes two additional R centres and is not exact equivalence to the owner with those centres undefined. |
+| Original experimental assignment of the two side-chain centres | unavailable | True | naturalproductmech:mibig-3aa9fcb0a8 | The inspected 2015 drawing supplies the depicted assignments, but the original natural absolute-hand protocol was not independently read. Do not fill the owner merely from authority agreement. |
+
+## Scientific And Domain Assessments
+
+### Native status and complete retained audit history
+
+provenance: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+All retained history events record SEEDED_FROM_SOURCES provenance. The native status remains SEEDED; the review changes neither history nor scientific content.
+
+### Present optional assertions and enrichment scope
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+No optional pathway, causal graph, molecular target, activity, application, clinical-status, cross-record relation or discussion is asserted. Potential enrichment is distinct from checking the present producer, occurrence and locus claims.
+
+### Exact-key computed classification provenance
+
+representation: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+The owner reproduces its exact-key NPClassifier result and version npclassifier.gnps2.org@2026-09-07, including Alkaloids filing, superclass/class labels and glycoside prediction true. Computed labels are not independent evidence for precursor use or natural origin. Any corrected chemical identity must be reclassified against its corrected effective key.
+
+### Taxonomic synonym and experimental-stock boundaries
+
+provenance: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+NCBI 36816 S. caelestis includes ATCC15084 in its type material. This supports the source-stock label and does not transfer S. lincolnensis lmb experiments to S. caelestis ccb genes.
+
+### Native producer and experimental-host transcriptomic applicability
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+S. caelestis ATCC15084 is absent. The catalogue S. coelicolor entry does not by itself establish the translation-expression construct in M145, and E. coli datasets do not establish recombinant LmbC/LmbN activity or native celesticetin production.
+
+### Native source and producer-versus-occurrence scope
+
+evidence: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+Natural origin and the source-tier S. caelestis producer claim are supported by the explicit native culture/source statement. There is no separate occurrence assertion to verify or synthesize. Optional strain-slot enrichment alone is not treated as a defect.
+
+### Two evidence grades and experimental boundaries
+
+evidence: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+Retain SOURCE_ASSERTION and CLUSTER_UNSTATED for this imported ccb row. The article associates and sequences this locus, but its new native knockout, biochemical loading and heterologous protein-expression experiments concern lmb. Their organism and product endpoints cannot be transferred across homologs.
+
+### Asserted biosynthetic class versus computed filing
+
+representation: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+The imported NRPS BGC category is compatible with the paper’s hybrid amino-acid activation/carrier-protein and amino-sugar condensation model. It is not a claim of a fully demonstrated conventional modular NRPS pathway, nor does it replace the separate computed alkaloid classification.
+
+### Mechanism, activity and structural resolution boundaries
+
+scope: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+The owner asserts no protein, reaction, bioactivity or external causal graph. There is no optional-absence finding. Its stereo_complete=false is a representation observation; independent chemistry review must decide the exact stereochemical repair, if any, without borrowing a new absolute assignment from Figure 1.
+
+### Stored representation and source-concept provenance
+
+identity: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+The complete source row BGC0001225:1 and source-concept hash reproduce this stored representation; this does not establish that the upstream compound label is correct. Formula, charge, Standard and fixed-H distinctions are independently recorded. Primary support and any conflicting exact xref are assessed separately.
+
+### Exact authority eligibility and source representation
+
+provenance: supported. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+No exact eligible row exists in the committed ChEBI projection for this owner. Current bounded name/key searches do not justify a different congener or a two-star grounding.
+
+### Literal CID versus represented chemical precision
+
+grounding: concern. Targets: naturalproductmech:mibig-3aa9fcb0a8.
+
+The name and constitution agree, and all six specified owner centres agree; the literal PubChem record is nevertheless narrower at two undefined centres. The name-search CID5464476 additionally reverses four specified sugar centres and must not be substituted. Exact-key CID10369659 is only a candidate, not an authorized new emitted xref.
+
+## Findings
+
+### C125-F-XREF-PRECISION: Literal PubChem cross-reference adds two undefined stereocentres
+
+major / open / confirmed; issue key: celesticetin-pubchem20054860-extra-stereocentres.
+
+The owner leaves two side-chain centres undefined, but pubchem:20054860 specifies both as R. Exact equivalence therefore overstates the represented stereochemical precision. No opposite configuration is alleged at the six defined owner centres.
+
+## Recommended Actions And Acceptance Checks
+
+### C125-ACTION-XREF
+
+For retained owner precision, add the literal pubchem:20054860 exclusion for source_id=BGC0001225:1, expected_source_row_sha256=60f510c4bffd854e234cc7d1d6339e402926cfd79770578c246005263831e1f4, with actual curator/date, stable PubChem reference and the precise two-added-R-centres rationale. The full row pins version 5, old key VMSQKUCYEMOKMM-AFJAYNRNSA-N, exact old SMILES COC(C)C(NC(=O)[C@@H]1CCCN1C)[C@H]1O[C@H](SCCOC(=O)C2=CC=CC=C2O)[C@H](O)[C@@H](O)[C@H]1O, database_ids=npatlas:NPA017050&#124;pubchem:20054860 and all source context. Keep NPA017050, owner graph and the original PubChem association in the generated discussion. No current exact eligible three-star replacement is established. A future primary-supported full-hand refinement is a separate adjudication; do not copy invalid/default or differently stereochemical name candidates. The exclusion consumer cannot add CID10369659 or change structure, and current structure correction rejects this exclusion overlay unless an explicitly tested composition is implemented. No old-key occurrence, classifier or assay transfer follows from a narrow xref-only repair.
+
+- Reject duplicate, missing, nonliteral or drifted full source rows and malformed attribution.
+- Only the literal PubChem exact-equivalence assertion is withheld; original association and two-centre refinement relationship remain visible.
+- Retain the six assigned centres, two undefined centres, exact NPAtlas reference and all independently supported biological claims.
+- After separately authorized curation, run the documented seed canary, reproduction and QC; no execution is performed in this review.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R125-OWNER | data/natural_products/alkaloids/celesticetin.yaml; Complete owner, all present assertions and complete audit history | supports | Root read the complete celesticetin owner after official intake. It contains 0 occurrence, 1 producer and 1 locus assertions. Referenced external components are empty. Present optional fields: none. |
+| R125-LOCAL | /private/tmp/npm-review-work/125/local-sources.json; Complete resolved owner and all six captured exact matching source-row sets | context_only | Root read every captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB and NPClassifier row, including empty sets. The owner and captured rows match the prepared source snapshot. Separate PubChem raw observations are assessed by the scientific section. Source fidelity alone does not establish experimental support. |
+| R125-TAXON-CONTEXT | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;retmode=xml&amp;id=162396,1905,1981977,2062,2502037,27334,292,339670,36816,371126,38033,40623,5149,54571,66425,68195,953739,97398; ScientificName, Rank, ParentTaxId and OtherNames for the exact relevant taxon records | context_only | NCBI 36816 S. caelestis includes ATCC15084 in its type material. This supports the source-stock label and does not transfer S. lincolnensis lmb experiments to S. caelestis ccb genes. |
+| R125-IMODULON | https://imodulondb.org/api/datasets; Complete official 20-organism/28-dataset catalogue | context_only | The retained current catalogue was read and its bytes match the previously inspected catalogue. It establishes membership only, not production or module applicability. |
+| S125-E-OWNER | data/natural_products/alkaloids/celesticetin.yaml; Complete actual owner, resolved view and all matching captured source rows | supports | The complete actual owner and matching raw source sets were read. Imported producer, occurrence and locus claims are distinct; no optional mechanism or activity slot is inferred to be mandatory. |
+| S125-E-RAW | data/raw/mibig_compounds.tsv; BGC0001225:1 version 5; complete parsed source-row SHA256 60f510c4bffd854e234cc7d1d6339e402926cfd79770578c246005263831e1f4 | supports | The official intake retains the exact current raw row, graph, source taxon, accession, bounds, methods and reference. This digest includes every parsed field, including empty fields. |
+| S125-E-GRADING | conf/producer_evidence.tsv; Complete configured organism-versus-locus evidence vocabulary | supports | Native knockout can support BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED. Heterologous expression and enzymatic assays concern locus function only. Empty methods remain SOURCE_ASSERTION and CLUSTER_UNSTATED; missing optional enrichment does not itself make an imported grade false. |
+| S125-E-MAIN-NATIVE | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4351081&amp;retmode=xml; Full main scientific body; Materials and Methods, Bacterial strains; Results, comparative cluster analysis | supports | The primary explicitly names celesticetin-producing S. caelestis ATCC 15084 as the DNA source for the sequenced ccb cluster GQ844764. This is a source-specific native producer/cluster association. It separately names lincomycin-producing S. lincolnensis ATCC 25466 and distinguishes their products. |
+| S125-E-MAIN-EXPERIMENTS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4351081&amp;retmode=xml; Full main methods/results, gene inactivation, complementation, recombinant production and aminoacylation | supports | The new inactivation and feeding experiments use lmb genes in native S. lincolnensis and measure lincomycin/precursors. Recombinant LmbC and tagged LmbN carrier-protein assays activate/load PPL; S. coelicolor M145 expresses LmbN forms for immunodetection. These are not native ccb knockouts, complete celesticetin heterologous production or final celesticetin reconstitution. |
+| S125-E-MAIN-SCOPE | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&amp;id=4351081&amp;retmode=xml; Introduction, Figure 1 and discussion; primary figure pixels previously inspected | supports | The paper distinguishes known CcbC L-proline activation and CcbJ methylation from earlier cited studies, comparative ccb homology and proposed functions. The hybrid NRPS/amino-sugar assembly interpretation is not a claim that all Ccb reactions were directly tested. A drawn celesticetin structure is not a new absolute-hand experiment. |
+| S125-E-SI-CLUSTER | https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0118850.s001&amp;type=supplementary; Complete S1 Document, cluster sequencing and comparative functional discussion | supports | Cosmids CK1/CK2 and comparative sequencing identify the ccb region from ATCC 15084. The discussion distinguishes proposed Ccb1–5 and other homolog functions from measured Lmb experiments; source annotation is not final-product enzymatic reconstruction. |
+| S125-E-SI-CONSTRUCTS | https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0118850.s005&amp;type=supplementary; Complete S3 Table supplied as supplemental file s005 | supports | The table explicitly enumerates recombinant LmbN, LmbN-CP and LmbN-ID constructs with N-terminal His6 or C-terminal His8 tags, production conditions and assay usage. These are tagged lincomycin-pathway proteins, not experimentally equivalent native Ccb proteins. |
+| S125-E-LOCUS | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&amp;id=GQ844764.1&amp;rettype=gbwithparts&amp;retmode=text; GQ844764.1; complete header and feature qualifiers, excluding full translation reanalysis | supports | Complete 36,543-bp sequence from S. caelestis ATCC15084, taxon36816; cluster misc_feature5268..32621 agrees with the primary comparative analysis. Full header/feature qualifiers excluding translations were read. This is source/locus identity, not a new knockout or biochemical claim. |
+| C125-OWNER | data/natural_products/alkaloids/celesticetin.yaml; Complete owner and all local-source rows; no referenced components | supports | The complete owner denotes celesticetin under naturalproductmech:mibig-3aa9fcb0a8. Its exact source selector is BGC0001225:1, version 5, with complete parsed raw-row SHA256 60f510c4bffd854e234cc7d1d6339e402926cfd79770578c246005263831e1f4. The official intake and prepared owner bytes agree. |
+| C125-GRAPH | /private/tmp/npm-review-work/125/chemistry.json; Fresh intake RDKit result and frozen Standard/fixed-H comparison | supports | The stored SMILES recomputes to VMSQKUCYEMOKMM-AFJAYNRNSA-N, formula C24H36N2O9S, formal charge 0; stored InChI/key agree. These are representation checks, not experimental identity proof. |
+| C125-COMPARISON | /private/tmp/npm-review-work/shared-next-batch013/chemistry-prep/chemical-comparison.json; Record 125; exact source rows and each graph comparison | supports | Exact Standard, fixed-H, formula, charge and stereo comparisons of the retained owner, complete raw rows and current authority responses; primary experimental proof is assessed separately. |
+| C125-LOCAL-SEARCH | /private/tmp/npm-review-work/125/chemistry-search-receipt.json; Exact full key, label, slug and source selector in raw/owner/curation trees | supports | Ignored-inclusive bounded search preserves all matching paths; an absent curation decision does not imply a missing scientific source. |
+| C125-CHEBI-SEARCH-1 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=VMSQKUCYEMOKMM-AFJAYNRNSA-N&amp;size=100; Literal key search; chebi-key-celesticetin.json | supports | 1 returned name/key results; evaluate exact key and stars, not name similarity. |
+| C125-CHEBI-SEARCH-2 | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=celesticetin&amp;size=100; Literal name search; chebi-name-celesticetin.json | supports | 1 returned name/key results; evaluate exact key and stars, not name similarity. |
+| C125-AUTH-1 | https://mibig.secondarymetabolites.org/repository/BGC0001225.5/annotations.json; compounds[].structure; BGC0001225.5.json | supports | current MIBiG BGC0001225:1: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-2 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/VMSQKUCYEMOKMM-AFJAYNRNSA-N/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-key-celesticetin.json | supports | PubChem 10369659: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-3 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celesticetin/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-name-celesticetin.json | context_only | PubChem 220087: parsed key VMSQKUCYEMOKMM-UHFFFAOYSA-N; exact stored Standard key match=False, fixed-H match=False. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-4 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celesticetin/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-name-celesticetin.json | context_only | PubChem 20054860: parsed key VMSQKUCYEMOKMM-PBZRRIJCSA-N; exact stored Standard key match=False, fixed-H match=False. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-5 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celesticetin/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-name-celesticetin.json | context_only | PubChem 5464476: parsed key VMSQKUCYEMOKMM-HUQJOJSCSA-N; exact stored Standard key match=False, fixed-H match=False. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-6 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celesticetin/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-name-celesticetin.json | supports | PubChem 10369659: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-7 | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/20054860/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON; PropertyTable.Properties[].SMILES; pubchem-20054860.json | context_only | PubChem 20054860: parsed key VMSQKUCYEMOKMM-PBZRRIJCSA-N; exact stored Standard key match=False, fixed-H match=False. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-8 | https://www.npatlas.org/api/v1/compound/NPA017050; smiles; retry-NPA017050.json | supports | NPAtlas literal NPA017050: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-9 | https://www.ebi.ac.uk/chebi/backend/api/public/compound/156421/; default_structure.smiles; CHEBI156421.json | supports | ChEBI JSON 156421: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C125-AUTH-10 | https://www.ebi.ac.uk/chebi/backend/api/public/molfile/156421/; official molfile endpoint; CHEBI156421-official.mol | supports | ChEBI MOL 156421: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored Standard key match=True, fixed-H match=True. This current database representation is not independent primary experimental proof. |
+| C125-PRIMARY | DOI:10.1371/journal.pone.0118850; Original Figure 1 celesticetin drawing; independent original-pixel inspection | supports | The published celesticetin depiction specifies the two side-chain methines that the owner leaves undefined. Manual branch priorities give R at both: O outranks the adjacent N-bearing carbon at the methoxy centre; N outranks the sugar and methoxy carbon branches at the amide-bearing centre. This is a depiction check, not a new absolute-assignment experiment. |
+| C125-PRECISION | /private/tmp/npm-review-work/shared-next-batch013/chemistry-prep/precision-comparison.json; Celesticetin complete atom correspondence and assigned-versus-unspecified comparison | supports | Literal CID20054860 preserves all six owner-assigned centres and adds R at each of the two undefined side-chain centres. Exact NPA017050 and CHEBI:156421 retain the owner precision. This is a refinement mismatch, not an opposite assignment at an already defined centre. |
+| C125-XREF-CONTRACT | src/naturalproductmech/curate/xref_exclusions.py; Inspected maintained consumer | supports | The implemented seven-field decision pins the complete original MIBiG row and one literal PubChem or NPAtlas xref. The seeder preserves the raw source association in a resolved discussion while withholding exact equivalence. |
+| C125-SEED-CONTRACT | scripts/seed_from_sources.py; Inspected maintained consumer | supports | Xref exclusions are applied to emitted exact references, and are rejected when combined with structure_correction_note without a reviewed composition path. |
+| C125-STRUCTURE-CONTRACT | src/naturalproductmech/curate/structure_corrections.py; Inspected maintained consumer | supports | The existing replacement consumer requires a unique eligible three-star target and copies its SMILES; it is not an arbitrary stereo or positive-xref editor. |
+
+## Limits And Additional Notes
+
+- This is a claim-level review of present assertions and bounded source gaps, not an exhaustive search for every later paper or an obligation to add every optional mechanism.
+- Published source and feature annotations were read without a complete Ccb-to-experimental-construct sequence comparison; no such protein equivalence is asserted.
+- S1 Document and the s005 construct table were fully read. Other retrieved supplementary files were not fully interpreted; they concern detailed lmb experiments that are not emitted as ccb claims.
+- Earlier CcbC/CcbJ papers remain optional uninspected assay leads. This science recommendation does not resolve the separately reviewed incomplete stereochemical representation.
+- Authority matches establish the representations actually returned at their retained access times; they are not independent experimental structure or absolute-hand determinations. Root and science sections separately assess organism, locus, classification and history claims.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T180228Z-celesticetin
+title: 'Celesticetin: stereochemical cross-reference and ccb evidence review'
+started_at: '2026-10-21T17:52:01.929584Z'
+finished_at: '2026-10-21T18:02:28.810772Z'
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The literal PubChem cross-reference specifies two R stereocentres that the
+  stored celesticetin graph leaves undefined, creating a confirmed exact-equivalence
+  precision error. The exact NPAtlas reference and native S. caelestis ATCC 15084
+  cluster association remain supported. The cited 2015 new knockout and loading experiments
+  concern lincomycin-pathway lmb proteins and do not justify upgrading celesticetin
+  ccb methods; original absolute-assignment ancestry remains unresolved.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: curation/pubchem_bioassay_exclusions.tsv
+    sha256: 76f9cbb17e62a270afed637b5058a553cfe85c754c6c9ec406635f12dae572fa
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/carbazomycin-b.yaml
+    sha256: ee2d77b905d7e3158e521dc43ab0e8dc795cad0d6791f1a119b35072c44af4a3
+    role: context
+  - path: data/natural_products/alkaloids/carquinostatin-a.yaml
+    sha256: 363433a8631354f0c1aeecb31592162b13e514a725fa625d825122bf4370b508
+    role: context
+  - path: data/natural_products/alkaloids/carquinostatin-b.yaml
+    sha256: 12699a3ef0bc0b098441f90dd24c3a5323d62d1f8f397d88437984d7d769ee7d
+    role: context
+  - path: data/natural_products/alkaloids/cc-1065.yaml
+    sha256: 18807ddce1f23840d55147cc331acf26c162f174d929473c833712ae1368f3ca
+    role: context
+  - path: data/natural_products/alkaloids/celesticetin.yaml
+    sha256: 350fa68eb60fe724287f9368a7389fb6721b30af53cb69be0a46349530a47a8d
+    role: target
+  - path: data/natural_products/alkaloids/cepaciachelin.yaml
+    sha256: d7f040cf3d0c84a874b4a8a16824b1976a705a981d4689711d749849ec649d8c
+    role: context
+  - path: data/natural_products/alkaloids/chaetoglobosin-a.yaml
+    sha256: ade0d70a3f0c31506cb39562482bf0e09ace40b303ff965e3c6150ff70f5e6c5
+    role: context
+  - path: data/natural_products/alkaloids/chaetoglobosin-c.yaml
+    sha256: 9a1bf49fde80bca26c948c350609bafed6853871a75339aa1301b38aad5fe68a
+    role: context
+  - path: data/natural_products/alkaloids/chaetoglobosin-p.yaml
+    sha256: 0308e9b1b2258370d93d04398111270812a720e2e151bf9fc29a214a7e3cbad1
+    role: context
+  - path: data/natural_products/alkaloids/chloramphenicol.yaml
+    sha256: d1c483e457d58b0306462795af8f027a3ed4dd22d781ed6044b193151a83a793
+    role: context
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/extract_pubchem_bioassay.py
+    sha256: 24f9d794e7cf97c420351cb751f8767f7d81a5f22aed01669b2318d6755e7c00
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/bioassay_exclusions.py
+    sha256: 4a4176e072ac9759aa8a9e88300d7e2de5aaf4ebf30b5c42fcf4c9c0b6cebbb4
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/lotus_exclusions.py
+    sha256: 6352cac7c587eab5a56d907c523cc899d02d197009081624bf8649c675ee30f7
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/curate/structure_corrections.py
+    sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+    role: context
+  - path: src/naturalproductmech/curate/xref_exclusions.py
+    sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+  - path: tests/test_bioassay_exclusions.py
+    sha256: 099a0b8f6f51ce93406344440b63d99db7203486ed92797d90990005bdb6bbd0
+    role: context
+  - path: tests/test_lotus_exclusions.py
+    sha256: 3e3aa443714202e1bc41f0fb236e6bf69caabd68a16af23b972323f5f846386c
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 125, batch 013, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 174 of 3116 current
+    records had campaign coverage and 2942 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+targets:
+- target_id: naturalproductmech:mibig-3aa9fcb0a8
+  path: data/natural_products/alkaloids/celesticetin.yaml
+  label: celesticetin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  command: just validate-strict data/natural_products/alkaloids/celesticetin.yaml
+    --out /private/tmp/npm-review-work/125/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T17:52:03.823098Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch013 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch013. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch013 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch013. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch013 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch013. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch013 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch013. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch013
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch013.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+- check_id: R125-FULL-OWNER
+  name: Complete owner and referenced-component scope
+  status: passed
+  required: true
+  summary: The complete owner and all six captured source-row sets were read after
+    successful official intake and agree with the pinned preparation. The external
+    component set is empty. Fresh strict validation is retained separately.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - R125-OWNER
+  - R125-LOCAL
+- check_id: S125-C-ORIGIN
+  name: Native producer and exact deposited source applicability
+  status: passed
+  required: true
+  summary: The full primary explicitly identifies ATCC 15084 as celesticetin producer
+    and cluster DNA source; the GQ844764.1 source feature agrees at strain and taxon
+    scope.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - S125-E-MAIN-NATIVE
+  - S125-E-SI-CLUSTER
+  - S125-E-LOCUS
+- check_id: S125-C-LOCUS
+  name: Cited locus, methods and source grade
+  status: passed
+  required: true
+  summary: GQ844764.1 and the stored 5268..32621 bounds identify the annotated ccb
+    cluster. Empty imported methods remain SOURCE_ASSERTION/CLUSTER_UNSTATED; the
+    primary new lmb experiments do not require a ccb method upgrade.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - S125-E-RAW
+  - S125-E-GRADING
+  - S125-E-MAIN-EXPERIMENTS
+  - S125-E-SI-CLUSTER
+  - S125-E-LOCUS
+- check_id: S125-C-EARLIER
+  name: Optional earlier CcbC/CcbJ experimental detail
+  status: unavailable
+  required: false
+  summary: The 2015 article cites earlier CcbC/CcbJ studies, but no exact protein/reaction
+    claim from them is emitted in this owner. Their original detailed assays were
+    not independently read in this review and are not imported as new findings.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - S125-E-MAIN-SCOPE
+- check_id: C125-C-REPRESENTATION
+  name: Stored chemical representation and complete source row
+  status: passed
+  required: true
+  summary: Fresh intake derivation agrees with the stored graph; the source selector,
+    full row and prepared snapshot were independently rechecked.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - C125-OWNER
+  - C125-GRAPH
+  - C125-COMPARISON
+- check_id: C125-C-XREF
+  name: Literal PubChem exact stereo resolution
+  status: failed
+  required: true
+  summary: CID20054860 encodes two additional R centres and is not exact equivalence
+    to the owner with those centres undefined.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - C125-OWNER
+  - C125-COMPARISON
+  - C125-PRECISION
+  - C125-AUTH-1
+  - C125-AUTH-2
+  - C125-AUTH-3
+  - C125-AUTH-4
+  - C125-AUTH-5
+  - C125-AUTH-6
+  - C125-AUTH-7
+  - C125-AUTH-8
+  - C125-AUTH-9
+  - C125-AUTH-10
+- check_id: C125-C-PRIMARY-HAND
+  name: Original experimental assignment of the two side-chain centres
+  status: unavailable
+  required: true
+  summary: The inspected 2015 drawing supplies the depicted assignments, but the original
+    natural absolute-hand protocol was not independently read. Do not fill the owner
+    merely from authority agreement.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - C125-PRIMARY
+  - C125-PRECISION
+evidence:
+- evidence_id: R125-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/celesticetin.yaml
+  locator: Complete owner, all present assertions and complete audit history
+  accessed_at: '2026-10-21T17:52:39.707072Z'
+  support: supports
+  summary: 'Root read the complete celesticetin owner after official intake. It contains
+    0 occurrence, 1 producer and 1 locus assertions. Referenced external components
+    are empty. Present optional fields: none.'
+  snapshot_sha256: 350fa68eb60fe724287f9368a7389fb6721b30af53cb69be0a46349530a47a8d
+- evidence_id: R125-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/125/local-sources.json
+  locator: Complete resolved owner and all six captured exact matching source-row
+    sets
+  accessed_at: '2026-10-21T17:52:39.707072Z'
+  support: context_only
+  summary: Root read every captured MIBiG, LOTUS, ChEBI structures/origins, CyanoMetDB
+    and NPClassifier row, including empty sets. The owner and captured rows match
+    the prepared source snapshot. Separate PubChem raw observations are assessed by
+    the scientific section. Source fidelity alone does not establish experimental
+    support.
+  snapshot_sha256: e0e085bdd78624bb08270a3342b3c470ee4d4c865f6012ddc217c79073613cc0
+- evidence_id: R125-TAXON-CONTEXT
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&retmode=xml&id=162396,1905,1981977,2062,2502037,27334,292,339670,36816,371126,38033,40623,5149,54571,66425,68195,953739,97398
+  locator: ScientificName, Rank, ParentTaxId and OtherNames for the exact relevant
+    taxon records
+  accessed_at: '2026-10-21T17:25:35.685538Z'
+  support: context_only
+  summary: NCBI 36816 S. caelestis includes ATCC15084 in its type material. This supports
+    the source-stock label and does not transfer S. lincolnensis lmb experiments to
+    S. caelestis ccb genes.
+  snapshot_sha256: 83ff126040853b0ab6de8dbf4dab0b64eaf4b2aea314a68d6caddfcba16f66dd
+- evidence_id: R125-IMODULON
+  kind: database
+  reference: https://imodulondb.org/api/datasets
+  locator: Complete official 20-organism/28-dataset catalogue
+  accessed_at: '2026-10-21T17:25:35.092545Z'
+  support: context_only
+  summary: The retained current catalogue was read and its bytes match the previously
+    inspected catalogue. It establishes membership only, not production or module
+    applicability.
+  snapshot_sha256: 155607e7023efdead5ebab3919279a0776d5665a7de9e28b67f02f8f521b0693
+- evidence_id: S125-E-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/celesticetin.yaml
+  locator: Complete actual owner, resolved view and all matching captured source rows
+  accessed_at: '2026-10-21T17:58:30.500240Z'
+  support: supports
+  summary: The complete actual owner and matching raw source sets were read. Imported
+    producer, occurrence and locus claims are distinct; no optional mechanism or activity
+    slot is inferred to be mandatory.
+  snapshot_sha256: 350fa68eb60fe724287f9368a7389fb6721b30af53cb69be0a46349530a47a8d
+- evidence_id: S125-E-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: BGC0001225:1 version 5; complete parsed source-row SHA256 60f510c4bffd854e234cc7d1d6339e402926cfd79770578c246005263831e1f4
+  accessed_at: '2026-10-21T17:58:30.500240Z'
+  support: supports
+  summary: The official intake retains the exact current raw row, graph, source taxon,
+    accession, bounds, methods and reference. This digest includes every parsed field,
+    including empty fields.
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: S125-E-GRADING
+  kind: record_content
+  reference: conf/producer_evidence.tsv
+  locator: Complete configured organism-versus-locus evidence vocabulary
+  accessed_at: '2026-10-21T17:58:30.500240Z'
+  support: supports
+  summary: Native knockout can support BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED.
+    Heterologous expression and enzymatic assays concern locus function only. Empty
+    methods remain SOURCE_ASSERTION and CLUSTER_UNSTATED; missing optional enrichment
+    does not itself make an imported grade false.
+  snapshot_sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+- evidence_id: S125-E-MAIN-NATIVE
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4351081&retmode=xml
+  locator: Full main scientific body; Materials and Methods, Bacterial strains; Results,
+    comparative cluster analysis
+  accessed_at: '2026-10-21T17:13:35.196667Z'
+  support: supports
+  summary: The primary explicitly names celesticetin-producing S. caelestis ATCC 15084
+    as the DNA source for the sequenced ccb cluster GQ844764. This is a source-specific
+    native producer/cluster association. It separately names lincomycin-producing
+    S. lincolnensis ATCC 25466 and distinguishes their products.
+  snapshot_sha256: c2f0583cebc2abe1d4189e685584b5045f80cf66354c35741c2c7e31df603e3b
+- evidence_id: S125-E-MAIN-EXPERIMENTS
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4351081&retmode=xml
+  locator: Full main methods/results, gene inactivation, complementation, recombinant
+    production and aminoacylation
+  accessed_at: '2026-10-21T17:13:35.196667Z'
+  support: supports
+  summary: The new inactivation and feeding experiments use lmb genes in native S.
+    lincolnensis and measure lincomycin/precursors. Recombinant LmbC and tagged LmbN
+    carrier-protein assays activate/load PPL; S. coelicolor M145 expresses LmbN forms
+    for immunodetection. These are not native ccb knockouts, complete celesticetin
+    heterologous production or final celesticetin reconstitution.
+  snapshot_sha256: c2f0583cebc2abe1d4189e685584b5045f80cf66354c35741c2c7e31df603e3b
+- evidence_id: S125-E-MAIN-SCOPE
+  kind: primary_source
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pmc&id=4351081&retmode=xml
+  locator: Introduction, Figure 1 and discussion; primary figure pixels previously
+    inspected
+  accessed_at: '2026-10-21T17:13:35.196667Z'
+  support: supports
+  summary: The paper distinguishes known CcbC L-proline activation and CcbJ methylation
+    from earlier cited studies, comparative ccb homology and proposed functions. The
+    hybrid NRPS/amino-sugar assembly interpretation is not a claim that all Ccb reactions
+    were directly tested. A drawn celesticetin structure is not a new absolute-hand
+    experiment.
+  snapshot_sha256: c2f0583cebc2abe1d4189e685584b5045f80cf66354c35741c2c7e31df603e3b
+- evidence_id: S125-E-SI-CLUSTER
+  kind: primary_source
+  reference: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0118850.s001&type=supplementary
+  locator: Complete S1 Document, cluster sequencing and comparative functional discussion
+  accessed_at: '2026-10-21T17:16:06.722669Z'
+  support: supports
+  summary: Cosmids CK1/CK2 and comparative sequencing identify the ccb region from
+    ATCC 15084. The discussion distinguishes proposed Ccb1–5 and other homolog functions
+    from measured Lmb experiments; source annotation is not final-product enzymatic
+    reconstruction.
+  snapshot_sha256: 9b59e725f14dd95ab90f1d51c51fde091e7b98bfc6180c8bf10179231f96b7ec
+- evidence_id: S125-E-SI-CONSTRUCTS
+  kind: primary_source
+  reference: https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0118850.s005&type=supplementary
+  locator: Complete S3 Table supplied as supplemental file s005
+  accessed_at: '2026-10-21T17:16:08.065872Z'
+  support: supports
+  summary: The table explicitly enumerates recombinant LmbN, LmbN-CP and LmbN-ID constructs
+    with N-terminal His6 or C-terminal His8 tags, production conditions and assay
+    usage. These are tagged lincomycin-pathway proteins, not experimentally equivalent
+    native Ccb proteins.
+  snapshot_sha256: d387e31b75ea2471038e79cc595f5eb59699b380f5a4468c9b9d17b42b19d4e3
+- evidence_id: S125-E-LOCUS
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=GQ844764.1&rettype=gbwithparts&retmode=text
+  locator: GQ844764.1; complete header and feature qualifiers, excluding full translation
+    reanalysis
+  accessed_at: '2026-10-21T17:19:58.529252Z'
+  support: supports
+  summary: Complete 36,543-bp sequence from S. caelestis ATCC15084, taxon36816; cluster
+    misc_feature5268..32621 agrees with the primary comparative analysis. Full header/feature
+    qualifiers excluding translations were read. This is source/locus identity, not
+    a new knockout or biochemical claim.
+  snapshot_sha256: 869b7f902033964745d3f088935afc950685981afefe3e6272a1fc408ecd72c1
+- evidence_id: C125-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/celesticetin.yaml
+  locator: Complete owner and all local-source rows; no referenced components
+  accessed_at: '2026-10-21T17:58:49.852723Z'
+  support: supports
+  summary: The complete owner denotes celesticetin under naturalproductmech:mibig-3aa9fcb0a8.
+    Its exact source selector is BGC0001225:1, version 5, with complete parsed raw-row
+    SHA256 60f510c4bffd854e234cc7d1d6339e402926cfd79770578c246005263831e1f4. The official
+    intake and prepared owner bytes agree.
+  snapshot_sha256: 350fa68eb60fe724287f9368a7389fb6721b30af53cb69be0a46349530a47a8d
+- evidence_id: C125-GRAPH
+  kind: validation
+  reference: /private/tmp/npm-review-work/125/chemistry.json
+  locator: Fresh intake RDKit result and frozen Standard/fixed-H comparison
+  accessed_at: '2026-10-21T17:52:02.677228Z'
+  support: supports
+  summary: The stored SMILES recomputes to VMSQKUCYEMOKMM-AFJAYNRNSA-N, formula C24H36N2O9S,
+    formal charge 0; stored InChI/key agree. These are representation checks, not
+    experimental identity proof.
+  snapshot_sha256: d950d913b08f565b4b1a02cd1cda2dcd89bc2150e24c93d84d401869cb269bec
+- evidence_id: C125-COMPARISON
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch013/chemistry-prep/chemical-comparison.json
+  locator: Record 125; exact source rows and each graph comparison
+  accessed_at: '2026-10-21T17:23:24.463910Z'
+  support: supports
+  summary: Exact Standard, fixed-H, formula, charge and stereo comparisons of the
+    retained owner, complete raw rows and current authority responses; primary experimental
+    proof is assessed separately.
+  snapshot_sha256: 503b2ba573d5eef465b41aa483433a9b2b92cce169c7270520b63466b4f5539f
+- evidence_id: C125-LOCAL-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/125/chemistry-search-receipt.json
+  locator: Exact full key, label, slug and source selector in raw/owner/curation trees
+  accessed_at: '2026-10-21T17:58:49.925015Z'
+  support: supports
+  summary: Ignored-inclusive bounded search preserves all matching paths; an absent
+    curation decision does not imply a missing scientific source.
+  snapshot_sha256: dfc50ab490650b54a07a7f456536da26600d548a59e319d80680d37f6217d9a4
+  search_scope: rg --no-ignore --hidden; data/natural_products, data/raw and curation;
+    exact full key, current label, slug and BGC:compound_index. No claim beyond these
+    trees.
+- evidence_id: C125-CHEBI-SEARCH-1
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=VMSQKUCYEMOKMM-AFJAYNRNSA-N&size=100
+  locator: Literal key search; chebi-key-celesticetin.json
+  accessed_at: '2026-10-21T17:19:05.361181Z'
+  support: supports
+  summary: 1 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: a661aa82f51a045d897eb996717b8b8e71842c8654ee77f3140576e7291cb2d1
+  search_scope: Official ChEBI es_search bounded key request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C125-CHEBI-SEARCH-2
+  kind: search
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=celesticetin&size=100
+  locator: Literal name search; chebi-name-celesticetin.json
+  accessed_at: '2026-10-21T17:19:06.004850Z'
+  support: supports
+  summary: 1 returned name/key results; evaluate exact key and stars, not name similarity.
+  snapshot_sha256: 5622964bdfc072a9a93a1a030a37a895ad71bcd7adde5942e5ae90f12f6b681f
+  search_scope: Official ChEBI es_search bounded name request, size=100, exact URL
+    retained. This is not a universal absence claim.
+- evidence_id: C125-AUTH-1
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001225.5/annotations.json
+  locator: compounds[].structure; BGC0001225.5.json
+  accessed_at: '2026-10-21T17:19:04.685797Z'
+  support: supports
+  summary: 'current MIBiG BGC0001225:1: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact
+    stored Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 5e6b0037d47ed8f385d20efbb2450bbb26b2b6f2729d3e5cd96b75ce4d41da30
+- evidence_id: C125-AUTH-2
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/VMSQKUCYEMOKMM-AFJAYNRNSA-N/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-key-celesticetin.json
+  accessed_at: '2026-10-21T17:19:05.553117Z'
+  support: supports
+  summary: 'PubChem 10369659: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 74fe4763cf625aa40bd71cd6dec99aa2d2c9c5336e96e76d6faae0731d1e31ec
+- evidence_id: C125-AUTH-3
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celesticetin/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-name-celesticetin.json
+  accessed_at: '2026-10-21T17:19:06.650772Z'
+  support: context_only
+  summary: 'PubChem 220087: parsed key VMSQKUCYEMOKMM-UHFFFAOYSA-N; exact stored Standard
+    key match=False, fixed-H match=False. This current database representation is
+    not independent primary experimental proof.'
+  snapshot_sha256: 58885fd7e78278f2400191057284d079630477f757af10fe9c48bc588acd06a5
+- evidence_id: C125-AUTH-4
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celesticetin/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-name-celesticetin.json
+  accessed_at: '2026-10-21T17:19:06.650772Z'
+  support: context_only
+  summary: 'PubChem 20054860: parsed key VMSQKUCYEMOKMM-PBZRRIJCSA-N; exact stored
+    Standard key match=False, fixed-H match=False. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 58885fd7e78278f2400191057284d079630477f757af10fe9c48bc588acd06a5
+- evidence_id: C125-AUTH-5
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celesticetin/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-name-celesticetin.json
+  accessed_at: '2026-10-21T17:19:06.650772Z'
+  support: context_only
+  summary: 'PubChem 5464476: parsed key VMSQKUCYEMOKMM-HUQJOJSCSA-N; exact stored
+    Standard key match=False, fixed-H match=False. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 58885fd7e78278f2400191057284d079630477f757af10fe9c48bc588acd06a5
+- evidence_id: C125-AUTH-6
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/celesticetin/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-name-celesticetin.json
+  accessed_at: '2026-10-21T17:19:06.650772Z'
+  support: supports
+  summary: 'PubChem 10369659: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 58885fd7e78278f2400191057284d079630477f757af10fe9c48bc588acd06a5
+- evidence_id: C125-AUTH-7
+  kind: authority
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/20054860/property/MolecularFormula,InChI,InChIKey,CanonicalSMILES,IsomericSMILES,Charge/JSON
+  locator: PropertyTable.Properties[].SMILES; pubchem-20054860.json
+  accessed_at: '2026-10-21T17:19:04.811019Z'
+  support: context_only
+  summary: 'PubChem 20054860: parsed key VMSQKUCYEMOKMM-PBZRRIJCSA-N; exact stored
+    Standard key match=False, fixed-H match=False. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 5e9eb5c0c383640c05fa5e30a2732d131f1ffe5be9f8726aefc8c577976ac452
+- evidence_id: C125-AUTH-8
+  kind: authority
+  reference: https://www.npatlas.org/api/v1/compound/NPA017050
+  locator: smiles; retry-NPA017050.json
+  accessed_at: '2026-10-21T17:21:18.574763Z'
+  support: supports
+  summary: 'NPAtlas literal NPA017050: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact
+    stored Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 3433e66ade6a6ed23a3a030027b85f3776d7a89a909ef1958a768c0ea55a9c91
+- evidence_id: C125-AUTH-9
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/compound/156421/
+  locator: default_structure.smiles; CHEBI156421.json
+  accessed_at: '2026-10-21T17:20:07.670360Z'
+  support: supports
+  summary: 'ChEBI JSON 156421: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 409b0aee31d92cf101c5ae340cc0e1d985d4c2f672c9185610a46034b47e22ca
+- evidence_id: C125-AUTH-10
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/molfile/156421/
+  locator: official molfile endpoint; CHEBI156421-official.mol
+  accessed_at: '2026-10-21T17:20:34.169353Z'
+  support: supports
+  summary: 'ChEBI MOL 156421: parsed key VMSQKUCYEMOKMM-AFJAYNRNSA-N; exact stored
+    Standard key match=True, fixed-H match=True. This current database representation
+    is not independent primary experimental proof.'
+  snapshot_sha256: 843398ef60d986a7780f42e4876d32e4bfcce0f9c92b647e52d6df69451e2269
+- evidence_id: C125-PRIMARY
+  kind: primary_source
+  reference: DOI:10.1371/journal.pone.0118850
+  locator: Original Figure 1 celesticetin drawing; independent original-pixel inspection
+  accessed_at: '2026-10-21T17:19:07.130521Z'
+  support: supports
+  summary: 'The published celesticetin depiction specifies the two side-chain methines
+    that the owner leaves undefined. Manual branch priorities give R at both: O outranks
+    the adjacent N-bearing carbon at the methoxy centre; N outranks the sugar and
+    methoxy carbon branches at the amide-bearing centre. This is a depiction check,
+    not a new absolute-assignment experiment.'
+  snapshot_sha256: ff6c3ee9fe290169596871bc9cc3e7de65dd3bc020fa65aab5b4081bfbe9ec0a
+- evidence_id: C125-PRECISION
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch013/chemistry-prep/precision-comparison.json
+  locator: Celesticetin complete atom correspondence and assigned-versus-unspecified
+    comparison
+  accessed_at: '2026-10-21T17:30:52.631633Z'
+  support: supports
+  summary: Literal CID20054860 preserves all six owner-assigned centres and adds R
+    at each of the two undefined side-chain centres. Exact NPA017050 and CHEBI:156421
+    retain the owner precision. This is a refinement mismatch, not an opposite assignment
+    at an already defined centre.
+  snapshot_sha256: e155816e74ac5b08f747abada71e0a9f6918c816492285b196cd5e11df0d2338
+- evidence_id: C125-XREF-CONTRACT
+  kind: record_content
+  reference: src/naturalproductmech/curate/xref_exclusions.py
+  locator: Inspected maintained consumer
+  accessed_at: '2026-10-21T17:58:49.852723Z'
+  support: supports
+  summary: The implemented seven-field decision pins the complete original MIBiG row
+    and one literal PubChem or NPAtlas xref. The seeder preserves the raw source association
+    in a resolved discussion while withholding exact equivalence.
+  snapshot_sha256: 17c3d9e7794bae596b22cf19a2dd5bc2169475d6fea81ea4e6f1781a53af9157
+- evidence_id: C125-SEED-CONTRACT
+  kind: record_content
+  reference: scripts/seed_from_sources.py
+  locator: Inspected maintained consumer
+  accessed_at: '2026-10-21T17:58:49.852723Z'
+  support: supports
+  summary: Xref exclusions are applied to emitted exact references, and are rejected
+    when combined with structure_correction_note without a reviewed composition path.
+  snapshot_sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+- evidence_id: C125-STRUCTURE-CONTRACT
+  kind: record_content
+  reference: src/naturalproductmech/curate/structure_corrections.py
+  locator: Inspected maintained consumer
+  accessed_at: '2026-10-21T17:58:49.852723Z'
+  support: supports
+  summary: The existing replacement consumer requires a unique eligible three-star
+    target and copies its SMILES; it is not an arbitrary stereo or positive-xref editor.
+  snapshot_sha256: 8c3e23bb9e16bea0bc839f6c0b3b91ba2f0dbc264d103b00b4887586e708834f
+assessments:
+- assessment_id: R125-HISTORY
+  area: provenance
+  topic: Native status and complete retained audit history
+  outcome: supported
+  summary: All retained history events record SEEDED_FROM_SOURCES provenance. The
+    native status remains SEEDED; the review changes neither history nor scientific
+    content.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - R125-OWNER
+- assessment_id: R125-OPTIONAL
+  area: completeness
+  topic: Present optional assertions and enrichment scope
+  outcome: not_applicable
+  summary: No optional pathway, causal graph, molecular target, activity, application,
+    clinical-status, cross-record relation or discussion is asserted. Potential enrichment
+    is distinct from checking the present producer, occurrence and locus claims.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - R125-OWNER
+  - R125-LOCAL
+- assessment_id: R125-FILING
+  area: representation
+  topic: Exact-key computed classification provenance
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier result and version npclassifier.gnps2.org@2026-09-07,
+    including Alkaloids filing, superclass/class labels and glycoside prediction true.
+    Computed labels are not independent evidence for precursor use or natural origin.
+    Any corrected chemical identity must be reclassified against its corrected effective
+    key.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - R125-OWNER
+  - R125-LOCAL
+- assessment_id: R125-TAXON-SCOPE
+  area: provenance
+  topic: Taxonomic synonym and experimental-stock boundaries
+  outcome: supported
+  summary: NCBI 36816 S. caelestis includes ATCC15084 in its type material. This supports
+    the source-stock label and does not transfer S. lincolnensis lmb experiments to
+    S. caelestis ccb genes.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - R125-TAXON-CONTEXT
+  - R125-OWNER
+- assessment_id: R125-IMODULON-SCOPE
+  area: completeness
+  topic: Native producer and experimental-host transcriptomic applicability
+  outcome: not_applicable
+  summary: S. caelestis ATCC15084 is absent. The catalogue S. coelicolor entry does
+    not by itself establish the translation-expression construct in M145, and E. coli
+    datasets do not establish recombinant LmbC/LmbN activity or native celesticetin
+    production.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - R125-OWNER
+  - R125-IMODULON
+- assessment_id: S125-A-ORIGIN
+  area: evidence
+  topic: Native source and producer-versus-occurrence scope
+  outcome: supported
+  summary: Natural origin and the source-tier S. caelestis producer claim are supported
+    by the explicit native culture/source statement. There is no separate occurrence
+    assertion to verify or synthesize. Optional strain-slot enrichment alone is not
+    treated as a defect.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - S125-E-OWNER
+  - S125-E-MAIN-NATIVE
+  - S125-E-LOCUS
+  dimensions:
+  - name: native_experimental_strain
+    value: Streptomyces caelestis ATCC 15084
+    definition: The ccb DNA source and named celesticetin producer, distinct from
+      all lmb intervention hosts.
+    evidence_ids:
+    - S125-E-MAIN-NATIVE
+    - S125-E-LOCUS
+- assessment_id: S125-A-TIERS
+  area: evidence
+  topic: Two evidence grades and experimental boundaries
+  outcome: supported
+  summary: Retain SOURCE_ASSERTION and CLUSTER_UNSTATED for this imported ccb row.
+    The article associates and sequences this locus, but its new native knockout,
+    biochemical loading and heterologous protein-expression experiments concern lmb.
+    Their organism and product endpoints cannot be transferred across homologs.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - S125-E-RAW
+  - S125-E-GRADING
+  - S125-E-MAIN-EXPERIMENTS
+  - S125-E-SI-CONSTRUCTS
+  - S125-E-LOCUS
+  dimensions:
+  - name: producer_locus_evidence_tiers
+    value: SOURCE_ASSERTION / CLUSTER_UNSTATED
+    definition: Source-faithful empty methods; no direct celesticetin endpoint upgrade
+      inferred.
+    evidence_ids:
+    - S125-E-RAW
+    - S125-E-GRADING
+  - name: source_version_and_coordinates
+    value: BGC0001225 version 5; GQ844764.1:5268..32621
+    definition: Exact annotated ccb interval within the deposited sequence.
+    evidence_ids:
+    - S125-E-RAW
+    - S125-E-LOCUS
+  - name: separate_experimental_contexts
+    value: S. lincolnensis ATCC 25466 lmb mutants; E. coli BL21(DE3) tagged Lmb proteins;
+      S. coelicolor M145 LmbN expression
+    definition: Lincomycin/precursor measurements and protein production are distinct
+      from celesticetin formation.
+    evidence_ids:
+    - S125-E-MAIN-EXPERIMENTS
+    - S125-E-SI-CONSTRUCTS
+- assessment_id: S125-A-CLASS
+  area: representation
+  topic: Asserted biosynthetic class versus computed filing
+  outcome: supported
+  summary: The imported NRPS BGC category is compatible with the paper’s hybrid amino-acid
+    activation/carrier-protein and amino-sugar condensation model. It is not a claim
+    of a fully demonstrated conventional modular NRPS pathway, nor does it replace
+    the separate computed alkaloid classification.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - S125-E-OWNER
+  - S125-E-RAW
+  - S125-E-MAIN-SCOPE
+- assessment_id: S125-A-OPTIONAL
+  area: scope
+  topic: Mechanism, activity and structural resolution boundaries
+  outcome: supported
+  summary: The owner asserts no protein, reaction, bioactivity or external causal
+    graph. There is no optional-absence finding. Its stereo_complete=false is a representation
+    observation; independent chemistry review must decide the exact stereochemical
+    repair, if any, without borrowing a new absolute assignment from Figure 1.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - S125-E-OWNER
+  - S125-E-MAIN-SCOPE
+- assessment_id: C125-A-IDENTITY
+  area: identity
+  topic: Stored representation and source-concept provenance
+  outcome: supported
+  summary: The complete source row BGC0001225:1 and source-concept hash reproduce
+    this stored representation; this does not establish that the upstream compound
+    label is correct. Formula, charge, Standard and fixed-H distinctions are independently
+    recorded. Primary support and any conflicting exact xref are assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - C125-OWNER
+  - C125-GRAPH
+  - C125-COMPARISON
+  dimensions:
+  - name: mibig_source_selector
+    value: BGC0001225:1
+    definition: Accession plus compound_index, distinct from the entry-level accession.
+    evidence_ids:
+    - C125-OWNER
+  - name: complete_raw_row_sha256
+    value: 60f510c4bffd854e234cc7d1d6339e402926cfd79770578c246005263831e1f4
+    definition: Sorted compact ASCII JSON of every parsed TSV field, including empty
+      values.
+    evidence_ids:
+    - C125-OWNER
+- assessment_id: C125-A-GROUNDING
+  area: provenance
+  topic: Exact authority eligibility and source representation
+  outcome: supported
+  summary: No exact eligible row exists in the committed ChEBI projection for this
+    owner. Current bounded name/key searches do not justify a different congener or
+    a two-star grounding.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - C125-OWNER
+  - C125-COMPARISON
+  - C125-LOCAL-SEARCH
+  - C125-CHEBI-SEARCH-1
+  - C125-CHEBI-SEARCH-2
+- assessment_id: C125-A-XREF
+  area: grounding
+  topic: Literal CID versus represented chemical precision
+  outcome: concern
+  summary: The name and constitution agree, and all six specified owner centres agree;
+    the literal PubChem record is nevertheless narrower at two undefined centres.
+    The name-search CID5464476 additionally reverses four specified sugar centres
+    and must not be substituted. Exact-key CID10369659 is only a candidate, not an
+    authorized new emitted xref.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  evidence_ids:
+  - C125-PRECISION
+  - C125-COMPARISON
+  - C125-AUTH-1
+  - C125-AUTH-2
+  - C125-AUTH-3
+  - C125-AUTH-4
+  - C125-AUTH-5
+  - C125-AUTH-6
+  - C125-AUTH-7
+  - C125-AUTH-8
+  - C125-AUTH-9
+  - C125-AUTH-10
+findings:
+- finding_id: C125-F-XREF-PRECISION
+  issue_key: celesticetin-pubchem20054860-extra-stereocentres
+  category: grounding
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Literal PubChem cross-reference adds two undefined stereocentres
+  description: The owner leaves two side-chain centres undefined, but pubchem:20054860
+    specifies both as R. Exact equivalence therefore overstates the represented stereochemical
+    precision. No opposite configuration is alleged at the six defined owner centres.
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  field_paths:
+  - xrefs
+  - chemical_structure
+  evidence_ids:
+  - C125-OWNER
+  - C125-PRECISION
+  - C125-COMPARISON
+  - C125-PRIMARY
+  - C125-XREF-CONTRACT
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Record the complete-row-pinned literal PubChem exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Retain the original association and exact precision rationale
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Project the narrow exclusion without adding unsupported references
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserve original source bytes
+actions:
+- action_id: C125-ACTION-XREF
+  finding_ids:
+  - C125-F-XREF-PRECISION
+  target_ids:
+  - naturalproductmech:mibig-3aa9fcb0a8
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_xref_exclusions.tsv
+    role: Record the complete-row-pinned literal PubChem exclusion
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/xref_exclusions.py
+    role: Retain the original association and exact precision rationale
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Project the narrow exclusion without adding unsupported references
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserve original source bytes
+  description: For retained owner precision, add the literal pubchem:20054860 exclusion
+    for source_id=BGC0001225:1, expected_source_row_sha256=60f510c4bffd854e234cc7d1d6339e402926cfd79770578c246005263831e1f4,
+    with actual curator/date, stable PubChem reference and the precise two-added-R-centres
+    rationale. The full row pins version 5, old key VMSQKUCYEMOKMM-AFJAYNRNSA-N, exact
+    old SMILES COC(C)C(NC(=O)[C@@H]1CCCN1C)[C@H]1O[C@H](SCCOC(=O)C2=CC=CC=C2O)[C@H](O)[C@@H](O)[C@H]1O,
+    database_ids=npatlas:NPA017050|pubchem:20054860 and all source context. Keep NPA017050,
+    owner graph and the original PubChem association in the generated discussion.
+    No current exact eligible three-star replacement is established. A future primary-supported
+    full-hand refinement is a separate adjudication; do not copy invalid/default or
+    differently stereochemical name candidates. The exclusion consumer cannot add
+    CID10369659 or change structure, and current structure correction rejects this
+    exclusion overlay unless an explicitly tested composition is implemented. No old-key
+    occurrence, classifier or assay transfer follows from a narrow xref-only repair.
+  generator: Existing exact xref-exclusion projection through the maintained seeder.
+  acceptance_checks:
+  - Reject duplicate, missing, nonliteral or drifted full source rows and malformed
+    attribution.
+  - Only the literal PubChem exact-equivalence assertion is withheld; original association
+    and two-centre refinement relationship remain visible.
+  - Retain the six assigned centres, two undefined centres, exact NPAtlas reference
+    and all independently supported biological claims.
+  - After separately authorized curation, run the documented seed canary, reproduction
+    and QC; no execution is performed in this review.
+limitations:
+- This is a claim-level review of present assertions and bounded source gaps, not
+  an exhaustive search for every later paper or an obligation to add every optional
+  mechanism.
+- Published source and feature annotations were read without a complete Ccb-to-experimental-construct
+  sequence comparison; no such protein equivalence is asserted.
+- S1 Document and the s005 construct table were fully read. Other retrieved supplementary
+  files were not fully interpreted; they concern detailed lmb experiments that are
+  not emitted as ccb claims.
+- Earlier CcbC/CcbJ papers remain optional uninspected assay leads. This science recommendation
+  does not resolve the separately reviewed incomplete stereochemical representation.
+- Authority matches establish the representations actually returned at their retained
+  access times; they are not independent experimental structure or absolute-hand determinations.
+  Root and science sections separately assess organism, locus, classification and
+  history claims.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-013
+```
