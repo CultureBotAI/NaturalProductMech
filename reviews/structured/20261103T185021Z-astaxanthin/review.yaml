@@ -1,0 +1,2226 @@
+schema_version: 1.0.0
+review_id: 20261103T185021Z-astaxanthin
+kind: record
+repository: CultureBotAI/NaturalProductMech
+title: 'Local evidence review: astaxanthin'
+started_at: '2026-11-03T18:10:20.602130Z'
+finished_at: '2026-11-03T18:50:21.954970Z'
+reviewer:
+  identity: Codex root with native_checks, bgc_science and review_support peer agents
+  kind: agent
+  independence: independent
+  independence_basis: This review team inspected existing owner and retained source
+    bytes without editing them; scientific fragments were cross-checked separately
+    from their author. Local validation is not treated as scientific proof.
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: The represented astaxanthin and ChEBI definition agree locally, but the retained
+  MIBiG 2-hydroxyastaxanthin label implies an additional hydroxyl and stereocentre
+  absent from the stored structure. This confirmed source-name/structure conflict
+  leaves compound-specific producer/locus attribution unresolved. Curation is needed;
+  scientific completion remains partial.
+source:
+  git_revision: ce6a5498df5be51116bd5e0c119023ee62bb5464
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: AGENTS.md
+    sha256: 69e4037f8dc97d4b00bb7bb83b41ceca025f6ef578d5c0bf8086f3400becde0b
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/terpenoids/astaxanthin.yaml
+    sha256: 207b70f428f4c39b783270302c19fc7ea39c45e5480b29d7b089677be5453b08
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/antibioticmech_inchikeys.tsv
+    sha256: ca8a487bf0868b96d097268db7422f07e0146258b7ca9e51fd21a3aaacdd92a6
+    role: context
+  - path: data/raw/bindingdb_targets.tsv
+    sha256: 3cff45281c35a8b14d4d7784bc4b7af80e8e27779a5667a0292f0d9b022a22c1
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: data/raw/taxon_merged.tsv
+    sha256: 97b3efa66d4fc1679ab65ae547e78b2f627f37bc8e45ae33f2719008fe3863bb
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete NaturalProductRecord, including all present scientific
+    claims, history and declared mechanisms; external verification remains unavailable.
+  selection: Campaign path order 2272; one of the next ten uncovered paths selected
+    from the 3116-record corpus. Membership uses the canonical validated catalogue
+    plus retained committed campaign bundles.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - CHEBI:40968
+targets:
+- target_id: CHEBI:40968
+  path: data/natural_products/terpenoids/astaxanthin.yaml
+  label: astaxanthin
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained harmonization generator; seeded fields are corrected through
+      maintained inputs and validated regeneration.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained MIBiG structure, producer and compound-specific locus assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/npclassifier.tsv
+    role: Pinned computed classification and filing assertions.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction of MIBiG compound names, structures, stereochemistry
+      flags and source provenance.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/chebi_structures.tsv
+    role: Retained ChEBI identifiers, definitions and exact chemical forms.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: Retained cited occurrence assertions, distinct from demonstrated production.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/taxon_merged.tsv
+    role: Exact retained selected/direct taxon decision; no fresh authority.
+  ownership_note: This review proposes no record edit. Source corrections belong in
+    maintained inventories, implemented curation tables, extractors or the seeder;
+    generated pages are not owners.
+checks:
+- check_id: root-native-strict_ten
+  name: strict_ten
+  status: passed
+  required: true
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  target_ids:
+  - CHEBI:40968
+  command: just validate-strict data/natural_products/terpenoids/aspterric-acid.yaml
+    data/natural_products/terpenoids/astaxanthin.yaml data/natural_products/terpenoids/astellolide-a.yaml
+    data/natural_products/terpenoids/avermitilol.yaml data/natural_products/terpenoids/betaestacin-i.yaml
+    data/natural_products/terpenoids/betaestacin-ii.yaml data/natural_products/terpenoids/biscognienyne-b.yaml
+    data/natural_products/terpenoids/botrydial.yaml data/natural_products/terpenoids/botrydienal.yaml
+    data/natural_products/terpenoids/botryenalol.yaml --workers 1 --out /private/tmp/npm-native-checks/batch-228/validate-strict-selected10-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_ten
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-strict_full
+  name: strict_full
+  status: passed
+  required: true
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  target_ids:
+  - CHEBI:40968
+  command: just validate-all --workers 1 --out /private/tmp/npm-native-checks/batch-228/validate-all-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-strict_full
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-lockfile
+  name: lockfile
+  status: passed
+  required: true
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  target_ids:
+  - CHEBI:40968
+  command: just verify-corpus --summary
+  exit_code: 0
+  evidence_ids:
+  - root-native-lockfile
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-reproduction
+  name: reproduction
+  status: passed
+  required: true
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  target_ids:
+  - CHEBI:40968
+  command: just verify-reproduction
+  exit_code: 0
+  evidence_ids:
+  - root-native-reproduction
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-native-queue
+  name: queue
+  status: passed
+  required: true
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  target_ids:
+  - CHEBI:40968
+  command: just review-queue --tsv /private/tmp/npm-native-checks/batch-228/review-queue-001.tsv
+  exit_code: 0
+  evidence_ids:
+  - root-native-queue
+  scope_note: Batch-local execution also covers this individual target; full-corpus
+    checks retain their full scope.
+- check_id: root-full-qc
+  name: Full just qc
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:40968
+  summary: 'Not run under the external-request prohibition: the complete recipe includes
+    upstream vendored synchronization. The five executed local checks are recorded
+    separately.'
+- check_id: root-ontology-authorities
+  name: Complete OAK identifier/label authority check
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:40968
+  summary: Complete offline ontology authority coverage was not established for this
+    run; no ontology retrieval or remote resolution was attempted. Retained taxonomy
+    evidence has only its explicitly stated local scope.
+- check_id: root-primary-and-live-sources
+  name: Primary literature and current structured database/identifier verification
+  status: unavailable
+  required: true
+  target_ids:
+  - CHEBI:40968
+  summary: All external requests are prohibited by the user. Fresh database and identifier
+    verification and complete primary-literature coverage are unavailable. Any retained
+    original literature actually inspected is recorded separately with its historical
+    scope.
+evidence:
+- evidence_id: bgc-2272-owner
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/natural_products/terpenoids/astaxanthin.yaml
+  locator: Whole owner plaintext and complete curation_history
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Complete current owner and all 2 ordered history entries personally read;
+    native curation_status remains SEEDED.
+  snapshot_sha256: 207b70f428f4c39b783270302c19fc7ea39c45e5480b29d7b089677be5453b08
+- evidence_id: bgc-2272-capture
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/owner-capture-DATA-001.json
+  locator: /records/1/owner_pin; /records/1/owner_document
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Exact complete captured owner, including all written fields and history.
+  snapshot_sha256: 9280223af2be592af18b62653684eb4e27ec0072d5e2b1f4f4a6e6fb028323b9
+- evidence_id: bgc-2272-intake
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/intakes/2272-inspect-001.json
+  locator: /source; /targets
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Actual canonical one-record intake for CHEBI:40968 with 38 current source
+    inputs and explicit field ownership.
+  snapshot_sha256: 2d5950dfc7b993e728df881f0b68038359d1cc75ebbaab7f8a0095112b779f85
+- evidence_id: bgc-2272-intake-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/root-intake-ready-001.json
+  locator: /accepted; /intake_summary; /verification
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: ROOT accepts the ten original canonical intakes and their exact current
+    ownership/source maps.
+  snapshot_sha256: c2c258d6da649f48e76d7d8994bfdef5dd2afa511e1762a008b8f65ef40f8501
+- evidence_id: bgc-2272-grounding-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/identifier; /records/1/owner_document/label;
+    /records/1/owner_document/chemical_structure; /records/1/owner_document/source_concepts;
+    /records/1/owner_document/grounding_status; /records/1/owner_document/definition;
+    /records/1/owner_document/definition_source; /records/1/owner_document/synonyms;
+    /records/1/owner_document/discussions
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Complete written identity and definition/provenance fields: {"chemical_structure":
+    {"smiles": "C\\C(\\C=C\\C=C(/C)\\C=C\\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C",
+    "standard_inchi": "InChI=1S/C40H52O4/c1-27(17-13-19-29(3)21-23-33-31(5)37(43)35(41)25-39(33,7)8)15-11-12-16-28(2)18-14-20-30(4)22-24-34-32(6)38(44)36(42)26-40(34,9)10/h11-24,35-36,41-42H,25-26H2,1-10H3/b12-11+,17-13+,18-14+,23-21+,24-22+,27-15+,28-16+,29-19+,30-20+/t35-,36-/m0/s1",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0000630"}, "definition":
+    "A carotenone that consists of β,β-carotene-4,4''-dione bearing two hydroxy substituents
+    at positions 3 and 3'' (the 3S,3''S diastereomer). A carotenoid pigment found
+    mainly in animals (crustaceans, echinoderms) but also occurring in plants. It
+    can occur free (as a red pigment), as an ester, or as a blue, brown or green chromoprotein.",
+    "definition_source": "CHEBI:40968", "discussions": [{"discussion_id": "name-disagreement",
+    "kind": "CONTROVERSY", "prompt": "ChEBI calls this structure ''astaxanthin'' and
+    MIBiG calls it \"(2R,3S,3''S)-2-hydroxyastaxanthin\". They share a Standard InChIKey,
+    so if the names denote different compounds then one upstream record has the wrong
+    structure. Check which.", "status": "OPEN"}], "grounding_status": "EXACT", "identifier":
+    "CHEBI:40968", "label": "astaxanthin", "source_concepts": [{"minted_identifier":
+    "naturalproductmech:mibig-f8da97c9d7", "source": "MIBIG", "source_id": "BGC0000630",
+    "source_label": "(2R,3S,3''S)-2-hydroxyastaxanthin", "source_version": "3"}, {"minted_identifier":
+    "naturalproductmech:chebi-7a5e0419ac", "source": "CHEBI", "source_id": "CHEBI:40968",
+    "source_label": "astaxanthin", "source_version": "3-star"}], "synonyms": [{"source":
+    "mibig:BGC0000630", "synonym_type": "RELATED_SYNONYM", "value": "(2R,3S,3''S)-2-hydroxyastaxanthin"}]}'
+  snapshot_sha256: 9280223af2be592af18b62653684eb4e27ec0072d5e2b1f4f4a6e6fb028323b9
+- evidence_id: bgc-2272-origin-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/producer_organisms; /records/1/owner_document/biosynthetic_gene_clusters;
+    /records/1/owner_document/producer_taxon_groups
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Complete written producer and locus claims with their separate evidence
+    grades: {"biosynthetic_gene_clusters": [{"accession": "mibig:BGC0000630", "bgc_class":
+    ["TERPENE"], "entry_status": "active", "entry_version": "3", "evidence": [{"evidence_type":
+    "DATABASE_ASSERTION", "notes": "MIBiG BGC0000630 entry version 3; citation taken
+    from the entry level", "reference": "PMID:16434154"}], "genome_accession": "genbank:AY957386.1",
+    "link_evidence_basis": "CLUSTER_UNSTATED", "organism_label": "Paracoccus haeundaensis",
+    "organism_taxon_id": "NCBITaxon:225362"}], "producer_organisms": [{"biosynthetic_gene_cluster":
+    "mibig:BGC0000630", "evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes":
+    "MIBiG BGC0000630 entry version 3; citation taken from the entry level", "reference":
+    "PMID:16434154"}], "evidence_basis": "SOURCE_ASSERTION", "notes": "Locus evidence:
+    none stated. That evidence grades the LOCUS as CLUSTER_UNSTATED; this field grades
+    the taxon claim, which is a different question.", "source": "MIBIG", "source_version":
+    "3", "taxon_id": "NCBITaxon:225362", "taxon_label": "Paracoccus haeundaensis"}],
+    "producer_taxon_groups": ["OTHER_BACTERIAL"]}'
+  snapshot_sha256: 9280223af2be592af18b62653684eb4e27ec0072d5e2b1f4f4a6e6fb028323b9
+- evidence_id: bgc-2272-occurrence-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/owner-capture-DATA-001.json
+  locator: /records/1/owner_document
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'The complete owner establishes present or absent occurrences. Written
+    occurrence fields and any omission notes: {"occurrence_taxon_groups": ["FUNGAL",
+    "SPONGE", "MOLLUSK", "CHORDATE", "OTHER_ANIMAL"], "occurrences": [{"evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1016/0305-0491(85)90174-9"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q4925051", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:107392", "taxon_label": "Ascidia zara", "taxon_source":
+    "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.", "reference":
+    "DOI:10.1016/0305-0491(89)90090-4"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q882716",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:109185", "taxon_label": "Linckia laevigata",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q3678888", "source": "LOTUS", "taxon_id": "NCBITaxon:111668",
+    "taxon_label": "Cladonia gracilis", "taxon_source": "NCBITaxon"}, {"evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1016/0305-1978(85)90064-X"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q248744", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:111670", "taxon_label": "Cladonia rangiferina",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-1978(87)90002-0"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q248744", "source": "LOTUS", "taxon_id": "NCBITaxon:111670",
+    "taxon_label": "Cladonia rangiferina", "taxon_source": "NCBITaxon"}, {"evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1016/0305-1978(85)90064-X"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q21379660", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:1156959", "taxon_label": "Cladonia ciliata var.
+    tenuis", "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.2331/SUISAN.53.1271"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q2287323",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:1336858", "taxon_label": "Gelliodes
+    callista", "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q2079766", "source": "LOTUS", "taxon_id": "NCBITaxon:174045",
+    "taxon_label": "Cladonia stellaris", "taxon_source": "NCBITaxon"}, {"evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1016/0305-1978(85)90064-X"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q3678845", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:174050", "taxon_label": "Cladonia cenotea", "taxon_source":
+    "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.", "reference":
+    "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q113273",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:174053", "taxon_label": "Cladonia coccifera",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q456384", "source": "LOTUS", "taxon_id": "NCBITaxon:174058",
+    "taxon_label": "Cladonia fimbriata", "taxon_source": "NCBITaxon"}, {"evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1016/0305-1978(85)90064-X"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q3678887", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:174061", "taxon_label": "Cladonia glauca", "taxon_source":
+    "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.", "reference":
+    "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q3678922",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:174062", "taxon_label": "Cladonia ochrochlora",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q3678942", "source": "LOTUS", "taxon_id": "NCBITaxon:174071",
+    "taxon_label": "Cladonia scabriuscula", "taxon_source": "NCBITaxon"}, {"evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.2331/SUISAN.54.1437"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q798231", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:174403", "taxon_label": "Paralithodes brevipes",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q3678868", "source": "LOTUS", "taxon_id": "NCBITaxon:184097",
+    "taxon_label": "Cladonia deformis", "taxon_source": "NCBITaxon"}, {"evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1016/0305-1978(87)90002-0"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q3678877", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:184098", "taxon_label": "Cladonia ecmocyna", "taxon_source":
+    "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.", "reference":
+    "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q3678931",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:184109", "taxon_label": "Cladonia phyllophora",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.2331/SUISAN.58.1549"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q2637622",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:190923", "taxon_label": "Hexabranchus",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q3678915", "source": "LOTUS", "taxon_id": "NCBITaxon:195774",
+    "taxon_label": "Cladonia mitis", "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type":
+    "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference triple. LOTUS
+    reports that the compound was found in the organism; it does not assert that the
+    organism produces it.", "reference": "DOI:10.1016/0305-1978(85)90064-X"}], "notes":
+    "Wikidata organism http://www.wikidata.org/entity/Q3678901", "source": "LOTUS",
+    "taxon_id": "NCBITaxon:196765", "taxon_label": "Cladonia macilenta", "taxon_source":
+    "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS
+    structure-organism-reference triple. LOTUS reports that the compound was found
+    in the organism; it does not assert that the organism produces it.", "reference":
+    "DOI:10.1016/0305-1978(87)90002-0"}], "notes": "Wikidata organism http://www.wikidata.org/entity/Q3678904",
+    "source": "LOTUS", "taxon_id": "NCBITaxon:197105", "taxon_label": "Cladonia macrophylla",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-1978(85)90064-X"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q3678939", "source": "LOTUS", "taxon_id": "NCBITaxon:2031061",
+    "taxon_label": "Cladonia ramulosa", "taxon_source": "NCBITaxon"}, {"evidence":
+    [{"evidence_type": "DATABASE_ASSERTION", "notes": "LOTUS structure-organism-reference
+    triple. LOTUS reports that the compound was found in the organism; it does not
+    assert that the organism produces it.", "reference": "DOI:10.1016/0305-1978(88)90082-8"}],
+    "notes": "Wikidata organism http://www.wikidata.org/entity/Q10718170", "source":
+    "LOTUS", "taxon_id": "NCBITaxon:203386", "taxon_label": "Nephroma laevigatum",
+    "taxon_source": "NCBITaxon"}, {"evidence": [{"evidence_type": "DATABASE_ASSERTION",
+    "notes": "LOTUS structure-organism-reference triple. LOTUS reports that the compound
+    was found in the organism; it does not assert that the organism produces it.",
+    "reference": "DOI:10.1016/0305-0491(87)90298-7"}], "notes": "Wikidata organism
+    http://www.wikidata.org/entity/Q3526219 33 further cited occurrences are recorded
+    in data/raw/lotus_occurrences.tsv and data/raw/chebi_origins.tsv but not written
+    here: a record carrying hundreds of them cannot be reviewed. The inventories are
+    the complete record.", "source": "LOTUS", "taxon_id": "NCBITaxon:210626", "taxon_label":
+    "Thysanoessa inermis", "taxon_source": "NCBITaxon"}]}'
+  snapshot_sha256: 9280223af2be592af18b62653684eb4e27ec0072d5e2b1f4f4a6e6fb028323b9
+- evidence_id: bgc-2272-assay-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/owner-capture-DATA-001.json
+  locator: /records/1/owner_document
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Complete owner establishes assay, target and mechanism-root presence without
+    inferring biological absence: {}'
+  snapshot_sha256: 9280223af2be592af18b62653684eb4e27ec0072d5e2b1f4f4a6e6fb028323b9
+- evidence_id: bgc-2272-classification-owner
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/owner-capture-DATA-001.json
+  locator: /records/1/owner_document/np_pathway; /records/1/owner_document/np_classification;
+    /records/1/owner_document/bgc_class
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Literal source BGC classification and named/versioned computed classification
+    remain separate: {"bgc_class": ["TERPENE"], "np_classification": {"class_results":
+    ["Carotenoids (C40, β-β)"], "is_glycoside": false, "pathway_results": ["Terpenoids"],
+    "superclass_results": ["Carotenoids (C40)"], "tool": "NPClassifier", "tool_version":
+    "npclassifier.gnps2.org@2026-09-07"}, "np_pathway": "TERPENOIDS"}'
+  snapshot_sha256: 9280223af2be592af18b62653684eb4e27ec0072d5e2b1f4f4a6e6fb028323b9
+- evidence_id: bgc-2272-chemistry
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/1/declared_structure; /records/1/smiles/status; /records/1/inchi/status;
+    /records/1/smiles/computed; /records/1/inchi/computed; /records/1/comparisons;
+    /records/1/atom_correspondence
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Both saved forms parsed. Their complete atom/bond/ring/stereo/motif tables
+    and correspondence were personally read. Saved declared structure and comparison
+    facts: {"comparisons": {"atom_count_equal": true, "bond_count_equal": true, "both_keys_equal_declared":
+    true, "canonical_isomeric_smiles_equal": true, "canonical_nonisomeric_smiles_equal":
+    true, "formal_charge_equal": true, "formula_equal": true, "smiles_formula_equals_literal_InChI_main_layer":
+    true, "standard_inchi_equal": true, "standard_inchi_key_equal": true}, "declared_structure":
+    {"smiles": "C\\C(\\C=C\\C=C(/C)\\C=C\\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C",
+    "standard_inchi": "InChI=1S/C40H52O4/c1-27(17-13-19-29(3)21-23-33-31(5)37(43)35(41)25-39(33,7)8)15-11-12-16-28(2)18-14-20-30(4)22-24-34-32(6)38(44)36(42)26-40(34,9)10/h11-24,35-36,41-42H,25-26H2,1-10H3/b12-11+,17-13+,18-14+,23-21+,24-22+,27-15+,28-16+,29-19+,30-20+/t35-,36-/m0/s1",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "stereo_complete": true,
+    "structure_source": "MIBIG", "structure_source_id": "mibig:BGC0000630"}, "inchi_formula":
+    "C40H52O4", "smiles_formula": "C40H52O4"}'
+  snapshot_sha256: d4c6eb70f0eb830267ca6a459d5b3f2f1ed0903dbbd02a6ea6cea1104beb62f9
+- evidence_id: bgc-2272-topology
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/chemistry-local/diagnostic-DATA-001.json
+  locator: /records/1/smiles/computed; /records/1/inchi/computed; /records/1/atom_correspondence
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: The two terminal rings contain SMILES C12(=O13)–C14(S)–O15H and C36(=O37)–C38(S)–O39H.
+    Their adjacent ring methylenes C16 and C40 have two hydrogens and no oxygen neighbor.
+    Mapping the retained beta-ring definition places those methylenes at positions
+    2 and 2′, with the alcohols at 3 and 3′ and ketones at 4 and 4′. There are exactly
+    four oxygen atoms and two tetrahedral centres, so no additional 2-hydroxyl/2R
+    centre is represented.
+  snapshot_sha256: d4c6eb70f0eb830267ca6a459d5b3f2f1ed0903dbbd02a6ea6cea1104beb62f9
+- evidence_id: bgc-2272-diagnostic-execution
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/chemistry-local/diagnostic-execution-001.json
+  locator: /command; /cwd; /started_at; /finished_at; /exit_code; /source; /stdout;
+    /stderr; /external_requests
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Original process receipt has exit 0 and retains exact stdout/stderr, clocks,
+    command and source; no external request.
+  snapshot_sha256: cec83a5bb171e1fb8a233f2b4d0f0421461c308bf28a3b13540cd0baeb3ab3cf
+- evidence_id: bgc-2272-diagnostic-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/root-local-diagnostics-acceptance-001.json
+  locator: /accepted; /DATA; /execution; /verification; /unspecified_stereo; /limits
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: ROOT accepts the original 20 stored-form parses and current dependency
+    joins. The two original undefined-stereo warnings remain global and unassigned;
+    full QC/OAK and scientific verification limits remain explicit.
+  snapshot_sha256: 538d4571fceb926adea82c64cc91c2cb0d058ceb5018e3d3261297b43223fcf8
+- evidence_id: bgc-2272-native-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/root-native-five-gates-acceptance-001.json
+  locator: /five_exits; /five_local_commands_passed; /all_native_gates_passed; /unavailable_required_gates;
+    /selected_queue_rows
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Five local gates passed. Full QC and complete OAK authority coverage remain
+    unavailable; all_native_gates_passed is false. The selected queue is a local review
+    aid, not proof of the scientific assertions.
+  snapshot_sha256: 46a484e5df5e5ff5b717dd9fbef5c00cc5bc1843abdf9cab2629b498187c780a
+- evidence_id: bgc-2272-inventory-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/root-source-inventory-acceptance-001.json
+  locator: /inventory; /verification; /reading_scope
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: ROOT accepts the original retained inventory and exact current maps; scientific
+    source-payload reading is separately attributed.
+  snapshot_sha256: 2feaf455de349447001426cc4790a3fa85b20f1d257fef5061b48c27803f0f3d
+- evidence_id: bgc-2272-plan
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-target-input-plan-001.json
+  locator: /records/1; /source_placement_count; /unique_source_path_count
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Accepted source plan retains this exact owner and its input/context roles
+    within 448 placements and 78 unique paths.
+  snapshot_sha256: b6fb1594773d9dc6936b2d71779c7547fa87fa6fa770868b027ab7bc36d53051
+- evidence_id: bgc-2272-plan-acceptance
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228/root-input-plan-acceptance-001.json
+  locator: /accepted; /plan; /source_notes; /source_placements; /unique_source_paths;
+    /current_record_and_all_source_pins
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: ROOT accepts the actual composed plan and current input/owner joins, separately
+    from scientific judgments.
+  snapshot_sha256: 006b60c3550a7c223f1a10b5a127034d9429c714d72ff96363275b808fe1a2d6
+- evidence_id: bgc-2272-source-notes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-scope-notes-001.json
+  locator: /reading; /curation; /cautions
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Complete personal and delegated source readings, exact bounded curation
+    scan, source grades and limits are recorded. No external source refresh or congener
+    transfer is implied.
+  snapshot_sha256: 63a4685a365402d997d4f20d1b80d7dce1b7f62d2d2264c93dae7fa581e52df5
+- evidence_id: bgc-2272-direct-contexts
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /records/1/direct_companion_paths; /records/1/direct_companion_predicates
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact direct-context paths and one-hop predicates: {"direct_companion_paths":
+    [], "direct_companion_predicates": []}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-query-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/mibig_compounds
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [{"last_physical_line": 726, "physical_line": 726, "raw_tsv_record":
+    "BGC0000630\t3\tactive\tquestionable\tunknown\t(2R,3S,3''S)-2-hydroxyastaxanthin\t1\tC\\C(\\C=C\\C=C(/C)\\C=C\\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C\tInChI=1S/C40H52O4/c1-27(17-13-19-29(3)21-23-33-31(5)37(43)35(41)25-39(33,7)8)15-11-12-16-28(2)18-14-20-30(4)22-24-34-32(6)38(44)36(42)26-40(34,9)10/h11-24,35-36,41-42H,25-26H2,1-10H3/b12-11+,17-13+,18-14+,23-21+,24-22+,27-15+,28-16+,29-19+,30-20+/t35-,36-/m0/s1\tMQZIGYBFDRPAKN-UWFIBFSHSA-N\ttrue\t\tnpatlas:NPA05089\tNCBITaxon:225362\tParacoccus
+    haeundaensis\tterpene\tUnknown\tAY957386.1\t\t\t\tSOURCE_ASSERTION\tCLUSTER_UNSTATED\tPMID:16434154\tENTRY\n",
+    "row": {"bgc_classes": "terpene", "bgc_subclasses": "Unknown", "cluster_link_evidence_basis":
+    "CLUSTER_UNSTATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "(2R,3S,3''S)-2-hydroxyastaxanthin", "database_ids": "npatlas:NPA05089", "entry_completeness":
+    "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version":
+    "3", "genome_accession": "AY957386.1", "locus_evidence_methods": "", "locus_from":
+    "", "locus_to": "", "mibig_accession": "BGC0000630", "primary_reference": "PMID:16434154",
+    "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles":
+    "C\\C(\\C=C\\C=C(/C)\\C=C\\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C",
+    "standard_inchi": "InChI=1S/C40H52O4/c1-27(17-13-19-29(3)21-23-33-31(5)37(43)35(41)25-39(33,7)8)15-11-12-16-28(2)18-14-20-30(4)22-24-34-32(6)38(44)36(42)26-40(34,9)10/h11-24,35-36,41-42H,25-26H2,1-10H3/b12-11+,17-13+,18-14+,23-21+,24-22+,27-15+,28-16+,29-19+,30-20+/t35-,36-/m0/s1",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:225362", "taxon_label": "Paracoccus haeundaensis"}, "row_sha256":
+    "dace193c234d88e0ab0edfe70c8190659259879e0f1d2b848314d60bcb9eff64"}], "predicate":
+    "exact complete standard_inchi_key equality", "query": "MQZIGYBFDRPAKN-UWFIBFSHSA-N"}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-source-mibig_compounds
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/mibig_compounds.tsv
+  locator: Header line 1; physical lines 726–726; row_sha256 dace193c234d88e0ab0edfe70c8190659259879e0f1d2b848314d60bcb9eff64
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Complete physical source rows, all fields personally read and joined to
+    the pinned table: [{"bgc_classes": "terpene", "bgc_subclasses": "Unknown", "cluster_link_evidence_basis":
+    "CLUSTER_UNSTATED", "compound_classes": "", "compound_index": "1", "compound_name":
+    "(2R,3S,3''S)-2-hydroxyastaxanthin", "database_ids": "npatlas:NPA05089", "entry_completeness":
+    "unknown", "entry_quality": "questionable", "entry_status": "active", "entry_version":
+    "3", "genome_accession": "AY957386.1", "locus_evidence_methods": "", "locus_from":
+    "", "locus_to": "", "mibig_accession": "BGC0000630", "primary_reference": "PMID:16434154",
+    "producer_evidence_basis": "SOURCE_ASSERTION", "reference_basis": "ENTRY", "smiles":
+    "C\\C(\\C=C\\C=C(/C)\\C=C\\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C",
+    "standard_inchi": "InChI=1S/C40H52O4/c1-27(17-13-19-29(3)21-23-33-31(5)37(43)35(41)25-39(33,7)8)15-11-12-16-28(2)18-14-20-30(4)22-24-34-32(6)38(44)36(42)26-40(34,9)10/h11-24,35-36,41-42H,25-26H2,1-10H3/b12-11+,17-13+,18-14+,23-21+,24-22+,27-15+,28-16+,29-19+,30-20+/t35-,36-/m0/s1",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "stereo_complete": "true",
+    "taxon_id": "NCBITaxon:225362", "taxon_label": "Paracoccus haeundaensis"}]'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: bgc-2272-query-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/chebi_structures
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [{"last_physical_line": 11643, "physical_line": 11643, "raw_tsv_record":
+    "CHEBI:40968\tastaxanthin\tA carotenone that consists of β,β-carotene-4,4''-dione
+    bearing two hydroxy substituents at positions 3 and 3'' (the 3S,3''S diastereomer).
+    A carotenoid pigment found mainly in animals (crustaceans, echinoderms) but also
+    occurring in plants. It can occur free (as a red pigment), as an ester, or as
+    a blue, brown or green chromoprotein.\t3\tMQZIGYBFDRPAKN-UWFIBFSHSA-N\tCC1=C(/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C2=C(C)C(=O)[C@@H](O)CC2(C)C)C(C)(C)C[C@H](O)C1=O\n",
+    "row": {"chebi_id": "CHEBI:40968", "definition": "A carotenone that consists of
+    β,β-carotene-4,4''-dione bearing two hydroxy substituents at positions 3 and 3''
+    (the 3S,3''S diastereomer). A carotenoid pigment found mainly in animals (crustaceans,
+    echinoderms) but also occurring in plants. It can occur free (as a red pigment),
+    as an ester, or as a blue, brown or green chromoprotein.", "name": "astaxanthin",
+    "smiles": "CC1=C(/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C2=C(C)C(=O)[C@@H](O)CC2(C)C)C(C)(C)C[C@H](O)C1=O",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "stars": "3"}, "row_sha256":
+    "d90aed31ddcee711217f463bd8a6c537df0d2d94a064783849f034bcf5dd7181"}], "predicate":
+    "exact complete standard_inchi_key equality", "query": "MQZIGYBFDRPAKN-UWFIBFSHSA-N"}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-source-chebi_structures
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/chebi_structures.tsv
+  locator: Header line 1; physical lines 11643–11643; row_sha256 d90aed31ddcee711217f463bd8a6c537df0d2d94a064783849f034bcf5dd7181
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Complete physical source rows, all fields personally read and joined to
+    the pinned table: [{"chebi_id": "CHEBI:40968", "definition": "A carotenone that
+    consists of β,β-carotene-4,4''-dione bearing two hydroxy substituents at positions
+    3 and 3'' (the 3S,3''S diastereomer). A carotenoid pigment found mainly in animals
+    (crustaceans, echinoderms) but also occurring in plants. It can occur free (as
+    a red pigment), as an ester, or as a blue, brown or green chromoprotein.", "name":
+    "astaxanthin", "smiles": "CC1=C(/C=C/C(C)=C/C=C/C(C)=C/C=C/C=C(C)/C=C/C=C(C)/C=C/C2=C(C)C(=O)[C@@H](O)CC2(C)C)C(C)(C)C[C@H](O)C1=O",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "stars": "3"}]'
+  snapshot_sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+- evidence_id: bgc-2272-query-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/lotus_occurrences
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [{"last_physical_line": 5680, "physical_line": 5680, "raw_tsv_record":
+    "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tAscidia zara\tNCBITaxon:107392\thttp://www.wikidata.org/entity/Q4925051\t10.1016/0305-0491(85)90174-9\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Ascidia zara", "organism_wikidata": "http://www.wikidata.org/entity/Q4925051",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:107392"},
+    "row_sha256": "d024f94b72ee8a73f3b4bf5458d2594828400c35d2ebbe482c0acd97c0c31e30"},
+    {"last_physical_line": 5681, "physical_line": 5681, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tLinckia
+    laevigata\tNCBITaxon:109185\thttp://www.wikidata.org/entity/Q882716\t10.1016/0305-0491(89)90090-4\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Linckia laevigata", "organism_wikidata": "http://www.wikidata.org/entity/Q882716",
+    "reference_doi": "10.1016/0305-0491(89)90090-4", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:109185"},
+    "row_sha256": "c76aa7cc2c9a3342a35942093e82c009a17ac49809bef797f29928e78b0a5fa6"},
+    {"last_physical_line": 5682, "physical_line": 5682, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    gracilis\tNCBITaxon:111668\thttp://www.wikidata.org/entity/Q3678888\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia gracilis", "organism_wikidata": "http://www.wikidata.org/entity/Q3678888",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:111668"},
+    "row_sha256": "b7af5fdd38e29c3b611754b760f01ed614033ccc9f21dba0db486fddad7105d1"},
+    {"last_physical_line": 5683, "physical_line": 5683, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    rangiferina\tNCBITaxon:111670\thttp://www.wikidata.org/entity/Q248744\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia rangiferina", "organism_wikidata": "http://www.wikidata.org/entity/Q248744",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:111670"},
+    "row_sha256": "3ac80955b7fd45d8cc825cb35a017cf1e6bac7d0cb4f0fd1ea8d4faffbdc94ac"},
+    {"last_physical_line": 5684, "physical_line": 5684, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    rangiferina\tNCBITaxon:111670\thttp://www.wikidata.org/entity/Q248744\t10.1016/0305-1978(87)90002-0\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia rangiferina", "organism_wikidata": "http://www.wikidata.org/entity/Q248744",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:111670"},
+    "row_sha256": "e5528c7e178a2a5e3246f957c6a5f395bd3e195218b2d7e2834e15e1979a7f59"},
+    {"last_physical_line": 5685, "physical_line": 5685, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    ciliata var. tenuis\tNCBITaxon:1156959\thttp://www.wikidata.org/entity/Q21379660\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia ciliata var. tenuis", "organism_wikidata":
+    "http://www.wikidata.org/entity/Q21379660", "reference_doi": "10.1016/0305-1978(85)90064-X",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q413740",
+    "taxon_id": "NCBITaxon:1156959"}, "row_sha256": "10d81e2738b2cf93ab42d80b9961fea16276617dd94c259f68cae5515231be16"},
+    {"last_physical_line": 5686, "physical_line": 5686, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tGelliodes
+    callista\tNCBITaxon:1336858\thttp://www.wikidata.org/entity/Q2287323\t10.2331/SUISAN.53.1271\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Gelliodes callista", "organism_wikidata": "http://www.wikidata.org/entity/Q2287323",
+    "reference_doi": "10.2331/SUISAN.53.1271", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:1336858"},
+    "row_sha256": "43aae0a98a9240cffe130c7efbc8e4ae6fdefca93268877a709a54335aa782ab"},
+    {"last_physical_line": 5687, "physical_line": 5687, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    stellaris\tNCBITaxon:174045\thttp://www.wikidata.org/entity/Q2079766\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia stellaris", "organism_wikidata": "http://www.wikidata.org/entity/Q2079766",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174045"},
+    "row_sha256": "383181f1797e0d6413efcd5b7bf684b74d66d298ab6c3f5c4c2814c7a6ba58ba"},
+    {"last_physical_line": 5688, "physical_line": 5688, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    cenotea\tNCBITaxon:174050\thttp://www.wikidata.org/entity/Q3678845\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia cenotea", "organism_wikidata": "http://www.wikidata.org/entity/Q3678845",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174050"},
+    "row_sha256": "4e115fdd889fbd965b3dcc0f25a73f153a624bde23df2c0b67b12657b85c5eba"},
+    {"last_physical_line": 5689, "physical_line": 5689, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    coccifera\tNCBITaxon:174053\thttp://www.wikidata.org/entity/Q113273\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia coccifera", "organism_wikidata": "http://www.wikidata.org/entity/Q113273",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174053"},
+    "row_sha256": "c297c8621da6c901817442019beab60fc0983f323acd33bf8321a2e94581f269"},
+    {"last_physical_line": 5690, "physical_line": 5690, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    fimbriata\tNCBITaxon:174058\thttp://www.wikidata.org/entity/Q456384\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia fimbriata", "organism_wikidata": "http://www.wikidata.org/entity/Q456384",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174058"},
+    "row_sha256": "c076863bf92b4c966d67b3868013890e36ac92e91cebec4adb998ad1d3230b3c"},
+    {"last_physical_line": 5691, "physical_line": 5691, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    glauca\tNCBITaxon:174061\thttp://www.wikidata.org/entity/Q3678887\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia glauca", "organism_wikidata": "http://www.wikidata.org/entity/Q3678887",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174061"},
+    "row_sha256": "cc717b411e4ea2b5a2bd3a5c89787506b382d785e8f594b458663d2e2c62c026"},
+    {"last_physical_line": 5692, "physical_line": 5692, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    ochrochlora\tNCBITaxon:174062\thttp://www.wikidata.org/entity/Q3678922\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia ochrochlora", "organism_wikidata": "http://www.wikidata.org/entity/Q3678922",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174062"},
+    "row_sha256": "807b8ca4b50c9d202abd764265304ad5c6782c219492fb2e9fc85325538bb43c"},
+    {"last_physical_line": 5693, "physical_line": 5693, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    scabriuscula\tNCBITaxon:174071\thttp://www.wikidata.org/entity/Q3678942\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia scabriuscula", "organism_wikidata": "http://www.wikidata.org/entity/Q3678942",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174071"},
+    "row_sha256": "02b0383a9dae77947de912db3c30b9dc67ea94cd3b5ed0eaedd02804a9c0d303"},
+    {"last_physical_line": 5694, "physical_line": 5694, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tParalithodes
+    brevipes\tNCBITaxon:174403\thttp://www.wikidata.org/entity/Q798231\t10.2331/SUISAN.54.1437\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Paralithodes brevipes", "organism_wikidata": "http://www.wikidata.org/entity/Q798231",
+    "reference_doi": "10.2331/SUISAN.54.1437", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174403"},
+    "row_sha256": "ae2d64a8948ad7ff368c8484b867e0b88e683466b90a1cdc3cc4c43d9fc32614"},
+    {"last_physical_line": 5695, "physical_line": 5695, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    deformis\tNCBITaxon:184097\thttp://www.wikidata.org/entity/Q3678868\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia deformis", "organism_wikidata": "http://www.wikidata.org/entity/Q3678868",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:184097"},
+    "row_sha256": "a9cf607ce65e51faef2b4975edb4640d014891a4e460bb7277bde84ce644ec62"},
+    {"last_physical_line": 5696, "physical_line": 5696, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    ecmocyna\tNCBITaxon:184098\thttp://www.wikidata.org/entity/Q3678877\t10.1016/0305-1978(87)90002-0\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia ecmocyna", "organism_wikidata": "http://www.wikidata.org/entity/Q3678877",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:184098"},
+    "row_sha256": "4142d33d6efe7a6ccadb66e8f77f3b95fa3da1437899c4c391bd99245e1d04f7"},
+    {"last_physical_line": 5697, "physical_line": 5697, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    phyllophora\tNCBITaxon:184109\thttp://www.wikidata.org/entity/Q3678931\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia phyllophora", "organism_wikidata": "http://www.wikidata.org/entity/Q3678931",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:184109"},
+    "row_sha256": "9150c7272dada1fe7ce78a9baabbd20f782afedfb1975832f8fb92950779cf36"},
+    {"last_physical_line": 5698, "physical_line": 5698, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHexabranchus\tNCBITaxon:190923\thttp://www.wikidata.org/entity/Q2637622\t10.2331/SUISAN.58.1549\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Hexabranchus", "organism_wikidata": "http://www.wikidata.org/entity/Q2637622",
+    "reference_doi": "10.2331/SUISAN.58.1549", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:190923"},
+    "row_sha256": "b3461b68e40d70b1c8106adc83a3bef13761d48006f969572705cec78d82f5ab"},
+    {"last_physical_line": 5699, "physical_line": 5699, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    mitis\tNCBITaxon:195774\thttp://www.wikidata.org/entity/Q3678915\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia mitis", "organism_wikidata": "http://www.wikidata.org/entity/Q3678915",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:195774"},
+    "row_sha256": "5714c3446bd07ff97aa1a66195c12d8338c2a083c4a663920bc45806523df1cb"},
+    {"last_physical_line": 5700, "physical_line": 5700, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    macilenta\tNCBITaxon:196765\thttp://www.wikidata.org/entity/Q3678901\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia macilenta", "organism_wikidata": "http://www.wikidata.org/entity/Q3678901",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:196765"},
+    "row_sha256": "5b07f7122e9ee3a6bcec2bae445d50adfba0e9fb0f58daf86496ec009fad3372"},
+    {"last_physical_line": 5701, "physical_line": 5701, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    macrophylla\tNCBITaxon:197105\thttp://www.wikidata.org/entity/Q3678904\t10.1016/0305-1978(87)90002-0\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia macrophylla", "organism_wikidata": "http://www.wikidata.org/entity/Q3678904",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:197105"},
+    "row_sha256": "fe389ff6853e3bc45e845eb6759aa86dba9bab025e9be877b429c19a89733467"},
+    {"last_physical_line": 5702, "physical_line": 5702, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia
+    ramulosa\tNCBITaxon:2031061\thttp://www.wikidata.org/entity/Q3678939\t10.1016/0305-1978(85)90064-X\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia ramulosa", "organism_wikidata": "http://www.wikidata.org/entity/Q3678939",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:2031061"},
+    "row_sha256": "e4c657b3cd8e6bd42e4f3f338f6d374b2b463227f829c8db16f11e72c929b46d"},
+    {"last_physical_line": 5703, "physical_line": 5703, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tNephroma
+    laevigatum\tNCBITaxon:203386\thttp://www.wikidata.org/entity/Q10718170\t10.1016/0305-1978(88)90082-8\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Nephroma laevigatum", "organism_wikidata": "http://www.wikidata.org/entity/Q10718170",
+    "reference_doi": "10.1016/0305-1978(88)90082-8", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:203386"},
+    "row_sha256": "3dc450d5608405ffae462c9ba14a285e8e3c556c6076265dce6bbee4e4e2fae3"},
+    {"last_physical_line": 5704, "physical_line": 5704, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tThysanoessa
+    inermis\tNCBITaxon:210626\thttp://www.wikidata.org/entity/Q3526219\t10.1016/0305-0491(87)90298-7\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Thysanoessa inermis", "organism_wikidata": "http://www.wikidata.org/entity/Q3526219",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:210626"},
+    "row_sha256": "0d36b9e99dcca34a1e28a4d0379fb4ce3384915fb6d53c2a7f3e98608466c912"},
+    {"last_physical_line": 5705, "physical_line": 5705, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tParacoccus
+    haeundaensis\tNCBITaxon:225362\thttp://www.wikidata.org/entity/Q61954745\t10.1016/J.GENE.2005.11.007\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Paracoccus haeundaensis", "organism_wikidata": "http://www.wikidata.org/entity/Q61954745",
+    "reference_doi": "10.1016/J.GENE.2005.11.007", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:225362"},
+    "row_sha256": "a9164e51916b88b95d4f3cc7c164ee1aa43c2dcad343ed008842663a15cfb58b"},
+    {"last_physical_line": 5706, "physical_line": 5706, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tSticta
+    canariensis\tNCBITaxon:243211\thttp://www.wikidata.org/entity/Q21320776\t10.1016/0305-1978(88)90082-8\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Sticta canariensis", "organism_wikidata": "http://www.wikidata.org/entity/Q21320776",
+    "reference_doi": "10.1016/0305-1978(88)90082-8", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:243211"},
+    "row_sha256": "bc30f4fe0eb9ffc16aafac2c8a5faab21c99af144ca7aff964baaa937241c8bf"},
+    {"last_physical_line": 5707, "physical_line": 5707, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tMytilus
+    unguiculatus\tNCBITaxon:2602926\thttp://www.wikidata.org/entity/Q61684116\t10.1021/NP970039Q\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Mytilus unguiculatus", "organism_wikidata": "http://www.wikidata.org/entity/Q61684116",
+    "reference_doi": "10.1021/NP970039Q", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:2602926"},
+    "row_sha256": "6d80fe83496bb539a294c2ba7905f025950e66720661934b75267038fe0c036f"},
+    {"last_physical_line": 5708, "physical_line": 5708, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tPhaffia
+    rhodozyma\tNCBITaxon:264483\thttp://www.wikidata.org/entity/Q10626258\t10.1007/BF00386286\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Phaffia rhodozyma", "organism_wikidata": "http://www.wikidata.org/entity/Q10626258",
+    "reference_doi": "10.1007/BF00386286", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:264483"},
+    "row_sha256": "b52adb048d51ca2b92da3f846e47cd136b4a22d1ba0e76fa6fc9c858d812145a"},
+    {"last_physical_line": 5709, "physical_line": 5709, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tPhaffia
+    rhodozyma\tNCBITaxon:264483\thttp://www.wikidata.org/entity/Q10626258\t10.1016/S0304-4165(98)00145-7\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Phaffia rhodozyma", "organism_wikidata": "http://www.wikidata.org/entity/Q10626258",
+    "reference_doi": "10.1016/S0304-4165(98)00145-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:264483"},
+    "row_sha256": "f2ea56226e2c82e05ee997221db3509d6377edd4b646671068e848ceab7b5b2b"},
+    {"last_physical_line": 5710, "physical_line": 5710, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tBotryllus
+    schlosseri\tNCBITaxon:30301\thttp://www.wikidata.org/entity/Q837241\t10.1016/0305-0491(85)90174-9\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Botryllus schlosseri", "organism_wikidata": "http://www.wikidata.org/entity/Q837241",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:30301"},
+    "row_sha256": "8ccaafe308bb4b64cd040bda9a721c04fb93943e53a5bf5dbd7315430a7df5c9"},
+    {"last_physical_line": 5711, "physical_line": 5711, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tMetasequoia
+    glyptostroboides\tNCBITaxon:3371\thttp://www.wikidata.org/entity/Q156800\t10.1016/0305-1978(87)90003-2\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Metasequoia glyptostroboides", "organism_wikidata":
+    "http://www.wikidata.org/entity/Q156800", "reference_doi": "10.1016/0305-1978(87)90003-2",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q413740",
+    "taxon_id": "NCBITaxon:3371"}, "row_sha256": "4553dfb88b1043fde7f1bad2ca30309070738c51ca3d87759f17d595b36cfbc7"},
+    {"last_physical_line": 5712, "physical_line": 5712, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tProtula
+    tubularia\tNCBITaxon:363316\thttp://www.wikidata.org/entity/Q531987\t10.1016/0305-0491(84)90180-9\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Protula tubularia", "organism_wikidata": "http://www.wikidata.org/entity/Q531987",
+    "reference_doi": "10.1016/0305-0491(84)90180-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:363316"},
+    "row_sha256": "c137f12b1f14206b2011e740ccdffe722133077a9df95b58a2f9a6f1df2eb109"},
+    {"last_physical_line": 5713, "physical_line": 5713, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tArabidopsis
+    thaliana\tNCBITaxon:3702\thttp://www.wikidata.org/entity/Q158695\t10.1016/J.CHROMA.2006.04.033\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Arabidopsis thaliana", "organism_wikidata": "http://www.wikidata.org/entity/Q158695",
+    "reference_doi": "10.1016/J.CHROMA.2006.04.033", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:3702"},
+    "row_sha256": "c02220648195e88c8bb616c64e9afa5a4dfa91e2809a8bdf1a5d128e2d235b4f"},
+    {"last_physical_line": 5714, "physical_line": 5714, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tBotryococcus
+    braunii\tNCBITaxon:38881\thttp://www.wikidata.org/entity/Q149449\t10.1016/0305-1978(94)90111-2\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Botryococcus braunii", "organism_wikidata": "http://www.wikidata.org/entity/Q149449",
+    "reference_doi": "10.1016/0305-1978(94)90111-2", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:38881"},
+    "row_sha256": "5c502cf27f02243a2e212c4a409f5f7f38e296e04d5cccac86149efbf1b9d1b6"},
+    {"last_physical_line": 5715, "physical_line": 5715, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tGowardia
+    nigricans\tNCBITaxon:413822\thttp://www.wikidata.org/entity/Q10710191\t10.1016/0305-1978(87)90002-0\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Gowardia nigricans", "organism_wikidata": "http://www.wikidata.org/entity/Q10710191",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:413822"},
+    "row_sha256": "cf4a7261a4cc035f8725be08c306aafc04dbf44d05bee95a1d2f5302b48639bd"},
+    {"last_physical_line": 5716, "physical_line": 5716, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tMytilus
+    coruscus\tNCBITaxon:42192\thttp://www.wikidata.org/entity/Q13871933\t10.1021/NP970039Q\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Mytilus coruscus", "organism_wikidata": "http://www.wikidata.org/entity/Q13871933",
+    "reference_doi": "10.1021/NP970039Q", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:42192"},
+    "row_sha256": "b255ef5a941a6cc1f12c8573e5d788beae0aea27d692d26c15a54847c2866538"},
+    {"last_physical_line": 5717, "physical_line": 5717, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tAgrobacterium
+    aurantiacum\tNCBITaxon:44155\thttp://www.wikidata.org/entity/Q104096211\t10.1128/JB.177.22.6575-6584.1995\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Agrobacterium aurantiacum", "organism_wikidata": "http://www.wikidata.org/entity/Q104096211",
+    "reference_doi": "10.1128/JB.177.22.6575-6584.1995", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44155"},
+    "row_sha256": "96fdecd9f8ae20f0aeb85a4951853a6b08579eaf1179c8d1b7ccea6f265012dc"},
+    {"last_physical_line": 5718, "physical_line": 5718, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tAgrobacterium
+    aurantiacum\tNCBITaxon:44155\thttp://www.wikidata.org/entity/Q104096211\t10.1271/BBB.58.1842\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Agrobacterium aurantiacum", "organism_wikidata": "http://www.wikidata.org/entity/Q104096211",
+    "reference_doi": "10.1271/BBB.58.1842", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44155"},
+    "row_sha256": "c174faf93182edc7af668d180923ec357bf69bfc5c2dbb8d603e18769fb40f01"},
+    {"last_physical_line": 5719, "physical_line": 5719, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHaematococcus
+    pluvialis\tNCBITaxon:44745\thttp://www.wikidata.org/entity/Q469662\t10.1016/0922-338X(91)90346-I\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Haematococcus pluvialis", "organism_wikidata": "http://www.wikidata.org/entity/Q469662",
+    "reference_doi": "10.1016/0922-338X(91)90346-I", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    "row_sha256": "5a4a73d3c6435c75c34310d14bf5dcfc9dbe7c72a4e3324f2be261965d2f38b3"},
+    {"last_physical_line": 5720, "physical_line": 5720, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHaematococcus
+    lacustris\tNCBITaxon:44745\thttp://www.wikidata.org/entity/Q69644038\t10.1016/0922-338X(91)90346-I\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Haematococcus lacustris", "organism_wikidata": "http://www.wikidata.org/entity/Q69644038",
+    "reference_doi": "10.1016/0922-338X(91)90346-I", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    "row_sha256": "0fcd2bd1ae7c6fc9eedb6931414365054b966d4676dea4cfd458d93892b4d4ac"},
+    {"last_physical_line": 5721, "physical_line": 5721, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHaematococcus
+    pluvialis\tNCBITaxon:44745\thttp://www.wikidata.org/entity/Q469662\t10.1016/J.PHYMED.2008.04.004\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Haematococcus pluvialis", "organism_wikidata": "http://www.wikidata.org/entity/Q469662",
+    "reference_doi": "10.1016/J.PHYMED.2008.04.004", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    "row_sha256": "b3047693f9e60af3915cf43a504101f633a4feff0923090f6ecb109a9b8890e8"},
+    {"last_physical_line": 5722, "physical_line": 5722, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHaematococcus
+    lacustris\tNCBITaxon:44745\thttp://www.wikidata.org/entity/Q69644038\t10.1016/J.PHYMED.2008.04.004\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Haematococcus lacustris", "organism_wikidata": "http://www.wikidata.org/entity/Q69644038",
+    "reference_doi": "10.1016/J.PHYMED.2008.04.004", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    "row_sha256": "4b43e26a9891e2f7a84b61e90d701fa0ed2c60c9c00059ab9f7e5cfabfb4fdde"},
+    {"last_physical_line": 5723, "physical_line": 5723, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHaematococcus
+    pluvialis\tNCBITaxon:44745\thttp://www.wikidata.org/entity/Q469662\t10.1021/JF980039B\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Haematococcus pluvialis", "organism_wikidata": "http://www.wikidata.org/entity/Q469662",
+    "reference_doi": "10.1021/JF980039B", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    "row_sha256": "1558200b74580252d054cfdf3b32dd578ece3ee963edf1ef50c95fa719927e2b"},
+    {"last_physical_line": 5724, "physical_line": 5724, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHaematococcus
+    lacustris\tNCBITaxon:44745\thttp://www.wikidata.org/entity/Q69644038\t10.1021/JF980039B\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Haematococcus lacustris", "organism_wikidata": "http://www.wikidata.org/entity/Q69644038",
+    "reference_doi": "10.1021/JF980039B", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    "row_sha256": "20523ffa9722376028547c3dfb9d1dbfb9b6f083e614d499e39707209054ca81"},
+    {"last_physical_line": 5725, "physical_line": 5725, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHaematococcus
+    pluvialis\tNCBITaxon:44745\thttp://www.wikidata.org/entity/Q469662\t10.1128/AAC.44.9.2452-2457.2000\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Haematococcus pluvialis", "organism_wikidata": "http://www.wikidata.org/entity/Q469662",
+    "reference_doi": "10.1128/AAC.44.9.2452-2457.2000", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    "row_sha256": "cd02258e3f7fa6eaf10612cde68d95a440306369cb254a24740cc2d80129756d"},
+    {"last_physical_line": 5726, "physical_line": 5726, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHaematococcus
+    lacustris\tNCBITaxon:44745\thttp://www.wikidata.org/entity/Q69644038\t10.1128/AAC.44.9.2452-2457.2000\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Haematococcus lacustris", "organism_wikidata": "http://www.wikidata.org/entity/Q69644038",
+    "reference_doi": "10.1128/AAC.44.9.2452-2457.2000", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    "row_sha256": "64b11160d41d1a0b48302aaf109e37dd66ebe3437fd39c543c90cae811e31ad0"},
+    {"last_physical_line": 5727, "physical_line": 5727, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tStereocaulon
+    paschale\tNCBITaxon:50940\thttp://www.wikidata.org/entity/Q10647928\t10.1016/0305-1978(87)90002-0\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Stereocaulon paschale", "organism_wikidata": "http://www.wikidata.org/entity/Q10647928",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:50940"},
+    "row_sha256": "a0fc5147f2a9ca159f93a526e4124dc5e772236196ee5298b178afa0ceb8c4e8"},
+    {"last_physical_line": 5728, "physical_line": 5728, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCladonia\tNCBITaxon:5199\thttp://www.wikidata.org/entity/Q310738\t10.1002/FEDR.19911020518\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cladonia", "organism_wikidata": "http://www.wikidata.org/entity/Q310738",
+    "reference_doi": "10.1002/FEDR.19911020518", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:5199"},
+    "row_sha256": "3c6ed85fd2f8d9348deff9fb61c21b2559514c765ae3efc5fc5c2edc94f7b57d"},
+    {"last_physical_line": 5729, "physical_line": 5729, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tXanthophyllomyces
+    dendrorhous\tNCBITaxon:5421\thttp://www.wikidata.org/entity/Q10721817\t10.1007/BF00386286\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Xanthophyllomyces dendrorhous", "organism_wikidata":
+    "http://www.wikidata.org/entity/Q10721817", "reference_doi": "10.1007/BF00386286",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q413740",
+    "taxon_id": "NCBITaxon:5421"}, "row_sha256": "a708c60078c3847ab747fa717988f4ab94c0fca0bf8eb2bf5471f520a3969847"},
+    {"last_physical_line": 5730, "physical_line": 5730, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tXanthophyllomyces
+    dendrorhous\tNCBITaxon:5421\thttp://www.wikidata.org/entity/Q10721817\t10.1016/S0304-4165(98)00145-7\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Xanthophyllomyces dendrorhous", "organism_wikidata":
+    "http://www.wikidata.org/entity/Q10721817", "reference_doi": "10.1016/S0304-4165(98)00145-7",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "structure_wikidata": "http://www.wikidata.org/entity/Q413740",
+    "taxon_id": "NCBITaxon:5421"}, "row_sha256": "72e23d77905a260e4445a52600b80971950cd1455211b61cbba9ed8305054531"},
+    {"last_physical_line": 5731, "physical_line": 5731, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tAcanthephyra
+    purpurea\tNCBITaxon:576170\thttp://www.wikidata.org/entity/Q4467864\t10.1016/0305-0491(87)90298-7\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Acanthephyra purpurea", "organism_wikidata": "http://www.wikidata.org/entity/Q4467864",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:576170"},
+    "row_sha256": "27b2315050082880fe3b0227a5e6217730b917bffe2ae44f68d7ba7009d020b6"},
+    {"last_physical_line": 5732, "physical_line": 5732, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCancer
+    pagurus\tNCBITaxon:6755\thttp://www.wikidata.org/entity/Q752188\t10.1016/0305-0491(87)90298-7\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Cancer pagurus", "organism_wikidata": "http://www.wikidata.org/entity/Q752188",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:6755"},
+    "row_sha256": "efb86e374430c5962ffb9e50fd31e494327926145e70d0f18d1d02fda10ff2e5"},
+    {"last_physical_line": 5733, "physical_line": 5733, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tEuphausia
+    superba\tNCBITaxon:6819\thttp://www.wikidata.org/entity/Q571443\t10.1016/0305-0491(87)90298-7\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Euphausia superba", "organism_wikidata": "http://www.wikidata.org/entity/Q571443",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:6819"},
+    "row_sha256": "02514a9b44ce947a914faf32605aa08f3f2805e64224017f00046fef614a6ee8"},
+    {"last_physical_line": 5734, "physical_line": 5734, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tEuphausia
+    superba\tNCBITaxon:6819\thttp://www.wikidata.org/entity/Q571443\t10.1021/JF00071A034\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Euphausia superba", "organism_wikidata": "http://www.wikidata.org/entity/Q571443",
+    "reference_doi": "10.1021/JF00071A034", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:6819"},
+    "row_sha256": "956f26661aaa68fd3319426bab44210d82ec299a1fa2b9b7eb73b930f1e51e75"},
+    {"last_physical_line": 5735, "physical_line": 5735, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCalanus
+    finmarchicus\tNCBITaxon:6837\thttp://www.wikidata.org/entity/Q312953\t10.1016/0305-0491(87)90298-7\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Calanus finmarchicus", "organism_wikidata": "http://www.wikidata.org/entity/Q312953",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:6837"},
+    "row_sha256": "de0e0dbd3b68af02861618d59fb71474e27e5e0416c8132063ed843e9b8df1e0"},
+    {"last_physical_line": 5736, "physical_line": 5736, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCiona
+    intestinalis\tNCBITaxon:7719\thttp://www.wikidata.org/entity/Q2567701\t10.1016/0305-0491(85)90174-9\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Ciona intestinalis", "organism_wikidata": "http://www.wikidata.org/entity/Q2567701",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7719"},
+    "row_sha256": "38b849a7dd4af22b017f7eeb669b03cfe92c4da20c3af689892f5adcf9db5485"},
+    {"last_physical_line": 5737, "physical_line": 5737, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tStyela
+    clava\tNCBITaxon:7725\thttp://www.wikidata.org/entity/Q3023683\t10.1016/0305-0491(85)90174-9\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Styela clava", "organism_wikidata": "http://www.wikidata.org/entity/Q3023683",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7725"},
+    "row_sha256": "60b30aacaddae2dce8f959f3d474b6f6443e9cca35416ffff65138bbde0a71da"},
+    {"last_physical_line": 5738, "physical_line": 5738, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHalocynthia
+    roretzi\tNCBITaxon:7729\thttp://www.wikidata.org/entity/Q671668\t10.1016/0305-0491(85)90174-9\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Halocynthia roretzi", "organism_wikidata": "http://www.wikidata.org/entity/Q671668",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7729"},
+    "row_sha256": "07a0a6142847f852d95512c251b7f51e3da8574b1d456cb14f45cb9d5f7b8148"},
+    {"last_physical_line": 5739, "physical_line": 5739, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tHalocynthia
+    roretzi\tNCBITaxon:7729\thttp://www.wikidata.org/entity/Q671668\t10.1248/CPB.32.4309\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Halocynthia roretzi", "organism_wikidata": "http://www.wikidata.org/entity/Q671668",
+    "reference_doi": "10.1248/CPB.32.4309", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7729"},
+    "row_sha256": "bcdfe2ceb1750928863f28780c46b8421af4141b14e2ffdd5e396049c7e9846c"},
+    {"last_physical_line": 5740, "physical_line": 5740, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCtenopharyngodon
+    idella\tNCBITaxon:7959\thttp://www.wikidata.org/entity/Q76098\t10.1016/0305-0491(81)90400-4\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Ctenopharyngodon idella", "organism_wikidata": "http://www.wikidata.org/entity/Q76098",
+    "reference_doi": "10.1016/0305-0491(81)90400-4", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7959"},
+    "row_sha256": "417e31a7458fb3d6eeca124f1e956f926c398db855cd06d76cf8be12abbf6c69"},
+    {"last_physical_line": 5741, "physical_line": 5741, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tCalanus
+    pacificus\tNCBITaxon:84301\thttp://www.wikidata.org/entity/Q6551233\t10.4319/LO.1996.41.6.1198\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Calanus pacificus", "organism_wikidata": "http://www.wikidata.org/entity/Q6551233",
+    "reference_doi": "10.4319/LO.1996.41.6.1198", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:84301"},
+    "row_sha256": "e43c5dd332ce89dd8ec63691e2c23281e4ee26b8cbb6ff22886b9cc9b89fdef4"},
+    {"last_physical_line": 5742, "physical_line": 5742, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tAcanthella
+    acuta\tNCBITaxon:85783\thttp://www.wikidata.org/entity/Q2554196\t10.1016/0305-0491(84)90180-9\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Acanthella acuta", "organism_wikidata": "http://www.wikidata.org/entity/Q2554196",
+    "reference_doi": "10.1016/0305-0491(84)90180-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:85783"},
+    "row_sha256": "0444c0300379704430919a9cf341703aa938de9e809c8e6fcefb59dad16d4183"},
+    {"last_physical_line": 5743, "physical_line": 5743, "raw_tsv_record": "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tNephromopsis
+    nivalis\tNCBITaxon:95627\thttp://www.wikidata.org/entity/Q52708201\t10.1016/0305-1978(87)90002-0\thttp://www.wikidata.org/entity/Q413740\n",
+    "row": {"organism_name": "Nephromopsis nivalis", "organism_wikidata": "http://www.wikidata.org/entity/Q52708201",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:95627"},
+    "row_sha256": "3ac7c9a8697ea08ed38f4b696c17574df68341ba275abb0359750902caa5c3a0"}],
+    "predicate": "exact complete standard_inchi_key equality", "query": "MQZIGYBFDRPAKN-UWFIBFSHSA-N"}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-source-lotus_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/lotus_occurrences.tsv
+  locator: Header line 1; physical lines 5680–5680, 5681–5681, 5682–5682, 5683–5683,
+    5684–5684, 5685–5685, 5686–5686, 5687–5687, 5688–5688, 5689–5689, 5690–5690, 5691–5691,
+    5692–5692, 5693–5693, 5694–5694, 5695–5695, 5696–5696, 5697–5697, 5698–5698, 5699–5699,
+    5700–5700, 5701–5701, 5702–5702, 5703–5703, 5704–5704, 5705–5705, 5706–5706, 5707–5707,
+    5708–5708, 5709–5709, 5710–5710, 5711–5711, 5712–5712, 5713–5713, 5714–5714, 5715–5715,
+    5716–5716, 5717–5717, 5718–5718, 5719–5719, 5720–5720, 5721–5721, 5722–5722, 5723–5723,
+    5724–5724, 5725–5725, 5726–5726, 5727–5727, 5728–5728, 5729–5729, 5730–5730, 5731–5731,
+    5732–5732, 5733–5733, 5734–5734, 5735–5735, 5736–5736, 5737–5737, 5738–5738, 5739–5739,
+    5740–5740, 5741–5741, 5742–5742, 5743–5743; row_sha256 d024f94b72ee8a73f3b4bf5458d2594828400c35d2ebbe482c0acd97c0c31e30,
+    c76aa7cc2c9a3342a35942093e82c009a17ac49809bef797f29928e78b0a5fa6, b7af5fdd38e29c3b611754b760f01ed614033ccc9f21dba0db486fddad7105d1,
+    3ac80955b7fd45d8cc825cb35a017cf1e6bac7d0cb4f0fd1ea8d4faffbdc94ac, e5528c7e178a2a5e3246f957c6a5f395bd3e195218b2d7e2834e15e1979a7f59,
+    10d81e2738b2cf93ab42d80b9961fea16276617dd94c259f68cae5515231be16, 43aae0a98a9240cffe130c7efbc8e4ae6fdefca93268877a709a54335aa782ab,
+    383181f1797e0d6413efcd5b7bf684b74d66d298ab6c3f5c4c2814c7a6ba58ba, 4e115fdd889fbd965b3dcc0f25a73f153a624bde23df2c0b67b12657b85c5eba,
+    c297c8621da6c901817442019beab60fc0983f323acd33bf8321a2e94581f269, c076863bf92b4c966d67b3868013890e36ac92e91cebec4adb998ad1d3230b3c,
+    cc717b411e4ea2b5a2bd3a5c89787506b382d785e8f594b458663d2e2c62c026, 807b8ca4b50c9d202abd764265304ad5c6782c219492fb2e9fc85325538bb43c,
+    02b0383a9dae77947de912db3c30b9dc67ea94cd3b5ed0eaedd02804a9c0d303, ae2d64a8948ad7ff368c8484b867e0b88e683466b90a1cdc3cc4c43d9fc32614,
+    a9cf607ce65e51faef2b4975edb4640d014891a4e460bb7277bde84ce644ec62, 4142d33d6efe7a6ccadb66e8f77f3b95fa3da1437899c4c391bd99245e1d04f7,
+    9150c7272dada1fe7ce78a9baabbd20f782afedfb1975832f8fb92950779cf36, b3461b68e40d70b1c8106adc83a3bef13761d48006f969572705cec78d82f5ab,
+    5714c3446bd07ff97aa1a66195c12d8338c2a083c4a663920bc45806523df1cb, 5b07f7122e9ee3a6bcec2bae445d50adfba0e9fb0f58daf86496ec009fad3372,
+    fe389ff6853e3bc45e845eb6759aa86dba9bab025e9be877b429c19a89733467, e4c657b3cd8e6bd42e4f3f338f6d374b2b463227f829c8db16f11e72c929b46d,
+    3dc450d5608405ffae462c9ba14a285e8e3c556c6076265dce6bbee4e4e2fae3, 0d36b9e99dcca34a1e28a4d0379fb4ce3384915fb6d53c2a7f3e98608466c912,
+    a9164e51916b88b95d4f3cc7c164ee1aa43c2dcad343ed008842663a15cfb58b, bc30f4fe0eb9ffc16aafac2c8a5faab21c99af144ca7aff964baaa937241c8bf,
+    6d80fe83496bb539a294c2ba7905f025950e66720661934b75267038fe0c036f, b52adb048d51ca2b92da3f846e47cd136b4a22d1ba0e76fa6fc9c858d812145a,
+    f2ea56226e2c82e05ee997221db3509d6377edd4b646671068e848ceab7b5b2b, 8ccaafe308bb4b64cd040bda9a721c04fb93943e53a5bf5dbd7315430a7df5c9,
+    4553dfb88b1043fde7f1bad2ca30309070738c51ca3d87759f17d595b36cfbc7, c137f12b1f14206b2011e740ccdffe722133077a9df95b58a2f9a6f1df2eb109,
+    c02220648195e88c8bb616c64e9afa5a4dfa91e2809a8bdf1a5d128e2d235b4f, 5c502cf27f02243a2e212c4a409f5f7f38e296e04d5cccac86149efbf1b9d1b6,
+    cf4a7261a4cc035f8725be08c306aafc04dbf44d05bee95a1d2f5302b48639bd, b255ef5a941a6cc1f12c8573e5d788beae0aea27d692d26c15a54847c2866538,
+    96fdecd9f8ae20f0aeb85a4951853a6b08579eaf1179c8d1b7ccea6f265012dc, c174faf93182edc7af668d180923ec357bf69bfc5c2dbb8d603e18769fb40f01,
+    5a4a73d3c6435c75c34310d14bf5dcfc9dbe7c72a4e3324f2be261965d2f38b3, 0fcd2bd1ae7c6fc9eedb6931414365054b966d4676dea4cfd458d93892b4d4ac,
+    b3047693f9e60af3915cf43a504101f633a4feff0923090f6ecb109a9b8890e8, 4b43e26a9891e2f7a84b61e90d701fa0ed2c60c9c00059ab9f7e5cfabfb4fdde,
+    1558200b74580252d054cfdf3b32dd578ece3ee963edf1ef50c95fa719927e2b, 20523ffa9722376028547c3dfb9d1dbfb9b6f083e614d499e39707209054ca81,
+    cd02258e3f7fa6eaf10612cde68d95a440306369cb254a24740cc2d80129756d, 64b11160d41d1a0b48302aaf109e37dd66ebe3437fd39c543c90cae811e31ad0,
+    a0fc5147f2a9ca159f93a526e4124dc5e772236196ee5298b178afa0ceb8c4e8, 3c6ed85fd2f8d9348deff9fb61c21b2559514c765ae3efc5fc5c2edc94f7b57d,
+    a708c60078c3847ab747fa717988f4ab94c0fca0bf8eb2bf5471f520a3969847, 72e23d77905a260e4445a52600b80971950cd1455211b61cbba9ed8305054531,
+    27b2315050082880fe3b0227a5e6217730b917bffe2ae44f68d7ba7009d020b6, efb86e374430c5962ffb9e50fd31e494327926145e70d0f18d1d02fda10ff2e5,
+    02514a9b44ce947a914faf32605aa08f3f2805e64224017f00046fef614a6ee8, 956f26661aaa68fd3319426bab44210d82ec299a1fa2b9b7eb73b930f1e51e75,
+    de0e0dbd3b68af02861618d59fb71474e27e5e0416c8132063ed843e9b8df1e0, 38b849a7dd4af22b017f7eeb669b03cfe92c4da20c3af689892f5adcf9db5485,
+    60b30aacaddae2dce8f959f3d474b6f6443e9cca35416ffff65138bbde0a71da, 07a0a6142847f852d95512c251b7f51e3da8574b1d456cb14f45cb9d5f7b8148,
+    bcdfe2ceb1750928863f28780c46b8421af4141b14e2ffdd5e396049c7e9846c, 417e31a7458fb3d6eeca124f1e956f926c398db855cd06d76cf8be12abbf6c69,
+    e43c5dd332ce89dd8ec63691e2c23281e4ee26b8cbb6ff22886b9cc9b89fdef4, 0444c0300379704430919a9cf341703aa938de9e809c8e6fcefb59dad16d4183,
+    3ac7c9a8697ea08ed38f4b696c17574df68341ba275abb0359750902caa5c3a0
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Complete physical source rows, all fields personally read and joined to
+    the pinned table: [{"organism_name": "Ascidia zara", "organism_wikidata": "http://www.wikidata.org/entity/Q4925051",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:107392"},
+    {"organism_name": "Linckia laevigata", "organism_wikidata": "http://www.wikidata.org/entity/Q882716",
+    "reference_doi": "10.1016/0305-0491(89)90090-4", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:109185"},
+    {"organism_name": "Cladonia gracilis", "organism_wikidata": "http://www.wikidata.org/entity/Q3678888",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:111668"},
+    {"organism_name": "Cladonia rangiferina", "organism_wikidata": "http://www.wikidata.org/entity/Q248744",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:111670"},
+    {"organism_name": "Cladonia rangiferina", "organism_wikidata": "http://www.wikidata.org/entity/Q248744",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:111670"},
+    {"organism_name": "Cladonia ciliata var. tenuis", "organism_wikidata": "http://www.wikidata.org/entity/Q21379660",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:1156959"},
+    {"organism_name": "Gelliodes callista", "organism_wikidata": "http://www.wikidata.org/entity/Q2287323",
+    "reference_doi": "10.2331/SUISAN.53.1271", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:1336858"},
+    {"organism_name": "Cladonia stellaris", "organism_wikidata": "http://www.wikidata.org/entity/Q2079766",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174045"},
+    {"organism_name": "Cladonia cenotea", "organism_wikidata": "http://www.wikidata.org/entity/Q3678845",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174050"},
+    {"organism_name": "Cladonia coccifera", "organism_wikidata": "http://www.wikidata.org/entity/Q113273",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174053"},
+    {"organism_name": "Cladonia fimbriata", "organism_wikidata": "http://www.wikidata.org/entity/Q456384",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174058"},
+    {"organism_name": "Cladonia glauca", "organism_wikidata": "http://www.wikidata.org/entity/Q3678887",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174061"},
+    {"organism_name": "Cladonia ochrochlora", "organism_wikidata": "http://www.wikidata.org/entity/Q3678922",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174062"},
+    {"organism_name": "Cladonia scabriuscula", "organism_wikidata": "http://www.wikidata.org/entity/Q3678942",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174071"},
+    {"organism_name": "Paralithodes brevipes", "organism_wikidata": "http://www.wikidata.org/entity/Q798231",
+    "reference_doi": "10.2331/SUISAN.54.1437", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:174403"},
+    {"organism_name": "Cladonia deformis", "organism_wikidata": "http://www.wikidata.org/entity/Q3678868",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:184097"},
+    {"organism_name": "Cladonia ecmocyna", "organism_wikidata": "http://www.wikidata.org/entity/Q3678877",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:184098"},
+    {"organism_name": "Cladonia phyllophora", "organism_wikidata": "http://www.wikidata.org/entity/Q3678931",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:184109"},
+    {"organism_name": "Hexabranchus", "organism_wikidata": "http://www.wikidata.org/entity/Q2637622",
+    "reference_doi": "10.2331/SUISAN.58.1549", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:190923"},
+    {"organism_name": "Cladonia mitis", "organism_wikidata": "http://www.wikidata.org/entity/Q3678915",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:195774"},
+    {"organism_name": "Cladonia macilenta", "organism_wikidata": "http://www.wikidata.org/entity/Q3678901",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:196765"},
+    {"organism_name": "Cladonia macrophylla", "organism_wikidata": "http://www.wikidata.org/entity/Q3678904",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:197105"},
+    {"organism_name": "Cladonia ramulosa", "organism_wikidata": "http://www.wikidata.org/entity/Q3678939",
+    "reference_doi": "10.1016/0305-1978(85)90064-X", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:2031061"},
+    {"organism_name": "Nephroma laevigatum", "organism_wikidata": "http://www.wikidata.org/entity/Q10718170",
+    "reference_doi": "10.1016/0305-1978(88)90082-8", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:203386"},
+    {"organism_name": "Thysanoessa inermis", "organism_wikidata": "http://www.wikidata.org/entity/Q3526219",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:210626"},
+    {"organism_name": "Paracoccus haeundaensis", "organism_wikidata": "http://www.wikidata.org/entity/Q61954745",
+    "reference_doi": "10.1016/J.GENE.2005.11.007", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:225362"},
+    {"organism_name": "Sticta canariensis", "organism_wikidata": "http://www.wikidata.org/entity/Q21320776",
+    "reference_doi": "10.1016/0305-1978(88)90082-8", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:243211"},
+    {"organism_name": "Mytilus unguiculatus", "organism_wikidata": "http://www.wikidata.org/entity/Q61684116",
+    "reference_doi": "10.1021/NP970039Q", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:2602926"},
+    {"organism_name": "Phaffia rhodozyma", "organism_wikidata": "http://www.wikidata.org/entity/Q10626258",
+    "reference_doi": "10.1007/BF00386286", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:264483"},
+    {"organism_name": "Phaffia rhodozyma", "organism_wikidata": "http://www.wikidata.org/entity/Q10626258",
+    "reference_doi": "10.1016/S0304-4165(98)00145-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:264483"},
+    {"organism_name": "Botryllus schlosseri", "organism_wikidata": "http://www.wikidata.org/entity/Q837241",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:30301"},
+    {"organism_name": "Metasequoia glyptostroboides", "organism_wikidata": "http://www.wikidata.org/entity/Q156800",
+    "reference_doi": "10.1016/0305-1978(87)90003-2", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:3371"},
+    {"organism_name": "Protula tubularia", "organism_wikidata": "http://www.wikidata.org/entity/Q531987",
+    "reference_doi": "10.1016/0305-0491(84)90180-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:363316"},
+    {"organism_name": "Arabidopsis thaliana", "organism_wikidata": "http://www.wikidata.org/entity/Q158695",
+    "reference_doi": "10.1016/J.CHROMA.2006.04.033", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:3702"},
+    {"organism_name": "Botryococcus braunii", "organism_wikidata": "http://www.wikidata.org/entity/Q149449",
+    "reference_doi": "10.1016/0305-1978(94)90111-2", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:38881"},
+    {"organism_name": "Gowardia nigricans", "organism_wikidata": "http://www.wikidata.org/entity/Q10710191",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:413822"},
+    {"organism_name": "Mytilus coruscus", "organism_wikidata": "http://www.wikidata.org/entity/Q13871933",
+    "reference_doi": "10.1021/NP970039Q", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:42192"},
+    {"organism_name": "Agrobacterium aurantiacum", "organism_wikidata": "http://www.wikidata.org/entity/Q104096211",
+    "reference_doi": "10.1128/JB.177.22.6575-6584.1995", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44155"},
+    {"organism_name": "Agrobacterium aurantiacum", "organism_wikidata": "http://www.wikidata.org/entity/Q104096211",
+    "reference_doi": "10.1271/BBB.58.1842", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44155"},
+    {"organism_name": "Haematococcus pluvialis", "organism_wikidata": "http://www.wikidata.org/entity/Q469662",
+    "reference_doi": "10.1016/0922-338X(91)90346-I", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    {"organism_name": "Haematococcus lacustris", "organism_wikidata": "http://www.wikidata.org/entity/Q69644038",
+    "reference_doi": "10.1016/0922-338X(91)90346-I", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    {"organism_name": "Haematococcus pluvialis", "organism_wikidata": "http://www.wikidata.org/entity/Q469662",
+    "reference_doi": "10.1016/J.PHYMED.2008.04.004", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    {"organism_name": "Haematococcus lacustris", "organism_wikidata": "http://www.wikidata.org/entity/Q69644038",
+    "reference_doi": "10.1016/J.PHYMED.2008.04.004", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    {"organism_name": "Haematococcus pluvialis", "organism_wikidata": "http://www.wikidata.org/entity/Q469662",
+    "reference_doi": "10.1021/JF980039B", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    {"organism_name": "Haematococcus lacustris", "organism_wikidata": "http://www.wikidata.org/entity/Q69644038",
+    "reference_doi": "10.1021/JF980039B", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    {"organism_name": "Haematococcus pluvialis", "organism_wikidata": "http://www.wikidata.org/entity/Q469662",
+    "reference_doi": "10.1128/AAC.44.9.2452-2457.2000", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    {"organism_name": "Haematococcus lacustris", "organism_wikidata": "http://www.wikidata.org/entity/Q69644038",
+    "reference_doi": "10.1128/AAC.44.9.2452-2457.2000", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:44745"},
+    {"organism_name": "Stereocaulon paschale", "organism_wikidata": "http://www.wikidata.org/entity/Q10647928",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:50940"},
+    {"organism_name": "Cladonia", "organism_wikidata": "http://www.wikidata.org/entity/Q310738",
+    "reference_doi": "10.1002/FEDR.19911020518", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:5199"},
+    {"organism_name": "Xanthophyllomyces dendrorhous", "organism_wikidata": "http://www.wikidata.org/entity/Q10721817",
+    "reference_doi": "10.1007/BF00386286", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:5421"},
+    {"organism_name": "Xanthophyllomyces dendrorhous", "organism_wikidata": "http://www.wikidata.org/entity/Q10721817",
+    "reference_doi": "10.1016/S0304-4165(98)00145-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:5421"},
+    {"organism_name": "Acanthephyra purpurea", "organism_wikidata": "http://www.wikidata.org/entity/Q4467864",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:576170"},
+    {"organism_name": "Cancer pagurus", "organism_wikidata": "http://www.wikidata.org/entity/Q752188",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:6755"},
+    {"organism_name": "Euphausia superba", "organism_wikidata": "http://www.wikidata.org/entity/Q571443",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:6819"},
+    {"organism_name": "Euphausia superba", "organism_wikidata": "http://www.wikidata.org/entity/Q571443",
+    "reference_doi": "10.1021/JF00071A034", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:6819"},
+    {"organism_name": "Calanus finmarchicus", "organism_wikidata": "http://www.wikidata.org/entity/Q312953",
+    "reference_doi": "10.1016/0305-0491(87)90298-7", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:6837"},
+    {"organism_name": "Ciona intestinalis", "organism_wikidata": "http://www.wikidata.org/entity/Q2567701",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7719"},
+    {"organism_name": "Styela clava", "organism_wikidata": "http://www.wikidata.org/entity/Q3023683",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7725"},
+    {"organism_name": "Halocynthia roretzi", "organism_wikidata": "http://www.wikidata.org/entity/Q671668",
+    "reference_doi": "10.1016/0305-0491(85)90174-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7729"},
+    {"organism_name": "Halocynthia roretzi", "organism_wikidata": "http://www.wikidata.org/entity/Q671668",
+    "reference_doi": "10.1248/CPB.32.4309", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7729"},
+    {"organism_name": "Ctenopharyngodon idella", "organism_wikidata": "http://www.wikidata.org/entity/Q76098",
+    "reference_doi": "10.1016/0305-0491(81)90400-4", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:7959"},
+    {"organism_name": "Calanus pacificus", "organism_wikidata": "http://www.wikidata.org/entity/Q6551233",
+    "reference_doi": "10.4319/LO.1996.41.6.1198", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:84301"},
+    {"organism_name": "Acanthella acuta", "organism_wikidata": "http://www.wikidata.org/entity/Q2554196",
+    "reference_doi": "10.1016/0305-0491(84)90180-9", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:85783"},
+    {"organism_name": "Nephromopsis nivalis", "organism_wikidata": "http://www.wikidata.org/entity/Q52708201",
+    "reference_doi": "10.1016/0305-1978(87)90002-0", "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N",
+    "structure_wikidata": "http://www.wikidata.org/entity/Q413740", "taxon_id": "NCBITaxon:95627"}]'
+  snapshot_sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+- evidence_id: bgc-2272-query-cyanometdb_occurrences
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/cyanometdb_occurrences
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "MQZIGYBFDRPAKN-UWFIBFSHSA-N"}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-query-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/npclassifier
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [{"last_physical_line": 1524, "physical_line": 1524, "raw_tsv_record":
+    "MQZIGYBFDRPAKN-UWFIBFSHSA-N\tC\\C(\\C=C\\C=C(/C)\\C=C\\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C\tTerpenoids\tCarotenoids
+    (C40)\tCarotenoids (C40, β-β)\tfalse\tnpclassifier.gnps2.org@2026-09-07\n", "row":
+    {"class_results": "Carotenoids (C40, β-β)", "is_glycoside": "false", "model_version":
+    "npclassifier.gnps2.org@2026-09-07", "pathway_results": "Terpenoids", "smiles":
+    "C\\C(\\C=C\\C=C(/C)\\C=C\\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "superclass_results": "Carotenoids
+    (C40)"}, "row_sha256": "ea29da0d904489419be2d73d9576496a5183f93778156b8b465c2a9e63af3614"}],
+    "predicate": "exact complete standard_inchi_key equality", "query": "MQZIGYBFDRPAKN-UWFIBFSHSA-N"}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-source-npclassifier
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/data/raw/npclassifier.tsv
+  locator: Header line 1; physical lines 1524–1524; row_sha256 ea29da0d904489419be2d73d9576496a5183f93778156b8b465c2a9e63af3614
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Complete physical source rows, all fields personally read and joined to
+    the pinned table: [{"class_results": "Carotenoids (C40, β-β)", "is_glycoside":
+    "false", "model_version": "npclassifier.gnps2.org@2026-09-07", "pathway_results":
+    "Terpenoids", "smiles": "C\\C(\\C=C\\C=C(/C)\\C=C\\C1=C(C)C(=O)[C@@H](O)CC1(C)C)=C/C=C/C=C(\\C)/C=C/C=C(\\C)/C=C/C1=C(C)C(=O)[C@@H](O)CC1(C)C",
+    "standard_inchi_key": "MQZIGYBFDRPAKN-UWFIBFSHSA-N", "superclass_results": "Carotenoids
+    (C40)"}]'
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: bgc-2272-query-pubchem_bioassay
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/pubchem_bioassay
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "MQZIGYBFDRPAKN-UWFIBFSHSA-N"}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-query-bindingdb_targets
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/bindingdb_targets
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "MQZIGYBFDRPAKN-UWFIBFSHSA-N"}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-query-antibioticmech_inchikeys
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/antibioticmech_inchikeys
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [], "predicate": "exact complete standard_inchi_key equality", "query":
+    "MQZIGYBFDRPAKN-UWFIBFSHSA-N"}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-query-chebi_origins
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/joins/chebi_origins
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact retained predicate and query with all matched physical payloads:
+    {"matches": [], "predicate": "exact chebi_id from exact full-key structure rows",
+    "query": ["CHEBI:40968"]}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-source-routes
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /contexts/16/source_scope_inventory/source_taxa; /contexts/16/source_scope_inventory/forward_taxon_merge_matches;
+    /contexts/16/source_scope_inventory/nonorganism_matches; /contexts/16/source_scope_inventory/actual_assay_rows;
+    /contexts/16/source_scope_inventory/blank_AID_sentinels; /contexts/16/source_scope_inventory/related_corpus_rows
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Exact source taxa and route lists, distinguishing forward merges/nonorganism
+    matches and blank sentinels from actual assays: {"actual_assay_rows": [], "blank_AID_sentinels":
+    [], "forward_taxon_merge_matches": [{"last_physical_line": 19, "physical_line":
+    19, "raw_tsv_record": "NCBITaxon:5421\tNCBITaxon:264483\tlotus\n", "row": {"new_taxon_id":
+    "NCBITaxon:264483", "old_taxon_id": "NCBITaxon:5421", "requested_by": "lotus"},
+    "row_sha256": "1629bfd3e9d171201a617ec414d1c8c67a756d29faaaf99c717d31cfd42f6426"}],
+    "nonorganism_matches": [], "related_corpus_rows": [], "source_taxa": ["NCBITaxon:107392",
+    "NCBITaxon:109185", "NCBITaxon:111668", "NCBITaxon:111670", "NCBITaxon:1156959",
+    "NCBITaxon:1336858", "NCBITaxon:174045", "NCBITaxon:174050", "NCBITaxon:174053",
+    "NCBITaxon:174058", "NCBITaxon:174061", "NCBITaxon:174062", "NCBITaxon:174071",
+    "NCBITaxon:174403", "NCBITaxon:184097", "NCBITaxon:184098", "NCBITaxon:184109",
+    "NCBITaxon:190923", "NCBITaxon:195774", "NCBITaxon:196765", "NCBITaxon:197105",
+    "NCBITaxon:2031061", "NCBITaxon:203386", "NCBITaxon:210626", "NCBITaxon:225362",
+    "NCBITaxon:243211", "NCBITaxon:2602926", "NCBITaxon:264483", "NCBITaxon:30301",
+    "NCBITaxon:3371", "NCBITaxon:363316", "NCBITaxon:3702", "NCBITaxon:38881", "NCBITaxon:413822",
+    "NCBITaxon:42192", "NCBITaxon:44155", "NCBITaxon:44745", "NCBITaxon:50940", "NCBITaxon:5199",
+    "NCBITaxon:5421", "NCBITaxon:576170", "NCBITaxon:6755", "NCBITaxon:6819", "NCBITaxon:6837",
+    "NCBITaxon:7719", "NCBITaxon:7725", "NCBITaxon:7729", "NCBITaxon:7959", "NCBITaxon:84301",
+    "NCBITaxon:85783", "NCBITaxon:95627"]}'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-cached-taxonomy
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-inventory-DATA-001.json
+  locator: /cached_taxonomy/input; /cached_taxonomy/whole_stanzas/0; /cached_taxonomy/whole_stanzas/1;
+    /cached_taxonomy/whole_stanzas/5; /cached_taxonomy/whole_stanzas/6; /cached_taxonomy/whole_stanzas/7;
+    /cached_taxonomy/whole_stanzas/8; /cached_taxonomy/whole_stanzas/9; /cached_taxonomy/whole_stanzas/10;
+    /cached_taxonomy/whole_stanzas/11; /cached_taxonomy/whole_stanzas/12; /cached_taxonomy/whole_stanzas/13;
+    /cached_taxonomy/whole_stanzas/15; /cached_taxonomy/whole_stanzas/17; /cached_taxonomy/whole_stanzas/19;
+    /cached_taxonomy/whole_stanzas/20; /cached_taxonomy/whole_stanzas/21; /cached_taxonomy/whole_stanzas/22;
+    /cached_taxonomy/whole_stanzas/23; /cached_taxonomy/whole_stanzas/24; /cached_taxonomy/whole_stanzas/27;
+    /cached_taxonomy/whole_stanzas/28; /cached_taxonomy/whole_stanzas/29; /cached_taxonomy/whole_stanzas/30;
+    /cached_taxonomy/whole_stanzas/34; /cached_taxonomy/whole_stanzas/35; /cached_taxonomy/whole_stanzas/36;
+    /cached_taxonomy/whole_stanzas/37; /cached_taxonomy/whole_stanzas/38; /cached_taxonomy/whole_stanzas/39;
+    /cached_taxonomy/whole_stanzas/40; /cached_taxonomy/whole_stanzas/41; /cached_taxonomy/whole_stanzas/42;
+    /cached_taxonomy/whole_stanzas/43; /cached_taxonomy/whole_stanzas/44; /cached_taxonomy/whole_stanzas/45;
+    /cached_taxonomy/whole_stanzas/46; /cached_taxonomy/whole_stanzas/47; /cached_taxonomy/whole_stanzas/48;
+    /cached_taxonomy/whole_stanzas/49; /cached_taxonomy/whole_stanzas/50; /cached_taxonomy/whole_stanzas/52;
+    /cached_taxonomy/whole_stanzas/54; /cached_taxonomy/whole_stanzas/55; /cached_taxonomy/whole_stanzas/58;
+    /cached_taxonomy/whole_stanzas/59; /cached_taxonomy/whole_stanzas/61; /cached_taxonomy/whole_stanzas/65;
+    /cached_taxonomy/whole_stanzas/66; /cached_taxonomy/whole_stanzas/71; /cached_taxonomy/whole_stanzas/72;
+    /cached_taxonomy/unmatched_ids
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: 'Complete retained cache stanzas for this source-taxon scope, with cache
+    misses retained globally and no fresh taxonomy or ancestry assertion: [{"complete_stanza":
+    "[Term]\nid: NCBITaxon:3371\nname: Metasequoia glyptostroboides\n\n", "id": "NCBITaxon:3371",
+    "physical_line": 4447}, {"complete_stanza": "[Term]\nid: NCBITaxon:3702\nname:
+    Arabidopsis thaliana\nsynonym: \"Arabis thaliana\" EXACT []\n\n", "id": "NCBITaxon:3702",
+    "physical_line": 5233}, {"complete_stanza": "[Term]\nid: NCBITaxon:5199\nname:
+    Cladonia\n\n", "id": "NCBITaxon:5199", "physical_line": 8150}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:6755\nname: Cancer pagurus\n\n", "id": "NCBITaxon:6755",
+    "physical_line": 9341}, {"complete_stanza": "[Term]\nid: NCBITaxon:6819\nname:
+    Euphausia superba\n\n", "id": "NCBITaxon:6819", "physical_line": 9354}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:6837\nname: Calanus finmarchicus\nsynonym: \"Monoculus
+    finmarchicus\" EXACT []\n\n", "id": "NCBITaxon:6837", "physical_line": 9358},
+    {"complete_stanza": "[Term]\nid: NCBITaxon:7719\nname: Ciona intestinalis\nsynonym:
+    \"Ascidia intestinalis\" EXACT []\n\n", "id": "NCBITaxon:7719", "physical_line":
+    9833}, {"complete_stanza": "[Term]\nid: NCBITaxon:7725\nname: Styela clava\n\n",
+    "id": "NCBITaxon:7725", "physical_line": 9847}, {"complete_stanza": "[Term]\nid:
+    NCBITaxon:7729\nname: Halocynthia roretzi\nsynonym: \"Cynthia roretzi\" EXACT
+    []\n\n", "id": "NCBITaxon:7729", "physical_line": 9856}, {"complete_stanza": "[Term]\nid:
+    NCBITaxon:7959\nname: Ctenopharyngodon idella\nsynonym: \"Ctenopharyngodon idellus\"
+    EXACT []\nsynonym: \"Leuciscus idella\" EXACT []\n\n", "id": "NCBITaxon:7959",
+    "physical_line": 9943}, {"complete_stanza": "[Term]\nid: NCBITaxon:30301\nname:
+    Botryllus schlosseri\nsynonym: \"Alcyonium schlosseri\" EXACT []\n\n", "id": "NCBITaxon:30301",
+    "physical_line": 13777}, {"complete_stanza": "[Term]\nid: NCBITaxon:38881\nname:
+    Botryococcus braunii\n\n", "id": "NCBITaxon:38881", "physical_line": 16975}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:42192\nname: Mytilus coruscus\n\n", "id": "NCBITaxon:42192",
+    "physical_line": 19286}, {"complete_stanza": "[Term]\nid: NCBITaxon:44155\nname:
+    Agrobacterium aurantiacum\nsynonym: \"''Agrobacterium aurantiacum''\" EXACT []\n\n",
+    "id": "NCBITaxon:44155", "physical_line": 20101}, {"complete_stanza": "[Term]\nid:
+    NCBITaxon:44745\nname: Haematococcus lacustris\nsynonym: \"Haematococcus pluvialis\"
+    EXACT []\nsynonym: \"Volvox lacustris\" EXACT []\n\n", "id": "NCBITaxon:44745",
+    "physical_line": 20233}, {"complete_stanza": "[Term]\nid: NCBITaxon:50940\nname:
+    Stereocaulon paschale\nsynonym: \"Lichen paschalis\" EXACT []\n\n", "id": "NCBITaxon:50940",
+    "physical_line": 23566}, {"complete_stanza": "[Term]\nid: NCBITaxon:84301\nname:
+    Calanus pacificus\n\n", "id": "NCBITaxon:84301", "physical_line": 37161}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:85783\nname: Acanthella acuta\n\n", "id": "NCBITaxon:85783",
+    "physical_line": 37691}, {"complete_stanza": "[Term]\nid: NCBITaxon:95627\nname:
+    Nephromopsis nivalis\nsynonym: \"Cetraria nivalis\" EXACT []\nsynonym: \"Flavocetraria
+    nivalis\" EXACT []\nsynonym: \"Foveolaria nivalis\" EXACT []\nsynonym: \"Lichen
+    nivalis\" EXACT []\n\n", "id": "NCBITaxon:95627", "physical_line": 40244}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:107392\nname: Ascidia zara\n\n", "id": "NCBITaxon:107392",
+    "physical_line": 43338}, {"complete_stanza": "[Term]\nid: NCBITaxon:109185\nname:
+    Linckia laevigata\nsynonym: \"Asterias laevigata\" EXACT []\n\n", "id": "NCBITaxon:109185",
+    "physical_line": 43792}, {"complete_stanza": "[Term]\nid: NCBITaxon:111668\nname:
+    Cladonia gracilis\nsynonym: \"Lichen gracilis\" EXACT []\n\n", "id": "NCBITaxon:111668",
+    "physical_line": 44244}, {"complete_stanza": "[Term]\nid: NCBITaxon:111670\nname:
+    Cladonia rangiferina\nsynonym: \"Lichen rangiferinus\" EXACT []\n\n", "id": "NCBITaxon:111670",
+    "physical_line": 44249}, {"complete_stanza": "[Term]\nid: NCBITaxon:174045\nname:
+    Cladonia stellaris\nsynonym: \"Cenomyce stellaris\" EXACT []\nsynonym: \"Cladina
+    stellaris\" EXACT []\nsynonym: \"Cladonia stellaris subsp. stellaris\" EXACT []\n\n",
+    "id": "NCBITaxon:174045", "physical_line": 58156}, {"complete_stanza": "[Term]\nid:
+    NCBITaxon:174050\nname: Cladonia cenotea\nsynonym: \"Baeomyces cenoteus\" EXACT
+    []\n\n", "id": "NCBITaxon:174050", "physical_line": 58176}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:174053\nname: Cladonia coccifera\nsynonym: \"Lichen cocciferus\"
+    EXACT []\n\n", "id": "NCBITaxon:174053", "physical_line": 58187}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:174058\nname: Cladonia fimbriata\nsynonym: \"Lichen fimbriatus\"
+    EXACT []\n\n", "id": "NCBITaxon:174058", "physical_line": 58201}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:174061\nname: Cladonia glauca\n\n", "id": "NCBITaxon:174061",
+    "physical_line": 58211}, {"complete_stanza": "[Term]\nid: NCBITaxon:174062\nname:
+    Cladonia ochrochlora\n\n", "id": "NCBITaxon:174062", "physical_line": 58215},
+    {"complete_stanza": "[Term]\nid: NCBITaxon:174071\nname: Cladonia scabriuscula\nsynonym:
+    \"Cenomyce scabriuscula\" EXACT []\n\n", "id": "NCBITaxon:174071", "physical_line":
+    58237}, {"complete_stanza": "[Term]\nid: NCBITaxon:174403\nname: Paralithodes
+    brevipes\nsynonym: \"Lithodes brevipes\" EXACT []\n\n", "id": "NCBITaxon:174403",
+    "physical_line": 58301}, {"complete_stanza": "[Term]\nid: NCBITaxon:184097\nname:
+    Cladonia deformis\nsynonym: \"Lichen deformis\" EXACT []\n\n", "id": "NCBITaxon:184097",
+    "physical_line": 60875}, {"complete_stanza": "[Term]\nid: NCBITaxon:184098\nname:
+    Cladonia ecmocyna\nsynonym: \"Cenomyce ecmocyna\" EXACT []\n\n", "id": "NCBITaxon:184098",
+    "physical_line": 60880}, {"complete_stanza": "[Term]\nid: NCBITaxon:184109\nname:
+    Cladonia phyllophora\n\n", "id": "NCBITaxon:184109", "physical_line": 60890},
+    {"complete_stanza": "[Term]\nid: NCBITaxon:190923\nname: Hexabranchus\n\n", "id":
+    "NCBITaxon:190923", "physical_line": 62266}, {"complete_stanza": "[Term]\nid:
+    NCBITaxon:195774\nname: Cladonia mitis\n\n", "id": "NCBITaxon:195774", "physical_line":
+    63183}, {"complete_stanza": "[Term]\nid: NCBITaxon:196765\nname: Cladonia macilenta\n\n",
+    "id": "NCBITaxon:196765", "physical_line": 63384}, {"complete_stanza": "[Term]\nid:
+    NCBITaxon:197105\nname: Cladonia macrophylla\n\n", "id": "NCBITaxon:197105", "physical_line":
+    63422}, {"complete_stanza": "[Term]\nid: NCBITaxon:203386\nname: Nephroma laevigatum\nsynonym:
+    \"Nephroma lusitanicum\" EXACT []\nsynonym: \"Nephromium lusitanicum\" EXACT []\n\n",
+    "id": "NCBITaxon:203386", "physical_line": 64940}, {"complete_stanza": "[Term]\nid:
+    NCBITaxon:210626\nname: Thysanoessa inermis\nsynonym: \"Thysanopoda inermis\"
+    EXACT []\n\n", "id": "NCBITaxon:210626", "physical_line": 66529}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:225362\nname: Paracoccus haeundaensis\nsynonym: \"Paracoccus
+    haeundaesis\" EXACT []\n\n", "id": "NCBITaxon:225362", "physical_line": 68767},
+    {"complete_stanza": "[Term]\nid: NCBITaxon:243211\nname: Sticta canariensis\nsynonym:
+    \"Pulmonaria canariensis\" EXACT []\n\n", "id": "NCBITaxon:243211", "physical_line":
+    71838}, {"complete_stanza": "[Term]\nid: NCBITaxon:264483\nname: Phaffia rhodozyma\nsynonym:
+    \"Cryptococcus rhodozymus\" EXACT []\nsynonym: \"Rhodomyces dendrorhous\" EXACT
+    []\nsynonym: \"Xanthophyllomyces dendrorhous\" EXACT []\n\n", "id": "NCBITaxon:264483",
+    "physical_line": 74758}, {"complete_stanza": "[Term]\nid: NCBITaxon:363316\nname:
+    Protula tubularia\nsynonym: \"Serpula tubularia\" EXACT []\n\n", "id": "NCBITaxon:363316",
+    "physical_line": 86790}, {"complete_stanza": "[Term]\nid: NCBITaxon:413822\nname:
+    Gowardia nigricans\nsynonym: \"Alectoria nigricans\" EXACT []\nsynonym: \"Cornicularia
+    ochroleuca var. nigricans\" EXACT []\n\n", "id": "NCBITaxon:413822", "physical_line":
+    92020}, {"complete_stanza": "[Term]\nid: NCBITaxon:576170\nname: Acanthephyra
+    purpurea\n\n", "id": "NCBITaxon:576170", "physical_line": 103090}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:1156959\nname: Cladonia ciliata var. tenuis\nsynonym: \"Cladonia
+    ciliata f. tenuis\" EXACT []\n\n", "id": "NCBITaxon:1156959", "physical_line":
+    120647}, {"complete_stanza": "[Term]\nid: NCBITaxon:1336858\nname: Gelliodes callista\n\n",
+    "id": "NCBITaxon:1336858", "physical_line": 126729}, {"complete_stanza": "[Term]\nid:
+    NCBITaxon:2031061\nname: Cladonia ramulosa\nsynonym: \"Lichen ramulosus\" EXACT
+    []\n\n", "id": "NCBITaxon:2031061", "physical_line": 143613}, {"complete_stanza":
+    "[Term]\nid: NCBITaxon:2602926\nname: Mytilus unguiculatus\n\n", "id": "NCBITaxon:2602926",
+    "physical_line": 148648}]'
+  snapshot_sha256: 89211d5362eaa0fa9944acffc040fe9819637641b76a279e6339d90925fa7d0d
+- evidence_id: bgc-2272-curation-scope
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch228-tentative/bgc-prep/bgc-conditional228-source-scope-notes-001.json
+  locator: /curation
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: One bounded eight-table scan used 161 exact literals over 93 data rows,
+    including ignored files by direct access. The only hit is the Avermitilol locus
+    override at physical line 5; applicability is owner-specific. Reserved decisions.tsv
+    was not consumed. PubChem exclusions were supplementary and are outside this batch
+    input map.
+  snapshot_sha256: 63a4685a365402d997d4f20d1b80d7dce1b7f62d2d2264c93dae7fa581e52df5
+- evidence_id: bgc-2272-structure-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 368–430
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: ChemicalStructure and ComputedClassification distinguish unspecified stereocentres,
+    normalized keys and named/versioned model predictions; the latter are not source
+    assertions or admission grounds.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: bgc-2272-stereo-method
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/extract_mibig.py
+  locator: Lines 142–174
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: The maintained extractor computes stereo_complete from FindMolChiralCenters
+    with unassigned centres included; it does not test every double-bond geometry.
+    No extractor was invoked here.
+  snapshot_sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+- evidence_id: bgc-2272-origin-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 1067–1196
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Producer and locus evidence grades are separately copied, with explicit
+    merge/qualification handling. ChEBI occurrence assertions are not promoted to
+    production.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2272-classification-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 968–1060
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Full-key source grounding, model prediction projection and source-concept
+    preservation have separate maintained roles.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2272-review-profile
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/docs/record-review-profile.md
+  locator: Whole profile
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: The current review profile requires claim-level identity, representation,
+    evidence, provenance and completion coverage without promoting unavailable checks.
+  snapshot_sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+- evidence_id: bgc-2272-review-skill
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/.claude/skills/review-yaml-record/SKILL.md
+  locator: Whole skill
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: The current one-record review procedure keeps source evidence and required
+    verification limits explicit and does not authorize record edits or external requests
+    here.
+  snapshot_sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+- evidence_id: bgc-2272-name-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 1530–1574
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: The maintained seeder preserves an OPEN name-disagreement discussion when
+    source names disagree; it does not establish which upstream label or structure
+    is correct.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2272-occurrence-seeder
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/scripts/seed_from_sources.py
+  locator: Lines 1248–1310
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Occurrence normalization, taxon/reference deduplication and the written
+    cap are distinct from retained physical-row count and publication independence.
+  snapshot_sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+- evidence_id: bgc-2272-definition-schema
+  kind: record_content
+  reference: /private/tmp/npm-record-reviews-20261021/src/naturalproductmech/schema/naturalproductmech.yaml
+  locator: Lines 115–132
+  accessed_at: '2026-11-03T18:38:32.836999Z'
+  support: supports
+  summary: Written definition and synonyms are separate scientific name/meaning assertions;
+    retained source provenance does not erase their structural implications.
+  snapshot_sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+- evidence_id: root-native-strict_ten
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-228/validate-strict-selected10-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-228/native-current228-five-gates-execution-001.json
+  accessed_at: '2026-11-03T18:12:47.775053Z'
+  support: supports
+  summary: Closed-schema validation of the ten selected owners and any referenced
+    components reported zero errors.
+  snapshot_sha256: c21e163f3196cf186958794725f1b00a467ef5cca041142eb77868d0f57002a8
+- evidence_id: root-native-strict_full
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-228/validate-all-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-228/native-current228-five-gates-execution-001.json
+  accessed_at: '2026-11-03T18:13:12.316523Z'
+  support: supports
+  summary: Full closed-schema validation scanned all 3116 owners and reported zero
+    errors.
+  snapshot_sha256: 87b8d13781a6e8b29a6548c0231420c70cfb7201c9942069049f0adfaa3a91dc
+- evidence_id: root-native-lockfile
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-228/verify-corpus-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-228/native-current228-five-gates-execution-001.json
+  accessed_at: '2026-11-03T18:13:32.394271Z'
+  support: supports
+  summary: PATHS.tsv and filesystem agree on all 3116 records and their pinned filing
+    pathways.
+  snapshot_sha256: 254f171c7dff0f1ecbee5f47f75d2b7046143ae7fc499d9a1c08263e1c5125d8
+- evidence_id: root-native-reproduction
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-228/verify-reproduction-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-228/native-current228-five-gates-execution-001.json
+  accessed_at: '2026-11-03T18:14:07.640893Z'
+  support: supports
+  summary: All 3116 records reproduce byte-identically from the retained inventories
+    and carried curator content. This does not independently validate curator science.
+  snapshot_sha256: cfc38f4e3f434e7f3651975f2cb228e5cda848476b2c53d1636d8746b794237a
+- evidence_id: root-native-queue
+  kind: validation
+  reference: /private/tmp/npm-native-checks/batch-228/review-queue-001.log
+  locator: Complete actual command stdout/stderr; command and clocks retained in /private/tmp/npm-native-checks/batch-228/native-current228-five-gates-execution-001.json
+  accessed_at: '2026-11-03T18:14:19.806834Z'
+  support: supports
+  summary: The full local queue contains 8922 diagnostic rows; selected-target entries
+    were inspected. Queue diagnostics are leads, not scientific sign-off.
+  snapshot_sha256: 8a9b4b2d4725b4513fcae189afd5e5e6f81b1ec228cdd2b2b100ff2dd2472a63
+assessments:
+- assessment_id: bgc-2272-identity
+  area: identity
+  topic: Identity
+  outcome: concern
+  summary: CHEBI:40968, its definition and both stored forms denote the C40H52O4 ketone/diol
+    with two S alcohol centres. The exact MIBiG row 726/BGC0000630 version 3 shares
+    that full key but calls the compound (2R,3S,3′S)-2-hydroxyastaxanthin; the owner
+    preserves this as a RELATED_SYNONYM and source concept and already has an OPEN
+    name-disagreement discussion. The extra 2-hydroxyl and 2R centre implied by the
+    name are absent from the complete saved topology. The conflict is confirmed locally,
+    while which upstream name or structure needs correction remains unproved.
+  target_ids:
+  - CHEBI:40968
+  evidence_ids:
+  - bgc-2272-grounding-owner
+  - bgc-2272-source-mibig_compounds
+  - bgc-2272-source-chebi_structures
+  - bgc-2272-query-chebi_structures
+  - bgc-2272-chemistry
+  - bgc-2272-topology
+  - bgc-2272-direct-contexts
+  - bgc-2272-name-seeder
+  - bgc-2272-definition-schema
+  dimensions:
+  - name: standard_inchi_key
+    value: MQZIGYBFDRPAKN-UWFIBFSHSA-N; both source keys and stored forms agree.
+    definition: Exact full key; no name, first-block or congener substitution.
+    evidence_ids:
+    - bgc-2272-grounding-owner
+    - bgc-2272-source-mibig_compounds
+    - bgc-2272-source-chebi_structures
+    - bgc-2272-query-chebi_structures
+    - bgc-2272-chemistry
+    - bgc-2272-topology
+    - bgc-2272-direct-contexts
+    - bgc-2272-name-seeder
+    - bgc-2272-definition-schema
+  - name: grounding_scope
+    value: EXACT ChEBI structure match, but a confirmed extra-hydroxyl source-name
+      conflict remains unresolved.
+    definition: Local grounding fidelity is distinct from fresh natural-identity verification.
+    evidence_ids:
+    - bgc-2272-grounding-owner
+    - bgc-2272-source-mibig_compounds
+    - bgc-2272-source-chebi_structures
+    - bgc-2272-query-chebi_structures
+    - bgc-2272-chemistry
+    - bgc-2272-topology
+    - bgc-2272-direct-contexts
+    - bgc-2272-name-seeder
+    - bgc-2272-definition-schema
+- assessment_id: bgc-2272-representation
+  area: representation
+  topic: Representation
+  outcome: supported
+  summary: Both forms are neutral C40H52O4 with 44 atoms, 45 bonds, one fragment and
+    two six-membered terminal rings joined by the polyene chain. SMILES C14 and C38,
+    corresponding to InChI atoms 34 and 35, are S. Nine acyclic double bonds are specified
+    E in the saved bond tables; local Bond_Cis/Bond_Trans potential descriptors use
+    atom ordering and are not competing E/Z assignments. Ten comparison flags and
+    the complete stored correspondence agree. This establishes stored-form consistency,
+    not natural identity or resolution of the hydroxyastaxanthin source dispute.
+  target_ids:
+  - CHEBI:40968
+  evidence_ids:
+  - bgc-2272-grounding-owner
+  - bgc-2272-chemistry
+  - bgc-2272-topology
+  - bgc-2272-diagnostic-acceptance
+  - bgc-2272-structure-schema
+  - bgc-2272-stereo-method
+  dimensions:
+  - name: stereochemistry_scope
+    value: Two S tetrahedral centres and nine specified E chain double bonds; no additional
+      2R centre.
+    definition: Saved full stereo/atom/bond interpretation, not an experimental assignment
+      or new parse.
+    evidence_ids:
+    - bgc-2272-grounding-owner
+    - bgc-2272-chemistry
+    - bgc-2272-topology
+    - bgc-2272-diagnostic-acceptance
+    - bgc-2272-structure-schema
+    - bgc-2272-stereo-method
+  - name: representation_correspondence
+    value: Ten true comparison flags and complete correspondence; full_graph_identity_established:false.
+    definition: Normalized identifier agreement does not establish explicit full-graph
+      or natural-form identity.
+    evidence_ids:
+    - bgc-2272-grounding-owner
+    - bgc-2272-chemistry
+    - bgc-2272-topology
+    - bgc-2272-diagnostic-acceptance
+    - bgc-2272-structure-schema
+    - bgc-2272-stereo-method
+- assessment_id: bgc-2272-origin
+  area: provenance
+  topic: Origin
+  outcome: concern
+  summary: MIBiG BGC0000630 version 3 is active, questionable and of unknown completeness.
+    Paracoccus haeundaensis, taxon 225362, remains SOURCE_ASSERTION and the locus
+    CLUSTER_UNSTATED, with genbank:AY957386.1 and no interval or method stated. Those
+    are faithful retained source grades, but the compound-specific attribution is
+    limited by the unresolved hydroxyastaxanthin name/structure conflict. The numerous
+    LOTUS occurrence taxa do not independently demonstrate this bacterium's production
+    of the represented compound.
+  target_ids:
+  - CHEBI:40968
+  evidence_ids:
+  - bgc-2272-origin-owner
+  - bgc-2272-source-mibig_compounds
+  - bgc-2272-cached-taxonomy
+  - bgc-2272-source-routes
+  - bgc-2272-origin-seeder
+  - bgc-2272-grounding-owner
+  - bgc-2272-chemistry
+  - bgc-2272-topology
+  dimensions:
+  - name: taxon_scope
+    value: Producer taxon 225362; occurrence taxa remain separate, with retained 5421→264483
+      merge and name synonyms.
+    definition: Source taxa and cache labels preserve genus/species/strain scope;
+      no fresh ancestry or production inference.
+    evidence_ids:
+    - bgc-2272-origin-owner
+    - bgc-2272-source-mibig_compounds
+    - bgc-2272-cached-taxonomy
+    - bgc-2272-source-routes
+    - bgc-2272-origin-seeder
+    - bgc-2272-grounding-owner
+    - bgc-2272-chemistry
+    - bgc-2272-topology
+  - name: producer_evidence
+    value: SOURCE_ASSERTION, qualified by unresolved compound-specific source identity.
+    definition: Producer evidence is assessed separately from occurrence and locus
+      support.
+    evidence_ids:
+    - bgc-2272-origin-owner
+    - bgc-2272-source-mibig_compounds
+    - bgc-2272-cached-taxonomy
+    - bgc-2272-source-routes
+    - bgc-2272-origin-seeder
+    - bgc-2272-grounding-owner
+    - bgc-2272-chemistry
+    - bgc-2272-topology
+  - name: locus_evidence
+    value: BGC0000630 version 3, questionable/unknown, CLUSTER_UNSTATED; no method
+      or interval.
+    definition: Source version/status/method/grade does not establish a complete pathway
+      or fresh primary support.
+    evidence_ids:
+    - bgc-2272-origin-owner
+    - bgc-2272-source-mibig_compounds
+    - bgc-2272-cached-taxonomy
+    - bgc-2272-source-routes
+    - bgc-2272-origin-seeder
+    - bgc-2272-grounding-owner
+    - bgc-2272-chemistry
+    - bgc-2272-topology
+- assessment_id: bgc-2272-citations
+  area: evidence
+  topic: Citations
+  outcome: concern
+  summary: PMID:16434154 is the MIBiG ENTRY-level citation reused for producer and
+    locus assertions; the definition comes from CHEBI:40968. Each LOTUS taxon/reference
+    triple is retained separately. Different citation strings, shared references and
+    source synonyms do not establish independent publications or experiments. The
+    current OPEN discussion identifies the provenance problem, and no fresh primary
+    source was available to select the correct upstream correction.
+  target_ids:
+  - CHEBI:40968
+  evidence_ids:
+  - bgc-2272-origin-owner
+  - bgc-2272-occurrence-owner
+  - bgc-2272-source-mibig_compounds
+  - bgc-2272-source-lotus_occurrences
+  - bgc-2272-source-chebi_structures
+  - bgc-2272-query-chebi_origins
+  - bgc-2272-source-notes
+  - bgc-2272-direct-contexts
+  dimensions:
+  - name: citation_scope
+    value: ENTRY PMID:16434154; CHEBI:40968 definition; distinct LOTUS source triples.
+    definition: Citation roles remain database assertions; no publication independence
+      or fresh source access is assumed.
+    evidence_ids:
+    - bgc-2272-origin-owner
+    - bgc-2272-occurrence-owner
+    - bgc-2272-source-mibig_compounds
+    - bgc-2272-source-lotus_occurrences
+    - bgc-2272-source-chebi_structures
+    - bgc-2272-query-chebi_origins
+    - bgc-2272-source-notes
+    - bgc-2272-direct-contexts
+- assessment_id: bgc-2272-bioactivity
+  area: evidence
+  topic: Bioactivity
+  outcome: supported
+  summary: The owner writes 25 LOTUS occurrences and notes 33 further occurrences
+    omitted from the written list. The inventory preserves all 64 physical LOTUS rows,
+    including duplicate name/taxon/reference routes; 60 distinct raw taxon–DOI pairs
+    are reduced by the retained 5421→264483 merge before the seeder's taxon/reference
+    deduplication and cap. Cached Phaffia rhodozyma has Xanthophyllomyces dendrorhous
+    as an exact synonym, and Haematococcus lacustris has H. pluvialis as an exact
+    synonym. These are occurrence assertions, not counts of independent studies or
+    producers. No bioactivities, molecular targets or mechanism roots are written,
+    and all exact assay/target joins are empty.
+  target_ids:
+  - CHEBI:40968
+  evidence_ids:
+  - bgc-2272-occurrence-owner
+  - bgc-2272-assay-owner
+  - bgc-2272-source-routes
+  - bgc-2272-cached-taxonomy
+  - bgc-2272-query-lotus_occurrences
+  - bgc-2272-query-chebi_origins
+  - bgc-2272-query-cyanometdb_occurrences
+  - bgc-2272-query-pubchem_bioassay
+  - bgc-2272-query-bindingdb_targets
+  - bgc-2272-query-antibioticmech_inchikeys
+  - bgc-2272-source-lotus_occurrences
+  - bgc-2272-occurrence-seeder
+  dimensions:
+  - name: occurrence_scope
+    value: 64 physical rows, 60 raw taxon–DOI pairs; written 25 plus 33 omitted after
+      retained normalization/deduplication.
+    definition: Occurrence assertions are not counts of independent experiments or
+      producers.
+    evidence_ids:
+    - bgc-2272-occurrence-owner
+    - bgc-2272-assay-owner
+    - bgc-2272-source-routes
+    - bgc-2272-cached-taxonomy
+    - bgc-2272-query-lotus_occurrences
+    - bgc-2272-query-chebi_origins
+    - bgc-2272-query-cyanometdb_occurrences
+    - bgc-2272-query-pubchem_bioassay
+    - bgc-2272-query-bindingdb_targets
+    - bgc-2272-query-antibioticmech_inchikeys
+    - bgc-2272-source-lotus_occurrences
+    - bgc-2272-occurrence-seeder
+  - name: assay_target_scope
+    value: No written assays/targets and empty retained exact joins; no biological-absence
+      claim.
+    definition: Written claims and exact retained assay/target routes are bounded;
+      no global biological absence claim.
+    evidence_ids:
+    - bgc-2272-occurrence-owner
+    - bgc-2272-assay-owner
+    - bgc-2272-source-routes
+    - bgc-2272-cached-taxonomy
+    - bgc-2272-query-lotus_occurrences
+    - bgc-2272-query-chebi_origins
+    - bgc-2272-query-cyanometdb_occurrences
+    - bgc-2272-query-pubchem_bioassay
+    - bgc-2272-query-bindingdb_targets
+    - bgc-2272-query-antibioticmech_inchikeys
+    - bgc-2272-source-lotus_occurrences
+    - bgc-2272-occurrence-seeder
+- assessment_id: bgc-2272-classification
+  area: consistency
+  topic: Classification
+  outcome: supported
+  summary: NPClassifier reports Terpenoids / Carotenoids (C40) / Carotenoids (C40,
+    β-β), is_glycoside:false, separately from the retained TERPENE BGC class. The
+    complete C40 polyene with two oxygenated six-membered carbon rings is compatible
+    with that broad structural filing and has no sugar residue or glycosidic linkage.
+    Model agreement does not resolve the additional-hydroxyl source label or validate
+    compound-specific biosynthesis.
+  target_ids:
+  - CHEBI:40968
+  evidence_ids:
+  - bgc-2272-classification-owner
+  - bgc-2272-source-mibig_compounds
+  - bgc-2272-source-npclassifier
+  - bgc-2272-chemistry
+  - bgc-2272-topology
+  - bgc-2272-structure-schema
+  - bgc-2272-classification-seeder
+  dimensions:
+  - name: classification_applicability
+    value: C40 carotenoid model and false glycoside prediction match broad topology,
+      without settling source identity.
+    definition: Model filing labels, observed topology and source BGC classes remain
+      distinct axes.
+    evidence_ids:
+    - bgc-2272-classification-owner
+    - bgc-2272-source-mibig_compounds
+    - bgc-2272-source-npclassifier
+    - bgc-2272-chemistry
+    - bgc-2272-topology
+    - bgc-2272-structure-schema
+    - bgc-2272-classification-seeder
+- assessment_id: bgc-2272-completion
+  area: completeness
+  topic: Completion
+  outcome: concern
+  summary: All required scientific dimensions were assessed against the current owner,
+    actual intake, retained source payloads and complete paired molecular tables.
+    Five local gates passed, while full QC and complete OAK authority coverage remain
+    unavailable. No selected mechanism reader is applicable to this owner. The confirmed
+    source-name/structure conflict requires curation follow-up. External facts remain
+    unverified under the no-request instruction, so completion is partial and native
+    curation status is unchanged.
+  target_ids:
+  - CHEBI:40968
+  evidence_ids:
+  - bgc-2272-owner
+  - bgc-2272-intake
+  - bgc-2272-intake-acceptance
+  - bgc-2272-inventory-acceptance
+  - bgc-2272-plan
+  - bgc-2272-plan-acceptance
+  - bgc-2272-source-notes
+  - bgc-2272-curation-scope
+  - bgc-2272-diagnostic-execution
+  - bgc-2272-diagnostic-acceptance
+  - bgc-2272-native-acceptance
+  - bgc-2272-review-profile
+  - bgc-2272-review-skill
+  dimensions:
+  - name: review_completion
+    value: Partial scientific review; actual intake and stored-form checks accepted,
+      full QC/OAK and fresh external verification unavailable. One scoped source-identity
+      provenance finding remains open.
+    definition: Completion reflects actual evidence access and check coverage; parsing
+      and gate success are not scientific proof.
+    evidence_ids:
+    - bgc-2272-owner
+    - bgc-2272-intake
+    - bgc-2272-intake-acceptance
+    - bgc-2272-inventory-acceptance
+    - bgc-2272-plan
+    - bgc-2272-plan-acceptance
+    - bgc-2272-source-notes
+    - bgc-2272-curation-scope
+    - bgc-2272-diagnostic-execution
+    - bgc-2272-diagnostic-acceptance
+    - bgc-2272-native-acceptance
+    - bgc-2272-review-profile
+    - bgc-2272-review-skill
+findings:
+- finding_id: bgc-2272-hydroxy-source-name-structure
+  issue_key: astaxanthin-hydroxy-source-name-structure-provenance-conflict
+  category: nomenclature
+  severity: major
+  status: open
+  certainty: confirmed
+  title: The retained 2-hydroxyastaxanthin source name conflicts with the represented
+    O4 structure
+  description: MIBiG physical row 726/BGC0000630 version 3 calls the compound (2R,3S,3'S)-2-hydroxyastaxanthin
+    while carrying the same complete key as CHEBI:40968 astaxanthin. The owner preserves
+    that name as a RELATED_SYNONYM and source_concepts[0].source_label and already
+    has an OPEN name-disagreement discussion. Complete saved paired tables and the
+    ChEBI definition agree on C40H52O4 with two ketones and two 3/3′ alcohols; the
+    position-2 ring carbons are methylenes with no oxygen neighbor and no extra 2R
+    centre. The extra hydroxyl/centre implied by the source name is therefore absent.
+    This is a confirmed local provenance conflict, not proof that the current structure
+    or ChEBI definition is wrong. It leaves compound-specific Paracoccus producer
+    and BGC attribution unresolved until the upstream name/structure association is
+    checked; no choice of corrected field or biological contradiction is asserted.
+  target_ids:
+  - CHEBI:40968
+  field_paths:
+  - synonyms[0]
+  - source_concepts[0].source_label
+  - discussions
+  - producer_organisms[0]
+  - biosynthetic_gene_clusters[0]
+  evidence_ids:
+  - bgc-2272-grounding-owner
+  - bgc-2272-origin-owner
+  - bgc-2272-source-mibig_compounds
+  - bgc-2272-source-chebi_structures
+  - bgc-2272-chemistry
+  - bgc-2272-topology
+  - bgc-2272-name-seeder
+  - bgc-2272-definition-schema
+  - bgc-2272-review-profile
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained source row 726 with the name/full-key disagreement; source provenance
+      must be resolved before correction.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction owner for any evidence-backed upstream name or structure
+      correction.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained full-key join, source-concept and name-disagreement projection.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/astaxanthin.yaml
+    role: Generated affected provenance and compound-specific claims; preserve current
+      structure and OPEN discussion pending resolution.
+  ownership_note: Resolve the source-owned name/structure association through maintained
+    evidence and regeneration; a generated-YAML-only rename or structure change would
+    choose an unproved correction. Reserved decisions.tsv is not consumed.
+  normalization_reason: Major because a chemically substantive extra-hydroxyl name
+    conflict affects compound-specific source provenance despite normalized key agreement
+    and passing local gates.
+  disposition_reason: Complete local source rows, retained OPEN discussion, ChEBI
+    definition and paired atom/bond tables establish the mismatch. The correction
+    choice remains unproved; no broader continuity or fresh-source search is claimed.
+actions:
+- action_id: bgc-2272-resolve-source-name-structure
+  description: Resolve the BGC0000630 version 3 compound-name/structure association
+    using the original compound evidence when access is authorized. Determine whether
+    the source name, source structure or cross-source association requires correction;
+    do not choose by name or key agreement alone. Preserve the current ChEBI-consistent
+    stored forms and OPEN discussion until that choice is evidenced. Qualify compound-specific
+    producer/locus attribution while unresolved, then implement any supported correction
+    at the maintained source/extractor/curation layer and regenerate the owner with
+    exact provenance. No external request or source edit is performed by this review.
+  finding_ids:
+  - bgc-2272-hydroxy-source-name-structure
+  target_ids:
+  - CHEBI:40968
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Retained source row 726 with the name/full-key disagreement; source provenance
+      must be resolved before correction.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/extract_mibig.py
+    role: Maintained extraction owner for any evidence-backed upstream name or structure
+      correction.
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Maintained full-key join, source-concept and name-disagreement projection.
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/terpenoids/astaxanthin.yaml
+    role: Generated affected provenance and compound-specific claims; preserve current
+      structure and OPEN discussion pending resolution.
+  ownership_note: Proposed source-owner follow-up only; no automatic synonym deletion,
+    renaming, structure substitution, producer deletion or biological-absence claim.
+  acceptance_checks:
+  - The chosen correction cites inspected compound-specific evidence distinguishing
+    astaxanthin from an additional 2-hydroxy/2R form.
+  - The full-key/structure/name association and affected producer/locus provenance
+    agree after evidence-backed regeneration; unrelated occurrence triples are preserved.
+  - The existing discussion is resolved only with explicit evidence, retaining the
+    history of the original conflict.
+  - After authorized implementation, required strict, reproduction, corpus and review
+    checks are run without treating their success as primary scientific proof.
+  generator: scripts/seed_from_sources.py
+limitations:
+- External identifiers, taxonomy, genome accessions and primary publications were
+  not refreshed under the absolute no-request instruction. Historical and database
+  assertions remain attributed.
+- Full QC and complete OAK authority coverage were unavailable. Local gates and stored-form
+  parsing establish only their declared mechanical scope.
+- Empty joins refer only to retained exact predicates and snapshots; they do not establish
+  biological absence. Shared loci, citations and congeners do not transfer compound-specific
+  claims.
+- No additional molecular or YAML parse occurred during fragment authoring. Source
+  records, native curation status and histories were not edited.
+- Which upstream label, structure or association needs correction is unresolved. Retain
+  the represented structure and OPEN discussion; no fresh primary evidence selects
+  a repair.
+- The whole selected owner was read, but scientific completion is partial because
+  full QC, complete ontology authority coverage and external source verification were
+  unavailable. No native status or history was changed.
+- The branch uses cached base ce6a5498df5be51116bd5e0c119023ee62bb5464. Fresh origin/main
+  verification and publication are deferred because the user prohibits all external
+  requests.
+notes:
+- The complete owner/history, actual intake, exact assigned source payloads and both
+  complete saved molecular tables were personally read. Complementary source and companion
+  reading is explicitly attributed in the pinned notes.
+- The original batch diagnostic has two global undefined-stereo warnings, not attributed
+  to individual records. All true comparison flags leave full_graph_identity_established:false
+  unchanged.
+- Saved review coverage is distinct from the native SEEDED/REVIEWED curation state.
+  Proposed actions are not performed edits.
+tags:
+- offline
+- record-review
+- batch-228
