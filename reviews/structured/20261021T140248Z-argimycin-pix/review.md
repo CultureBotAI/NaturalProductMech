@@ -1,0 +1,1335 @@
+# Argimycin PIX: structural resolution and native-locus evidence review
+
+- Review: 20261021T140248Z-argimycin-pix
+- Repository: CultureBotAI/NaturalProductMech
+- Started UTC: 2026-10-21T13:48:38.569573Z
+- Finished UTC: 2026-10-21T14:02:48.883343Z
+- Reviewer: Codex (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact E,E product and its deliberately unspecified ring centre are supported, along with native genetic linkage. Add ATCC 12956 and the 2018 transcript citation; qualify the expression association as qualitative across the same mutant lineage, without inventing individual PIX quantification.
+
+## Scope And Provenance
+
+One complete generated owner and any referenced components, assessed claim by claim for exact identity, provenance, origin, producer and occurrence scope, biosynthesis, classification, optional content and audit history.
+
+Selection: Campaign record 77, batch 008, selected in path order from the fresh-main authoritative validated catalogue and the separately validated targets in earlier batch commits (publication tracked separately). At selection, 124 of 3116 current records had campaign coverage and 2992 remained. The population search included ignored files. Exactly one target is assessed here.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1c2402097718c138b081e00943de8f04de0541cd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| naturalproductmech:mibig-5c8efda537 | data/natural_products/alkaloids/argimycin-pix.yaml | generated | argimycin PIX |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Closed-schema target validation | passed | True | naturalproductmech:mibig-5c8efda537 | The documented target strict validator completed; scientific support is assessed separately. |
+| Corpus path and filing integrity | passed | True | naturalproductmech:mibig-5c8efda537 | All 3,116 current record files agree with PATHS.tsv and their pinned filing pathways. |
+| Corpus reproduction | passed | True | naturalproductmech:mibig-5c8efda537 | All 3,116 current records passed the documented byte-reproduction gate against committed inventories and maintained curation inputs. |
+| Native deterministic review queue | passed | True | naturalproductmech:mibig-5c8efda537 | The exhaustive review queue produced 8,928 diagnostic rows across 12 queues; this deterministic output does not establish scientific review. |
+| Configured ontology identifier-label correspondence | passed | True | naturalproductmech:mibig-5c8efda537 | The configured identifier-label gate passed using the existing ontology caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions, 499 warning-only mismatches and 4,744 pairs skipped because their prefixes have no adapter. |
+| Full repository quality gate on the current main baseline | passed | True | naturalproductmech:mibig-5c8efda537 | The full documented just qc recipe passed on the unchanged main baseline during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). All configured lint, governance, documentation, provenance, source-queue, schema, rendering, reproduction, filing-integrity and reporting stages completed successfully. |
+| Complete owner and component scope | passed | True | naturalproductmech:mibig-5c8efda537 | The complete owner and every matching local source row were read. The empty referenced-component set was confirmed by the native resolved reader; all captured input hashes still agree. |
+| Exact graph and primary representation resolution | passed | True | naturalproductmech:mibig-5c8efda537 | Fresh chemistry, current source and literal chemical entity agree with the primary at the asserted E,E/undefined-ring resolution. |
+| Exact-product primary body and supporting information access | passed | True | naturalproductmech:mibig-5c8efda537 | The full 2017 and 2018 primary bodies are retained and inspected for the relevant methods/results; official SI construct, target-chemical and expression figures were inspected. No required primary-access gap remains for these science claims. |
+| Native producer and locus experimental scope | passed | True | naturalproductmech:mibig-5c8efda537 | Exact native product peaks, genetic loss and multi-gene complementation support the locus at the published structural resolution. The separate minor citation and strain findings preserve this positive evidence. |
+
+## Scientific And Domain Assessments
+
+### Native status and retained seed history
+
+provenance: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+The 3 dated SEEDED_FROM_SOURCES entries and SEEDED status describe generated provenance. No curation event or native status promotion is inferred from this review. The 2026-10-13 table-based reseeding entry, where present, is another seed event.
+
+### Optional mechanism, activity and application fields
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-5c8efda537.
+
+The owner has no structured pathway, causal graph, molecular target, bioactivity, summary, clinical status or engineering application claim. Optional enrichment is separate from correcting present assertions; no activity or enzyme function is inferred from the name or class.
+
+### Computed filing and source-asserted classes
+
+representation: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+The owner reproduces its exact-key NPClassifier row, with model version npclassifier.gnps2.org@2026-09-07, Alkaloids filing, all returned superclass/class labels, and false glycoside flag. These are explicitly computed classifications; they do not establish precursor use or natural origin. The separate BGC and compound-class assertions retain their MIBiG source and receive biological assessment in the science packet.
+
+### Structured transcriptomic context
+
+completeness: not_applicable. Targets: naturalproductmech:mibig-5c8efda537.
+
+The native producer and exact biosynthetic locus lack a matching dataset in the inspected catalogue. Recombinant E. coli or A. oryzae expression experiments do not become native-producer transcriptomic context; database noncoverage is not negative biological evidence.
+
+### Literal LOTUS organism-identifier routing
+
+provenance: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+Every organism Wikidata identifier in these exact source rows resolves to the stated species and NCBI taxon. Experimental occurrence, strain scope and taxonomy conflicts are assessed against the cited primary sources separately.
+
+### Exact PIX constitution, alkene geometry and unspecified ring hand
+
+identity: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+The owner reproduces current MIBiG and the literal LOTUS chemical entity in full Standard/fixed-H representations. Formula C12H21N and the two E alkenes match the exact primary structural subsection; one undefined tetrahedral centre correctly yields stereo_complete:false.
+
+### Exact source mint and bounded current authority queries
+
+grounding: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+BGC0001433:7 reproducibly mints naturalproductmech:mibig-5c8efda537. The committed exact eligible ChEBI projection is empty; current bounded searches supply no replacement. No NPA/PubChem identifier is asserted by the owner.
+
+### Versioned piperidine and pseudoalkaloid predictions
+
+representation: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+The complete NPClassifier outputs Lysine alkaloids/Pseudoalkaloids and Acetate-derived/Piperidine alkaloids are preserved under ALKALOIDS. These are computed classifications, separate from the source PKS class and experimental precursor claims.
+
+### Native PIX production and exact locus linkage
+
+evidence: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+The native loss/rescue supports the existing strong producer and locus grades for the published PIX product. The purification strain is an ATCC 12956-derived regulator mutant, and WT product peaks are separately shown. The reported source product is distinguished from other family members and experimental intermediates.
+
+### Expression method citation and resolution
+
+provenance: concern. Targets: naturalproductmech:mibig-5c8efda537.
+
+Native knockout support is directly cited. The second retained method requires the 2018 transcript experiments and their explicit connection to the 2017 mutant lineage. Correct the locus citation and qualify qualitative cross-study association; do not withdraw a supported broad method solely because an individual S22 bar is absent.
+
+### Species mapping versus experimental stock
+
+provenance: concern. Targets: naturalproductmech:mibig-5c8efda537.
+
+Species 41951 and LT615255.1 are correctly associated, but the strongly graded producer lacks the directly documented ATCC 12956 strain. Add the supported strain without making a species-wide experimental claim or identifying the WT as MARPRII.
+
+### Primary structure and stereochemical evidence scope
+
+identity: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+Peak IX yielded 1 mg from the native MARPRII overproducer. The dedicated structure section reports C12H21N, observed [M+H]+ 180.1753 and multidimensional NMR, with alkene geometries assigned by coupling constants. The piperidine-bearing tetrahedral centre is not assigned. The earlier nominal peak-mass statement of 178 is an internal source discrepancy, not the exact-mass result used for the structure. Exact authority-graph and stereochemical repair adjudication belongs to the independently supplied chemistry section; this assessment adds no duplicate structure finding.
+
+### Computed alkaloid filing versus experimentally supported biosynthetic class
+
+representation: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+The NPClassifier output is a structure-based computed annotation. Its nicotinic-acid or lysine category, where present, is not direct evidence of that amino-acid precursor. Native PKS genetics supports the separate PKS class; individual catalytic-domain predictions and later reaction arrows are not purified-enzyme demonstrations.
+
+### All asserted LOTUS occurrence citations
+
+evidence: supported. Targets: naturalproductmech:mibig-5c8efda537.
+
+The 2017 occurrence DOI supports native PIX in the WT and isolation from its ATCC 12956-derived MARPRII strain. The 2018 DOI includes the exact IX-labelled WT and mutant peaks and distinguishes PIX from newly identified geometric isomer PVIII. It does not reassign the unconfigured PIX centre. Species-level occurrence is supported; uppercase DOI spelling is the same publication, not an additional biological observation.
+
+## Findings
+
+### S077-F-STRAIN: The experimentally tested producer strain is omitted
+
+minor / open / confirmed; issue key: mibig-bgc0001433-atcc12956-strain-omitted.
+
+The primary paper and exact accession identify ATCC 12956, while the generated strongly graded producer names only S. argillaceus. Preserve the native experimental stock and distinguish WT production from MARPRII purification. This is a repeated source-context cause on a different exact congener, not a supersession of another review.
+
+### S077-F-CITATION: The expression method needs the follow-up study citation and its scope
+
+minor / open / confirmed; issue key: mibig-bgc0001433-expression-method-citation-scope.
+
+The sole 2017 claim citation supports native knockout and complementation but does not report measured arp transcript levels. Direct RT-PCR/qPCR is in the 2018 follow-up, which reuses the native regulator mutants. S22 does not quantify PIX individually. Its support is a qualitative cross-study association: 2017 reports loss of all argimycins P in MARPRI, and 2018 reuses that genotype, reports its blocked production and measures its absent/reduced arp transcripts. Route the locus evidence to that measured-expression study and retain the positive 2017 product/genotype evidence in the rationale. The broad method remains defensible; neither complete-product enzymology nor individually quantified correlation for every congener follows.
+
+## Recommended Actions And Acceptance Checks
+
+### S077-ACT-STRAIN
+
+Add the implemented producer-strain qualification for source_id=BGC0001433:7, expected_source_row_sha256=762bd91ccc3ff7d1ecac69373908b2cece0a217219a4aa8eea939fb5f6438998, strain=ATCC 12956, reference=DOI:10.3389/fmicb.2017.00194, plus curator, date and a rationale distinguishing WT/native mutants and MARPRII purification. Keep species 41951, existing native genetic grades and the exact product context. If a separate chemical correction is authorized, the current seeder rejects combining it with this qualification: adjudicate both claims and implement/test a guarded composition path before regeneration; do not bypass that rejection or copy the correction to the wrong chemical owner.
+
+- Require exactly one complete raw row with the pinned SHA; altered source contents or duplicate selectors must fail.
+- Emit ATCC 12956 in the producer strain field with dated curator evidence; preserve taxon, native KO support and original deposited accession.
+- Exercise any authorized structure-plus-strain composition explicitly, preserving the original full raw-row pin and exact resulting owner; otherwise retain the existing rejection.
+- After authorized curation, run the documented strict validation and reproduction/corpus/QC gates; unrelated records and locked paths must remain unchanged.
+
+### S077-ACT-CITATION
+
+Use the consumed claim-reference table with source_id=BGC0001433:7, expected_source_row_sha256=762bd91ccc3ff7d1ecac69373908b2cece0a217219a4aa8eea939fb5f6438998, producer_reference=DOI:10.3389/fmicb.2017.00194, locus_reference=DOI:10.3389/fmicb.2018.00252, source_reference=DOI:10.3389/fmicb.2017.00194, and dated curator/rationale. State the 2017 native loss/rescue and the same MARPRI/MARPRII lineage measured in 2018. S22 does not quantify PIX individually. Its support is a qualitative cross-study association: 2017 reports loss of all argimycins P in MARPRI, and 2018 reuses that genotype, reports its blocked production and measures its absent/reduced arp transcripts. Retain both current method categories and strong native genetic grades; no REPLACE or WITHDRAW action is needed. The routing consumer appends the rationale to both claims, so preserve these scope limits there. It currently rejects structure_correction_note: if a chemistry repair is separately authorized, add a tested, exact-source-pinned composition path rather than silently bypassing the guard.
+
+- The exact complete raw-row SHA, unique selector, stable references and dated attribution must be enforced; raw-row drift or duplicate decisions must fail.
+- The producer citation remains the 2017 native study; the locus citation becomes the 2018 measured-expression study, with both studies and congener-specific limits explicit in the curator rationale.
+- Preserve Knock-out studies and Gene expression correlated with compound production, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED; do not add purified-enzyme or heterologous methods.
+- For PI/PII retain grouped quantification; for PIV/PIX identify the qualitative cross-study association; for PV/PVI identify the individual S22 quantities. Never invent missing measurements.
+- Test any authorized structure/citation/strain composition against exact original source pins before regeneration, then run the documented strict/reproduction/corpus/QC gates.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| R077-OWNER | data/natural_products/alkaloids/argimycin-pix.yaml; Complete owner YAML, every source claim and history entry | supports | Root read the complete argimycin PIX owner following its individual intake. It contains 2 occurrences, one producer and one cluster. Its component-reference set and optional mechanism, activity, target, application, cross-corpus and discussion fields are empty. This is based on complete parsed contents, not a filtered text-search miss. |
+| R077-LOCAL-SOURCES | /private/tmp/npm-review-work/077/local-sources.json; Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus complete resolved view | context_only | Root read all matching rows and the complete owner. These retained database assertions and deterministic joins are distinguished from the exact primary experiments assessed separately. |
+| R077-IMODULON-DATASETS | /private/tmp/npm-review-work/010/imodulon-datasets.txt; Full 28-row dataset catalogue; actual retrieval receipt retained in 010/imodulon-context-receipts.json | context_only | The full same-session catalogue retrieved at 07:21:15 UTC contains S. albidoflavus and S. coelicolor datasets, but no S. venezuelae, S. argillaceus, S. refuineus or A. candidus dataset. No fresh retrieval is claimed. Matching a species label alone does not establish an exact experimental strain, locus or product. |
+| R077-Q104096702 | https://www.wikidata.org/wiki/Special:EntityData/Q104096702.json; Exact entity ID, English/scientific name and P685 NCBI Taxonomy identifier | context_only | The literal organism entity Q104096702 resolves as Streptomyces argillaceus, with P685 41951, matching the local LOTUS organism identifier. This verifies identifier routing only; it does not independently support the compound-occurrence claim or resolve strain-level taxonomy. |
+| C077-OWNER | data/natural_products/alkaloids/argimycin-pix.yaml; Complete owner and resolved mechanism | supports | The exact owner argimycin PIX and all locally resolved contents were read; it identifies SFVAQDFSJKXPAC-MQQKCMAXSA-N. |
+| C077-RAW | data/raw/mibig_compounds.tsv; Complete relevant source rows | supports | Canonical sorted-JSON full-row SHA256 pins: [{"selector": "BGC0001433:7", "version": "5", "sha256": "762bd91ccc3ff7d1ecac69373908b2cece0a217219a4aa8eea939fb5f6438998"}]. Source-concept mints: {"BGC0001433:7": "naturalproductmech:mibig-5c8efda537"}. Exact eligible ChEBI projection has 0 row(s). |
+| C077-SEARCH | /private/tmp/npm-review-work/077/chemistry-local-search.txt; Ignored-inclusive exact key, identifier and slug search | supports | Current owner, curation, configuration and source-code matching paths inspected; this is a bounded local inventory search, not universal absence. |
+| C077-CLASS | data/raw/npclassifier.tsv; Exact-key classification row and PATHS filing | context_only | The exact-key classifier row, source model version and owner classification were compared. Computed filing is kept separate from source-asserted BGC and molecular classes. |
+| C077-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0001433.5/annotations.json; Complete retained response for the exact identifier/query | supports | Current BGC0001433 version 5 is active, quality questionable, completeness complete. The selected exact compound graph independently agrees with the owner; complete versioned source metadata and changelog were read. |
+| C077-WD-Q105252057 | https://www.wikidata.org/wiki/Special:EntityData/Q105252057.json; Literal LOTUS chemical entity; full identity properties | supports | The literal LOTUS entity explicitly denotes the E,E piperidine graph with an unspecified substituted ring centre. Its P235/P234 and P2017 match the owner; its group-of-stereoisomers description is consistent with the unresolved tetrahedral hand. |
+| C077-CHEBI-SEARCH | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=SFVAQDFSJKXPAC-MQQKCMAXSA-N&amp;size=100; Complete retained response for the exact identifier/query | supports | The bounded exact-key/name query returns explicit no compound match; no universal absence is inferred. |
+| C077-CHEBI-NAME | https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=argimycin+PIX&amp;size=100; Complete retained response for the exact identifier/query | supports | The bounded exact-key/name query returns explicit no compound match; no universal absence is inferred. |
+| C077-PC-QUERY | https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/SFVAQDFSJKXPAC-MQQKCMAXSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON; Complete retained response for the exact identifier/query | supports | The exact full-key query returns No CID found. No stored PubChem xref exists and this result does not contradict the chemical structure. |
+| C077-PRIMARY | DOI:10.3389/fmicb.2017.00194; Exact PIX structural subsection; Figure 3 | supports | The original PIX subsection reports C12H21N, observed [M+H]+ 180.1753 and calculated 180.1747. Coupling constants establish the two E alkenes; Figure 3 leaves the substituted piperidine stereocentre unassigned. The earlier nominal m/z 178 wording is inconsistent with this exact subsection and does not justify changing the owner formula. |
+| C077-CALC | /private/tmp/npm-review-work/077/chemistry-authority-comparison.json; Full Standard/fixed-H chemistry, formula, charge and all tetrahedral centres | supports | Fresh read-only molecular calculations retain every compared source representation and do not silently add stereochemistry. |
+| S077-E-LOCAL | data/natural_products/alkaloids/argimycin-pix.yaml; Complete owner, empty components list, exact BGC0001433:7 source row and all occurrence/classifier rows | supports | The exact PIX owner imports two locus methods, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED, with the single 2017 primary citation. It names species 41951 but omits the experimental ATCC 12956 strain. Raw empty locus bounds remain absent. The raw compound index is 7; no result is transferred from another index. |
+| S077-E-2017-GENETICS | https://doi.org/10.3389/fmicb.2017.00194; Complete Methods; Identification of Compounds Encoded by Cluster 18; Defining the Boundaries; Figure 2C peak IX | supports | S. argillaceus ATCC 12956 is the native producer and DNA donor. The PIX peak is present in wild type, absent from the arpPIII insertion mutant MARPPIII and restored by pEM4ATCPKS carrying arpPIII plus arpT. The arpRII replacement MARPRII is the native overproducer used for purification. The boundary study also reports no argimycins P in the arpRI replacement MARPRI. These are native interventions, not heterologous production or isolated-enzyme chemistry. |
+| S077-E-2017-IDENTITY | https://doi.org/10.3389/fmicb.2017.00194; Purification, Structural Elucidation and Bioactivity; Figure 3; Tables 7 | supports | Peak IX yielded 1 mg from the native MARPRII overproducer. The dedicated structure section reports C12H21N, observed [M+H]+ 180.1753 and multidimensional NMR, with alkene geometries assigned by coupling constants. The piperidine-bearing tetrahedral centre is not assigned. The earlier nominal peak-mass statement of 178 is an internal source discrepancy, not the exact-mass result used for the structure. |
+| S077-E-2017-SI | https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5300972/supplementaryFiles; Official Presentation_1.PDF; construct protocols pages 2–4; S1/S2 page 8; S27 page 24; target chemical figures S24/S25 pages 22–23 | supports | The supplement confirms the insertion and replacement designs and PCR checks. pEM4ATCPKS contains an 8073 bp arpPIII-plus-arpT fragment. The exact target NMR/chemical-support scope is consistent with the main paper. No absolute assignment is supplied for PIX. |
+| S077-E-2018-GENETICS | https://doi.org/10.3389/fmicb.2018.00252; Complete Methods; individual arp mutant Results; Figures 1–6; Table 1 | supports | The 2018 wild-type and several native mutant profiles contain PIX; arpDHI, arpHI and arpHII mutants retain it despite losing the bicyclic compounds. The paper revises PIX to a side-path product rather than an established precursor to the bicyclic series. ArpDHII-dependent whole-cell feeding converts nigrifactin to PVII, not directly to PIX. No complete-PIX purified-enzyme assay is reported. The Methods identify the same ATCC 12956 background and distinguish cloning/conjugation E. coli hosts from the Streptomyces production strains. |
+| S077-E-2018-EXPRESSION | https://doi.org/10.3389/fmicb.2018.00252; Transcription Analyses Methods; Regulation of arp Gene Cluster; Figure 7; Table 1 | supports | The follow-up measures arp transcripts in WT, MARPRI and MARPRII by RT-PCR/qPCR with hrdB normalization and no-RT/DNA-contamination controls, and relates those genotypes to product output. S22 does not quantify PIX individually. Its support is a qualitative cross-study association: 2017 reports loss of all argimycins P in MARPRI, and 2018 reuses that genotype, reports its blocked production and measures its absent/reduced arp transcripts. Expression-vector complementation in 2017 is not itself a measured-transcript assay. This additional source, not an inferred transcript level, supplies the expression-method context. |
+| S077-E-2018-SI | https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5820336/supplementaryFiles; Official Presentation_1.PDF; construct protocols/Tables S1–S3; Figure S1 page 10; Figure S22 page 25 | supports | S1 labels the complemented native product peaks. S22 shows means and SD from three independent experiments for grouped PI/PII, nigrifactin, PV and PVI, with wild type and empty-vector controls. S22 does not quantify PIX individually. Its support is a qualitative cross-study association: 2017 reports loss of all argimycins P in MARPRI, and 2018 reuses that genotype, reports its blocked production and measures its absent/reduced arp transcripts. This figure does not turn every individual congener into a quantitative correlation dataset. |
+| S077-E-MIBIG | https://mibig.secondarymetabolites.org/repository/BGC0001433.5/annotations.json; Version 5 active entry; exact named PIX compound; taxonomy, locus methods, legacy reference | supports | The current entry retains the same two methods and the lone 2017 legacy reference for LT615255.1 in species 41951. It remains quality questionable and completeness complete. Its zero-to-zero coordinates are unspecified metadata, not functional cluster boundaries. Current annotation agreement does not independently prove the experiment or absolute hand. |
+| S077-E-LOCUS | https://www.ncbi.nlm.nih.gov/nuccore/LT615255.1; Header, reference and source qualifiers | supports | The deposited 68,295 bp region explicitly identifies strain ATCC 12956, type-strain context, taxon 41951 and PMID:28239372. The primary study experimentally delimits a 45,282 bp arp cluster within that wider region. The absent owner coordinates are not filled from the whole accession. No protein translation or function proof is claimed here. |
+| S077-E-CONSUMERS | src/naturalproductmech/curate/claim_references.py; Complete claim-reference and producer-strain loaders; seeder load/apply and emission paths | supports | Both maintained tables require an exact BGC:compound selector, unique complete raw row and SHA, stable references and attribution. Claim routing can separately set producer and locus citations and append a rationale; strain qualification only decorates the producer. Both consumers reject rows carrying a structure_correction_note, so any combined chemistry repair requires an explicit reviewed/tested composition path. The method REPLACE loader does not itself enforce expected_* raw-field guards. |
+| S077-E-SEARCH | /private/tmp/npm-review-work/077/science-qualification-search.json; Exact raw selector and owner identifier searched in the three consumed correction tables | context_only | The ignored-inclusive search found no existing exact strain, claim-reference or locus-method overlay for this selector in the named consumed tables. This is a bounded implementation search, not an assertion that no relevant literature or other annotation exists. |
+
+## Limits And Additional Notes
+
+- The review assesses current record assertions and concrete source questions. It does not claim exhaustive discovery of every subsequent study or require optional mechanistic enrichment as a precondition for review coverage.
+- The substituted ring absolute configuration is unassigned in the inspected primary and remains unassigned in the owner; no racemate or specific enantiomer is inferred.
+- The primary contains an earlier nominal-mass inconsistency; the exact structural subsection and formula were used. No independent raw-NMR reassignment was performed.
+- No raw LC-MS/NMR/transcript data were reprocessed and no protein function was inferred from sequence equality. The native genetic evidence does not resolve every individual late catalytic reaction or absolute stereocentre. Optional mechanistic expansion is not a requirement for this review.
+- S22 does not quantify PIX individually. Its support is a qualitative cross-study association: 2017 reports loss of all argimycins P in MARPRI, and 2018 reuses that genotype, reports its blocked production and measures its absent/reduced arp transcripts. The 2017 genotype/product and 2018 transcript evidence are successive studies, not one per-congener time-course correlation experiment.
+- The source has an earlier nominal PIX mass of 178 but a dedicated exact-mass/NMR assignment at [M+H]+ 180.1753. The dedicated assignment and unconfigured piperidine centre are retained; the discrepancy is not used to invent a new compound or stereochemistry.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35 explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21). Skipped tests are not counted as passing tests. Existing ontology caches were used; no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do not establish biological production, stereochemical specificity, evidence adequacy, or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology results. Reuse establishes unchanged repository inputs; it is not a new remote authority query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all tracked files are hashed. Generated Python bytecode and external tool caches are not claimed to have been independently byte-pinned at the prior execution.
+- No scientific owner, inventory, curation table, native status or history was edited. Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification; target strict validation ran afresh. Scientific failed or unavailable checks are distinct from bundle validation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261021T140248Z-argimycin-pix
+title: 'Argimycin PIX: structural resolution and native-locus evidence review'
+started_at: '2026-10-21T13:48:38.569573Z'
+finished_at: '2026-10-21T14:02:48.883343Z'
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact E,E product and its deliberately unspecified ring centre are supported,
+  along with native genetic linkage. Add ATCC 12956 and the 2018 transcript citation;
+  qualify the expression association as qualitative across the same mutant lineage,
+  without inventing individual PIX quantification.
+source:
+  git_revision: 1c2402097718c138b081e00943de8f04de0541cd
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: conf/sources.yaml
+    sha256: d5e8ab63eeebb376589a0c9bf6f7eb92f45913b84243de20d820442ec88d5a98
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: 4bc422b93002508b0abb86e0fa0afa49aff88745b5b0dd3bcbf351a68725d766
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: f87a4fa580dede966366bece28ccfb6542bdec4a0f810e40cdfc719811407a05
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: b27c2e61e696a285c38bc88c852dbbdc6c06fec8c4584343f2b9146462eea6cf
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/alkaloids/argimycin-pix.yaml
+    sha256: 28a311afd76f023a386608cd54416a3ce07f3a16cfbbfb3ebf6138972f913ba5
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: 6873daace2f9e2225ef3d6830e993ac8cf8d01cec66b779fa5829309d77b3eaf
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 58573bcc19cc469884cafd52be38122daa5ebbcb5dedaa684b9022eecd103753
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/curate/producer_strains.py
+    sha256: c3b7a7ad66e5c6bc8d37b25b012a12fdde04fa886a2aa612d636ac210af3df68
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+scope:
+  description: One complete generated owner and any referenced components, assessed
+    claim by claim for exact identity, provenance, origin, producer and occurrence
+    scope, biosynthesis, classification, optional content and audit history.
+  selection: Campaign record 77, batch 008, selected in path order from the fresh-main
+    authoritative validated catalogue and the separately validated targets in earlier
+    batch commits (publication tracked separately). At selection, 124 of 3116 current
+    records had campaign coverage and 2992 remained. The population search included
+    ignored files. Exactly one target is assessed here.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-5c8efda537
+targets:
+- target_id: naturalproductmech:mibig-5c8efda537
+  path: data/natural_products/alkaloids/argimycin-pix.yaml
+  label: argimycin PIX
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+checks:
+- check_id: C-STRICT
+  name: Closed-schema target validation
+  status: passed
+  required: true
+  summary: The documented target strict validator completed; scientific support is
+    assessed separately.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  command: just validate-strict data/natural_products/alkaloids/argimycin-pix.yaml
+    --out /private/tmp/npm-review-work/077/strict.tsv
+  exit_code: 0
+  scope_note: Actual command finished 2026-10-21T13:48:40.533521Z
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: All 3,116 current record files agree with PATHS.tsv and their pinned filing
+    pathways.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055340+00:00;
+    finished 2026-10-21T09:55:22.727768+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-corpus.log. Reused
+    for batch008 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch008. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: All 3,116 current records passed the documented byte-reproduction gate
+    against committed inventories and maintained curation inputs.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.055361+00:00;
+    finished 2026-10-21T09:56:44.050706+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/verify-reproduction.log.
+    Reused for batch008 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch008. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: The exhaustive review queue produced 8,928 diagnostic rows across 12 queues;
+    this deterministic output does not establish scientific review.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just review-queue --tsv /private/tmp/npm-review-queue-batch-004.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.057401+00:00;
+    finished 2026-10-21T09:54:38.468783+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/review-queue.log. Reused
+    for batch008 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch008. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: 'The configured identifier-label gate passed using the existing ontology
+    caches: 13,449 canonical matches, 646 synonym matches, 35 documented exceptions,
+    499 warning-only mismatches and 4,744 pairs skipped because their prefixes have
+    no adapter.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:20.061733+00:00;
+    finished 2026-10-21T09:56:36.296159+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/validate-products.log. Reused
+    for batch008 only after a fresh fetch/clean branch, equal commit/tree and two
+    reads of all 9,182 tracked byte streams and modes (208,070,649 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch008. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+- check_id: shared-qc
+  name: Full repository quality gate on the current main baseline
+  status: passed
+  required: true
+  summary: 'The full documented just qc recipe passed on the unchanged main baseline
+    during batch004. Test summary: 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+    All configured lint, governance, documentation, provenance, source-queue, schema,
+    rendering, reproduction, filing-integrity and reporting stages completed successfully.'
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=1c2402097718c138b081e00943de8f04de0541cd
+    just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only batch-004 execution on 1c2402097718c138b081e00943de8f04de0541cd
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-21T09:54:30.560925+00:00;
+    finished 2026-10-21T10:04:44.806799+00:00. Exact original receipt: /private/tmp/npm-native-checks/batch-004/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-004/qc.log. Reused for batch008
+    only after a fresh fetch/clean branch, equal commit/tree and two reads of all
+    9,182 tracked byte streams and modes (208,070,649 bytes), including a recheck
+    after the fresh authoritative catalogue. This gate was not rerun for batch008.
+    Original execution times, scope, warnings, exceptions and skips are retained.'
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+- check_id: R077-FULL-OWNER
+  name: Complete owner and component scope
+  status: passed
+  required: true
+  summary: The complete owner and every matching local source row were read. The empty
+    referenced-component set was confirmed by the native resolved reader; all captured
+    input hashes still agree.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - R077-OWNER
+  - R077-LOCAL-SOURCES
+- check_id: C077-IDENTITY-CHECK
+  name: Exact graph and primary representation resolution
+  status: passed
+  required: true
+  summary: Fresh chemistry, current source and literal chemical entity agree with
+    the primary at the asserted E,E/undefined-ring resolution.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - C077-CALC
+  - C077-MIBIG
+  - C077-PRIMARY
+  - C077-WD-Q105252057
+- check_id: S077-C-PRIMARY
+  name: Exact-product primary body and supporting information access
+  status: passed
+  required: true
+  summary: The full 2017 and 2018 primary bodies are retained and inspected for the
+    relevant methods/results; official SI construct, target-chemical and expression
+    figures were inspected. No required primary-access gap remains for these science
+    claims.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - S077-E-2017-GENETICS
+  - S077-E-2017-IDENTITY
+  - S077-E-2017-SI
+  - S077-E-2018-GENETICS
+  - S077-E-2018-EXPRESSION
+  - S077-E-2018-SI
+- check_id: S077-C-NATIVE
+  name: Native producer and locus experimental scope
+  status: passed
+  required: true
+  summary: Exact native product peaks, genetic loss and multi-gene complementation
+    support the locus at the published structural resolution. The separate minor citation
+    and strain findings preserve this positive evidence.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - S077-E-2017-GENETICS
+  - S077-E-2017-IDENTITY
+  - S077-E-LOCUS
+evidence:
+- evidence_id: R077-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/argimycin-pix.yaml
+  locator: Complete owner YAML, every source claim and history entry
+  accessed_at: '2026-10-21T13:49:21.619544Z'
+  support: supports
+  summary: Root read the complete argimycin PIX owner following its individual intake.
+    It contains 2 occurrences, one producer and one cluster. Its component-reference
+    set and optional mechanism, activity, target, application, cross-corpus and discussion
+    fields are empty. This is based on complete parsed contents, not a filtered text-search
+    miss.
+  snapshot_sha256: 28a311afd76f023a386608cd54416a3ce07f3a16cfbbfb3ebf6138972f913ba5
+- evidence_id: R077-LOCAL-SOURCES
+  kind: record_content
+  reference: /private/tmp/npm-review-work/077/local-sources.json
+  locator: Every matching MIBiG, LOTUS, ChEBI, CyanoMetDB and NPClassifier row plus
+    complete resolved view
+  accessed_at: '2026-10-21T13:49:21.619544Z'
+  support: context_only
+  summary: Root read all matching rows and the complete owner. These retained database
+    assertions and deterministic joins are distinguished from the exact primary experiments
+    assessed separately.
+  snapshot_sha256: 0528a1f94ac536a8e8519291b47e07317bc22e4c7681f7a89977f7c6a436e419
+- evidence_id: R077-IMODULON-DATASETS
+  kind: database
+  reference: /private/tmp/npm-review-work/010/imodulon-datasets.txt
+  locator: Full 28-row dataset catalogue; actual retrieval receipt retained in 010/imodulon-context-receipts.json
+  accessed_at: '2026-10-21T07:21:15.957321Z'
+  support: context_only
+  summary: The full same-session catalogue retrieved at 07:21:15 UTC contains S. albidoflavus
+    and S. coelicolor datasets, but no S. venezuelae, S. argillaceus, S. refuineus
+    or A. candidus dataset. No fresh retrieval is claimed. Matching a species label
+    alone does not establish an exact experimental strain, locus or product.
+  snapshot_sha256: 1e76828df39ff699ab7278c8586c1794b6bc23934d944644b00b88e8613c5549
+- evidence_id: R077-Q104096702
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q104096702.json
+  locator: Exact entity ID, English/scientific name and P685 NCBI Taxonomy identifier
+  accessed_at: '2026-10-21T13:49:50.653463Z'
+  support: context_only
+  summary: The literal organism entity Q104096702 resolves as Streptomyces argillaceus,
+    with P685 41951, matching the local LOTUS organism identifier. This verifies identifier
+    routing only; it does not independently support the compound-occurrence claim
+    or resolve strain-level taxonomy.
+  snapshot_sha256: f922c501f9f6584c3649f9fb31e0c99113ce7c16e178c8e40189a757b34439ce
+- evidence_id: C077-OWNER
+  kind: record_content
+  reference: data/natural_products/alkaloids/argimycin-pix.yaml
+  locator: Complete owner and resolved mechanism
+  accessed_at: '2026-10-21T14:00:16.505600Z'
+  support: supports
+  summary: The exact owner argimycin PIX and all locally resolved contents were read;
+    it identifies SFVAQDFSJKXPAC-MQQKCMAXSA-N.
+  snapshot_sha256: 28a311afd76f023a386608cd54416a3ce07f3a16cfbbfb3ebf6138972f913ba5
+- evidence_id: C077-RAW
+  kind: record_content
+  reference: data/raw/mibig_compounds.tsv
+  locator: Complete relevant source rows
+  accessed_at: '2026-10-21T14:00:16.505600Z'
+  support: supports
+  summary: 'Canonical sorted-JSON full-row SHA256 pins: [{"selector": "BGC0001433:7",
+    "version": "5", "sha256": "762bd91ccc3ff7d1ecac69373908b2cece0a217219a4aa8eea939fb5f6438998"}].
+    Source-concept mints: {"BGC0001433:7": "naturalproductmech:mibig-5c8efda537"}.
+    Exact eligible ChEBI projection has 0 row(s).'
+  snapshot_sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+- evidence_id: C077-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/077/chemistry-local-search.txt
+  locator: Ignored-inclusive exact key, identifier and slug search
+  accessed_at: '2026-10-21T14:00:16.579604Z'
+  support: supports
+  summary: Current owner, curation, configuration and source-code matching paths inspected;
+    this is a bounded local inventory search, not universal absence.
+  snapshot_sha256: 781d8d38d4aa7945a09049b23e0ef89a733a5ce10363158465cda7e7f953d90e
+  search_scope: rg --no-ignore --hidden -l -F -e SFVAQDFSJKXPAC-MQQKCMAXSA-N -e naturalproductmech:mibig-5c8efda537
+    -e argimycin-pix data/natural_products curation conf src scripts
+- evidence_id: C077-CLASS
+  kind: record_content
+  reference: data/raw/npclassifier.tsv
+  locator: Exact-key classification row and PATHS filing
+  accessed_at: '2026-10-21T14:00:16.505600Z'
+  support: context_only
+  summary: The exact-key classifier row, source model version and owner classification
+    were compared. Computed filing is kept separate from source-asserted BGC and molecular
+    classes.
+  snapshot_sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+- evidence_id: C077-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001433.5/annotations.json
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T12:55:37.461809Z'
+  support: supports
+  summary: Current BGC0001433 version 5 is active, quality questionable, completeness
+    complete. The selected exact compound graph independently agrees with the owner;
+    complete versioned source metadata and changelog were read.
+  snapshot_sha256: d6f4d7d7702158cc874547d561c1132299ee94d77389906d029b24486577af6f
+- evidence_id: C077-WD-Q105252057
+  kind: database
+  reference: https://www.wikidata.org/wiki/Special:EntityData/Q105252057.json
+  locator: Literal LOTUS chemical entity; full identity properties
+  accessed_at: '2026-10-21T13:52:12.502551Z'
+  support: supports
+  summary: The literal LOTUS entity explicitly denotes the E,E piperidine graph with
+    an unspecified substituted ring centre. Its P235/P234 and P2017 match the owner;
+    its group-of-stereoisomers description is consistent with the unresolved tetrahedral
+    hand.
+  snapshot_sha256: f713d97fd37af2541ff2cccf5ff16e63238f0ed43bf2ef4eb4103dee99f8583b
+- evidence_id: C077-CHEBI-SEARCH
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=SFVAQDFSJKXPAC-MQQKCMAXSA-N&size=100
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T13:03:14.197547Z'
+  support: supports
+  summary: The bounded exact-key/name query returns explicit no compound match; no
+    universal absence is inferred.
+  snapshot_sha256: 50a58d72affe5554230d1654b3708ccbdac5bd731f39a54c84932039ef63beb9
+- evidence_id: C077-CHEBI-NAME
+  kind: authority
+  reference: https://www.ebi.ac.uk/chebi/backend/api/public/es_search/?term=argimycin+PIX&size=100
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T13:03:42.264684Z'
+  support: supports
+  summary: The bounded exact-key/name query returns explicit no compound match; no
+    universal absence is inferred.
+  snapshot_sha256: ad2b26e7b1639eb8be4ab4f223f05c85ef83b449db7b4e49a96c95c221c2951d
+- evidence_id: C077-PC-QUERY
+  kind: database
+  reference: https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/inchikey/SFVAQDFSJKXPAC-MQQKCMAXSA-N/property/InChIKey,InChI,IsomericSMILES,MolecularFormula,Charge/JSON
+  locator: Complete retained response for the exact identifier/query
+  accessed_at: '2026-10-21T13:03:14.541948Z'
+  support: supports
+  summary: The exact full-key query returns No CID found. No stored PubChem xref exists
+    and this result does not contradict the chemical structure.
+  snapshot_sha256: 838fee6fe52f387ee0e552541b837866589239f48fedaa1fb96efa208b0b7173
+- evidence_id: C077-PRIMARY
+  kind: primary_source
+  reference: DOI:10.3389/fmicb.2017.00194
+  locator: Exact PIX structural subsection; Figure 3
+  accessed_at: '2026-10-21T12:53:31.697126Z'
+  support: supports
+  summary: The original PIX subsection reports C12H21N, observed [M+H]+ 180.1753 and
+    calculated 180.1747. Coupling constants establish the two E alkenes; Figure 3
+    leaves the substituted piperidine stereocentre unassigned. The earlier nominal
+    m/z 178 wording is inconsistent with this exact subsection and does not justify
+    changing the owner formula.
+  snapshot_sha256: d27c9fbf251dabb6454059a9f3c8ed93a635d6832594d41d389b94cd69704601
+- evidence_id: C077-CALC
+  kind: validation
+  reference: /private/tmp/npm-review-work/077/chemistry-authority-comparison.json
+  locator: Full Standard/fixed-H chemistry, formula, charge and all tetrahedral centres
+  accessed_at: '2026-10-21T14:00:16.581423Z'
+  support: supports
+  summary: Fresh read-only molecular calculations retain every compared source representation
+    and do not silently add stereochemistry.
+  snapshot_sha256: 4102d58ab976686450ce3c7b0776ef9529e952d3169bae18117af0335f96861d
+- evidence_id: S077-E-LOCAL
+  kind: record_content
+  reference: data/natural_products/alkaloids/argimycin-pix.yaml
+  locator: Complete owner, empty components list, exact BGC0001433:7 source row and
+    all occurrence/classifier rows
+  accessed_at: '2026-10-21T13:58:37.034541Z'
+  support: supports
+  summary: The exact PIX owner imports two locus methods, BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED,
+    with the single 2017 primary citation. It names species 41951 but omits the experimental
+    ATCC 12956 strain. Raw empty locus bounds remain absent. The raw compound index
+    is 7; no result is transferred from another index.
+  snapshot_sha256: 28a311afd76f023a386608cd54416a3ce07f3a16cfbbfb3ebf6138972f913ba5
+- evidence_id: S077-E-2017-GENETICS
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2017.00194
+  locator: Complete Methods; Identification of Compounds Encoded by Cluster 18; Defining
+    the Boundaries; Figure 2C peak IX
+  accessed_at: '2026-10-21T12:53:31.697126Z'
+  support: supports
+  summary: S. argillaceus ATCC 12956 is the native producer and DNA donor. The PIX
+    peak is present in wild type, absent from the arpPIII insertion mutant MARPPIII
+    and restored by pEM4ATCPKS carrying arpPIII plus arpT. The arpRII replacement
+    MARPRII is the native overproducer used for purification. The boundary study also
+    reports no argimycins P in the arpRI replacement MARPRI. These are native interventions,
+    not heterologous production or isolated-enzyme chemistry.
+  snapshot_sha256: d27c9fbf251dabb6454059a9f3c8ed93a635d6832594d41d389b94cd69704601
+- evidence_id: S077-E-2017-IDENTITY
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2017.00194
+  locator: Purification, Structural Elucidation and Bioactivity; Figure 3; Tables
+    7
+  accessed_at: '2026-10-21T12:53:31.697126Z'
+  support: supports
+  summary: Peak IX yielded 1 mg from the native MARPRII overproducer. The dedicated
+    structure section reports C12H21N, observed [M+H]+ 180.1753 and multidimensional
+    NMR, with alkene geometries assigned by coupling constants. The piperidine-bearing
+    tetrahedral centre is not assigned. The earlier nominal peak-mass statement of
+    178 is an internal source discrepancy, not the exact-mass result used for the
+    structure.
+  snapshot_sha256: d27c9fbf251dabb6454059a9f3c8ed93a635d6832594d41d389b94cd69704601
+- evidence_id: S077-E-2017-SI
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5300972/supplementaryFiles
+  locator: Official Presentation_1.PDF; construct protocols pages 2–4; S1/S2 page
+    8; S27 page 24; target chemical figures S24/S25 pages 22–23
+  accessed_at: '2026-10-21T12:53:31.697615Z'
+  support: supports
+  summary: The supplement confirms the insertion and replacement designs and PCR checks.
+    pEM4ATCPKS contains an 8073 bp arpPIII-plus-arpT fragment. The exact target NMR/chemical-support
+    scope is consistent with the main paper. No absolute assignment is supplied for
+    PIX.
+  snapshot_sha256: c3640d2b42eb58ccc33225cbe5591bc91146cb8df647f9012c52aba72a934224
+- evidence_id: S077-E-2018-GENETICS
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2018.00252
+  locator: Complete Methods; individual arp mutant Results; Figures 1–6; Table 1
+  accessed_at: '2026-10-21T12:53:31.697696Z'
+  support: supports
+  summary: The 2018 wild-type and several native mutant profiles contain PIX; arpDHI,
+    arpHI and arpHII mutants retain it despite losing the bicyclic compounds. The
+    paper revises PIX to a side-path product rather than an established precursor
+    to the bicyclic series. ArpDHII-dependent whole-cell feeding converts nigrifactin
+    to PVII, not directly to PIX. No complete-PIX purified-enzyme assay is reported.
+    The Methods identify the same ATCC 12956 background and distinguish cloning/conjugation
+    E. coli hosts from the Streptomyces production strains.
+  snapshot_sha256: 60bfccf575d59201343556de31d6aee20ca7b66bf3c898ff28d0a15d0ea61f3e
+- evidence_id: S077-E-2018-EXPRESSION
+  kind: primary_source
+  reference: https://doi.org/10.3389/fmicb.2018.00252
+  locator: Transcription Analyses Methods; Regulation of arp Gene Cluster; Figure
+    7; Table 1
+  accessed_at: '2026-10-21T12:53:31.697696Z'
+  support: supports
+  summary: 'The follow-up measures arp transcripts in WT, MARPRI and MARPRII by RT-PCR/qPCR
+    with hrdB normalization and no-RT/DNA-contamination controls, and relates those
+    genotypes to product output. S22 does not quantify PIX individually. Its support
+    is a qualitative cross-study association: 2017 reports loss of all argimycins
+    P in MARPRI, and 2018 reuses that genotype, reports its blocked production and
+    measures its absent/reduced arp transcripts. Expression-vector complementation
+    in 2017 is not itself a measured-transcript assay. This additional source, not
+    an inferred transcript level, supplies the expression-method context.'
+  snapshot_sha256: 60bfccf575d59201343556de31d6aee20ca7b66bf3c898ff28d0a15d0ea61f3e
+- evidence_id: S077-E-2018-SI
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5820336/supplementaryFiles
+  locator: Official Presentation_1.PDF; construct protocols/Tables S1–S3; Figure S1
+    page 10; Figure S22 page 25
+  accessed_at: '2026-10-21T12:53:35.780564Z'
+  support: supports
+  summary: 'S1 labels the complemented native product peaks. S22 shows means and SD
+    from three independent experiments for grouped PI/PII, nigrifactin, PV and PVI,
+    with wild type and empty-vector controls. S22 does not quantify PIX individually.
+    Its support is a qualitative cross-study association: 2017 reports loss of all
+    argimycins P in MARPRI, and 2018 reuses that genotype, reports its blocked production
+    and measures its absent/reduced arp transcripts. This figure does not turn every
+    individual congener into a quantitative correlation dataset.'
+  snapshot_sha256: dcc34d18173f0ca0aaa7b03a8ade76bae755c28bd32513df01e7ceb032b6f3c2
+- evidence_id: S077-E-MIBIG
+  kind: database
+  reference: https://mibig.secondarymetabolites.org/repository/BGC0001433.5/annotations.json
+  locator: Version 5 active entry; exact named PIX compound; taxonomy, locus methods,
+    legacy reference
+  accessed_at: '2026-10-21T12:55:37.461809Z'
+  support: supports
+  summary: The current entry retains the same two methods and the lone 2017 legacy
+    reference for LT615255.1 in species 41951. It remains quality questionable and
+    completeness complete. Its zero-to-zero coordinates are unspecified metadata,
+    not functional cluster boundaries. Current annotation agreement does not independently
+    prove the experiment or absolute hand.
+  snapshot_sha256: d6f4d7d7702158cc874547d561c1132299ee94d77389906d029b24486577af6f
+- evidence_id: S077-E-LOCUS
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/LT615255.1
+  locator: Header, reference and source qualifiers
+  accessed_at: '2026-10-21T12:54:16.808682Z'
+  support: supports
+  summary: The deposited 68,295 bp region explicitly identifies strain ATCC 12956,
+    type-strain context, taxon 41951 and PMID:28239372. The primary study experimentally
+    delimits a 45,282 bp arp cluster within that wider region. The absent owner coordinates
+    are not filled from the whole accession. No protein translation or function proof
+    is claimed here.
+  snapshot_sha256: 9318d5c15f849727515c7df061147214fb4a855e1ad8b7a6d263b98d46be3b01
+- evidence_id: S077-E-CONSUMERS
+  kind: record_content
+  reference: src/naturalproductmech/curate/claim_references.py
+  locator: Complete claim-reference and producer-strain loaders; seeder load/apply
+    and emission paths
+  accessed_at: '2026-10-21T13:58:37.034541Z'
+  support: supports
+  summary: Both maintained tables require an exact BGC:compound selector, unique complete
+    raw row and SHA, stable references and attribution. Claim routing can separately
+    set producer and locus citations and append a rationale; strain qualification
+    only decorates the producer. Both consumers reject rows carrying a structure_correction_note,
+    so any combined chemistry repair requires an explicit reviewed/tested composition
+    path. The method REPLACE loader does not itself enforce expected_* raw-field guards.
+  snapshot_sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+- evidence_id: S077-E-SEARCH
+  kind: search
+  reference: /private/tmp/npm-review-work/077/science-qualification-search.json
+  locator: Exact raw selector and owner identifier searched in the three consumed
+    correction tables
+  accessed_at: '2026-10-21T13:56:39.064997Z'
+  support: context_only
+  summary: The ignored-inclusive search found no existing exact strain, claim-reference
+    or locus-method overlay for this selector in the named consumed tables. This is
+    a bounded implementation search, not an assertion that no relevant literature
+    or other annotation exists.
+  snapshot_sha256: aefc7e020f66b0e29e76b00c601f51dd4e2d88bd283397abdba6c763143882bd
+  search_scope: Explicit consumed strain, claim-reference and locus-method correction
+    tables, including ignored files; no absence claim about every repository annotation
+    or external authority.
+assessments:
+- assessment_id: R077-HISTORY
+  area: provenance
+  topic: Native status and retained seed history
+  outcome: supported
+  summary: The 3 dated SEEDED_FROM_SOURCES entries and SEEDED status describe generated
+    provenance. No curation event or native status promotion is inferred from this
+    review. The 2026-10-13 table-based reseeding entry, where present, is another
+    seed event.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - R077-OWNER
+- assessment_id: R077-OPTIONAL
+  area: completeness
+  topic: Optional mechanism, activity and application fields
+  outcome: not_applicable
+  summary: The owner has no structured pathway, causal graph, molecular target, bioactivity,
+    summary, clinical status or engineering application claim. Optional enrichment
+    is separate from correcting present assertions; no activity or enzyme function
+    is inferred from the name or class.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - R077-OWNER
+  - R077-LOCAL-SOURCES
+- assessment_id: R077-FILING
+  area: representation
+  topic: Computed filing and source-asserted classes
+  outcome: supported
+  summary: The owner reproduces its exact-key NPClassifier row, with model version
+    npclassifier.gnps2.org@2026-09-07, Alkaloids filing, all returned superclass/class
+    labels, and false glycoside flag. These are explicitly computed classifications;
+    they do not establish precursor use or natural origin. The separate BGC and compound-class
+    assertions retain their MIBiG source and receive biological assessment in the
+    science packet.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - R077-OWNER
+  - R077-LOCAL-SOURCES
+- assessment_id: R077-IMODULON
+  area: completeness
+  topic: Structured transcriptomic context
+  outcome: not_applicable
+  summary: The native producer and exact biosynthetic locus lack a matching dataset
+    in the inspected catalogue. Recombinant E. coli or A. oryzae expression experiments
+    do not become native-producer transcriptomic context; database noncoverage is
+    not negative biological evidence.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - R077-OWNER
+  - R077-IMODULON-DATASETS
+- assessment_id: R077-ORGANISM-IDS
+  area: provenance
+  topic: Literal LOTUS organism-identifier routing
+  outcome: supported
+  summary: Every organism Wikidata identifier in these exact source rows resolves
+    to the stated species and NCBI taxon. Experimental occurrence, strain scope and
+    taxonomy conflicts are assessed against the cited primary sources separately.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - R077-LOCAL-SOURCES
+  - R077-Q104096702
+- assessment_id: C077-IDENTITY
+  area: identity
+  topic: Exact PIX constitution, alkene geometry and unspecified ring hand
+  outcome: supported
+  summary: The owner reproduces current MIBiG and the literal LOTUS chemical entity
+    in full Standard/fixed-H representations. Formula C12H21N and the two E alkenes
+    match the exact primary structural subsection; one undefined tetrahedral centre
+    correctly yields stereo_complete:false.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - C077-OWNER
+  - C077-RAW
+  - C077-MIBIG
+  - C077-CALC
+  - C077-PRIMARY
+  - C077-WD-Q105252057
+- assessment_id: C077-GROUNDING
+  area: grounding
+  topic: Exact source mint and bounded current authority queries
+  outcome: supported
+  summary: BGC0001433:7 reproducibly mints naturalproductmech:mibig-5c8efda537. The
+    committed exact eligible ChEBI projection is empty; current bounded searches supply
+    no replacement. No NPA/PubChem identifier is asserted by the owner.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - C077-RAW
+  - C077-SEARCH
+  - C077-CHEBI-SEARCH
+  - C077-CHEBI-NAME
+  - C077-PC-QUERY
+- assessment_id: C077-CLASSIFICATION
+  area: representation
+  topic: Versioned piperidine and pseudoalkaloid predictions
+  outcome: supported
+  summary: The complete NPClassifier outputs Lysine alkaloids/Pseudoalkaloids and
+    Acetate-derived/Piperidine alkaloids are preserved under ALKALOIDS. These are
+    computed classifications, separate from the source PKS class and experimental
+    precursor claims.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - C077-CLASS
+  - C077-RAW
+  - C077-OWNER
+- assessment_id: S077-A-NATIVE
+  area: evidence
+  topic: Native PIX production and exact locus linkage
+  outcome: supported
+  summary: The native loss/rescue supports the existing strong producer and locus
+    grades for the published PIX product. The purification strain is an ATCC 12956-derived
+    regulator mutant, and WT product peaks are separately shown. The reported source
+    product is distinguished from other family members and experimental intermediates.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - S077-E-2017-GENETICS
+  - S077-E-2017-IDENTITY
+  - S077-E-2017-SI
+  - S077-E-LOCUS
+  dimensions:
+  - name: experimental_strain
+    value: S. argillaceus ATCC 12956; WT and native arp derivatives
+    definition: The native genome donor and production strain, distinct from E. coli
+      cloning/conjugation hosts and the MARPRII purification derivative.
+    evidence_ids:
+    - S077-E-2017-GENETICS
+    - S077-E-2018-GENETICS
+    - S077-E-LOCUS
+  - name: evidence_tier
+    value: Native final-product loss and arpPIII-plus-arpT rescue; no purified complete-product
+      assay
+    definition: The exact labelled chromatographic product is linked to the native
+      locus at the primary chemical identification resolution.
+    evidence_ids:
+    - S077-E-2017-GENETICS
+    - S077-E-2017-IDENTITY
+    - S077-E-2017-SI
+  - name: expression_resolution
+    value: Qualitative cross-study MARPRI transcript/product association
+    definition: The actual 2018 expression evidence, without equating missing individual
+      S22 bars with absence of a broader qualitative locus association.
+    evidence_ids:
+    - S077-E-2018-EXPRESSION
+    - S077-E-2018-SI
+    - S077-E-2017-GENETICS
+- assessment_id: S077-A-METHOD
+  area: provenance
+  topic: Expression method citation and resolution
+  outcome: concern
+  summary: Native knockout support is directly cited. The second retained method requires
+    the 2018 transcript experiments and their explicit connection to the 2017 mutant
+    lineage. Correct the locus citation and qualify qualitative cross-study association;
+    do not withdraw a supported broad method solely because an individual S22 bar
+    is absent.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - S077-E-LOCAL
+  - S077-E-2017-GENETICS
+  - S077-E-2018-EXPRESSION
+  - S077-E-2018-SI
+  - S077-E-CONSUMERS
+  dimensions:
+  - name: expression_resolution
+    value: Qualitative cross-study MARPRI transcript/product association
+    definition: The actual 2018 expression evidence, without equating missing individual
+      S22 bars with absence of a broader qualitative locus association.
+    evidence_ids:
+    - S077-E-2018-EXPRESSION
+    - S077-E-2018-SI
+    - S077-E-2017-GENETICS
+- assessment_id: S077-A-STRAIN
+  area: provenance
+  topic: Species mapping versus experimental stock
+  outcome: concern
+  summary: Species 41951 and LT615255.1 are correctly associated, but the strongly
+    graded producer lacks the directly documented ATCC 12956 strain. Add the supported
+    strain without making a species-wide experimental claim or identifying the WT
+    as MARPRII.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - S077-E-LOCAL
+  - S077-E-2017-GENETICS
+  - S077-E-LOCUS
+  dimensions:
+  - name: experimental_strain
+    value: S. argillaceus ATCC 12956; WT and native arp derivatives
+    definition: The native genome donor and production strain, distinct from E. coli
+      cloning/conjugation hosts and the MARPRII purification derivative.
+    evidence_ids:
+    - S077-E-2017-GENETICS
+    - S077-E-2018-GENETICS
+    - S077-E-LOCUS
+- assessment_id: S077-A-STRUCTURE-SCOPE
+  area: identity
+  topic: Primary structure and stereochemical evidence scope
+  outcome: supported
+  summary: Peak IX yielded 1 mg from the native MARPRII overproducer. The dedicated
+    structure section reports C12H21N, observed [M+H]+ 180.1753 and multidimensional
+    NMR, with alkene geometries assigned by coupling constants. The piperidine-bearing
+    tetrahedral centre is not assigned. The earlier nominal peak-mass statement of
+    178 is an internal source discrepancy, not the exact-mass result used for the
+    structure. Exact authority-graph and stereochemical repair adjudication belongs
+    to the independently supplied chemistry section; this assessment adds no duplicate
+    structure finding.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - S077-E-2017-IDENTITY
+  - S077-E-2017-SI
+- assessment_id: S077-A-CLASS
+  area: representation
+  topic: Computed alkaloid filing versus experimentally supported biosynthetic class
+  outcome: supported
+  summary: The NPClassifier output is a structure-based computed annotation. Its nicotinic-acid
+    or lysine category, where present, is not direct evidence of that amino-acid precursor.
+    Native PKS genetics supports the separate PKS class; individual catalytic-domain
+    predictions and later reaction arrows are not purified-enzyme demonstrations.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - S077-E-LOCAL
+  - S077-E-2017-GENETICS
+  - S077-E-2018-GENETICS
+- assessment_id: S077-A-OCCURRENCES
+  area: evidence
+  topic: All asserted LOTUS occurrence citations
+  outcome: supported
+  summary: The 2017 occurrence DOI supports native PIX in the WT and isolation from
+    its ATCC 12956-derived MARPRII strain. The 2018 DOI includes the exact IX-labelled
+    WT and mutant peaks and distinguishes PIX from newly identified geometric isomer
+    PVIII. It does not reassign the unconfigured PIX centre. Species-level occurrence
+    is supported; uppercase DOI spelling is the same publication, not an additional
+    biological observation.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  evidence_ids:
+  - S077-E-LOCAL
+  - S077-E-2017-IDENTITY
+  - S077-E-2017-GENETICS
+  - S077-E-2018-GENETICS
+findings:
+- finding_id: S077-F-STRAIN
+  issue_key: mibig-bgc0001433-atcc12956-strain-omitted
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The experimentally tested producer strain is omitted
+  description: The primary paper and exact accession identify ATCC 12956, while the
+    generated strongly graded producer names only S. argillaceus. Preserve the native
+    experimental stock and distinguish WT production from MARPRII purification. This
+    is a repeated source-context cause on a different exact congener, not a supersession
+    of another review.
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  field_paths:
+  - producer_organisms[0].strain
+  - producer_organisms[0].notes
+  evidence_ids:
+  - S077-E-LOCAL
+  - S077-E-2017-GENETICS
+  - S077-E-LOCUS
+  - S077-E-CONSUMERS
+  - S077-E-SEARCH
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Full-row-SHA experimental strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Consumed exact-row strain contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Producer emission and composition guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved upstream source row
+- finding_id: S077-F-CITATION
+  issue_key: mibig-bgc0001433-expression-method-citation-scope
+  category: provenance
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: The expression method needs the follow-up study citation and its scope
+  description: 'The sole 2017 claim citation supports native knockout and complementation
+    but does not report measured arp transcript levels. Direct RT-PCR/qPCR is in the
+    2018 follow-up, which reuses the native regulator mutants. S22 does not quantify
+    PIX individually. Its support is a qualitative cross-study association: 2017 reports
+    loss of all argimycins P in MARPRI, and 2018 reuses that genotype, reports its
+    blocked production and measures its absent/reduced arp transcripts. Route the
+    locus evidence to that measured-expression study and retain the positive 2017
+    product/genotype evidence in the rationale. The broad method remains defensible;
+    neither complete-product enzymology nor individually quantified correlation for
+    every congener follows.'
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  field_paths:
+  - biosynthetic_gene_clusters[0].evidence
+  - biosynthetic_gene_clusters[0].locus_evidence_methods
+  - producer_organisms[0].evidence
+  - producer_organisms[0].notes
+  evidence_ids:
+  - S077-E-LOCAL
+  - S077-E-2017-GENETICS
+  - S077-E-2018-EXPRESSION
+  - S077-E-2018-SI
+  - S077-E-MIBIG
+  - S077-E-CONSUMERS
+  - S077-E-SEARCH
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Claim-specific citation routing with complete raw-row SHA
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Consumed citation validation and emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Applied producer/locus references and composition checks
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Original method and citation provenance
+actions:
+- action_id: S077-ACT-STRAIN
+  description: 'Add the implemented producer-strain qualification for source_id=BGC0001433:7,
+    expected_source_row_sha256=762bd91ccc3ff7d1ecac69373908b2cece0a217219a4aa8eea939fb5f6438998,
+    strain=ATCC 12956, reference=DOI:10.3389/fmicb.2017.00194, plus curator, date
+    and a rationale distinguishing WT/native mutants and MARPRII purification. Keep
+    species 41951, existing native genetic grades and the exact product context. If
+    a separate chemical correction is authorized, the current seeder rejects combining
+    it with this qualification: adjudicate both claims and implement/test a guarded
+    composition path before regeneration; do not bypass that rejection or copy the
+    correction to the wrong chemical owner.'
+  finding_ids:
+  - S077-F-STRAIN
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_producer_strains.tsv
+    role: Full-row-SHA experimental strain qualification
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/producer_strains.py
+    role: Consumed exact-row strain contract
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Producer emission and composition guard
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Preserved upstream source row
+  generator: scripts/seed_from_sources.py consuming curation/mibig_producer_strains.tsv
+  acceptance_checks:
+  - Require exactly one complete raw row with the pinned SHA; altered source contents
+    or duplicate selectors must fail.
+  - Emit ATCC 12956 in the producer strain field with dated curator evidence; preserve
+    taxon, native KO support and original deposited accession.
+  - Exercise any authorized structure-plus-strain composition explicitly, preserving
+    the original full raw-row pin and exact resulting owner; otherwise retain the
+    existing rejection.
+  - After authorized curation, run the documented strict validation and reproduction/corpus/QC
+    gates; unrelated records and locked paths must remain unchanged.
+- action_id: S077-ACT-CITATION
+  description: 'Use the consumed claim-reference table with source_id=BGC0001433:7,
+    expected_source_row_sha256=762bd91ccc3ff7d1ecac69373908b2cece0a217219a4aa8eea939fb5f6438998,
+    producer_reference=DOI:10.3389/fmicb.2017.00194, locus_reference=DOI:10.3389/fmicb.2018.00252,
+    source_reference=DOI:10.3389/fmicb.2017.00194, and dated curator/rationale. State
+    the 2017 native loss/rescue and the same MARPRI/MARPRII lineage measured in 2018.
+    S22 does not quantify PIX individually. Its support is a qualitative cross-study
+    association: 2017 reports loss of all argimycins P in MARPRI, and 2018 reuses
+    that genotype, reports its blocked production and measures its absent/reduced
+    arp transcripts. Retain both current method categories and strong native genetic
+    grades; no REPLACE or WITHDRAW action is needed. The routing consumer appends
+    the rationale to both claims, so preserve these scope limits there. It currently
+    rejects structure_correction_note: if a chemistry repair is separately authorized,
+    add a tested, exact-source-pinned composition path rather than silently bypassing
+    the guard.'
+  finding_ids:
+  - S077-F-CITATION
+  target_ids:
+  - naturalproductmech:mibig-5c8efda537
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: curation/mibig_claim_references.tsv
+    role: Claim-specific citation routing with complete raw-row SHA
+  - repository: CultureBotAI/NaturalProductMech
+    path: src/naturalproductmech/curate/claim_references.py
+    role: Consumed citation validation and emission
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Applied producer/locus references and composition checks
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: Original method and citation provenance
+  generator: scripts/seed_from_sources.py consuming curation/mibig_claim_references.tsv
+  acceptance_checks:
+  - The exact complete raw-row SHA, unique selector, stable references and dated attribution
+    must be enforced; raw-row drift or duplicate decisions must fail.
+  - The producer citation remains the 2017 native study; the locus citation becomes
+    the 2018 measured-expression study, with both studies and congener-specific limits
+    explicit in the curator rationale.
+  - Preserve Knock-out studies and Gene expression correlated with compound production,
+    BGC_CHARACTERIZED and CLUSTER_DEMONSTRATED; do not add purified-enzyme or heterologous
+    methods.
+  - For PI/PII retain grouped quantification; for PIV/PIX identify the qualitative
+    cross-study association; for PV/PVI identify the individual S22 quantities. Never
+    invent missing measurements.
+  - Test any authorized structure/citation/strain composition against exact original
+    source pins before regeneration, then run the documented strict/reproduction/corpus/QC
+    gates.
+limitations:
+- The review assesses current record assertions and concrete source questions. It
+  does not claim exhaustive discovery of every subsequent study or require optional
+  mechanistic enrichment as a precondition for review coverage.
+- The substituted ring absolute configuration is unassigned in the inspected primary
+  and remains unassigned in the owner; no racemate or specific enantiomer is inferred.
+- The primary contains an earlier nominal-mass inconsistency; the exact structural
+  subsection and formula were used. No independent raw-NMR reassignment was performed.
+- No raw LC-MS/NMR/transcript data were reprocessed and no protein function was inferred
+  from sequence equality. The native genetic evidence does not resolve every individual
+  late catalytic reaction or absolute stereocentre. Optional mechanistic expansion
+  is not a requirement for this review.
+- 'S22 does not quantify PIX individually. Its support is a qualitative cross-study
+  association: 2017 reports loss of all argimycins P in MARPRI, and 2018 reuses that
+  genotype, reports its blocked production and measures its absent/reduced arp transcripts.
+  The 2017 genotype/product and 2018 transcript evidence are successive studies, not
+  one per-congener time-course correlation experiment.'
+- The source has an earlier nominal PIX mass of 178 but a dedicated exact-mass/NMR
+  assignment at [M+H]+ 180.1753. The dedicated assignment and unconfigured piperidine
+  centre are retained; the discrepancy is not used to invent a new compound or stereochemistry.
+- The configured identifier-label gate accepts 499 warning-level mismatches and 35
+  explicit exceptions and skips 4,744 no-adapter pairs; exit 0 does not independently
+  verify every identifier or scientific claim.
+- The quality suite reports 999 passed, 4 skipped, 2 warnings in 441.24s (0:07:21).
+  Skipped tests are not counted as passing tests. Existing ontology caches were used;
+  no multi-gigabyte cache download was required.
+- Native gates assess deterministic consistency and configured invariants. They do
+  not establish biological production, stereochemical specificity, evidence adequacy,
+  or literature-level claim support.
+- The five reused gates retain their batch004 execution times and cached ontology
+  results. Reuse establishes unchanged repository inputs; it is not a new remote authority
+  query or new assertion of ontology freshness.
+- The ignored-inclusive check enumerates record and saved-review YAML paths, and all
+  tracked files are hashed. Generated Python bytecode and external tool caches are
+  not claimed to have been independently byte-pinned at the prior execution.
+notes:
+- No scientific owner, inventory, curation table, native status or history was edited.
+  Actions are proposed work.
+- Baseline gates retain their actual original receipts after byte-for-byte input verification;
+  target strict validation ran afresh. Scientific failed or unavailable checks are
+  distinct from bundle validation.
+tags:
+- path-order-campaign
+- batch-008
+```
