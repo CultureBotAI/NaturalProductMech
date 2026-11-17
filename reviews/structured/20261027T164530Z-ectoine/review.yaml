@@ -1,0 +1,808 @@
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/NaturalProductMech
+reviewer:
+  identity: Codex
+  kind: agent
+  independence: independent
+  independence_basis: This team did not author or modify the selected scientific owner
+    or its maintained inputs. Parallel source inspections were reconciled into one
+    target review; no independent human sign-off is claimed.
+skill: .claude/skills/review-yaml-record/SKILL.md
+review_id: 20261027T164530Z-ectoine
+title: Scientific review of ectoine
+started_at: '2026-10-27T16:43:10.091153Z'
+finished_at: '2026-10-27T16:45:30.942161Z'
+completion: partial
+verdict: pass_with_limitations
+scientific_review: true
+summary: Ectoine has internally consistent retained encodings, while neutral/zwitterionic
+  identity remains explicitly unresolved. Own abstracts and selected saved primary
+  passages support bounded biosynthetic and detection contexts; exact taxon/locus
+  applicability, all graph functions and assay interpretation remain limited.
+source:
+  git_revision: 14373517042b407747272446f79953ae86d51fa4
+  state: working_tree
+  inputs:
+  - path: .claude/skills/curate-yaml-record/references/review-checklist.md
+    sha256: 13895fe1bda5f07ba46909db8778d1426ddf83ba3e55569e0cb52cd4d51590a9
+    role: context
+  - path: .claude/skills/review-yaml-record/SKILL.md
+    sha256: 493fa5e0c192f3070ecee080db6b195c57faac048201cdd8f5dd6be47b587aae
+    role: context
+  - path: CLAUDE.md
+    sha256: c783814c18591ea92aaa628fde98e6b0dbf1f59d45d240fe349682eec753e63f
+    role: context
+  - path: conf/id_label_targets.yaml
+    sha256: 24235903e0e8df5793a30e92c551082c71c1c67739ea4e3b5fb0f68853a805e6
+    role: context
+  - path: conf/producer_evidence.tsv
+    sha256: 67d8209149c2e86f4605381e4a667fc2aff53b71e8351ef337a443642c74f131
+    role: context
+  - path: conf/record_review.yaml
+    sha256: e53c74aea54cae75daeacf22c1acea16a8edd1c123d469845f2a291047e0e8e8
+    role: context
+  - path: curation/lotus_occurrence_exclusions.tsv
+    sha256: d1778f304b83256e756a3aec99f4fd67b5a5d2aee3ca32f88dd0418592f8a30d
+    role: context
+  - path: curation/mibig_claim_references.tsv
+    sha256: bee1d64051b9b934be99ed1320ef33ecef7644c94bbdd11e7c1a040accd02029
+    role: context
+  - path: curation/mibig_locus_evidence_overrides.tsv
+    sha256: 7f943dc205f3ae2d03570863f5d9a169bf1e7a0dce53b33f82d8ebff63b5930e
+    role: context
+  - path: curation/mibig_producer_isolates.tsv
+    sha256: 8067b946129f61013351e4c0f99a76c1ec4f8b2fce572b984ab905c55c7a3cc8
+    role: context
+  - path: curation/mibig_producer_strains.tsv
+    sha256: bab55d1e354d6196096511d7fdb25f25e4c98cfbe041e02a91d707419987f7ae
+    role: context
+  - path: curation/mibig_structure_corrections.tsv
+    sha256: c48f7467343ec2679f404d2fbd8b178e5f62afc7545b785ecb75f99d8617f4f0
+    role: context
+  - path: curation/mibig_xref_exclusions.tsv
+    sha256: cc27be3b8e741164b50f154f8fc82df884066006b5343c295541ee671868bc9c
+    role: context
+  - path: data/natural_products/PATHS.tsv
+    sha256: 2c9c281744ec13b23711a42b9901ffd88a0d8f1e4fdf0a6102b1c677ff0389f3
+    role: context
+  - path: data/natural_products/amino_acids_and_peptides/ectoine.yaml
+    sha256: 60b091910a3d7469ec27a21ee5b845569b3a87171be2cc6dcae9f42d05b47f8a
+    role: target
+  - path: data/raw/MANIFEST.yaml
+    sha256: b81dab34775c79c323f30e05093cfab97fca02556816ef978ed2b24f3a4695a3
+    role: context
+  - path: data/raw/chebi_origins.tsv
+    sha256: fcd43cf439851fcbed2398088cb8e53cc2c37f546fcccba4149b3af1837e78d8
+    role: context
+  - path: data/raw/chebi_structures.tsv
+    sha256: 62b457dbdde9332087cc9c2262772f4246ae74ee66afab96761ba926208120a2
+    role: context
+  - path: data/raw/corpus_taxa.obo
+    sha256: 8a3e9c4840389ddc294df6e92cb6a9711f4381a57c5644bbcf54f8219b764cf9
+    role: context
+  - path: data/raw/cyanometdb_occurrences.tsv
+    sha256: f81900edaaaceb1472c0d8100a17b6ca51ccd0c913e4f0aebf24b010b7bb92b8
+    role: context
+  - path: data/raw/lotus_occurrences.tsv
+    sha256: ee636011f7ed59c5c90afe6a039c32d049e5bc1c4421390bf47d941f19709e94
+    role: context
+  - path: data/raw/mibig_compounds.tsv
+    sha256: e26edc58f14ca9391f830d8027f562e6100b06413402da9014223560cb95dba6
+    role: context
+  - path: data/raw/npclassifier.tsv
+    sha256: acb377573d2680b9dfacc9025a44dbbee03dca12e667485230d30ff7e3baecb3
+    role: context
+  - path: data/raw/pubchem_bioassay.tsv
+    sha256: 6c6184b880a20eea1df8a7cd440886063f59f8e2e663bcc36c296fdc4f52ff1b
+    role: context
+  - path: docs/CURATION.md
+    sha256: c3ebdac3952c23894df0d58843322b1082357098642762b834eca137358d1eaa
+    role: context
+  - path: docs/HARMONIZATION.md
+    sha256: c372a0f299e50152641500e0f6966e403ed34624a6c4cee58aa955b1ca320a79
+    role: context
+  - path: docs/record-review-profile.md
+    sha256: 1b4fd54381de5cf93d744f3d8a8f14d831e45ecfe4060d33e7cebe1bda7ef17a
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: justfile
+    sha256: 4f9057e3e54656dd46f2ded4d3a8f0804acad348d2605d436405e1fcfb6af550
+    role: context
+  - path: schema/record_review.yaml
+    sha256: 229baf9b69118a1fe318e4c31085c0820e4e3d1365e7b04d6ace451b7c35f9bb
+    role: context
+  - path: scripts/extract_chebi.py
+    sha256: 46e1898b88fce16096af34eb9e7c9dea40e4d7c8c157d60d485fa85878088e8f
+    role: context
+  - path: scripts/extract_mibig.py
+    sha256: e1168a2a7839e3f3d0517e43180831cbc306b5e31cc519e9a78bde4d43c7290c
+    role: context
+  - path: scripts/seed_from_sources.py
+    sha256: 5a16b71b2dd3172f3ac6bc5aa4a2a7bbcec072413e8e093197bc5459e0331da5
+    role: context
+  - path: src/naturalproductmech/curate/claim_references.py
+    sha256: 0ed8df41410e4762b93e2706a48d7be5b8e6d9718f87ac1a7408f2bf15f4a1b3
+    role: context
+  - path: src/naturalproductmech/schema/naturalproductmech.yaml
+    sha256: 9410055c2ff37a012666b2f5e06260b02abe1183ee1caace6791461a4894841d
+    role: context
+targets:
+- target_id: naturalproductmech:mibig-a51c74b16d
+  path: data/natural_products/amino_acids_and_peptides/ectoine.yaml
+  label: ectoine
+  record_class: NaturalProductRecord
+  kind: generated
+  owner_paths:
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/mibig_compounds.tsv
+    role: MIBiG source identity, producer and locus
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/lotus_occurrences.tsv
+    role: LOTUS occurrence triples
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/raw/cyanometdb_occurrences.tsv
+    role: CyanoMetDB exact-structure occurrence source
+  - repository: CultureBotAI/NaturalProductMech
+    path: scripts/seed_from_sources.py
+    role: Generated owner transform
+  - repository: CultureBotAI/NaturalProductMech
+    path: data/natural_products/amino_acids_and_peptides/ectoine.yaml
+    role: Curator-owned assertions, inline mechanisms, discussions and audit history
+scope:
+  description: Bounded source and representation review of ectoine using the retained
+    owner, all raw rows and three qualified inline graphs, saved form/neighbor diagnostics,
+    own metadata and selected ID38640 primary passages/Table3 cells. The body-unavailable
+    EctR1 access, ten producer/locus assertions, fifteen occurrences, two inactive
+    assay observations and neutral/zwitterionic forms retain their individual limits.
+  selection: 'One exact owner record: data/natural_products/amino_acids_and_peptides/ectoine.yaml
+    (naturalproductmech:mibig-a51c74b16d); retained source assertions, saved diagnostics
+    and inspected own-source material are assessed at their individual evidence scopes.'
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  exclusions:
+  - reason: Only selected ID38640 passages/Table3 cells were inspected. PMID19897647/PMC2805328
+      supplied frontmatter/abstract without a substantive article body, and the historical
+      ThpD figure-access limit remains held.
+    target: Complete primary bodies, figures and SI
+  - reason: Broad abstracts do not validate every taxon/locus or graph edge; equal
+      normalized keys do not resolve literal neutral/zwitterionic forms; inactive
+      IC50 numbers without protocol context do not establish inhibitory potency or
+      safety.
+    target: Universal producer, pathway, microspecies or assay verification
+  - reason: No current chemical, protein, taxon or sequence authority query was made;
+      saved encoding agreement and inspected source excerpts do not establish complete
+      natural identity.
+    target: Current external authorities and full-owner scientific verification
+checks:
+- check_id: shared-verify-corpus
+  name: Corpus path and filing integrity
+  status: passed
+  required: true
+  summary: Fresh canonical corpus gate passed:3116 lockfile rows/files, each at its
+    pinned path.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-corpus-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-corpus --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.783967Z;
+    finished 2026-10-25T22:37:16.453216Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-corpus.log.
+    Reused for batch068 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch068. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+- check_id: shared-verify-reproduction
+  name: Corpus reproduction
+  status: passed
+  required: true
+  summary: Fresh canonical reproduction gate passed:all3116 records byte-identical
+    to source seeding; source warnings remain retained.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-verify-reproduction-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just verify-reproduction --summary
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784055Z;
+    finished 2026-10-25T22:37:31.682209Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/verify-reproduction.log.
+    Reused for batch068 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch068. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+- check_id: shared-review-queue
+  name: Native deterministic review queue
+  status: passed
+  required: true
+  summary: Fresh deterministic review queue completed:8922 rows across12 queues. Queue
+    output is not scientific-review coverage.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-review-queue-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just review-queue --tsv /private/tmp/npm-review-queue-batch-036-fresh14373517-001.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.781802Z;
+    finished 2026-10-25T22:37:08.229737Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/review-queue.log.
+    Reused for batch068 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch068. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+- check_id: shared-validate-products
+  name: Configured ontology identifier-label correspondence
+  status: passed
+  required: true
+  summary: Fresh configured identifier-label gate passed:13472canonical,657synonym,35exception;499non-blocking
+    mismatches and4898no-adapter skips remain explicit.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-validate-products-attempt-001
+    PYTHONDONTWRITEBYTECODE=1 just validate-products
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-001 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:36:55.784040Z;
+    finished 2026-10-25T22:37:32.251879Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-001/validate-products.log.
+    Reused for batch068 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch068. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+- check_id: shared-qc
+  name: Full repository quality gate on the fresh main baseline
+  status: passed
+  required: true
+  summary: Canonical just qc completed with actual terminal exit0:1024 tests passed,4
+    skipped,2 dependency warnings;3116 records passed closed schema validation, site
+    freshness, byte reproduction and lockfile integrity.22 governed artifacts and15
+    raw inventories passed. Prior DNS failed001 remains preserved.
+  command: UV_NO_SYNC=1 UV_CACHE_DIR=/private/tmp/npm-review-uv-cache RECORD_REVIEW_BASE=14373517042b407747272446f79953ae86d51fa4
+    PYTEST_ADDOPTS=--basetemp=/private/tmp/npm-review-pytest/batch-036-fresh14373517-baseline-qc-attempt-002
+    PYTHONDONTWRITEBYTECODE=1 just qc
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Original read-only fresh-20261025-002 execution on 14373517042b407747272446f79953ae86d51fa4
+    in /private/tmp/npm-record-reviews-20261021. Started 2026-10-25T22:40:55.179857Z;
+    finished 2026-10-25T22:46:28.974296Z. Exact original receipt: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.json;
+    transcript: /private/tmp/npm-native-checks/batch-036/fresh-20261025-002/qc.log.
+    Reused for batch068 only after a fresh fetch/clean branch, equal commit/tree and
+    two reads of all 9,233 tracked byte streams and modes (210,076,479 bytes), including
+    a recheck after the fresh authoritative catalogue. This gate was not rerun for
+    batch068. Original execution times, scope, warnings, exceptions and skips are
+    retained.'
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+- check_id: C-STRICT
+  name: Native strict target validation
+  status: passed
+  required: true
+  summary: The selected owner passed the documented strict validator. This establishes
+    configured consistency only.
+  command: just validate-strict data/natural_products/amino_acids_and_peptides/ectoine.yaml
+    --out /private/tmp/npm-review-work/680/strict.tsv
+  exit_code: 0
+  expected_exit_code: 0
+  scope_note: 'Actual intake execution finished 2026-10-27T16:43:11.485257Z. Original
+    receipt: /private/tmp/npm-review-work/680/strict-receipt.json.'
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+- check_id: SCI680-ENCODING
+  name: Saved encoding consistency
+  status: passed
+  required: true
+  summary: Saved RDKit2026.03.5 results regenerate WQXNXVUDBPYKBA-YFKPBYRVSA-N from
+    both retained encodings, with formula C6H10N2O2, 1 fragment and net formal charge
+    0. This supports internal encoding consistency only, not experimental natural
+    identity. Both retained owner encodings and CHEBI:27592/58515 alternate SMILES
+    share the full Standard InChIKey, formula and net charge0, with no unspecified
+    tetrahedral site reported. CHEBI:58515 still explicitly contains charge-separated
+    [NH+]/[O-] atoms; equal net charge and normalized key do not erase this literal-form
+    distinction or select the owner microspecies.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-CHEM
+  - SCI680-NEIGHBORS
+- check_id: SCI680-MICROSPECIES
+  name: Exact neutral versus zwitterionic owner identity
+  status: unavailable
+  required: true
+  summary: Shared normalized keys and selected mass/retention evidence do not resolve
+    the intentional CHEBI:27592/58515 split or establish a sample microspecies; the
+    minted identifier/REVIEW_NEEDED remains unchanged.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-CHEM
+  - SCI680-ID38640-PRIMARY
+- check_id: SCI680-CLAIM-APPLICABILITY
+  name: Every producer, occurrence and locus citation
+  status: unavailable
+  required: true
+  summary: Some own sources support broad production or genomic contexts; others supply
+    only titles, predictions or abstracts without the exact feature. All ten source
+    assertions and fifteen occurrences are not independently confirmed. The Methylophaga/EU315063.1
+    question remains unresolved after body-unavailable access.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-PASTEURII
+  - SCI680-METHYLOMICROBIUM
+  - SCI680-ECTR1
+  - SCI680-ECTR1-ACCESS
+  - SCI680-METHYLOTROPH-TITLE
+  - SCI680-COLLINUS
+  - SCI680-SPECTABILIS
+  - SCI680-LYDICUS
+  - SCI680-NODULES
+  - SCI680-ROOT-EXUDATES
+  - SCI680-NODOSUS-TITLE
+- check_id: SCI680-GRAPH-AND-ASSAY
+  name: Complete graph function and endpoint interpretation
+  status: unavailable
+  required: true
+  summary: The three graphs preserve proposed/homology and heterologous-expression
+    qualifications; no complete pathway or enzyme reconstitution was verified. The
+    two INACTIVE IC50 10uM observations lack censoring/protocol context; no inhibitor
+    potency is inferred.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-THPD
+  - SCI680-ID38640-PRIMARY
+- check_id: SCI680-AUTHORITIES
+  name: Current chemical, taxon and source authority applicability
+  status: unavailable
+  required: true
+  summary: No current chemical, protein, taxon, sequence or database-authority query
+    was made. Retained names, groundings and accessions are not newly verified authority
+    facts.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-CHEM
+evidence:
+- evidence_id: SCI680-LOCAL
+  kind: record_content
+  reference: /private/tmp/npm-review-work/shared-next-batch068-tentative/tentative-owner-source-inventory-001.json
+  locator: /entries/9/owner_document; /entries/9/rows; /entries/9/supplemental_retained_rows
+  accessed_at: '2026-10-27T15:46:38.869152Z'
+  snapshot_sha256: a82b42a6a2e5c8fb871d2f3c98a92fe8ea8defc2232239a546e8b7b04e39be93
+  support: context_only
+  summary: Thirty retained rows join ten MIBiG producer/locus assertions, fifteen
+    LOTUS occurrences, two intentionally separate ChEBI forms, one NPClassifier row
+    and two PubChem observations. The owner keeps three qualified graphs (15 nodes/12
+    edges), one proposed ThpC step and a product-only PathwayMech link. All ten producer/locus
+    pairs remain SOURCE_ASSERTION/CLUSTER_UNSTATED.
+- evidence_id: SCI680-CHEM
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch068-tentative/source-science-preparation/native-tentative68-local-chemical-consistency-and-neighbors-001.json
+  locator: /records/9
+  accessed_at: '2026-10-27T15:37:22.840055Z'
+  snapshot_sha256: 9edf8da64ee0aa2345523558cd637f65d11800039f7fc7f7712a1fff471b9abb
+  support: supports
+  summary: Saved RDKit2026.03.5 results regenerate WQXNXVUDBPYKBA-YFKPBYRVSA-N from
+    both retained encodings, with formula C6H10N2O2, 1 fragment and net formal charge
+    0. This supports internal encoding consistency only, not experimental natural
+    identity.
+- evidence_id: SCI680-NEIGHBORS
+  kind: validation
+  reference: /private/tmp/npm-review-work/shared-next-batch068-tentative/source-science-preparation/native-tentative68-chemical-neighbor-interpretation-own-postwrite-001.json
+  locator: /records/9
+  accessed_at: '2026-10-27T15:38:23.219966Z'
+  snapshot_sha256: 3930bf022054ad0ef8016fcd35d382cc80574979054ec24aa5439264d641c829
+  support: supports
+  summary: Both retained owner encodings and CHEBI:27592/58515 alternate SMILES share
+    the full Standard InChIKey, formula and net charge0, with no unspecified tetrahedral
+    site reported. CHEBI:58515 still explicitly contains charge-separated [NH+]/[O-]
+    atoms; equal net charge and normalized key do not erase this literal-form distinction
+    or select the owner microspecies.
+- evidence_id: SCI680-PASTEURII
+  kind: primary_source
+  reference: PMID:11823218
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract/AbstractText;
+    ./PubmedArticle/PubmedData/ArticleIdList/ArticleId; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-001/pmid-11823218.xml
+  accessed_at: '2026-10-27T16:04:36.806911Z'
+  snapshot_sha256: 202afd182d5d06414168d0da21a3954fe447a29c5b64ec3927f8375cfb000467
+  support: supports
+  summary: The own abstract reports de novo ectoine identification by NMR/HPLC in
+    Bacillus pasteurii and cloning of ectABC with heterologous expression in Bacillus
+    subtilis. This supports a bounded biological study; historical Bacillus versus
+    stored Sporosarcina naming and every exact locus/strain mapping are not independently
+    resolved.
+- evidence_id: SCI680-THPD
+  kind: primary_source
+  reference: PMID:15128576
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract/AbstractText;
+    ./PubmedArticle/PubmedData/ArticleIdList/ArticleId; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-001/pmid-15128576.xml
+  accessed_at: '2026-10-27T16:04:36.806911Z'
+  snapshot_sha256: 256b52815e925d82b206f9b064ab94aa6667af38cec79ececdff6f60dfe8b923
+  support: partial
+  summary: The own abstract reports thpD from S. chrysomallus and heterologous H.
+    elongata conversion toward hydroxyectoine. This is distinct from direct ThpA/ThpB/ThpC
+    enzyme assays, native strain correspondence, exact historical construct identity
+    and quantitative interpretation of the retained graph.
+- evidence_id: SCI680-METHYLOMICROBIUM
+  kind: primary_source
+  reference: PMID:16283251
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract/AbstractText;
+    ./PubmedArticle/PubmedData/ArticleIdList/ArticleId; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-001/pmid-16283251.xml
+  accessed_at: '2026-10-27T16:04:36.806911Z'
+  snapshot_sha256: da3f7aacb901057c2086055b07e5a783c2adba56f9d5ce103e5a1bc3664911df
+  support: partial
+  summary: The own abstract concerns M. alcaliphilum 20Z ectABC/ask organization and
+    heterologous E. coli work. It supports that named study context, not every methylotroph
+    taxon, stored genome accession or the exact neutral/zwitterionic form.
+- evidence_id: SCI680-ECTR1
+  kind: primary_source
+  reference: PMID:19897647
+  locator: ./PubmedArticle/MedlineCitation/Article/ArticleTitle; ./PubmedArticle/MedlineCitation/Article/Abstract/AbstractText;
+    ./PubmedArticle/PubmedData/ArticleIdList/ArticleId; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-001/pmid-19897647.xml
+  accessed_at: '2026-10-27T16:04:36.806911Z'
+  snapshot_sha256: 80520087fc0adffa3388c6193c95442c016b37186d4cf4efef578dc16e22075f
+  support: partial
+  summary: The own abstract describes EctR1 regulation of ectABC-ask in M. alcaliphilum
+    20Z, including wild type/mutant and recombinant binding work. The retained BGC0000857
+    taxon Methylophaga alcalica and EU315063.1 applicability is unresolved, not disproven
+    by the different focal name.
+- evidence_id: SCI680-METHYLOTROPH-TITLE
+  kind: database
+  reference: DOI:10.1007/s00792-011-0396-x
+  locator: /message/DOI; /message/title; /message/abstract (not supplied); saved body
+    /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-37886a52d361.json
+  accessed_at: '2026-10-27T16:16:17.976553Z'
+  snapshot_sha256: 0c6486528e01d980964b17d04d79e0cf5a7a1a320573e75040a1b2c319707de8
+  support: partial
+  summary: The own title concerns ectoine-gene diversity/phylogeny in moderately halophilic
+    methylotrophs; no abstract is supplied. Exact support for the five stored producer/locus
+    pairs and corresponding occurrences remains unresolved.
+- evidence_id: SCI680-COLLINUS
+  kind: primary_source
+  reference: DOI:10.1007/s10295-015-1685-7
+  locator: /message/DOI; /message/title; /message/abstract; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-fb993b434d3f.json
+  accessed_at: '2026-10-27T16:16:17.976553Z'
+  snapshot_sha256: d9232f86987de70e20abe6abb5f6f5a09ca1ca8b4c8406b526651cf932790485
+  support: partial
+  summary: The supplied abstract connects an ectoine cluster/product among S. collinus
+    Tü365 metabolites and describes HPLC-MS detection of some known metabolites. It
+    does not provide ectoine-specific analytical detail or demonstrate expression
+    of every predicted cluster.
+- evidence_id: SCI680-SPECTABILIS
+  kind: primary_source
+  reference: DOI:10.1007/s10295-019-02172-8
+  locator: /message/DOI; /message/title; /message/abstract; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-284ecf5e924e.json
+  accessed_at: '2026-10-27T16:16:17.976553Z'
+  snapshot_sha256: 552e7ab1a447a0dfa5461a3061f971611213f215a1ca8b115bc9f2305f647b69
+  support: partial
+  summary: The abstract identifies an ectoine biosynthetic cluster in S. spectabilis
+    NRRL2792 by antiSMASH/BLAST. Genomic capacity alone is not direct compound detection
+    or isolation; exact applicability to the stored occurrence needs primary detail.
+- evidence_id: SCI680-LYDICUS
+  kind: primary_source
+  reference: DOI:10.1038/srep44786
+  locator: /message/DOI; /message/title; /message/abstract; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-190290856460.json
+  accessed_at: '2026-10-27T16:16:17.976553Z'
+  snapshot_sha256: d884145bb5a61f455aeccd4bfefd970afbcfc747e0cc39fa5e636a52f080e092
+  support: partial
+  summary: The abstract includes ectoine among 27 putative predicted clusters in S.
+    lydicus 103. Prediction is distinct from observed metabolite occurrence; no false
+    occurrence is inferred solely from missing analytical detail in the abstract.
+- evidence_id: SCI680-HISTORICAL-TITLE
+  kind: database
+  reference: DOI:10.1111/j.1432-1033.1985.tb08903.x
+  locator: /message/DOI; /message/title; /message/abstract (not supplied); saved body
+    /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-94b92701ccf5.json
+  accessed_at: '2026-10-27T16:16:17.976553Z'
+  snapshot_sha256: 9675764617f8fe196fe2947632c1c0226ee044c0e5c3f005bb38d471bc51c409
+  support: partial
+  summary: The own title names the cyclic amino acid from genus Ectothiorhodospira.
+    No abstract is supplied; exact H. halochloris mapping, stereochemistry and current
+    microspecies remain unverified.
+- evidence_id: SCI680-NODULES
+  kind: primary_source
+  reference: DOI:10.3390/ijms19041049
+  locator: /message/DOI; /message/title; /message/abstract; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-10b505219c61.json
+  accessed_at: '2026-10-27T16:16:17.976553Z'
+  snapshot_sha256: 5de200e9ac18eab019591ee6da3928cd1d5d2a867001d03e775a99237f765bee
+  support: partial
+  summary: The abstract describes metabolomics/transcriptomics of P. vulgaris nodules
+    infected by P. phymatum, including rpoN/ntrB perturbations. It does not name ectoine;
+    the exact feature, sample origin and confidence need inspection, and plant biosynthesis
+    is not inferred.
+- evidence_id: SCI680-ROOT-EXUDATES
+  kind: primary_source
+  reference: DOI:10.3390/metabo4030599
+  locator: /message/DOI; /message/title; /message/abstract; saved body /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-metadata-crossref-001/doi-d28e3706668e.json
+  accessed_at: '2026-10-27T16:16:17.976553Z'
+  snapshot_sha256: c7133c33ce82b9e845e914b909668016dc83659e19fe05d58d2a9329e44a5b16
+  support: partial
+  summary: The abstract reports CE-TOF MS profiling of common-bean root exudates under
+    phosphorus deficiency but does not name ectoine. General feature counts do not
+    establish the individual metabolite identity or plant production; abstract omission
+    is not a demonstrated miscitation.
+- evidence_id: SCI680-NODOSUS-TITLE
+  kind: database
+  reference: DOI:10.1007/s00253-015-7060-9
+  locator: /message/DOI; /message/title; /message/abstract (not supplied); saved body
+    /private/tmp/npm-review-work/shared-next-batch052/bgc-science/public-001/own-doi-02-crossref.json
+  accessed_at: '2026-10-27T15:51:13.393995Z'
+  snapshot_sha256: d54ee02cf5be6740ef5671e3fab49f7e6170ccace631c432e71d574f3d1e3693
+  support: context_only
+  summary: The reused own title concerns exploitation of the S. nodosus genome for
+    antibiotic production. No abstract was supplied; its exact ectoine producer/locus
+    applicability remains unresolved. This is retained metadata reuse, not a fresh
+    request or independent experimental confirmation.
+- evidence_id: SCI680-ID38640-PRIMARY
+  kind: primary_source
+  reference: PMID:33712632
+  locator: BioC ./document/passage[26]/text (zero-based25 ectoine); zero-based passages19,21,34,43,48;
+    Table3 embedded XML at zero-based passage21; exact selected locators in /private/tmp/npm-review-work/shared-next-batch068-tentative/source-science-preparation/bgc-tentative68-673-680-retained-primary-claim-passages-001.json;
+    saved body /private/tmp/npm-review-work/shared-next-batch056/literature-preparation/public-primary-001/pmid33712632-original-availability.xml
+  accessed_at: '2026-10-27T16:00:48.465699Z'
+  snapshot_sha256: 1c0181888c2ab509d16bd40f4bf2a48ad32651ae82d33d037c61ec1f4343ef06
+  support: supports
+  summary: Selected saved primary passages report ectoine in Streptomyces sp. ID38640
+    cultures, exact-mass/retention identification and a corresponding BGC. Ectoine
+    was excluded from molecular networking because of poor fragmentation. Table3 reports
+    relative metabolite levels versus wild type in the same medium; PUM-gene perturbation
+    is not an ectoine-gene knockout. These passages do not independently verify exact
+    MT149902.1/BGC0002052 coordinates, stereochemistry or microspecies; figures/SI
+    and the full article were not reviewed.
+- evidence_id: SCI680-ECTR1-ACCESS
+  kind: database
+  reference: PMID:19897647
+  locator: ./article/front/article-meta/article-id; ./article/front/article-meta/abstract;
+    absent ./article/body; publisher XML comment; saved response /private/tmp/npm-review-work/shared-next-batch068-tentative/literature-preparation/public-primary-680-001/pmc-2805328.xml
+  accessed_at: '2026-10-27T16:17:34.970225Z'
+  snapshot_sha256: 4ce11b726e37ffc46cc689e15d9e833765f65e8e98f340df71c87198a29c553b
+  support: context_only
+  summary: The one actual PMC request returned HTTP200 and complete 8860-byte own
+    frontmatter/abstract, with correct PMID19897647/PMC2805328/DOI. A publisher restriction
+    comment accompanies an absent article body. The collector correctly failed its
+    substantive-body gate; this is not an identifier mismatch, full-primary verification
+    or an official review-validation failure. No retry or alternate followed.
+assessments:
+- assessment_id: SCI680-ENCODING
+  area: representation
+  topic: Internal chemical encoding
+  outcome: supported
+  summary: Saved RDKit2026.03.5 results regenerate WQXNXVUDBPYKBA-YFKPBYRVSA-N from
+    both retained encodings, with formula C6H10N2O2, 1 fragment and net formal charge
+    0. This supports internal encoding consistency only, not experimental natural
+    identity.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-CHEM
+- assessment_id: SCI680-STEREO
+  area: representation
+  topic: Encoded stereo and chemical-form boundary
+  outcome: supported
+  summary: Both retained owner encodings and CHEBI:27592/58515 alternate SMILES share
+    the full Standard InChIKey, formula and net charge0, with no unspecified tetrahedral
+    site reported. CHEBI:58515 still explicitly contains charge-separated [NH+]/[O-]
+    atoms; equal net charge and normalized key do not erase this literal-form distinction
+    or select the owner microspecies.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-CHEM
+  - SCI680-NEIGHBORS
+  - SCI680-LOCAL
+- assessment_id: SCI680-LOCAL-BOUNDS
+  area: representation
+  topic: Retained model qualifications
+  outcome: supported
+  summary: The local graph/pathway text explicitly distinguishes proposed ThpC, homology-assigned
+    ThpA/ThpB and a heterologous ThpD pool-shift phenotype. These are confirmed features
+    of the retained representation, not fresh validation of its protein/sequence authorities.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-CHEM
+- assessment_id: SCI680-STUDY-SUPPORT
+  area: evidence
+  topic: Selected broad production and detection evidence
+  outcome: supported
+  summary: The pasteurii abstract reports NMR/HPLC ectoine identification and ectABC
+    heterologous expression. Separately, selected ID38640 primary passages report
+    ectoine exact mass/retention and culture detection. These bounded positives do
+    not validate every retained taxon/locus pair or transfer strain evidence between
+    sources.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-PASTEURII
+  - SCI680-ID38640-PRIMARY
+- assessment_id: SCI680-FORM
+  area: representation
+  topic: Neutral/zwitterion and measured-ion identity
+  outcome: unknown
+  summary: CHEBI:27592 and CHEBI:58515 retain distinct literal forms despite equal
+    full keys/net charge0. An [M+H]+ signal is not an independent assignment of the
+    native neutral or zwitterionic microspecies.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-CHEM
+  - SCI680-ID38640-PRIMARY
+- assessment_id: SCI680-ID38640-LOCUS
+  area: provenance
+  topic: Gene perturbation versus ectoine locus function
+  outcome: unknown
+  summary: The selected primary associates a BGC with ectoine, but the PUM-gene deletions
+    and relative Table3 shifts do not establish an ectoine-gene knockout or mechanism.
+    Exact BGC0002052/MT149902.1 mapping remains unresolved; Table2 data grid was absent
+    from the saved BioC representation, not asserted absent from the published article.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-ID38640-PRIMARY
+- assessment_id: SCI680-THP-GRAPHS
+  area: evidence
+  topic: Homology, expression and measured phenotype
+  outcome: unknown
+  summary: ThpC remains proposed from domain/family annotation; ThpA/ThpB remain homology
+    assignments, not purified enzymes or a physical complex. ThpD is a heterologous
+    expression/pool-shift context, not absolute flux, universal necessity or purified
+    kinetics. DSM304/DSM3043, exact historical construct/stock identity and figure-access
+    limits remain explicitly unresolved.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-THPD
+- assessment_id: SCI680-PRODUCERS
+  area: provenance
+  topic: Ten species/locus assertions
+  outcome: unknown
+  summary: Each exact retained taxon/BGC pair must retain its own source and accession;
+    no broad abstract licenses cross-taxon transfer. Historical Bacillus/Sporosarcina
+    and Streptomyces chrysomallus/anulatus names are not newly reconciled by authority
+    here.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-PASTEURII
+  - SCI680-THPD
+  - SCI680-METHYLOMICROBIUM
+  - SCI680-METHYLOTROPH-TITLE
+  - SCI680-NODOSUS-TITLE
+- assessment_id: SCI680-METHYLOPHAGA
+  area: provenance
+  topic: Methylophaga alcalica entry-level citation
+  outcome: unknown
+  summary: The EctR1 abstract focuses on Methylomicrobium alcaliphilum 20Z. The unavailable
+    full article may contain relevant comparisons; neither a title/abstract name difference
+    nor the failed body-availability gate proves a miscitation for Methylophaga alcalica/EU315063.1.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-ECTR1
+  - SCI680-ECTR1-ACCESS
+- assessment_id: SCI680-OCCURRENCE
+  area: provenance
+  topic: Predicted capacity and sample-associated occurrence
+  outcome: unknown
+  summary: S. spectabilis and S. lydicus abstracts describe genomic capacity, not
+    direct metabolite detection. The plant studies concern nodules/exudates and omit
+    an explicit ectoine feature here; plant occurrence confidence and microbial versus
+    plant source remain unresolved. Broad genus/historical names are not current taxonomic
+    authority.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+  - SCI680-SPECTABILIS
+  - SCI680-LYDICUS
+  - SCI680-NODULES
+  - SCI680-ROOT-EXUDATES
+  - SCI680-HISTORICAL-TITLE
+  - SCI680-COLLINUS
+- assessment_id: SCI680-ASSAYS
+  area: evidence
+  topic: Two inactive endpoint annotations
+  outcome: unknown
+  summary: AID1801670 and AID1801654 retain INACTIVE, IC50 10uM and P08684 together.
+    Without protocol/comparator/censoring context, the numeric value is not promoted
+    to demonstrated inhibitory potency or safety. The second title retains its literal
+    null prefix; no fabricated assay detail is substituted.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+- assessment_id: SCI680-PATHWAY-LINK
+  area: provenance
+  topic: Product-only linked pathway
+  outcome: unknown
+  summary: The pinned PathwayMech P101-PWY association is an exact terminal-product
+    join via CHEBI:58515 with its own taxon2746 qualification. It does not establish
+    pathway use in all ten taxa, a complete reconstitution or owner form selection.
+  target_ids:
+  - naturalproductmech:mibig-a51c74b16d
+  evidence_ids:
+  - SCI680-LOCAL
+findings: []
+actions: []
+limitations:
+- Selected ID38640 primary passages and one Table3 column were inspected, not the
+  whole article, figures or SI. The table text/BioC and embedded-XML serialization
+  digests are distinct valid representations.
+- The historical ThpD figure-access challenge remains held; reading its retained graph
+  notes and a new abstract is not a renewed figure inspection or full experimental
+  validation.
+- The sole PMID19897647 PMC attempt returned frontmatter/abstract only and stopped
+  at the body gate. No retry or alternate was made; this availability limitation remains
+  separate from scientific applicability.
+- Two source versions or metadata/primary representations of one paper are not independent
+  experimental corroboration.
+- Internal encoding agreement does not establish the exact natural stereoisomer, source-material
+  identity or current authority correctness.
+- Full-owner scientific verification remains false. Original local-reading, saved-computation,
+  source-access and own-field reading clocks stay separate. Actual intake reconciliation
+  verifies reproduction of the whole owner and six official arrays only; it adds no
+  primary evidence or current authority verification.
+- Configured consistency only; independent scientific claim support and unrestricted
+  remote authority refresh are not implied.
+- FailedQC001 is retained for an explicit separate network-enabled retry; no artifact
+  will be overwritten.
+- Fresh QC attempt001 failed on public canonical-artifact DNS retrieval after lint
+  and before downstream tests. Its actual exit1/log/input capture/root observation
+  remain pinned; the selected successful canonical QC attempt002 is separately timed.
+  No individual-review validation failure or counter reset is claimed.
+- 499non-blocking identifier-label warnings,35configured exceptions and4898no-adapter
+  skips remain unverified within this gate.
+- The QC test suite reported four skipped tests and two dependency deprecation warnings;
+  this pass does not assert skipped checks ran.
+- Canonical reproduction retains five unresolved assay-organism annotations,42 withheld
+  nonsingle-organism producer claims and161 configured taxon-ID rewrites.
+- This QC is a configured consistency gate, not an independent primary-source biological
+  or stereochemical verification.
+- Native baseline gates establish configured consistency, not independent biological
+  production, exact stereochemistry or primary-source adequacy.
+- The full configured gate logs retain warnings, skipped tests, identifier exceptions
+  and no-adapter pairs; a successful command does not convert these into verified
+  scientific claims.
+- Ontology caches may be reused by the canonical identifier-label gate. Fresh command
+  execution is not proof every remote authority was refreshed.
+- Every tracked byte stream/mode and ignored-inclusive corpus/review YAML population
+  was checked; external caches and generated bytecode are not asserted to be independently
+  byte-pinned.
+notes:
+- The whole local owner and retained source rows were read. Full-owner scientific
+  verification remains false; scientific_review denotes the bounded scientific interpretation
+  in this report.
+- Original owner/source reading, two-encoding computation, neighbor inspection, HTTP
+  retrieval and later metadata reading retain separate clocks. Official intake separately
+  computed SMILES facts.
+- No scientific record, maintained input or native curation status was changed. Any
+  findings and actions record ROOT-adopted proposed work; exact-source limitations
+  and unavailable checks remain explicit.
